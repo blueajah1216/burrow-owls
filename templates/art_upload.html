@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Upload Art</h1>
+  <p class="muted">For {{ person_name }}.</p>
+
+  <form method="post" enctype="multipart/form-data" class="form">
+    <label>Title (optional)</label>
+    <input name="title" type="text" placeholder="e.g., Owl Wizard vs. Dragon" />
+
+    <label>Image file</label>
+    <input name="image" type="file" accept="image/*" required />
+
+    <button type="submit">Upload</button>
+  </form>
+
+  <div class="muted small" style="margin-top:12px;">
+    Tip: Photos of paper drawings work great—use bright light and avoid shadows.
+  </div>
+{% endblock %}

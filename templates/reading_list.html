@@ -5,9 +5,12 @@
   {% if books|length == 0 %}
     <p>No books added yet.</p>
   {% else %}
-    <ul>
+    <ul class="list">
       {% for b in books %}
-        <li><strong>{{ b.title }}</strong> — {{ b.author }}</li>
+        <li>
+          <div class="list-title">{{ b.title }}</div>
+          <div class="muted">{{ b.author }}</div>
+        </li>
       {% endfor %}
     </ul>
   {% endif %}

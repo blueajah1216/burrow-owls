@@ -1,6 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
   <h1>{{ person_name }}</h1>
-  <p>Welcome to {{ person_name }}’s corner of the Burrow.</p>
-  <p>Use the sidebar to view the {{ year }} reading list or add reviews as books are finished.</p>
+  <p class="muted">Welcome to {{ person_name }}’s burrow.</p>
+
+  <div class="home-grid">
+    <div class="panel">
+      <h2>{{ year }} Reading</h2>
+      <p>See the reading list and write reviews as books are finished.</p>
+      <p><a class="btnlink" href="/{{ person_key }}/reading-list">Open reading list →</a></p>
+    </div>
+
+    <div class="panel">
+      <h2>Art</h2>
+      <p>Upload drawings and view the gallery.</p>
+      <p>
+        <a class="btnlink" href="/{{ person_key }}/art">Open gallery →</a>
+        &nbsp;|&nbsp;
+        <a class="btnlink" href="/{{ person_key }}/art/upload">Upload →</a>
+      </p>
+    </div>
+  </div>
 {% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>{{ person_name }}’s Art</h1>
+  <p class="muted">Gallery of uploaded drawings.</p>
+
+  {% if artworks|length == 0 %}
+    <div class="panel">
+      <p>No art uploaded yet. Time to unleash the crayons. 🎨</p>
+      <p><a class="btnlink" href="/{{ person_key }}/art/upload">Upload the first piece →</a></p>
+    </div>
+  {% else %}
+    <div class="grid">
+      {% for a in artworks %}
+        <div class="card">
+          <a href="/uploads/{{ person_key }}/{{ a.filename }}" target="_blank" rel="noopener">
+            <img src="/uploads/{{ person_key }}/{{ a.filename }}" alt="art"/>
+          </a>
+          <div class="card-title">{{ a.title if a.title else "Untitled" }}</div>
+          <div class="muted small">{{ a.created_at.strftime("%b %d, %Y") }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endblock %}

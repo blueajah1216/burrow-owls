@@ -1,17 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
   <h1>Review</h1>
-  <h2>{{ book.title }}</h2>
+  <h2 class="book-title">{{ book.title }}</h2>
   <p class="muted">{{ book.author }}</p>
 
-  <form method="post">
+  <form method="post" class="form">
     <label>Rating (1–5)</label>
     <input name="rating" type="number" min="1" max="5"
-           value="{{ review.rating if review else '' }}"/>
+           value="{{ review.rating if review else '' }}" />
 
     <label>Your thoughts</label>
-    <textarea name="review_text" rows="12">{{ review.review_text if review else '' }}</textarea>
+    <textarea name="review_text" rows="12"
+      placeholder="What did you like? What didn’t work? Favorite moments?">{{ review.review_text if review else '' }}</textarea>
 
     <button type="submit">Save</button>
+    {% if review and review.updated_at %}
+      <div class="muted small">Last updated: {{ review.updated_at.strftime("%b %d, %Y %I:%M %p") }}</div>
+    {% endif %}
   </form>
 {% endblock %}
