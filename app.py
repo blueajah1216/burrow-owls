@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import time
 from pathlib import Path
 from uuid import uuid4
 
@@ -11,6 +12,7 @@ from flask import (
     render_template,
     request,
     send_from_directory,
+    session,
     url_for,
 )
 from werkzeug.utils import secure_filename
@@ -62,13 +64,16 @@ def allowed_image_file(filename: str) -> bool:
 # -----------------------------
 app = Flask(__name__)
 
+# Needed for session cookies (unlocking uploads in the browser)
+# Set this in Render -> Environment:
+#   SECRET_KEY=<random long string>
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "")
+
 # For Render persistence (recommended):
 # - Add a Render Disk mounted at /var/data
 # - Set:
 #     DATABASE_URL=sqlite:////var/data/burrowowls.db
 #     UPLOAD_ROOT=/var/data/uploads
-#
-# If DATABASE_URL isn't set, local sqlite file may reset on redeploy.
 app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL", "sqlite:///burrowowls.db")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
@@ -83,10 +88,56 @@ with app.app_context():
 # Upload storage root
 UPLOAD_ROOT = os.environ.get("UPLOAD_ROOT", str(BASE_DIR / "uploads"))
 
+# Shared family upload key (set on Render as env var UPLOAD_KEY).
+# If not set, uploads are disabled (fail closed).
+UPLOAD_KEY = os.environ.get("UPLOAD_KEY", "")
+
+# How long an "unlock" lasts in the browser (seconds)
+UNLOCK_TTL_SECONDS = 60 * 60 * 6  # 6 hours
+
+
 # Ensure upload directories exist
 os.makedirs(UPLOAD_ROOT, exist_ok=True)
 for p in PEOPLE.keys():
     os.makedirs(os.path.join(UPLOAD_ROOT, p), exist_ok=True)
+
+
+def session_upload_unlocked() -> bool:
+    """
+    Returns True if the user has recently unlocked uploads in this browser session.
+    """
+    ts = session.get("upload_unlocked_at")
+    if not ts:
+        return False
+    try:
+        ts = float(ts)
+    except (TypeError, ValueError):
+        return False
+    return (time.time() - ts) < UNLOCK_TTL_SECONDS
+
+
+def require_upload_auth():
+    """
+    Upload authorization:
+    - Fail closed if UPLOAD_KEY isn't set (uploads disabled).
+    - Accept either:
+        1) A valid unlocked session, OR
+        2) The correct key supplied in the form/header/query (backup)
+    """
+    if not UPLOAD_KEY:
+        abort(403, "Uploads are disabled (UPLOAD_KEY not set).")
+
+    if session_upload_unlocked():
+        return
+
+    provided = (
+        request.form.get("upload_key")
+        or request.headers.get("X-Upload-Key")
+        or request.args.get("upload_key")
+    )
+
+    if provided != UPLOAD_KEY:
+        abort(403, "Not allowed.")
 
 
 # -----------------------------
@@ -94,7 +145,6 @@ for p in PEOPLE.keys():
 # -----------------------------
 @app.get("/")
 def index():
-    # Later you can make a family landing page
     return redirect(url_for("person_home", person="richard"))
 
 
@@ -216,10 +266,24 @@ def art_gallery(person):
 
 @app.get("/<person>/art/upload")
 def art_upload_form(person):
+    """
+    Shows either:
+    - a key entry box (locked), or
+    - the upload form (unlocked)
+    """
     person = get_person_or_404(person)
 
     data = get_person_books(person)
     books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
+
+    uploads_disabled = (not UPLOAD_KEY)
+
+    # If SECRET_KEY isn't set, sessions won't work reliably.
+    # We'll still allow "manual key in the form on submit" (fallback),
+    # but unlocking won't persist.
+    session_ready = bool(app.config.get("SECRET_KEY"))
+
+    unlocked = session_upload_unlocked() if session_ready else False
 
     return render_template(
         "art_upload.html",
@@ -227,12 +291,43 @@ def art_upload_form(person):
         person_name=PEOPLE[person],
         year=data["year"],
         books=books,
+        uploads_disabled=uploads_disabled,
+        unlocked=unlocked,
+        session_ready=session_ready,
     )
+
+
+@app.post("/<person>/art/unlock")
+def art_unlock(person):
+    """
+    User enters the upload key on the page. If correct, unlock uploads for this browser session.
+    """
+    person = get_person_or_404(person)
+
+    if not UPLOAD_KEY:
+        abort(403, "Uploads are disabled (UPLOAD_KEY not set).")
+
+    provided = request.form.get("upload_key", "")
+    if provided != UPLOAD_KEY:
+        # Don't leak details. Just show locked again.
+        return redirect(url_for("art_upload_form", person=person))
+
+    # Only works if SECRET_KEY is set
+    if not app.config.get("SECRET_KEY"):
+        # Still allow upload submission with key in the upload form,
+        # but session-based unlock can't persist.
+        return redirect(url_for("art_upload_form", person=person))
+
+    session["upload_unlocked_at"] = str(time.time())
+    return redirect(url_for("art_upload_form", person=person))
 
 
 @app.post("/<person>/art/upload")
 def art_upload_save(person):
     person = get_person_or_404(person)
+
+    # Require session unlock OR correct key provided (fallback)
+    require_upload_auth()
 
     file = request.files.get("image")
     title = request.form.get("title", "").strip()

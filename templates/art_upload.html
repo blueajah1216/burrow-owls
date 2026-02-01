@@ -3,17 +3,66 @@
   <h1>Upload Art</h1>
   <p class="muted">For {{ person_name }}.</p>
 
-  <form method="post" enctype="multipart/form-data" class="form">
-    <label>Title (optional)</label>
-    <input name="title" type="text" placeholder="e.g., Owl Wizard vs. Dragon" />
+  {% if uploads_disabled %}
+    <div class="panel">
+      <p><strong>Uploads are currently disabled.</strong></p>
+      <p class="muted">The server is missing the <code>UPLOAD_KEY</code> setting.</p>
+      <p class="muted">Fix: set <code>UPLOAD_KEY</code> in Render → Environment.</p>
+    </div>
 
-    <label>Image file</label>
-    <input name="image" type="file" accept="image/*" required />
+  {% elif not session_ready %}
+    <div class="panel">
+      <p><strong>Uploads are available, but session unlock is not enabled.</strong></p>
+      <p class="muted">
+        Set <code>SECRET_KEY</code> in Render → Environment to enable “enter key once” unlocking.
+      </p>
+      <p class="muted">
+        For now, you can still upload by entering the key in the upload form (below).
+      </p>
+    </div>
 
-    <button type="submit">Upload</button>
-  </form>
+    <form method="post" action="/{{ person_key }}/art/upload" enctype="multipart/form-data" class="form">
+      <label>Family Upload Key</label>
+      <input name="upload_key" type="password" required />
 
-  <div class="muted small" style="margin-top:12px;">
-    Tip: Photos of paper drawings work great—use bright light and avoid shadows.
-  </div>
+      <label>Title (optional)</label>
+      <input name="title" type="text" placeholder="e.g., Owl Wizard vs. Dragon" />
+
+      <label>Image file</label>
+      <input name="image" type="file" accept="image/*" required />
+
+      <button type="submit">Upload</button>
+    </form>
+
+  {% elif not unlocked %}
+    <div class="panel">
+      <p><strong>This upload page is locked.</strong></p>
+      <p class="muted">Enter the family upload key to unlock uploads on this device for a few hours.</p>
+
+      <form method="post" action="/{{ person_key }}/art/unlock" class="form">
+        <label>Family Upload Key</label>
+        <input name="upload_key" type="password" required />
+        <button type="submit">Unlock</button>
+      </form>
+    </div>
+
+  {% else %}
+    <div class="panel">
+      <p><strong>Unlocked.</strong> You can upload art now. 🎨</p>
+    </div>
+
+    <form method="post" action="/{{ person_key }}/art/upload" enctype="multipart/form-data" class="form">
+      <label>Title (optional)</label>
+      <input name="title" type="text" placeholder="e.g., Owl Wizard vs. Dragon" />
+
+      <label>Image file</label>
+      <input name="image" type="file" accept="image/*" required />
+
+      <button type="submit">Upload</button>
+    </form>
+
+    <div class="muted small" style="margin-top:12px;">
+      Tip: Photos of paper drawings work great—use bright light and avoid shadows.
+    </div>
+  {% endif %}
 {% endblock %}
