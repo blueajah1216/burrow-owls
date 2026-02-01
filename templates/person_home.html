@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+  <h1>{{ person_name }}</h1>
+  <p>Welcome to {{ person_name }}’s corner of the Burrow.</p>
+  <p>Use the sidebar to view the {{ year }} reading list or add reviews as books are finished.</p>
+{% endblock %}

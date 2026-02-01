@@ -1,10 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta charset="utf-8">
+  <title>{{ person_name }} | The Burrow Owls</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-$END$
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <a href="/">🦉 The Burrow Owls</a>
+      </div>
+
+      <div class="people">
+        {% for key, name in {
+          "richard":"Richard","gillian":"Gillian","felicity":"Felicity",
+          "elisabeth":"Elisabeth","penelope":"Penelope","peregrine":"Peregrine"
+        }.items() %}
+          <a class="pill {% if key==person_key %}active{% endif %}"
+             href="/{{ key }}">{{ name }}</a>
+        {% endfor %}
+      </div>
+
+      <hr>
+
+      <a class="nav" href="/{{ person_key }}/reading-list">{{ year }} Reading List</a>
+
+      <div class="book-links">
+        {% for b in books %}
+          <a class="nav sub" href="/{{ person_key }}/review/{{ b.slug }}">
+            Review: {{ b.title }}
+          </a>
+        {% endfor %}
+      </div>
+    </aside>
+
+    <main class="content">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
 </body>
 </html>

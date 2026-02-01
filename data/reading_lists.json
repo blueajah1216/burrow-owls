@@ -1,0 +1,24 @@
+{
+  "richard": {
+    "year": 2026,
+    "books": [
+      {"title": "The Remains of the Day", "author": "Kazuo Ishiguro"},
+      {"title": "The Leopard", "author": "Giuseppe Tomasi di Lampedusa"},
+      {"title": "Middlemarch", "author": "George Eliot"},
+      {"title": "Wolf Hall", "author": "Hilary Mantel"},
+      {"title": "The Family Moskat", "author": "Isaac Bashevis Singer"},
+      {"title": "The Chosen", "author": "Chaim Potok"},
+      {"title": "Brideshead Revisited", "author": "Evelyn Waugh"},
+      {"title": "Herzog", "author": "Saul Bellow"},
+      {"title": "King Lear", "author": "William Shakespeare"},
+      {"title": "The Amazing Adventures of Kavalier & Clay", "author": "Michael Chabon"},
+      {"title": "The Left Hand of Darkness", "author": "Ursula K. Le Guin"},
+      {"title": "Napoleon", "author": "Vincent Cronin"}
+    ]
+  },
+  "gillian":   {"year": 2026, "books": []},
+  "felicity":  {"year": 2026, "books": []},
+  "elisabeth": {"year": 2026, "books": []},
+  "penelope":  {"year": 2026, "books": []},
+  "peregrine": {"year": 2026, "books": []}
+}
