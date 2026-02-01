@@ -26,7 +26,11 @@ body {
   overflow-y: auto;
 }
 
-.content { padding: 28px; flex: 1; max-width: 1100px; }
+.content {
+  padding: 28px;
+  flex: 1;
+  max-width: 1100px;
+}
 
 .brand a {
   text-decoration: none;
@@ -35,7 +39,12 @@ body {
   color: var(--text);
 }
 
-.people { display:flex; gap:8px; flex-wrap: wrap; margin: 14px 0; }
+.people {
+  display:flex;
+  gap:8px;
+  flex-wrap: wrap;
+  margin: 14px 0;
+}
 
 .pill {
   text-decoration:none;
@@ -48,7 +57,11 @@ body {
 
 .pill.active { border-color: #111; }
 
-hr { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 14px 0;
+}
 
 .nav {
   display:block;
@@ -73,7 +86,11 @@ h1 { margin-top: 0; }
 .muted { color: var(--muted); }
 .small { font-size: 12px; }
 
-.form label { display:block; margin-top: 14px; font-weight: 650; }
+.form label {
+  display:block;
+  margin-top: 14px;
+  font-weight: 650;
+}
 
 input, textarea {
   width: 100%;
@@ -142,4 +159,31 @@ button:hover { opacity: 0.93; }
 .btnlink {
   text-decoration: none;
   font-weight: 700;
+}
+
+/* --- Review metadata layout (cover + summary) --- */
+.review-header { margin-bottom: 6px; }
+
+.meta-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.cover img {
+  width: 180px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.meta-text { flex: 1; }
+
+/* Mobile friendliness */
+@media (max-width: 860px) {
+  .layout { flex-direction: column; }
+  .sidebar { width: auto; position: static; height: auto; }
+  .content { padding: 18px; }
+  .meta-row { flex-direction: column; }
+  .cover img { width: 160px; }
 }

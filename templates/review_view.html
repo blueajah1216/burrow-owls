@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="review-header">
+    <h1 class="book-title">{{ book.title }}</h1>
+    <div class="muted">{{ book.author }}</div>
+  </div>
+
+  <div class="meta-row">
+    {% if meta and meta.cover_url %}
+      <div class="cover">
+        <img src="{{ meta.cover_url }}" alt="Cover image">
+      </div>
+    {% endif %}
+
+    <div class="meta-text">
+      <h2>Summary</h2>
+      {% if meta and meta.summary %}
+        <p>{{ meta.summary }}</p>
+        <div class="muted small">Source: {{ meta.source }}</div>
+      {% else %}
+        <p class="muted">No summary found yet (or the metadata source didn’t provide one).</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>{{ person_name }}’s Review</h2>
+
+  {% if review %}
+    <div class="panel">
+      <div><strong>Rating:</strong> {{ review.rating if review.rating else "—" }}</div>
+      <div><strong>Finished:</strong>
+        {% if review.finished_date %}{{ review.finished_date.strftime("%b %d, %Y") }}{% else %}—{% endif %}
+      </div>
+
+      <div style="margin-top: 12px; white-space: pre-wrap;">{{ review.review_text if review.review_text else "—" }}</div>
+    </div>
+  {% else %}
+    <div class="panel">
+      <p class="muted">No review yet.</p>
+    </div>
+  {% endif %}
+
+  <div style="margin-top: 14px;">
+    {% if uploads_disabled %}
+      <div class="muted small">Editing is disabled (UPLOAD_KEY not set on the server).</div>
+
+    {% elif not session_ready %}
+      <div class="panel">
+        <p><strong>Editing requires sessions.</strong></p>
+        <p class="muted">Set <code>SECRET_KEY</code> in Render → Environment so “unlock” works.</p>
+        <p class="muted">After that, you can unlock and edit reviews.</p>
+      </div>
+
+    {% elif not unlocked %}
+      <div class="panel">
+        <p><strong>Editing is locked.</strong> Enter the family key to unlock edits on this device for a few hours.</p>
+        <form method="post" action="/{{ person_key }}/unlock" class="form">
+          <label>Family Upload Key</label>
+          <input name="upload_key" type="password" required />
+          <button type="submit">Unlock editing</button>
+        </form>
+      </div>
+
+    {% else %}
+      <a class="btnlink" href="/{{ person_key }}/review/{{ book.slug }}/edit">Edit review →</a>
+    {% endif %}
+  </div>
+{% endblock %}

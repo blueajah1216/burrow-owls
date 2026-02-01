@@ -2,9 +2,11 @@ import json
 import os
 import re
 import time
+from datetime import datetime
 from pathlib import Path
 from uuid import uuid4
 
+import requests
 from flask import (
     Flask,
     abort,
@@ -18,7 +20,7 @@ from flask import (
 from werkzeug.utils import secure_filename
 
 from people import PEOPLE
-from models import db, Review, Artwork
+from models import db, Review, Artwork, BookMetadata
 
 # -----------------------------
 # Paths & helpers
@@ -64,9 +66,8 @@ def allowed_image_file(filename: str) -> bool:
 # -----------------------------
 app = Flask(__name__)
 
-# Needed for session cookies (unlocking uploads in the browser)
-# Set this in Render -> Environment:
-#   SECRET_KEY=<random long string>
+# Needed for session cookies (unlocking writes in the browser)
+# Set this in Render -> Environment: SECRET_KEY=<random long string>
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "")
 
 # For Render persistence (recommended):
@@ -77,7 +78,7 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "")
 app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL", "sqlite:///burrowowls.db")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
-# Limit uploads (8MB). Adjust if needed.
+# Limit uploads (8MB)
 app.config["MAX_CONTENT_LENGTH"] = 8 * 1024 * 1024
 
 db.init_app(app)
@@ -88,13 +89,11 @@ with app.app_context():
 # Upload storage root
 UPLOAD_ROOT = os.environ.get("UPLOAD_ROOT", str(BASE_DIR / "uploads"))
 
-# Shared family upload key (set on Render as env var UPLOAD_KEY).
-# If not set, uploads are disabled (fail closed).
+# Shared family key for *all write actions* (art uploads + review edits)
 UPLOAD_KEY = os.environ.get("UPLOAD_KEY", "")
 
-# How long an "unlock" lasts in the browser (seconds)
+# How long unlock lasts in the browser
 UNLOCK_TTL_SECONDS = 60 * 60 * 6  # 6 hours
-
 
 # Ensure upload directories exist
 os.makedirs(UPLOAD_ROOT, exist_ok=True)
@@ -102,11 +101,11 @@ for p in PEOPLE.keys():
     os.makedirs(os.path.join(UPLOAD_ROOT, p), exist_ok=True)
 
 
-def session_upload_unlocked() -> bool:
-    """
-    Returns True if the user has recently unlocked uploads in this browser session.
-    """
-    ts = session.get("upload_unlocked_at")
+# -----------------------------
+# Auth helpers
+# -----------------------------
+def session_unlocked() -> bool:
+    ts = session.get("write_unlocked_at")
     if not ts:
         return False
     try:
@@ -116,18 +115,17 @@ def session_upload_unlocked() -> bool:
     return (time.time() - ts) < UNLOCK_TTL_SECONDS
 
 
-def require_upload_auth():
+def require_write_auth():
     """
-    Upload authorization:
-    - Fail closed if UPLOAD_KEY isn't set (uploads disabled).
-    - Accept either:
-        1) A valid unlocked session, OR
-        2) The correct key supplied in the form/header/query (backup)
+    Require write auth for review edits and art uploads.
+    - Fail closed if UPLOAD_KEY is not set.
+    - Allow if session is unlocked.
+    - Otherwise allow if correct key provided in request (fallback).
     """
     if not UPLOAD_KEY:
-        abort(403, "Uploads are disabled (UPLOAD_KEY not set).")
+        abort(403, "Writes are disabled (UPLOAD_KEY not set).")
 
-    if session_upload_unlocked():
+    if session_unlocked():
         return
 
     provided = (
@@ -135,9 +133,81 @@ def require_upload_auth():
         or request.headers.get("X-Upload-Key")
         or request.args.get("upload_key")
     )
-
     if provided != UPLOAD_KEY:
         abort(403, "Not allowed.")
+
+
+# -----------------------------
+# Book metadata (Open Library)
+# -----------------------------
+def fetch_openlibrary_metadata(title: str, author: str | None):
+    """
+    Returns dict: {cover_url, summary} possibly None values.
+    Uses Open Library Search + Work details.
+    """
+    # 1) Search
+    params = {"title": title}
+    if author:
+        params["author"] = author
+
+    r = requests.get("https://openlibrary.org/search.json", params=params, timeout=8)
+    r.raise_for_status()
+    data = r.json()
+    docs = data.get("docs", [])
+    if not docs:
+        return {"cover_url": None, "summary": None}
+
+    doc = docs[0]
+
+    cover_url = None
+    cover_i = doc.get("cover_i")
+    if cover_i:
+        cover_url = f"https://covers.openlibrary.org/b/id/{cover_i}-L.jpg"
+
+    summary = None
+    # 2) If there's a work key, try to fetch its description
+    work_key = None
+    key = doc.get("key")  # often like "/works/OLxxxxW"
+    if isinstance(key, str) and key.startswith("/works/"):
+        work_key = key
+
+    if work_key:
+        wr = requests.get(f"https://openlibrary.org{work_key}.json", timeout=8)
+        if wr.ok:
+            wj = wr.json()
+            desc = wj.get("description")
+            if isinstance(desc, str):
+                summary = desc
+            elif isinstance(desc, dict):
+                summary = desc.get("value")
+
+    return {"cover_url": cover_url, "summary": summary}
+
+
+def get_or_update_book_metadata(book_slug: str, title: str, author: str | None):
+    """
+    Read cached metadata. If missing/empty, fetch from Open Library and store.
+    """
+    meta = BookMetadata.query.filter_by(book_slug=book_slug).first()
+    if meta and (meta.cover_url or meta.summary):
+        return meta
+
+    # Create if missing
+    if not meta:
+        meta = BookMetadata(book_slug=book_slug, title=title, author=author, source="openlibrary")
+        db.session.add(meta)
+
+    try:
+        fetched = fetch_openlibrary_metadata(title, author)
+        meta.cover_url = fetched.get("cover_url")
+        meta.summary = fetched.get("summary")
+        meta.source = "openlibrary"
+        db.session.commit()
+    except Exception:
+        # If Open Library is down, keep whatever we have and don't crash the page.
+        db.session.rollback()
+
+    return meta
 
 
 # -----------------------------
@@ -153,7 +223,6 @@ def person_home(person):
     person = get_person_or_404(person)
     data = get_person_books(person)
     books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
-
     return render_template(
         "person_home.html",
         person_key=person,
@@ -168,7 +237,6 @@ def reading_list(person):
     person = get_person_or_404(person)
     data = get_person_books(person)
     books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
-
     return render_template(
         "reading_list.html",
         person_key=person,
@@ -179,11 +247,43 @@ def reading_list(person):
 
 
 # -----------------------------
-# Routes: Book reviews
+# Routes: Reviews (public view + protected edit)
 # -----------------------------
 @app.get("/<person>/review/<book_slug>")
+def review_view(person, book_slug):
+    person = get_person_or_404(person)
+
+    data = get_person_books(person)
+    books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
+    book = next((b for b in books if b["slug"] == book_slug), None)
+    if not book:
+        abort(404)
+
+    review = Review.query.filter_by(person=person, book_slug=book_slug).first()
+    meta = get_or_update_book_metadata(book_slug, book["title"], book.get("author"))
+
+    return render_template(
+        "review_view.html.html",
+        person_key=person,
+        person_name=PEOPLE[person],
+        year=data["year"],
+        books=books,
+        book=book,
+        review=review,
+        meta=meta,
+        unlocked=session_unlocked(),
+        uploads_disabled=(not UPLOAD_KEY),
+        session_ready=bool(app.config.get("SECRET_KEY")),
+    )
+
+
+@app.get("/<person>/review/<book_slug>/edit")
 def review_edit(person, book_slug):
     person = get_person_or_404(person)
+
+    # Require session unlock (or key in query as fallback, but we keep UI clean)
+    if not session_unlocked():
+        return redirect(url_for("review_view.html", person=person, book_slug=book_slug))
 
     data = get_person_books(person)
     books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
@@ -204,9 +304,12 @@ def review_edit(person, book_slug):
     )
 
 
-@app.post("/<person>/review/<book_slug>")
+@app.post("/<person>/review/<book_slug>/edit")
 def review_save(person, book_slug):
     person = get_person_or_404(person)
+
+    # Enforce key/session for saving edits
+    require_write_auth()
 
     data = get_person_books(person)
     books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
@@ -218,6 +321,14 @@ def review_save(person, book_slug):
     rating = int(rating_raw) if rating_raw.isdigit() else None
     if rating is not None and (rating < 1 or rating > 5):
         rating = None
+
+    finished_raw = request.form.get("finished_date", "").strip()
+    finished_date = None
+    if finished_raw:
+        try:
+            finished_date = datetime.strptime(finished_raw, "%Y-%m-%d").date()
+        except ValueError:
+            finished_date = None
 
     text = request.form.get("review_text", "").strip()
 
@@ -232,19 +343,40 @@ def review_save(person, book_slug):
         db.session.add(review)
 
     review.rating = rating
+    review.finished_date = finished_date
     review.review_text = text
     db.session.commit()
 
-    return redirect(url_for("review_edit", person=person, book_slug=book_slug))
+    return redirect(url_for("review_view.html", person=person, book_slug=book_slug))
+
+
+@app.post("/<person>/unlock")
+def unlock_writes(person):
+    """
+    Enter the family key on a page; unlock writes for this browser session.
+    """
+    person = get_person_or_404(person)
+    if not UPLOAD_KEY:
+        abort(403, "Writes are disabled (UPLOAD_KEY not set).")
+
+    provided = request.form.get("upload_key", "")
+    if provided != UPLOAD_KEY:
+        return redirect(request.referrer or url_for("person_home", person=person))
+
+    if not app.config.get("SECRET_KEY"):
+        # Sessions won't persist without SECRET_KEY
+        return redirect(request.referrer or url_for("person_home", person=person))
+
+    session["write_unlocked_at"] = str(time.time())
+    return redirect(request.referrer or url_for("person_home", person=person))
 
 
 # -----------------------------
-# Routes: Art gallery + uploads
+# Routes: Art gallery + uploads (still protected)
 # -----------------------------
 @app.get("/<person>/art")
 def art_gallery(person):
     person = get_person_or_404(person)
-
     data = get_person_books(person)
     books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
 
@@ -266,24 +398,9 @@ def art_gallery(person):
 
 @app.get("/<person>/art/upload")
 def art_upload_form(person):
-    """
-    Shows either:
-    - a key entry box (locked), or
-    - the upload form (unlocked)
-    """
     person = get_person_or_404(person)
-
     data = get_person_books(person)
     books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
-
-    uploads_disabled = (not UPLOAD_KEY)
-
-    # If SECRET_KEY isn't set, sessions won't work reliably.
-    # We'll still allow "manual key in the form on submit" (fallback),
-    # but unlocking won't persist.
-    session_ready = bool(app.config.get("SECRET_KEY"))
-
-    unlocked = session_upload_unlocked() if session_ready else False
 
     return render_template(
         "art_upload.html",
@@ -291,43 +408,17 @@ def art_upload_form(person):
         person_name=PEOPLE[person],
         year=data["year"],
         books=books,
-        uploads_disabled=uploads_disabled,
-        unlocked=unlocked,
-        session_ready=session_ready,
+        uploads_disabled=(not UPLOAD_KEY),
+        unlocked=session_unlocked(),
+        session_ready=bool(app.config.get("SECRET_KEY")),
     )
-
-
-@app.post("/<person>/art/unlock")
-def art_unlock(person):
-    """
-    User enters the upload key on the page. If correct, unlock uploads for this browser session.
-    """
-    person = get_person_or_404(person)
-
-    if not UPLOAD_KEY:
-        abort(403, "Uploads are disabled (UPLOAD_KEY not set).")
-
-    provided = request.form.get("upload_key", "")
-    if provided != UPLOAD_KEY:
-        # Don't leak details. Just show locked again.
-        return redirect(url_for("art_upload_form", person=person))
-
-    # Only works if SECRET_KEY is set
-    if not app.config.get("SECRET_KEY"):
-        # Still allow upload submission with key in the upload form,
-        # but session-based unlock can't persist.
-        return redirect(url_for("art_upload_form", person=person))
-
-    session["upload_unlocked_at"] = str(time.time())
-    return redirect(url_for("art_upload_form", person=person))
 
 
 @app.post("/<person>/art/upload")
 def art_upload_save(person):
     person = get_person_or_404(person)
 
-    # Require session unlock OR correct key provided (fallback)
-    require_upload_auth()
+    require_write_auth()
 
     file = request.files.get("image")
     title = request.form.get("title", "").strip()

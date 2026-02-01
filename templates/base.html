@@ -30,7 +30,7 @@
       <div class="book-links">
         {% for b in books %}
           <a class="nav sub" href="/{{ person_key }}/review/{{ b.slug }}">
-            Review: {{ b.title }}
+            {{ b.title }}
           </a>
         {% endfor %}
       </div>
