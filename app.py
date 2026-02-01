@@ -263,7 +263,7 @@ def review_view(person, book_slug):
     meta = get_or_update_book_metadata(book_slug, book["title"], book.get("author"))
 
     return render_template(
-        "review_view.html.html",
+        "review_view.html",
         person_key=person,
         person_name=PEOPLE[person],
         year=data["year"],
