@@ -1,4 +1,4 @@
-from datetime import datetime, date
+from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
@@ -15,7 +15,6 @@ class Review(db.Model):
     title = db.Column(db.String(300), nullable=False)
     author = db.Column(db.String(300), nullable=True)
 
-    # NEW:
     finished_date = db.Column(db.Date, nullable=True)
 
     rating = db.Column(db.Integer, nullable=True)  # 1–5
@@ -37,20 +36,14 @@ class Artwork(db.Model):
     person = db.Column(db.String(50), nullable=False, index=True)
 
     title = db.Column(db.String(300), nullable=True)
-    filename = db.Column(db.String(500), nullable=False)       # stored filename on disk
-    original_name = db.Column(db.String(500), nullable=True)   # original upload name
+    filename = db.Column(db.String(500), nullable=False)
+    original_name = db.Column(db.String(500), nullable=True)
     mime_type = db.Column(db.String(100), nullable=True)
 
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
 
 class BookMetadata(db.Model):
-    """
-    Cached metadata pulled from Open Library:
-      - cover_url
-      - summary
-    Cached by book_slug.
-    """
     __tablename__ = "book_metadata"
 
     id = db.Column(db.Integer, primary_key=True)
@@ -63,5 +56,16 @@ class BookMetadata(db.Model):
     cover_url = db.Column(db.String(500), nullable=True)
     summary = db.Column(db.Text, nullable=True)
 
-    source = db.Column(db.String(100), nullable=True)  # e.g., "openlibrary"
+    source = db.Column(db.String(100), nullable=True)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+
+class SiteCounter(db.Model):
+    """
+    Single-row table that stores the total visit count.
+    """
+    __tablename__ = "site_counter"
+
+    id = db.Column(db.Integer, primary_key=True)
+    visits = db.Column(db.Integer, nullable=False, default=0)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)

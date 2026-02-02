@@ -20,7 +20,7 @@ from flask import (
 from werkzeug.utils import secure_filename
 
 from people import PEOPLE
-from models import db, Review, Artwork, BookMetadata
+from models import db, Review, Artwork, BookMetadata, SiteCounter
 
 # -----------------------------
 # Paths & helpers
@@ -86,6 +86,13 @@ db.init_app(app)
 with app.app_context():
     db.create_all()
 
+    # Ensure a single counter row exists (id=1)
+    counter = SiteCounter.query.get(1)
+    if counter is None:
+        counter = SiteCounter(id=1, visits=0)
+        db.session.add(counter)
+        db.session.commit()
+
 # Upload storage root
 UPLOAD_ROOT = os.environ.get("UPLOAD_ROOT", str(BASE_DIR / "uploads"))
 
@@ -136,6 +143,50 @@ def require_write_auth():
     if provided != UPLOAD_KEY:
         abort(403, "Not allowed.")
 
+@app.context_processor
+def inject_site_counter():
+    """
+    Makes `site_visits` available in every template automatically.
+    """
+    try:
+        counter = SiteCounter.query.get(1)
+        return {"site_visits": int(counter.visits) if counter else 0}
+    except Exception:
+        return {"site_visits": 0}
+
+@app.before_request
+def count_visit_once_per_session():
+    """
+    Old-school visitor counter:
+    - counts once per browser session (more like "people visited" than page views)
+    - does NOT count static assets
+    """
+    # Don't count static files
+    if request.path.startswith("/static/") or request.path.startswith("/uploads/"):
+        return
+
+    # Only count normal page GETs
+    if request.method != "GET":
+        return
+
+    # Count only once per session
+    if session.get("counted_visit"):
+        return
+
+    session["counted_visit"] = True
+
+    try:
+        counter = SiteCounter.query.get(1)
+        if counter is None:
+            counter = SiteCounter(id=1, visits=0)
+            db.session.add(counter)
+
+        counter.visits = (counter.visits or 0) + 1
+        db.session.commit()
+    except Exception:
+        db.session.rollback()
+        # Don't break the site if counting fails
+        return
 
 # -----------------------------
 # Book metadata (Open Library)
