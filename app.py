@@ -1,6 +1,7 @@
 import os
 import re
 from datetime import datetime, date
+import json
 import requests
 from bs4 import BeautifulSoup
 from functools import wraps
@@ -186,17 +187,31 @@ with app.app_context():
 # Reading List (static for now)
 # ------------------------------------------------------------------------------
 
-READING_LISTS = {
-    "richard": [
-        {"title": "Napoleon", "slug": "napoleon"},
-        {"title": "Herzog", "slug": "herzog"},
-        {"title": "The Chosen", "slug": "the-chosen"},
-    ],
-}
+# ------------------------------------------------------------------------------
+# Reading List
+# ------------------------------------------------------------------------------
+
+def get_person_books_data(person_key):
+    path = os.path.join(BASE_DIR, "data", "reading_lists.json")
+    if not os.path.exists(path):
+        return {"year": YEAR, "books": []}
+    
+    with open(path, "r") as f:
+        full_data = json.load(f)
+    
+    return full_data.get(person_key, {"year": YEAR, "books": []})
 
 
 def get_reading_list_books(person_key):
-    return READING_LISTS.get(person_key, [])
+    # Returns list of books with slugs, for compatibility
+    data = get_person_books_data(person_key)
+    books = []
+    for b in data["books"]:
+        # Ensure slug exists
+        if "slug" not in b:
+            b["slug"] = slugify(b["title"])
+        books.append(b)
+    return books
 
 
 # ------------------------------------------------------------------------------
@@ -219,6 +234,31 @@ def person_home(person):
         person_name=person_name,
         year=YEAR,
         books=books,
+        site_visits=get_site_visits(),
+    )
+
+
+@app.get("/<person>/reading-list")
+def reading_list(person):
+    person_key, person_name = normalize_person(person)
+    data = get_person_books_data(person_key)
+    
+    # Ensure slugs
+    books = []
+    for b in data["books"]:
+        if "slug" not in b:
+            b["slug"] = slugify(b["title"])
+        books.append(b)
+
+    return render_template(
+        "reading_list.html",
+        person_key=person_key,
+        person_name=person_name,
+        year=data["year"],
+        books=books,
+        unlocked=is_unlocked(),
+        uploads_disabled=uploads_disabled(),
+        session_ready=bool(app.config.get("SECRET_KEY")),
         site_visits=get_site_visits(),
     )
 
