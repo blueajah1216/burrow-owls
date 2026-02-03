@@ -1,72 +1,99 @@
-{% extends "base.html" %}
-{% block content %}
-  <h1>Audiobooks</h1>
-  <p class="muted">Audiobook reviews for {{ person_name }}.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Burrow Owls</title>
 
-  <div style="margin-top: 14px;">
-    {% if uploads_disabled %}
-      <div class="muted small">Adding/editing is disabled (UPLOAD_KEY not set on the server).</div>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon"
+        href="{{ url_for('static', filename='owl.ico') }}">
 
-    {% elif not session_ready %}
-      <div class="panel">
-        <p><strong>Adding/editing requires sessions.</strong></p>
-        <p class="muted">Set <code>SECRET_KEY</code> in Render → Environment to enable unlock.</p>
+  <!-- Styles -->
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <a href="/">🦉 The Burrow Owls</a>
       </div>
 
-    {% elif not unlocked %}
-      <div class="panel">
-        <p><strong>Adding/editing is locked.</strong> Enter the family key to unlock on this device.</p>
-        <form method="post" action="/{{ person_key }}/unlock" class="form">
-          <label>Family Upload Key</label>
-          <input name="upload_key" type="password" required />
-          <button type="submit">Unlock editing</button>
-        </form>
+      <div class="people">
+        {% for key, name in {
+          'richard':'Richard',
+          'gillian':'Gillian',
+          'felicity':'Felicity',
+          'elisabeth':'Elisabeth',
+          'penelope':'Penelope',
+          'peregrine':'Peregrine'
+        }.items() %}
+          <a class="pill {% if person_key == key %}active{% endif %}"
+             href="/{{ key }}">{{ name }}</a>
+        {% endfor %}
       </div>
 
-    {% else %}
-      <a class="btnlink" href="/{{ person_key }}/audiobooks/new">+ New Audiobook</a>
-    {% endif %}
+      {% if person_key %}
+        <hr>
+
+        <a class="nav" href="/{{ person_key }}/reading-list">
+          {{ year }} Reading List
+        </a>
+
+        <div class="book-links">
+          {% for book in books %}
+            <a class="nav sub"
+               href="/{{ person_key }}/review/{{ book.slug }}">
+              {{ book.title }}
+            </a>
+          {% endfor %}
+        </div>
+
+        <hr>
+
+        <a class="nav" href="/{{ person_key }}/art">Art</a>
+        <a class="nav sub" href="/{{ person_key }}/art/upload">Upload Art</a>
+
+        <!-- Audiobooks as its own header -->
+        <a class="nav" href="/{{ person_key }}/audiobooks">Audiobooks</a>
+      {% endif %}
+    </aside>
+
+    <!-- Main content -->
+    <main class="content">
+      {% block content %}{% endblock %}
+
+      <!-- Footer / Visitor Counter -->
+      <footer style="
+        margin-top: 48px;
+        padding-top: 16px;
+        border-top: 1px solid var(--border);
+      ">
+        <div class="muted small"
+             style="
+               display:flex;
+               gap:10px;
+               align-items:center;
+               justify-content:center;
+             ">
+          <span>🦉</span>
+          <span>Visitors:</span>
+          <span style="
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 10px;
+            background: #fff;
+          ">
+            {{ "{:,}".format(site_visits) }}
+          </span>
+        </div>
+      </footer>
+    </main>
+
   </div>
-
-  <hr>
-
-  {% if items and items|length > 0 %}
-    <ul class="list">
-      {% for it in items %}
-        <li class="panel" style="margin-bottom: 12px;">
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            {% if it.cover_url %}
-              <img src="{{ it.cover_url }}" alt="Cover"
-                   style="width:80px; border-radius:12px; border:1px solid var(--border);" />
-            {% endif %}
-
-            <div style="flex:1;">
-              <div style="font-weight:800; font-size:16px;">
-                <a href="/{{ person_key }}/audiobooks/{{ it.id }}" style="text-decoration:none; color:inherit;">
-                  {{ it.title if it.title else "Untitled Audiobook" }}
-                </a>
-              </div>
-
-              <div class="muted small">
-                {% if it.author %}Author: {{ it.author }}{% endif %}
-                {% if it.author and it.narrator %} · {% endif %}
-                {% if it.narrator %}Narrator: {{ it.narrator }}{% endif %}
-              </div>
-
-              <div class="small" style="margin-top: 6px;">
-                <strong>Rating:</strong> {{ it.rating if it.rating else "—" }}{% if it.rating %} / 10{% endif %}
-                &nbsp; · &nbsp;
-                <strong>Listened:</strong>
-                {% if it.listened_date %}{{ it.listened_date.strftime("%b %d, %Y") }}{% else %}—{% endif %}
-              </div>
-            </div>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <div class="panel">
-      <p class="muted">No audiobooks reviewed yet.</p>
-    </div>
-  {% endif %}
-{% endblock %}
+</body>
+</html>
