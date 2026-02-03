@@ -7,6 +7,7 @@ from pathlib import Path
 from uuid import uuid4
 
 import requests
+from bs4 import BeautifulSoup
 from flask import (
     Flask,
     abort,
@@ -20,7 +21,7 @@ from flask import (
 from werkzeug.utils import secure_filename
 
 from people import PEOPLE
-from models import db, Review, Artwork, BookMetadata, SiteCounter
+from models import db, Review, Artwork, BookMetadata, SiteCounter, AudiobookReview
 
 # -----------------------------
 # Paths & helpers
@@ -32,7 +33,7 @@ ALLOWED_IMAGE_EXTENSIONS = {"png", "jpg", "jpeg", "gif", "webp"}
 
 
 def slugify(s: str) -> str:
-    s = s.lower().strip()
+    s = (s or "").lower().strip()
     s = re.sub(r"[^a-z0-9]+", "-", s)
     return s.strip("-")
 
@@ -70,11 +71,8 @@ app = Flask(__name__)
 # Set this in Render -> Environment: SECRET_KEY=<random long string>
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "")
 
-# For Render persistence (recommended):
-# - Add a Render Disk mounted at /var/data
-# - Set:
-#     DATABASE_URL=sqlite:////var/data/burrowowls.db
-#     UPLOAD_ROOT=/var/data/uploads
+# Persistent DB recommended on Render disk:
+#   DATABASE_URL=sqlite:////var/data/burrowowls.db
 app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL", "sqlite:///burrowowls.db")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
@@ -86,7 +84,7 @@ db.init_app(app)
 with app.app_context():
     db.create_all()
 
-    # Ensure a single counter row exists (id=1)
+    # Ensure single counter row exists
     counter = SiteCounter.query.get(1)
     if counter is None:
         counter = SiteCounter(id=1, visits=0)
@@ -96,7 +94,7 @@ with app.app_context():
 # Upload storage root
 UPLOAD_ROOT = os.environ.get("UPLOAD_ROOT", str(BASE_DIR / "uploads"))
 
-# Shared family key for *all write actions* (art uploads + review edits)
+# Shared family key for *all write actions* (art uploads + review edits + audiobook edits)
 UPLOAD_KEY = os.environ.get("UPLOAD_KEY", "")
 
 # How long unlock lasts in the browser
@@ -106,6 +104,40 @@ UNLOCK_TTL_SECONDS = 60 * 60 * 6  # 6 hours
 os.makedirs(UPLOAD_ROOT, exist_ok=True)
 for p in PEOPLE.keys():
     os.makedirs(os.path.join(UPLOAD_ROOT, p), exist_ok=True)
+
+
+# -----------------------------
+# Visitor counter (once per session)
+# -----------------------------
+@app.before_request
+def count_visit_once_per_session():
+    # Don't count static assets
+    if request.path.startswith("/static/") or request.path.startswith("/uploads/"):
+        return
+    if request.method != "GET":
+        return
+    if session.get("counted_visit"):
+        return
+
+    session["counted_visit"] = True
+    try:
+        counter = SiteCounter.query.get(1)
+        if counter is None:
+            counter = SiteCounter(id=1, visits=0)
+            db.session.add(counter)
+        counter.visits = (counter.visits or 0) + 1
+        db.session.commit()
+    except Exception:
+        db.session.rollback()
+
+
+@app.context_processor
+def inject_site_counter():
+    try:
+        counter = SiteCounter.query.get(1)
+        return {"site_visits": int(counter.visits) if counter else 0}
+    except Exception:
+        return {"site_visits": 0}
 
 
 # -----------------------------
@@ -124,7 +156,7 @@ def session_unlocked() -> bool:
 
 def require_write_auth():
     """
-    Require write auth for review edits and art uploads.
+    Require write auth for review edits, art uploads, audiobook edits.
     - Fail closed if UPLOAD_KEY is not set.
     - Allow if session is unlocked.
     - Otherwise allow if correct key provided in request (fallback).
@@ -143,60 +175,30 @@ def require_write_auth():
     if provided != UPLOAD_KEY:
         abort(403, "Not allowed.")
 
-@app.context_processor
-def inject_site_counter():
-    """
-    Makes `site_visits` available in every template automatically.
-    """
-    try:
-        counter = SiteCounter.query.get(1)
-        return {"site_visits": int(counter.visits) if counter else 0}
-    except Exception:
-        return {"site_visits": 0}
 
-@app.before_request
-def count_visit_once_per_session():
-    """
-    Old-school visitor counter:
-    - counts once per browser session (more like "people visited" than page views)
-    - does NOT count static assets
-    """
-    # Don't count static files
-    if request.path.startswith("/static/") or request.path.startswith("/uploads/"):
-        return
+@app.post("/<person>/unlock")
+def unlock_writes(person):
+    person = get_person_or_404(person)
 
-    # Only count normal page GETs
-    if request.method != "GET":
-        return
+    if not UPLOAD_KEY:
+        abort(403, "Writes are disabled (UPLOAD_KEY not set).")
 
-    # Count only once per session
-    if session.get("counted_visit"):
-        return
+    provided = request.form.get("upload_key", "")
+    if provided != UPLOAD_KEY:
+        return redirect(request.referrer or url_for("person_home", person=person))
 
-    session["counted_visit"] = True
+    if not app.config.get("SECRET_KEY"):
+        # Sessions won't persist without SECRET_KEY
+        return redirect(request.referrer or url_for("person_home", person=person))
 
-    try:
-        counter = SiteCounter.query.get(1)
-        if counter is None:
-            counter = SiteCounter(id=1, visits=0)
-            db.session.add(counter)
+    session["write_unlocked_at"] = str(time.time())
+    return redirect(request.referrer or url_for("person_home", person=person))
 
-        counter.visits = (counter.visits or 0) + 1
-        db.session.commit()
-    except Exception:
-        db.session.rollback()
-        # Don't break the site if counting fails
-        return
 
 # -----------------------------
 # Book metadata (Open Library)
 # -----------------------------
 def fetch_openlibrary_metadata(title: str, author: str | None):
-    """
-    Returns dict: {cover_url, summary} possibly None values.
-    Uses Open Library Search + Work details.
-    """
-    # 1) Search
     params = {"title": title}
     if author:
         params["author"] = author
@@ -216,9 +218,8 @@ def fetch_openlibrary_metadata(title: str, author: str | None):
         cover_url = f"https://covers.openlibrary.org/b/id/{cover_i}-L.jpg"
 
     summary = None
-    # 2) If there's a work key, try to fetch its description
     work_key = None
-    key = doc.get("key")  # often like "/works/OLxxxxW"
+    key = doc.get("key")
     if isinstance(key, str) and key.startswith("/works/"):
         work_key = key
 
@@ -236,14 +237,10 @@ def fetch_openlibrary_metadata(title: str, author: str | None):
 
 
 def get_or_update_book_metadata(book_slug: str, title: str, author: str | None):
-    """
-    Read cached metadata. If missing/empty, fetch from Open Library and store.
-    """
     meta = BookMetadata.query.filter_by(book_slug=book_slug).first()
     if meta and (meta.cover_url or meta.summary):
         return meta
 
-    # Create if missing
     if not meta:
         meta = BookMetadata(book_slug=book_slug, title=title, author=author, source="openlibrary")
         db.session.add(meta)
@@ -255,10 +252,102 @@ def get_or_update_book_metadata(book_slug: str, title: str, author: str | None):
         meta.source = "openlibrary"
         db.session.commit()
     except Exception:
-        # If Open Library is down, keep whatever we have and don't crash the page.
         db.session.rollback()
 
     return meta
+
+
+# -----------------------------
+# Audible metadata (best-effort)
+# -----------------------------
+def fetch_audible_metadata(audible_url: str) -> dict:
+    """
+    Best-effort metadata extraction from an Audible link.
+    Uses:
+      - OpenGraph tags (og:title, og:image, og:description)
+      - JSON-LD (application/ld+json) when present
+    Returns dict keys:
+      title, cover_url, synopsis, release_date, narrator, author
+    """
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+    r = requests.get(audible_url, headers=headers, timeout=10)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    def og(prop: str):
+        tag = soup.find("meta", attrs={"property": prop})
+        return tag.get("content").strip() if tag and tag.get("content") else None
+
+    title = og("og:title")
+    cover_url = og("og:image")
+    synopsis = og("og:description")
+
+    author = None
+    narrator = None
+    release_date = None
+
+    # JSON-LD parsing (best-effort)
+    for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
+        try:
+            data = json.loads(script.string or "")
+        except Exception:
+            continue
+
+        candidates = data if isinstance(data, list) else [data]
+        for obj in candidates:
+            if not isinstance(obj, dict):
+                continue
+
+            # Many sites put Book/CreativeWork/Product here
+            obj_type = obj.get("@type") or obj.get("type")
+
+            # Author
+            a = obj.get("author")
+            if not author and a:
+                if isinstance(a, dict):
+                    author = a.get("name")
+                elif isinstance(a, list) and a and isinstance(a[0], dict):
+                    author = a[0].get("name")
+                elif isinstance(a, str):
+                    author = a
+
+            # Date published
+            dp = obj.get("datePublished") or obj.get("releaseDate")
+            if not release_date and isinstance(dp, str):
+                release_date = dp
+
+            # Narrator sometimes appears as "readBy", "narrator", etc.
+            rb = obj.get("readBy") or obj.get("narrator")
+            if not narrator and rb:
+                if isinstance(rb, dict):
+                    narrator = rb.get("name")
+                elif isinstance(rb, list) and rb and isinstance(rb[0], dict):
+                    narrator = rb[0].get("name")
+                elif isinstance(rb, str):
+                    narrator = rb
+
+            # Description
+            desc = obj.get("description")
+            if not synopsis and isinstance(desc, str):
+                synopsis = desc
+
+            # Name/title
+            nm = obj.get("name")
+            if not title and isinstance(nm, str):
+                title = nm
+
+    return {
+        "title": title,
+        "cover_url": cover_url,
+        "synopsis": synopsis,
+        "release_date": release_date,
+        "narrator": narrator,
+        "author": author,
+    }
 
 
 # -----------------------------
@@ -332,7 +421,6 @@ def review_view(person, book_slug):
 def review_edit(person, book_slug):
     person = get_person_or_404(person)
 
-    # Require session unlock (or key in query as fallback, but we keep UI clean)
     if not session_unlocked():
         return redirect(url_for("review_view", person=person, book_slug=book_slug))
 
@@ -358,8 +446,6 @@ def review_edit(person, book_slug):
 @app.post("/<person>/review/<book_slug>/edit")
 def review_save(person, book_slug):
     person = get_person_or_404(person)
-
-    # Enforce key/session for saving edits
     require_write_auth()
 
     data = get_person_books(person)
@@ -398,32 +484,11 @@ def review_save(person, book_slug):
     review.review_text = text
     db.session.commit()
 
-    return redirect(url_for("review_view.html", person=person, book_slug=book_slug))
-
-
-@app.post("/<person>/unlock")
-def unlock_writes(person):
-    """
-    Enter the family key on a page; unlock writes for this browser session.
-    """
-    person = get_person_or_404(person)
-    if not UPLOAD_KEY:
-        abort(403, "Writes are disabled (UPLOAD_KEY not set).")
-
-    provided = request.form.get("upload_key", "")
-    if provided != UPLOAD_KEY:
-        return redirect(request.referrer or url_for("person_home", person=person))
-
-    if not app.config.get("SECRET_KEY"):
-        # Sessions won't persist without SECRET_KEY
-        return redirect(request.referrer or url_for("person_home", person=person))
-
-    session["write_unlocked_at"] = str(time.time())
-    return redirect(request.referrer or url_for("person_home", person=person))
+    return redirect(url_for("review_view", person=person, book_slug=book_slug))
 
 
 # -----------------------------
-# Routes: Art gallery + uploads (still protected)
+# Routes: Art gallery + uploads
 # -----------------------------
 @app.get("/<person>/art")
 def art_gallery(person):
@@ -468,7 +533,6 @@ def art_upload_form(person):
 @app.post("/<person>/art/upload")
 def art_upload_save(person):
     person = get_person_or_404(person)
-
     require_write_auth()
 
     file = request.files.get("image")
@@ -476,7 +540,6 @@ def art_upload_save(person):
 
     if not file or file.filename == "":
         abort(400, "No file selected")
-
     if not allowed_image_file(file.filename):
         abort(400, "Unsupported file type")
 
@@ -487,7 +550,6 @@ def art_upload_save(person):
     stored = f"{uuid4().hex}.{ext}"
     person_dir = os.path.join(UPLOAD_ROOT, person)
     os.makedirs(person_dir, exist_ok=True)
-
     save_path = os.path.join(person_dir, stored)
     file.save(save_path)
 
@@ -509,3 +571,199 @@ def uploaded_file(person, filename):
     person = get_person_or_404(person)
     directory = os.path.join(UPLOAD_ROOT, person)
     return send_from_directory(directory, filename)
+
+
+# -----------------------------
+# Routes: Audiobooks (dynamic per person)
+# -----------------------------
+@app.get("/<person>/audiobooks")
+def audiobooks_list(person):
+    person = get_person_or_404(person)
+    data = get_person_books(person)
+    books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
+
+    items = (
+        AudiobookReview.query.filter_by(person=person)
+        .order_by(AudiobookReview.listened_date.desc().nullslast(), AudiobookReview.created_at.desc())
+        .all()
+    )
+
+    return render_template(
+        "audiobooks_list.html",
+        person_key=person,
+        person_name=PEOPLE[person],
+        year=data["year"],
+        books=books,
+        items=items,
+        unlocked=session_unlocked(),
+        uploads_disabled=(not UPLOAD_KEY),
+        session_ready=bool(app.config.get("SECRET_KEY")),
+    )
+
+
+@app.get("/<person>/audiobooks/new")
+def audiobook_new(person):
+    person = get_person_or_404(person)
+    if not session_unlocked():
+        return redirect(url_for("audiobooks_list", person=person))
+
+    data = get_person_books(person)
+    books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
+
+    return render_template(
+        "audiobook_edit.html",
+        person_key=person,
+        person_name=PEOPLE[person],
+        year=data["year"],
+        books=books,
+        item=None,
+    )
+
+
+@app.post("/<person>/audiobooks/new")
+def audiobook_create(person):
+    person = get_person_or_404(person)
+    require_write_auth()
+
+    audible_url = request.form.get("audible_url", "").strip() or None
+    listened_raw = request.form.get("listened_date", "").strip()
+    listened_date = None
+    if listened_raw:
+        try:
+            listened_date = datetime.strptime(listened_raw, "%Y-%m-%d").date()
+        except ValueError:
+            listened_date = None
+
+    rating_raw = request.form.get("rating", "").strip()
+    rating = int(rating_raw) if rating_raw.isdigit() else None
+    if rating is not None and (rating < 1 or rating > 10):
+        rating = None
+
+    review_text = request.form.get("review_text", "").strip() or None
+    manual_title = request.form.get("title", "").strip() or None
+
+    item = AudiobookReview(
+        person=person,
+        audible_url=audible_url,
+        listened_date=listened_date,
+        rating=rating,
+        review_text=review_text,
+        title=manual_title,
+    )
+
+    # If audible link present, try to fetch metadata
+    if audible_url:
+        try:
+            meta = fetch_audible_metadata(audible_url)
+            item.title = meta.get("title") or item.title
+            item.cover_url = meta.get("cover_url") or item.cover_url
+            item.synopsis = meta.get("synopsis") or item.synopsis
+            item.release_date = meta.get("release_date") or item.release_date
+            item.narrator = meta.get("narrator") or item.narrator
+            item.author = meta.get("author") or item.author
+            item.source = "audible"
+        except Exception:
+            # Don't fail if Audible blocks us
+            item.source = "audible"
+
+    db.session.add(item)
+    db.session.commit()
+
+    return redirect(url_for("audiobook_view", person=person, audiobook_id=item.id))
+
+
+@app.get("/<person>/audiobooks/<int:audiobook_id>")
+def audiobook_view(person, audiobook_id: int):
+    person = get_person_or_404(person)
+    data = get_person_books(person)
+    books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
+
+    item = AudiobookReview.query.filter_by(person=person, id=audiobook_id).first()
+    if not item:
+        abort(404)
+
+    return render_template(
+        "audiobook_view.html",
+        person_key=person,
+        person_name=PEOPLE[person],
+        year=data["year"],
+        books=books,
+        item=item,
+        unlocked=session_unlocked(),
+        uploads_disabled=(not UPLOAD_KEY),
+        session_ready=bool(app.config.get("SECRET_KEY")),
+    )
+
+
+@app.get("/<person>/audiobooks/<int:audiobook_id>/edit")
+def audiobook_edit(person, audiobook_id: int):
+    person = get_person_or_404(person)
+    if not session_unlocked():
+        return redirect(url_for("audiobook_view", person=person, audiobook_id=audiobook_id))
+
+    data = get_person_books(person)
+    books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
+
+    item = AudiobookReview.query.filter_by(person=person, id=audiobook_id).first()
+    if not item:
+        abort(404)
+
+    return render_template(
+        "audiobook_edit.html",
+        person_key=person,
+        person_name=PEOPLE[person],
+        year=data["year"],
+        books=books,
+        item=item,
+    )
+
+
+@app.post("/<person>/audiobooks/<int:audiobook_id>/edit")
+def audiobook_save(person, audiobook_id: int):
+    person = get_person_or_404(person)
+    require_write_auth()
+
+    item = AudiobookReview.query.filter_by(person=person, id=audiobook_id).first()
+    if not item:
+        abort(404)
+
+    audible_url = request.form.get("audible_url", "").strip() or None
+    listened_raw = request.form.get("listened_date", "").strip()
+    listened_date = None
+    if listened_raw:
+        try:
+            listened_date = datetime.strptime(listened_raw, "%Y-%m-%d").date()
+        except ValueError:
+            listened_date = None
+
+    rating_raw = request.form.get("rating", "").strip()
+    rating = int(rating_raw) if rating_raw.isdigit() else None
+    if rating is not None and (rating < 1 or rating > 10):
+        rating = None
+
+    review_text = request.form.get("review_text", "").strip() or None
+    manual_title = request.form.get("title", "").strip() or None
+
+    item.audible_url = audible_url
+    item.listened_date = listened_date
+    item.rating = rating
+    item.review_text = review_text
+    item.title = manual_title or item.title
+
+    # If audible link present, refresh metadata
+    if audible_url:
+        try:
+            meta = fetch_audible_metadata(audible_url)
+            item.title = meta.get("title") or item.title
+            item.cover_url = meta.get("cover_url") or item.cover_url
+            item.synopsis = meta.get("synopsis") or item.synopsis
+            item.release_date = meta.get("release_date") or item.release_date
+            item.narrator = meta.get("narrator") or item.narrator
+            item.author = meta.get("author") or item.author
+            item.source = "audible"
+        except Exception:
+            item.source = "audible"
+
+    db.session.commit()
+
+    return redirect(url_for("audiobook_view", person=person, audiobook_id=item.id))

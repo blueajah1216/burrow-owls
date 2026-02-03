@@ -17,7 +17,7 @@ class Review(db.Model):
 
     finished_date = db.Column(db.Date, nullable=True)
 
-    rating = db.Column(db.Integer, nullable=True)  # 1–5
+    rating = db.Column(db.Integer, nullable=True)  # 1–10
     review_text = db.Column(db.Text, nullable=True)
 
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
@@ -61,11 +61,40 @@ class BookMetadata(db.Model):
 
 
 class SiteCounter(db.Model):
-    """
-    Single-row table that stores the total visit count.
-    """
     __tablename__ = "site_counter"
 
     id = db.Column(db.Integer, primary_key=True)
     visits = db.Column(db.Integer, nullable=False, default=0)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+
+class AudiobookReview(db.Model):
+    """
+    Per-person dynamic audiobook reviews.
+    Metadata is stored directly on the row (simpler than joins/caches).
+    """
+    __tablename__ = "audiobook_reviews"
+
+    id = db.Column(db.Integer, primary_key=True)
+
+    person = db.Column(db.String(50), nullable=False, index=True)
+
+    # User input
+    audible_url = db.Column(db.String(800), nullable=True)
+
+    listened_date = db.Column(db.Date, nullable=True)
+    rating = db.Column(db.Integer, nullable=True)  # 1–10
+    review_text = db.Column(db.Text, nullable=True)
+
+    # Auto-fetched metadata (best-effort)
+    title = db.Column(db.String(400), nullable=True)
+    author = db.Column(db.String(400), nullable=True)
+    narrator = db.Column(db.String(400), nullable=True)
+    release_date = db.Column(db.String(100), nullable=True)
+    synopsis = db.Column(db.Text, nullable=True)
+    cover_url = db.Column(db.String(800), nullable=True)
+
+    source = db.Column(db.String(100), nullable=True)  # e.g., "audible"
+
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)

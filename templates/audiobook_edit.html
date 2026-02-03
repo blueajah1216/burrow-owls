@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>{% if is_new %}New Audiobook{% else %}Edit Audiobook{% endif %}</h1>
+
+  <div class="panel" style="margin-top: 12px;">
+    <p class="muted">
+      Paste an Audible link if you have it — the site will try to pull cover, synopsis, author, narrator, and release date automatically.
+    </p>
+  </div>
+
+  <form method="post" class="form" style="margin-top: 14px;">
+    <label>Audible link (optional)</label>
+    <input name="audible_url" type="url"
+           value="{{ audiobook.audible_url if audiobook else '' }}"
+           placeholder="https://www.audible.com/pd/..." />
+
+    <label>Title</label>
+    <input name="title" type="text" required
+           value="{{ audiobook.title if audiobook else '' }}"
+           placeholder="Audiobook title" />
+
+    <label>Author (optional)</label>
+    <input name="author" type="text"
+           value="{{ audiobook.author if audiobook else '' }}"
+           placeholder="Book author" />
+
+    <label>Narrator (optional)</label>
+    <input name="narrator" type="text"
+           value="{{ audiobook.narrator if audiobook else '' }}"
+           placeholder="Narrator" />
+
+    <label>Release date (optional)</label>
+    <input name="release_date" type="date"
+           value="{{ audiobook.release_date.strftime('%Y-%m-%d') if audiobook and audiobook.release_date else '' }}" />
+
+    <label>Date listened</label>
+    <input name="listened_date" type="date"
+           value="{{ audiobook.listened_date.strftime('%Y-%m-%d') if audiobook and audiobook.listened_date else '' }}" />
+
+    <label>Rating (1–10)</label>
+    <input name="rating" type="number" min="1" max="10"
+           value="{{ audiobook.rating if audiobook else '' }}"
+           placeholder="e.g., 8" />
+
+    <label>Your review</label>
+    <textarea name="review_text" rows="12"
+      placeholder="How was the narration? pacing? audio quality? overall thoughts?">{{ audiobook.review_text if audiobook else '' }}</textarea>
+
+    <button type="submit">Save</button>
+
+    <div style="margin-top: 12px;">
+      <a class="btnlink" href="/{{ person_key }}/audiobooks">Back to audiobooks →</a>
+    </div>
+  </form>
+{% endblock %}

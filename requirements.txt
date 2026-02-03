@@ -3,3 +3,4 @@ gunicorn
 flask-sqlalchemy
 werkzeug
 requests
+beautifulsoup4

@@ -114,9 +114,17 @@ button {
 
 button:hover { opacity: 0.93; }
 
-.list { padding-left: 18px; }
-.list li { margin-bottom: 10px; }
-.list-title { font-weight: 750; }
+.panel {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  background: #fff;
+}
+
+.btnlink {
+  text-decoration: none;
+  font-weight: 800;
+}
 
 .grid {
   display: grid;
@@ -142,26 +150,7 @@ button:hover { opacity: 0.93; }
 
 .card-title { margin-top: 8px; font-weight: 750; }
 
-.panel {
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 14px;
-  background: #fff;
-}
-
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 14px;
-  margin-top: 18px;
-}
-
-.btnlink {
-  text-decoration: none;
-  font-weight: 700;
-}
-
-/* --- Review metadata layout (cover + summary) --- */
+/* Review + Audiobook metadata layout (cover + summary/synopsis) */
 .review-header { margin-bottom: 6px; }
 
 .meta-row {
