@@ -1,6 +1,8 @@
 import os
 import re
 from datetime import datetime, date
+import requests
+from bs4 import BeautifulSoup
 from functools import wraps
 
 from flask import (
@@ -356,6 +358,141 @@ def audiobook_save(person, audiobook_id):
 
     db.session.commit()
     return redirect(f"/{person_key}/audiobooks/{ab.id}")
+
+
+# ------------------------------------------------------------------------------
+# API
+# ------------------------------------------------------------------------------
+
+@app.get("/api/fetch-metadata")
+@require_unlock()
+def fetch_metadata():
+    url = request.args.get("url")
+    if not url:
+        return {"error": "Missing URL"}, 400
+
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+        }
+        resp = requests.get(url, headers=headers, timeout=10)
+        resp.raise_for_status()
+    except Exception as e:
+        return {"error": str(e)}, 500
+
+    soup = BeautifulSoup(resp.content, "html.parser")
+    data = {}
+
+    # Title
+    # <h1 ...>Title</h1>
+    h1 = soup.find("h1")
+    if h1:
+        data["title"] = h1.get_text(strip=True)
+        # Optional: remove " Audiobook" suffix if you like, or keep it
+        # data["title"] = re.sub(r" Audiobook$", "", data["title"], flags=re.IGNORECASE)
+
+    # Helper to find text by label
+    def get_text_by_label(label_text):
+        label = soup.find(string=re.compile(label_text))
+        if label:
+            # Case 1: The value is in the same text element or parent element (e.g. "By: Author Name")
+            # label.parent is usually the tag containing the text
+            parent = label.parent
+            if parent:
+                full_text = parent.get_text(" ", strip=True)
+                # "By: Matt Dinniman"
+                # Check if this text actually contains the label + value
+                if ":" in full_text:
+                    # check if the part before colon roughly matches label
+                    params = full_text.split(":", 1)
+                    if len(params) == 2:
+                        return params[1].strip()
+            
+            # Case 2: Value is in a sibling or defined container
+            container = label.find_parent(["li", "div", "tr"])
+            if container:
+                full_text = container.get_text(" ", strip=True)
+                if ":" in full_text:
+                    _, val = full_text.split(":", 1)
+                    return val.strip()
+                return full_text
+            
+            return label.find_next(string=True).strip()
+        return None
+
+    # Helper to get links helper
+    def get_links_after_label(label_pattern):
+        # Find element containing the label (e.g., "By:", "Narrated by:")
+        # Then find following <a> tags within a reasonable container
+        label = soup.find(string=re.compile(label_pattern))
+        if label:
+            # Go up to a container (li or div)
+            container = label.find_parent(["li", "div"], class_=lambda x: x != "bc-modal-header" if x else True) 
+            if container:
+                links = container.find_all("a")
+                if links:
+                    return ", ".join(l.get_text(strip=True) for l in links)
+        return None
+
+    # Author
+    # Often in <li class="authorLabel">...</li>
+    author_li = soup.find("li", class_="authorLabel")
+    if author_li:
+        data["author"] = ", ".join(t.get_text(strip=True) for t in author_li.find_all("a"))
+    else:
+        # Fallback: look for "By:" or "Author:"
+        # Start with links
+        val = get_links_after_label(r"By:|Author:")
+        if val:
+            data["author"] = val
+        else:
+            # Try text
+            data["author"] = get_text_by_label(r"By:|Author:")
+
+    # Narrator
+    # Often in <li class="narratorLabel">...</li>
+    narrator_li = soup.find("li", class_="narratorLabel")
+    if narrator_li:
+        data["narrator"] = ", ".join(t.get_text(strip=True) for t in narrator_li.find_all("a"))
+    else:
+        val = get_links_after_label(r"Narrated by:")
+        if val:
+            data["narrator"] = val
+        else:
+             data["narrator"] = get_text_by_label(r"Narrated by:")
+
+    # Release Date
+    # <li class="releaseDateLabel">...</li>
+    release_li = soup.find("li", class_="releaseDateLabel")
+    if release_li:
+        text = release_li.get_text(strip=True)
+        if ":" in text:
+            date_str = text.split(":", 1)[1].strip()
+            try:
+                # Try parsing standard US format MM-DD-YY
+                dt = datetime.strptime(date_str, "%m-%d-%y")
+                data["release_date"] = dt.strftime("%Y-%m-%d")
+            except ValueError:
+                pass
+    else:
+        # Fallback
+        label = soup.find(string=re.compile(r"Release date:"))
+        if label:
+            # Often "Release date: 05-18-21"
+            full_text = label.find_parent(["li", "div"]).get_text(strip=True) if label.find_parent(["li", "div"]) else label
+            # Extract date
+            # simple regex for date pattern
+            match = re.search(r"(\d{2}-\d{2}-\d{2,4})", full_text)
+            if match:
+                date_str = match.group(1)
+                try:
+                    # Fix 2-digit year if needed (though %y does that)
+                    dt = datetime.strptime(date_str, "%m-%d-%y" if len(date_str.split("-")[2])==2 else "%m-%d-%Y")
+                    data["release_date"] = dt.strftime("%Y-%m-%d")
+                except ValueError:
+                    pass
+
+    return data
 
 
 # ------------------------------------------------------------------------------

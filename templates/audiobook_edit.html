@@ -9,10 +9,54 @@
   </div>
 
   <form method="post" class="form" style="margin-top: 14px;">
-    <label>Audible link (optional)</label>
-    <input name="audible_url" type="url"
-           value="{{ audiobook.audible_url if audiobook else '' }}"
-           placeholder="https://www.audible.com/pd/..." />
+    <div style="display: flex; gap: 8px; align-items: flex-end;">
+      <div style="flex-grow: 1;">
+        <label>Audible link (optional)</label>
+        <input name="audible_url" type="url" id="audible_url"
+               value="{{ audiobook.audible_url if audiobook else '' }}"
+               placeholder="https://www.audible.com/pd/..." />
+      </div>
+      <button type="button" id="auto_fill_btn" style="height: 38px; margin-bottom: 2px;">Auto-fill</button>
+    </div>
+
+    <script>
+      document.getElementById("auto_fill_btn").addEventListener("click", function() {
+        const urlObj = document.getElementById("audible_url");
+        const url = urlObj.value;
+        if (!url) {
+          alert("Please enter an Audible URL first.");
+          return;
+        }
+
+        const btn = this;
+        const originalText = btn.innerText;
+        btn.innerText = "Loading...";
+        btn.disabled = true;
+
+        fetch("/api/fetch-metadata?url=" + encodeURIComponent(url))
+          .then(res => {
+            if (!res.ok) throw new Error("Failed to fetch metadata");
+            return res.json();
+          })
+          .then(data => {
+            if (data.error) {
+              alert("Error: " + data.error);
+              return;
+            }
+            if (data.title) document.querySelector('[name="title"]').value = data.title;
+            if (data.author) document.querySelector('[name="author"]').value = data.author;
+            if (data.narrator) document.querySelector('[name="narrator"]').value = data.narrator;
+            if (data.release_date) document.querySelector('[name="release_date"]').value = data.release_date;
+          })
+          .catch(err => {
+            alert(err.message);
+          })
+          .finally(() => {
+            btn.innerText = originalText;
+            btn.disabled = false;
+          });
+      });
+    </script>
 
     <label>Title</label>
     <input name="title" type="text" required
