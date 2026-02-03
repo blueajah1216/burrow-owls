@@ -1,72 +1,72 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Audiobooks</h1>
-  <p class="muted">Audiobooks reviewed by {{ person_name }}.</p>
+<h1>Audiobooks</h1>
+<p class="muted">Audiobooks reviewed by {{ person_name }}.</p>
 
-  <div style="margin-top: 14px;">
-    {% if uploads_disabled %}
-      <div class="muted small">Adding/editing is disabled (UPLOAD_KEY not set on the server).</div>
+<div style="margin-top: 14px;">
+  {% if uploads_disabled %}
+  <div class="muted small">Adding/editing is disabled (UPLOAD_KEY not set on the server).</div>
 
-    {% elif not session_ready %}
-      <div class="panel">
-        <p><strong>Adding/editing requires sessions.</strong></p>
-        <p class="muted">Set <code>SECRET_KEY</code> in Render → Environment to enable unlock.</p>
-      </div>
-
-    {% elif not unlocked %}
-      <div class="panel">
-        <p><strong>Adding/editing is locked.</strong> Enter the family key to unlock on this device for a few hours.</p>
-        <form method="post" action="/{{ person_key }}/unlock" class="form">
-          <label>Family Upload Key</label>
-          <input name="upload_key" type="password" required />
-          <button type="submit">Unlock editing</button>
-        </form>
-      </div>
-
-    {% else %}
-      <a class="btnlink" href="/{{ person_key }}/audiobooks/new">+ New Audiobook</a>
-    {% endif %}
+  {% elif not session_ready %}
+  <div class="panel">
+    <p><strong>Adding/editing requires sessions.</strong></p>
+    <p class="muted">Set <code>SECRET_KEY</code> in Render → Environment to enable unlock.</p>
   </div>
 
-  <hr>
+  {% elif not unlocked %}
+  <div class="panel">
+    <p><strong>Adding/editing is locked.</strong> Enter the family key to unlock on this device for a few hours.</p>
+    <form method="post" action="/{{ person_key }}/unlock" class="form">
+      <label>Family Upload Key</label>
+      <input name="upload_key" type="password" required />
+      <button type="submit">Unlock editing</button>
+    </form>
+  </div>
 
-  {% if audiobooks and audiobooks|length > 0 %}
-    <div class="list">
-      {% for a in audiobooks %}
-        <div class="panel" style="margin-bottom: 12px;">
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            {% if a.cover_url %}
-              <img src="{{ a.cover_url }}" alt="Cover"
-                   style="width:80px; border-radius:12px; border:1px solid var(--border);" />
-            {% endif %}
-
-            <div style="flex:1;">
-              <div style="font-weight:800; font-size:16px;">
-                <a href="/{{ person_key }}/audiobooks/{{ a.slug }}" style="text-decoration:none; color:inherit;">
-                  {{ a.title }}
-                </a>
-              </div>
-
-              <div class="muted small">
-                {% if a.author %}Author: {{ a.author }}{% endif %}
-                {% if a.author and a.narrator %} · {% endif %}
-                {% if a.narrator %}Narrator: {{ a.narrator }}{% endif %}
-              </div>
-
-              <div class="small" style="margin-top: 6px;">
-                <strong>Rating:</strong> {{ a.rating if a.rating else "—" }}{% if a.rating %} / 10{% endif %}
-                &nbsp; · &nbsp;
-                <strong>Listened:</strong>
-                {% if a.listened_date %}{{ a.listened_date.strftime("%b %d, %Y") }}{% else %}—{% endif %}
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
   {% else %}
-    <div class="panel">
-      <p class="muted">No audiobooks reviewed yet.</p>
-    </div>
+  <a class="btnlink" href="/{{ person_key }}/audiobooks/new">+ New Audiobook</a>
   {% endif %}
+</div>
+
+<hr>
+
+{% if audiobooks and audiobooks|length > 0 %}
+<div class="list">
+  {% for a in audiobooks %}
+  <div class="panel" style="margin-bottom: 12px;">
+    <div style="display:flex; gap:14px; align-items:flex-start;">
+      {% if a.cover_url %}
+      <img src="{{ a.cover_url }}" alt="Cover"
+        style="width:80px; border-radius:12px; border:1px solid var(--border);" />
+      {% endif %}
+
+      <div style="flex:1;">
+        <div style="font-weight:800; font-size:16px;">
+          <a href="/{{ person_key }}/audiobooks/{{ a.id }}" style="text-decoration:none; color:inherit;">
+            {{ a.title }}
+          </a>
+        </div>
+
+        <div class="muted small">
+          {% if a.author %}Author: {{ a.author }}{% endif %}
+          {% if a.author and a.narrator %} · {% endif %}
+          {% if a.narrator %}Narrator: {{ a.narrator }}{% endif %}
+        </div>
+
+        <div class="small" style="margin-top: 6px;">
+          <strong>Rating:</strong> {{ a.rating if a.rating else "—" }}{% if a.rating %} / 10{% endif %}
+          &nbsp; · &nbsp;
+          <strong>Listened:</strong>
+          {% if a.listened_date %}{{ a.listened_date.strftime("%b %d, %Y") }}{% else %}—{% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="panel">
+  <p class="muted">No audiobooks reviewed yet.</p>
+</div>
+{% endif %}
 {% endblock %}

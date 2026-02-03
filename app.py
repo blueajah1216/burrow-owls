@@ -117,26 +117,31 @@ def get_site_visits() -> int:
 # Models
 # ------------------------------------------------------------------------------
 
-class Audiobook(db.Model):
+class AudiobookReview(db.Model):
+    __tablename__ = "audiobook_reviews"
+
     id = db.Column(db.Integer, primary_key=True)
-    person = db.Column(db.String(32), index=True, nullable=False)
+    person = db.Column(db.String(50), nullable=False, index=True)
 
-    title = db.Column(db.String(256), nullable=False)
-    slug = db.Column(db.String(256), index=True)
+    # User input
+    audible_url = db.Column(db.String(800), nullable=True)
 
-    author = db.Column(db.String(256))
-    narrator = db.Column(db.String(256))
-    release_date = db.Column(db.Date)
+    listened_date = db.Column(db.Date, nullable=True)
+    rating = db.Column(db.Integer, nullable=True)  # 1–10
+    review_text = db.Column(db.Text, nullable=True)
 
-    listened_date = db.Column(db.Date)
-    rating = db.Column(db.Integer)
-    review_text = db.Column(db.Text)
+    # Auto-fetched metadata (best-effort)
+    title = db.Column(db.String(400), nullable=True)
+    author = db.Column(db.String(400), nullable=True)
+    narrator = db.Column(db.String(400), nullable=True)
+    release_date = db.Column(db.String(100), nullable=True)
+    synopsis = db.Column(db.Text, nullable=True)
+    cover_url = db.Column(db.String(800), nullable=True)
 
-    audible_url = db.Column(db.String(512))
-    cover_url = db.Column(db.String(512))
-    synopsis = db.Column(db.Text)
+    source = db.Column(db.String(100), nullable=True)  # e.g., "audible"
 
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 
 class Review(db.Model):
@@ -289,8 +294,8 @@ def audiobooks_list(person):
     books = get_reading_list_books(person_key)
 
     items = (
-        Audiobook.query.filter_by(person=person_key)
-        .order_by(Audiobook.listened_date.desc().nullslast())
+        AudiobookReview.query.filter_by(person=person_key)
+        .order_by(AudiobookReview.listened_date.desc().nullslast())
         .all()
     )
 
@@ -300,7 +305,7 @@ def audiobooks_list(person):
         person_name=person_name,
         year=YEAR,
         books=books,
-        items=items,
+        audiobooks=items,
         unlocked=is_unlocked(),
         uploads_disabled=uploads_disabled(),
         session_ready=bool(app.config.get("SECRET_KEY")),
@@ -335,15 +340,20 @@ def audiobook_create(person):
     person_key, _ = normalize_person(person)
 
     title = request.form["title"].strip()
-    ab = Audiobook(
+    
+    # We use AudiobookReview matching the existing schema
+    ab = AudiobookReview(
         person=person_key,
         title=title,
-        slug=slugify(title),
+        # slug is not in AudiobookReview
         author=request.form.get("author"),
         narrator=request.form.get("narrator"),
         audible_url=request.form.get("audible_url"),
         review_text=request.form.get("review_text"),
     )
+    
+    if ab.audible_url:
+        ab.source = "audible"
 
     rating = request.form.get("rating")
     if rating and rating.isdigit():
@@ -365,7 +375,7 @@ def audiobook_view(person, audiobook_id):
     person_key, person_name = normalize_person(person)
     books = get_reading_list_books(person_key)
 
-    ab = Audiobook.query.filter_by(
+    ab = AudiobookReview.query.filter_by(
         person=person_key, id=audiobook_id
     ).first_or_404()
 
@@ -389,7 +399,7 @@ def audiobook_edit(person, audiobook_id):
     person_key, person_name = normalize_person(person)
     books = get_reading_list_books(person_key)
 
-    ab = Audiobook.query.filter_by(
+    ab = AudiobookReview.query.filter_by(
         person=person_key, id=audiobook_id
     ).first_or_404()
 
@@ -413,7 +423,7 @@ def audiobook_edit(person, audiobook_id):
 def audiobook_save(person, audiobook_id):
     person_key, _ = normalize_person(person)
 
-    ab = Audiobook.query.filter_by(
+    ab = AudiobookReview.query.filter_by(
         person=person_key, id=audiobook_id
     ).first_or_404()
 
@@ -422,6 +432,9 @@ def audiobook_save(person, audiobook_id):
     ab.narrator = request.form.get("narrator")
     ab.review_text = request.form.get("review_text")
     ab.audible_url = request.form.get("audible_url")
+    
+    if ab.audible_url:
+        ab.source = "audible"
 
     rating = request.form.get("rating")
     if rating and rating.isdigit():
@@ -432,6 +445,7 @@ def audiobook_save(person, audiobook_id):
             request.form["listened_date"]
         )
 
+    ab.updated_at = datetime.utcnow()
     db.session.commit()
     return redirect(f"/{person_key}/audiobooks/{ab.id}")
 
