@@ -138,6 +138,42 @@ class Audiobook(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
 
+class Review(db.Model):
+    __tablename__ = "reviews"
+
+    id = db.Column(db.Integer, primary_key=True)
+    person = db.Column(db.String(50), nullable=False, index=True)
+    book_slug = db.Column(db.String(200), nullable=False, index=True)
+
+    title = db.Column(db.String(300), nullable=False)
+    author = db.Column(db.String(300), nullable=True)
+
+    finished_date = db.Column(db.Date, nullable=True)
+    rating = db.Column(db.Integer, nullable=True)  # 1–10
+    review_text = db.Column(db.Text, nullable=True)
+
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    __table_args__ = (
+        db.UniqueConstraint("person", "book_slug", name="uix_person_book"),
+    )
+
+
+class BookMetadata(db.Model):
+    __tablename__ = "book_metadata"
+
+    id = db.Column(db.Integer, primary_key=True)
+    book_slug = db.Column(db.String(200), nullable=False, unique=True, index=True)
+
+    title = db.Column(db.String(300), nullable=False)
+    author = db.Column(db.String(300), nullable=True)
+    cover_url = db.Column(db.String(500), nullable=True)
+    summary = db.Column(db.Text, nullable=True)
+    source = db.Column(db.String(100), nullable=True)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+
 # ------------------------------------------------------------------------------
 # Startup
 # ------------------------------------------------------------------------------
@@ -358,6 +394,103 @@ def audiobook_save(person, audiobook_id):
 
     db.session.commit()
     return redirect(f"/{person_key}/audiobooks/{ab.id}")
+
+
+# ------------------------------------------------------------------------------
+# Reviews (Reading List)
+# ------------------------------------------------------------------------------
+
+def get_book_by_slug(person_key, slug):
+    books = get_reading_list_books(person_key)
+    for b in books:
+        if b["slug"] == slug:
+            return b
+    return None
+
+
+@app.get("/<person>/review/<slug>")
+def review_view(person, slug):
+    person_key, person_name = normalize_person(person)
+    book = get_book_by_slug(person_key, slug)
+    if not book:
+        abort(404)
+
+    review = Review.query.filter_by(person=person_key, book_slug=slug).first()
+    meta = BookMetadata.query.filter_by(book_slug=slug).first()
+
+    return render_template(
+        "review_view.html",
+        person_key=person_key,
+        person_name=person_name,
+        book=book,
+        review=review,
+        meta=meta,
+        unlocked=is_unlocked(),
+        uploads_disabled=uploads_disabled(),
+        session_ready=bool(app.config.get("SECRET_KEY")),
+        site_visits=get_site_visits(),
+    )
+
+
+@app.get("/<person>/review/<slug>/edit")
+@require_unlock()
+def review_edit(person, slug):
+    person_key, person_name = normalize_person(person)
+    book = get_book_by_slug(person_key, slug)
+    if not book:
+        abort(404)
+
+    review = Review.query.filter_by(person=person_key, book_slug=slug).first()
+
+    return render_template(
+        "review_edit.html",
+        person_key=person_key,
+        person_name=person_name,
+        book=book,
+        review=review,
+        unlocked=True,
+        uploads_disabled=uploads_disabled(),
+        session_ready=True,
+        site_visits=get_site_visits(),
+    )
+
+
+@app.post("/<person>/review/<slug>/edit")
+@require_unlock()
+def review_save(person, slug):
+    person_key, _ = normalize_person(person)
+    book = get_book_by_slug(person_key, slug)
+    if not book:
+        abort(404)
+
+    review = Review.query.filter_by(person=person_key, book_slug=slug).first()
+    if not review:
+        review = Review(
+            person=person_key,
+            book_slug=slug,
+            title=book["title"],
+            # author could be passed in if reading list had it, but simple dict doesn't have it
+        )
+        db.session.add(review)
+
+    review.review_text = request.form.get("review_text")
+    
+    rating = request.form.get("rating")
+    if rating and rating.isdigit():
+        review.rating = int(rating)
+    else:
+        review.rating = None
+
+    if request.form.get("finished_date"):
+        try:
+            review.finished_date = date.fromisoformat(request.form["finished_date"])
+        except ValueError:
+            pass
+    
+    review.updated_at = datetime.utcnow()
+    db.session.commit()
+
+    return redirect(f"/{person_key}/review/{slug}")
 
 
 # ------------------------------------------------------------------------------
