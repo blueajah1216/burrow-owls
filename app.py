@@ -143,6 +143,19 @@ class AudiobookReview(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
+    @property
+    def release_date_dt(self):
+        if not self.release_date:
+            return None
+        try:
+            return datetime.strptime(str(self.release_date), "%Y-%m-%d").date()
+        except (ValueError, TypeError):
+            try: 
+                 # Handle potential fallback format if scraper saved it weirdly
+                 return datetime.strptime(str(self.release_date), "%m-%d-%Y").date()
+            except:
+                return None
+
 
 class Review(db.Model):
     __tablename__ = "reviews"
