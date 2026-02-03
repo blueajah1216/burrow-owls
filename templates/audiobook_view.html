@@ -1,82 +1,102 @@
 {% extends "base.html" %}
 {% block content %}
-  <div class="review-header">
-    <h1 class="book-title">{{ audiobook.title }}</h1>
-    <div class="muted">
-      {% if audiobook.author %}Author: {{ audiobook.author }}{% endif %}
-      {% if audiobook.author and audiobook.narrator %} · {% endif %}
-      {% if audiobook.narrator %}Narrator: {{ audiobook.narrator }}{% endif %}
-    </div>
-    {% if audiobook.release_date %}
-      <div class="muted small">Released: {{ audiobook.release_date.strftime("%b %d, %Y") }}</div>
-    {% endif %}
-  </div>
+  {% if not audiobook %}
+    <h1>Audiobook not found</h1>
+    <p class="muted">That audiobook doesn’t exist (or wasn’t passed into the template).</p>
+    <p><a class="btnlink" href="/{{ person_key }}/audiobooks">Back to audiobooks →</a></p>
+  {% else %}
+    <div class="review-header">
+      <h1 class="book-title">{{ audiobook.title or "Untitled Audiobook" }}</h1>
 
-  <div class="meta-row">
-    {% if audiobook.cover_url %}
-      <div class="cover">
-        <img src="{{ audiobook.cover_url }}" alt="Cover image">
+      <div class="muted">
+        {% if audiobook.author %}Author: {{ audiobook.author }}{% endif %}
+        {% if audiobook.author and audiobook.narrator %} · {% endif %}
+        {% if audiobook.narrator %}Narrator: {{ audiobook.narrator }}{% endif %}
       </div>
-    {% endif %}
 
-    <div class="meta-text">
-      <h2>Synopsis</h2>
-      {% if audiobook.synopsis %}
-        <p>{{ audiobook.synopsis }}</p>
+      {% if audiobook.release_date %}
+        <div class="muted small">Released: {{ audiobook.release_date.strftime("%b %d, %Y") }}</div>
+      {% endif %}
+    </div>
+
+    <div class="meta-row">
+      {% if audiobook.cover_url %}
+        <div class="cover">
+          <img src="{{ audiobook.cover_url }}" alt="Cover image">
+        </div>
+      {% endif %}
+
+      <div class="meta-text">
+        <h2>Synopsis</h2>
+        {% if audiobook.synopsis %}
+          <p>{{ audiobook.synopsis }}</p>
+        {% else %}
+          <p class="muted">No synopsis available yet.</p>
+        {% endif %}
+
+        {% if audiobook.audible_url %}
+          <p style="margin-top: 10px;">
+            <a class="btnlink" href="{{ audiobook.audible_url }}" target="_blank" rel="noopener noreferrer">
+              View on Audible →
+            </a>
+          </p>
+        {% endif %}
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>{{ person_name }}’s Review</h2>
+
+    <div class="panel">
+      <div>
+        <strong>Rating:</strong>
+        {{ audiobook.rating if audiobook.rating else "—" }}{% if audiobook.rating %} / 10{% endif %}
+      </div>
+
+      <div>
+        <strong>Date listened:</strong>
+        {% if audiobook.listened_date %}
+          {{ audiobook.listened_date.strftime("%b %d, %Y") }}
+        {% else %}
+          —
+        {% endif %}
+      </div>
+
+      <div style="margin-top: 12px; white-space: pre-wrap;">
+        {{ audiobook.review_text if audiobook.review_text else "—" }}
+      </div>
+    </div>
+
+    <div style="margin-top: 14px;">
+      {% if uploads_disabled %}
+        <div class="muted small">Editing is disabled (UPLOAD_KEY not set on the server).</div>
+
+      {% elif not session_ready %}
+        <div class="panel">
+          <p><strong>Editing requires sessions.</strong></p>
+          <p class="muted">Set <code>SECRET_KEY</code> in Render → Environment so “unlock” works.</p>
+        </div>
+
+      {% elif not unlocked %}
+        <div class="panel">
+          <p><strong>Editing is locked.</strong> Enter the family key to unlock edits on this device.</p>
+          <form method="post" action="/{{ person_key }}/unlock" class="form">
+            <label>Family Upload Key</label>
+            <input name="upload_key" type="password" required />
+            <button type="submit">Unlock editing</button>
+          </form>
+        </div>
+
       {% else %}
-        <p class="muted">No synopsis available yet.</p>
-      {% endif %}
-
-      {% if audiobook.audible_url %}
-        <p style="margin-top: 10px;">
-          <a class="btnlink" href="{{ audiobook.audible_url }}" target="_blank" rel="noopener noreferrer">
-            View on Audible →
-          </a>
-        </p>
+        <a class="btnlink" href="/{{ person_key }}/audiobooks/{{ audiobook.id }}/edit">
+          Edit audiobook →
+        </a>
       {% endif %}
     </div>
-  </div>
 
-  <hr>
-
-  <h2>{{ person_name }}’s Review</h2>
-
-  <div class="panel">
-    <div>
-      <strong>Rating:</strong> {{ audiobook.rating if audiobook.rating else "—" }}{% if audiobook.rating %} / 10{% endif %}
+    <div style="margin-top: 14px;">
+      <a class="btnlink" href="/{{ person_key }}/audiobooks">Back to audiobooks →</a>
     </div>
-    <div>
-      <strong>Date listened:</strong>
-      {% if audiobook.listened_date %}{{ audiobook.listened_date.strftime("%b %d, %Y") }}{% else %}—{% endif %}
-    </div>
-
-    <div style="margin-top: 12px; white-space: pre-wrap;">
-      {{ audiobook.review_text if audiobook.review_text else "—" }}
-    </div>
-  </div>
-
-  <div style="margin-top: 14px;">
-    {% if uploads_disabled %}
-      <div class="muted small">Editing is disabled (UPLOAD_KEY not set on the server).</div>
-
-    {% elif not session_ready %}
-      <div class="panel">
-        <p><strong>Editing requires sessions.</strong></p>
-        <p class="muted">Set <code>SECRET_KEY</code> in Render → Environment so “unlock” works.</p>
-      </div>
-
-    {% elif not unlocked %}
-      <div class="panel">
-        <p><strong>Editing is locked.</strong> Enter the family key to unlock edits on this device for a few hours.</p>
-        <form method="post" action="/{{ person_key }}/unlock" class="form">
-          <label>Family Upload Key</label>
-          <input name="upload_key" type="password" required />
-          <button type="submit">Unlock editing</button>
-        </form>
-      </div>
-
-    {% else %}
-      <a class="btnlink" href="/{{ person_key }}/audiobooks/{{ audiobook.slug }}/edit">Edit audiobook →</a>
-    {% endif %}
-  </div>
+  {% endif %}
 {% endblock %}
