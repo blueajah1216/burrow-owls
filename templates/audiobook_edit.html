@@ -1,99 +1,93 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>{% if is_new %}New Audiobook{% else %}Edit Audiobook{% endif %}</h1>
+<h1>{% if is_new %}New Audiobook{% else %}Edit Audiobook{% endif %}</h1>
 
-  <div class="panel" style="margin-top: 12px;">
-    <p class="muted">
-      Paste an Audible link if you have it — the site will try to pull cover, synopsis, author, narrator, and release date automatically.
-    </p>
+<div class="panel" style="margin-top: 12px;">
+  <p class="muted">
+    Paste an Audible link if you have it — the site will try to pull cover, synopsis, author, narrator, and release date
+    automatically.
+  </p>
+</div>
+
+<form method="post" class="form" style="margin-top: 14px;">
+  <div style="display: flex; gap: 8px; align-items: flex-end;">
+    <div style="flex-grow: 1;">
+      <label>Audible link (optional)</label>
+      <input name="audible_url" type="url" id="audible_url" value="{{ audiobook.audible_url if audiobook else '' }}"
+        placeholder="https://www.audible.com/pd/..." />
+    </div>
+    <button type="button" id="auto_fill_btn" style="height: 38px; margin-bottom: 2px;">Auto-fill</button>
   </div>
 
-  <form method="post" class="form" style="margin-top: 14px;">
-    <div style="display: flex; gap: 8px; align-items: flex-end;">
-      <div style="flex-grow: 1;">
-        <label>Audible link (optional)</label>
-        <input name="audible_url" type="url" id="audible_url"
-               value="{{ audiobook.audible_url if audiobook else '' }}"
-               placeholder="https://www.audible.com/pd/..." />
-      </div>
-      <button type="button" id="auto_fill_btn" style="height: 38px; margin-bottom: 2px;">Auto-fill</button>
-    </div>
+  <script>
+    document.getElementById("auto_fill_btn").addEventListener("click", function () {
+      const urlObj = document.getElementById("audible_url");
+      const url = urlObj.value;
+      if (!url) {
+        alert("Please enter an Audible URL first.");
+        return;
+      }
 
-    <script>
-      document.getElementById("auto_fill_btn").addEventListener("click", function() {
-        const urlObj = document.getElementById("audible_url");
-        const url = urlObj.value;
-        if (!url) {
-          alert("Please enter an Audible URL first.");
-          return;
-        }
+      const btn = this;
+      const originalText = btn.innerText;
+      btn.innerText = "Loading...";
+      btn.disabled = true;
 
-        const btn = this;
-        const originalText = btn.innerText;
-        btn.innerText = "Loading...";
-        btn.disabled = true;
+      fetch("/api/fetch-metadata?url=" + encodeURIComponent(url))
+        .then(res => {
+          if (!res.ok) throw new Error("Failed to fetch metadata");
+          return res.json();
+        })
+        .then(data => {
+          if (data.error) {
+            alert("Error: " + data.error);
+            return;
+          }
+          if (data.title) document.querySelector('[name="title"]').value = data.title;
+          if (data.author) document.querySelector('[name="author"]').value = data.author;
+          if (data.narrator) document.querySelector('[name="narrator"]').value = data.narrator;
+          if (data.release_date) document.querySelector('[name="release_date"]').value = data.release_date;
+        })
+        .catch(err => {
+          alert(err.message);
+        })
+        .finally(() => {
+          btn.innerText = originalText;
+          btn.disabled = false;
+        });
+    });
+  </script>
 
-        fetch("/api/fetch-metadata?url=" + encodeURIComponent(url))
-          .then(res => {
-            if (!res.ok) throw new Error("Failed to fetch metadata");
-            return res.json();
-          })
-          .then(data => {
-            if (data.error) {
-              alert("Error: " + data.error);
-              return;
-            }
-            if (data.title) document.querySelector('[name="title"]').value = data.title;
-            if (data.author) document.querySelector('[name="author"]').value = data.author;
-            if (data.narrator) document.querySelector('[name="narrator"]').value = data.narrator;
-            if (data.release_date) document.querySelector('[name="release_date"]').value = data.release_date;
-          })
-          .catch(err => {
-            alert(err.message);
-          })
-          .finally(() => {
-            btn.innerText = originalText;
-            btn.disabled = false;
-          });
-      });
-    </script>
+  <label>Title</label>
+  <input name="title" type="text" required value="{{ audiobook.title if audiobook else '' }}"
+    placeholder="Audiobook title" />
 
-    <label>Title</label>
-    <input name="title" type="text" required
-           value="{{ audiobook.title if audiobook else '' }}"
-           placeholder="Audiobook title" />
+  <label>Author (optional)</label>
+  <input name="author" type="text" value="{{ audiobook.author if audiobook else '' }}" placeholder="Book author" />
 
-    <label>Author (optional)</label>
-    <input name="author" type="text"
-           value="{{ audiobook.author if audiobook else '' }}"
-           placeholder="Book author" />
+  <label>Narrator (optional)</label>
+  <input name="narrator" type="text" value="{{ audiobook.narrator if audiobook else '' }}" placeholder="Narrator" />
 
-    <label>Narrator (optional)</label>
-    <input name="narrator" type="text"
-           value="{{ audiobook.narrator if audiobook else '' }}"
-           placeholder="Narrator" />
+  <label>Release date (optional)</label>
+  <input name="release_date" type="date"
+    value="{{ audiobook.release_date_dt.strftime('%Y-%m-%d') if audiobook and audiobook.release_date_dt else '' }}" />
 
-    <label>Release date (optional)</label>
-    <input name="release_date" type="date"
-           value="{{ audiobook.release_date.strftime('%Y-%m-%d') if audiobook and audiobook.release_date else '' }}" />
+  <label>Date listened</label>
+  <input name="listened_date" type="date"
+    value="{{ audiobook.listened_date.strftime('%Y-%m-%d') if audiobook and audiobook.listened_date else '' }}" />
 
-    <label>Date listened</label>
-    <input name="listened_date" type="date"
-           value="{{ audiobook.listened_date.strftime('%Y-%m-%d') if audiobook and audiobook.listened_date else '' }}" />
+  <label>Rating (1–10)</label>
+  <input name="rating" type="number" min="1" max="10" value="{{ audiobook.rating if audiobook else '' }}"
+    placeholder="e.g., 8" />
 
-    <label>Rating (1–10)</label>
-    <input name="rating" type="number" min="1" max="10"
-           value="{{ audiobook.rating if audiobook else '' }}"
-           placeholder="e.g., 8" />
+  <label>Your review</label>
+  <textarea name="review_text" rows="12"
+    placeholder="How was the narration? pacing? audio quality? overall thoughts?">{{ audiobook.review_text if audiobook else '' }}</textarea>
 
-    <label>Your review</label>
-    <textarea name="review_text" rows="12"
-      placeholder="How was the narration? pacing? audio quality? overall thoughts?">{{ audiobook.review_text if audiobook else '' }}</textarea>
+  <button type="submit">Save</button>
 
-    <button type="submit">Save</button>
-
-    <div style="margin-top: 12px;">
-      <a class="btnlink" href="/{{ person_key }}/audiobooks">Back to audiobooks →</a>
-    </div>
-  </form>
+  <div style="margin-top: 12px;">
+    <a class="btnlink" href="/{{ person_key }}/audiobooks">Back to audiobooks →</a>
+  </div>
+</form>
 {% endblock %}
