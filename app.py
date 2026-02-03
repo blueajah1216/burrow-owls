@@ -334,7 +334,7 @@ def review_edit(person, book_slug):
 
     # Require session unlock (or key in query as fallback, but we keep UI clean)
     if not session_unlocked():
-        return redirect(url_for("review_view.html", person=person, book_slug=book_slug))
+        return redirect(url_for("review_view", person=person, book_slug=book_slug))
 
     data = get_person_books(person)
     books = [{**b, "slug": slugify(b["title"])} for b in data["books"]]
@@ -370,7 +370,7 @@ def review_save(person, book_slug):
 
     rating_raw = request.form.get("rating", "").strip()
     rating = int(rating_raw) if rating_raw.isdigit() else None
-    if rating is not None and (rating < 1 or rating > 5):
+    if rating is not None and (rating < 1 or rating > 10):
         rating = None
 
     finished_raw = request.form.get("finished_date", "").strip()
