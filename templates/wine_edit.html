@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 style="margin:0 0 4px;">
+  {% if is_new %}Add Wine{% else %}Edit Wine{% endif %}
+</h1>
+<p class="muted" style="margin:0 0 24px;">
+  {% if is_new %}Log a new bottle to your wine journal.{% else %}Update your notes for {{ wine.name }}.{% endif %}
+</p>
+
+<form method="post"
+      action="{% if is_new %}/wine/new{% else %}/wine/{{ wine.id }}/edit{% endif %}"
+      class="form"
+      style="max-width: 560px;">
+
+  <label>Wine name <span style="color:#c00;">*</span></label>
+  <input name="name" type="text" required placeholder="e.g. Château Margaux"
+         value="{{ wine.name if wine else '' }}" />
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px;">
+    <div>
+      <label style="display:block; font-weight:650;">Vintage</label>
+      <input name="vintage" type="text" placeholder="e.g. 2019" maxlength="10"
+             style="margin-top:6px;"
+             value="{{ wine.vintage if wine and wine.vintage else '' }}" />
+    </div>
+    <div>
+      <label style="display:block; font-weight:650;">Date tasted</label>
+      <input name="tasted_date" type="date"
+             style="margin-top:6px;"
+             value="{{ wine.tasted_date.isoformat() if wine and wine.tasted_date else '' }}" />
+    </div>
+  </div>
+
+  <label>Region / Appellation</label>
+  <input name="region" type="text" placeholder="e.g. Bordeaux, France"
+         value="{{ wine.region if wine and wine.region else '' }}" />
+
+  <label>Grape / Varietal</label>
+  <input name="varietal" type="text" placeholder="e.g. Cabernet Sauvignon"
+         value="{{ wine.varietal if wine and wine.varietal else '' }}" />
+
+  {# ── Interactive star rating ── #}
+  <label>Rating (out of 10)</label>
+  <div class="stars-input" id="stars-input" role="group" aria-label="Rating">
+    {% for i in range(1, 11) %}
+    <span class="star"
+          data-value="{{ i }}"
+          title="{{ i }} / 10"
+          tabindex="0"
+          role="radio"
+          aria-label="{{ i }} star{{ '' if i == 1 else 's' }}">★</span>
+    {% endfor %}
+  </div>
+  <input type="hidden" name="rating" id="rating-input"
+         value="{{ wine.rating if wine and wine.rating else '' }}" />
+  <div class="small muted" id="rating-label" style="margin-top:2px;">
+    {% if wine and wine.rating %}{{ wine.rating }} / 10 selected{% else %}No rating{% endif %}
+  </div>
+
+  <label>Tasting notes</label>
+  <textarea name="notes" rows="5"
+            placeholder="Describe the aromas, flavours, finish…">{{ wine.notes if wine and wine.notes else '' }}</textarea>
+
+  <div style="display:flex; gap:10px; align-items:center; margin-top:20px;">
+    <button type="submit">
+      {% if is_new %}Save wine{% else %}Save changes{% endif %}
+    </button>
+    <a href="{% if is_new %}/wine{% else %}/wine/{{ wine.id }}{% endif %}"
+       style="color:var(--muted); text-decoration:none; font-size:14px;">Cancel</a>
+  </div>
+
+</form>
+
+<script>
+(function () {
+  const input = document.getElementById('rating-input');
+  const label = document.getElementById('rating-label');
+  const stars = document.querySelectorAll('#stars-input .star');
+  let current = parseInt(input.value) || 0;
+
+  function paint(n) {
+    stars.forEach(s => {
+      const v = parseInt(s.dataset.value);
+      s.classList.toggle('active', v <= n);
+    });
+  }
+
+  function setRating(n) {
+    current = n;
+    input.value = n;
+    label.textContent = n + ' / 10 selected';
+    paint(n);
+  }
+
+  stars.forEach(s => {
+    const v = parseInt(s.dataset.value);
+    s.addEventListener('mouseenter', () => paint(v));
+    s.addEventListener('mouseleave', () => paint(current));
+    s.addEventListener('click', () => setRating(v));
+    s.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setRating(v); }
+    });
+  });
+
+  paint(current);
+})();
+</script>
+
+{% endblock %}

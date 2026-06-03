@@ -168,6 +168,88 @@ button:hover { opacity: 0.93; }
 
 .meta-text { flex: 1; }
 
+/* Star rating — interactive (edit form) */
+.stars-input {
+  display: flex;
+  gap: 3px;
+  margin: 8px 0;
+}
+.stars-input .star {
+  font-size: 34px;
+  cursor: pointer;
+  color: #d1d5db;
+  line-height: 1;
+  transition: color 0.1s, transform 0.08s;
+  user-select: none;
+}
+.stars-input .star:hover,
+.stars-input .star.active {
+  color: #d97706;
+  transform: scale(1.12);
+}
+
+/* Star display — read-only */
+.stars-display {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+}
+.stars-display .star-icon {
+  font-size: 15px;
+  color: #d1d5db;
+}
+.stars-display .star-icon.filled {
+  color: #d97706;
+}
+.stars-display .star-label {
+  font-size: 12px;
+  color: #666;
+  margin-left: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Wine cards */
+.wine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.wine-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 20px;
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+.wine-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border-color: #c8b;
+}
+.wine-card-name {
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.wine-card-meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.wine-card-notes {
+  font-size: 13px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* Mobile friendliness */
 @media (max-width: 860px) {
   .layout { flex-direction: column; }

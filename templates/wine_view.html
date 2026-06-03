@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block content %}
+
+{# ── Back link ── #}
+<a href="/wine" style="text-decoration:none; color:var(--muted); font-size:13px;">
+  ← Wine Journal
+</a>
+
+{# ── Header ── #}
+<h1 style="margin: 10px 0 2px;">{{ wine.name }}</h1>
+
+<div class="muted small" style="margin-bottom:16px;">
+  {% set parts = [] %}
+  {% if wine.vintage %}{% set _ = parts.append(wine.vintage) %}{% endif %}
+  {% if wine.varietal %}{% set _ = parts.append(wine.varietal) %}{% endif %}
+  {% if wine.region %}{% set _ = parts.append(wine.region) %}{% endif %}
+  {{ parts | join(' · ') or '' }}
+</div>
+
+{# ── Star display ── #}
+<div style="margin-bottom:18px;">
+  <span class="stars-display" style="font-size:0;">
+    {% for i in range(1, 11) %}
+      <span class="star-icon {% if wine.rating and i <= wine.rating %}filled{% endif %}"
+            style="font-size:26px;">★</span>
+    {% endfor %}
+  </span>
+  {% if wine.rating %}
+    <span style="margin-left:10px; font-size:22px; font-weight:800;">{{ wine.rating }}<span style="font-size:14px; font-weight:500; color:var(--muted);"> / 10</span></span>
+  {% else %}
+    <span class="muted small" style="margin-left:8px;">No rating</span>
+  {% endif %}
+</div>
+
+{# ── Date tasted ── #}
+{% if wine.tasted_date %}
+<div class="small muted" style="margin-bottom: 20px;">
+  Tasted on {{ wine.tasted_date.strftime("%B %d, %Y") }}
+</div>
+{% endif %}
+
+{# ── Tasting notes ── #}
+{% if wine.notes %}
+<div class="panel" style="max-width:640px; margin-bottom:24px; line-height:1.7; white-space:pre-wrap;">{{ wine.notes }}</div>
+{% endif %}
+
+{# ── Actions (unlocked) ── #}
+{% if uploads_disabled %}
+  {# nothing #}
+{% elif not session_ready %}
+  {# nothing #}
+{% elif unlocked %}
+  <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+    <a href="/wine/{{ wine.id }}/edit"
+       style="display:inline-block; padding:8px 16px; border:1px solid #111;
+              border-radius:10px; text-decoration:none; font-weight:700; font-size:14px; color:#111;">
+      Edit
+    </a>
+    <form method="post" action="/wine/{{ wine.id }}/delete"
+          onsubmit="return confirm('Delete this wine entry?');"
+          style="display:inline;">
+      <button type="submit"
+              style="background:transparent; border:1px solid #c00; color:#c00;
+                     padding:8px 16px; border-radius:10px; font-weight:700;">
+        Delete
+      </button>
+    </form>
+  </div>
+{% else %}
+  <div class="panel" style="max-width:400px;">
+    <p><strong>Locked.</strong> Enter the family key to edit.</p>
+    <form method="post" action="/unlock" class="form">
+      <label>Family key</label>
+      <input name="upload_key" type="password" required autocomplete="current-password" />
+      <button type="submit">Unlock</button>
+    </form>
+  </div>
+{% endif %}
+
+<div class="small muted" style="margin-top:32px;">
+  Added {{ wine.created_at.strftime("%B %d, %Y") }}
+  {% if wine.updated_at and wine.updated_at != wine.created_at %}
+    · Updated {{ wine.updated_at.strftime("%B %d, %Y") }}
+  {% endif %}
+</div>
+
+{% endblock %}

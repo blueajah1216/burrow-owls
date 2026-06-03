@@ -117,6 +117,21 @@ def get_site_visits() -> int:
 # Models
 # ------------------------------------------------------------------------------
 
+class WineReview(db.Model):
+    __tablename__ = "wine_reviews"
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(300), nullable=False)
+    vintage = db.Column(db.String(10), nullable=True)
+    region = db.Column(db.String(200), nullable=True)
+    varietal = db.Column(db.String(200), nullable=True)
+    rating = db.Column(db.Integer, nullable=True)  # 1–10
+    notes = db.Column(db.Text, nullable=True)
+    tasted_date = db.Column(db.Date, nullable=True)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+
 class AudiobookReview(db.Model):
     __tablename__ = "audiobook_reviews"
 
@@ -295,6 +310,118 @@ def unlock(person):
         session["unlocked"] = True
 
     return redirect(request.referrer or f"/{person}")
+
+
+@app.post("/unlock")
+def unlock_global():
+    if uploads_disabled():
+        abort(403)
+
+    key = request.form.get("upload_key", "")
+    if key == UPLOAD_KEY:
+        session["unlocked"] = True
+
+    return redirect(request.referrer or "/wine")
+
+
+# ------------------------------------------------------------------------------
+# Wine
+# ------------------------------------------------------------------------------
+
+def _wine_ctx():
+    return dict(person_key=None, year=YEAR, books=[], site_visits=get_site_visits())
+
+
+@app.get("/wine")
+def wine_list():
+    wines = (
+        WineReview.query
+        .order_by(WineReview.tasted_date.desc().nullslast(), WineReview.created_at.desc())
+        .all()
+    )
+    return render_template(
+        "wine_list.html",
+        wines=wines,
+        unlocked=is_unlocked(),
+        uploads_disabled=uploads_disabled(),
+        session_ready=bool(app.config.get("SECRET_KEY")),
+        **_wine_ctx(),
+    )
+
+
+@app.get("/wine/new")
+@require_unlock()
+def wine_new():
+    return render_template("wine_edit.html", wine=None, is_new=True,
+                           unlocked=True, uploads_disabled=uploads_disabled(),
+                           session_ready=True, **_wine_ctx())
+
+
+@app.post("/wine/new")
+@require_unlock()
+def wine_create():
+    w = WineReview(
+        name=request.form["name"].strip(),
+        vintage=request.form.get("vintage") or None,
+        region=request.form.get("region") or None,
+        varietal=request.form.get("varietal") or None,
+        notes=request.form.get("notes") or None,
+    )
+    rating = request.form.get("rating")
+    if rating and rating.isdigit():
+        w.rating = int(rating)
+    if request.form.get("tasted_date"):
+        w.tasted_date = date.fromisoformat(request.form["tasted_date"])
+    db.session.add(w)
+    db.session.commit()
+    return redirect(f"/wine/{w.id}")
+
+
+@app.get("/wine/<int:wine_id>")
+def wine_view(wine_id):
+    w = WineReview.query.get_or_404(wine_id)
+    return render_template(
+        "wine_view.html", wine=w,
+        unlocked=is_unlocked(),
+        uploads_disabled=uploads_disabled(),
+        session_ready=bool(app.config.get("SECRET_KEY")),
+        **_wine_ctx(),
+    )
+
+
+@app.get("/wine/<int:wine_id>/edit")
+@require_unlock()
+def wine_edit_get(wine_id):
+    w = WineReview.query.get_or_404(wine_id)
+    return render_template("wine_edit.html", wine=w, is_new=False,
+                           unlocked=True, uploads_disabled=uploads_disabled(),
+                           session_ready=True, **_wine_ctx())
+
+
+@app.post("/wine/<int:wine_id>/edit")
+@require_unlock()
+def wine_save(wine_id):
+    w = WineReview.query.get_or_404(wine_id)
+    w.name = request.form["name"].strip()
+    w.vintage = request.form.get("vintage") or None
+    w.region = request.form.get("region") or None
+    w.varietal = request.form.get("varietal") or None
+    w.notes = request.form.get("notes") or None
+    rating = request.form.get("rating")
+    w.rating = int(rating) if rating and rating.isdigit() else None
+    w.tasted_date = date.fromisoformat(request.form["tasted_date"]) if request.form.get("tasted_date") else None
+    w.updated_at = datetime.utcnow()
+    db.session.commit()
+    return redirect(f"/wine/{w.id}")
+
+
+@app.post("/wine/<int:wine_id>/delete")
+@require_unlock()
+def wine_delete(wine_id):
+    w = WineReview.query.get_or_404(wine_id)
+    db.session.delete(w)
+    db.session.commit()
+    return redirect("/wine")
 
 
 # ------------------------------------------------------------------------------

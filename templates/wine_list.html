@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+
+{# ── Reusable read-only star display ── #}
+{% macro stars(rating) %}
+<span class="stars-display">
+  {% for i in range(1, 11) %}
+    <span class="star-icon {% if rating and i <= rating %}filled{% endif %}">★</span>
+  {% endfor %}
+  {% if rating %}
+    <span class="star-label">{{ rating }}/10</span>
+  {% endif %}
+</span>
+{% endmacro %}
+
+<div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;">
+  <h1 style="margin:0;">🍷 Wine Journal</h1>
+  <span class="muted small">{{ wines|length }} wine{{ '' if wines|length == 1 else 's' }} logged</span>
+</div>
+<p class="muted" style="margin-top:6px;">Wines tasted, rated, and remembered.</p>
+
+{# ── Unlock / add button ── #}
+<div style="margin-top: 14px;">
+  {% if uploads_disabled %}
+    <div class="muted small">Adding/editing is disabled (UPLOAD_KEY not set on the server).</div>
+  {% elif not session_ready %}
+    <div class="panel">
+      <p><strong>Adding/editing requires sessions.</strong></p>
+      <p class="muted">Set <code>SECRET_KEY</code> in the environment to enable unlock.</p>
+    </div>
+  {% elif not unlocked %}
+    <div class="panel">
+      <p><strong>Locked.</strong> Enter the family key to add or edit wines.</p>
+      <form method="post" action="/unlock" class="form">
+        <label>Family key</label>
+        <input name="upload_key" type="password" required autocomplete="current-password" />
+        <button type="submit">Unlock</button>
+      </form>
+    </div>
+  {% else %}
+    <a class="btnlink" href="/wine/new"
+       style="display:inline-block; padding:10px 18px; background:#7c2d12; color:#fff;
+              border-radius:12px; font-weight:800; text-decoration:none; font-size:14px;">
+      + Add Wine
+    </a>
+  {% endif %}
+</div>
+
+<hr>
+
+{% if wines %}
+<div class="wine-grid">
+  {% for w in wines %}
+  <a class="wine-card" href="/wine/{{ w.id }}">
+    <div class="wine-card-name">{{ w.name }}</div>
+
+    <div class="wine-card-meta">
+      {% set parts = [] %}
+      {% if w.vintage %}{% set _ = parts.append(w.vintage) %}{% endif %}
+      {% if w.varietal %}{% set _ = parts.append(w.varietal) %}{% endif %}
+      {% if w.region %}{% set _ = parts.append(w.region) %}{% endif %}
+      {{ parts | join(' · ') or '—' }}
+    </div>
+
+    {{ stars(w.rating) }}
+
+    {% if w.tasted_date %}
+    <div class="small muted" style="margin-top:8px;">
+      {{ w.tasted_date.strftime("%b %d, %Y") }}
+    </div>
+    {% endif %}
+
+    {% if w.notes %}
+    <div class="wine-card-notes">{{ w.notes }}</div>
+    {% endif %}
+  </a>
+  {% endfor %}
+</div>
+
+{% else %}
+<div class="panel">
+  <p class="muted">No wines logged yet. Add your first bottle!</p>
+</div>
+{% endif %}
+
+{% endblock %}
