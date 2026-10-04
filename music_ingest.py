@@ -199,6 +199,36 @@ def demo_records():
     ]
 
 
+SNAP_DIR = os.path.join(HERE, "data", "snapshots")
+
+
+def _snap_path(name):
+    return os.path.join(SNAP_DIR, re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_") + ".json")
+
+
+def export_snapshot(name, recs):
+    """Save a source's current events (run from a machine the site doesn't block)."""
+    os.makedirs(SNAP_DIR, exist_ok=True)
+    out = []
+    for r in recs:
+        r = dict(r)
+        r["start"] = r["start"].isoformat() if hasattr(r["start"], "isoformat") else r["start"]
+        out.append(r)
+    with open(_snap_path(name), "w", encoding="utf-8") as f:
+        json.dump({"exported": datetime.now().isoformat(timespec="seconds"), "events": out}, f,
+                  ensure_ascii=False, indent=1)
+    return len(out)
+
+
+def load_snapshot(name):
+    try:
+        with open(_snap_path(name), encoding="utf-8") as f:
+            d = json.load(f)
+        return d["exported"], d["events"]
+    except (OSError, ValueError, KeyError):
+        return None, []
+
+
 def _log_run(db, name, count, error, t0):
     try:
         db.session.add(music.ScrapeLog(source=name, count=count, error=error,
@@ -237,8 +267,20 @@ def run_scrapers(db, names=None):
             yield name, len(seen), None
         except Exception as e:
             db.session.rollback()
-            _log_run(db, name, 0, f"{type(e).__name__}: {e}"[:500], t0)
-            yield name, 0, f"{type(e).__name__}: {e}"
+            err = f"{type(e).__name__}: {e}"[:400]
+            exported, events = load_snapshot(name)
+            now = datetime.now()
+            events = [r for r in events if str(r.get("start", "")) >= now.strftime("%Y-%m-%d")]
+            if events:  # live fetch blocked/broken: serve the last good snapshot, say so in the log
+                for rec in events:
+                    upsert(db, rec)
+                db.session.commit()
+                err = f"live failed, served snapshot from {exported}: {err}"[:500]
+                _log_run(db, name, len(events), err, t0)
+                yield name, len(events), None
+            else:
+                _log_run(db, name, 0, err, t0)
+                yield name, 0, err
 
 
 REFRESH_EVERY = timedelta(hours=24)
@@ -305,6 +347,14 @@ def register_cli(app, db):
         if not names:
             with open(_STAMP, "w") as f:
                 f.write(datetime.now().isoformat())
+
+    @app.cli.command("music-export")
+    @click.argument("name")
+    def _export(name):
+        """Run one scraper locally and save its events to data/snapshots/ (for sources that block servers)."""
+        import music_scrapers
+        recs = list(music_scrapers.SCRAPERS[name]())
+        click.echo(f"{name}: saved {export_snapshot(name, recs)} events -> {_snap_path(name)}")
 
     @app.cli.command("music-demo")
     def _demo():
