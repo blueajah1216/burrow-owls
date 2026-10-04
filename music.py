@@ -236,7 +236,7 @@ def init_music(app, db, ctx_fn):
     @bp.before_request
     def _auto_refresh():
         import music_ingest
-        if request.endpoint != "music.music_status":
+        if request.endpoint not in ("music.music_status", "music.music_refresh"):
             music_ingest.refresh_if_stale(app, db)
 
     @bp.get("")
@@ -314,6 +314,26 @@ def init_music(app, db, ctx_fn):
                 "last_full_scrape": stamp.isoformat(timespec="seconds") if stamp else None,
                 "scrape_running": __import__("os").path.exists(music_ingest._LOCK),
                 "sources": rows}
+
+    @bp.get("/refresh")
+    def music_refresh():
+        """Re-run chosen scrapers now: /music/refresh?key=<UPLOAD_KEY>&source=Early+Music+Seattle
+        (omit source for all). Runs in the background; watch /music/status for the result."""
+        import os
+        import threading
+        import music_ingest
+        key = os.environ.get("UPLOAD_KEY")
+        if not key or request.args.get("key") != key:
+            return {"error": "forbidden"}, 403
+        names = request.args.getlist("source") or None
+
+        def work():
+            with app.app_context():
+                for _ in music_ingest.run_scrapers(db, names):
+                    pass
+
+        threading.Thread(target=work, name="music-refresh", daemon=True).start()
+        return {"started": names or "all"}
 
     app.register_blueprint(bp)
     return MusicEvent

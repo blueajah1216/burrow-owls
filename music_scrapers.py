@@ -51,6 +51,17 @@ def fetch(url, **kw):
     return r
 
 
+def fetch_json(url, **kw):
+    """GET + parse JSON; if the site answers with something else (bot-challenge page, error HTML),
+    raise an error that says what we actually got, so /music/status shows the real cause."""
+    r = fetch(url, **kw)
+    try:
+        return r.json()
+    except ValueError:
+        snippet = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", r.text))[:160]
+        raise RuntimeError(f"not JSON: HTTP {r.status_code} {r.headers.get('content-type', '?')} :: {snippet}")
+
+
 def soup_of(url):
     return BeautifulSoup(fetch(url).text, "html.parser")
 
@@ -201,7 +212,7 @@ def clean(s):
 @scraper("Early Music Seattle")
 def early_music_seattle():
     base = "https://earlymusicseattle.org"
-    items = fetch(f"{base}/wp-json/wp/v2/events?per_page=100&_fields=link,title").json()
+    items = fetch_json(f"{base}/wp-json/wp/v2/events?per_page=100&_fields=link,title")
     seen = set()
     for it in items:
         url, title = it["link"], clean(it["title"]["rendered"])
