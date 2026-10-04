@@ -199,6 +199,19 @@ def demo_records():
     ]
 
 
+def _log_run(db, name, count, error, t0):
+    try:
+        db.session.add(music.ScrapeLog(source=name, count=count, error=error,
+                                       seconds=(datetime.now() - t0).total_seconds()))
+        db.session.commit()
+        old = music.ScrapeLog.query.filter_by(source=name).order_by(music.ScrapeLog.ran_at.desc()).offset(20).all()
+        for o in old:
+            db.session.delete(o)
+        db.session.commit()
+    except Exception:
+        db.session.rollback()
+
+
 def run_scrapers(db, names=None):
     """Run registered scrapers. Yields (name, count, error). One failing site never
     stops the others; a scraper that returns nothing never wipes that site's data."""
@@ -207,6 +220,7 @@ def run_scrapers(db, names=None):
     for name, fn in music_scrapers.SCRAPERS.items():
         if names and name not in names:
             continue
+        t0 = datetime.now()
         try:
             recs = list(fn())
             seen = set()
@@ -219,9 +233,11 @@ def run_scrapers(db, names=None):
                     if ev.source_id not in seen:
                         db.session.delete(ev)
             db.session.commit()
+            _log_run(db, name, len(seen), None, t0)
             yield name, len(seen), None
         except Exception as e:
             db.session.rollback()
+            _log_run(db, name, 0, f"{type(e).__name__}: {e}"[:500], t0)
             yield name, 0, f"{type(e).__name__}: {e}"
 
 

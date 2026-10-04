@@ -30,6 +30,7 @@ CATEGORY_LABELS = dict(CATEGORIES)
 REGION_SEATTLE = "seattle"
 
 MusicEvent = None  # set by init_music
+ScrapeLog = None
 
 
 # ------------------------------------------------------------------------------
@@ -211,6 +212,19 @@ def init_music(app, db, ctx_fn):
 
     MusicEvent = _MusicEvent
 
+    class _ScrapeLog(db.Model):
+        """One row per scraper per run: lets us see remotely which sources work in production."""
+        __tablename__ = "music_scrape_log"
+        id = db.Column(db.Integer, primary_key=True)
+        source = db.Column(db.String(100), nullable=False, index=True)
+        ran_at = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+        count = db.Column(db.Integer, default=0)
+        error = db.Column(db.Text, nullable=True)
+        seconds = db.Column(db.Float, nullable=True)
+
+    global ScrapeLog
+    ScrapeLog = _ScrapeLog
+
     # create_all() doesn't add columns to an existing table; do it ourselves.
     with app.app_context():
         db.create_all()
@@ -222,7 +236,8 @@ def init_music(app, db, ctx_fn):
     @bp.before_request
     def _auto_refresh():
         import music_ingest
-        music_ingest.refresh_if_stale(app, db)
+        if request.endpoint != "music.music_status":
+            music_ingest.refresh_if_stale(app, db)
 
     @bp.get("")
     @bp.get("/")
@@ -276,6 +291,29 @@ def init_music(app, db, ctx_fn):
             category_labels=CATEGORY_LABELS, now=datetime.now(),
             demo=any(ev.source == "demo" for ev, _ in hits),
         )
+
+    @bp.get("/status")
+    def music_status():
+        """Per-source health: events stored, latest scrape result/error. Handy for debugging production."""
+        from sqlalchemy import func
+        now = datetime.now()
+        stored = {r[0]: (r[1], r[2]) for r in db.session.query(
+            MusicEvent.source, func.count(MusicEvent.id),
+            func.sum(db.case((MusicEvent.start >= now, 1), else_=0))).group_by(MusicEvent.source)}
+        rows = []
+        for src in sorted(set(stored) | {l.source for l in ScrapeLog.query.all()}):
+            last = ScrapeLog.query.filter_by(source=src).order_by(ScrapeLog.ran_at.desc()).first()
+            rows.append(dict(
+                source=src, stored=stored.get(src, (0, 0))[0], upcoming=int(stored.get(src, (0, 0))[1] or 0),
+                last_run=last.ran_at.isoformat(timespec="seconds") + "Z" if last else None,
+                last_count=last.count if last else None, last_error=last.error if last else None,
+                seconds=round(last.seconds, 1) if last and last.seconds else None))
+        import music_ingest
+        stamp = music_ingest._last_scrape()
+        return {"server_time_utc": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+                "last_full_scrape": stamp.isoformat(timespec="seconds") if stamp else None,
+                "scrape_running": __import__("os").path.exists(music_ingest._LOCK),
+                "sources": rows}
 
     app.register_blueprint(bp)
     return MusicEvent
