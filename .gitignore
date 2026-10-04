@@ -1,2 +1,4 @@
- .idea/
- .venv/
+.idea/
+.venv/
+music_last_scrape.txt
+music_scrape.lock

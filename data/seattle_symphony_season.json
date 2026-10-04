@@ -1,0 +1,1030 @@
+[
+ {
+  "title": "Opening Night with Yuja Wang",
+  "dates": [
+   "2026-09-19"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Yuja Wang piano",
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Xian and James Ehnes",
+  "dates": [
+   "2026-09-24",
+   "2026-09-26",
+   "2026-09-27"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "James Ehnes violin",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Bruch",
+    "work": "Violin Concerto No. 1"
+   },
+   {
+    "composer": "Berlioz",
+    "work": "Symphonie fantastique"
+   }
+  ]
+ },
+ {
+  "title": "Ennio Morricone: The Official Symphonic Experience",
+  "dates": [
+   "2026-10-02",
+   "2026-10-03",
+   "2026-10-04"
+  ],
+  "performers": [
+   "Thiago Tiberio conductor",
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "The Percussion: Sounds from Home",
+  "dates": [
+   "2026-10-02",
+   "2026-10-03"
+  ],
+  "performers": [
+   "Seattle Symphony musicians"
+  ],
+  "program": []
+ },
+ {
+  "title": "Etudes and Devotions",
+  "dates": [
+   "2026-10-16"
+  ],
+  "performers": [
+   "Conor Hanick piano",
+   "Mari Yoshinaga percussion",
+   "Helen Kim violin",
+   "Emerson Millar violin",
+   "Katie Liu viola",
+   "Meeka Quan DiLorenzo cello",
+   "SAMUEL ADAMS Etudes for Piano"
+  ],
+  "program": [
+   {
+    "composer": "Samuel Adams",
+    "work": "Devotions for String Quartet and Percussion (Seattle Symphony Co- commission and U.S. Premiere)"
+   }
+  ]
+ },
+ {
+  "title": "Morlot Conducts The Sounds of Spring",
+  "dates": [
+   "2026-10-22",
+   "2026-10-24"
+  ],
+  "performers": [
+   "Ludovic Morlot conductor",
+   "Conor Hanick piano",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Bridge",
+    "work": "Enter Spring"
+   },
+   {
+    "composer": "Samuel Adams",
+    "work": "No Such Spring"
+   },
+   {
+    "composer": "R. Schumann",
+    "work": "Symphony No. 1, “Spring”"
+   }
+  ]
+ },
+ {
+  "title": "Paul Lewis Plays Mozart Sonatas",
+  "dates": [
+   "2026-10-27"
+  ],
+  "performers": [
+   "Paul Lewis piano"
+  ],
+  "program": []
+ },
+ {
+  "title": "Halloween Spooktacular!",
+  "dates": [
+   "2026-10-31"
+  ],
+  "performers": [
+   "Joseph Adam organ",
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Leila Josefowicz Returns",
+  "dates": [
+   "2026-11-05",
+   "2026-11-07"
+  ],
+  "performers": [
+   "Jonathan Stockhammer conductor",
+   "Leila Josefowicz violin",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Unsuk Chin",
+    "work": "Rocaná (Room of Light)"
+   },
+   {
+    "composer": "Szymanowski",
+    "work": "Violin Concerto No. 2"
+   },
+   {
+    "composer": "Stravinsky",
+    "work": "Petrushka (1947)"
+   }
+  ]
+ },
+ {
+  "title": "The World of György Kurtág",
+  "dates": [
+   "2026-11-06"
+  ],
+  "performers": [
+   "Will Langlie Miletich bass",
+   "Lucy Fitz Gibbon soprano",
+   "Ryan MacEvoy McCullough piano",
+   "Lembit Beecher animation",
+   "Seattle Symphony musicians"
+  ],
+  "program": [
+   {
+    "composer": "György Kurtág",
+    "work": "Hommage á R. Schumann"
+   },
+   {
+    "composer": "Lembit Beecher",
+    "work": "With Grandchildren (World Premiere)"
+   },
+   {
+    "composer": "György Kurtág",
+    "work": "Hommage á John Cage"
+   },
+   {
+    "composer": "John Cage",
+    "work": "The Wonderful Widow of Eighteen Springs"
+   },
+   {
+    "composer": "Amy Beth Kirsten",
+    "work": "yes I said yes I will yes"
+   },
+   {
+    "composer": "György Kurtág",
+    "work": "Einige Sätze aus den Sudelbüchern Georg Christoph Lichtenberg (Fragments from the Scrapbooks of Georg Christoph Lichtenberg), Op. 37a"
+   }
+  ]
+ },
+ {
+  "title": "Tchaikovsky’s First Piano Concerto and Zarathustra",
+  "dates": [
+   "2026-11-12",
+   "2026-11-14",
+   "2026-11-15"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Tony Siqi Yun piano",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Tchaikovsky",
+    "work": "Piano Concerto No. 1"
+   },
+   {
+    "composer": "R. Strauss",
+    "work": "Also sprach Zarathustra"
+   }
+  ]
+ },
+ {
+  "title": "Mozart’s Requiem with Xian",
+  "dates": [
+   "2026-11-19",
+   "2026-11-21",
+   "2026-11-22"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Eric Schweikert timpani",
+   "Mei Gui Zhang soprano",
+   "Sarah Larsen mezzo-soprano",
+   "Eric Ferring tenor",
+   "Dashon Burton bass",
+   "Seattle Symphony Chorale",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Joe Pereira",
+    "work": "Timpani Concerto (Seattle Symphony Co-Commission and World Premiere)"
+   },
+   {
+    "composer": "Mozart",
+    "work": "Requiem"
+   }
+  ]
+ },
+ {
+  "title": "Holiday Pops with Megan Hilty",
+  "dates": [
+   "2026-12-04",
+   "2026-12-05",
+   "2026-12-06"
+  ],
+  "performers": [
+   "Enrico Lopez-Yañez conductor",
+   "Megan Hilty vocals",
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "The Snowman",
+  "dates": [
+   "2026-12-05"
+  ],
+  "performers": [
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Elf in Concert",
+  "dates": [
+   "2026-12-09",
+   "2026-12-12"
+  ],
+  "performers": [
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "The Strings: Holiday String-Along",
+  "dates": [
+   "2026-12-11",
+   "2026-12-12"
+  ],
+  "performers": [
+   "Seattle Symphony musicians"
+  ],
+  "program": []
+ },
+ {
+  "title": "Handel’s Messiah",
+  "dates": [
+   "2026-12-17",
+   "2026-12-19",
+   "2026-12-20"
+  ],
+  "performers": [
+   "Jean-Sébastien Vallée conductor",
+   "Sarah Dufresne soprano",
+   "Nicholas Burns alto",
+   "James Ley tenor",
+   "Enrico Lagasca bass",
+   "Seattle Symphony Chorale",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Handel",
+    "work": "Messiah"
+   }
+  ]
+ },
+ {
+  "title": "A Festival of Lessons & Carols",
+  "dates": [
+   "2026-12-21"
+  ],
+  "performers": [
+   "Jacob Winkler conductor",
+   "Northwest Boychoir"
+  ],
+  "program": []
+ },
+ {
+  "title": "New Y ear’s Eve with Storm Large and Jimmie Herrod",
+  "dates": [
+   "2026-12-31"
+  ],
+  "performers": [
+   "Storm Large vocals",
+   "Jimmie Herrod vocals",
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Hook in Concert",
+  "dates": [
+   "2027-01-07",
+   "2027-01-09"
+  ],
+  "performers": [
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Itzhak Perlman in Recital",
+  "dates": [
+   "2027-01-24"
+  ],
+  "performers": [
+   "Itzhak Perlman violin",
+   "Rohan De Silva piano"
+  ],
+  "program": []
+ },
+ {
+  "title": "Xian and Emanuel Ax",
+  "dates": [
+   "2027-01-28",
+   "2027-01-30"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Emanuel Ax piano",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Haydn",
+    "work": "Symphony No. 82, “The Bear”"
+   },
+   {
+    "composer": "Mozart",
+    "work": "Piano Concerto No. 25, K.503"
+   },
+   {
+    "composer": "Mozart",
+    "work": "Eine kleine Nachtmusik (A Little Night Music)"
+   },
+   {
+    "composer": "Haydn",
+    "work": "Symphony No. 87"
+   }
+  ]
+ },
+ {
+  "title": "Tchaikovsky’s Manfred with Xian",
+  "dates": [
+   "2027-02-04",
+   "2027-02-06",
+   "2027-02-07"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Steven Banks saxophone",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Ibert",
+    "work": "Concertino da camera"
+   },
+   {
+    "composer": "Steven Banks",
+    "work": "Come As You Are"
+   },
+   {
+    "composer": "Tchaikovsky",
+    "work": "Manfred Symphony"
+   }
+  ]
+ },
+ {
+  "title": "The Brass: Movie Magic",
+  "dates": [
+   "2027-02-05",
+   "2027-02-06"
+  ],
+  "performers": [
+   "Seattle Symphony musicians"
+  ],
+  "program": []
+ },
+ {
+  "title": "Beethoven’s Cello Sonatas",
+  "dates": [
+   "2027-02-09"
+  ],
+  "performers": [
+   "Seattle Symphony musicians"
+  ],
+  "program": [
+   {
+    "composer": "Beethoven",
+    "work": "Complete Cello Sonatas"
+   }
+  ]
+ },
+ {
+  "title": "Xian Conducts The Sounds of Spain",
+  "dates": [
+   "2027-02-11",
+   "2027-02-13"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Noah Geller violin",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Lalo",
+    "work": "Symphonie espagnole"
+   },
+   {
+    "composer": "Ginastera",
+    "work": "Four Dances from Estancia"
+   },
+   {
+    "composer": "Rimsky-Korsakov",
+    "work": "Capriccio espagnol"
+   }
+  ]
+ },
+ {
+  "title": "Symphonically Spielberg: The Music of John Williams",
+  "dates": [
+   "2027-02-19",
+   "2027-02-20",
+   "2027-02-21"
+  ],
+  "performers": [
+   "Steven Reineke conductor",
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Sunny with a Chance of Symphony",
+  "dates": [
+   "2027-02-20"
+  ],
+  "performers": [
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Víkingur Ólafsson Plays Debussy & Rameau",
+  "dates": [
+   "2027-02-23"
+  ],
+  "performers": [
+   "Víkingur Ólafsson piano"
+  ],
+  "program": []
+ },
+ {
+  "title": "Charlie Chaplin’s Modern Times",
+  "dates": [
+   "2027-02-25",
+   "2027-02-27",
+   "2027-02-28"
+  ],
+  "performers": [
+   "Timothy Brock conductor",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Chaplin",
+    "work": "Modern Times"
+   }
+  ]
+ },
+ {
+  "title": "Inheritances",
+  "dates": [
+   "2027-03-05"
+  ],
+  "performers": [
+   "Adam Tendler piano"
+  ],
+  "program": [
+   {
+    "composer": "Laurie Anderson",
+    "work": "Remember, I Created You"
+   },
+   {
+    "composer": "Missy Mazzoli",
+    "work": "Forgiveness Machine"
+   },
+   {
+    "composer": "Scott Wollschleger",
+    "work": "Outsider Song"
+   },
+   {
+    "composer": "Angélica Negrón",
+    "work": "You Were My Age"
+   },
+   {
+    "composer": "John Glover",
+    "work": "In the City of Shy Hunters"
+   },
+   {
+    "composer": "Mary Prescott",
+    "work": "What It Becomes"
+   },
+   {
+    "composer": "Timo Andres",
+    "work": "An Open Book"
+   },
+   {
+    "composer": "Ted Hearne",
+    "work": "Inheritance"
+   },
+   {
+    "composer": "Inti Figgis-Vizueta",
+    "work": "hushing"
+   },
+   {
+    "composer": "Sarah Kirkland Snider",
+    "work": "The plum tree I planted still there"
+   },
+   {
+    "composer": "Christopher Cerrone",
+    "work": "Area of Refuge"
+   },
+   {
+    "composer": "Pamela",
+    "work": "Z Thank You So Much"
+   },
+   {
+    "composer": "Darian Donovan Thomas",
+    "work": "We don’t need to tend this garden. They’re wildflowers."
+   },
+   {
+    "composer": "Nico Muhl",
+    "work": "Y Eiris, Sones"
+   },
+   {
+    "composer": "Devonté Hynes",
+    "work": "Morning Piece"
+   }
+  ]
+ },
+ {
+  "title": "Beethoven & Tower",
+  "dates": [
+   "2027-03-09"
+  ],
+  "performers": [
+   "Seattle Symphony musicians"
+  ],
+  "program": [
+   {
+    "composer": "Beethoven",
+    "work": "Duet “with two Obligato Eyeglasses”"
+   },
+   {
+    "composer": "Beethoven",
+    "work": "Serenade in D Major (String Trio No. 2, Op. 8)"
+   },
+   {
+    "composer": "Joan Tower",
+    "work": "Island Prelude"
+   },
+   {
+    "composer": "Beethoven",
+    "work": "String Trio, Op. 9, No. 1"
+   }
+  ]
+ },
+ {
+  "title": "Xian Conducts Scheherazade",
+  "dates": [
+   "2027-03-11",
+   "2027-03-13"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Smetana",
+    "work": "The Moldau"
+   },
+   {
+    "composer": "Steven Mackey",
+    "work": "Concerto for Orchestra (Seattle Symphony Co-Commission and World Premiere)"
+   },
+   {
+    "composer": "Rimsky-Korsakov",
+    "work": "Scheherazade"
+   }
+  ]
+ },
+ {
+  "title": "Berlioz’s Romeo and Juliet",
+  "dates": [
+   "2027-03-18",
+   "2027-03-20",
+   "2027-03-21"
+  ],
+  "performers": [
+   "Hugh Wolff conductor",
+   "J’Nai Bridges mezzo-soprano",
+   "Seattle Symphony Chorale",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Berlioz",
+    "work": "Roméo et Juliette, Op. 17"
+   }
+  ]
+ },
+ {
+  "title": "Hayato Sumino “Cateen” in Recital",
+  "dates": [
+   "2027-03-19"
+  ],
+  "performers": [
+   "Hayato Sumino “Cateen” piano"
+  ],
+  "program": []
+ },
+ {
+  "title": "Y eol Eum Son Plays Rachmaninov & Bach",
+  "dates": [
+   "2027-03-31"
+  ],
+  "performers": [
+   "Yeol Eum Son piano"
+  ],
+  "program": []
+ },
+ {
+  "title": "Grieg’s Peer Gynt with Xian",
+  "dates": [
+   "2027-04-08",
+   "2027-04-10"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Helen Kim violin",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Vaughan Williams",
+    "work": "The Lark Ascending"
+   },
+   {
+    "composer": "Grieg",
+    "work": "Peer Gynt Suite (Xian Zhang’s selections)"
+   },
+   {
+    "composer": "Webern",
+    "work": "Im Sommerwind (In the Summer Wind)"
+   },
+   {
+    "composer": "Scriabin",
+    "work": "Poem of Ecstasy"
+   }
+  ]
+ },
+ {
+  "title": "Beethoven & Alberga",
+  "dates": [
+   "2027-04-13"
+  ],
+  "performers": [
+   "Seattle Symphony musicians"
+  ],
+  "program": [
+   {
+    "composer": "Beethoven",
+    "work": "Piano Quintet, Op. 16"
+   },
+   {
+    "composer": "Eleanor Alberga",
+    "work": "Shining Gate of Morpheus"
+   },
+   {
+    "composer": "Beethoven",
+    "work": "String Quartet Op. 59, No. 1, “Razumovsky No. 1”"
+   }
+  ]
+ },
+ {
+  "title": "Beethoven’s Pastoral and Gil Shaham",
+  "dates": [
+   "2027-04-15",
+   "2027-04-17",
+   "2027-04-18"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Gil Shaham violin",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Dvořák",
+    "work": "Violin Concerto"
+   },
+   {
+    "composer": "Beethoven",
+    "work": "Symphony No. 6, “Pastoral”"
+   }
+  ]
+ },
+ {
+  "title": "The Winds: Campfire Jams",
+  "dates": [
+   "2027-04-16",
+   "2027-04-17"
+  ],
+  "performers": [
+   "Seattle Symphony musicians"
+  ],
+  "program": []
+ },
+ {
+  "title": "Pines & Fountains of Rome with Xian",
+  "dates": [
+   "2027-04-22",
+   "2027-04-24",
+   "2027-04-25"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Gabriela Montero piano",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Gabriela Montero",
+    "work": "Piano Concerto No. 1, “Latin”"
+   },
+   {
+    "composer": "Respighi",
+    "work": "Fountains of Rome"
+   },
+   {
+    "composer": "Respighi",
+    "work": "Pines of Rome"
+   }
+  ]
+ },
+ {
+  "title": "Shostakovich’s 10th Symphony",
+  "dates": [
+   "2027-04-29",
+   "2027-05-01"
+  ],
+  "performers": [
+   "David Afkham conductor",
+   "Steven Osborne piano",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Saariaho",
+    "work": "Lumière et Pésanteur (Light and Gravity)"
+   },
+   {
+    "composer": "Lutosławski",
+    "work": "Piano Concerto"
+   },
+   {
+    "composer": "Shostakovich",
+    "work": "Symphony No. 10"
+   }
+  ]
+ },
+ {
+  "title": "Pamela Z",
+  "dates": [
+   "2027-05-07"
+  ],
+  "performers": [
+   "Pamela Z voice & electronics"
+  ],
+  "program": []
+ },
+ {
+  "title": "The Firebird",
+  "dates": [
+   "2027-05-08"
+  ],
+  "performers": [
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Beethoven & Beach",
+  "dates": [
+   "2027-05-11"
+  ],
+  "performers": [
+   "Seattle Symphony musicians"
+  ],
+  "program": [
+   {
+    "composer": "Beethoven",
+    "work": "String Quartet No. 1, Op. 18, No. 1"
+   },
+   {
+    "composer": "Beach",
+    "work": "Theme and Variations for Flute and String Quartet"
+   },
+   {
+    "composer": "Beethoven",
+    "work": "String Quartet No. 16, Op. 135"
+   }
+  ]
+ },
+ {
+  "title": "Rachmaninov’s Second Piano Concerto",
+  "dates": [
+   "2027-05-13",
+   "2027-05-14"
+  ],
+  "performers": [
+   "Alexander Shelley conductor",
+   "Benjamin Grosvenor piano",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Ian Cusson Iq84:",
+    "work": "Sinfonietta Metamoderna"
+   },
+   {
+    "composer": "Rachmaninov",
+    "work": "Piano Concerto No. 2"
+   },
+   {
+    "composer": "Sibelius",
+    "work": "Symphony No. 2"
+   }
+  ]
+ },
+ {
+  "title": "Alisa Weilerstein and Inon Barnatan Play Chopin & Shostakovich",
+  "dates": [
+   "2027-05-15"
+  ],
+  "performers": [
+   "Alisa Weilerstein cello",
+   "Inon Barnatan piano"
+  ],
+  "program": []
+ },
+ {
+  "title": "Anna Lapwood",
+  "dates": [
+   "2027-05-20"
+  ],
+  "performers": [
+   "Robert Ames conductor",
+   "Anna Lapwood organ",
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Anna Lapwood with the",
+  "dates": [
+   "2027-05-20"
+  ],
+  "performers": [
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Mahler’s Fourth Symphony",
+  "dates": [
+   "2027-06-03",
+   "2027-06-05",
+   "2027-06-06"
+  ],
+  "performers": [
+   "Nicholas Carter conductor",
+   "Patricia Westley soprano",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "R. Strauss",
+    "work": "Träumerei am Kamin (Dreaming by the Fireside) from Intermezzo"
+   },
+   {
+    "composer": "Debussy",
+    "work": "Ariettes Oubliées (Forgotten Songs)"
+   },
+   {
+    "composer": "Mahler",
+    "work": "Symphony No. 4"
+   }
+  ]
+ },
+ {
+  "title": "Tiny Orchestra: M is for Music",
+  "dates": [
+   "2027-06-04",
+   "2027-06-05"
+  ],
+  "performers": [
+   "Seattle Symphony musicians"
+  ],
+  "program": []
+ },
+ {
+  "title": "Bear McCreary Conducts Bear McCreary",
+  "dates": [
+   "2027-06-11",
+   "2027-06-12",
+   "2027-06-13"
+  ],
+  "performers": [
+   "Bear McCreary conductor",
+   "Seattle Symphony"
+  ],
+  "program": []
+ },
+ {
+  "title": "Xian Conducts Brahms",
+  "dates": [
+   "2027-06-17",
+   "2027-06-19",
+   "2027-06-20"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "Daniel Lozakovich violin",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Brahms",
+    "work": "Symphony No. 3"
+   },
+   {
+    "composer": "Brahms",
+    "work": "Violin Concerto"
+   }
+  ]
+ },
+ {
+  "title": "The Brandee Younger Trio",
+  "dates": [
+   "2027-06-18"
+  ],
+  "performers": [
+   "Brandee Younger harp"
+  ],
+  "program": []
+ },
+ {
+  "title": "Wagner’s The Ring Without Words",
+  "dates": [
+   "2027-06-24",
+   "2027-06-26"
+  ],
+  "performers": [
+   "Xian Zhang conductor",
+   "George Li piano",
+   "Seattle Symphony"
+  ],
+  "program": [
+   {
+    "composer": "Liszt",
+    "work": "Piano Concerto No. 2"
+   },
+   {
+    "composer": "Wagner",
+    "work": "(Arr. Maazel) The Ring Without Words"
+   }
+  ]
+ }
+]

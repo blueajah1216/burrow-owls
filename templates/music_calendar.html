@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% macro qs(v=None, d=None) -%}
+  ?view={{ v or view }}&date={{ (d or anchor).isoformat() }}{% for c in cats %}&cat={{ c }}{% endfor %}
+{%- endmacro %}
+
+{% macro card(ev) %}
+<div class="mu-card">
+  <div class="muted small">
+    {{ ev.start.strftime('%-I:%M %p') }} · {{ category_labels[ev.category] }}
+  </div>
+  <h3>{{ ev.title }}</h3>
+  {% if ev.performers %}<div><strong>{{ ev.performers }}</strong></div>{% endif %}
+  <div class="muted small">📍 {{ ev.venue or 'Venue TBA' }}{% if ev.city %}, {{ ev.city }}{% endif %}</div>
+  {% set prog = program_of(ev) %}
+  {% if prog %}
+  <ul>
+    {% for p in prog %}<li>{{ p.composer }}{% if p.work %}: {{ p.work }}{% endif %}</li>{% endfor %}
+  </ul>
+  {% elif ev.description %}
+  <p class="muted small" style="margin:6px 0 0;">{{ ev.description[:240] }}{% if ev.description|length > 240 %}…{% endif %}</p>
+  {% endif %}
+  {% if ev.ticket_url %}<a class="mu-tix" href="{{ ev.ticket_url }}" target="_blank" rel="noopener">Tickets</a>{% endif %}
+</div>
+{% endmacro %}
+
+<h1 style="margin:0;">🎻 Seattle Classical Music</h1>
+<p class="muted" style="margin-top:6px;">Symphonic, chamber, choral and solo concerts in the Seattle region.</p>
+
+{# ── Piece search ── #}
+<form class="mu-search" method="get" action="/music/search">
+  <input type="text" name="q" placeholder="Search a piece — e.g. Beethoven Symphony No. 7 — to see where in the world it's playing this season" aria-label="Search for a piece">
+  <button type="submit">Search</button>
+</form>
+
+{% if demo %}<div class="mu-demo">Showing <strong>sample data</strong> — not real concerts.</div>{% endif %}
+
+<hr>
+
+<div class="mu-bar">
+  <span class="mu-tabs">
+    {% for v in ['day','week','month'] %}
+      <a class="{{ 'on' if view == v }}" href="{{ qs(v) }}">{{ v|capitalize }}</a>
+    {% endfor %}
+  </span>
+  <a class="mu-btn" href="{{ qs(d=prev_a) }}">←</a>
+  <strong>{{ title }}</strong>
+  <a class="mu-btn" href="{{ qs(d=next_a) }}">→</a>
+  <a class="mu-btn" href="?view={{ view }}{% for c in cats %}&cat={{ c }}{% endfor %}">Today</a>
+</div>
+
+<form method="get" class="mu-bar">
+  <input type="hidden" name="view" value="{{ view }}">
+  <input type="hidden" name="date" value="{{ anchor.isoformat() }}">
+  {% for key, label in categories %}
+    <label class="mu-chip {{ 'on' if key in cats }}">
+      <input type="checkbox" name="cat" value="{{ key }}" {{ 'checked' if key in cats }} onchange="this.form.submit()"> {{ label }}
+    </label>
+  {% endfor %}
+</form>
+
+{% if view == 'month' %}
+  <div class="mu-grid">
+    {% for d in ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'] %}<div class="dow">{{ d }}</div>{% endfor %}
+    {% for wk in weeks %}{% for d in wk %}
+      <div class="{{ 'out' if d.month != anchor.month }} {{ 'today' if d == today }}">
+        <a href="{{ qs('day', d) }}" style="text-decoration:none;color:inherit;"><span class="dn">{{ d.day }}</span></a>
+        {% for ev in by_day.get(d, []) %}
+          <a class="mu-pill mu-{{ ev.category }}" href="{{ qs('day', d) }}"
+             title="{{ ev.title }} — {{ ev.performers }}">{{ ev.start.strftime('%-I:%M') }} {{ ev.title }}</a>
+        {% endfor %}
+      </div>
+    {% endfor %}{% endfor %}
+  </div>
+{% else %}
+  {% for d in days %}
+    {% if view == 'day' or by_day.get(d) %}
+      <div class="mu-day">{{ d.strftime('%A, %B %-d') }}{% if d == today %} · today{% endif %}</div>
+      {% for ev in by_day.get(d, []) %}{{ card(ev) }}
+      {% else %}<p class="muted">No concerts listed.</p>{% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% if total == 0 and view == 'week' %}<p class="muted">No concerts listed this week.</p>{% endif %}
+{% endif %}
+
+{% endblock %}

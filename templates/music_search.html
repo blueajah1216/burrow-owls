@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 style="margin:0;">🎻 Where is it playing?</h1>
+<p class="muted" style="margin-top:6px;">Performances of a piece by major performers worldwide, {{ season }} concert season.</p>
+
+<form class="mu-search" method="get" action="/music/search">
+  <input type="text" name="q" value="{{ query }}" placeholder="e.g. Beethoven Symphony No. 7, Mahler 2, Goldberg Variations" aria-label="Search for a piece" autofocus>
+  <button type="submit">Search</button>
+</form>
+<div class="mu-bar">
+  <label class="mu-chip"><input type="checkbox" name="all" value="1" form="f2" {{ 'checked' if include_all }} onchange="this.form.submit()"> Include all performers</label>
+  <label class="mu-chip"><input type="checkbox" name="past" value="1" form="f2" {{ 'checked' if include_past }} onchange="this.form.submit()"> Include past concerts</label>
+  <a class="mu-btn" href="/music">← Seattle calendar</a>
+</div>
+<form id="f2" method="get" action="/music/search"><input type="hidden" name="q" value="{{ query }}"></form>
+
+{% if demo %}<div class="mu-demo">Showing <strong>sample data</strong> — not real concerts.</div>{% endif %}
+
+{% if query %}
+  <p class="muted">{{ hits|length }} performance{{ '' if hits|length == 1 else 's' }} found{% if grouped %} in {{ grouped|length }} countr{{ 'y' if grouped|length == 1 else 'ies' }}{% endif %}.</p>
+  {% for country, cities in grouped %}
+    <h2 style="margin-bottom:0;">{{ country }}</h2>
+    {% for city, items in cities %}
+      <div class="mu-day">{{ city }}</div>
+      {% for ev, item in items %}
+        <div class="mu-card" {% if ev.start < now %}style="opacity:.6"{% endif %}>
+          <div class="muted small">{{ ev.start.strftime('%a %b %-d, %Y · %-I:%M %p') }}{% if ev.start < now %} · past{% endif %}</div>
+          <h3>{{ item.composer }}{% if item.work %}: {{ item.work }}{% endif %}</h3>
+          <div><strong>{{ ev.performers }}</strong></div>
+          <div class="muted small">📍 {{ ev.venue or '' }}{% if ev.venue and ev.city %}, {% endif %}{{ ev.city or '' }} — {{ ev.title }}</div>
+          {% if ev.ticket_url %}<a class="mu-tix" href="{{ ev.ticket_url }}" target="_blank" rel="noopener">Tickets</a>{% endif %}
+        </div>
+      {% endfor %}
+    {% endfor %}
+  {% else %}
+    <p>No performances found. Try fewer words (e.g. “Beethoven 7”) or include all performers.</p>
+  {% endfor %}
+{% endif %}
+
+{% endblock %}

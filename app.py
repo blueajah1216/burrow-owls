@@ -212,6 +212,15 @@ class BookMetadata(db.Model):
 # Startup
 # ------------------------------------------------------------------------------
 
+import music
+import music_ingest
+
+music.init_music(
+    app, db,
+    lambda: dict(person_key=None, year=YEAR, books=[], site_visits=get_site_visits()),
+)
+music_ingest.register_cli(app, db)
+
 with app.app_context():
     db.create_all()
 
