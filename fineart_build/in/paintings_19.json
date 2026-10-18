@@ -1,0 +1,742 @@
+[
+ {
+  "id": "vase-with-irises",
+  "title": "Vase with Irises",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "floral painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "ulysses-deriding-polyphemus",
+  "title": "Ulysses deriding Polyphemus",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1829,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "forest",
+  "title": "Forest",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1902,
+  "museum": [
+   "National Gallery of Canada"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "ariadne-abandoned-by-theseus",
+  "title": "Ariadne Abandoned by Theseus",
+  "artist": "Angelica Kauffmann",
+  "artist_id": "Q123098",
+  "year": 1774,
+  "museum": [
+   "Museum of Fine Arts, Houston"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "found",
+  "title": "Found",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1859,
+  "museum": [
+   "Delaware Art Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "boy-with-a-spinning-top",
+  "title": "Boy with a Spinning-Top",
+  "artist": "Jean-Baptiste-Siméon Chardin",
+  "artist_id": "Q207447",
+  "year": 1738,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "Rococo",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-the-duchess-of-alba",
+  "title": "Portrait of the Duchess of Alba",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1795,
+  "museum": [
+   "Fundación Casa de Alba",
+   "Liria Palace"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "goldfish",
+  "title": "Goldfish",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1912,
+  "museum": [
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-channel-of-gravelines-petit-fort-philippe",
+  "title": "The Channel of Gravelines, Petit Fort Philippe",
+  "artist": "Georges Seurat",
+  "artist_id": "Q34013",
+  "year": 1890,
+  "museum": [],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-little-peasant",
+  "title": "The Little Peasant",
+  "artist": "Amedeo Modigliani",
+  "artist_id": "Q120993",
+  "year": 1918,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-cyclops",
+  "title": "The Cyclops",
+  "artist": "Odilon Redon",
+  "artist_id": "Q154349",
+  "year": 1914,
+  "museum": [
+   "Kröller-Müller Museum"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Symbolism",
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "pont-de-maincy",
+  "title": "Pont de Maincy",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1879,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-setting-of-the-sun",
+  "title": "The setting of the sun",
+  "artist": "François Boucher",
+  "artist_id": "Q180932",
+  "year": 1752,
+  "museum": [
+   "Wallace Collection"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "peaches-and-pears",
+  "title": "Peaches and Pears",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1890,
+  "museum": [
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-accolade",
+  "title": "The Accolade",
+  "artist": "Edmund Blair Leighton",
+  "artist_id": "Q142420",
+  "year": 1901,
+  "museum": [],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "spring-high-water",
+  "title": "Spring. High water",
+  "artist": "Isaac Levitan",
+  "artist_id": "Q211356",
+  "year": 1897,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-mother-of-god-with-the-child-vrubel",
+  "title": "The Mother of God with the child (Vrubel)",
+  "artist": "Mikhail Vrubel",
+  "artist_id": "Q215100",
+  "year": 1885,
+  "museum": [
+   "St. Cyril's Church"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-victorious-hannibal-seeing-italy-from-the-alps-for-the-f",
+  "title": "The Victorious Hannibal Seeing Italy from the Alps for the First Time",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1770,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "l-orchestre-de-l-opera",
+  "title": "L'Orchestre de l'Opéra",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1868,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "colorful-life",
+  "title": "Colorful Life",
+  "artist": "Wassily Kandinsky",
+  "artist_id": "Q61064",
+  "year": 1907,
+  "museum": [
+   "Lenbachhaus"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "lorenzo-pagans-and-auguste-de-gas",
+  "title": "Lorenzo Pagans and Auguste de Gas",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1871,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "double portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "pyramid-of-skulls",
+  "title": "Pyramid of Skulls",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1899,
+  "museum": [],
+  "genre_hint": [
+   "still life",
+   "vanitas"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "pilgrimage-to-the-fountain-of-san-isidro",
+  "title": "Pilgrimage to the Fountain of San Isidro",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1819,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-kearsarge-at-boulogne",
+  "title": "The Kearsarge at Boulogne",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1864,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-rabbit",
+  "title": "The Rabbit",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1881,
+  "museum": [
+   "Amgueddfa Cymru – Museum Wales"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-misses-vickers",
+  "title": "The Misses Vickers",
+  "artist": "?",
+  "artist_id": "Q155626",
+  "year": 1884,
+  "museum": [
+   "Sheffield Galleries and Museums Trust"
+  ],
+  "genre_hint": [
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-merciful-knight",
+  "title": "The Merciful Knight",
+  "artist": "Edward Burne-Jones",
+  "artist_id": "Q216406",
+  "year": 1863,
+  "museum": [
+   "Birmingham Museums Trust"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-storm",
+  "title": "The Storm",
+  "artist": "Pierre Auguste Cot",
+  "artist_id": "Q265665",
+  "year": 1880,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art",
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-end-of-the-world",
+  "title": "The end of the world",
+  "artist": "John Martin",
+  "artist_id": "Q937096",
+  "year": 1851,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-sower",
+  "title": "The Sower",
+  "artist": "Ivan Grohar",
+  "artist_id": "Q2339347",
+  "year": 1907,
+  "museum": [
+   "National Gallery of Slovenia"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "pointillism"
+  ]
+ },
+ {
+  "id": "sacred-spring-sweet-dreams-nave-nave-moe",
+  "title": "Sacred Spring: Sweet Dreams (Nave nave moe)",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1894,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "camille-monet-on-her-deathbed",
+  "title": "Camille Monet on her deathbed",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1879,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "catafalque portrait"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "death-and-the-maiden",
+  "title": "Death and the Maiden",
+  "artist": "Egon Schiele",
+  "artist_id": "Q44032",
+  "year": 1915,
+  "museum": [
+   "Belvedere"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": [
+   "Expressionism"
+  ]
+ },
+ {
+  "id": "the-fate-of-the-animals",
+  "title": "The fate of the animals",
+  "artist": "Franz Marc",
+  "artist_id": "Q44054",
+  "year": 1913,
+  "museum": [
+   "Kunstmuseum Basel"
+  ],
+  "genre_hint": [
+   "Expressionism"
+  ],
+  "movement_hint": [
+   "The Blue Rider"
+  ]
+ },
+ {
+  "id": "horsewoman",
+  "title": "Horsewoman",
+  "artist": "Karl Bryullov",
+  "artist_id": "Q4768",
+  "year": 1832,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "equestrian portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "studio-wall",
+  "title": "Studio Wall",
+  "artist": "Adolph von Menzel",
+  "artist_id": "Q164961",
+  "year": 1872,
+  "museum": [
+   "Hamburger Kunsthalle"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-shrimp-girl",
+  "title": "The Shrimp Girl",
+  "artist": "William Hogarth",
+  "artist_id": "Q171344",
+  "year": 1743,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Rococo",
+   "Rococo"
+  ]
+ },
+ {
+  "id": "gather-ye-rosebuds-while-ye-may-john-william",
+  "title": "Gather Ye Rosebuds While Ye May",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1908,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "princess-tarakanova",
+  "title": "Princess Tarakanova",
+  "artist": "Konstantin Flavitsky",
+  "artist_id": "Q777821",
+  "year": 1864,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "victim-of-fanaticism",
+  "title": "Victim of fanaticism",
+  "artist": "Mykola Pymonenko",
+  "artist_id": "Q2601651",
+  "year": 1899,
+  "museum": [
+   "Fine Arts Museum Kharkiv"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-knifegrinder",
+  "title": "The Knifegrinder",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1808,
+  "museum": [
+   "Museum of Fine Arts, Budapest",
+   "Munich Central Collecting Point"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "pieta-after-delacroix-the",
+  "title": "Pietà (after Delacroix), The",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "ruins-of-the-oybin",
+  "title": "Ruins of the Oybin",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1835,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-honourable-mrs-graham",
+  "title": "The Honourable Mrs Graham",
+  "artist": "Thomas Gainsborough",
+  "artist_id": "Q192720",
+  "year": 1775,
+  "museum": [
+   "National Galleries Scotland",
+   "National Galleries Scotland"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-mermaids",
+  "title": "The Mermaids",
+  "artist": "Ivan Kramskoi",
+  "artist_id": "Q207758",
+  "year": 1871,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "sokolniki-autumn",
+  "title": "Sokolniki. Autumn",
+  "artist": "Isaac Levitan",
+  "artist_id": "Q211356",
+  "year": 1879,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "yard-with-lunatics",
+  "title": "Yard with Lunatics",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1794,
+  "museum": [
+   "Meadows Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "allegory-of-the-city-of-madrid",
+  "title": "Allegory of the City of Madrid",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1809,
+  "museum": [
+   "Madrid History Museum",
+   "Madrid History Museum"
+  ],
+  "genre_hint": [
+   "allegory",
+   "allegory"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "two-rats",
+  "title": "Two Rats",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1884,
+  "museum": [],
+  "genre_hint": [
+   "animal art"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "wrestlers",
+  "title": "Wrestlers",
+  "artist": "Thomas Eakins",
+  "artist_id": "Q214905",
+  "year": 1899,
+  "museum": [
+   "Los Angeles County Museum of Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": []
+ }
+]

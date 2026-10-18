@@ -1,0 +1,751 @@
+[
+ {
+  "id": "l-italienne",
+  "title": "L'Italienne",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1887,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-hungry-lion-throws-itself-on-the-antelope",
+  "title": "The Hungry Lion Throws Itself on the Antelope",
+  "artist": "Henri Rousseau",
+  "artist_id": "Q156386",
+  "year": 1905,
+  "museum": [
+   "Beyeler Foundation"
+  ],
+  "genre_hint": [
+   "animal art"
+  ],
+  "movement_hint": [
+   "naïve art"
+  ]
+ },
+ {
+  "id": "the-golden-stairs",
+  "title": "The Golden Stairs",
+  "artist": "Edward Burne-Jones",
+  "artist_id": "Q216406",
+  "year": 1876,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood",
+   "Aestheticism",
+   "Aestheticism"
+  ]
+ },
+ {
+  "id": "the-titan-s-goblet",
+  "title": "The Titan's Goblet",
+  "artist": "Thomas Cole",
+  "artist_id": "Q334001",
+  "year": 1833,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-water-bearer",
+  "title": "The Water Bearer",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1808,
+  "museum": [
+   "Museum of Fine Arts, Budapest"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Naturalism"
+  ]
+ },
+ {
+  "id": "the-last-supper",
+  "title": "The Last Supper",
+  "artist": "Nikolai Ge",
+  "artist_id": "Q457976",
+  "year": 1863,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "march",
+  "title": "March",
+  "artist": "Isaac Levitan",
+  "artist_id": "Q211356",
+  "year": 1895,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "gather-ye-rosebuds-while-ye-may",
+  "title": "Gather Ye Rosebuds While Ye May",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1909,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-vision-to-the-youth-bartholomew",
+  "title": "The Vision to the Youth Bartholomew",
+  "artist": "Mikhail Nesterov",
+  "artist_id": "Q318427",
+  "year": 1889,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "evening-in-ukraine",
+  "title": "Evening in Ukraine",
+  "artist": "Arkhip Kuindzhi",
+  "artist_id": "Q353628",
+  "year": 1878,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-long-engagement",
+  "title": "The Long Engagement",
+  "artist": "Arthur Hughes",
+  "artist_id": "Q434575",
+  "year": 1859,
+  "museum": [
+   "Birmingham Museums Trust"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-finding-of-the-saviour-in-the-temple",
+  "title": "The Finding of the Saviour in the Temple",
+  "artist": "William Holman Hunt",
+  "artist_id": "Q211763",
+  "year": 1860,
+  "museum": [
+   "Birmingham Museums Trust"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "cupid-and-psyche-francois-ger",
+  "title": "Cupid and Psyche",
+  "artist": "François Gérard",
+  "artist_id": "Q163543",
+  "year": 1795,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "a-meadow-in-the-mountains-le-mas-de-saint-paul",
+  "title": "A Meadow in the Mountains: Le Mas de Saint-Paul",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Kröller-Müller Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "nero-s-torches",
+  "title": "Nero's Torches",
+  "artist": "Henryk Siemiradzki",
+  "artist_id": "Q192544",
+  "year": 1876,
+  "museum": [
+   "National Museum in Kraków"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "la-toilette",
+  "title": "La Toilette",
+  "artist": "Frédéric Bazille",
+  "artist_id": "Q207298",
+  "year": 1870,
+  "museum": [
+   "Musée Fabre"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Orientalism"
+  ]
+ },
+ {
+  "id": "boating-on-the-river-epte",
+  "title": "Boating on the River Epte",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1890,
+  "museum": [
+   "São Paulo Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "boulevard-des-capucines",
+  "title": "Boulevard des Capucines",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1873,
+  "museum": [
+   "The Nelson-Atkins Museum of Art",
+   "The Nelson-Atkins Museum of Art"
+  ],
+  "genre_hint": [
+   "cityscape",
+   "cityscape"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "la-leocadia",
+  "title": "La Leocadia",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1819,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "la-belle-angele",
+  "title": "La Belle Angèle",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1889,
+  "museum": [
+   "Musée d'Orsay",
+   "Degas Collection"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "bella-and-hanna-the-eldest-daughters-of-m-l-nathanson",
+  "title": "Bella and Hanna. The Eldest Daughters of M. L. Nathanson",
+  "artist": "Christoffer Wilhelm Eckersberg",
+  "artist_id": "Q363823",
+  "year": 1820,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "double portrait"
+  ],
+  "movement_hint": [
+   "Danish Golden Age"
+  ]
+ },
+ {
+  "id": "bharat-mata",
+  "title": "Bharat Mata",
+  "artist": "Abanindranath Tagore",
+  "artist_id": "Q691796",
+  "year": 1905,
+  "museum": [
+   "Victoria Memorial"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "jewish-wedding-in-morocco",
+  "title": "Jewish Wedding in Morocco",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1839,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Orientalism"
+  ]
+ },
+ {
+  "id": "portrait-of-the-artist-with-the-yellow-christ",
+  "title": "Portrait of the Artist with the Yellow Christ",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1890,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "work-interrupted",
+  "title": "Work Interrupted",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1891,
+  "museum": [
+   "Mead Art Museum",
+   "Mead Art Museum"
+  ],
+  "genre_hint": [
+   "idyll",
+   "idyll"
+  ],
+  "movement_hint": [
+   "academic art",
+   "academic art"
+  ]
+ },
+ {
+  "id": "l-asperge",
+  "title": "L'Asperge",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1880,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "still-life-with-profile-of-laval",
+  "title": "Still Life with Profile of Laval",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1886,
+  "museum": [],
+  "genre_hint": [
+   "portrait",
+   "still life"
+  ],
+  "movement_hint": [
+   "Pont-Aven School",
+   "cloisonnism"
+  ]
+ },
+ {
+  "id": "the-blessed-damozel",
+  "title": "The Blessed Damozel",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1871,
+  "museum": [
+   "Harvard Art Museums"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-crystal-ball",
+  "title": "The Crystal Ball",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1902,
+  "museum": [],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-cup-of-tea",
+  "title": "The Cup of Tea",
+  "artist": "Mary Cassatt",
+  "artist_id": "Q173223",
+  "year": 1880,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-oreads",
+  "title": "The Oreads",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1902,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "whisperings-of-love",
+  "title": "Whisperings of Love",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1889,
+  "museum": [
+   "New Orleans Museum of Art"
+  ],
+  "genre_hint": [
+   "idyll",
+   "mythological painting",
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "summer-s-day",
+  "title": "Summer's Day",
+  "artist": "Berthe Morisot",
+  "artist_id": "Q105320",
+  "year": 1879,
+  "museum": [
+   "Hugh Lane Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "Impressionism"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "woman-with-white-stockings-la-femme-aux-bas-blancs",
+  "title": "Woman with White Stockings (La Femme aux bas blancs)",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1864,
+  "museum": [
+   "Barnes Foundation"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "man-at-his-bath",
+  "title": "Man at His Bath",
+  "artist": "Gustave Caillebotte",
+  "artist_id": "Q295144",
+  "year": 1884,
+  "museum": [
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "christmas-in-the-brothel",
+  "title": "Christmas in the Brothel",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1904,
+  "museum": [
+   "Munch Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "sunlight-in-the-blue-room",
+  "title": "Sunlight in the Blue Room",
+  "artist": "Anna Ancher",
+  "artist_id": "Q253446",
+  "year": 1891,
+  "museum": [
+   "Skagens Museum"
+  ],
+  "genre_hint": [
+   "interior view"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "summer-evening-at-skagen-the-artist-s-wife-and-dog-by-the-sh",
+  "title": "Summer Evening at Skagen. The Artist's Wife and Dog by the Shore",
+  "artist": "Peder Severin Krøyer",
+  "artist_id": "Q365068",
+  "year": 1892,
+  "museum": [
+   "Skagens Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dancing-fairies",
+  "title": "Dancing Fairies",
+  "artist": "August Malmström",
+  "artist_id": "Q762949",
+  "year": 1866,
+  "museum": [
+   "Nationalmuseum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "black-cross",
+  "title": "Black Cross",
+  "artist": "Kazimir Malevich",
+  "artist_id": "Q130777",
+  "year": 1915,
+  "museum": [
+   "Musée National d'Art Moderne"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Suprematism"
+  ]
+ },
+ {
+  "id": "the-wrestlers",
+  "title": "The Wrestlers",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1853,
+  "museum": [
+   "Hungarian National Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "proudhon-and-his-children",
+  "title": "Proudhon and His Children",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1865,
+  "museum": [
+   "Musée des Beaux-Arts de la ville de Paris"
+  ],
+  "genre_hint": [
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-town",
+  "title": "The Town",
+  "artist": "?",
+  "artist_id": "Q7724",
+  "year": 1903,
+  "museum": [
+   "Nationalmuseum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "mother-and-children",
+  "title": "Mother and Children",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1875,
+  "museum": [
+   "The Frick Collection",
+   "The Frick Collection"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "perseus-and-andromeda",
+  "title": "Perseus and Andromeda",
+  "artist": "Frederic Leighton",
+  "artist_id": "Q160252",
+  "year": 1891,
+  "museum": [
+   "Walker Art Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "sappho-and-alcaeus",
+  "title": "Sappho and Alcaeus",
+  "artist": "Lawrence Alma-Tadema",
+  "artist_id": "Q240526",
+  "year": 1881,
+  "museum": [
+   "Walters Art Museum"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "motra-tone",
+  "title": "Motra Tone",
+  "artist": "Kolë Idromeno",
+  "artist_id": "Q1390711",
+  "year": 1883,
+  "museum": [
+   "National Art Gallery of Albania"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "parisian-women-in-algerian-costume",
+  "title": "Parisian Women in Algerian Costume",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1872,
+  "museum": [
+   "Matsukata Collection",
+   "Matsukata Collection"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-day-dream",
+  "title": "The Day Dream",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1880,
+  "museum": [
+   "Victoria and Albert Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "broken-eggs",
+  "title": "Broken Eggs",
+  "artist": "Jean-Baptiste Greuze",
+  "artist_id": "Q347139",
+  "year": 1756,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "Demidov collection"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ }
+]

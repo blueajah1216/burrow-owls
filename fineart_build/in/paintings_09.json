@@ -1,0 +1,748 @@
+[
+ {
+  "id": "spoliarium",
+  "title": "Spoliarium",
+  "artist": "Juan Luna",
+  "artist_id": "Q28867",
+  "year": 1884,
+  "museum": [
+   "National Museum of the Philippines"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "little-girl-in-a-blue-armchair",
+  "title": "Little Girl in a Blue Armchair",
+  "artist": "Mary Cassatt",
+  "artist_id": "Q173223",
+  "year": 1878,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "san-giorgio-maggiore-at-dusk",
+  "title": "San Giorgio Maggiore at Dusk",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1908,
+  "museum": [
+   "Amgueddfa Cymru – Museum Wales"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-tower-of-blue-horses",
+  "title": "The Tower of Blue Horses",
+  "artist": "Franz Marc",
+  "artist_id": "Q44054",
+  "year": 1913,
+  "museum": [
+   "Alte Nationalgalerie",
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Expressionism",
+   "Expressionism"
+  ]
+ },
+ {
+  "id": "farms-near-auvers",
+  "title": "Farms near Auvers",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "marriage-of-sisley",
+  "title": "Marriage of Sisley",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1868,
+  "museum": [
+   "Wallraf–Richartz Museum",
+   "Wallraf–Richartz Museum"
+  ],
+  "genre_hint": [
+   "double portrait",
+   "double portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-reading",
+  "title": "The Reading",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1865,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "genre art",
+   "figure painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "cupid-and-psyche",
+  "title": "Cupid and Psyche",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1817,
+  "museum": [
+   "Cleveland Museum of Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-oxbow",
+  "title": "The Oxbow",
+  "artist": "Thomas Cole",
+  "artist_id": "Q334001",
+  "year": 1836,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "topographic landscape"
+  ],
+  "movement_hint": [
+   "Hudson River school"
+  ]
+ },
+ {
+  "id": "female-nude",
+  "title": "Female Nude",
+  "artist": "Amedeo Modigliani",
+  "artist_id": "Q120993",
+  "year": 1916,
+  "museum": [
+   "Courtauld Gallery"
+  ],
+  "genre_hint": [
+   "portrait",
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "nude-woman-anna",
+  "title": "Nude woman, Anna",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1876,
+  "museum": [
+   "Pushkin Museum of Fine Arts",
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "nude",
+   "nude"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "girl-in-a-wood",
+  "title": "Girl in a Wood",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1882,
+  "museum": [
+   "Kröller-Müller Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "jeune-fille-au-piano-girl-at-the-piano-the-overture-to-tannh",
+  "title": "Jeune Fille au piano (Girl at the Piano - The Overture to Tannhauser)",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1869,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-toilette-of-esther",
+  "title": "The Toilette of Esther",
+  "artist": "Théodore Chassériau",
+  "artist_id": "Q342467",
+  "year": 1841,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "nude",
+   "religious art"
+  ],
+  "movement_hint": [
+   "Orientalism"
+  ]
+ },
+ {
+  "id": "countess-of-chinchon",
+  "title": "Countess of Chinchon",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1800,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "boy-carrying-a-sword",
+  "title": "Boy Carrying a Sword",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1861,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "ulysses-and-the-sirens",
+  "title": "Ulysses and the Sirens",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1891,
+  "museum": [
+   "National Gallery of Victoria",
+   "National Gallery of Victoria"
+  ],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "a-philosopher-by-lamplight",
+  "title": "A Philosopher by Lamplight",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1769,
+  "museum": [
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-immaculate-conception",
+  "title": "The Immaculate Conception",
+  "artist": "Giovanni Battista Tiepolo",
+  "artist_id": "Q186202",
+  "year": 1767,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "lady-in-blue",
+  "title": "Lady in Blue",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1904,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "the-nut-gatherers",
+  "title": "The Nut Gatherers",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1882,
+  "museum": [
+   "Detroit Institute of Arts"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "king-cophetua-and-the-beggar-maid",
+  "title": "King Cophetua and the Beggar Maid",
+  "artist": "Edward Burne-Jones",
+  "artist_id": "Q216406",
+  "year": 1884,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "le-pont-de-l-europe",
+  "title": "Le Pont de l'Europe",
+  "artist": "Gustave Caillebotte",
+  "artist_id": "Q295144",
+  "year": 1876,
+  "museum": [
+   "Musée du Petit Palais"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "general-johnson-saving-a-wounded-french-officer-from-the-tom",
+  "title": "General Johnson Saving a Wounded French Officer from the Tomahawk of a North American Indian",
+  "artist": "Benjamin West",
+  "artist_id": "Q313498",
+  "year": 1764,
+  "museum": [
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "jason-and-medea",
+  "title": "Jason and Medea",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1907,
+  "museum": [],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-hireling-shepherd",
+  "title": "The Hireling Shepherd",
+  "artist": "William Holman Hunt",
+  "artist_id": "Q211763",
+  "year": 1851,
+  "museum": [
+   "Manchester Art Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "rideau-cruchon-et-compotier",
+  "title": "Rideau, Cruchon et Compotier",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1893,
+  "museum": [
+   "Whitney Museum of American Art"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "bubbles",
+  "title": "Bubbles",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1886,
+  "museum": [
+   "Lady Lever Art Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "pink-roses",
+  "title": "Pink Roses",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Ny Carlsberg Glyptotek"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "hope-i",
+  "title": "Hope I",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1903,
+  "museum": [
+   "National Gallery of Canada"
+  ],
+  "genre_hint": [
+   "nude",
+   "allegory"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-abduction-of-psyche",
+  "title": "The abduction of Psyche",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1895,
+  "museum": [],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-siesta-after-millet",
+  "title": "The siesta (after Millet)",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-parasol",
+  "title": "The Parasol",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1777,
+  "museum": [
+   "Museo del Prado",
+   "Hola Ghost"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-girl-with-a-watering-can",
+  "title": "A Girl with a Watering Can",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1876,
+  "museum": [],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "sunset",
+  "title": "Sunset",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1837,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "black-circle",
+  "title": "Black Circle",
+  "artist": "Kazimir Malevich",
+  "artist_id": "Q130777",
+  "year": 1924,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "abstract art"
+  ],
+  "movement_hint": [
+   "Suprematism"
+  ]
+ },
+ {
+  "id": "the-swan-princess",
+  "title": "The Swan Princess",
+  "artist": "Mikhail Vrubel",
+  "artist_id": "Q215100",
+  "year": 1900,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "cart-with-black-ox",
+  "title": "Cart with Black Ox",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1884,
+  "museum": [
+   "Portland Art Museum"
+  ],
+  "genre_hint": [
+   "genre art",
+   "animal art"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "boreas",
+  "title": "Boreas",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1903,
+  "museum": [],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "frenzy-of-exultations",
+  "title": "Frenzy of Exultations",
+  "artist": "Władysław Podkowiński",
+  "artist_id": "Q2065760",
+  "year": 1893,
+  "museum": [
+   "National Museum in Kraków"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "madonnina",
+  "title": "Madonnina",
+  "artist": "Roberto Ferruzzi",
+  "artist_id": "Q2159499",
+  "year": 1897,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "witches-flight",
+  "title": "Witches' Flight",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1797,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "boating",
+  "title": "Boating",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1874,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "realism"
+  ]
+ },
+ {
+  "id": "woman-with-a-pearl-necklace-in-a-loge",
+  "title": "Woman with a Pearl Necklace in a Loge",
+  "artist": "Mary Cassatt",
+  "artist_id": "Q173223",
+  "year": 1879,
+  "museum": [
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "comtesse-d-haussonville",
+  "title": "Comtesse d'Haussonville",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1845,
+  "museum": [
+   "The Frick Collection"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "still-life-with-straw-hat",
+  "title": "Still Life with Straw Hat",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1885,
+  "museum": [
+   "Kröller-Müller Museum"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "sleep-and-his-half-brother-death",
+  "title": "Sleep and his Half-brother Death",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1874,
+  "museum": [],
+  "genre_hint": [
+   "allegory",
+   "allegory"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "after-dinner-at-ornans",
+  "title": "After Dinner at Ornans",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1848,
+  "museum": [
+   "Palais des Beaux-Arts de Lille",
+   "Palais des Beaux-Arts de Lille"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "realism",
+   "realism"
+  ]
+ },
+ {
+  "id": "ceremonial-sitting-of-the-state-council-on-7-may-1901-markin",
+  "title": "Ceremonial Sitting of the State Council on 7 May 1901 Marking the Centenary of its Foundation",
+  "artist": "Ilya Repin",
+  "artist_id": "Q172911",
+  "year": 1903,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-bacchante",
+  "title": "The Bacchante",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1844,
+  "museum": [
+   "Arp Museum Bahnhof Rolandseck",
+   "Collection Rau for UNICEF"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ }
+]

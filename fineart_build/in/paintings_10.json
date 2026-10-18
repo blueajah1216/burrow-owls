@@ -1,0 +1,766 @@
+[
+ {
+  "id": "odalisque-a-l-esclave",
+  "title": "Odalisque à l'esclave",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1839,
+  "museum": [
+   "Fogg Museum",
+   "Harvard Art Museums"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neoclassicism",
+   "Orientalism"
+  ]
+ },
+ {
+  "id": "inger-on-the-beach",
+  "title": "Inger on the Beach",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1889,
+  "museum": [
+   "Art Museums of Bergen"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "brown-odalisque",
+  "title": "Brown Odalisque",
+  "artist": "François Boucher",
+  "artist_id": "Q180932",
+  "year": 1740,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "self-portrait-with-a-bandaged-ear",
+  "title": "Self-Portrait With a Bandaged Ear",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "hope-ii",
+  "title": "Hope II",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1907,
+  "museum": [
+   "Museum of Modern Art"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-destruction-of-sodom-and-gomorrah",
+  "title": "The Destruction of Sodom And Gomorrah",
+  "artist": "John Martin",
+  "artist_id": "Q937096",
+  "year": 1852,
+  "museum": [
+   "Laing Art Gallery"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-triumph-of-cleopatra",
+  "title": "The Triumph of Cleopatra",
+  "artist": "William Etty",
+  "artist_id": "Q766362",
+  "year": 1821,
+  "museum": [
+   "Lady Lever Art Gallery"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "boys-drawing",
+  "title": "Boys drawing",
+  "artist": "Sofie Ribbing",
+  "artist_id": "Q4974655",
+  "year": 1864,
+  "museum": [
+   "Gothenburg Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Düsseldorf school of painting"
+  ]
+ },
+ {
+  "id": "the-execution-of-marshal-ney",
+  "title": "The Execution of Marshal Ney",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1868,
+  "museum": [
+   "Sheffield Galleries and Museums Trust",
+   "Sheffield Galleries and Museums Trust"
+  ],
+  "genre_hint": [
+   "history painting",
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-battle-of-the-kearsarge-and-the-alabama",
+  "title": "The Battle of the Kearsarge and the Alabama",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1865,
+  "museum": [
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "marine art",
+   "battle painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "tree-of-crows",
+  "title": "Tree of crows",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1822,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "peasant-woman-against-a-background-of-wheat",
+  "title": "Peasant Woman Against a Background of Wheat",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "pont-boieldieu-in-rouen-rainy-weather",
+  "title": "Pont Boieldieu in Rouen, Rainy Weather",
+  "artist": "Camille Pissarro",
+  "artist_id": "Q134741",
+  "year": 1896,
+  "museum": [
+   "Art Gallery of Ontario"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Neo-impressionism"
+  ]
+ },
+ {
+  "id": "a-huguenot",
+  "title": "A Huguenot",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1852,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "judith-and-holofernes",
+  "title": "Judith and Holofernes",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1819,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "religious art",
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dante-s-dream",
+  "title": "Dante's Dream",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1871,
+  "museum": [
+   "Walker Art Gallery"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "nocturne-blue-and-silver-chelsea",
+  "title": "Nocturne: Blue and Silver – Chelsea",
+  "artist": "James McNeill Whistler",
+  "artist_id": "Q203643",
+  "year": 1871,
+  "museum": [
+   "Tate"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Tonalism"
+  ]
+ },
+ {
+  "id": "antiochus-and-stratonice",
+  "title": "Antiochus and Stratonice",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1840,
+  "museum": [
+   "Condé Museum"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "truth-time-and-history",
+  "title": "Truth, Time and History",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1797,
+  "museum": [
+   "Nationalmuseum"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "mont-sainte-victoire-seen-from-bellevue",
+  "title": "Mont Sainte-Victoire seen from Bellevue",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1892,
+  "museum": [
+   "Barnes Foundation"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-distribution-of-the-eagle-standards",
+  "title": "The Distribution of the Eagle Standards",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1810,
+  "museum": [
+   "Palace of Versailles"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "surrender-of-lord-cornwallis",
+  "title": "Surrender of Lord Cornwallis",
+  "artist": "John Trumbull",
+  "artist_id": "Q369263",
+  "year": 1819,
+  "museum": [
+   "United States Capitol rotunda"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-poppy-field-near-argenteuil",
+  "title": "The Poppy Field near Argenteuil",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1873,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-tennis-court-oath",
+  "title": "The Tennis Court Oath",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1791,
+  "museum": [
+   "Palace of Versailles",
+   "Department of Prints and Drawings of the Louvre"
+  ],
+  "genre_hint": [
+   "group portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "portrait-of-frederic-bazille-painting",
+  "title": "Portrait of Frédéric Bazille Painting",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1867,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "seated-nude",
+  "title": "Seated Nude",
+  "artist": "Amedeo Modigliani",
+  "artist_id": "Q120993",
+  "year": 1917,
+  "museum": [
+   "Royal Museum of Fine Arts Antwerp"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "asmodea",
+  "title": "Asmodea",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1819,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "religious art",
+   "religious art"
+  ],
+  "movement_hint": [
+   "Romanticism",
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "blind-man-s-bluff-jean-honore-",
+  "title": "Blind Man's Bluff",
+  "artist": "Jean-Honoré Fragonard",
+  "artist_id": "Q127171",
+  "year": 1757,
+  "museum": [
+   "Führermuseum",
+   "Führermuseum"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Rococo",
+   "Rococo",
+   "Rococo",
+   "Rococo"
+  ]
+ },
+ {
+  "id": "frederick-the-great-playing-the-flute-at-sanssouci",
+  "title": "Frederick the Great Playing the Flute at Sanssouci",
+  "artist": "Adolph von Menzel",
+  "artist_id": "Q164961",
+  "year": 1852,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "napoleon-on-the-battlefield-of-eylau",
+  "title": "Napoleon on the Battlefield of Eylau",
+  "artist": "Antoine-Jean Gros",
+  "artist_id": "Q216999",
+  "year": 1807,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "battle painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-family-of-philip-v",
+  "title": "The Family of Philip V",
+  "artist": "Louis-Michel van Loo",
+  "artist_id": "Q381299",
+  "year": 1743,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "family portrait"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "at-the-moulin-rouge-the-dance",
+  "title": "At the Moulin Rouge, The Dance",
+  "artist": "Henri de Toulouse-Lautrec",
+  "artist_id": "Q82445",
+  "year": 1890,
+  "museum": [
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "ruggiero-rescuing-angelica",
+  "title": "Ruggiero Rescuing Angelica",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1819,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "nude",
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-graham-children",
+  "title": "The Graham Children",
+  "artist": "William Hogarth",
+  "artist_id": "Q171344",
+  "year": 1742,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "family portrait",
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "masked-ball-at-the-opera",
+  "title": "Masked Ball at the Opera",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1873,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-watzmann",
+  "title": "The Watzmann",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1820,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "christ-s-entry-into-brussels-in-1889",
+  "title": "Christ's Entry Into Brussels in 1889",
+  "artist": "James Ensor",
+  "artist_id": "Q158840",
+  "year": 1888,
+  "museum": [
+   "J. Paul Getty Museum"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Les XX"
+  ]
+ },
+ {
+  "id": "bonaparte-at-the-pont-d-arcole",
+  "title": "Bonaparte at the Pont d'Arcole",
+  "artist": "Antoine-Jean Gros",
+  "artist_id": "Q216999",
+  "year": 1796,
+  "museum": [
+   "Château de Compiègne",
+   "Musée de l'Histoire de France"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "christ-crucified",
+  "title": "Christ Crucified",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1780,
+  "museum": [
+   "Museo del Prado",
+   "Museo de la Trinidad"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Neoclassical painting"
+  ]
+ },
+ {
+  "id": "the-unequal-marriage",
+  "title": "The Unequal Marriage",
+  "artist": "Vassili Vladimirovich Pukiryov",
+  "artist_id": "Q6394591",
+  "year": 1875,
+  "museum": [
+   "Belarusian National Arts Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-millinery-shop-by-edgar-degas",
+  "title": "The Millinery Shop by Edgar Degas",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1879,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "at-the-pere-lathuille-restaurant",
+  "title": "At the Père Lathuille Restaurant",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1879,
+  "museum": [
+   "Musée des Beaux-Arts de Tournai"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "woman-at-a-window",
+  "title": "Woman at a Window",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1822,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "hay-harvest-at-eragny",
+  "title": "Hay Harvest at Éragny",
+  "artist": "Camille Pissarro",
+  "artist_id": "Q134741",
+  "year": 1901,
+  "museum": [
+   "National Gallery of Canada"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dante-and-beatrice",
+  "title": "Dante and Beatrice",
+  "artist": "Henry Holiday",
+  "artist_id": "Q1763678",
+  "year": 1884,
+  "museum": [
+   "Walker Art Gallery"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "gray-tree",
+  "title": "Gray Tree",
+  "artist": "Piet Mondrian",
+  "artist_id": "Q151803",
+  "year": 1911,
+  "museum": [
+   "Kunstmuseum Den Haag"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-blue-rider",
+  "title": "The Blue Rider",
+  "artist": "Wassily Kandinsky",
+  "artist_id": "Q61064",
+  "year": 1903,
+  "museum": [],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Expressionism"
+  ]
+ },
+ {
+  "id": "cupid-untying-the-zone-of-venus",
+  "title": "Cupid Untying the Zone of Venus",
+  "artist": "Joshua Reynolds",
+  "artist_id": "Q194402",
+  "year": 1788,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "erotic art",
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "jacques-and-berthe-lipchitz",
+  "title": "Jacques and Berthe Lipchitz",
+  "artist": "Amedeo Modigliani",
+  "artist_id": "Q120993",
+  "year": 1916,
+  "museum": [
+   "Helen Birch Bartlett Memorial Collection",
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "double portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "beach-in-pourville",
+  "title": "Beach in Pourville",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1882,
+  "museum": [
+   "National Museum in Poznań"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ }
+]

@@ -1,0 +1,751 @@
+[
+ {
+  "id": "la-rue-montorgueil",
+  "title": "La Rue Montorgueil",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1878,
+  "museum": [
+   "Musée d'Orsay",
+   "Munich Central Collecting Point"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-birth-of-venus-jean-honore-",
+  "title": "The Birth of Venus",
+  "artist": "Jean-Honoré Fragonard",
+  "artist_id": "Q127171",
+  "year": 1753,
+  "museum": [
+   "Musée Grobet-Labadié"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "the-siesta",
+  "title": "The Siesta",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1892,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-folkestone-boat-boulogne",
+  "title": "The Folkestone Boat, Boulogne",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1869,
+  "museum": [
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "le-cafe-concert-aux-ambassadeurs",
+  "title": "Le Café-concert aux ambassadeurs",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1876,
+  "museum": [
+   "Museum of Fine Arts of Lyon"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "pastoral-concert",
+  "title": "Pastoral Concert",
+  "artist": "Jean-Baptiste Camille Corot",
+  "artist_id": "Q148475",
+  "year": 1857,
+  "museum": [
+   "Condé Museum"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "genre art",
+   "figure painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-seine-at-bougival",
+  "title": "The Seine at Bougival",
+  "artist": "Alfred Sisley",
+  "artist_id": "Q175130",
+  "year": 1876,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-red-roofs-cote-saint-denis-at-pontoise-winter-effect",
+  "title": "The Red Roofs, Côte Saint-Denis at Pontoise, Winter Effect",
+  "artist": "Camille Pissarro",
+  "artist_id": "Q134741",
+  "year": 1877,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "esther",
+  "title": "Esther",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1865,
+  "museum": [],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "fishermen-in-poissy",
+  "title": "Fishermen in Poissy",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1882,
+  "museum": [
+   "Belvedere",
+   "Belvedere"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "men-reading",
+  "title": "Men Reading",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1819,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-farewell-of-telemachus-and-eucharis",
+  "title": "The Farewell of Telemachus and Eucharis",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1818,
+  "museum": [
+   "J. Paul Getty Museum"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "les-derniers-moments-de-michel-lepeletier",
+  "title": "Les derniers moments de Michel Lepeletier",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1793,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-banks-of-the-oise",
+  "title": "The Banks of the Oise",
+  "artist": "Alfred Sisley",
+  "artist_id": "Q175130",
+  "year": 1877,
+  "museum": [],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-regatta-at-molesey",
+  "title": "The Regatta at Molesey",
+  "artist": "Alfred Sisley",
+  "artist_id": "Q175130",
+  "year": 1874,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-town-hall-at-auvers",
+  "title": "The Town Hall at Auvers",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "la-femme-a-la-cafetiere-woman-with-a-coffeepot",
+  "title": "La Femme à la cafetière (Woman with a Coffeepot)",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1895,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "figure painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "young-lady-in-1866",
+  "title": "Young Lady in 1866",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1866,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-croquet-game",
+  "title": "The Croquet Game",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1873,
+  "museum": [
+   "Städel Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "in-the-salon-at-the-rue-des-moulins",
+  "title": "In the Salon at the Rue des Moulins",
+  "artist": "Henri de Toulouse-Lautrec",
+  "artist_id": "Q82445",
+  "year": 1894,
+  "museum": [
+   "Musée Toulouse-Lautrec"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "equestrienne-at-the-cirque-fernando",
+  "title": "Equestrienne (At the Cirque Fernando)",
+  "artist": "Henri de Toulouse-Lautrec",
+  "artist_id": "Q82445",
+  "year": 1888,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-eugene-boch",
+  "title": "Portrait of Eugène Boch",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-ambroise-vollard",
+  "title": "Portrait of Ambroise Vollard",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1899,
+  "museum": [
+   "Musée des Beaux-Arts de la ville de Paris"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-madame-marie-louise-trudaine",
+  "title": "Portrait of Madame Marie-Louise Trudaine",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1794,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "portrait-of-pierre-seriziat",
+  "title": "Portrait of Pierre Sériziat",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1795,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "portrait-of-madame-adelaide-pastoret",
+  "title": "Portrait of Madame Adélaide Pastoret",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1791,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-charging-chasseur",
+  "title": "The Charging Chasseur",
+  "artist": "Théodore Géricault",
+  "artist_id": "Q184212",
+  "year": 1812,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "genre art",
+   "equestrian portrait"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "self-portrait-in-front-of-a-mirror",
+  "title": "Self-portrait in front of a mirror",
+  "artist": "Henri de Toulouse-Lautrec",
+  "artist_id": "Q82445",
+  "year": 1882,
+  "museum": [
+   "Musée Toulouse-Lautrec"
+  ],
+  "genre_hint": [
+   "portrait",
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-alphonse-leroy",
+  "title": "Portrait of Alphonse Leroy",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1783,
+  "museum": [
+   "Musée Fabre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism",
+   "Naturalism"
+  ]
+ },
+ {
+  "id": "berlin-street-scene",
+  "title": "Berlin Street Scene",
+  "artist": "Ernst Ludwig Kirchner",
+  "artist_id": "Q229272",
+  "year": 1913,
+  "museum": [
+   "Neue Galerie"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-railway-bridge-at-argenteuil",
+  "title": "The Railway Bridge at Argenteuil",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1874,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "gismonda",
+  "title": "Gismonda",
+  "artist": "Alphonse Mucha",
+  "artist_id": "Q146691",
+  "year": 1894,
+  "museum": [
+   "National Gallery Prague",
+   "National Gallery Prague"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "flooding-at-port-marly",
+  "title": "Flooding at Port-Marly",
+  "artist": "Alfred Sisley",
+  "artist_id": "Q175130",
+  "year": 1876,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "yellow-cow",
+  "title": "Yellow Cow",
+  "artist": "Franz Marc",
+  "artist_id": "Q44054",
+  "year": 1911,
+  "museum": [
+   "Solomon R. Guggenheim Museum"
+  ],
+  "genre_hint": [
+   "animal art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-adam-mickiewicz-on-the-ayu-dag-cliff",
+  "title": "Portrait of Adam Mickiewicz on the Ayu-Dag Cliff",
+  "artist": "Walenty Wańkowicz",
+  "artist_id": "Q1795226",
+  "year": 1828,
+  "museum": [
+   "National Museum in Warsaw"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "still-life-with-apples",
+  "title": "Still Life with Apples",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1890,
+  "museum": [
+   "Hermitage Museum",
+   "Otto Krebs collection"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "apples-and-oranges",
+  "title": "Apples and Oranges",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1899,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "woman-with-a-parasol-facing-left",
+  "title": "Woman with a Parasol, facing left",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1886,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "figure painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "portrait-of-stephane-mallarme",
+  "title": "Portrait of Stéphane Mallarmé",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1876,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "sunrise-with-sea-monsters",
+  "title": "Sunrise with Sea Monsters",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1845,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "hopital-saint-paul-a-saint-remy-de-provence",
+  "title": "Hôpital Saint-Paul à Saint-Rémy-de-Provence",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "restaurant-de-la-sirene-a-asnieres",
+  "title": "Restaurant de la Sirène à Asnières",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1887,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "ballet-rehearsal-on-stage",
+  "title": "Ballet Rehearsal on Stage",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1874,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-grape-harvest",
+  "title": "The Grape Harvest",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1786,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "enclosed-field-with-peasant",
+  "title": "Enclosed Field with Peasant",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "el-jaleo",
+  "title": "El Jaleo",
+  "artist": "?",
+  "artist_id": "Q155626",
+  "year": 1882,
+  "museum": [
+   "Isabella Stewart Gardner Museum",
+   "Isabella Stewart Gardner Museum"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "hispanism",
+   "hispanism"
+  ]
+ },
+ {
+  "id": "day-of-the-god-mahana-no-atua",
+  "title": "Day of the God (Mahana no Atua)",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1894,
+  "museum": [
+   "Art Institute of Chicago",
+   "Degas Collection"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "gabrielle-and-jean",
+  "title": "Gabrielle and Jean",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1895,
+  "museum": [
+   "Jean Walter-Paul Guillaume Collection",
+   "Jean Walter-Paul Guillaume Collection"
+  ],
+  "genre_hint": [
+   "double portrait",
+   "double portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "lansdowne-portrait",
+  "title": "Lansdowne Portrait",
+  "artist": "Gilbert Stuart",
+  "artist_id": "Q41402",
+  "year": 1796,
+  "museum": [
+   "National Portrait Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-madeleine",
+  "title": "Portrait of Madeleine",
+  "artist": "Marie-Guillemine Benoist",
+  "artist_id": "Q118810",
+  "year": 1800,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ }
+]

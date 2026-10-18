@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}The Great Gallery — 1,000 famous paintings{% endblock %}</title>
+  <meta name="description" content="{% block desc %}Explore 1,000 of the most famous paintings of the last 300 years — why they're great, who made them, and why we still love them.{% endblock %}">
+  {% block og %}{% endblock %}
+  <meta name="theme-color" content="#0a1a5c">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231436c4'/><rect x='18' y='18' width='64' height='64' fill='none' stroke='%23f4c95d' stroke-width='9'/><circle cx='50' cy='50' r='13' fill='%23ff8fa3'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=11">
+</head>
+<body>
+<div class="sky" aria-hidden="true"><i></i><i></i><i></i></div>
+<header class="top">
+  <a class="brand" href="{{ url_for('fineart.index') }}">
+    <span class="brand-mark"><span></span></span>
+    <span class="brand-text">The Great <em>Gallery</em></span>
+  </a>
+  <nav>
+    <a href="{{ url_for('fineart.index') }}#browse">Browse</a>
+    <a href="{{ url_for('fineart.today') }}">Today's pick</a>
+    <a href="{{ url_for('fineart.random_painting') }}" class="pill">🎲 Surprise me</a>
+  </nav>
+</header>
+{% block body %}{% endblock %}
+<footer class="foot">
+  <p><strong>The Great Gallery</strong> · Every painting here is in the public domain. Images come from <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a>; each painting links to its source page.</p>
+  <p class="fine">Descriptions are written for curious kids. Some details of art history are debated — when in doubt, ask a librarian or a museum.</p>
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

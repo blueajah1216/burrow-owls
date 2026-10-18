@@ -1,0 +1,585 @@
+[
+ {
+  "id": "Q319843",
+  "name": "Ford Madox Brown",
+  "born": "1821",
+  "died": "1893",
+  "born_in": "Calais",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q82445",
+  "name": "Henri de Toulouse-Lautrec",
+  "born": "1864",
+  "died": "1901",
+  "born_in": "Albi",
+  "died_in": "Château Malromé",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q322582",
+  "name": "Paul Delaroche",
+  "born": "1797",
+  "died": "1856",
+  "born_in": "Paris",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q173223",
+  "name": "Mary Cassatt",
+  "born": "1844",
+  "died": "1926",
+  "born_in": "Allegheny",
+  "died_in": "Le Mesnil-Théribus",
+  "citizenship": [
+   "United States"
+  ]
+ },
+ {
+  "id": "Q180932",
+  "name": "François Boucher",
+  "born": "1703",
+  "died": "1770",
+  "born_in": "Paris",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q41406",
+  "name": "Edvard Munch",
+  "born": "1863",
+  "died": "1944",
+  "born_in": "Ådalsbruk",
+  "died_in": "Ekely",
+  "citizenship": [
+   "Norway"
+  ]
+ },
+ {
+  "id": "Q44032",
+  "name": "Egon Schiele",
+  "born": "1890",
+  "died": "1918",
+  "born_in": "Tulln an der Donau",
+  "died_in": "Vienna",
+  "citizenship": [
+   "Cisleithania"
+  ]
+ },
+ {
+  "id": "Q211763",
+  "name": "William Holman Hunt",
+  "born": "1827",
+  "died": "1910",
+  "born_in": "London",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q215100",
+  "name": "Mikhail Vrubel",
+  "born": "1856",
+  "died": "1910",
+  "born_in": "Omsk",
+  "died_in": "Saint Petersburg",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q216406",
+  "name": "Edward Burne-Jones",
+  "born": "1833",
+  "died": "1898",
+  "born_in": "Birmingham",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q183245",
+  "name": "George Frederic Watts",
+  "born": "1817",
+  "died": "1904",
+  "born_in": "London",
+  "died_in": "Compton",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q365544",
+  "name": "Adolph Tidemand",
+  "born": "1814",
+  "died": "1876",
+  "born_in": "Mandal",
+  "died_in": "Christiania",
+  "citizenship": [
+   "Norway"
+  ]
+ },
+ {
+  "id": "Q701669",
+  "name": "Hans Gude",
+  "born": "1825",
+  "died": "1903",
+  "born_in": "Christiania",
+  "died_in": "Berlin",
+  "citizenship": [
+   "Norway"
+  ]
+ },
+ {
+  "id": "Q366212",
+  "name": "Frederic Edwin Church",
+  "born": "1826",
+  "died": "1900",
+  "born_in": "Hartford",
+  "died_in": "New York City",
+  "citizenship": [
+   "United States"
+  ]
+ },
+ {
+  "id": "Q214905",
+  "name": "Thomas Eakins",
+  "born": "1844",
+  "died": "1916",
+  "born_in": "Philadelphia",
+  "died_in": "Philadelphia",
+  "citizenship": [
+   "United States"
+  ]
+ },
+ {
+  "id": "Q186748",
+  "name": "Dante Gabriel Rossetti",
+  "born": "1828",
+  "died": "1882",
+  "born_in": "London",
+  "died_in": "United Kingdom",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q369263",
+  "name": "John Trumbull",
+  "born": "1756",
+  "died": "1843",
+  "born_in": "Lebanon",
+  "died_in": "New York City",
+  "citizenship": [
+   "United States"
+  ]
+ },
+ {
+  "id": "Q5589",
+  "name": "Henri Matisse",
+  "born": "1869",
+  "died": "1954",
+  "born_in": "Le Cateau-Cambrésis",
+  "died_in": "Nice",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q127017",
+  "name": "Vasily Vereshchagin",
+  "born": "1842",
+  "died": "1904",
+  "born_in": "Cherepovets",
+  "died_in": "Lüshunkou District",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q351746",
+  "name": "Joaquín Sorolla",
+  "born": "1863",
+  "died": "1923",
+  "born_in": "Valencia",
+  "died_in": "Madrid",
+  "citizenship": [
+   "Spain"
+  ]
+ },
+ {
+  "id": "Q958927",
+  "name": "Aleksander Gierymski",
+  "born": "1850",
+  "died": "1901",
+  "born_in": "Warsaw",
+  "died_in": "Rome",
+  "citizenship": [
+   "Poland",
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q241732",
+  "name": "Rosa Bonheur",
+  "born": "1822",
+  "died": "1899",
+  "born_in": "Bordeaux",
+  "died_in": "Thomery",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q207298",
+  "name": "Frédéric Bazille",
+  "born": "1841",
+  "died": "1870",
+  "born_in": "Montpellier",
+  "died_in": "Beaune-la-Rolande",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q271484",
+  "name": "Marguerite Gérard",
+  "born": "1761",
+  "died": "1837",
+  "born_in": "Grasse",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q216999",
+  "name": "Antoine-Jean Gros",
+  "born": "1771",
+  "died": "1835",
+  "born_in": "Paris",
+  "died_in": "Meudon",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q123071",
+  "name": "Arnold Böcklin",
+  "born": "1827",
+  "died": "1901",
+  "born_in": "Basel",
+  "died_in": "Fiesole",
+  "citizenship": [
+   "Switzerland"
+  ]
+ },
+ {
+  "id": "Q316016",
+  "name": "John Singleton Copley",
+  "born": "1738",
+  "died": "1815",
+  "born_in": "Boston",
+  "died_in": "London",
+  "citizenship": [
+   "British Empire"
+  ]
+ },
+ {
+  "id": "Q561916",
+  "name": "Henry Raeburn",
+  "born": "1756",
+  "died": "1823",
+  "born_in": "Stockbridge",
+  "died_in": "Edinburgh",
+  "citizenship": [
+   "Kingdom of Great Britain",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q76829",
+  "name": "Alexander Ivanov",
+  "born": "1806",
+  "died": "1858",
+  "born_in": "Saint Petersburg",
+  "died_in": "Saint Petersburg",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q547055",
+  "name": "Carl Bloch",
+  "born": "1834",
+  "died": "1890",
+  "born_in": "Copenhagen",
+  "died_in": "Copenhagen",
+  "citizenship": [
+   "Kingdom of Denmark"
+  ]
+ },
+ {
+  "id": "Q334001",
+  "name": "Thomas Cole",
+  "born": "1801",
+  "died": "1848",
+  "born_in": "Bolton le Moors",
+  "died_in": "Catskill",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "United States"
+  ]
+ },
+ {
+  "id": "Q964791",
+  "name": "Paul Émile Chabas",
+  "born": "1869",
+  "died": "1937",
+  "born_in": "Nantes",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q151803",
+  "name": "Piet Mondrian",
+  "born": "1872",
+  "died": "1944",
+  "born_in": "Amersfoort",
+  "died_in": "New York City",
+  "citizenship": [
+   "Kingdom of the Netherlands"
+  ]
+ },
+ {
+  "id": "Q110228",
+  "name": "Vasily Surikov",
+  "born": "1848",
+  "died": "1916",
+  "born_in": "Krasnoyarsk",
+  "died_in": "Moscow",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q766362",
+  "name": "William Etty",
+  "born": "1787",
+  "died": "1849",
+  "born_in": "York",
+  "died_in": "York",
+  "citizenship": [
+   "Kingdom of Great Britain",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q44007",
+  "name": "?",
+  "born": "1879",
+  "died": "1940",
+  "born_in": "",
+  "died_in": "",
+  "citizenship": []
+ },
+ {
+  "id": "Q152797",
+  "name": "Umberto Boccioni",
+  "born": "1882",
+  "died": "1916",
+  "born_in": "Reggio Calabria",
+  "died_in": "Verona",
+  "citizenship": [
+   "Kingdom of Italy"
+  ]
+ },
+ {
+  "id": "Q123757",
+  "name": "Jean-Étienne Liotard",
+  "born": "1702",
+  "died": "1789",
+  "born_in": "Geneva",
+  "died_in": "Geneva",
+  "citizenship": [
+   "Republic of Geneva"
+  ]
+ },
+ {
+  "id": "Q203828",
+  "name": "Gustave Moreau",
+  "born": "1826",
+  "died": "1898",
+  "born_in": "Paris",
+  "died_in": "Rennes",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q1528580",
+  "name": "Giuseppe Pellizza da Volpedo",
+  "born": "1868",
+  "died": "1907",
+  "born_in": "Volpedo",
+  "died_in": "Volpedo",
+  "citizenship": [
+   "Kingdom of Italy"
+  ]
+ },
+ {
+  "id": "Q365068",
+  "name": "Peder Severin Krøyer",
+  "born": "1851",
+  "died": "1909",
+  "born_in": "Stavanger",
+  "died_in": "Skagen",
+  "citizenship": [
+   "Kingdom of Denmark",
+   "Norway"
+  ]
+ },
+ {
+  "id": "Q353008",
+  "name": "Alexei Savrasov",
+  "born": "1830",
+  "died": "1897",
+  "born_in": "Moscow",
+  "died_in": "Moscow",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q204138",
+  "name": "Viktor Vasnetsov",
+  "born": "1848",
+  "died": "1926",
+  "born_in": "Lopyal",
+  "died_in": "Moscow",
+  "citizenship": [
+   "Russian Empire",
+   "Soviet Union"
+  ]
+ },
+ {
+  "id": "Q911575",
+  "name": "Paul-Jacques-Aimé Baudry",
+  "born": "1828",
+  "died": "1886",
+  "born_in": "La Roche-sur-Yon",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q702272",
+  "name": "Johann Zoffany",
+  "born": "1733",
+  "died": "1810",
+  "born_in": "Frankfurt",
+  "died_in": "Strand-on-the-Green",
+  "citizenship": [
+   "Germany"
+  ]
+ },
+ {
+  "id": "Q45006",
+  "name": "?",
+  "born": "1863",
+  "died": "1928",
+  "born_in": "",
+  "died_in": "",
+  "citizenship": []
+ },
+ {
+  "id": "Q453972",
+  "name": "John Collier",
+  "born": "1850",
+  "died": "1934",
+  "born_in": "London",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q315102",
+  "name": "Alexander Roslin",
+  "born": "1718",
+  "died": "1793",
+  "born_in": "Malmö Sankt Petri församling",
+  "died_in": "Paris",
+  "citizenship": [
+   "Sweden"
+  ]
+ },
+ {
+  "id": "Q458671",
+  "name": "Giuseppe Castiglione",
+  "born": "1688",
+  "died": "1766",
+  "born_in": "Milan",
+  "died_in": "Beijing",
+  "citizenship": [
+   "Duchy of Milan",
+   "Qing dynasty"
+  ]
+ },
+ {
+  "id": "Q918605",
+  "name": "Herbert James Draper",
+  "born": "1863",
+  "died": "1920",
+  "born_in": "London",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q61064",
+  "name": "Wassily Kandinsky",
+  "born": "1866",
+  "died": "1944",
+  "born_in": "Moscow",
+  "died_in": "Neuilly-sur-Seine",
+  "citizenship": [
+   "France",
+   "Germany",
+   "Russian Empire",
+   "Russian Soviet Federative Socialist Republic",
+   "Soviet Union"
+  ]
+ },
+ {
+  "id": "Q313498",
+  "name": "Benjamin West",
+  "born": "1738",
+  "died": "1820",
+  "born_in": "Springfield Township",
+  "died_in": "London",
+  "citizenship": [
+   "United States"
+  ]
+ }
+]

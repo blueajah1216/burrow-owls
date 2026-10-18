@@ -1,0 +1,786 @@
+[
+ {
+  "id": "luncheon-on-the-grass-claude-monet",
+  "title": "Luncheon on the Grass",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1866,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "orphan-girl-at-the-cemetery",
+  "title": "Orphan Girl at the Cemetery",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1824,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "declaration-of-independence",
+  "title": "Declaration of Independence",
+  "artist": "John Trumbull",
+  "artist_id": "Q369263",
+  "year": 1810,
+  "museum": [
+   "United States Capitol"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "woman-with-a-hat",
+  "title": "Woman with a hat",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1905,
+  "museum": [
+   "San Francisco Museum of Modern Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Fauvism"
+  ]
+ },
+ {
+  "id": "the-maiden",
+  "title": "The Maiden",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1913,
+  "museum": [
+   "National Gallery Prague"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-apotheosis-of-war",
+  "title": "The Apotheosis of War",
+  "artist": "Vasily Vereshchagin",
+  "artist_id": "Q127017",
+  "year": 1871,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "walk-on-the-mountain",
+  "title": "Walk on the mountain",
+  "artist": "Joaquín Sorolla",
+  "artist_id": "Q351746",
+  "year": 1909,
+  "museum": [
+   "Sorolla Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "religious-procession-in-kursk-province",
+  "title": "Religious Procession in Kursk Province",
+  "artist": "Ilya Repin",
+  "artist_id": "Q172911",
+  "year": 1880,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "poppy-flowers",
+  "title": "Poppy Flowers",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1887,
+  "museum": [
+   "Mohamed Mahmoud Khalil Museum"
+  ],
+  "genre_hint": [
+   "floral painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "constitution-of-may-3-1791",
+  "title": "Constitution of May 3, 1791",
+  "artist": "Jan Matejko",
+  "artist_id": "Q189117",
+  "year": 1891,
+  "museum": [
+   "Royal Castle in Warsaw"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-green-christ",
+  "title": "The Green Christ",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1889,
+  "museum": [
+   "Royal Museums of Fine Arts of Belgium"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "emile-zola",
+  "title": "Emile Zola",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1868,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dance-at-bougival",
+  "title": "Dance at Bougival",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1883,
+  "museum": [
+   "Museum of Fine Arts Boston",
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "red-square",
+  "title": "Red Square",
+  "artist": "Kazimir Malevich",
+  "artist_id": "Q130777",
+  "year": 1915,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "abstract art"
+  ],
+  "movement_hint": [
+   "Suprematism"
+  ]
+ },
+ {
+  "id": "jewess-with-oranges",
+  "title": "Jewess with Oranges",
+  "artist": "Aleksander Gierymski",
+  "artist_id": "Q958927",
+  "year": 1880,
+  "museum": [
+   "National Museum in Warsaw"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-horse-fair",
+  "title": "The Horse Fair",
+  "artist": "Rosa Bonheur",
+  "artist_id": "Q241732",
+  "year": 1853,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art",
+   "animal art"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "mountain-landscape-with-rainbow",
+  "title": "Mountain Landscape with Rainbow",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1809,
+  "museum": [
+   "Museum Folkwang"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "self-portrait"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-daughters-of-edward-darley-boit",
+  "title": "The Daughters of Edward Darley Boit",
+  "artist": "?",
+  "artist_id": "Q155626",
+  "year": 1882,
+  "museum": [
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "portrait",
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-pink-dress",
+  "title": "The Pink Dress",
+  "artist": "Frédéric Bazille",
+  "artist_id": "Q207298",
+  "year": 1864,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-stolen-kiss",
+  "title": "The Stolen Kiss",
+  "artist": "Jean-Honoré Fragonard & Marguerite Gérard",
+  "artist_id": "Q127171",
+  "year": 1787,
+  "museum": [
+   "Hermitage Museum",
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Rococo",
+   "Rococo"
+  ]
+ },
+ {
+  "id": "bonaparte-before-the-sphinx",
+  "title": "Bonaparte Before the Sphinx",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1867,
+  "museum": [
+   "Hearst Castle",
+   "California State Parks"
+  ],
+  "genre_hint": [
+   "equestrian portrait",
+   "history painting"
+  ],
+  "movement_hint": [
+   "Orientalism",
+   "academic art"
+  ]
+ },
+ {
+  "id": "bonaparte-visiting-the-plague-victims-of-jaffa",
+  "title": "Bonaparte Visiting the Plague Victims of Jaffa",
+  "artist": "Antoine-Jean Gros",
+  "artist_id": "Q216999",
+  "year": 1804,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Orientalist painting",
+   "Neoclassical painting",
+   "Romantic painting"
+  ]
+ },
+ {
+  "id": "le-suicide",
+  "title": "Le Suicidé",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1877,
+  "museum": [
+   "Kunsthaus Zürich",
+   "Kunsthaus Zürich"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-monsieur-bertin",
+  "title": "Portrait of Monsieur Bertin",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1832,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "la-grenouillere",
+  "title": "La Grenouillère",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1869,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-dessert-harmony-in-red-the-red-room",
+  "title": "The Dessert: Harmony in Red (The Red Room)",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1907,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Fauvism"
+  ]
+ },
+ {
+  "id": "venus-anadyomene",
+  "title": "Vénus Anadyomène",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1808,
+  "museum": [
+   "Condé Museum"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-absinthe-drinker",
+  "title": "The Absinthe Drinker",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1859,
+  "museum": [
+   "Ny Carlsberg Glyptotek"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "killing-a-deer",
+  "title": "Killing a Deer",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1867,
+  "museum": [
+   "Musée des Beaux-Arts et d'Archéologie de Besançon"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "self-portrait-with-death-playing-the-fiddle",
+  "title": "Self-Portrait with Death Playing the Fiddle",
+  "artist": "Arnold Böcklin",
+  "artist_id": "Q123071",
+  "year": 1872,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "self-portrait",
+   "allegory"
+  ],
+  "movement_hint": [
+   "Symbolism"
+  ]
+ },
+ {
+  "id": "the-wounded-man",
+  "title": "The Wounded Man",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1844,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "self-portrait",
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "watson-and-the-shark",
+  "title": "Watson and the Shark",
+  "artist": "John Singleton Copley",
+  "artist_id": "Q316016",
+  "year": 1778,
+  "museum": [
+   "Museum of Fine Arts Boston",
+   "Detroit Institute of Arts"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Pre-romanticism"
+  ]
+ },
+ {
+  "id": "mlle-irene-cahen-d-anvers",
+  "title": "Mlle Irene Cahen d'Anvers",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1880,
+  "museum": [
+   "Foundation E.G. Bührle Collection",
+   "Foundation E.G. Bührle Collection"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "vincent-van-gogh-painting-sunflowers",
+  "title": "Vincent van Gogh Painting Sunflowers",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1888,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "the-spanish-singer",
+  "title": "The Spanish Singer",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1860,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-skating-minister",
+  "title": "The Skating Minister",
+  "artist": "Henry Raeburn",
+  "artist_id": "Q561916",
+  "year": 1795,
+  "museum": [
+   "Scottish National Gallery",
+   "Scottish National Gallery"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Romanticism",
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "la-promenade",
+  "title": "La Promenade",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1870,
+  "museum": [
+   "J. Paul Getty Museum",
+   "J. Paul Getty Museum"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "portrait-of-madame-recamier",
+  "title": "Portrait of Madame Récamier",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1800,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-colossus",
+  "title": "The Colossus",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1818,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "memory-of-the-garden-at-etten",
+  "title": "Memory of the Garden at Etten",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "tree-roots",
+  "title": "Tree Roots",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "the-joy-of-life",
+  "title": "The Joy of Life",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1906,
+  "museum": [
+   "Barnes Foundation"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "Fauvism"
+  ]
+ },
+ {
+  "id": "astronomer-copernicus-or-conversations-with-god",
+  "title": "Astronomer Copernicus, or Conversations with God",
+  "artist": "Jan Matejko",
+  "artist_id": "Q189117",
+  "year": 1873,
+  "museum": [
+   "Jagiellonian University Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-appearance-of-christ-before-the-people",
+  "title": "The Appearance of Christ Before the People",
+  "artist": "Alexander Ivanov",
+  "artist_id": "Q76829",
+  "year": 1847,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-source-gustave-cour",
+  "title": "The Source",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1862,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "nude"
+  ],
+  "movement_hint": [
+   "academic art",
+   "academic art"
+  ]
+ },
+ {
+  "id": "portrait-of-the-artist-s-mother",
+  "title": "Portrait of the Artist's Mother",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Norton Simon Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "la-grenouillere-pierre-augus",
+  "title": "La Grenouillère",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1875,
+  "museum": [
+   "Nationalmuseum",
+   "Nationalmuseum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "death-and-life",
+  "title": "Death and Life",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1910,
+  "museum": [
+   "Leopold Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Art Nouveau"
+  ]
+ },
+ {
+  "id": "in-a-roman-osteria",
+  "title": "In a Roman Osteria",
+  "artist": "Carl Bloch",
+  "artist_id": "Q547055",
+  "year": 1866,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-architect-s-dream",
+  "title": "The Architect's Dream",
+  "artist": "Thomas Cole",
+  "artist_id": "Q334001",
+  "year": 1840,
+  "museum": [
+   "Toledo Museum of Art"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": []
+ }
+]

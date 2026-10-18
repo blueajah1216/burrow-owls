@@ -1,0 +1,796 @@
+[
+ {
+  "id": "the-ancient-of-days",
+  "title": "The Ancient of Days",
+  "artist": "William Blake",
+  "artist_id": "Q41513",
+  "year": 1794,
+  "museum": [
+   "British Museum",
+   "Library of Congress"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "girl-with-peaches",
+  "title": "Girl with peaches",
+  "artist": "Valentin Serov",
+  "artist_id": "Q217128",
+  "year": 1887,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-wheat-sifters",
+  "title": "The Wheat Sifters",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1854,
+  "museum": [
+   "Nantes Museum of Arts"
+  ],
+  "genre_hint": [
+   "French Realism"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "phryne-before-the-areopagus",
+  "title": "Phryne before the Areopagus",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1861,
+  "museum": [
+   "Hamburger Kunsthalle"
+  ],
+  "genre_hint": [
+   "nude",
+   "history painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-magpie",
+  "title": "The Magpie",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1868,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "manao-tupapau",
+  "title": "Manaò tupapaú",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1892,
+  "museum": [
+   "Buffalo AKG Art Museum"
+  ],
+  "genre_hint": [
+   "genre art",
+   "nude",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "the-shepherdess",
+  "title": "The Shepherdess",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1889,
+  "museum": [
+   "Philbrook Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-old-musician",
+  "title": "The Old Musician",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1862,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-first-mourning",
+  "title": "The First Mourning",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1888,
+  "museum": [
+   "National Museum of Fine Arts, Argentina"
+  ],
+  "genre_hint": [
+   "nude",
+   "religious art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "woman-in-the-garden",
+  "title": "Woman in the Garden",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1867,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "lise-with-a-parasol",
+  "title": "Lise with a Parasol",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1867,
+  "museum": [
+   "Museum Folkwang",
+   "Museum Folkwang"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "berthe-morisot-with-a-bouquet-of-violets",
+  "title": "Berthe Morisot with a Bouquet of Violets",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1872,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "prisoners-exercising",
+  "title": "Prisoners Exercising",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dance-in-the-country",
+  "title": "Dance in the Country",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1883,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "tiger-in-a-tropical-storm",
+  "title": "Tiger in a Tropical Storm",
+  "artist": "Henri Rousseau",
+  "artist_id": "Q156386",
+  "year": 1891,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "animal art"
+  ],
+  "movement_hint": [
+   "naïve art"
+  ]
+ },
+ {
+  "id": "symphony-in-white-no-1-the-white-girl",
+  "title": "Symphony in White, No. 1: The White Girl",
+  "artist": "James McNeill Whistler",
+  "artist_id": "Q203643",
+  "year": 1860,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-last-of-england",
+  "title": "The Last of England",
+  "artist": "Ford Madox Brown",
+  "artist_id": "Q319843",
+  "year": 1853,
+  "museum": [
+   "Birmingham Museums Trust"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "at-the-moulin-rouge",
+  "title": "At the Moulin Rouge",
+  "artist": "Henri de Toulouse-Lautrec",
+  "artist_id": "Q82445",
+  "year": 1892,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "dance-in-the-city",
+  "title": "Dance in the City",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1883,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-execution-of-lady-jane-grey",
+  "title": "The Execution of Lady Jane Grey",
+  "artist": "Paul Delaroche",
+  "artist_id": "Q322582",
+  "year": 1833,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "Romanticism"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "madame-moitessier",
+  "title": "Madame Moitessier",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1856,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "greece-on-the-ruins-of-missolonghi",
+  "title": "Greece on the Ruins of Missolonghi",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1826,
+  "museum": [
+   "Musée des Beaux-Arts de Bordeaux"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-child-s-bath",
+  "title": "The Child's Bath",
+  "artist": "Mary Cassatt",
+  "artist_id": "Q173223",
+  "year": 1893,
+  "museum": [
+   "Art Institute of Chicago",
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "diana-leaving-her-bath",
+  "title": "Diana leaving her Bath",
+  "artist": "François Boucher",
+  "artist_id": "Q180932",
+  "year": 1742,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "mythological painting",
+   "nude"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "vampire",
+  "title": "Vampire",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1893,
+  "museum": [
+   "Munch Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Expressionism"
+  ]
+ },
+ {
+  "id": "portrait-of-wally",
+  "title": "Portrait of Wally",
+  "artist": "Egon Schiele",
+  "artist_id": "Q44032",
+  "year": 1912,
+  "museum": [
+   "Leopold Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Expressionism"
+  ]
+ },
+ {
+  "id": "the-light-of-the-world",
+  "title": "The Light of the World",
+  "artist": "William Holman Hunt",
+  "artist_id": "Q211763",
+  "year": 1853,
+  "museum": [
+   "Keble College"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "alice",
+  "title": "Alice",
+  "artist": "Amedeo Modigliani",
+  "artist_id": "Q120993",
+  "year": 1918,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-three-ages-of-woman",
+  "title": "The Three Ages of Woman",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1905,
+  "museum": [
+   "Galleria Nazionale d'Arte Moderna e Contemporanea di Roma"
+  ],
+  "genre_hint": [
+   "nude",
+   "allegory"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-demon-seated",
+  "title": "The Demon Seated",
+  "artist": "Mikhail Vrubel",
+  "artist_id": "Q215100",
+  "year": 1890,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-beguiling-of-merlin",
+  "title": "The Beguiling of Merlin",
+  "artist": "Edward Burne-Jones",
+  "artist_id": "Q216406",
+  "year": 1872,
+  "museum": [
+   "Lady Lever Art Gallery"
+  ],
+  "genre_hint": [
+   "Arthurian painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "witches-sabbath",
+  "title": "Witches' Sabbath",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1820,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "truth-coming-out-of-her-well",
+  "title": "Truth Coming Out of Her Well",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1896,
+  "museum": [
+   "Musée Anne de Beaujeu"
+  ],
+  "genre_hint": [
+   "nude",
+   "allegory"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "spring",
+  "title": "Spring",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1881,
+  "museum": [
+   "J. Paul Getty Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "self-portrait-without-beard",
+  "title": "Self-portrait without beard",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "after-the-deluge",
+  "title": "After the Deluge",
+  "artist": "George Frederic Watts",
+  "artist_id": "Q183245",
+  "year": 1886,
+  "museum": [
+   "Watts Gallery",
+   "Watts Gallery"
+  ],
+  "genre_hint": [
+   "marine art",
+   "marine art",
+   "marine art",
+   "marine art",
+   "religious art",
+   "religious art",
+   "religious art",
+   "religious art"
+  ],
+  "movement_hint": [
+   "Symbolism",
+   "Symbolism",
+   "Symbolism",
+   "Symbolism"
+  ]
+ },
+ {
+  "id": "woman-with-a-fan",
+  "title": "Woman With a Fan",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1917,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "bridal-procession-on-the-hardangerfjord",
+  "title": "Bridal Procession on the Hardangerfjord",
+  "artist": "Adolph Tidemand & Hans Gude",
+  "artist_id": "Q365544",
+  "year": 1848,
+  "museum": [
+   "National Museum of Art, Architecture and Design",
+   "National Museum of Art, Architecture and Design"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Romanticism",
+   "Romanticism",
+   "Romanticism",
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "suprematist-composition-white-on-white",
+  "title": "Suprematist Composition: White on White",
+  "artist": "Kazimir Malevich",
+  "artist_id": "Q130777",
+  "year": 1918,
+  "museum": [
+   "Museum of Modern Art"
+  ],
+  "genre_hint": [
+   "abstract art",
+   "monochrome painting"
+  ],
+  "movement_hint": [
+   "Suprematism",
+   "Russian avant-garde"
+  ]
+ },
+ {
+  "id": "two-men-contemplating-the-moon",
+  "title": "Two men contemplating the Moon",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1819,
+  "museum": [
+   "Staatliche Kunstsammlungen Dresden"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "salisbury-cathedral-from-the-bishop-s-grounds",
+  "title": "Salisbury Cathedral from the Bishop's Grounds",
+  "artist": "John Constable",
+  "artist_id": "Q159297",
+  "year": 1823,
+  "museum": [
+   "Victoria and Albert museum prints, drawings, & paintings collection",
+   "Victoria and Albert Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "heart-of-the-andes",
+  "title": "Heart of the Andes",
+  "artist": "Frederic Edwin Church",
+  "artist_id": "Q366212",
+  "year": 1859,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "nocturne-in-black-and-gold-the-falling-rocket",
+  "title": "Nocturne in Black and Gold – The Falling Rocket",
+  "artist": "James McNeill Whistler",
+  "artist_id": "Q203643",
+  "year": 1875,
+  "museum": [
+   "Detroit Institute of Arts"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Tonalism"
+  ]
+ },
+ {
+  "id": "the-plum",
+  "title": "The Plum",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1878,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "mars-being-disarmed-by-venus",
+  "title": "Mars Being Disarmed by Venus",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1824,
+  "museum": [
+   "Royal Museums of Fine Arts of Belgium"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "swimming",
+  "title": "Swimming",
+  "artist": "Thomas Eakins",
+  "artist_id": "Q214905",
+  "year": 1885,
+  "museum": [
+   "Amon Carter Museum of American Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art",
+   "figure"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "beata-beatrix",
+  "title": "Beata Beatrix",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1872,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-models",
+  "title": "The Models",
+  "artist": "Georges Seurat",
+  "artist_id": "Q34013",
+  "year": 1886,
+  "museum": [
+   "Barnes Foundation"
+  ],
+  "genre_hint": [
+   "portrait",
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neo-impressionism"
+  ]
+ },
+ {
+  "id": "la-mousme",
+  "title": "La Mousmé",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "proserpine",
+  "title": "Proserpine",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1874,
+  "museum": [
+   "Tate Britain"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ }
+]

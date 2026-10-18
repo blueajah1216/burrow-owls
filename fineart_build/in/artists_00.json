@@ -1,0 +1,589 @@
+[
+ {
+  "id": "Q5582",
+  "name": "Vincent van Gogh",
+  "born": "1853",
+  "died": "1890",
+  "born_in": "Zundert",
+  "died_in": "Auvers-sur-Oise",
+  "citizenship": [
+   "Kingdom of the Netherlands"
+  ]
+ },
+ {
+  "id": "Q33477",
+  "name": "Eugène Delacroix",
+  "born": "1798",
+  "died": "1863",
+  "born_in": "Saint-Maurice",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q296",
+  "name": "Claude Monet",
+  "born": "1840",
+  "died": "1926",
+  "born_in": "Paris",
+  "died_in": "Giverny",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q34661",
+  "name": "Gustav Klimt",
+  "born": "1862",
+  "died": "1918",
+  "born_in": "Baumgarten",
+  "died_in": "Vienna",
+  "citizenship": [
+   "Austrian Empire",
+   "Cisleithania"
+  ]
+ },
+ {
+  "id": "Q83155",
+  "name": "Jacques-Louis David",
+  "born": "1748",
+  "died": "1825",
+  "born_in": "Paris",
+  "died_in": "Brussels",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q104884",
+  "name": "Caspar David Friedrich",
+  "born": "1774",
+  "died": "1840",
+  "born_in": "Greifswald",
+  "died_in": "Dresden",
+  "citizenship": [
+   "Kingdom of Prussia",
+   "Sweden"
+  ]
+ },
+ {
+  "id": "Q184212",
+  "name": "Théodore Géricault",
+  "born": "1791",
+  "died": "1824",
+  "born_in": "Rouen",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q172911",
+  "name": "Ilya Repin",
+  "born": "1844",
+  "died": "1930",
+  "born_in": "Chuhuiv",
+  "died_in": "Repino",
+  "citizenship": [
+   "Russian Empire",
+   "statelessness"
+  ]
+ },
+ {
+  "id": "Q5432",
+  "name": "Francisco Goya",
+  "born": "1746",
+  "died": "1828",
+  "born_in": "Fuendetodos",
+  "died_in": "Bordeaux",
+  "citizenship": [
+   "Spain"
+  ]
+ },
+ {
+  "id": "Q40599",
+  "name": "Édouard Manet",
+  "born": "1832",
+  "died": "1883",
+  "born_in": "former 10th arrondissement of Paris",
+  "died_in": "8th arrondissement of Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q39931",
+  "name": "Pierre-Auguste Renoir",
+  "born": "1841",
+  "died": "1919",
+  "born_in": "Limoges",
+  "died_in": "Cagnes-sur-Mer",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q192720",
+  "name": "Thomas Gainsborough",
+  "born": "1727",
+  "died": "1788",
+  "born_in": "Sudbury",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom"
+  ]
+ },
+ {
+  "id": "Q181568",
+  "name": "Ivan Aivazovsky",
+  "born": "1817",
+  "died": "1900",
+  "born_in": "Feodosiia",
+  "died_in": "Feodosiia",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q130777",
+  "name": "Kazimir Malevich",
+  "born": "1879",
+  "died": "1935",
+  "born_in": "Kyiv",
+  "died_in": "Saint Petersburg",
+  "citizenship": [
+   "Russian Empire",
+   "Soviet Union"
+  ]
+ },
+ {
+  "id": "Q34013",
+  "name": "Georges Seurat",
+  "born": "1859",
+  "died": "1891",
+  "born_in": "former 5th arrondissement of Paris",
+  "died_in": "boulevard de Magenta",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q127171",
+  "name": "Jean-Honoré Fragonard",
+  "born": "1732",
+  "died": "1806",
+  "born_in": "Grasse",
+  "died_in": "former 2nd arrondissement of Paris",
+  "citizenship": [
+   "France",
+   "French constitutional monarchy"
+  ]
+ },
+ {
+  "id": "Q23380",
+  "name": "Jean-Auguste-Dominique Ingres",
+  "born": "1780",
+  "died": "1867",
+  "born_in": "Montauban",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q34618",
+  "name": "Gustave Courbet",
+  "born": "1819",
+  "died": "1877",
+  "born_in": "Ornans",
+  "died_in": "La Tour-de-Peilz",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q159606",
+  "name": "John Everett Millais",
+  "born": "1829",
+  "died": "1896",
+  "born_in": "Southampton",
+  "died_in": "Palace Gate",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q37693",
+  "name": "Paul Gauguin",
+  "born": "1848",
+  "died": "1903",
+  "born_in": "Paris",
+  "died_in": "Atuona",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q483992",
+  "name": "William-Adolphe Bouguereau",
+  "born": "1825",
+  "died": "1905",
+  "born_in": "La Rochelle",
+  "died_in": "La Rochelle",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q203643",
+  "name": "James McNeill Whistler",
+  "born": "1834",
+  "died": "1903",
+  "born_in": "Lowell",
+  "died_in": "Chelsea",
+  "citizenship": [
+   "United States"
+  ]
+ },
+ {
+  "id": "Q958052",
+  "name": "Konstantin Savitsky",
+  "born": "1844",
+  "died": "1905",
+  "born_in": "Taganrog",
+  "died_in": "Penza",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q193064",
+  "name": "Ivan Shishkin",
+  "born": "1831",
+  "died": "1898",
+  "born_in": "Yelabuga",
+  "died_in": "Saint Petersburg",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q46373",
+  "name": "Edgar Degas",
+  "born": "1834",
+  "died": "1917",
+  "born_in": "Paris",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q159297",
+  "name": "John Constable",
+  "born": "1776",
+  "died": "1837",
+  "born_in": "East Bergholt",
+  "died_in": "London",
+  "citizenship": [
+   "Kingdom of Great Britain",
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q3370554",
+  "name": "Paul Balze",
+  "born": "1815",
+  "died": "1884",
+  "born_in": "Rome",
+  "died_in": "7th arrondissement of Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q2833597",
+  "name": "Alexandre Desgoffe",
+  "born": "1805",
+  "died": "1882",
+  "born_in": "Paris",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q214062",
+  "name": "Joseph Wright of Derby",
+  "born": "1734",
+  "died": "1797",
+  "born_in": "Derby",
+  "died_in": "Derby",
+  "citizenship": [
+   "Kingdom of Great Britain"
+  ]
+ },
+ {
+  "id": "Q223725",
+  "name": "Francesco Hayez",
+  "born": "1791",
+  "died": "1882",
+  "born_in": "Venice",
+  "died_in": "Milan",
+  "citizenship": [
+   "Austrian Empire",
+   "Kingdom of Italy"
+  ]
+ },
+ {
+  "id": "Q156386",
+  "name": "Henri Rousseau",
+  "born": "1844",
+  "died": "1910",
+  "born_in": "Laval",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q207758",
+  "name": "Ivan Kramskoi",
+  "born": "1837",
+  "died": "1887",
+  "born_in": "Ostrogozhsk",
+  "died_in": "Saint Petersburg",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q4768",
+  "name": "Karl Bryullov",
+  "born": "1799",
+  "died": "1852",
+  "born_in": "Saint Petersburg",
+  "died_in": "Manziana",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q155626",
+  "name": "?",
+  "born": "1856",
+  "died": "1925",
+  "born_in": "",
+  "died_in": "",
+  "citizenship": []
+ },
+ {
+  "id": "Q148458",
+  "name": "Jean-François Millet",
+  "born": "1814",
+  "died": "1875",
+  "born_in": "Gruchy",
+  "died_in": "Barbizon",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q159758",
+  "name": "J. M. W. Turner",
+  "born": "1775",
+  "died": "1851",
+  "born_in": "Maiden Lane",
+  "died_in": "Cheyne Walk",
+  "citizenship": [
+   "Kingdom of Great Britain",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q452321",
+  "name": "Emanuel Leutze",
+  "born": "1816",
+  "died": "1868",
+  "born_in": "Schwäbisch Gmünd",
+  "died_in": "Washington, D.C.",
+  "citizenship": [
+   "Kingdom of Württemberg",
+   "United States"
+  ]
+ },
+ {
+  "id": "Q160252",
+  "name": "Frederic Leighton",
+  "born": "1830",
+  "died": "1896",
+  "born_in": "Scarborough",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q35548",
+  "name": "Paul Cézanne",
+  "born": "1839",
+  "died": "1906",
+  "born_in": "Aix-en-Provence",
+  "died_in": "Aix-en-Provence",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q122382",
+  "name": "Henry Fuseli",
+  "born": "1741",
+  "died": "1825",
+  "born_in": "Zurich",
+  "died_in": "Putney",
+  "citizenship": [
+   "Switzerland",
+   "United Kingdom"
+  ]
+ },
+ {
+  "id": "Q212754",
+  "name": "John William Waterhouse",
+  "born": "1849",
+  "died": "1917",
+  "born_in": "Rome",
+  "died_in": "London",
+  "citizenship": [
+   "Kingdom of Italy"
+  ]
+ },
+ {
+  "id": "Q310437",
+  "name": "Alexandre Cabanel",
+  "born": "1823",
+  "died": "1889",
+  "born_in": "Montpellier",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q295144",
+  "name": "Gustave Caillebotte",
+  "born": "1848",
+  "died": "1894",
+  "born_in": "Paris",
+  "died_in": "Gennevilliers",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q1190012",
+  "name": "Osman Hamdi Bey",
+  "born": "1842",
+  "died": "1910",
+  "born_in": "Istanbul",
+  "died_in": "Kuruçeşme",
+  "citizenship": [
+   "Ottoman Empire"
+  ]
+ },
+ {
+  "id": "Q7422343",
+  "name": "Sarah Goodridge",
+  "born": "1788",
+  "died": "1853",
+  "born_in": "Templeton",
+  "died_in": "Boston",
+  "citizenship": [
+   "United States"
+  ]
+ },
+ {
+  "id": "Q240526",
+  "name": "Lawrence Alma-Tadema",
+  "born": "1836",
+  "died": "1912",
+  "born_in": "Dronryp",
+  "died_in": "Wiesbaden",
+  "citizenship": [
+   "Belgium",
+   "Kingdom of the Netherlands",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q189117",
+  "name": "Jan Matejko",
+  "born": "1838",
+  "died": "1893",
+  "born_in": "Free City of Kraków",
+  "died_in": "Kraków",
+  "citizenship": [
+   "Cisleithania",
+   "Free City of Kraków"
+  ]
+ },
+ {
+  "id": "Q353628",
+  "name": "Arkhip Kuindzhi",
+  "born": "1841",
+  "died": "1910",
+  "born_in": "Mariupol uyezd",
+  "died_in": "Saint Petersburg",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q212499",
+  "name": "Jean-Léon Gérôme",
+  "born": "1824",
+  "died": "1904",
+  "born_in": "Vesoul",
+  "died_in": "9th arrondissement of Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q120993",
+  "name": "Amedeo Modigliani",
+  "born": "1884",
+  "died": "1920",
+  "born_in": "Livorno",
+  "died_in": "Hôpital de la Charité",
+  "citizenship": [
+   "Kingdom of Italy"
+  ]
+ },
+ {
+  "id": "Q41513",
+  "name": "William Blake",
+  "born": "1757",
+  "died": "1827",
+  "born_in": "London",
+  "died_in": "London",
+  "citizenship": [
+   "Kingdom of Great Britain",
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q217128",
+  "name": "Valentin Serov",
+  "born": "1865",
+  "died": "1911",
+  "born_in": "Saint Petersburg",
+  "died_in": "Moscow",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ }
+]

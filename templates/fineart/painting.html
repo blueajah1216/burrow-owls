@@ -1,0 +1,80 @@
+{% extends "fineart/base.html" %}
+{% set A = artists[0] if artists else none %}
+{% block title %}{{ p.t }} — {{ artists|map(attribute='n')|join(' & ') }} · The Great Gallery{% endblock %}
+{% block desc %}{{ p.why[:180] }}{% endblock %}
+{% block og %}
+<meta property="og:title" content="{{ p.t }} — {{ artists|map(attribute='n')|join(' & ') }}">
+<meta property="og:description" content="{{ p.why[:200] }}">
+{% if not p.n %}<meta property="og:image" content="{{ fa_img(p, 960) }}">{% endif %}
+{% endblock %}
+{% block body %}
+<main class="detail" style="--c:{{ genre.color }}">
+  <div class="crumbs">
+    <a href="{{ url_for('fineart.index') }}#browse">← All paintings</a>
+    <span>/</span>
+    <a href="{{ url_for('fineart.index') }}?g={{ p.g }}#browse">{{ genre.emoji }} {{ genre.name }}</a>
+  </div>
+
+  <article class="stage">
+    <div class="viewer">
+      <div class="spot"></div>
+      <figure class="frame huge">
+        <div class="mat"><button class="zoom" id="zoom" aria-label="View larger"><img src="{{ fa_img(p, 1280) }}" srcset="{{ fa_img(p, 960) }} 960w, {{ fa_img(p, 1280) }} 1280w" sizes="(max-width:900px) 92vw, 52vw" width="{{ p.w }}" height="{{ p.h }}" alt="{{ p.t }} by {{ artists|map(attribute='n')|join(' and ') }}" id="art"></button></div>
+      </figure>
+      <div class="plaque">
+        <b>{{ p.t }}</b>
+        <span>{{ artists|map(attribute='n')|join(' & ') }}, {{ p.y }}</span>
+        {% if p.m %}<small>{{ p.m }}</small>{% endif %}
+      </div>
+      <div class="tools">
+        <button class="btn ghost sm" id="fav" data-id="{{ p.id }}">♡ Save</button>
+        <button class="btn ghost sm" id="zoom2">🔍 Zoom</button>
+        <a class="btn ghost sm" href="{{ p.p }}" target="_blank" rel="noopener">Source ↗</a>
+      </div>
+    </div>
+
+    <div class="words">
+      <span class="tag">{{ genre.emoji }} {{ genre.name }}</span>
+      <h1>{{ p.t }}</h1>
+      <p class="by">{% for a in artists %}<a href="{{ url_for('fineart.artist', aid=a.id) }}">{{ a.n }}</a>{{ ' & ' if not loop.last }}{% endfor %} · {{ p.y }}</p>
+
+      <section class="why">
+        <h2>Why it's great</h2>
+        <p>{{ p.why }}</p>
+      </section>
+
+      {% for a in artists %}
+      <section class="artist-card">
+        <div class="ac-head">
+          <div class="initial">{{ a.n[0] }}</div>
+          <div>
+            <h2>About the artist</h2>
+            <a class="aname" href="{{ url_for('fineart.artist', aid=a.id) }}">{{ a.n }}</a>
+            <p class="lives">{{ fa_lived(a) }}{% if a.bi %} · born in {{ a.bi }}{% endif %}{% if a.di and a.di != a.bi %} · died in {{ a.di }}{% endif %}</p>
+          </div>
+        </div>
+        <p>{{ a.bio }}</p>
+      </section>
+      {% endfor %}
+    </div>
+  </article>
+
+  <nav class="pager">
+    {% if prev_p %}<a class="pg prev" href="{{ url_for('fineart.painting', pid=prev_p.id, g=g) }}" rel="prev"><small>← Previous</small><b>{{ prev_p.t }}</b></a>{% else %}<span></span>{% endif %}
+    {% if next_p %}<a class="pg next" href="{{ url_for('fineart.painting', pid=next_p.id, g=g) }}" rel="next"><small>Next →</small><b>{{ next_p.t }}</b></a>{% endif %}
+  </nav>
+
+  {% if same_artist %}
+  <section class="strip"><h3>More by {{ artists[0].n }}</h3>
+    <div class="rail">{% for x in same_artist %}<a href="{{ url_for('fineart.painting', pid=x.id) }}" class="tile"><img loading="lazy" src="{{ fa_img(x, 500) }}" width="{{ x.w }}" height="{{ x.h }}" alt=""><span>{{ x.t }}</span></a>{% endfor %}</div></section>
+  {% endif %}
+  <section class="strip"><h3>More {{ genre.name|lower }}</h3>
+    <div class="rail">{% for x in like %}<a href="{{ url_for('fineart.painting', pid=x.id) }}" class="tile"><img loading="lazy" src="{{ fa_img(x, 500) }}" width="{{ x.w }}" height="{{ x.h }}" alt=""><span>{{ x.t }}</span></a>{% endfor %}</div></section>
+
+  <div class="lightbox" id="lb" hidden><button class="lb-x" aria-label="Close">×</button><img alt="" id="lb-img"></div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script>window.FA={id:"{{ p.id }}",big:"{{ fa_img(p, 1920) }}",prev:{{ ('"' ~ url_for('fineart.painting', pid=prev_p.id, g=g) ~ '"')|safe if prev_p else 'null' }},next:{{ ('"' ~ url_for('fineart.painting', pid=next_p.id, g=g) ~ '"')|safe if next_p else 'null' }}};</script>
+<script src="{{ url_for('static', filename='fineart/detail.js') }}?v=11"></script>
+{% endblock %}

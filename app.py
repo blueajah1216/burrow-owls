@@ -221,6 +221,10 @@ music.init_music(
 )
 music_ingest.register_cli(app, db)
 
+import fineart
+
+fineart.init_fineart(app)
+
 with app.app_context():
     db.create_all()
 

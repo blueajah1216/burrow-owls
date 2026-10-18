@@ -1,0 +1,809 @@
+[
+ {
+  "id": "the-starry-night",
+  "title": "The Starry Night",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Museum of Modern Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "liberty-leading-the-people",
+  "title": "Liberty Leading the People",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1830,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-potato-eaters",
+  "title": "The Potato Eaters",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1885,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "Naturalism"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "impression-sunrise",
+  "title": "Impression, Sunrise",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1872,
+  "museum": [
+   "Musée Marmottan Monet"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-kiss",
+  "title": "The Kiss",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1907,
+  "museum": [
+   "Belvedere"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Art Nouveau"
+  ]
+ },
+ {
+  "id": "the-death-of-socrates",
+  "title": "The Death of Socrates",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1787,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "academic art",
+   "Neoclassical painting"
+  ]
+ },
+ {
+  "id": "wanderer-above-the-sea-of-fog",
+  "title": "Wanderer above the Sea of Fog",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1818,
+  "museum": [
+   "Hamburger Kunsthalle"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "figure painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-raft-of-the-medusa",
+  "title": "The Raft of the Medusa",
+  "artist": "Théodore Géricault",
+  "artist_id": "Q184212",
+  "year": 1819,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "Venel"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "reply-of-the-zaporozhian-cossacks",
+  "title": "Reply of the Zaporozhian Cossacks",
+  "artist": "Ilya Repin",
+  "artist_id": "Q172911",
+  "year": 1890,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "battle painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "la-maja-desnuda",
+  "title": "La maja desnuda",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1795,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "nude",
+   "nude",
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Romanticism",
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "luncheon-on-the-grass",
+  "title": "Luncheon on the Grass",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1863,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art",
+   "still life",
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "the-third-of-may-1808",
+  "title": "The Third of May 1808",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1814,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "bal-du-moulin-de-la-galette",
+  "title": "Bal du moulin de la Galette",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1876,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "wheatfield-with-crows",
+  "title": "Wheatfield with Crows",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "olympia",
+  "title": "Olympia",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1863,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "irises",
+  "title": "Irises",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "J. Paul Getty Museum"
+  ],
+  "genre_hint": [
+   "floral painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "the-oath-of-the-horatii",
+  "title": "The Oath of the Horatii",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1784,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-death-of-marat",
+  "title": "The Death of Marat",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1793,
+  "museum": [
+   "Royal Museums of Fine Arts of Belgium"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassical painting"
+  ]
+ },
+ {
+  "id": "cafe-terrace-at-night",
+  "title": "Café Terrace at Night",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Kröller-Müller Museum"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "a-bar-at-the-folies-bergere",
+  "title": "A Bar at the Folies-Bergère",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1882,
+  "museum": [
+   "Courtauld Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-blue-boy",
+  "title": "The Blue Boy",
+  "artist": "Thomas Gainsborough",
+  "artist_id": "Q192720",
+  "year": 1770,
+  "museum": [
+   "The Huntington Library, Art Museum, and Botanical Gardens"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-night-cafe",
+  "title": "The Night Café",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Yale University Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neo-impressionism"
+  ]
+ },
+ {
+  "id": "the-coronation-of-napoleon",
+  "title": "The Coronation of Napoleon",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1807,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "starry-night-over-the-rhone",
+  "title": "Starry Night Over the Rhône",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Musée d'Orsay",
+   "Frans Buffa & sons"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "the-ninth-wave",
+  "title": "The Ninth Wave",
+  "artist": "Ivan Aivazovsky",
+  "artist_id": "Q181568",
+  "year": 1850,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "saturn-devouring-his-son",
+  "title": "Saturn Devouring His Son",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1820,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "Expressionism",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-church-at-auvers",
+  "title": "The Church at Auvers",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "black-square-1915",
+  "title": "Black Square (1915)",
+  "artist": "Kazimir Malevich",
+  "artist_id": "Q130777",
+  "year": 1915,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "abstract art"
+  ],
+  "movement_hint": [
+   "Suprematism"
+  ]
+ },
+ {
+  "id": "the-red-vineyard",
+  "title": "The Red Vineyard",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-yellow-house",
+  "title": "The Yellow House",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "cityscape"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "barge-haulers-on-the-volga",
+  "title": "Barge Haulers on the Volga",
+  "artist": "Ilya Repin",
+  "artist_id": "Q172911",
+  "year": 1870,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "marine art",
+   "realism"
+  ],
+  "movement_hint": [
+   "Peredvizhniki"
+  ]
+ },
+ {
+  "id": "a-sunday-afternoon-on-the-island-of-la-grande-jatte",
+  "title": "A Sunday Afternoon on the Island of La Grande Jatte",
+  "artist": "Georges Seurat",
+  "artist_id": "Q34013",
+  "year": 1884,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism",
+   "pointillism",
+   "divisionism"
+  ]
+ },
+ {
+  "id": "portrait-of-adele-bloch-bauer-i",
+  "title": "Portrait of Adele Bloch-Bauer I",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1907,
+  "museum": [
+   "Neue Galerie"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Art Nouveau"
+  ]
+ },
+ {
+  "id": "the-swing",
+  "title": "The Swing",
+  "artist": "Jean-Honoré Fragonard",
+  "artist_id": "Q127171",
+  "year": 1767,
+  "museum": [
+   "Wallace Collection"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "grande-odalisque",
+  "title": "Grande Odalisque",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1814,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-burial-at-ornans",
+  "title": "A Burial at Ornans",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1840,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "ophelia",
+  "title": "Ophelia",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1851,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "where-do-we-come-from-what-are-we-where-are-we-going",
+  "title": "Where Do We Come From? What Are We? Where Are We Going?",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1897,
+  "museum": [
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "the-birth-of-venus",
+  "title": "The Birth of Venus",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1879,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "ivan-the-terrible-and-his-son-ivan-on-november-16-1581",
+  "title": "Ivan the Terrible and his son Ivan on November 16, 1581",
+  "artist": "Ilya Repin",
+  "artist_id": "Q172911",
+  "year": 1883,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-yellow-christ",
+  "title": "The Yellow Christ",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1889,
+  "museum": [
+   "Buffalo AKG Art Museum"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Symbolism",
+   "Post-impressionism",
+   "Pont-Aven School",
+   "primitivism",
+   "cloisonnism"
+  ]
+ },
+ {
+  "id": "the-sleepers",
+  "title": "The Sleepers",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1866,
+  "museum": [
+   "Musée des Beaux-Arts de la ville de Paris"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "whistler-s-mother",
+  "title": "Whistler's Mother",
+  "artist": "James McNeill Whistler",
+  "artist_id": "Q203643",
+  "year": 1871,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Tonalism"
+  ]
+ },
+ {
+  "id": "when-will-you-marry",
+  "title": "When Will You Marry?",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1892,
+  "museum": [
+   "Staechelin collection"
+  ],
+  "genre_hint": [
+   "portrait",
+   "genre art",
+   "figure painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "sunset-at-montmajour",
+  "title": "Sunset at Montmajour",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "morning-in-a-pine-forest",
+  "title": "Morning in a Pine Forest",
+  "artist": "Konstantin Savitsky & Ivan Shishkin",
+  "artist_id": "Q958052",
+  "year": 1889,
+  "museum": [
+   "Tretyakov Gallery",
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "charles-iv-of-spain-and-his-family",
+  "title": "Charles IV of Spain and His Family",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1800,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "group portrait"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "death-of-sardanapalus",
+  "title": "Death of Sardanapalus",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1827,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-painter-s-studio",
+  "title": "The Painter's Studio",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1850,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "self-portrait",
+   "genre art",
+   "allegory",
+   "group portrait",
+   "figure painting"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "luncheon-of-the-boating-party",
+  "title": "Luncheon of the Boating Party",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1880,
+  "museum": [
+   "The Phillips Collection",
+   "The Phillips Collection"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ }
+]

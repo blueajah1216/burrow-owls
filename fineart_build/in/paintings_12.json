@@ -1,0 +1,784 @@
+[
+ {
+  "id": "belizaire-and-the-frey-children",
+  "title": "Bélizaire and the Frey Children",
+  "artist": "Jacques Amans",
+  "artist_id": "Q583015",
+  "year": 1837,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "New Orleans Museum of Art"
+  ],
+  "genre_hint": [
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "street-singer",
+  "title": "Street Singer",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1862,
+  "museum": [
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "portrait",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "lola-de-valence",
+  "title": "Lola de Valence",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1862,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-monsieur-and-madame-auguste-manet",
+  "title": "Portrait of Monsieur and Madame Auguste Manet",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1860,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "double portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-bridge-at-narni",
+  "title": "The Bridge at Narni",
+  "artist": "Jean-Baptiste Camille Corot",
+  "artist_id": "Q148475",
+  "year": 1826,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "by-the-seashore",
+  "title": "By the Seashore",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1883,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "nocturne-blue-and-gold-old-battersea-bridge",
+  "title": "Nocturne: Blue and Gold – Old Battersea Bridge",
+  "artist": "James McNeill Whistler",
+  "artist_id": "Q203643",
+  "year": 1872,
+  "museum": [
+   "Tate",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "goethe-in-the-roman-campagna",
+  "title": "Goethe in the Roman Campagna",
+  "artist": "Johann Heinrich Wilhelm Tischbein",
+  "artist_id": "Q213973",
+  "year": 1787,
+  "museum": [
+   "Städel Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-icebergs",
+  "title": "The Icebergs",
+  "artist": "Frederic Edwin Church",
+  "artist_id": "Q366212",
+  "year": 1861,
+  "museum": [
+   "Dallas Museum of Art",
+   "Dallas Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "landscape painting",
+   "marine art",
+   "marine art"
+  ],
+  "movement_hint": [
+   "Hudson River school",
+   "Hudson River school"
+  ]
+ },
+ {
+  "id": "peace-concluded",
+  "title": "Peace Concluded",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1856,
+  "museum": [
+   "Minneapolis Institute of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-return-of-the-dove-to-the-ark",
+  "title": "The Return of the Dove to the Ark",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1851,
+  "museum": [
+   "Ashmolean Museum"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-black-duchess",
+  "title": "The Black Duchess",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1797,
+  "museum": [
+   "Hispanic Society of America",
+   "Hispanic Society of America"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "self-portrait-with-palette",
+  "title": "Self-Portrait with Palette",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1879,
+  "museum": [],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "spring-lawrence-alm",
+  "title": "Spring",
+  "artist": "Lawrence Alma-Tadema",
+  "artist_id": "Q240526",
+  "year": 1894,
+  "museum": [
+   "J. Paul Getty Museum"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "portrait-of-count-stanislas-potocki",
+  "title": "Portrait of Count Stanislas Potocki",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1780,
+  "museum": [
+   "National Museum in Warsaw",
+   "Palace Museum in Wilanów"
+  ],
+  "genre_hint": [
+   "equestrian portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-agnew-clinic",
+  "title": "The Agnew Clinic",
+  "artist": "Thomas Eakins",
+  "artist_id": "Q214905",
+  "year": 1889,
+  "museum": [
+   "University of Pennsylvania"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "scientific realism"
+  ]
+ },
+ {
+  "id": "la-naissance-de-venus",
+  "title": "La Naissance de Vénus",
+  "artist": "François Boucher",
+  "artist_id": "Q180932",
+  "year": 1754,
+  "museum": [
+   "Wallace Collection"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "the-ray",
+  "title": "The Ray",
+  "artist": "Jean-Baptiste-Siméon Chardin",
+  "artist_id": "Q207447",
+  "year": 1727,
+  "museum": [
+   "Académie royale de peinture et de sculpture",
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": [
+   "Rococo",
+   "still life"
+  ]
+ },
+ {
+  "id": "ukrainian-night",
+  "title": "Ukrainian Night",
+  "artist": "Arkhip Kuindzhi",
+  "artist_id": "Q353628",
+  "year": 1876,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "argenteuil",
+  "title": "Argenteuil",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1874,
+  "museum": [
+   "Musée des Beaux-Arts de Tournai",
+   "Musée des Beaux-Arts de Tournai"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-tub",
+  "title": "The Tub",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1886,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-goose-girl",
+  "title": "The Goose Girl",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1891,
+  "museum": [
+   "Herbert F. Johnson Museum of Art"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "two-old-men-eating-soup",
+  "title": "Two Old Men Eating Soup",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1819,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-de-madame-de-senonnes",
+  "title": "Portrait de Madame de Senonnes",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1814,
+  "museum": [
+   "Nantes Museum of Arts"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "boy-blowing-bubbles",
+  "title": "Boy blowing bubbles",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1867,
+  "museum": [
+   "Calouste Gulbenkian Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "claude-monet-painting-in-his-studio-boat",
+  "title": "Claude Monet painting in his studio boat",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1874,
+  "museum": [
+   "Bavarian State Painting Collections",
+   "Bavarian State Painting Collections"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-peacemakers",
+  "title": "The Peacemakers",
+  "artist": "George Peter Alexander Healy",
+  "artist_id": "Q64633",
+  "year": 1868,
+  "museum": [
+   "White House",
+   "Oval Office"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-fight-between-mars-and-minerva",
+  "title": "The Fight Between Mars and Minerva",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1771,
+  "museum": [
+   "Académie royale de peinture et de sculpture",
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "a-view-through-three-of-the-north-western-arches-of-the-thir",
+  "title": "A View through Three of the North-Western Arches of the Third Storey of the Coliseum",
+  "artist": "Christoffer Wilhelm Eckersberg",
+  "artist_id": "Q363823",
+  "year": 1815,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "architectural painting"
+  ],
+  "movement_hint": [
+   "Danish Golden Age"
+  ]
+ },
+ {
+  "id": "a-pair-of-shoes",
+  "title": "A Pair of Shoes",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1886,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "count-lepic-and-his-daughters",
+  "title": "Count Lepic and His Daughters",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1871,
+  "museum": [
+   "Kunsthaus Zürich",
+   "Foundation E.G. Bührle Collection"
+  ],
+  "genre_hint": [
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-pope-pius-vii",
+  "title": "Portrait of Pope Pius VII",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1805,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassical painting"
+  ]
+ },
+ {
+  "id": "the-rescue",
+  "title": "The Rescue",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1855,
+  "museum": [
+   "National Gallery of Victoria"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-dead-toreador",
+  "title": "The Dead Toreador",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1864,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "French Realism"
+  ]
+ },
+ {
+  "id": "evening-on-karl-johan",
+  "title": "Evening on Karl Johan",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1892,
+  "museum": [
+   "KODE Art museums and composer homes",
+   "Art Museums of Bergen"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-port-of-greifswald",
+  "title": "The Port of Greifswald",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1819,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "homage-to-delacroix",
+  "title": "Homage to Delacroix",
+  "artist": "Henri Fantin-Latour",
+  "artist_id": "Q310715",
+  "year": 1864,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "self-portrait",
+   "group portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "consulting-the-oracle",
+  "title": "Consulting the Oracle",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1884,
+  "museum": [
+   "Tate",
+   "Tate"
+  ],
+  "genre_hint": [
+   "history painting",
+   "history painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "max-schmitt-in-a-single-scull",
+  "title": "Max Schmitt in a Single Scull",
+  "artist": "Thomas Eakins",
+  "artist_id": "Q214905",
+  "year": 1871,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait",
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "marie-antoinette-with-a-rose",
+  "title": "Marie Antoinette with a Rose",
+  "artist": "Élisabeth Louise Vigée Le Brun",
+  "artist_id": "Q213163",
+  "year": 1783,
+  "museum": [
+   "Musée de l'Histoire de France"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-cotton-office-in-new-orleans",
+  "title": "A Cotton Office in New Orleans",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1873,
+  "museum": [
+   "Musée des Beaux-Arts de Pau"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "judith-ii",
+  "title": "Judith II",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1909,
+  "museum": [
+   "Ca' Pesaro",
+   "Galleria Internazionale d'Arte Moderna"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "maison-devant-la-sainte-victoire-pres-de-gardanne-house-in-p",
+  "title": "Maison devant la Sainte-Victoire près de Gardanne (House in Provence)",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1885,
+  "museum": [],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "mr-and-mrs-edouard-manet",
+  "title": "Mr. and Mrs. Édouard Manet",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1869,
+  "museum": [
+   "Kitakyushu Municipal Museum of Art"
+  ],
+  "genre_hint": [
+   "double portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-abandoned-doll",
+  "title": "The Abandoned Doll",
+  "artist": "Suzanne Valadon",
+  "artist_id": "Q156889",
+  "year": 1921,
+  "museum": [
+   "National Museum of Women in the Arts"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-bewitched-man",
+  "title": "The Bewitched Man",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1790,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-circus-parade",
+  "title": "The Circus Parade",
+  "artist": "Georges Seurat",
+  "artist_id": "Q34013",
+  "year": 1887,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neo-impressionism",
+   "Neo-impressionism"
+  ]
+ },
+ {
+  "id": "death-and-the-woodcutter",
+  "title": "Death and the Woodcutter",
+  "artist": "Jean-François Millet",
+  "artist_id": "Q148458",
+  "year": 1859,
+  "museum": [
+   "Ny Carlsberg Glyptotek",
+   "Ny Carlsberg Glyptotek"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art",
+   "allegory",
+   "allegory"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "le-pont-neuf",
+  "title": "Le Pont Neuf",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1872,
+  "museum": [],
+  "genre_hint": [
+   "cityscape",
+   "cityscape"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-washington-family",
+  "title": "The Washington Family",
+  "artist": "Edward Savage",
+  "artist_id": "Q1293506",
+  "year": 1796,
+  "museum": [
+   "Andrew W. Mellon collection"
+  ],
+  "genre_hint": [
+   "group portrait"
+  ],
+  "movement_hint": []
+ }
+]

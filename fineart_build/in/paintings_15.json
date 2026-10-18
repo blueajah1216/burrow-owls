@@ -1,0 +1,759 @@
+[
+ {
+  "id": "cows-in-the-meadow",
+  "title": "Cows in the Meadow",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1883,
+  "museum": [
+   "Museo Soumaya"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-beach-at-sainte-adresse",
+  "title": "The Beach at Sainte-Adresse",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1867,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "brig-mercury-attacked-by-two-turkish-ships",
+  "title": "Brig “Mercury” Attacked by Two Turkish Ships",
+  "artist": "Ivan Aivazovsky",
+  "artist_id": "Q181568",
+  "year": 1892,
+  "museum": [
+   "Feodosia National Gallery I. K. Aivazovsky"
+  ],
+  "genre_hint": [
+   "marine art",
+   "battle painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "femme-lisant",
+  "title": "Femme Lisant",
+  "artist": "Jean-Baptiste Camille Corot",
+  "artist_id": "Q148475",
+  "year": 1869,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "sad-inheritance",
+  "title": "Sad Inheritance",
+  "artist": "Joaquín Sorolla",
+  "artist_id": "Q351746",
+  "year": 1898,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-duke-and-duchess-of-osuna-and-their-children",
+  "title": "The Duke and Duchess of Osuna and their Children",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1787,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism",
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "claude-monet",
+  "title": "Claude Monet",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1875,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "young-peasant",
+  "title": "Young Peasant",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Galleria Nazionale d'Arte Moderna e Contemporanea di Roma"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "newton",
+  "title": "Newton",
+  "artist": "William Blake",
+  "artist_id": "Q41513",
+  "year": 1795,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-group-of-danish-artists-in-rome",
+  "title": "A Group of Danish Artists in Rome",
+  "artist": "Constantin Hansen",
+  "artist_id": "Q539474",
+  "year": 1837,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "group portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-market-cart",
+  "title": "The Market Cart",
+  "artist": "Thomas Gainsborough",
+  "artist_id": "Q192720",
+  "year": 1786,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "yvonne-and-christine-lerolle-at-the-piano",
+  "title": "Yvonne and Christine Lerolle at the Piano",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1897,
+  "museum": [
+   "Jean Walter-Paul Guillaume Collection",
+   "Jean Walter-Paul Guillaume Collection"
+  ],
+  "genre_hint": [
+   "double portrait",
+   "double portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "adoration-of-the-name-of-god",
+  "title": "Adoration of the Name of God",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1772,
+  "museum": [
+   "Basilica of Our Lady of the Pillar"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "paul-gauguin-s-armchair",
+  "title": "Paul Gauguin's Armchair",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-eiffel-tower",
+  "title": "The Eiffel Tower",
+  "artist": "Georges Seurat",
+  "artist_id": "Q34013",
+  "year": 1889,
+  "museum": [
+   "Fine Arts Museums of San Francisco"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": [
+   "pointillism"
+  ]
+ },
+ {
+  "id": "la-toilette-henri-de-tou",
+  "title": "La Toilette",
+  "artist": "Henri de Toulouse-Lautrec",
+  "artist_id": "Q82445",
+  "year": 1889,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude",
+   "nude",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "chicos-en-la-playa",
+  "title": "Chicos en la playa",
+  "artist": "Joaquín Sorolla",
+  "artist_id": "Q351746",
+  "year": 1909,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "ferdinand-guillemardet",
+  "title": "Ferdinand Guillemardet",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1798,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-bridge-at-villeneuve-la-garenne",
+  "title": "The Bridge at Villeneuve-la-Garenne",
+  "artist": "Alfred Sisley",
+  "artist_id": "Q175130",
+  "year": 1872,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "lady-cockburn-and-her-three-eldest-sons",
+  "title": "Lady Cockburn and Her Three Eldest Sons",
+  "artist": "Joshua Reynolds",
+  "artist_id": "Q194402",
+  "year": 1773,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-rocky-mountains-lander-s-peak",
+  "title": "The Rocky Mountains, Lander's Peak",
+  "artist": "Albert Bierstadt",
+  "artist_id": "Q77132",
+  "year": 1863,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Düsseldorf school of painting",
+   "Hudson River school"
+  ]
+ },
+ {
+  "id": "the-night",
+  "title": "The Night",
+  "artist": "Max Beckmann",
+  "artist_id": "Q164683",
+  "year": 1918,
+  "museum": [
+   "Kunstsammlung Nordrhein-Westfalen"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Expressionism",
+   "New Objectivity"
+  ]
+ },
+ {
+  "id": "the-siren",
+  "title": "The Siren",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1900,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-subsiding-of-the-waters-of-the-deluge",
+  "title": "The Subsiding of the Waters of the Deluge",
+  "artist": "Thomas Cole",
+  "artist_id": "Q334001",
+  "year": 1829,
+  "museum": [
+   "Smithsonian American Art Museum"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "religious art"
+  ],
+  "movement_hint": [
+   "Hudson River school"
+  ]
+ },
+ {
+  "id": "the-shop-girl",
+  "title": "The Shop Girl",
+  "artist": "James Tissot",
+  "artist_id": "Q381248",
+  "year": 1883,
+  "museum": [
+   "Art Gallery of Ontario"
+  ],
+  "genre_hint": [
+   "portrait",
+   "genre art"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "the-knitting-girl",
+  "title": "The Knitting Girl",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1869,
+  "museum": [
+   "Joslyn Art Museum",
+   "Joslyn Art Museum"
+  ],
+  "genre_hint": [
+   "pastoral",
+   "pastoral"
+  ],
+  "movement_hint": [
+   "academic art",
+   "academic art"
+  ]
+ },
+ {
+  "id": "rain",
+  "title": "Rain",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Philadelphia Museum of Art",
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "victory-o-lord",
+  "title": "Victory O Lord!",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1871,
+  "museum": [
+   "Manchester Art Gallery"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "knight-at-the-crossroads",
+  "title": "Knight at the Crossroads",
+  "artist": "Viktor Vasnetsov",
+  "artist_id": "Q204138",
+  "year": 1882,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "golden-autumn",
+  "title": "Golden Autumn",
+  "artist": "Isaac Levitan",
+  "artist_id": "Q211356",
+  "year": 1895,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-love-potion",
+  "title": "The Love Potion",
+  "artist": "Evelyn De Morgan",
+  "artist_id": "Q235903",
+  "year": 1903,
+  "museum": [
+   "De Morgan Centre"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "bathing-the-red-horse",
+  "title": "Bathing the Red Horse",
+  "artist": "Kuzma Petrov-Vodkin",
+  "artist_id": "Q364226",
+  "year": 1912,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "avant-garde",
+   "Mir iskusstva"
+  ]
+ },
+ {
+  "id": "zenobia-found-by-shepherds-on-the-banks-of-the-araxes",
+  "title": "Zenobia found by Shepherds on the banks of the Araxes",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1850,
+  "museum": [
+   "Beaux-Arts de Paris"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-princess-from-the-land-of-porcelain",
+  "title": "The Princess from the Land of Porcelain",
+  "artist": "James McNeill Whistler",
+  "artist_id": "Q203643",
+  "year": 1864,
+  "museum": [
+   "Freer Gallery of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "lake-russia",
+  "title": "Lake. Russia",
+  "artist": "Isaac Levitan",
+  "artist_id": "Q211356",
+  "year": 1899,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "moscow-courtyard",
+  "title": "Moscow courtyard",
+  "artist": "Vasily Polenov",
+  "artist_id": "Q318393",
+  "year": 1878,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-broken-pitcher",
+  "title": "The broken pitcher",
+  "artist": "Jean-Baptiste Greuze",
+  "artist_id": "Q347139",
+  "year": 1771,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-attack",
+  "title": "The Attack",
+  "artist": "Edvard Isto",
+  "artist_id": "Q3048418",
+  "year": 1899,
+  "museum": [
+   "National Museum of Finland"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "arles-view-from-the-wheat-fields",
+  "title": "Arles: View from the Wheat Fields",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Musée Rodin"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "captain-george-k-h-coussmaker",
+  "title": "Captain George K. H. Coussmaker",
+  "artist": "Joshua Reynolds",
+  "artist_id": "Q194402",
+  "year": 1782,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "looking-down-yosemite-valley-california",
+  "title": "Looking Down Yosemite Valley, California",
+  "artist": "Albert Bierstadt",
+  "artist_id": "Q77132",
+  "year": 1865,
+  "museum": [
+   "Birmingham Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Hudson River school"
+  ]
+ },
+ {
+  "id": "lady-caroline-howard",
+  "title": "Lady Caroline Howard",
+  "artist": "Joshua Reynolds",
+  "artist_id": "Q194402",
+  "year": 1778,
+  "museum": [
+   "Andrew W. Mellon collection"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "i-saw-the-figure-5-in-gold",
+  "title": "I Saw the Figure 5 in Gold",
+  "artist": "?",
+  "artist_id": "Q380494",
+  "year": 1928,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Precisionism"
+  ]
+ },
+ {
+  "id": "a-road-at-saint-remy-with-female-figure",
+  "title": "A Road at Saint-Remy with Female Figure",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Kasama Nichidō Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-vision-of-fiammetta",
+  "title": "A Vision of Fiammetta",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1878,
+  "museum": [],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "work",
+  "title": "Work",
+  "artist": "Ford Madox Brown",
+  "artist_id": "Q319843",
+  "year": 1852,
+  "museum": [
+   "Manchester Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "blossoming-chestnut-branches",
+  "title": "Blossoming Chestnut Branches",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Foundation E.G. Bührle Collection",
+   "Kunsthaus Zürich"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "cart-with-red-and-white-ox",
+  "title": "Cart with Red and White Ox",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1884,
+  "museum": [
+   "Kröller-Müller Museum"
+  ],
+  "genre_hint": [
+   "genre art",
+   "animal art"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "portrait-of-frederic-chopin-and-george-sand",
+  "title": "Portrait of Frédéric Chopin and George Sand",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1837,
+  "museum": [
+   "Museum Ordrupgaard"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "love-s-messenger",
+  "title": "Love's Messenger",
+  "artist": "Marie Spartali Stillman",
+  "artist_id": "Q134150",
+  "year": 1885,
+  "museum": [
+   "Delaware Art Museum",
+   "Delaware Art Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ }
+]

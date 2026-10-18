@@ -1,0 +1,728 @@
+[
+ {
+  "id": "boy-on-the-rocks",
+  "title": "Boy on the Rocks",
+  "artist": "Henri Rousseau",
+  "artist_id": "Q156386",
+  "year": 1897,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "naïve art"
+  ]
+ },
+ {
+  "id": "the-spanish-wedding",
+  "title": "The Spanish Wedding",
+  "artist": "Mariano Fortuny Marsal",
+  "artist_id": "Q380052",
+  "year": 1870,
+  "museum": [
+   "Museu Nacional d'Art de Catalunya"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "mont-sainte-victoire-with-large-pine",
+  "title": "Mont Sainte-Victoire with Large Pine",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1887,
+  "museum": [
+   "Courtauld Institute of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "view-from-stalheim",
+  "title": "View from Stalheim",
+  "artist": "Johan Christian Dahl",
+  "artist_id": "Q164735",
+  "year": 1842,
+  "museum": [
+   "National Museum of Art, Architecture and Design"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "mnemosyne",
+  "title": "Mnemosyne",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1875,
+  "museum": [
+   "Delaware Art Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "pasteur-s-portrait-by-edelfelt",
+  "title": "Pasteur's portrait by Edelfelt",
+  "artist": "Albert Edelfelt",
+  "artist_id": "Q356644",
+  "year": 1885,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-odalisque",
+  "title": "The Odalisque",
+  "artist": "Mariano Fortuny Marsal",
+  "artist_id": "Q380052",
+  "year": 1861,
+  "museum": [
+   "Museu Nacional d'Art de Catalunya"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "Orientalism"
+  ]
+ },
+ {
+  "id": "mary-magdalene",
+  "title": "Mary Magdalene",
+  "artist": "Frederick Sandys",
+  "artist_id": "Q1470796",
+  "year": 1858,
+  "museum": [
+   "Delaware Art Museum"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "medea",
+  "title": "Medea",
+  "artist": "Frederick Sandys",
+  "artist_id": "Q1470796",
+  "year": 1868,
+  "museum": [
+   "Birmingham Museums Trust",
+   "Birmingham Museum and Art Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "place-de-la-concorde",
+  "title": "Place de la Concorde",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1875,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "portrait",
+   "cityscape"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-dancing-class",
+  "title": "The Dancing Class",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1870,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "summer-scene",
+  "title": "Summer Scene",
+  "artist": "Frédéric Bazille",
+  "artist_id": "Q207298",
+  "year": 1869,
+  "museum": [
+   "Harvard Art Museums",
+   "Fogg Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "polish-hamlet-portrait-of-aleksander-wielopolski",
+  "title": "Polish Hamlet. Portrait of Aleksander Wielopolski",
+  "artist": "Jacek Malczewski",
+  "artist_id": "Q448189",
+  "year": 1903,
+  "museum": [
+   "National Museum in Warsaw"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Symbolism",
+   "Young Poland"
+  ]
+ },
+ {
+  "id": "the-tree-of-life",
+  "title": "The Tree of Life",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1909,
+  "museum": [
+   "MAK – Museum of Applied Arts"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-boating-party",
+  "title": "The Boating Party",
+  "artist": "Mary Cassatt",
+  "artist_id": "Q173223",
+  "year": 1893,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "medea-eugene-delac",
+  "title": "Medea",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1836,
+  "museum": [
+   "Palais des Beaux-Arts de Lille"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-entombment-of-atala",
+  "title": "The Entombment of Atala",
+  "artist": "Anne-Louis Girodet",
+  "artist_id": "Q433434",
+  "year": 1808,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Neoclassicism",
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "snow-at-argenteuil",
+  "title": "Snow at Argenteuil",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1875,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "still-life-vase-with-pink-roses",
+  "title": "Still Life: Vase with Pink Roses",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [],
+  "genre_hint": [
+   "floral painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-cafe-concert",
+  "title": "The Café-Concert",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1878,
+  "museum": [
+   "Walters Art Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-oak-at-flagey",
+  "title": "The Oak at Flagey",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1864,
+  "museum": [
+   "musée Courbet"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "snow-storm-steam-boat-off-a-harbour-s-mouth",
+  "title": "Snow Storm: Steam-Boat off a Harbour's Mouth",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1842,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "portrait-of-madame-de-pompadour",
+  "title": "Portrait of Madame de Pompadour",
+  "artist": "François Boucher",
+  "artist_id": "Q180932",
+  "year": 1756,
+  "museum": [
+   "Bavarian State Painting Collections"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "mr-and-mrs-william-hallett-the-morning-walk",
+  "title": "Mr and Mrs William Hallett ('The Morning Walk')",
+  "artist": "Thomas Gainsborough",
+  "artist_id": "Q192720",
+  "year": 1785,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "daytime-cycle-the-evening",
+  "title": "Daytime cycle: The Evening",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1821,
+  "museum": [
+   "Landesmuseum Hannover"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "landscape-seine-at-asnieres",
+  "title": "Landscape. Seine at Asnieres",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1873,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-hunt-breakfast",
+  "title": "The Hunt Breakfast",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1858,
+  "museum": [
+   "Wallraf–Richartz Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "wheatfield-under-thunderclouds",
+  "title": "Wheatfield under Thunderclouds",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "composition-vi",
+  "title": "Composition VI",
+  "artist": "Wassily Kandinsky",
+  "artist_id": "Q61064",
+  "year": 1913,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "abstract art"
+  ]
+ },
+ {
+  "id": "dynamism-of-a-cyclist",
+  "title": "Dynamism of a Cyclist",
+  "artist": "Umberto Boccioni",
+  "artist_id": "Q152797",
+  "year": 1913,
+  "museum": [
+   "Mattioli Collection"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "clotilde-seated-on-the-sofa",
+  "title": "Clotilde seated on the Sofa",
+  "artist": "Joaquín Sorolla",
+  "artist_id": "Q351746",
+  "year": 1910,
+  "museum": [
+   "Sorolla Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "over-eternal-quiet",
+  "title": "Over Eternal Quiet",
+  "artist": "Isaac Levitan",
+  "artist_id": "Q211356",
+  "year": 1894,
+  "museum": [
+   "Tretyakov Gallery",
+   "Moscow"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "cashmere",
+  "title": "Cashmere",
+  "artist": "?",
+  "artist_id": "Q155626",
+  "year": 1908,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-blue-room",
+  "title": "The Blue Room",
+  "artist": "Suzanne Valadon",
+  "artist_id": "Q156889",
+  "year": 1923,
+  "museum": [
+   "Musée National d'Art Moderne"
+  ],
+  "genre_hint": [
+   "figure painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-arrest-of-diepo-negoro-by-lieutenant-general-baron-de-ko",
+  "title": "The Arrest of Diepo Negoro by Lieutenant-General Baron De Kock",
+  "artist": "Nicolaas Pieneman",
+  "artist_id": "Q720035",
+  "year": 1830,
+  "museum": [
+   "Rijksmuseum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "la-blanchisseuse",
+  "title": "La Blanchisseuse",
+  "artist": "Henri de Toulouse-Lautrec",
+  "artist_id": "Q82445",
+  "year": 1880,
+  "museum": [],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-signing-of-peace-in-the-hall-of-mirrors-versailles-28-ju",
+  "title": "The Signing of Peace in the Hall of Mirrors, Versailles, 28 June 1919",
+  "artist": "William Orpen",
+  "artist_id": "Q922483",
+  "year": 1919,
+  "museum": [
+   "Imperial War Museums"
+  ],
+  "genre_hint": [
+   "history painting",
+   "portrait",
+   "group portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-cart-on-the-snowy-road-at-honfleur",
+  "title": "A Cart on the Snowy Road at Honfleur",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1865,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "haymaking-in-the-auvergne",
+  "title": "Haymaking in the Auvergne",
+  "artist": "Rosa Bonheur",
+  "artist_id": "Q241732",
+  "year": 1855,
+  "museum": [
+   "Palace of Fontainebleau"
+  ],
+  "genre_hint": [
+   "genre art",
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Naturalism"
+  ]
+ },
+ {
+  "id": "equality-before-death",
+  "title": "Equality Before Death",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1848,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "after-the-bath-woman-drying-herself",
+  "title": "After the Bath, Woman Drying Herself",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1890,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-congress-of-paris",
+  "title": "The Congress of Paris",
+  "artist": "Edouard Louis Dubufe",
+  "artist_id": "Q274298",
+  "year": 1856,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée de l'Histoire de France"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "virgil-reading-the-aeneid-before-augustus-livia-and-octavia",
+  "title": "Virgil reading The Aeneid before Augustus, Livia and Octavia",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1811,
+  "museum": [
+   "Musée des Augustins"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "chez-tortoni",
+  "title": "Chez Tortoni",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1875,
+  "museum": [
+   "Isabella Stewart Gardner Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "shepherdess-with-her-flock",
+  "title": "Shepherdess with her Flock",
+  "artist": "Jean-François Millet",
+  "artist_id": "Q148458",
+  "year": 1863,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "roses",
+  "title": "Roses",
+  "artist": "Peder Severin Krøyer",
+  "artist_id": "Q365068",
+  "year": 1893,
+  "museum": [
+   "Skagens Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "mother-anthony-s-tavern",
+  "title": "Mother Anthony's Tavern",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1866,
+  "museum": [
+   "Nationalmuseum",
+   "Nationalmuseum"
+  ],
+  "genre_hint": [
+   "group portrait",
+   "group portrait",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "wivenhoe-park",
+  "title": "Wivenhoe Park",
+  "artist": "John Constable",
+  "artist_id": "Q159297",
+  "year": 1816,
+  "museum": [],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-banquet-of-cleopatra",
+  "title": "The Banquet of Cleopatra",
+  "artist": "Giovanni Battista Tiepolo",
+  "artist_id": "Q186202",
+  "year": 1743,
+  "museum": [
+   "National Gallery of Victoria"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-georgiana-duchess-of-devonshire",
+  "title": "Portrait of Georgiana, Duchess of Devonshire",
+  "artist": "Thomas Gainsborough",
+  "artist_id": "Q192720",
+  "year": 1785,
+  "museum": [
+   "Chatsworth House"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ }
+]

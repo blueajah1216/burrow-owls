@@ -1,0 +1,741 @@
+[
+ {
+  "id": "the-grands-boulevards",
+  "title": "The Grands Boulevards",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1875,
+  "museum": [
+   "Philadelphia Museum of Art",
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "cityscape",
+   "cityscape"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-death-of-chatterton",
+  "title": "The Death of Chatterton",
+  "artist": "Henry Wallis",
+  "artist_id": "Q977276",
+  "year": 1856,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "on-white-ii",
+  "title": "On White II",
+  "artist": "Wassily Kandinsky",
+  "artist_id": "Q61064",
+  "year": 1923,
+  "museum": [
+   "Musée National d'Art Moderne"
+  ],
+  "genre_hint": [
+   "abstract art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "yellow-red-blue",
+  "title": "Yellow-Red-Blue",
+  "artist": "Wassily Kandinsky",
+  "artist_id": "Q61064",
+  "year": 1925,
+  "museum": [
+   "Musée National d'Art Moderne"
+  ],
+  "genre_hint": [
+   "abstract art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "self-portrait-in-a-straw-hat",
+  "title": "Self Portrait in a Straw Hat",
+  "artist": "Élisabeth Louise Vigée Le Brun",
+  "artist_id": "Q213163",
+  "year": 1782,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "ashes",
+  "title": "Ashes",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1895,
+  "museum": [
+   "National Museum of Art, Architecture and Design"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Expressionism"
+  ]
+ },
+ {
+  "id": "caricature-portrait-of-tulla-larsen",
+  "title": "Caricature Portrait of Tulla Larsen",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1905,
+  "museum": [
+   "Munch Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-christian-martyrs-last-prayer",
+  "title": "The Christian Martyrs' Last Prayer",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1883,
+  "museum": [
+   "Walters Art Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "self-portrait-with-her-daughter-julie",
+  "title": "Self-Portrait with Her Daughter, Julie",
+  "artist": "Élisabeth Louise Vigée Le Brun",
+  "artist_id": "Q213163",
+  "year": 1789,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "self-portrait",
+   "family portrait",
+   "double portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-entrance-to-the-grand-canal-venice",
+  "title": "The Entrance to the Grand Canal, Venice",
+  "artist": "Giovanni Antonio Canal",
+  "artist_id": "Q182664",
+  "year": 1730,
+  "museum": [
+   "Museum of Fine Arts, Houston"
+  ],
+  "genre_hint": [
+   "Veduta"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-luncheon",
+  "title": "The Luncheon",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1873,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "still life",
+   "genre art",
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-grand-canal",
+  "title": "The Grand Canal",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1908,
+  "museum": [
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "houses-at-auvers",
+  "title": "Houses at Auvers",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Toledo Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "springtime-pierre-augus",
+  "title": "Springtime",
+  "artist": "Pierre Auguste Cot",
+  "artist_id": "Q265665",
+  "year": 1873,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art",
+   "academic art"
+  ]
+ },
+ {
+  "id": "lake-with-dead-trees-catskill",
+  "title": "Lake with Dead Trees (Catskill)",
+  "artist": "Thomas Cole",
+  "artist_id": "Q334001",
+  "year": 1825,
+  "museum": [
+   "Allen Memorial Art Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Hudson River school"
+  ]
+ },
+ {
+  "id": "the-calm-sea",
+  "title": "The Calm Sea",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1869,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "houses-on-the-achterzaan",
+  "title": "Houses on the Achterzaan",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1871,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "woman-with-a-cat",
+  "title": "Woman with a Cat",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1875,
+  "museum": [],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "anguish",
+  "title": "Anguish",
+  "artist": "August Friedrich Albert Schenck",
+  "artist_id": "Q16534240",
+  "year": 1878,
+  "museum": [
+   "National Gallery of Victoria",
+   "National Gallery of Victoria"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-artist-s-mother-ane-hedvig-brndum-in-the-red-room",
+  "title": "The Artist's Mother Ane Hedvig Brøndum in the Red Room",
+  "artist": "Anna Ancher",
+  "artist_id": "Q253446",
+  "year": 1909,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-young-artist-ditlev-blunck-examining-a-sketch-in-a-mirror",
+  "title": "A Young Artist (Ditlev Blunck) Examining a Sketch in a Mirror",
+  "artist": "Wilhelm Bendz",
+  "artist_id": "Q981441",
+  "year": 1826,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-combat-woman-pleading-for-the-vanquished",
+  "title": "The Combat: Woman Pleading for the Vanquished",
+  "artist": "William Etty",
+  "artist_id": "Q766362",
+  "year": 1825,
+  "museum": [
+   "National Galleries Scotland"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "ophelia-john-william",
+  "title": "Ophelia",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1894,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "peter-the-great-interrogating-the-tsarevich-alexei-petrovich",
+  "title": "Peter the Great Interrogating the Tsarevich Alexei Petrovich at Peterhof",
+  "artist": "Nikolai Ge",
+  "artist_id": "Q457976",
+  "year": 1871,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-the-actress-antonia-zarate",
+  "title": "Portrait of the Actress Antonia Zarate",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1810,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "stetind-in-fog",
+  "title": "Stetind in Fog",
+  "artist": "Peder Balke",
+  "artist_id": "Q2272816",
+  "year": 1864,
+  "museum": [
+   "National Museum of Art, Architecture and Design"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "woman-with-a-parrot-eugene-delac",
+  "title": "Woman with a Parrot",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1827,
+  "museum": [
+   "Museum of Fine Arts of Lyon"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dolbadarn-castle",
+  "title": "Dolbadarn Castle",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1800,
+  "museum": [
+   "National Library of Wales",
+   "National Library of Wales Framed works of art collection"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-large-plane-trees-road-menders-at-saint-remy",
+  "title": "The Large Plane Trees (Road Menders at Saint-Rémy)",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Cleveland Museum of Art"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-ladies-waldegrave",
+  "title": "The Ladies Waldegrave",
+  "artist": "Joshua Reynolds",
+  "artist_id": "Q194402",
+  "year": 1780,
+  "museum": [
+   "National Galleries Scotland"
+  ],
+  "genre_hint": [
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-nymph-by-a-stream",
+  "title": "A Nymph by a Stream",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1850,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "nude",
+   "nude",
+   "mythological painting",
+   "mythological painting",
+   "historiated portrait",
+   "historiated portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-beauty",
+  "title": "The Beauty",
+  "artist": "Boris Kustodiev",
+  "artist_id": "Q313275",
+  "year": 1915,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-red-kerchief",
+  "title": "The Red Kerchief",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1868,
+  "museum": [
+   "Cleveland Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "joaquin-sorolla-garcia-dressed-in-white",
+  "title": "Joaquín Sorolla García dressed in white",
+  "artist": "Joaquín Sorolla",
+  "artist_id": "Q351746",
+  "year": 1896,
+  "museum": [
+   "Sorolla Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-forest-la-granja",
+  "title": "The Forest. La Granja",
+  "artist": "Joaquín Sorolla",
+  "artist_id": "Q351746",
+  "year": 1907,
+  "museum": [
+   "Sorolla Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-muse-inspiring-the-poet",
+  "title": "The Muse Inspiring the Poet",
+  "artist": "Henri Rousseau",
+  "artist_id": "Q156386",
+  "year": 1909,
+  "museum": [
+   "Kunstmuseum Basel"
+  ],
+  "genre_hint": [
+   "double portrait"
+  ],
+  "movement_hint": [
+   "naïve art"
+  ]
+ },
+ {
+  "id": "tornado-over-kansas",
+  "title": "Tornado Over Kansas",
+  "artist": "John Steuart Curry",
+  "artist_id": "Q3290532",
+  "year": 1929,
+  "museum": [
+   "Muskegon Museum of Art"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "majas-on-the-balcony",
+  "title": "Majas on the Balcony",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1850,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-young-tiger-playing-with-its-mother",
+  "title": "A Young Tiger Playing with its Mother",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1830,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "animal art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "young-man-in-mayo-costume",
+  "title": "Young man in Mayo costume",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1863,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-matador-saluting",
+  "title": "The Matador Saluting",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1866,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art",
+   "academic art"
+  ]
+ },
+ {
+  "id": "young-spartans-exercising",
+  "title": "Young Spartans Exercising",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1860,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "un-coin-de-table",
+  "title": "Un coin de table",
+  "artist": "Henri Fantin-Latour",
+  "artist_id": "Q310715",
+  "year": 1872,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "group portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-modern-olympia",
+  "title": "A Modern Olympia",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1873,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dead-eagle-owl",
+  "title": "Dead Eagle Owl",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1881,
+  "museum": [
+   "Foundation E.G. Bührle Collection",
+   "Foundation E.G. Bührle Collection"
+  ],
+  "genre_hint": [
+   "still life",
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-romans-of-the-decadence",
+  "title": "The Romans of the Decadence",
+  "artist": "Thomas Couture",
+  "artist_id": "Q326434",
+  "year": 1847,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "history painting",
+   "allegory"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "woman-in-black",
+  "title": "Woman in Black",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1876,
+  "museum": [
+   "Hermitage Museum",
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-proscribed-royalist-1651",
+  "title": "The Proscribed Royalist, 1651",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1853,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-evil-mothers",
+  "title": "The Evil Mothers",
+  "artist": "Giovanni Segantini",
+  "artist_id": "Q379300",
+  "year": 1894,
+  "museum": [
+   "Belvedere"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Symbolism"
+  ]
+ },
+ {
+  "id": "the-slave-market-gustave-boul",
+  "title": "The Slave Market",
+  "artist": "Gustave Boulanger",
+  "artist_id": "Q726564",
+  "year": 1882,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neoclassicism",
+   "academic art"
+  ]
+ }
+]

@@ -1,0 +1,772 @@
+[
+ {
+  "id": "prayer-in-the-mosque",
+  "title": "Prayer in the Mosque",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1871,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "madame-auguste-cuoq-mathilde-desportes-18271910",
+  "title": "Madame Auguste Cuoq (Mathilde Desportes, 1827–1910)",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1852,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-wrestlers-william-etty",
+  "title": "The Wrestlers",
+  "artist": "William Etty",
+  "artist_id": "Q766362",
+  "year": 1840,
+  "museum": [
+   "York Art Gallery"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-beach-at-palavas",
+  "title": "The Beach at Palavas",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1854,
+  "museum": [
+   "Musée Fabre"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-world-before-the-flood",
+  "title": "The World Before the Flood",
+  "artist": "William Etty",
+  "artist_id": "Q766362",
+  "year": 1828,
+  "museum": [
+   "Southampton City Art Gallery"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-wyndham-sisters-lady-elcho-mrs-adeane-and-mrs-tennant",
+  "title": "The Wyndham Sisters: Lady Elcho, Mrs. Adeane, and Mrs. Tennant",
+  "artist": "?",
+  "artist_id": "Q155626",
+  "year": 1899,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "venus-verticordia",
+  "title": "Venus Verticordia",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1866,
+  "museum": [
+   "Russell-Cotes Art Gallery & Museum"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "roman-widow",
+  "title": "Roman Widow",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1874,
+  "museum": [
+   "Museo de Arte de Ponce"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "casting-the-net",
+  "title": "Casting the Net",
+  "artist": "Suzanne Valadon",
+  "artist_id": "Q156889",
+  "year": 1914,
+  "museum": [
+   "Museum of Fine Arts of Nancy",
+   "Musée National d'Art Moderne"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "camille",
+  "title": "Camille",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1866,
+  "museum": [
+   "Kunsthalle Bremen"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "midwinter-s-sacrifice",
+  "title": "Midwinter's Sacrifice",
+  "artist": "Carl Larsson",
+  "artist_id": "Q187310",
+  "year": 1915,
+  "museum": [
+   "Nationalmuseum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "at-the-theatre-la-premiere-sortie",
+  "title": "At the Theatre (La Première Sortie)",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1876,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-death-of-young-bara",
+  "title": "The death of young Bara",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1794,
+  "museum": [
+   "Calvet Museum"
+  ],
+  "genre_hint": [
+   "nude",
+   "portrait",
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-potato-harvest",
+  "title": "The Potato Harvest",
+  "artist": "Jean-François Millet",
+  "artist_id": "Q148458",
+  "year": 1855,
+  "museum": [
+   "Walters Art Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-seine-at-port-marly-piles-of-sand",
+  "title": "The Seine at Port-Marly, Piles of Sand",
+  "artist": "Alfred Sisley",
+  "artist_id": "Q175130",
+  "year": 1875,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "bonaparte-first-consul",
+  "title": "Bonaparte, First Consul",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1803,
+  "museum": [
+   "Curtius Museum",
+   "Liege Fine Arts Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassical painting"
+  ]
+ },
+ {
+  "id": "self-portrait-with-hat",
+  "title": "Self-portrait with hat",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1893,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "studio-in-the-rue-de-furstemberg",
+  "title": "Studio in the Rue de Furstemberg",
+  "artist": "Frédéric Bazille",
+  "artist_id": "Q207298",
+  "year": 1866,
+  "museum": [
+   "Musée Fabre",
+   "Musée Fabre"
+  ],
+  "genre_hint": [
+   "interior view",
+   "interior view",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "around-the-piano",
+  "title": "Around the Piano",
+  "artist": "Henri Fantin-Latour",
+  "artist_id": "Q310715",
+  "year": 1885,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "group portrait",
+   "portrait",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-funeral-of-patroclus",
+  "title": "The Funeral of Patroclus",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1778,
+  "museum": [
+   "National Gallery of Ireland"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-triumph-of-venus",
+  "title": "The Triumph of Venus",
+  "artist": "François Boucher",
+  "artist_id": "Q180932",
+  "year": 1740,
+  "museum": [
+   "Nationalmuseum"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "the-third-class-carriage",
+  "title": "The Third-Class Carriage",
+  "artist": "Honoré Daumier",
+  "artist_id": "Q187506",
+  "year": 1862,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "French Realism",
+   "French Realism"
+  ]
+ },
+ {
+  "id": "monarch-of-the-glen",
+  "title": "Monarch of the Glen",
+  "artist": "Edwin Landseer",
+  "artist_id": "Q328369",
+  "year": 1851,
+  "museum": [
+   "National Galleries Scotland",
+   "Diageo"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "la-tirana",
+  "title": "La Tirana",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1799,
+  "museum": [
+   "Royal Academy of Fine Arts of San Fernando"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "clair-de-lune-sur-le-port-de-boulogne",
+  "title": "Clair de lune sur le port de Boulogne",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1869,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "figure painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "postman-joseph-roulin",
+  "title": "Postman Joseph Roulin",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-straw-manikin",
+  "title": "The Straw Manikin",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1791,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-races-at-longchamp",
+  "title": "The Races at Longchamp",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1866,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-street-enters-the-house",
+  "title": "The Street Enters the House",
+  "artist": "Umberto Boccioni",
+  "artist_id": "Q152797",
+  "year": 1911,
+  "museum": [
+   "Sprengel Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-fairy-feller-s-master-stroke",
+  "title": "The Fairy Feller's Master-Stroke",
+  "artist": "Richard Dadd",
+  "artist_id": "Q449519",
+  "year": 1855,
+  "museum": [
+   "Tate"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "fairy painting"
+  ]
+ },
+ {
+  "id": "portrait-of-adele-besson",
+  "title": "Portrait of Adèle Besson",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1918,
+  "museum": [
+   "Musée des Beaux-Arts et d'Archéologie de Besançon",
+   "Musée des Beaux-Arts et d'Archéologie de Besançon"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait",
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Post-impressionism",
+   "Post-impressionism",
+   "Post-impressionism",
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "self-portrait-dedicated-to-paul-gauguin",
+  "title": "Self-portrait, dedicated to Paul Gauguin",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Fogg Museum",
+   "Fogg Museum"
+  ],
+  "genre_hint": [
+   "self-portrait",
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "snow-storm-hannibal-and-his-army-crossing-the-alps",
+  "title": "Snow Storm: Hannibal and his Army Crossing the Alps",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1812,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "girl-arranging-her-hair",
+  "title": "Girl Arranging Her Hair",
+  "artist": "Mary Cassatt",
+  "artist_id": "Q173223",
+  "year": 1886,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "madame-manet-at-the-piano",
+  "title": "Madame Manet at the Piano",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1869,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "sappho-and-phaon",
+  "title": "Sappho and Phaon",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1809,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "fishermen-at-sea",
+  "title": "Fishermen at Sea",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1796,
+  "museum": [
+   "Tate"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "el-juicio-de-paris",
+  "title": "El Juicio de Paris",
+  "artist": "Enrique Simonet",
+  "artist_id": "Q94851",
+  "year": 1904,
+  "museum": [
+   "Museo de Málaga"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "vairumati",
+  "title": "Vairumati",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1897,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "figure painting",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "moonrise-over-the-sea",
+  "title": "Moonrise over the Sea",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1822,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "cimabue-s-celebrated-madonna",
+  "title": "Cimabue's Celebrated Madonna",
+  "artist": "Frederic Leighton",
+  "artist_id": "Q160252",
+  "year": 1854,
+  "museum": [
+   "Royal Collection",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "a-mermaid",
+  "title": "A Mermaid",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1900,
+  "museum": [
+   "Royal Academy of Arts",
+   "Royal Academy of Arts"
+  ],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "lemminkainen-s-mother",
+  "title": "Lemminkäinen's Mother",
+  "artist": "Akseli Gallen-Kallela",
+  "artist_id": "Q170068",
+  "year": 1897,
+  "museum": [
+   "Finnish National Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-death-of-julius-caesar",
+  "title": "The Death of Julius Caesar",
+  "artist": "Vincenzo Camuccini",
+  "artist_id": "Q718795",
+  "year": 1798,
+  "museum": [
+   "Museo di Capodimonte"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "still-life-with-onions",
+  "title": "Still Life with Onions",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1898,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "torse-effet-de-soleil",
+  "title": "Torse, effet de soleil",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1875,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait",
+   "nude",
+   "nude"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "cairn-in-snow",
+  "title": "Cairn in Snow",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1807,
+  "museum": [
+   "Staatliche Kunstsammlungen Dresden"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "italia-and-germania",
+  "title": "Italia and Germania",
+  "artist": "Johann Friedrich Overbeck",
+  "artist_id": "Q169311",
+  "year": 1811,
+  "museum": [
+   "Bavarian State Painting Collections"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": [
+   "Nazarene movement"
+  ]
+ },
+ {
+  "id": "arcadia",
+  "title": "Arcadia",
+  "artist": "Thomas Eakins",
+  "artist_id": "Q214905",
+  "year": 1883,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "girl-with-a-fan",
+  "title": "Girl with a Fan",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1885,
+  "museum": [
+   "Hermitage Museum",
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ }
+]

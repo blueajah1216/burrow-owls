@@ -1,0 +1,767 @@
+[
+ {
+  "id": "mademoiselle-caroline-riviere",
+  "title": "Mademoiselle Caroline Rivière",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1806,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-captive-king",
+  "title": "The Captive King",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1772,
+  "museum": [
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-black-brunswicker",
+  "title": "The Black Brunswicker",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1860,
+  "museum": [
+   "Lady Lever Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-1821-derby-at-epsom",
+  "title": "The 1821 Derby at Epsom",
+  "artist": "Théodore Géricault",
+  "artist_id": "Q184212",
+  "year": 1821,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "young-girls-in-black",
+  "title": "Young Girls in Black",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1880,
+  "museum": [
+   "Pushkin Museum of Fine Arts",
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "madame-georges-charpentier-and-her-children",
+  "title": "Madame Georges Charpentier and her Children",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1878,
+  "museum": [
+   "Metropolitan Museum of Art",
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art",
+   "family portrait",
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-antoine-laurent-lavoisier-and-his-wife",
+  "title": "Portrait of Antoine-Laurent Lavoisier and his wife",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1788,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "double portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism",
+   "academic art"
+  ]
+ },
+ {
+  "id": "cypresses",
+  "title": "Cypresses",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-order-of-release",
+  "title": "The Order of Release",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1852,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-lament-for-icarus",
+  "title": "The Lament for Icarus",
+  "artist": "Herbert James Draper",
+  "artist_id": "Q918605",
+  "year": 1898,
+  "museum": [
+   "Tate",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-lock",
+  "title": "The Lock",
+  "artist": "Jean-Honoré Fragonard",
+  "artist_id": "Q127171",
+  "year": 1777,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "interior view"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "myself-portrait-landscape",
+  "title": "Myself: Portrait – Landscape",
+  "artist": "Henri Rousseau",
+  "artist_id": "Q156386",
+  "year": 1890,
+  "museum": [
+   "National Gallery Prague"
+  ],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": [
+   "naïve art"
+  ]
+ },
+ {
+  "id": "entry-of-the-crusaders-in-constantinople",
+  "title": "Entry of the Crusaders in Constantinople",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1840,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "composition-vii",
+  "title": "Composition VII",
+  "artist": "Wassily Kandinsky",
+  "artist_id": "Q61064",
+  "year": 1913,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Expressionism",
+   "abstract art"
+  ]
+ },
+ {
+  "id": "cleopatra-testing-poisons-on-condemned-prisoners",
+  "title": "Cleopatra Testing Poisons on Condemned Prisoners",
+  "artist": "Alexandre Cabanel",
+  "artist_id": "Q310437",
+  "year": 1887,
+  "museum": [
+   "Royal Academy of Fine Arts",
+   "Royal Museum of Fine Arts Antwerp"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Orientalism",
+   "academic art",
+   "L'art pompier"
+  ]
+ },
+ {
+  "id": "jupiter-and-thetis",
+  "title": "Jupiter and Thetis",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1811,
+  "museum": [
+   "Musée Granet",
+   "Centre national des arts plastiques"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-shadow-of-death",
+  "title": "The Shadow of Death",
+  "artist": "William Holman Hunt",
+  "artist_id": "Q211763",
+  "year": 1873,
+  "museum": [
+   "Manchester Art Gallery"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-death-of-general-wolfe",
+  "title": "The Death of General Wolfe",
+  "artist": "Benjamin West",
+  "artist_id": "Q313498",
+  "year": 1770,
+  "museum": [
+   "Canadian War Memorials Fund",
+   "National Gallery of Canada"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism",
+   "Neoclassical painting"
+  ]
+ },
+ {
+  "id": "the-bohemian",
+  "title": "The Bohemian",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1890,
+  "museum": [
+   "Minneapolis Institute of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "puberty",
+  "title": "Puberty",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1895,
+  "museum": [
+   "National Museum of Art, Architecture and Design"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-scapegoat",
+  "title": "The Scapegoat",
+  "artist": "William Holman Hunt",
+  "artist_id": "Q211763",
+  "year": 1854,
+  "museum": [
+   "Lady Lever Art Gallery"
+  ],
+  "genre_hint": [
+   "religious art",
+   "animal art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-duel-after-the-masquerade",
+  "title": "The Duel After the Masquerade",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1857,
+  "museum": [
+   "Condé Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "solitary-tree",
+  "title": "Solitary Tree",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1822,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-chess-players",
+  "title": "The Chess Players",
+  "artist": "Thomas Eakins",
+  "artist_id": "Q214905",
+  "year": 1876,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "alone-in-the-world",
+  "title": "Alone in the World",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1867,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "luncheon-in-the-studio",
+  "title": "Luncheon in the Studio",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1868,
+  "museum": [
+   "Bavarian State Painting Collections"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "French Realism"
+  ]
+ },
+ {
+  "id": "the-basket-of-apples",
+  "title": "The Basket of Apples",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1893,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-garden-of-death",
+  "title": "The Garden of Death",
+  "artist": "Hugo Simberg",
+  "artist_id": "Q263080",
+  "year": 1896,
+  "museum": [
+   "Finnish National Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "april-love",
+  "title": "April Love",
+  "artist": "Arthur Hughes",
+  "artist_id": "Q434575",
+  "year": 1855,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "farmhouse-in-provence",
+  "title": "Farmhouse in Provence",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "fight-with-cudgels",
+  "title": "Fight with Cudgels",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1820,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-battle-of-trafalgar",
+  "title": "The Battle of Trafalgar",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1823,
+  "museum": [
+   "Royal Museums Greenwich"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "vue-de-toits",
+  "title": "Vue de toits",
+  "artist": "Gustave Caillebotte",
+  "artist_id": "Q295144",
+  "year": 1878,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "girl-in-white",
+  "title": "Girl in White",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "jerusalem",
+  "title": "Jerusalem",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1867,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "empress-eugenie-surrounded-by-her-ladies-in-waiting",
+  "title": "Empress Eugenie Surrounded by her Ladies in Waiting",
+  "artist": "Franz Xaver Winterhalter",
+  "artist_id": "Q168659",
+  "year": 1855,
+  "museum": [
+   "Château de Compiègne"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "young-woman-powdering-herself",
+  "title": "Young Woman Powdering Herself",
+  "artist": "Georges Seurat",
+  "artist_id": "Q34013",
+  "year": 1889,
+  "museum": [
+   "Courtauld Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "marie-antoinette-and-her-children",
+  "title": "Marie Antoinette and Her Children",
+  "artist": "Élisabeth Louise Vigée Le Brun",
+  "artist_id": "Q213163",
+  "year": 1787,
+  "museum": [
+   "Musée de l'Histoire de France"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "music",
+  "title": "Music",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1910,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Fauvism"
+  ]
+ },
+ {
+  "id": "nevermore",
+  "title": "Nevermore",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1897,
+  "museum": [
+   "Courtauld Institute of Art"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "blind-man-s-bluff",
+  "title": "Blind Man's Bluff",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1788,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "le-chahut",
+  "title": "Le Chahut",
+  "artist": "Georges Seurat",
+  "artist_id": "Q34013",
+  "year": 1889,
+  "museum": [
+   "Kröller-Müller Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neo-impressionism",
+   "pointillism"
+  ]
+ },
+ {
+  "id": "miss-la-la-at-the-cirque-fernando",
+  "title": "Miss La La at the Cirque Fernando",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1879,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "boys-playing-soldiers",
+  "title": "Boys playing soldiers",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1778,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-doctor-felix-rey",
+  "title": "Portrait of Doctor Felix Rey",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "arena-in-arles",
+  "title": "Arena in Arles",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "paris-and-helen",
+  "title": "Paris and Helen",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1788,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassical painting"
+  ]
+ },
+ {
+  "id": "the-cornfield",
+  "title": "The Cornfield",
+  "artist": "John Constable",
+  "artist_id": "Q159297",
+  "year": 1826,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "black-woman",
+  "title": "Black Woman",
+  "artist": "Anna Bilińska-Bohdanowicz",
+  "artist_id": "Q273115",
+  "year": 1884,
+  "museum": [
+   "National Museum in Warsaw"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "ecce-ancilla-domini",
+  "title": "Ecce Ancilla Domini",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1850,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "religious art",
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ }
+]

@@ -1,0 +1,592 @@
+[
+ {
+  "id": "Q691796",
+  "name": "Abanindranath Tagore",
+  "born": "1871",
+  "died": "1951",
+  "born_in": "Kolkata",
+  "died_in": "Kolkata",
+  "citizenship": [
+   "British Raj",
+   "India"
+  ]
+ },
+ {
+  "id": "Q253446",
+  "name": "Anna Ancher",
+  "born": "1859",
+  "died": "1935",
+  "born_in": "Skagen",
+  "died_in": "Skagen",
+  "citizenship": [
+   "Kingdom of Denmark"
+  ]
+ },
+ {
+  "id": "Q762949",
+  "name": "August Malmström",
+  "born": "1829",
+  "died": "1901",
+  "born_in": "Västra Ny församling",
+  "died_in": "Jakob and Johannes parish",
+  "citizenship": [
+   "Sweden"
+  ]
+ },
+ {
+  "id": "Q7724",
+  "name": "?",
+  "born": "1849",
+  "died": "1912",
+  "born_in": "",
+  "died_in": "",
+  "citizenship": []
+ },
+ {
+  "id": "Q1390711",
+  "name": "Kolë Idromeno",
+  "born": "1860",
+  "died": "1939",
+  "born_in": "Shkodër",
+  "died_in": "Shkodër",
+  "citizenship": [
+   "Albania",
+   "Ottoman Empire"
+  ]
+ },
+ {
+  "id": "Q347139",
+  "name": "Jean-Baptiste Greuze",
+  "born": "1725",
+  "died": "1805",
+  "born_in": "Tournus",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q187310",
+  "name": "Carl Larsson",
+  "born": "1853",
+  "died": "1919",
+  "born_in": "Storkyrkoförsamlingen",
+  "died_in": "Sundborns",
+  "citizenship": [
+   "Sweden"
+  ]
+ },
+ {
+  "id": "Q175130",
+  "name": "Alfred Sisley",
+  "born": "1839",
+  "died": "1899",
+  "born_in": "Paris",
+  "died_in": "Moret-sur-Loing",
+  "citizenship": [
+   "France",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q187506",
+  "name": "Honoré Daumier",
+  "born": "1808",
+  "died": "1879",
+  "born_in": "Marseille",
+  "died_in": "Valmondois",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q449519",
+  "name": "Richard Dadd",
+  "born": "1817",
+  "died": "1886",
+  "born_in": "High Street",
+  "died_in": "Broadmoor Hospital",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q94851",
+  "name": "Enrique Simonet",
+  "born": "1866",
+  "died": "1927",
+  "born_in": "Valencia",
+  "died_in": "Madrid",
+  "citizenship": [
+   "Spain"
+  ]
+ },
+ {
+  "id": "Q170068",
+  "name": "Akseli Gallen-Kallela",
+  "born": "1865",
+  "died": "1931",
+  "born_in": "Pori",
+  "died_in": "Stockholm",
+  "citizenship": [
+   "Finland",
+   "Grand Duchy of Finland"
+  ]
+ },
+ {
+  "id": "Q718795",
+  "name": "Vincenzo Camuccini",
+  "born": "1771",
+  "died": "1844",
+  "born_in": "Rome",
+  "died_in": "Rome",
+  "citizenship": [
+   "Papal States"
+  ]
+ },
+ {
+  "id": "Q169311",
+  "name": "Johann Friedrich Overbeck",
+  "born": "1789",
+  "died": "1869",
+  "born_in": "Lübeck",
+  "died_in": "Rome",
+  "citizenship": [
+   "Lübeck"
+  ]
+ },
+ {
+  "id": "Q539474",
+  "name": "Constantin Hansen",
+  "born": "1804",
+  "died": "1880",
+  "born_in": "Rome",
+  "died_in": "Frederiksberg",
+  "citizenship": [
+   "Kingdom of Denmark"
+  ]
+ },
+ {
+  "id": "Q77132",
+  "name": "Albert Bierstadt",
+  "born": "1830",
+  "died": "1902",
+  "born_in": "Solingen",
+  "died_in": "New York City",
+  "citizenship": [
+   "Kingdom of Prussia",
+   "United States"
+  ]
+ },
+ {
+  "id": "Q164683",
+  "name": "Max Beckmann",
+  "born": "1884",
+  "died": "1950",
+  "born_in": "Leipzig",
+  "died_in": "New York City",
+  "citizenship": [
+   "Germany"
+  ]
+ },
+ {
+  "id": "Q381248",
+  "name": "James Tissot",
+  "born": "1836",
+  "died": "1902",
+  "born_in": "Nantes",
+  "died_in": "Chenecey-Buillon",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q235903",
+  "name": "Evelyn De Morgan",
+  "born": "1855",
+  "died": "1919",
+  "born_in": "London",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q364226",
+  "name": "Kuzma Petrov-Vodkin",
+  "born": "1878",
+  "died": "1939",
+  "born_in": "Khvalynsk",
+  "died_in": "Saint Petersburg",
+  "citizenship": [
+   "Russian Empire",
+   "Russian Soviet Federative Socialist Republic",
+   "Soviet Union"
+  ]
+ },
+ {
+  "id": "Q318393",
+  "name": "Vasily Polenov",
+  "born": "1844",
+  "died": "1927",
+  "born_in": "Saint Petersburg",
+  "died_in": "Polenovo",
+  "citizenship": [
+   "Russian Empire",
+   "Russian Republic",
+   "Russian Socialist Federative Soviet Republic",
+   "Soviet Union"
+  ]
+ },
+ {
+  "id": "Q3048418",
+  "name": "Edvard Isto",
+  "born": "1865",
+  "died": "1905",
+  "born_in": "Alatornio",
+  "died_in": "Helsinki",
+  "citizenship": [
+   "Grand Duchy of Finland"
+  ]
+ },
+ {
+  "id": "Q380494",
+  "name": "?",
+  "born": "1883",
+  "died": "1935",
+  "born_in": "",
+  "died_in": "",
+  "citizenship": []
+ },
+ {
+  "id": "Q134150",
+  "name": "Marie Spartali Stillman",
+  "born": "1844",
+  "died": "1927",
+  "born_in": "London",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom"
+  ]
+ },
+ {
+  "id": "Q380052",
+  "name": "Mariano Fortuny Marsal",
+  "born": "1838",
+  "died": "1874",
+  "born_in": "Reus",
+  "died_in": "Rome",
+  "citizenship": [
+   "Spain"
+  ]
+ },
+ {
+  "id": "Q356644",
+  "name": "Albert Edelfelt",
+  "born": "1854",
+  "died": "1905",
+  "born_in": "Kiala manor",
+  "died_in": "Porvoo",
+  "citizenship": [
+   "Grand Duchy of Finland"
+  ]
+ },
+ {
+  "id": "Q1470796",
+  "name": "Frederick Sandys",
+  "born": "1829",
+  "died": "1904",
+  "born_in": "Norwich",
+  "died_in": "London",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q448189",
+  "name": "Jacek Malczewski",
+  "born": "1854",
+  "died": "1929",
+  "born_in": "Radom",
+  "died_in": "Kraków",
+  "citizenship": [
+   "Poland"
+  ]
+ },
+ {
+  "id": "Q433434",
+  "name": "Anne-Louis Girodet",
+  "born": "1767",
+  "died": "1824",
+  "born_in": "Montargis",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q720035",
+  "name": "Nicolaas Pieneman",
+  "born": "1809",
+  "died": "1860",
+  "born_in": "Amersfoort",
+  "died_in": "Amsterdam",
+  "citizenship": [
+   "Kingdom of the Netherlands"
+  ]
+ },
+ {
+  "id": "Q922483",
+  "name": "William Orpen",
+  "born": "1878",
+  "died": "1931",
+  "born_in": "Stillorgan",
+  "died_in": "London",
+  "citizenship": [
+   "Ireland",
+   "Irish Free State",
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q274298",
+  "name": "Edouard Louis Dubufe",
+  "born": "1819",
+  "died": "1883",
+  "born_in": "former 8th arrondissement of Paris",
+  "died_in": "Versailles",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q977276",
+  "name": "Henry Wallis",
+  "born": "1830",
+  "died": "1916",
+  "born_in": "London",
+  "died_in": "Surrey",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ]
+ },
+ {
+  "id": "Q182664",
+  "name": "Giovanni Antonio Canal",
+  "born": "1697",
+  "died": "1768",
+  "born_in": "Venice",
+  "died_in": "Venice",
+  "citizenship": [
+   "Republic of Venice"
+  ]
+ },
+ {
+  "id": "Q265665",
+  "name": "Pierre Auguste Cot",
+  "born": "1837",
+  "died": "1883",
+  "born_in": "Bédarieux",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q16534240",
+  "name": "August Friedrich Albert Schenck",
+  "born": "1828",
+  "died": "1901",
+  "born_in": "Glückstadt",
+  "died_in": "Écouen",
+  "citizenship": [
+   "Duchy of Holstein",
+   "France"
+  ]
+ },
+ {
+  "id": "Q981441",
+  "name": "Wilhelm Bendz",
+  "born": "1804",
+  "died": "1832",
+  "born_in": "Odense",
+  "died_in": "Vicenza",
+  "citizenship": [
+   "Kingdom of Denmark"
+  ]
+ },
+ {
+  "id": "Q2272816",
+  "name": "Peder Balke",
+  "born": "1804",
+  "died": "1887",
+  "born_in": "Helgøya",
+  "died_in": "Christiania",
+  "citizenship": [
+   "Norway"
+  ]
+ },
+ {
+  "id": "Q313275",
+  "name": "Boris Kustodiev",
+  "born": "1878",
+  "died": "1927",
+  "born_in": "Astrakhan",
+  "died_in": "Saint Petersburg",
+  "citizenship": [
+   "Russian Empire",
+   "Soviet Union"
+  ]
+ },
+ {
+  "id": "Q3290532",
+  "name": "John Steuart Curry",
+  "born": "1897",
+  "died": "1946",
+  "born_in": "Dunavant",
+  "died_in": "Madison",
+  "citizenship": [
+   "United States"
+  ]
+ },
+ {
+  "id": "Q326434",
+  "name": "Thomas Couture",
+  "born": "1815",
+  "died": "1879",
+  "born_in": "Senlis",
+  "died_in": "Villiers-le-Bel",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q379300",
+  "name": "Giovanni Segantini",
+  "born": "1858",
+  "died": "1899",
+  "born_in": "Arco",
+  "died_in": "Schafberg",
+  "citizenship": [
+   "Austria–Hungary",
+   "Kingdom of Italy"
+  ]
+ },
+ {
+  "id": "Q726564",
+  "name": "Gustave Boulanger",
+  "born": "1824",
+  "died": "1888",
+  "born_in": "former 2nd arrondissement of Paris",
+  "died_in": "rue Ballu",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q229272",
+  "name": "Ernst Ludwig Kirchner",
+  "born": "1880",
+  "died": "1938",
+  "born_in": "Aschaffenburg",
+  "died_in": "Davos Frauenkirch",
+  "citizenship": [
+   "German Reich"
+  ]
+ },
+ {
+  "id": "Q146691",
+  "name": "Alphonse Mucha",
+  "born": "1860",
+  "died": "1939",
+  "born_in": "Ivančice",
+  "died_in": "Bubeneč",
+  "citizenship": [
+   "Austrian Empire",
+   "Austria–Hungary",
+   "Czechoslovakia",
+   "First Czechoslovak Republic",
+   "Nazi Germany",
+   "Second Czechoslovak Republic"
+  ]
+ },
+ {
+  "id": "Q1795226",
+  "name": "Walenty Wańkowicz",
+  "born": "1800",
+  "died": "1842",
+  "born_in": "Kaliužyca",
+  "died_in": "Paris",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q118810",
+  "name": "Marie-Guillemine Benoist",
+  "born": "1768",
+  "died": "1826",
+  "born_in": "Paris",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q123098",
+  "name": "Angelica Kauffmann",
+  "born": "1741",
+  "died": "1807",
+  "born_in": "Chur",
+  "died_in": "Rome",
+  "citizenship": [
+   "Switzerland",
+   "Three Leagues"
+  ]
+ },
+ {
+  "id": "Q154349",
+  "name": "Odilon Redon",
+  "born": "1840",
+  "died": "1916",
+  "born_in": "Bordeaux",
+  "died_in": "Paris",
+  "citizenship": [
+   "France"
+  ]
+ },
+ {
+  "id": "Q2339347",
+  "name": "Ivan Grohar",
+  "born": "1867",
+  "died": "1911",
+  "born_in": "Železniki Municipality",
+  "died_in": "Ljubljana",
+  "citizenship": [
+   "Cisleithania"
+  ]
+ },
+ {
+  "id": "Q777821",
+  "name": "Konstantin Flavitsky",
+  "born": "1830",
+  "died": "1866",
+  "born_in": "Moscow",
+  "died_in": "Saint Petersburg",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ },
+ {
+  "id": "Q2601651",
+  "name": "Mykola Pymonenko",
+  "born": "1862",
+  "died": "1912",
+  "born_in": "Kyiv",
+  "died_in": "Kyiv",
+  "citizenship": [
+   "Russian Empire"
+  ]
+ }
+]

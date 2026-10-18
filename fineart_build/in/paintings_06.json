@@ -1,0 +1,762 @@
+[
+ {
+  "id": "the-return-of-spring",
+  "title": "The Return of Spring",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1886,
+  "museum": [
+   "Joslyn Art Museum"
+  ],
+  "genre_hint": [
+   "allegory",
+   "nude"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "view-of-the-village",
+  "title": "View of the Village",
+  "artist": "Frédéric Bazille",
+  "artist_id": "Q207298",
+  "year": 1868,
+  "museum": [
+   "Musée Fabre"
+  ],
+  "genre_hint": [
+   "portrait",
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "andromache-mourning-hector",
+  "title": "Andromache Mourning Hector",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1782,
+  "museum": [
+   "Beaux-Arts de Paris",
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-death-of-seneca",
+  "title": "The Death of Seneca",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1773,
+  "museum": [
+   "Musée des Beaux-Arts de la ville de Paris"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "la-encantadora-de-serpientes",
+  "title": "La encantadora de serpientes",
+  "artist": "Henri Rousseau",
+  "artist_id": "Q156386",
+  "year": 1907,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude",
+   "landscape painting",
+   "figure painting"
+  ],
+  "movement_hint": [
+   "naïve art"
+  ]
+ },
+ {
+  "id": "venus-rising",
+  "title": "Venus Rising",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1890,
+  "museum": [],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "view-of-arles-flowering-orchards",
+  "title": "View of Arles, Flowering Orchards",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Bavarian State Painting Collections"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "two-tahitian-women",
+  "title": "Two Tahitian Women",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1899,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-fourth-estate",
+  "title": "The Fourth Estate",
+  "artist": "Giuseppe Pellizza da Volpedo",
+  "artist_id": "Q1528580",
+  "year": 1901,
+  "museum": [
+   "Galleria d'arte moderna di Milano"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Novecento Italiano"
+  ]
+ },
+ {
+  "id": "leonidas-at-thermopylae",
+  "title": "Leonidas at Thermopylae",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1814,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "history painting",
+   "heroic nudity"
+  ],
+  "movement_hint": [
+   "Neoclassical architecture"
+  ]
+ },
+ {
+  "id": "rejtan",
+  "title": "Rejtan",
+  "artist": "Jan Matejko",
+  "artist_id": "Q189117",
+  "year": 1866,
+  "museum": [
+   "Royal Castle in Warsaw"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "regates-a-argenteuil",
+  "title": "Régates à Argenteuil",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1872,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-gross-clinic",
+  "title": "The Gross Clinic",
+  "artist": "Thomas Eakins",
+  "artist_id": "Q214905",
+  "year": 1875,
+  "museum": [
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "group portrait"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "the-apotheosis-of-homer",
+  "title": "The Apotheosis of Homer",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1827,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "history painting",
+   "allegory",
+   "religious art",
+   "architectural view"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "hip-hip-hurrah",
+  "title": "Hip, Hip, Hurrah!",
+  "artist": "Peder Severin Krøyer",
+  "artist_id": "Q365068",
+  "year": 1888,
+  "museum": [
+   "Fürstenberg Gallery",
+   "Gothenburg Museum of Art"
+  ],
+  "genre_hint": [
+   "group portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "bonaparte-crossing-the-alps",
+  "title": "Bonaparte Crossing the Alps",
+  "artist": "Paul Delaroche",
+  "artist_id": "Q322582",
+  "year": 1848,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait",
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "atropos",
+  "title": "Atropos",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1819,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "nude-sitting-on-a-divan",
+  "title": "Nude Sitting on a Divan",
+  "artist": "Amedeo Modigliani",
+  "artist_id": "Q120993",
+  "year": 1917,
+  "museum": [
+   "Tehran Museum of Contemporary Art",
+   "Tehran Museum of Contemporary Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "suprematist-composition",
+  "title": "Suprematist Composition",
+  "artist": "Kazimir Malevich",
+  "artist_id": "Q130777",
+  "year": 1916,
+  "museum": [
+   "Brett Gorvy"
+  ],
+  "genre_hint": [
+   "abstract art"
+  ],
+  "movement_hint": [
+   "Suprematism"
+  ]
+ },
+ {
+  "id": "the-open-window",
+  "title": "The Open Window",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1905,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": [
+   "Fauvism"
+  ]
+ },
+ {
+  "id": "the-artist-s-garden-at-giverny",
+  "title": "The artist's garden at Giverny",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1900,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "garden"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-rooks-have-returned",
+  "title": "The Rooks Have Returned",
+  "artist": "Alexei Savrasov",
+  "artist_id": "Q353008",
+  "year": 1871,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "heroes",
+  "title": "Heroes",
+  "artist": "Viktor Vasnetsov",
+  "artist_id": "Q204138",
+  "year": 1890,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-ballet-class",
+  "title": "The Ballet Class",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1871,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "lilac-bush",
+  "title": "Lilac Bush",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "interior",
+  "title": "Interior",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1868,
+  "museum": [
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art",
+   "interior view"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-boy-in-the-red-vest",
+  "title": "The Boy in the Red Vest",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1889,
+  "museum": [
+   "Foundation E.G. Bührle Collection",
+   "Kunsthaus Zürich"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "pink-and-blue",
+  "title": "Pink and Blue",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1881,
+  "museum": [
+   "São Paulo Museum of Art",
+   "São Paulo Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-favourites-of-the-emperor-honorius",
+  "title": "The Favourites of the Emperor Honorius",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1883,
+  "museum": [
+   "Art Gallery of South Australia",
+   "Art Gallery of South Australia"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "view-of-the-sea-at-scheveningen",
+  "title": "View of the Sea at Scheveningen",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1882,
+  "museum": [
+   "Van Gogh Museum",
+   "Stedelijk Museum Amsterdam"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "mariana",
+  "title": "Mariana",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1851,
+  "museum": [
+   "Tate"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-pearl-and-the-wave",
+  "title": "The Pearl and the Wave",
+  "artist": "Paul-Jacques-Aimé Baudry",
+  "artist_id": "Q911575",
+  "year": 1862,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-hanging-of-the-sigismund-bell-at-the-cathedral-tower-in-",
+  "title": "The Hanging of the Sigismund bell at the Cathedral Tower in 1521 in Kraków",
+  "artist": "Jan Matejko",
+  "artist_id": "Q189117",
+  "year": 1874,
+  "museum": [
+   "National Museum in Warsaw"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-tribuna-of-the-uffizi",
+  "title": "The Tribuna of the Uffizi",
+  "artist": "Johann Zoffany",
+  "artist_id": "Q702272",
+  "year": 1774,
+  "museum": [
+   "Royal Collection"
+  ],
+  "genre_hint": [
+   "art gallery painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "les-alyscamps",
+  "title": "Les Alyscamps",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "adele-bloch-bauer-ii",
+  "title": "Adele Bloch-Bauer II",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1912,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "bocca-baciata",
+  "title": "Bocca Baciata",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1859,
+  "museum": [
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "la-parisienne",
+  "title": "La Parisienne",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1874,
+  "museum": [
+   "Amgueddfa Cymru – Museum Wales",
+   "Amgueddfa Cymru – Museum Wales"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-sin",
+  "title": "The Sin",
+  "artist": "?",
+  "artist_id": "Q45006",
+  "year": 1893,
+  "museum": [
+   "Bavarian State Painting Collections"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "madame-monet-wearing-a-kimono",
+  "title": "Madame Monet wearing a kimono",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1876,
+  "museum": [
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Japonisme"
+  ]
+ },
+ {
+  "id": "godiva",
+  "title": "Godiva",
+  "artist": "John Collier",
+  "artist_id": "Q453972",
+  "year": 1897,
+  "museum": [
+   "Herbert Art Gallery and Museum"
+  ],
+  "genre_hint": [
+   "nude",
+   "history painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-lady-with-a-fan-the-artist-s-wife",
+  "title": "The Lady with a Fan, The Artist's Wife",
+  "artist": "Alexander Roslin",
+  "artist_id": "Q315102",
+  "year": 1768,
+  "museum": [
+   "Nationalmuseum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "crab-on-its-back",
+  "title": "Crab on its Back",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1887,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-bathers",
+  "title": "The Bathers",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1853,
+  "museum": [
+   "Musée Fabre"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-kiss-edvard-munch",
+  "title": "The Kiss",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1897,
+  "museum": [
+   "Munch Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Expressionism"
+  ]
+ },
+ {
+  "id": "self-portrait-with-bandaged-ear",
+  "title": "Self-Portrait with Bandaged Ear",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Courtauld Gallery"
+  ],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-dawn-of-love",
+  "title": "The Dawn of Love",
+  "artist": "William Etty",
+  "artist_id": "Q766362",
+  "year": 1828,
+  "museum": [
+   "Russell-Cotes Art Gallery & Museum"
+  ],
+  "genre_hint": [
+   "nude",
+   "allegory",
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "one-hundred-horses",
+  "title": "One Hundred Horses",
+  "artist": "Giuseppe Castiglione",
+  "artist_id": "Q458671",
+  "year": 1728,
+  "museum": [
+   "National Palace Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "self-portrait-with-a-black-dog",
+  "title": "Self-Portrait with a Black Dog",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1842,
+  "museum": [
+   "Musée des Beaux-Arts de la ville de Paris"
+  ],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "the-vale-of-rest",
+  "title": "The Vale of Rest",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1858,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ }
+]

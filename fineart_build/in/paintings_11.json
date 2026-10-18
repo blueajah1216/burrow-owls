@@ -1,0 +1,772 @@
+[
+ {
+  "id": "the-cradle",
+  "title": "The Cradle",
+  "artist": "Berthe Morisot",
+  "artist_id": "Q105320",
+  "year": 1872,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "boyarina-morozova",
+  "title": "Boyarina Morozova",
+  "artist": "Vasily Surikov",
+  "artist_id": "Q110228",
+  "year": 1887,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "history painting",
+   "group portrait",
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "les-orangers",
+  "title": "Les orangers",
+  "artist": "Gustave Caillebotte",
+  "artist_id": "Q295144",
+  "year": 1878,
+  "museum": [
+   "Museum of Fine Arts, Houston"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-inquisition-tribunal",
+  "title": "The Inquisition Tribunal",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1812,
+  "museum": [
+   "Royal Academy of Fine Arts of San Fernando"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-family-of-the-infante-don-luis",
+  "title": "The Family of the Infante Don Luis",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1783,
+  "museum": [
+   "Fondazione Magnani-Rocca",
+   "Fondazione Magnani-Rocca"
+  ],
+  "genre_hint": [
+   "family portrait",
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-hanged-man-s-house",
+  "title": "The Hanged Man's House",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1874,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "pandora",
+  "title": "Pandora",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1896,
+  "museum": [],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-bathers-pierre-augus",
+  "title": "The Bathers",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1918,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude",
+   "nude",
+   "portrait",
+   "portrait",
+   "genre art",
+   "genre art",
+   "figure painting",
+   "figure painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-magic-circle",
+  "title": "The Magic Circle",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1886,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-sorceress",
+  "title": "The Sorceress",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1911,
+  "museum": [],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "miravan-breaking-open-the-tomb-of-his-ancestors",
+  "title": "Miravan Breaking Open the Tomb of his Ancestors",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1772,
+  "museum": [
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "earthstopper-on-the-banks-of-the-derwent",
+  "title": "Earthstopper on the Banks of the Derwent",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1773,
+  "museum": [
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art",
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-captive",
+  "title": "The Captive",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1774,
+  "museum": [
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "evening-bells",
+  "title": "Evening Bells",
+  "artist": "Isaac Levitan",
+  "artist_id": "Q211356",
+  "year": 1892,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-vladimirka",
+  "title": "The Vladimirka",
+  "artist": "Isaac Levitan",
+  "artist_id": "Q211356",
+  "year": 1892,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "isabella-and-the-pot-of-basil",
+  "title": "Isabella and the Pot of Basil",
+  "artist": "William Holman Hunt",
+  "artist_id": "Q211763",
+  "year": 1867,
+  "museum": [
+   "Laing Art Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "rye-fields",
+  "title": "Rye Fields",
+  "artist": "Ivan Shishkin",
+  "artist_id": "Q193064",
+  "year": 1878,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "young-man-at-his-window",
+  "title": "Young Man at His Window",
+  "artist": "Gustave Caillebotte",
+  "artist_id": "Q295144",
+  "year": 1876,
+  "museum": [
+   "J. Paul Getty Museum",
+   "Cox Collection"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-studio-at-les-batignolles",
+  "title": "A Studio at Les Batignolles",
+  "artist": "Henri Fantin-Latour",
+  "artist_id": "Q310715",
+  "year": 1870,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "group portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "blue-horse-i",
+  "title": "Blue Horse I",
+  "artist": "Franz Marc",
+  "artist_id": "Q44054",
+  "year": 1911,
+  "museum": [
+   "Lenbachhaus"
+  ],
+  "genre_hint": [
+   "animal art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-a-kleptomaniac",
+  "title": "Portrait of a Kleptomaniac",
+  "artist": "Théodore Géricault",
+  "artist_id": "Q184212",
+  "year": 1820,
+  "museum": [
+   "Museum of Fine Arts Ghent (MSK)"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-madhouse",
+  "title": "The Madhouse",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1814,
+  "museum": [
+   "Royal Academy of Fine Arts of San Fernando"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-quiet-monastery",
+  "title": "A Quiet Monastery",
+  "artist": "Isaac Levitan",
+  "artist_id": "Q211356",
+  "year": 1890,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Peredvizhniki"
+  ]
+ },
+ {
+  "id": "veronica-veronese",
+  "title": "Veronica Veronese",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1872,
+  "museum": [
+   "Delaware Art Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "monna-rosa",
+  "title": "Monna Rosa",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1867,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-girlhood-of-mary-virgin",
+  "title": "The Girlhood of Mary Virgin",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1848,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "religious art",
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "girl-with-chrysanthemums",
+  "title": "Girl with chrysanthemums",
+  "artist": "?",
+  "artist_id": "Q466639",
+  "year": 1894,
+  "museum": [
+   "National Museum in Kraków"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "springtime",
+  "title": "Springtime",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1872,
+  "museum": [
+   "Walters Art Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "symphony-in-white-no-2-the-little-white-girl",
+  "title": "Symphony in White, No. 2: The Little White Girl",
+  "artist": "James McNeill Whistler",
+  "artist_id": "Q203643",
+  "year": 1864,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-beloved",
+  "title": "The Beloved",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1865,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-dying-dandy",
+  "title": "The Dying Dandy",
+  "artist": "Nils von Dardel",
+  "artist_id": "Q1132040",
+  "year": 1918,
+  "museum": [
+   "Moderna Museet"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "cymon-and-iphigenia",
+  "title": "Cymon and Iphigenia",
+  "artist": "Frederic Leighton",
+  "artist_id": "Q160252",
+  "year": 1884,
+  "museum": [
+   "Art Gallery of New South Wales"
+  ],
+  "genre_hint": [
+   "narrative painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "starry-night",
+  "title": "Starry Night",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1893,
+  "museum": [
+   "J. Paul Getty Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "lady-agnew-of-lochnaw",
+  "title": "Lady Agnew of Lochnaw",
+  "artist": "?",
+  "artist_id": "Q155626",
+  "year": 1892,
+  "museum": [
+   "National Galleries Scotland"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "summer-evening-at-skagen-beach-the-artist-and-his-wife",
+  "title": "Summer Evening at Skagen Beach – The Artist and his Wife",
+  "artist": "Peder Severin Krøyer",
+  "artist_id": "Q365068",
+  "year": 1899,
+  "museum": [
+   "Hirschsprung Collection"
+  ],
+  "genre_hint": [
+   "marine art",
+   "self-portrait",
+   "group portrait",
+   "nocturne",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "view-from-the-artist-s-window",
+  "title": "View from the Artist's Window",
+  "artist": "Martinus Rørbye",
+  "artist_id": "Q979541",
+  "year": 1825,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "cityscape",
+   "interior view"
+  ],
+  "movement_hint": [
+   "Danish Golden Age"
+  ]
+ },
+ {
+  "id": "madame-de-pompadour",
+  "title": "Madame de Pompadour",
+  "artist": "François Boucher",
+  "artist_id": "Q180932",
+  "year": 1759,
+  "museum": [
+   "Wallace Collection"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "summer-evening-on-skagen-s-southern-beach",
+  "title": "Summer Evening on Skagen's Southern Beach",
+  "artist": "Peder Severin Krøyer",
+  "artist_id": "Q365068",
+  "year": 1893,
+  "museum": [
+   "Skagens Museum"
+  ],
+  "genre_hint": [
+   "portrait",
+   "landscape painting",
+   "nocturne"
+  ],
+  "movement_hint": [
+   "Naturalism",
+   "Skagen Painters"
+  ]
+ },
+ {
+  "id": "the-bath-of-psyche",
+  "title": "The Bath of Psyche",
+  "artist": "Frederic Leighton",
+  "artist_id": "Q160252",
+  "year": 1890,
+  "museum": [
+   "National Gallery",
+   "Tate Britain"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "autumn",
+  "title": "Autumn",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1881,
+  "museum": [
+   "Museum of Fine Arts of Nancy"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-great-bath-at-bursa",
+  "title": "The Great Bath at Bursa",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1885,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Orientalism",
+   "academic art"
+  ]
+ },
+ {
+  "id": "congregation-leaving-the-reformed-church-in-nuenen",
+  "title": "Congregation Leaving the Reformed Church in Nuenen",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1880,
+  "museum": [
+   "Van Gogh Museum",
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "realism",
+   "realism"
+  ]
+ },
+ {
+  "id": "kingfisher-by-the-waterside",
+  "title": "Kingfisher by the Waterside",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1887,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "animal art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "phaedra",
+  "title": "Phaedra",
+  "artist": "Alexandre Cabanel",
+  "artist_id": "Q310437",
+  "year": 1880,
+  "museum": [
+   "Musée Fabre"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Orientalism"
+  ]
+ },
+ {
+  "id": "young-ladies-of-the-village",
+  "title": "Young Ladies of the Village",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1851,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "at-the-french-windows-the-artist-s-wife",
+  "title": "At the French Windows. The Artist's Wife",
+  "artist": "Laurits Andersen Ring",
+  "artist_id": "Q2199553",
+  "year": 1897,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "winter-at-the-sognefjord",
+  "title": "Winter at the Sognefjord",
+  "artist": "Johan Christian Dahl",
+  "artist_id": "Q164735",
+  "year": 1827,
+  "museum": [
+   "National Museum of Art, Architecture and Design"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "romantic nationalism"
+  ]
+ },
+ {
+  "id": "midsummer-night-near-vejle-fjord",
+  "title": "Midsummer Night near Vejle Fjord",
+  "artist": "Harald Slott-Møller",
+  "artist_id": "Q4027439",
+  "year": 1904,
+  "museum": [
+   "Vejle Museum of Art"
+  ],
+  "genre_hint": [
+   "nocturne"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "germania",
+  "title": "Germania",
+  "artist": "Philipp Veit",
+  "artist_id": "Q548914",
+  "year": 1848,
+  "museum": [
+   "Germanisches Nationalmuseum"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "athenaeum-portrait",
+  "title": "Athenaeum Portrait",
+  "artist": "Gilbert Stuart",
+  "artist_id": "Q41402",
+  "year": 1796,
+  "museum": [
+   "Museum of Fine Arts Boston",
+   "National Portrait Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ }
+]

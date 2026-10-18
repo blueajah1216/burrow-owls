@@ -1,0 +1,19 @@
+{% extends "fineart/base.html" %}
+{% block title %}{{ a.n }} · The Great Gallery{% endblock %}
+{% block desc %}{{ a.bio[:180] }}{% endblock %}
+{% block body %}
+<main class="detail">
+  <div class="crumbs"><a href="{{ url_for('fineart.index') }}#browse">← All paintings</a></div>
+  <section class="artist-hero">
+    <div class="initial big">{{ a.n[0] }}</div>
+    <div>
+      <p class="eyebrow">Artist</p>
+      <h1>{{ a.n }}</h1>
+      <p class="lives">{{ fa_lived(a) }}{% if a.bi %} · born in {{ a.bi }}{% endif %}{% if a.di and a.di != a.bi %} · died in {{ a.di }}{% endif %}</p>
+      <p class="bio">{{ a.bio }}</p>
+    </div>
+  </section>
+  <section class="strip wide"><h3>{{ works|length }} painting{{ 's' if works|length != 1 }} in the gallery</h3>
+    <div class="wall small">{% for x in works %}{% if not x.n %}<a class="card" href="{{ url_for('fineart.painting', pid=x.id) }}" style="aspect-ratio:{{ x.w }}/{{ x.h }}"><img loading="lazy" src="{{ fa_img(x, 500) }}" alt="{{ x.t }}"><span class="cap"><b>{{ x.t }}</b><i>{{ x.y }}</i></span></a>{% endif %}{% endfor %}</div></section>
+</main>
+{% endblock %}

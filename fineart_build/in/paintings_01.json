@@ -1,0 +1,808 @@
+[
+ {
+  "id": "l-absinthe",
+  "title": "L'Absinthe",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1875,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-hay-wain",
+  "title": "The Hay Wain",
+  "artist": "John Constable",
+  "artist_id": "Q159297",
+  "year": 1821,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "at-eternity-s-gate",
+  "title": "At Eternity's Gate",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Kröller-Müller Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-young-girl-reading",
+  "title": "A Young Girl Reading",
+  "artist": "Jean-Honoré Fragonard",
+  "artist_id": "Q127171",
+  "year": 1770,
+  "museum": [],
+  "genre_hint": [
+   "portrait",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "the-source",
+  "title": "The Source",
+  "artist": "Paul Balze & Jean-Auguste-Dominique Ingres & Alexandre Desgoffe",
+  "artist_id": "Q3370554",
+  "year": 1856,
+  "museum": [
+   "Musée d'Orsay",
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "nude",
+   "nude",
+   "nude",
+   "allegory",
+   "allegory",
+   "allegory",
+   "figure painting",
+   "figure painting",
+   "figure painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism",
+   "Neoclassicism",
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "a-journalist-lecturing-on-the-orrery",
+  "title": "A Journalist Lecturing on the Orrery",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1766,
+  "museum": [
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-massacre-at-chios",
+  "title": "The Massacre at Chios",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1824,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "Romanticism"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-abbey-in-the-oakwood",
+  "title": "The Abbey in the Oakwood",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1809,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-clothed-maja",
+  "title": "The Clothed Maja",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1800,
+  "museum": [
+   "Museo del Prado",
+   "Royal Academy of Fine Arts of San Fernando"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-kiss-francesco-ha",
+  "title": "The Kiss",
+  "artist": "Francesco Hayez",
+  "artist_id": "Q223725",
+  "year": 1859,
+  "museum": [
+   "Pinacoteca di Brera"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Troubadour style painting"
+  ]
+ },
+ {
+  "id": "the-sea-of-ice",
+  "title": "The Sea of Ice",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1823,
+  "museum": [
+   "Hamburger Kunsthalle"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-balcony",
+  "title": "The Balcony",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1868,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "group portrait",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-sleeping-gypsy",
+  "title": "The Sleeping Gypsy",
+  "artist": "Henri Rousseau",
+  "artist_id": "Q156386",
+  "year": 1897,
+  "museum": [
+   "Museum of Modern Art",
+   "John Quinn Art Collection"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "genre art"
+  ],
+  "movement_hint": [
+   "naïve art"
+  ]
+ },
+ {
+  "id": "portrait-of-an-unknown-woman",
+  "title": "Portrait of an Unknown Woman",
+  "artist": "Ivan Kramskoi",
+  "artist_id": "Q207758",
+  "year": 1883,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-turkish-bath",
+  "title": "The Turkish Bath",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1862,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Orientalism"
+  ]
+ },
+ {
+  "id": "the-barque-of-dante",
+  "title": "The Barque of Dante",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1822,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-last-day-of-pompeii",
+  "title": "The Last Day of Pompeii",
+  "artist": "Karl Bryullov",
+  "artist_id": "Q4768",
+  "year": 1833,
+  "museum": [
+   "Russian Museum",
+   "Demidov collection"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "madame-x-virginie-amelie-avegno-gautreau",
+  "title": "Madame X (Virginie Amélie Avegno Gautreau)",
+  "artist": "?",
+  "artist_id": "Q155626",
+  "year": 1884,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "an-experiment-on-a-bird-in-the-air-pump",
+  "title": "An Experiment on a Bird in the Air Pump",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1768,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-gleaners",
+  "title": "The Gleaners",
+  "artist": "Jean-François Millet",
+  "artist_id": "Q148458",
+  "year": 1857,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Barbizon school"
+  ]
+ },
+ {
+  "id": "rain-steam-and-speed-the-great-western-railway",
+  "title": "Rain, Steam and Speed – The Great Western Railway",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1844,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "music-in-the-tuileries",
+  "title": "Music in the Tuileries",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1862,
+  "museum": [
+   "Hugh Lane Gallery",
+   "Hugh Lane Gallery"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-second-of-may-1808",
+  "title": "The Second of May 1808",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1814,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-alchemist-discovering-phosphorus",
+  "title": "The Alchemist Discovering Phosphorus",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1771,
+  "museum": [
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "road-with-cypress-and-star",
+  "title": "Road with Cypress and Star",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Kröller-Müller Museum"
+  ],
+  "genre_hint": [
+   "Post-impressionism"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "skull-of-a-skeleton-with-burning-cigarette",
+  "title": "Skull of a Skeleton with Burning Cigarette",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1884,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "vanitas"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "washington-crossing-the-delaware",
+  "title": "Washington Crossing the Delaware",
+  "artist": "Emanuel Leutze",
+  "artist_id": "Q452321",
+  "year": 1851,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dante-and-virgil-in-hell",
+  "title": "Dante and Virgil in Hell",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1850,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "figure painting",
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "garden-at-sainte-adresse",
+  "title": "Garden at Sainte-Adresse",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1867,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "flaming-june",
+  "title": "Flaming June",
+  "artist": "Frederic Leighton",
+  "artist_id": "Q160252",
+  "year": 1895,
+  "museum": [
+   "Museo de Arte de Ponce"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "la-balancoire",
+  "title": "La Balançoire",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1876,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "white-house-at-night",
+  "title": "White House at Night",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Hermitage Museum",
+   "Otto Krebs collection"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "danae",
+  "title": "Danaë",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1907,
+  "museum": [
+   "Leopold Museum"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Symbolism"
+  ]
+ },
+ {
+  "id": "les-grandes-baigneuses",
+  "title": "Les Grandes Baigneuses",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1906,
+  "museum": [
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Proto-Cubism"
+  ]
+ },
+ {
+  "id": "woman-with-a-parasol-madame-monet-and-her-son",
+  "title": "Woman with a Parasol – Madame Monet and Her Son",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1875,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "woman-with-a-parrot",
+  "title": "Woman with a Parrot",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1866,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "portrait-of-pere-tanguy",
+  "title": "Portrait of Père Tanguy",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1887,
+  "museum": [
+   "Musée Rodin"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Japonisme"
+  ]
+ },
+ {
+  "id": "the-parsonage-garden-at-nuenen",
+  "title": "The Parsonage Garden at Nuenen",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1884,
+  "museum": [
+   "Groninger Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-woman-in-the-waves",
+  "title": "The Woman in the Waves",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1868,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "portrait"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "the-fighting-temeraire",
+  "title": "The Fighting Temeraire",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1839,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "women-in-the-garden",
+  "title": "Women in the Garden",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1866,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "genre art",
+   "figure painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "tahitian-women-on-the-beach",
+  "title": "Tahitian Women on the Beach",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1890,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "genre art",
+   "figure painting"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "the-intervention-of-the-sabine-women",
+  "title": "The Intervention of the Sabine Women",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1799,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "girls-at-the-piano",
+  "title": "Girls at the Piano",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1892,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait",
+   "figure painting",
+   "figure painting",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "judith-i",
+  "title": "Judith I",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1901,
+  "museum": [
+   "Belvedere"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-nightmare",
+  "title": "The Nightmare",
+  "artist": "Henry Fuseli",
+  "artist_id": "Q122382",
+  "year": 1781,
+  "museum": [
+   "Detroit Institute of Arts"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-great-bathers",
+  "title": "The Great Bathers",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1884,
+  "museum": [
+   "Philadelphia Museum of Art",
+   "Philadelphia Museum of Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "nude",
+   "portrait",
+   "portrait",
+   "genre art",
+   "genre art",
+   "figure painting",
+   "figure painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "hylas-and-the-nymphs",
+  "title": "Hylas and the Nymphs",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1896,
+  "museum": [
+   "Manchester Art Gallery",
+   "Manchester Art Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-stone-breakers",
+  "title": "The Stone Breakers",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1849,
+  "museum": [
+   "Staatliche Kunstsammlungen Dresden",
+   "Staatliche Kunstsammlungen Dresden"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "French Realism",
+   "French Realism"
+  ]
+ },
+ {
+  "id": "the-valpincon-bather",
+  "title": "The Valpinçon Bather",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1808,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "Neoclassical painting"
+  ]
+ }
+]

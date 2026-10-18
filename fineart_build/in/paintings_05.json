@@ -1,0 +1,777 @@
+[
+ {
+  "id": "the-dream",
+  "title": "The Dream",
+  "artist": "Henri Rousseau",
+  "artist_id": "Q156386",
+  "year": 1910,
+  "museum": [
+   "Museum of Modern Art"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "naïve art"
+  ]
+ },
+ {
+  "id": "the-slave-ship",
+  "title": "The Slave Ship",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1840,
+  "museum": [
+   "Museum of Fine Arts Boston"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "regatta-at-sainte-adresse",
+  "title": "Regatta at Sainte-Adresse",
+  "artist": "Claude Monet",
+  "artist_id": "Q296",
+  "year": 1867,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "marine art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "isabella",
+  "title": "Isabella",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1849,
+  "museum": [
+   "Walker Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "le-desespere",
+  "title": "Le Désespéré",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1840,
+  "museum": [],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-green-stripe",
+  "title": "The Green Stripe",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1905,
+  "museum": [
+   "Statens Museum for Kunst"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Fauvism"
+  ]
+ },
+ {
+  "id": "september-morn",
+  "title": "September Morn",
+  "artist": "Paul Émile Chabas",
+  "artist_id": "Q964791",
+  "year": 1912,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "don-manuel-osorio-de-zuniga",
+  "title": "Don Manuel Osorio de Zuniga",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1787,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "la-nymphe-surprise",
+  "title": "La Nymphe surprise",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1860,
+  "museum": [
+   "National Museum of Fine Arts, Argentina"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "dido-building-carthage",
+  "title": "Dido building Carthage",
+  "artist": "J. M. W. Turner",
+  "artist_id": "Q159758",
+  "year": 1815,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "ia-orana-maria",
+  "title": "Ia Orana Maria",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1891,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art",
+   "religious art"
+  ],
+  "movement_hint": [
+   "Les Nabis"
+  ]
+ },
+ {
+  "id": "altarpiece-tetschen",
+  "title": "Altarpiece Tetschen",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1807,
+  "museum": [
+   "Staatliche Kunstsammlungen Dresden"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "mardi-gras",
+  "title": "Mardi Gras",
+  "artist": "Paul Cézanne",
+  "artist_id": "Q35548",
+  "year": 1888,
+  "museum": [
+   "Pushkin Museum of Fine Arts",
+   "Shchukin Collection"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-elder-sister",
+  "title": "The Elder Sister",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1869,
+  "museum": [
+   "Museum of Fine Arts, Houston"
+  ],
+  "genre_hint": [
+   "idyll"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "portrait-of-a-lady-in-blue",
+  "title": "Portrait of a Lady in Blue",
+  "artist": "Thomas Gainsborough",
+  "artist_id": "Q192720",
+  "year": 1780,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "erasistratus-discovering-the-cause-of-antiochus-disease",
+  "title": "Erasistratus Discovering the Cause of Antiochus' Disease",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1774,
+  "museum": [
+   "Beaux-Arts de Paris"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "portrait-of-dona-isabel-de-porcel",
+  "title": "Portrait of Doña Isabel de Porcel",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1800,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "aha-oe-feii",
+  "title": "Aha Oe Feii?",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1892,
+  "museum": [
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "gassed",
+  "title": "Gassed",
+  "artist": "?",
+  "artist_id": "Q155626",
+  "year": 1919,
+  "museum": [
+   "Imperial War Museum London"
+  ],
+  "genre_hint": [
+   "battle painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "woman-reading",
+  "title": "Woman Reading",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1895,
+  "museum": [
+   "Musée National d'Art Moderne"
+  ],
+  "genre_hint": [
+   "portrait",
+   "atelier scene"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "oedipus-and-the-sphinx",
+  "title": "Oedipus and the Sphinx",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1808,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "mythological painting",
+   "nude"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "portrait-of-the-actress-jeanne-samary",
+  "title": "Portrait of the actress Jeanne Samary",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1877,
+  "museum": [
+   "Pushkin Museum of Fine Arts",
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-milkmaid-of-bordeaux",
+  "title": "The Milkmaid of Bordeaux",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1827,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-red-tree",
+  "title": "The Red Tree",
+  "artist": "Piet Mondrian",
+  "artist_id": "Q151803",
+  "year": 1909,
+  "museum": [
+   "Kunstmuseum Den Haag"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "amor-and-psyche-children",
+  "title": "Amor and Psyche, children",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1890,
+  "museum": [],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "circe-invidiosa",
+  "title": "Circe Invidiosa",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1892,
+  "museum": [
+   "Art Gallery of South Australia",
+   "Art Gallery of South Australia"
+  ],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "autumn-leaves",
+  "title": "Autumn Leaves",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1856,
+  "museum": [
+   "Manchester Art Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "harvest-at-la-crau-with-montmajour-in-the-background",
+  "title": "Harvest at La Crau, with Montmajour in the Background",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-lictors-bring-to-brutus-the-bodies-of-his-sons",
+  "title": "The Lictors Bring to Brutus the Bodies of His Sons",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1789,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "history painting",
+   "interior view"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "landscape-with-snow",
+  "title": "Landscape with Snow",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Solomon R. Guggenheim Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "hope",
+  "title": "Hope",
+  "artist": "George Frederic Watts",
+  "artist_id": "Q183245",
+  "year": 1886,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "allegory",
+   "allegory"
+  ],
+  "movement_hint": [
+   "Symbolism",
+   "Symbolism"
+  ]
+ },
+ {
+  "id": "morning-of-the-execution-of-the-streltsy",
+  "title": "Morning of the Execution of the Streltsy",
+  "artist": "Vasily Surikov",
+  "artist_id": "Q110228",
+  "year": 1881,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "bulb-fields",
+  "title": "Bulb Fields",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1883,
+  "museum": [
+   "Paul Mellon"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "femme-nue-couchee",
+  "title": "Femme nue couchée",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1862,
+  "museum": [],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "realism"
+  ]
+ },
+ {
+  "id": "saint-eulalia",
+  "title": "Saint Eulalia",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1885,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "religious art",
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "green-wheat-field-with-cypress",
+  "title": "Green Wheat Field with Cypress",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "National Gallery Prague"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-awakening-conscience",
+  "title": "The Awakening Conscience",
+  "artist": "William Holman Hunt",
+  "artist_id": "Q211763",
+  "year": 1853,
+  "museum": [
+   "Tate Britain",
+   "Tate"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "cleopatra-and-caesar",
+  "title": "Cleopatra and Caesar",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1866,
+  "museum": [
+   "Raclin Murphy Museum of Art"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "ploughing-in-the-nivernais",
+  "title": "Ploughing in the Nivernais",
+  "artist": "Rosa Bonheur",
+  "artist_id": "Q241732",
+  "year": 1849,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art",
+   "French Realism"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "young-greeks-attending-a-cock-fight",
+  "title": "Young Greeks Attending a Cock Fight",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1846,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art",
+   "nude"
+  ],
+  "movement_hint": [
+   "academic art",
+   "Orientalist painting",
+   "Neo-Grec"
+  ]
+ },
+ {
+  "id": "candaules-king-of-lydia-shews-his-wife-by-stealth-to-gyges-o",
+  "title": "Candaules, King of Lydia, Shews his Wife by Stealth to Gyges, One of his Ministers, as She Goes to Bed",
+  "artist": "William Etty",
+  "artist_id": "Q766362",
+  "year": 1830,
+  "museum": [
+   "Tate"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-sirens-and-ulysses",
+  "title": "The Sirens and Ulysses",
+  "artist": "William Etty",
+  "artist_id": "Q766362",
+  "year": 1837,
+  "museum": [
+   "Manchester Art Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "in-the-arbour",
+  "title": "In the Arbour",
+  "artist": "Aleksander Gierymski",
+  "artist_id": "Q958927",
+  "year": 1882,
+  "museum": [
+   "National Museum in Warsaw",
+   "National Museum in Warsaw"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "in-the-conservatory",
+  "title": "In the Conservatory",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1878,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "angelus-novus",
+  "title": "Angelus Novus",
+  "artist": "?",
+  "artist_id": "Q44007",
+  "year": 1920,
+  "museum": [
+   "Israel Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "the-city-rises",
+  "title": "The City Rises",
+  "artist": "Umberto Boccioni",
+  "artist_id": "Q152797",
+  "year": 1910,
+  "museum": [
+   "Museum of Modern Art"
+  ],
+  "genre_hint": [],
+  "movement_hint": [
+   "Futurism"
+  ]
+ },
+ {
+  "id": "slave-market-in-rome",
+  "title": "Slave Market in Rome",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1884,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "nude",
+   "history painting",
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-chocolate-girl",
+  "title": "The Chocolate Girl",
+  "artist": "Jean-Étienne Liotard",
+  "artist_id": "Q123757",
+  "year": 1744,
+  "museum": [
+   "Staatliche Kunstsammlungen Dresden"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "prussian-homage",
+  "title": "Prussian Homage",
+  "artist": "Jan Matejko",
+  "artist_id": "Q189117",
+  "year": 1879,
+  "museum": [
+   "National Museum in Kraków"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "oedipus-and-the-sphinx-gustave-more",
+  "title": "Oedipus and the Sphinx",
+  "artist": "Gustave Moreau",
+  "artist_id": "Q203828",
+  "year": 1864,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ }
+]

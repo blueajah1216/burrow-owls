@@ -1,0 +1,802 @@
+[
+ {
+  "id": "the-umbrellas",
+  "title": "The Umbrellas",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1881,
+  "museum": [
+   "National Gallery",
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-birth-of-venus-alexandre-ca",
+  "title": "The Birth of Venus",
+  "artist": "Alexandre Cabanel",
+  "artist_id": "Q310437",
+  "year": 1863,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "paris-street-rainy-day",
+  "title": "Paris Street; Rainy Day",
+  "artist": "Gustave Caillebotte",
+  "artist_id": "Q295144",
+  "year": 1877,
+  "museum": [
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "chalk-cliffs-at-ruegen",
+  "title": "Chalk Cliffs at Ruegen",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1818,
+  "museum": [
+   "Kunst Museum Winterthur | Reinhart am Stadtgarten"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "agostina-segatori-sitting-in-the-cafe-du-tambourin",
+  "title": "Agostina Segatori Sitting in the Café du Tambourin",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1887,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-tortoise-trainer",
+  "title": "The Tortoise Trainer",
+  "artist": "Osman Hamdi Bey",
+  "artist_id": "Q1190012",
+  "year": 1906,
+  "museum": [
+   "Suna and İnan Kıraç Foundation",
+   "Pera Museum"
+  ],
+  "genre_hint": [
+   "satire"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "beauty-revealed",
+  "title": "Beauty Revealed",
+  "artist": "Sarah Goodridge",
+  "artist_id": "Q7422343",
+  "year": 1828,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "la-loge",
+  "title": "La loge",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1874,
+  "museum": [
+   "Courtauld Institute of Art",
+   "Courtauld Institute of Art"
+  ],
+  "genre_hint": [
+   "painting",
+   "painting",
+   "painting",
+   "painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-fif",
+  "title": "The Fif",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1850,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "figure painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-roses-of-heliogabalus",
+  "title": "The Roses of Heliogabalus",
+  "artist": "Lawrence Alma-Tadema",
+  "artist_id": "Q240526",
+  "year": 1888,
+  "museum": [
+   "Pérez Simón Collection"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "two-sisters",
+  "title": "Two Sisters",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1881,
+  "museum": [
+   "Art Institute of Chicago",
+   "Art Institute of Chicago"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait",
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-monk-by-the-sea",
+  "title": "The Monk by the Sea",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1800,
+  "museum": [
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "German Romanticism"
+  ]
+ },
+ {
+  "id": "battle-of-grunwald",
+  "title": "Battle of Grunwald",
+  "artist": "Jan Matejko",
+  "artist_id": "Q189117",
+  "year": 1878,
+  "museum": [
+   "National Museum in Warsaw"
+  ],
+  "genre_hint": [
+   "battle painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "moonlit-night-on-the-dnieper",
+  "title": "Moonlit Night on the Dnieper",
+  "artist": "Arkhip Kuindzhi",
+  "artist_id": "Q353628",
+  "year": 1880,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "bathers-at-asnieres",
+  "title": "Bathers at Asnières",
+  "artist": "Georges Seurat",
+  "artist_id": "Q34013",
+  "year": 1884,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neo-impressionism"
+  ]
+ },
+ {
+  "id": "self-portrait",
+  "title": "Self-portrait",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-meeting-or-bonjour-monsieur-courbet",
+  "title": "The Meeting, or Bonjour, Monsieur Courbet!",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1854,
+  "museum": [
+   "Musée Fabre"
+  ],
+  "genre_hint": [
+   "portrait",
+   "self-portrait",
+   "genre art"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "the-railway",
+  "title": "The Railway",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1873,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "almond-blossom",
+  "title": "Almond Blossom",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "floral painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "carnation-lily-lily-and-rose",
+  "title": "Carnation, Lily, Lily and Rose",
+  "artist": "?",
+  "artist_id": "Q155626",
+  "year": 1885,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "mr-and-mrs-andrews",
+  "title": "Mr and Mrs Andrews",
+  "artist": "Thomas Gainsborough",
+  "artist_id": "Q192720",
+  "year": 1748,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "portrait",
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Romantic painting",
+   "Rococo painting"
+  ]
+ },
+ {
+  "id": "echo-and-narcissus",
+  "title": "Echo and Narcissus",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1903,
+  "museum": [
+   "Walker Art Gallery",
+   "Walker Art Gallery"
+  ],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "indian-widow",
+  "title": "Indian Widow",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1783,
+  "museum": [
+   "Derby Museum and Art Gallery",
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dawn",
+  "title": "Dawn",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1881,
+  "museum": [
+   "Birmingham Museum of Art"
+  ],
+  "genre_hint": [
+   "nude",
+   "allegory",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-bellelli-family",
+  "title": "The Bellelli Family",
+  "artist": "Edgar Degas",
+  "artist_id": "Q46373",
+  "year": 1858,
+  "museum": [
+   "Musée d'Orsay",
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "family portrait",
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "they-did-not-expect-him",
+  "title": "They Did Not Expect Him",
+  "artist": "Ilya Repin",
+  "artist_id": "Q172911",
+  "year": 1888,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "christ-in-the-wilderness",
+  "title": "Christ in the Wilderness",
+  "artist": "Ivan Kramskoi",
+  "artist_id": "Q207758",
+  "year": 1872,
+  "museum": [
+   "Tretyakov Gallery"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-lady-of-shalott",
+  "title": "The Lady of Shalott",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1888,
+  "museum": [
+   "Tate",
+   "Tate"
+  ],
+  "genre_hint": [
+   "Arthurian painting",
+   "Arthurian painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-angelus",
+  "title": "The Angelus",
+  "artist": "Jean-François Millet",
+  "artist_id": "Q148458",
+  "year": 1858,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "stanczyk",
+  "title": "Stańczyk",
+  "artist": "Jan Matejko",
+  "artist_id": "Q189117",
+  "year": 1862,
+  "museum": [
+   "National Museum in Warsaw",
+   "National Museum in Warsaw"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "fallen-angel",
+  "title": "Fallen angel",
+  "artist": "Alexandre Cabanel",
+  "artist_id": "Q310437",
+  "year": 1847,
+  "museum": [
+   "Musée Fabre"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "circe-offering-the-cup-to-ulysses",
+  "title": "Circe Offering the Cup to Ulysses",
+  "artist": "John William Waterhouse",
+  "artist_id": "Q212754",
+  "year": 1891,
+  "museum": [
+   "Gallery Oldham",
+   "Gallery Oldham"
+  ],
+  "genre_hint": [
+   "mythological painting",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood",
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-blind-girl",
+  "title": "The Blind Girl",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1856,
+  "museum": [
+   "Birmingham Museums Trust"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-slave-market",
+  "title": "The Slave Market",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1866,
+  "museum": [
+   "Clark Art Institute"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art",
+   "Orientalist painting"
+  ]
+ },
+ {
+  "id": "napoleon-i-on-his-imperial-throne",
+  "title": "Napoleon I on his Imperial Throne",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1806,
+  "museum": [
+   "Musée de l'Armée",
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "young-ladies-beside-the-seine",
+  "title": "Young Ladies Beside the Seine",
+  "artist": "Gustave Courbet",
+  "artist_id": "Q34618",
+  "year": 1857,
+  "museum": [
+   "Musée des Beaux-Arts de la ville de Paris"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "French Realism"
+  ]
+ },
+ {
+  "id": "pollice-verso",
+  "title": "Pollice Verso",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1872,
+  "museum": [
+   "Phoenix Art Museum"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "nu-couche",
+  "title": "Nu couché",
+  "artist": "Amedeo Modigliani",
+  "artist_id": "Q120993",
+  "year": 1917,
+  "museum": [
+   "Long Museum",
+   "Riccardo Gualino Collection (1910-1930)"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-dog",
+  "title": "The Dog",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1819,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "landscape painting",
+   "animal art",
+   "animal art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "nana",
+  "title": "Nana",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1877,
+  "museum": [
+   "Hamburger Kunsthalle"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "van-gogh-s-chair",
+  "title": "Van Gogh's Chair",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": [
+   "Post-impressionism"
+  ]
+ },
+ {
+  "id": "christ-in-the-house-of-his-parents",
+  "title": "Christ in the House of His Parents",
+  "artist": "John Everett Millais",
+  "artist_id": "Q159606",
+  "year": 1849,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-women-of-algiers",
+  "title": "The Women of Algiers",
+  "artist": "Eugène Delacroix",
+  "artist_id": "Q33477",
+  "year": 1834,
+  "museum": [
+   "Department of Paintings of the Louvre"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Orientalist painting",
+   "Romantic painting"
+  ]
+ },
+ {
+  "id": "life-stages",
+  "title": "Life stages",
+  "artist": "Caspar David Friedrich",
+  "artist_id": "Q104884",
+  "year": 1834,
+  "museum": [
+   "Museum der bildenden Künste"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": [
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "the-emperor-napoleon-in-his-study-at-the-tuileries",
+  "title": "The Emperor Napoleon in His Study at the Tuileries",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1812,
+  "museum": [
+   "Samuel H. Kress Collection"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Neoclassical painting"
+  ]
+ },
+ {
+  "id": "romeo-and-juliet-the-tomb-scene",
+  "title": "Romeo and Juliet: the Tomb Scene",
+  "artist": "Joseph Wright of Derby",
+  "artist_id": "Q214062",
+  "year": 1790,
+  "museum": [
+   "Derby Museum and Art Gallery"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "in-the-summer",
+  "title": "In the Summer",
+  "artist": "Pierre-Auguste Renoir",
+  "artist_id": "Q39931",
+  "year": 1868,
+  "museum": [
+   "Alte Nationalgalerie",
+   "Alte Nationalgalerie"
+  ],
+  "genre_hint": [
+   "portrait",
+   "portrait"
+  ],
+  "movement_hint": [
+   "Impressionism",
+   "Impressionism",
+   "bohemianism",
+   "bohemianism",
+   "Romantic painting",
+   "Romantic painting",
+   "French Realism",
+   "French Realism"
+  ]
+ },
+ {
+  "id": "vision-after-the-sermon",
+  "title": "Vision After the Sermon",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1888,
+  "museum": [
+   "National Galleries Scotland"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pont-Aven School"
+  ]
+ },
+ {
+  "id": "les-raboteurs-de-parquet",
+  "title": "Les raboteurs de parquet",
+  "artist": "Gustave Caillebotte",
+  "artist_id": "Q295144",
+  "year": 1875,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "the-circus",
+  "title": "The Circus",
+  "artist": "Georges Seurat",
+  "artist_id": "Q34013",
+  "year": 1891,
+  "museum": [
+   "Musée d'Orsay",
+   "John Quinn Art Collection"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neo-impressionism"
+  ]
+ }
+]

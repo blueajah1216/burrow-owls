@@ -1,0 +1,68 @@
+{% extends "fineart/base.html" %}
+{% block og %}
+<meta property="og:title" content="The Great Gallery">
+<meta property="og:description" content="Explore {{ "{:,}".format(total) }} of the most famous paintings of the last 300 years.">
+{% endblock %}
+{% block body %}
+<main>
+  <section class="hero" id="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Explore great art</p>
+      <h1>Paintings that<br><em>stood the test</em><br>of time.</h1>
+      <p class="lede">{{ "{:,}".format(total) }} masterworks from the last 300 years — from storm-tossed ships to starry nights. Find out who made them, what makes them special, and why people still stand in line to see them.</p>
+      <div class="hero-cta">
+        <a class="btn gold" href="#browse">Start exploring</a>
+        <a class="btn ghost" href="{{ url_for('fineart.random_painting') }}">🎲 Surprise me</a>
+      </div>
+    </div>
+    <a class="hero-art" id="potd" href="{{ url_for('fineart.today') }}" aria-label="Painting of the day">
+      <div class="spot"></div>
+      <figure class="frame big"><div class="mat"><img id="potd-img" alt=""></div></figure>
+      <p class="potd-cap"><span>Painting of the day</span><b id="potd-title"></b><i id="potd-by"></i></p>
+    </a>
+  </section>
+
+  <section class="rooms" aria-label="Galleries">
+    <h2 class="sec">Wander the <em>rooms</em></h2>
+    <div class="room-grid" id="rooms">
+      {% for g in genres %}
+      <button class="room" data-g="{{ loop.index0 }}" style="--c:{{ g.color }}">
+        <span class="room-img"></span>
+        <span class="room-txt"><b>{{ g.name }}</b><small>{{ g.blurb }}</small><em class="cnt"></em></span>
+      </button>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="browse" id="browse">
+    <div class="bar">
+      <label class="search"><span aria-hidden="true">🔍</span>
+        <input id="q" type="search" placeholder="Search a painting, artist, or idea…" autocomplete="off">
+      </label>
+      <select id="era" aria-label="Era">
+        <option value="">All eras</option>
+        <option value="1726-1799">1700s</option>
+        <option value="1800-1849">Early 1800s</option>
+        <option value="1850-1879">Mid 1800s</option>
+        <option value="1880-1929">1880–1929</option>
+      </select>
+      <select id="sort" aria-label="Sort">
+        <option value="fame">Most famous first</option>
+        <option value="old">Oldest first</option>
+        <option value="new">Newest first</option>
+        <option value="az">A → Z</option>
+      </select>
+      <label class="tog" title="Some classical paintings show the human body. Off by default."><input type="checkbox" id="nudes"><span>Include nudes</span></label>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip on" data-g="">All</button>
+      {% for g in genres %}<button class="chip" data-g="{{ loop.index0 }}" style="--c:{{ g.color }}">{{ g.emoji }} {{ g.name }}</button>{% endfor %}
+      <button class="chip fav" data-g="fav">♥ My favorites <span id="favn"></span></button>
+    </div>
+    <p class="status" id="status" aria-live="polite"></p>
+    <div class="wall" id="wall"></div>
+    <div class="empty" id="empty" hidden>No paintings found. Try a different word — like <em>"sea"</em>, <em>"Monet"</em> or <em>"horse"</em>.</div>
+  </section>
+</main>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='fineart/home.js') }}?v=11"></script>{% endblock %}

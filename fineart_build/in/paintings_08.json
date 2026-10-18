@@ -1,0 +1,751 @@
+[
+ {
+  "id": "view-from-theos-apartment",
+  "title": "View from Theo’s apartment",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1887,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "cityscape"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "tahitian-woman-with-a-flower",
+  "title": "Tahitian Woman with a Flower",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1891,
+  "museum": [
+   "Ny Carlsberg Glyptotek"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "fatata-te-miti",
+  "title": "Fatata te Miti",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1892,
+  "museum": [],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "sadko",
+  "title": "Sadko",
+  "artist": "Ilya Repin",
+  "artist_id": "Q172911",
+  "year": 1876,
+  "museum": [
+   "Russian Museum"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "skarga-s-sermon",
+  "title": "Skarga's Sermon",
+  "artist": "Jan Matejko",
+  "artist_id": "Q189117",
+  "year": 1864,
+  "museum": [
+   "National Museum in Warsaw"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-dance",
+  "title": "The Dance",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1856,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "lady-lilith",
+  "title": "Lady Lilith",
+  "artist": "Dante Gabriel Rossetti",
+  "artist_id": "Q186748",
+  "year": 1866,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "religious art"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "a-nude-woman-doing-her-hair-before-a-mirror",
+  "title": "A nude woman doing her hair before a mirror",
+  "artist": "Christoffer Wilhelm Eckersberg",
+  "artist_id": "Q363823",
+  "year": 1841,
+  "museum": [
+   "Hirschsprung Collection"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "thatched-cottages-and-houses",
+  "title": "Thatched Cottages and Houses",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "a-lane-near-arles",
+  "title": "A Lane near Arles",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1888,
+  "museum": [
+   "Munich Central Collecting Point",
+   "Pomeranian State Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "study-of-a-nude",
+  "title": "Study of a Nude",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1880,
+  "museum": [
+   "Statens Museum for Kunst",
+   "Ny Carlsberg Glyptotek"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "bazille-s-studio",
+  "title": "Bazille's Studio",
+  "artist": "Frédéric Bazille",
+  "artist_id": "Q207298",
+  "year": 1870,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "portrait",
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-age-of-innocence",
+  "title": "The Age of Innocence",
+  "artist": "Joshua Reynolds",
+  "artist_id": "Q194402",
+  "year": 1788,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-ambassadors-of-agamemnon-in-the-tent-of-achilles",
+  "title": "The Ambassadors of Agamemnon in the tent of Achilles",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1801,
+  "museum": [
+   "Beaux-Arts de Paris"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "jealousy",
+  "title": "Jealousy",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1895,
+  "museum": [
+   "Art Museums of Bergen"
+  ],
+  "genre_hint": [
+   "allegory"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "god-speed",
+  "title": "God Speed",
+  "artist": "Edmund Blair Leighton",
+  "artist_id": "Q142420",
+  "year": 1900,
+  "museum": [],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "anxiety",
+  "title": "Anxiety",
+  "artist": "Edvard Munch",
+  "artist_id": "Q41406",
+  "year": 1894,
+  "museum": [
+   "Munch Museum"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": [
+   "Expressionism"
+  ]
+ },
+ {
+  "id": "man-proposes-god-disposes",
+  "title": "Man Proposes, God Disposes",
+  "artist": "Edwin Landseer",
+  "artist_id": "Q328369",
+  "year": 1864,
+  "museum": [
+   "Royal Holloway, University of London"
+  ],
+  "genre_hint": [
+   "animal art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "josephine-eleonore-marie-pauline-de-galard-de-brassac-de-bea",
+  "title": "Joséphine-Éléonore-Marie-Pauline de Galard de Brassac de Béarn (1825–1860), Princesse de Broglie",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1853,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "our-english-coasts",
+  "title": "Our English Coasts",
+  "artist": "William Holman Hunt",
+  "artist_id": "Q211763",
+  "year": 1852,
+  "museum": [
+   "National Gallery",
+   "Tate"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Pre-Raphaelite Brotherhood"
+  ]
+ },
+ {
+  "id": "the-death-of-caesar",
+  "title": "The Death of Caesar",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1859,
+  "museum": [
+   "Walters Art Museum"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "two-crabs",
+  "title": "Two Crabs",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1889,
+  "museum": [],
+  "genre_hint": [
+   "still life"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "gabrielle-cot",
+  "title": "Gabrielle Cot",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1890,
+  "museum": [
+   "National Museum of Western Art"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "portrait-of-a-violinist",
+  "title": "Portrait of a violinist",
+  "artist": "Anne Vallayer-Coster",
+  "artist_id": "Q468772",
+  "year": 1773,
+  "museum": [
+   "Nationalmuseum"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": [
+   "Rococo"
+  ]
+ },
+ {
+  "id": "my-wife-s-lovers",
+  "title": "My Wife's Lovers",
+  "artist": "Carl Kahler",
+  "artist_id": "Q22583666",
+  "year": 1891,
+  "museum": [],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-a-lady",
+  "title": "Portrait of a Lady",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1916,
+  "museum": [
+   "Galleria d'arte moderna Ricci Oddi"
+  ],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "pool-in-a-harem",
+  "title": "Pool in a Harem",
+  "artist": "Jean-Léon Gérôme",
+  "artist_id": "Q212499",
+  "year": 1876,
+  "museum": [
+   "Hermitage Museum"
+  ],
+  "genre_hint": [
+   "nude",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Orientalism",
+   "academic art"
+  ]
+ },
+ {
+  "id": "lilith",
+  "title": "Lilith",
+  "artist": "John Collier",
+  "artist_id": "Q453972",
+  "year": 1887,
+  "museum": [
+   "Southport Arts Centre"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-elisabeth-lederer",
+  "title": "Portrait of Elisabeth Lederer",
+  "artist": "Gustav Klimt",
+  "artist_id": "Q34661",
+  "year": 1914,
+  "museum": [],
+  "genre_hint": [
+   "portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-death-of-hyacinthos",
+  "title": "The Death of Hyacinthos",
+  "artist": "Jean Broc",
+  "artist_id": "Q2564276",
+  "year": 1801,
+  "museum": [
+   "Musée Sainte-Croix"
+  ],
+  "genre_hint": [
+   "nude",
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "mademoiselle-v-in-the-costume-of-an-espada",
+  "title": "Mademoiselle V. . . in the Costume of an Espada",
+  "artist": "Édouard Manet",
+  "artist_id": "Q40599",
+  "year": 1862,
+  "museum": [
+   "Metropolitan Museum of Art"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "in-the-water",
+  "title": "In the Water",
+  "artist": "Eugene de Blaas",
+  "artist_id": "Q715036",
+  "year": 1914,
+  "museum": [],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "wheat-field-with-a-lark",
+  "title": "Wheat Field with a Lark",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1887,
+  "museum": [
+   "Van Gogh Museum"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "salisbury-cathedral-from-the-meadows",
+  "title": "Salisbury Cathedral from the Meadows",
+  "artist": "John Constable",
+  "artist_id": "Q159297",
+  "year": 1831,
+  "museum": [
+   "Tate"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": [
+   "Impressionism"
+  ]
+ },
+ {
+  "id": "reunion-de-famille",
+  "title": "Réunion de famille",
+  "artist": "Frédéric Bazille",
+  "artist_id": "Q207298",
+  "year": 1867,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "self-portrait",
+   "genre art",
+   "family portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "landscape-with-a-carriage-and-a-train",
+  "title": "Landscape with a Carriage and a Train",
+  "artist": "Vincent van Gogh",
+  "artist_id": "Q5582",
+  "year": 1890,
+  "museum": [
+   "Pushkin Museum of Fine Arts"
+  ],
+  "genre_hint": [
+   "landscape painting"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "self-portrait-with-dr-arrieta",
+  "title": "Self-portrait with Dr Arrieta",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1820,
+  "museum": [
+   "Minneapolis Institute of Art"
+  ],
+  "genre_hint": [
+   "portrait",
+   "self-portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "belisarius-begging-for-alms",
+  "title": "Belisarius Begging for Alms",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1781,
+  "museum": [
+   "Palais des Beaux-Arts de Lille"
+  ],
+  "genre_hint": [
+   "history painting",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "the-death-of-leonardo-da-vinci",
+  "title": "The Death of Leonardo da Vinci",
+  "artist": "Jean-Auguste-Dominique Ingres",
+  "artist_id": "Q23380",
+  "year": 1818,
+  "museum": [
+   "Musée des Beaux-Arts de la ville de Paris"
+  ],
+  "genre_hint": [
+   "history painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism",
+   "Troubadour style"
+  ]
+ },
+ {
+  "id": "the-anger-of-achilles",
+  "title": "The Anger of Achilles",
+  "artist": "Jacques-Louis David",
+  "artist_id": "Q83155",
+  "year": 1819,
+  "museum": [
+   "Kimbell Art Museum"
+  ],
+  "genre_hint": [
+   "mythological painting"
+  ],
+  "movement_hint": [
+   "Neoclassicism"
+  ]
+ },
+ {
+  "id": "arearea",
+  "title": "Arearea",
+  "artist": "Paul Gauguin",
+  "artist_id": "Q37693",
+  "year": 1892,
+  "museum": [
+   "Musée d'Orsay"
+  ],
+  "genre_hint": [
+   "landscape painting",
+   "genre art",
+   "religious art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "the-young-shepherdess",
+  "title": "The Young Shepherdess",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1885,
+  "museum": [
+   "San Diego Museum of Art"
+  ],
+  "genre_hint": [
+   "pastoral",
+   "genre art"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "a-pilgrimage-to-san-isidro",
+  "title": "A Pilgrimage to San Isidro",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1819,
+  "museum": [
+   "Museo del Prado",
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "genre art",
+   "genre art"
+  ],
+  "movement_hint": [
+   "Romanticism",
+   "Romanticism"
+  ]
+ },
+ {
+  "id": "luxe-calme-et-volupte",
+  "title": "Luxe, Calme et Volupté",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1904,
+  "museum": [
+   "Musée National d'Art Moderne"
+  ],
+  "genre_hint": [
+   "nude",
+   "allegory"
+  ],
+  "movement_hint": [
+   "pointillism"
+  ]
+ },
+ {
+  "id": "whistlejacket",
+  "title": "Whistlejacket",
+  "artist": "George Stubbs",
+  "artist_id": "Q381728",
+  "year": 1762,
+  "museum": [
+   "National Gallery"
+  ],
+  "genre_hint": [
+   "animal art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "dona-joanna-the-mad",
+  "title": "Doña Joanna the Mad",
+  "artist": "Francisco Pradilla y Ortiz",
+  "artist_id": "Q553258",
+  "year": 1877,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [],
+  "movement_hint": []
+ },
+ {
+  "id": "dusk",
+  "title": "Dusk",
+  "artist": "William-Adolphe Bouguereau",
+  "artist_id": "Q483992",
+  "year": 1882,
+  "museum": [
+   "National Museum of Fine Arts of Cuba"
+  ],
+  "genre_hint": [
+   "nude",
+   "allegory"
+  ],
+  "movement_hint": [
+   "academic art"
+  ]
+ },
+ {
+  "id": "the-burial-of-the-sardine",
+  "title": "The Burial of the Sardine",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1900,
+  "museum": [
+   "Royal Academy of Fine Arts of San Fernando"
+  ],
+  "genre_hint": [
+   "genre art"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "portrait-of-the-marchioness-of-santa-cruz",
+  "title": "Portrait of the Marchioness of Santa Cruz",
+  "artist": "Francisco Goya",
+  "artist_id": "Q5432",
+  "year": 1805,
+  "museum": [
+   "Museo del Prado"
+  ],
+  "genre_hint": [
+   "historiated portrait"
+  ],
+  "movement_hint": []
+ },
+ {
+  "id": "blue-nude",
+  "title": "Blue Nude",
+  "artist": "Henri Matisse",
+  "artist_id": "Q5589",
+  "year": 1907,
+  "museum": [
+   "Baltimore Museum of Art"
+  ],
+  "genre_hint": [
+   "nude"
+  ],
+  "movement_hint": [
+   "Fauvism"
+  ]
+ }
+]
