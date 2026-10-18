@@ -43,6 +43,36 @@
         <p>{{ p.why }}</p>
       </section>
 
+
+      <section class="where">
+        <h2>Where to see it</h2>
+        {% if p.l and p.l[1] %}
+        <p class="where-main">📍 <b>{{ p.l[0] }}</b><span>{{ p.l[1] }}{% if p.l[2] %}, {{ p.l[2] }}{% endif %}</span></p>
+        <a class="maplink" href="{{ fa_map(p.l) }}" target="_blank" rel="noopener">Open in Maps ↗</a>
+        {% elif p.l and p.l[0] == 'Private collection' %}
+        <p class="where-main">🔒 <b>Private collection</b><span>Owned by a person or family, so it isn't usually on public display.</span></p>
+        {% elif p.l %}
+        <p class="where-main">📍 <b>{{ p.l[0] }}</b></p>
+        {% else %}
+        <p class="where-main">📍 <b>Location not recorded</b><span>We couldn't confirm where it hangs today. Museums sometimes move or lend paintings, so check the museum's website before you travel.</span></p>
+        {% endif %}
+      </section>
+
+      <section class="prints">
+        <h2>Hang it on your wall</h2>
+        <p class="prints-sub">Three places to look for a print of this painting, from budget to museum-grade:</p>
+        <div class="print-grid">
+          {% for t in fa_prints(p, artists) %}
+          <a class="print" href="{{ t.url }}" target="_blank" rel="noopener sponsored">
+            <span class="pt">{{ t.icon }} {{ t.tier }}</span>
+            <b>{{ t.shop }}&nbsp;↗</b>
+            <small>{{ t.blurb }}</small>
+          </a>
+          {% endfor %}
+        </div>
+        <p class="prints-note">These links open search results on each shop's own website; we don't sell anything or earn a commission, and print quality varies by seller. Ask a grown-up before you buy anything.</p>
+      </section>
+
       {% for a in artists %}
       <section class="artist-card">
         <div class="ac-head">
@@ -76,5 +106,5 @@
 {% endblock %}
 {% block scripts %}
 <script>window.FA={id:"{{ p.id }}",big:"{{ fa_img(p, 1920) }}",prev:{{ ('"' ~ url_for('fineart.painting', pid=prev_p.id, g=g) ~ '"')|safe if prev_p else 'null' }},next:{{ ('"' ~ url_for('fineart.painting', pid=next_p.id, g=g) ~ '"')|safe if next_p else 'null' }}};</script>
-<script src="{{ url_for('static', filename='fineart/detail.js') }}?v=11"></script>
+<script src="{{ url_for('static', filename='fineart/detail.js') }}?v=13"></script>
 {% endblock %}

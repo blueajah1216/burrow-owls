@@ -147,6 +147,21 @@ select option{color:#000}
 .why::before{content:"“";position:absolute;top:-6px;left:18px;font:800 6rem/1 var(--serif);color:var(--gold);opacity:.35;pointer-events:none}
 .why h2,.artist-card h2{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 10px;font-weight:600}
 .why p{font-family:var(--serif);font-size:clamp(1.08rem,1.35vw,1.28rem);line-height:1.65;margin:0}
+.where,.prints{margin-top:20px;padding:22px 26px;border-radius:22px;background:rgba(5,15,61,.5);box-shadow:inset 0 0 0 1.5px var(--line)}
+.where h2,.prints h2{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 10px;font-weight:600}
+.where-main{margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-size:1.05rem}
+.where-main b{font-family:var(--serif);font-size:1.25rem;font-weight:600}
+.where-main span{color:var(--mute);font-size:.95rem;flex-basis:100%;padding-left:1.7em}
+.maplink{display:inline-block;margin:10px 0 0 1.7em;color:var(--gold);font-weight:600;text-decoration:none;font-size:.92rem}
+.maplink:hover{text-decoration:underline}
+.prints-sub{margin:0 0 14px;color:var(--mute);font-size:.95rem}
+.print-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.print{display:flex;flex-direction:column;gap:4px;padding:14px;border-radius:16px;text-decoration:none;background:var(--glass);box-shadow:inset 0 0 0 1.5px var(--line);transition:.2s}
+.print:hover{background:rgba(255,255,255,.16);transform:translateY(-3px);box-shadow:inset 0 0 0 1.5px var(--gold)}
+.print .pt{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.print b{font-family:var(--serif);font-size:.95rem;font-weight:600}
+.print small{color:var(--mute);font-size:.8rem;line-height:1.4}
+.prints-note{margin:14px 0 0;color:var(--mute);font-size:.78rem;opacity:.85}
 .artist-card{margin-top:20px;padding:24px 26px;border-radius:22px;background:rgba(5,15,61,.5);box-shadow:inset 0 0 0 1.5px var(--line)}
 .artist-card p{margin:0;color:#e3e9ff}
 .ac-head{display:flex;gap:16px;align-items:center;margin-bottom:14px}
@@ -192,7 +207,8 @@ select option{color:#000}
 @media (max-width:560px){
   .wall{columns:2 140px}
   .artist-hero{flex-direction:column;align-items:flex-start}
-  .why,.artist-card{padding:20px}
+  .why,.artist-card,.where,.prints{padding:20px}
+  .print-grid{grid-template-columns:1fr}
   .room{height:150px}
   .room-txt small{display:none}
   .room-txt b{font-size:1.05rem}

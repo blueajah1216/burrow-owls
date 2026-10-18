@@ -37,4 +37,7 @@ A standalone-styled (blue + gold) gallery of ~900 famous public-domain paintings
   number of Wikipedia language editions as a "fame" score), `out/*.json` (hand-written text; a painting with no entry
   is left out of the site), `out/fixes.json` (title/year corrections). `images.py`/`assemble.py` are the fetch steps.
 - Images are hotlinked from Wikimedia Commons thumbnails (500/960/1280/1920px); each painting links to its Commons page.
+- Each painting page also shows where it hangs (`out/locations.json`, built by `loc.py` → `loc2.py` → `loc3.py` from Wikidata's
+  collection/location data plus hand-checked fixes) and three print-shop search links (budget Etsy, mid-range Fine Art America,
+  high-end Meisterdrucke; see `print_links()` in `fineart.py`).
 - Paintings that show nudity are flagged (`n`) and hidden unless the visitor ticks "Include nudes".

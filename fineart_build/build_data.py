@@ -25,6 +25,7 @@ for f in sorted(glob.glob(f"{HERE}/out/artists_*.json")):
         arttext[row[0]] = row[1]
 
 fixes = json.load(open(f"{HERE}/out/fixes.json"))
+locs = json.load(open(f"{HERE}/out/locations.json"))
 NAMES = {"Q155626": "John Singer Sargent", "Q380494": "Charles Demuth", "Q44007": "Paul Klee", "Q45006": "Franz von Stuck", "Q466639": "Olga Boznańska", "Q7724": "August Strindberg"}
 for q, n in NAMES.items():
     if q in A: A[q]["name"] = n
@@ -41,6 +42,7 @@ for rank, r in enumerate(P):
     o = {"id": r["id"], "t": r["title"], "a": r["artist_ids"], "y": r["year"], "g": g - 1, "w": r["w"], "h": r["h"],
          "u": r["thumb"].split("?")[0], "p": r["page"], "m": (r["collection"] or [""])[0], "why": why, "r": rank}
     if n: o["n"] = 1
+    if r["id"] in locs: o["l"] = [("China" if x == "People's Republic of China" else x) for x in locs[r["id"]]]
     paintings.append(o)
 used = {a for p in paintings for a in p["a"]}
 artists = {}

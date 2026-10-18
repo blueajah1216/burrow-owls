@@ -11,6 +11,7 @@ Wired up from app.py with `init_fineart(app)`.
 import json
 import os
 import random
+from urllib.parse import quote, quote_plus
 from datetime import date
 
 from flask import Blueprint, abort, jsonify, redirect, render_template, request, url_for
@@ -57,13 +58,32 @@ def img_url(p, width):
     return original_url(p) if p["u"].lower().split("?")[0].endswith((".jpg", ".jpeg", ".png")) and p["w"] <= 4000 else p["u"]
 
 
+def print_links(p, artists):
+    """Three search links (budget / mid-range / high-end) for prints of a painting.
+
+    These are search pages, not product pages: we can't vouch for any one listing, and they never go stale."""
+    q = f"{p['t']} {artists[0]['n'] if artists else ''}".strip()
+    return [
+        {"tier": "Budget", "icon": "💵", "shop": "Etsy", "blurb": "Posters and simple prints from small sellers, usually the lowest prices.",
+         "url": f"https://www.etsy.com/search?q={quote_plus(q + ' poster print')}"},
+        {"tier": "Mid-range", "icon": "🖼️", "shop": "Fine Art America", "blurb": "Good printing on paper, canvas or metal, made to order, with framing options.",
+         "url": f"https://fineartamerica.com/shop/prints?keyword={quote_plus(q)}"},
+        {"tier": "High-end", "icon": "🏛️", "shop": "Meisterdrucke", "blurb": "Museum-grade giclée prints on archival paper or canvas, the closest to the real thing.",
+         "url": f"https://www.meisterdrucke.us/suche/{quote(q)}.html"},
+    ]
+
+
+def map_url(loc):
+    return "https://www.google.com/maps/search/?api=1&query=" + quote_plus(f"{loc[0]} {loc[1]}")
+
+
 def lived(a):
     b, d = a.get("b") or "?", a.get("d") or "?"
     return f"{b}–{d}"
 
 
 def init_fineart(app):
-    app.jinja_env.globals.update(fa_img=img_url, fa_lived=lived)
+    app.jinja_env.globals.update(fa_img=img_url, fa_lived=lived, fa_prints=print_links, fa_map=map_url)
     app.register_blueprint(bp)
 
 
