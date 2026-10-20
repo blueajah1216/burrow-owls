@@ -226,6 +226,13 @@ music.init_music(
 )
 music_ingest.register_cli(app, db)
 
+@app.route("/robots.txt")
+def robots_txt():
+    # PetalBot crawls the music calendar endlessly; keep it (and other pure-crawl bots) out.
+    body = "User-agent: PetalBot\nDisallow: /\n\nUser-agent: *\nDisallow: /fineart/api/\nDisallow: /fineart/login\nDisallow: /fineart/signup\nDisallow: /fineart/account\n"
+    return app.response_class(body, mimetype="text/plain")
+
+
 import fineart
 
 fineart.init_fineart(app)
