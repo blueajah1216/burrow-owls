@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=16">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=18">
 </head>
 <body>
 <div class="sky" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -26,6 +26,8 @@
     <a href="{{ url_for('fineart.collection', slug='kids') }}">🧒 Kids</a>
     <a href="{{ url_for('fineart.today') }}">Today's pick</a>
     <a href="{{ url_for('fineart.random_painting') }}" class="pill">🎲 Surprise me</a>
+    {% if fa_current %}<a href="{{ url_for('fineart_auth.account') }}" class="acct" title="Your account">👤 <span>{{ fa_current.display_name.split()[0] }}</span></a>
+    {% else %}<a href="{{ url_for('fineart_auth.login', next=request.path) }}" class="acct">👤 <span>Log in</span></a>{% endif %}
   </nav>
 </header>
 {% block body %}{% endblock %}
@@ -33,6 +35,8 @@
   <p><strong>The Great Gallery</strong> · Every painting here is in the public domain. Images come from <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a>; each painting links to its source page.</p>
   <p class="fine">Descriptions are written for curious kids. Some details of art history are debated — when in doubt, ask a librarian or a museum.</p>
 </footer>
+<script>window.FA_USER={{ 'true' if fa_current else 'false' }};window.FA_CSRF="{{ fa_csrf() if fa_current else '' }}";</script>
+<script src="{{ url_for('static', filename='fineart/auth.js') }}?v=1"></script>
 {% block scripts %}{% endblock %}
 </body>
 </html>

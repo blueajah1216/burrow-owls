@@ -32,6 +32,9 @@ DATABASE_URL = os.environ.get(
     "DATABASE_URL",
     f"sqlite:///{os.path.join(BASE_DIR, 'burrowowls.db')}",
 )
+# Render/Heroku hand out "postgres://", which SQLAlchemy 1.4+ no longer accepts.
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = "postgresql://" + DATABASE_URL[len("postgres://"):]
 
 UPLOAD_ROOT = os.environ.get(
     "UPLOAD_ROOT",
@@ -45,6 +48,8 @@ app.config.update(
     SQLALCHEMY_DATABASE_URI=DATABASE_URL,
     SQLALCHEMY_TRACK_MODIFICATIONS=False,
     SECRET_KEY=os.environ.get("SECRET_KEY", None),
+    # Neon suspends idle databases and drops connections; test them before use.
+    SQLALCHEMY_ENGINE_OPTIONS={"pool_pre_ping": True, "pool_recycle": 280},
 )
 
 db = SQLAlchemy(app)
@@ -224,6 +229,10 @@ music_ingest.register_cli(app, db)
 import fineart
 
 fineart.init_fineart(app)
+
+import fineart_auth
+
+fineart_auth.init_auth(app, db)
 
 with app.app_context():
     db.create_all()

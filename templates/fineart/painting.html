@@ -110,5 +110,5 @@
 {% endblock %}
 {% block scripts %}
 <script>window.FA={id:"{{ p.id }}",big:"{{ fa_img(p, 1920) }}",prev:{{ ('"' ~ url_for('fineart.painting', pid=prev_p.id, g=g) ~ '"')|safe if prev_p else 'null' }},next:{{ ('"' ~ url_for('fineart.painting', pid=next_p.id, g=g) ~ '"')|safe if next_p else 'null' }}};</script>
-<script src="{{ url_for('static', filename='fineart/detail.js') }}?v=16"></script>
+<script src="{{ url_for('static', filename='fineart/detail.js') }}?v=17"></script>
 {% endblock %}

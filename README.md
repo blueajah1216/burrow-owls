@@ -45,3 +45,11 @@ A standalone-styled (blue + gold) gallery of ~1,350 famous public-domain paintin
   collection/location data plus hand-checked fixes) and three print-shop search links (budget Etsy, mid-range Fine Art America,
   high-end Meisterdrucke; see `print_links()` in `fineart.py`).
 - Paintings that show nudity are flagged (`n`) and hidden unless the visitor ticks "Include nudes".
+
+### /fineart accounts
+
+`fineart_auth.py` adds sign-up / log-in (username + password, or Google) so favorites sync across devices.
+Tables `fa_users` and `fa_favorites` are created by `db.create_all()`. Anonymous visitors still use localStorage favorites.
+
+Env vars on Render: `DATABASE_URL` (Postgres — SQLite files don't survive deploys), `SECRET_KEY` (required), and for Google
+`GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` (authorized redirect URI: `https://theburrowowls.com/fineart/auth/google/callback`).

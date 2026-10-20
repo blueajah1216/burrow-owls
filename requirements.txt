@@ -4,3 +4,5 @@ flask-sqlalchemy
 werkzeug
 requests
 beautifulsoup4
+authlib
+psycopg2-binary

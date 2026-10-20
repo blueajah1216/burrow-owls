@@ -66,7 +66,7 @@
       const a = document.createElement('a'); a.className = 'card'; a.style.aspectRatio = Math.min(Math.max(p.w / p.h, .55), 2.2).toFixed(3); a.style.animationDelay = `${Math.min(i, 20) * 25}ms`;
       a.href = `/fineart/p/${p.id}` + (st.g !== '' && st.g !== 'fav' ? `?g=${st.g}` : '');
       a.innerHTML = `<img loading="lazy" decoding="async" src="${W(p, 500)}" alt="${esc(p.t)}"><span class="cap"><b>${esc(p.t)}</b><i>${esc(D.artists[p.a[0]].n)} · ${p.y}</i></span><button class="heart${favs.has(p.id) ? ' on' : ''}" aria-label="Save">${favs.has(p.id) ? '♥' : '♡'}</button>`;
-      a.querySelector('.heart').onclick = e => { e.preventDefault(); e.stopPropagation(); favs.has(p.id) ? favs.delete(p.id) : favs.add(p.id); store.set('fa_favs', [...favs]); const on = favs.has(p.id); e.currentTarget.classList.toggle('on', on); e.currentTarget.textContent = on ? '♥' : '♡'; $('#favn').textContent = favs.size ? `(${favs.size})` : ''; };
+      a.querySelector('.heart').onclick = e => { e.preventDefault(); e.stopPropagation(); favs.has(p.id) ? favs.delete(p.id) : favs.add(p.id); store.set('fa_favs', [...favs]); const on = favs.has(p.id); window.faSync && faSync(p.id, on); e.currentTarget.classList.toggle('on', on); e.currentTarget.textContent = on ? '♥' : '♡'; $('#favn').textContent = favs.size ? `(${favs.size})` : ''; };
       frag.appendChild(a);
     });
     wall.appendChild(frag); batch++;
@@ -79,6 +79,7 @@
     const s = wall.lastElementChild; io = new IntersectionObserver(es => { if (es[0].isIntersecting) more(); }, { rootMargin: '1400px' }); io.observe(s);
   }
   function sync() { writeUrl(); render(); }
+  addEventListener('fa-favs', () => { favs = new Set(store.get('fa_favs', [])); if (D) render(); });
   $('#chips').addEventListener('click', e => { const c = e.target.closest('.chip'); if (!c) return; st.g = c.dataset.g; sync(); });
   let t; $('#q').addEventListener('input', e => { clearTimeout(t); t = setTimeout(() => { st.q = e.target.value.trim(); sync(); }, 160); });
   $('#era').onchange = e => { st.era = e.target.value; sync(); };

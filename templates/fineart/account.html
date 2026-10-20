@@ -1,0 +1,26 @@
+{% extends "fineart/base.html" %}
+{% block title %}Your account — The Great Gallery{% endblock %}
+{% block body %}
+<main class="auth-wrap">
+  <section class="auth-card">
+    <h1>Hi, <em>{{ fa_current.display_name }}</em></h1>
+    <p class="auth-sub">{{ count }} saved painting{{ '' if count == 1 else 's' }} · signed in {{ 'with Google' if fa_current.google_sub else 'as ' ~ fa_current.username }}</p>
+    <p><a class="btn gold" href="{{ url_for('fineart.index', g='fav') }}#browse">♥ See my favorites</a></p>
+    <form method="post" action="{{ url_for('fineart_auth.account_name') }}">
+      <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
+      <label>Display name<input name="display_name" value="{{ fa_current.display_name }}" maxlength="60" required></label>
+      <button class="btn ghost sm" type="submit">Save name</button>
+    </form>
+    <div class="acct-actions">
+      <form method="post" action="{{ url_for('fineart_auth.logout') }}" onsubmit="try{localStorage.removeItem('fa_favs')}catch(e){}">
+        <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
+        <button class="btn ghost" type="submit">Log out</button>
+      </form>
+      <form method="post" action="{{ url_for('fineart_auth.account_delete') }}" onsubmit="if(!confirm('Delete your account and all saved favorites? This cannot be undone.'))return false;try{localStorage.removeItem('fa_favs')}catch(e){}">
+        <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
+        <button class="btn danger sm" type="submit">Delete my account</button>
+      </form>
+    </div>
+  </section>
+</main>
+{% endblock %}

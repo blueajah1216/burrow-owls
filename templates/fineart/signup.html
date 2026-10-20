@@ -1,0 +1,24 @@
+{% extends "fineart/base.html" %}
+{% from "fineart/_authform.html" import google_btn with context %}
+{% block title %}Join — The Great Gallery{% endblock %}
+{% block body %}
+<main class="auth-wrap">
+  <section class="auth-card">
+    <h1>Join the <em>Gallery</em></h1>
+    <p class="auth-sub">Save your favorite paintings and find them again on any device. No email needed.</p>
+    {% if error %}<p class="auth-err" role="alert">{{ error }}</p>{% endif %}
+    {{ google_btn(next) }}
+    <form method="post" action="{{ url_for('fineart_auth.signup') }}">
+      <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
+      <input type="hidden" name="next" value="{{ next }}">
+      <label>Your name <small>(shown on your account)</small><input name="display_name" value="{{ form.display_name }}" maxlength="60" autocomplete="nickname"></label>
+      <label>Username <small>letters, numbers, _</small><input name="username" value="{{ form.username }}" minlength="3" maxlength="24" pattern="[A-Za-z0-9_]{3,24}" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
+      <label>Password <small>at least 8 characters</small><input name="password" type="password" minlength="8" autocomplete="new-password" required></label>
+      <label>Password again<input name="password2" type="password" minlength="8" autocomplete="new-password" required></label>
+      <button class="btn gold" type="submit">Create account</button>
+    </form>
+    <p class="alt">Already have an account? <a href="{{ url_for('fineart_auth.login', next=next) }}">Log in</a></p>
+    <p class="fine">There's no password reset (we don't collect emails), so pick one you'll remember — or use Google.</p>
+  </section>
+</main>
+{% endblock %}
