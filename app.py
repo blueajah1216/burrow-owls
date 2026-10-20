@@ -32,9 +32,9 @@ DATABASE_URL = os.environ.get(
     "DATABASE_URL",
     f"sqlite:///{os.path.join(BASE_DIR, 'burrowowls.db')}",
 )
-# Render/Heroku hand out "postgres://", which SQLAlchemy 1.4+ no longer accepts.
-if DATABASE_URL.startswith("postgres://"):
-    DATABASE_URL = "postgresql://" + DATABASE_URL[len("postgres://"):]
+# Hosts hand out "postgres://" / "postgresql://" / "postgresql+psycopg://"; always use the
+# psycopg2 driver listed in requirements.txt.
+DATABASE_URL = re.sub(r"^postgres(ql)?(\+\w+)?://", "postgresql+psycopg2://", DATABASE_URL)
 
 UPLOAD_ROOT = os.environ.get(
     "UPLOAD_ROOT",
