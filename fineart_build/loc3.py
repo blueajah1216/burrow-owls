@@ -1,7 +1,7 @@
 import json, re
-g=json.load(open("../data/fineart/gallery.json")); d=json.load(open("base2.json"))
+allp=json.load(open("allp.json")); g={"paintings":allp}
 l=json.load(open("loc.json")); l2=json.load(open("loc2.json"))
-ids={p["id"]:p["qid"] for p in d["paintings"]}
+ids={p["id"]:p["qid"] for p in allp}
 DONOR={"Andrew W. Mellon collection","Samuel H. Kress Collection","Paul Mellon","Chester Dale Collection","Ailsa Mellon Bruce Collection"}
 NA={"Führermuseum","\"degenerate art\" collection","Brett Gorvy","Oval Office Private Dining Room","Musée d'Orsay website","Kingdom of the Netherlands","Switzerland","Norway","Russia","United Kingdom","United States","New York","Chicago","Room 87","rue de Miromesnil"}
 FIX={ # venue label -> (venue, city, country)

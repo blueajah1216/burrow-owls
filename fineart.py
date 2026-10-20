@@ -8,13 +8,14 @@ Wikimedia Commons (public-domain images) + hand-written descriptions.
 Wired up from app.py with `init_fineart(app)`.
 """
 
+import gzip
 import json
 import os
 import random
 from urllib.parse import quote, quote_plus
 from datetime import date
 
-from flask import Blueprint, abort, jsonify, redirect, render_template, request, url_for
+from flask import Blueprint, Response, abort, redirect, render_template, request, url_for
 
 bp = Blueprint("fineart", __name__, url_prefix="/fineart")
 
@@ -35,6 +36,7 @@ def load():
             for a in p["a"]:
                 by_artist.setdefault(a, []).append(p)
         data["by_artist"] = by_artist
+        data["col_by_slug"] = {c["slug"]: c for c in data.get("collections", [])}
         _cache.update(mtime=mtime, data=data)
     return _cache["data"]
 
@@ -77,13 +79,27 @@ def map_url(loc):
     return "https://www.google.com/maps/search/?api=1&query=" + quote_plus(f"{loc[0]} {loc[1]}")
 
 
+def card_ratio(p):
+    """CSS aspect-ratio for grid cards; very long scrolls and panoramas are cropped so they don't become slivers."""
+    return f"{min(max(p['w'] / p['h'], 0.55), 2.2):.3f}"
+
+
 def lived(a):
     b, d = a.get("b") or "?", a.get("d") or "?"
     return f"{b}–{d}"
 
 
+def collection_cards(data):
+    """Collections with a cover painting (first non-nude one) for the home page and index."""
+    out = []
+    for c in data.get("collections", []):
+        cover = next((data["by_id"][i] for i in c["ids"] if i in data["by_id"] and not data["by_id"][i].get("n")), None)
+        out.append(c | {"cover": cover, "count": len(c["ids"])})
+    return out
+
+
 def init_fineart(app):
-    app.jinja_env.globals.update(fa_img=img_url, fa_lived=lived, fa_prints=print_links, fa_map=map_url)
+    app.jinja_env.globals.update(fa_img=img_url, fa_lived=lived, fa_ar=card_ratio, fa_prints=print_links, fa_map=map_url)
     app.register_blueprint(bp)
 
 
@@ -91,13 +107,22 @@ def init_fineart(app):
 def index():
     data = load()
     total = sum(1 for p in data["paintings"] if not p.get("n"))
-    return render_template("fineart/index.html", genres=data["genres"], total=total)
+    cols = collection_cards(data)
+    return render_template("fineart/index.html", genres=data["genres"], total=total, kids=next((c for c in cols if c["slug"] == "kids"), None),
+                           heritage=[c for c in cols if c["group"] == "heritage"], world=[c for c in cols if c["group"] == "world"])
 
 
 @bp.route("/data.json")
 def data_json():
     data = load()
-    resp = jsonify({"genres": data["genres"], "artists": data["artists"], "paintings": data["paintings"]})
+    if _cache.get("json_mtime") != _cache["mtime"]:
+        raw = json.dumps({"genres": data["genres"], "artists": data["artists"], "paintings": data["paintings"]}, ensure_ascii=False, separators=(",", ":")).encode()
+        _cache.update(json_mtime=_cache["mtime"], json_raw=raw, json_gz=gzip.compress(raw, 6))
+    resp = Response(_cache["json_raw"], mimetype="application/json")
+    if "gzip" in request.headers.get("Accept-Encoding", ""):
+        resp = Response(_cache["json_gz"], mimetype="application/json")
+        resp.headers["Content-Encoding"] = "gzip"
+    resp.headers["Vary"] = "Accept-Encoding"
     resp.headers["Cache-Control"] = "public, max-age=600"
     return resp
 
@@ -127,11 +152,12 @@ def painting(pid):
     except StopIteration:
         prev_p = next_p = None
     artists = [data["artists"][a] | {"id": a} for a in p["a"] if a in data["artists"]]
-    same_artist = [x for x in data["by_artist"].get(p["a"][0], []) if x["id"] != pid][:12]
+    same_artist = [x for x in data["by_artist"].get(p["a"][0], []) if x["id"] != pid and not x.get("n")][:12]
     like = [x for x in data["paintings"] if x["g"] == p["g"] and x["id"] != pid and not x.get("n")]
     like = sorted(like, key=lambda x: abs(x["y"] - p["y"]))[:12]
+    cols = [data["col_by_slug"][s] for s in p.get("c", []) if s in data["col_by_slug"]]
     return render_template(
-        "fineart/painting.html", p=p, artists=artists, genre=data["genres"][p["g"]], genres=data["genres"],
+        "fineart/painting.html", p=p, cols=cols, artists=artists, genre=data["genres"][p["g"]], genres=data["genres"],
         prev_p=prev_p, next_p=next_p, same_artist=same_artist, like=like, g=g,
     )
 
@@ -146,8 +172,27 @@ def artist(aid):
     return render_template("fineart/artist.html", a=a | {"id": aid}, works=works, genres=data["genres"])
 
 
+@bp.route("/collections")
+def collections():
+    data = load()
+    cols = collection_cards(data)
+    return render_template("fineart/collections.html", kids=next((c for c in cols if c["slug"] == "kids"), None),
+                           heritage=[c for c in cols if c["group"] == "heritage"], world=[c for c in cols if c["group"] == "world"])
+
+
+@bp.route("/collection/<slug>")
+def collection(slug):
+    data = load()
+    c = data["col_by_slug"].get(slug)
+    if not c:
+        abort(404)
+    works = [data["by_id"][i] for i in c["ids"] if i in data["by_id"]]
+    others = [x for x in collection_cards(data) if x["slug"] != slug]
+    return render_template("fineart/collection.html", c=c, works=works, artists=data["artists"], genres=data["genres"], others=others)
+
+
 @bp.route("/today")
 def today():
     data = load()
-    pool = [p for p in data["paintings"][:300] if not p.get("n")]
+    pool = [p for p in data["paintings"] if p.get("k") and not p.get("n")]  # always something cheerful
     return redirect(url_for("fineart.painting", pid=pool[date.today().toordinal() % len(pool)]["id"]))

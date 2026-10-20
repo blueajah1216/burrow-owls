@@ -28,10 +28,14 @@ JSON-LD, then HTML parsing. Be polite (fetch() sleeps and honours 429s) and neve
 
 ## /fineart — The Great Gallery
 
-A standalone-styled (blue + gold) gallery of ~900 famous public-domain paintings from 1726–1929, grouped into 9
-"rooms" (genres), each with a kid-friendly "why it's great" paragraph and a short artist bio.
+A standalone-styled (blue + gold) gallery of ~1,350 famous public-domain paintings from 1700–1929, grouped into 9
+"rooms" (genres) and 23 "collections" (Art for Kids, Jewish artists, Canada, Norway, USA, and a dozen+ other countries), each with a kid-friendly "why it's great" paragraph and a short artist bio.
 
-- `fineart.py` — Flask blueprint (`/fineart`, `/fineart/p/<id>`, `/fineart/artist/<id>`, `/random`, `/today`, `/data.json`).
+- Collections are built from `fineart_build/select_cols.py` (Wikidata nationality/ethnicity + per-artist caps, ranked by fame) and the
+  hand-picked `out/kids.json` (100 paintings, each with a "look closer" prompt). New works are `base3.json` + `out/new_*.json`;
+  extra bios in `out/artists_03.json`; `out/text_patch.json` corrects blurbs after visual review; `out/fixes.json` holds title/year fixes,
+  `n` (hide as mature) and `drop` flags. Rebuild everything with `python3 fineart_build/build_data.py`.
+- `fineart.py` — Flask blueprint (`/fineart`, `/collections`, `/collection/<slug>`, `/fineart/p/<id>`, `/fineart/artist/<id>`, `/random`, `/today`, `/data.json`).
 - `data/fineart/gallery.json` — the compiled dataset the site serves (rebuild with `python3 fineart_build/build_data.py`).
 - `fineart_build/` — how the data was made: `base2.json` (Wikidata facts + Wikimedia Commons image info, ranked by
   number of Wikipedia language editions as a "fame" score), `out/*.json` (hand-written text; a painting with no entry

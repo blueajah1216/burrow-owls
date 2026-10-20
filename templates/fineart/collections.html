@@ -1,0 +1,12 @@
+{% extends "fineart/base.html" %}
+{% from "fineart/_cols.html" import cards %}
+{% block title %}Collections · The Great Gallery{% endblock %}
+{% block body %}
+<main class="detail">
+  <div class="crumbs"><a href="{{ url_for('fineart.index') }}">← The Great Gallery</a></div>
+  <section class="cols">
+    <h1 class="sec big">All <em>collections</em></h1>
+    {{ cards(kids, heritage, world) }}
+  </section>
+</main>
+{% endblock %}

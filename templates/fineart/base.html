@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=13">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=16">
 </head>
 <body>
 <div class="sky" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -21,7 +21,9 @@
     <span class="brand-text">The Great <em>Gallery</em></span>
   </a>
   <nav>
+    <a href="{{ url_for('fineart.collections') }}">Collections</a>
     <a href="{{ url_for('fineart.index') }}#browse">Browse</a>
+    <a href="{{ url_for('fineart.collection', slug='kids') }}">🧒 Kids</a>
     <a href="{{ url_for('fineart.today') }}">Today's pick</a>
     <a href="{{ url_for('fineart.random_painting') }}" class="pill">🎲 Surprise me</a>
   </nav>

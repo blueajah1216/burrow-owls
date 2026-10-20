@@ -26,7 +26,7 @@
     history.replaceState(null, '', location.pathname + (u.toString() ? '?' + u : '') + location.hash);
   }
   function hero() {
-    const pool = D.paintings.slice(0, 300).filter(p => !p.n);
+    const pool = D.paintings.filter(p => p.k && !p.n);
     const p = pool[Math.floor(Date.now() / 864e5) % pool.length];
     $('#potd-img').src = W(p, 960); $('#potd-img').alt = p.t;
     $('#potd-title').textContent = p.t; $('#potd-by').textContent = `${D.artists[p.a[0]].n}, ${p.y}`;
@@ -63,7 +63,7 @@
   function more() {
     const frag = document.createDocumentFragment();
     shown.slice(batch * STEP, (batch + 1) * STEP).forEach((p, i) => {
-      const a = document.createElement('a'); a.className = 'card'; a.style.aspectRatio = `${p.w}/${p.h}`; a.style.animationDelay = `${Math.min(i, 20) * 25}ms`;
+      const a = document.createElement('a'); a.className = 'card'; a.style.aspectRatio = Math.min(Math.max(p.w / p.h, .55), 2.2).toFixed(3); a.style.animationDelay = `${Math.min(i, 20) * 25}ms`;
       a.href = `/fineart/p/${p.id}` + (st.g !== '' && st.g !== 'fav' ? `?g=${st.g}` : '');
       a.innerHTML = `<img loading="lazy" decoding="async" src="${W(p, 500)}" alt="${esc(p.t)}"><span class="cap"><b>${esc(p.t)}</b><i>${esc(D.artists[p.a[0]].n)} · ${p.y}</i></span><button class="heart${favs.has(p.id) ? ' on' : ''}" aria-label="Save">${favs.has(p.id) ? '♥' : '♡'}</button>`;
       a.querySelector('.heart').onclick = e => { e.preventDefault(); e.stopPropagation(); favs.has(p.id) ? favs.delete(p.id) : favs.add(p.id); store.set('fa_favs', [...favs]); const on = favs.has(p.id); e.currentTarget.classList.toggle('on', on); e.currentTarget.textContent = on ? '♥' : '♡'; $('#favn').textContent = favs.size ? `(${favs.size})` : ''; };

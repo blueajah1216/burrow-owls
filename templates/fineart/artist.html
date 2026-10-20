@@ -14,6 +14,6 @@
     </div>
   </section>
   <section class="strip wide"><h3>{{ works|length }} painting{{ 's' if works|length != 1 }} in the gallery</h3>
-    <div class="wall small">{% for x in works %}{% if not x.n %}<a class="card" href="{{ url_for('fineart.painting', pid=x.id) }}" style="aspect-ratio:{{ x.w }}/{{ x.h }}"><img loading="lazy" src="{{ fa_img(x, 500) }}" alt="{{ x.t }}"><span class="cap"><b>{{ x.t }}</b><i>{{ x.y }}</i></span></a>{% endif %}{% endfor %}</div></section>
+    <div class="wall small">{% for x in works %}{% if not x.n %}<a class="card" href="{{ url_for('fineart.painting', pid=x.id) }}" style="aspect-ratio:{{ fa_ar(x) }}"><img loading="lazy" src="{{ fa_img(x, 500) }}" alt="{{ x.t }}"><span class="cap"><b>{{ x.t }}</b><i>{{ x.y }}</i></span></a>{% endif %}{% endfor %}</div></section>
 </main>
 {% endblock %}

@@ -1,4 +1,8 @@
 in/
+in3/
 __pycache__/
 loc.json
 loc2.json
+cand_*.json
+pool.json
+artist_search.json

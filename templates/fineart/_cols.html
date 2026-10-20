@@ -1,0 +1,24 @@
+{% macro cards(kids, heritage, world) %}
+{% if kids %}
+<a class="kids-banner" href="{{ url_for('fineart.collection', slug='kids') }}">
+  <span class="kb-art">{% for i in range(3) %}{% endfor %}{% if kids.cover %}<img src="{{ fa_img(kids.cover, 500) }}" alt="" loading="lazy">{% endif %}</span>
+  <span class="kb-txt"><span class="kb-tag">NEW · for young explorers</span><b>🧒 Art for Kids</b><small>The 100 most fun paintings: tigers in thunderstorms, mermaids, a giant wave and 42 cats. Each one comes with a "look closer" challenge!</small><em class="btn gold sm">Start the adventure →</em></span>
+</a>
+{% endif %}
+<div class="col-grid">
+  {% for c in heritage %}
+  <a class="col-card" href="{{ url_for('fineart.collection', slug=c.slug) }}">
+    {% if c.cover %}<span class="cc-img" style="background-image:url({{ fa_img(c.cover, 500) }})"></span>{% endif %}
+    <span class="cc-txt"><i>{{ c.emoji }}</i><b>{{ c.name }}</b><small>{{ c.blurb }}</small><em>{{ c.count }} paintings</em></span>
+  </a>
+  {% endfor %}
+</div>
+<h3 class="sub">Around the <em>world</em></h3>
+<div class="world-grid">
+  {% for c in world %}
+  <a class="world-tile" href="{{ url_for('fineart.collection', slug=c.slug) }}">
+    <span class="flag">{{ c.emoji }}</span><b>{{ c.name }}</b><em>{{ c.count }}</em>
+  </a>
+  {% endfor %}
+</div>
+{% endmacro %}

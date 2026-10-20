@@ -38,11 +38,15 @@
       <h1>{{ p.t }}</h1>
       <p class="by">{% for a in artists %}<a href="{{ url_for('fineart.artist', aid=a.id) }}">{{ a.n }}</a>{{ ' & ' if not loop.last }}{% endfor %} · {{ p.y }}</p>
 
+      {% if cols %}<div class="col-chips">{% for c in cols %}<a href="{{ url_for('fineart.collection', slug=c.slug) }}">{{ c.emoji }} {{ c.name }}</a>{% endfor %}</div>{% endif %}
+
       <section class="why">
         <h2>Why it's great</h2>
         <p>{{ p.why }}</p>
       </section>
 
+
+      {% if p.k %}<section class="kidbox"><h2>👀 Look closer!</h2><p>{{ p.k }}</p></section>{% endif %}
 
       <section class="where">
         <h2>Where to see it</h2>
@@ -106,5 +110,5 @@
 {% endblock %}
 {% block scripts %}
 <script>window.FA={id:"{{ p.id }}",big:"{{ fa_img(p, 1920) }}",prev:{{ ('"' ~ url_for('fineart.painting', pid=prev_p.id, g=g) ~ '"')|safe if prev_p else 'null' }},next:{{ ('"' ~ url_for('fineart.painting', pid=next_p.id, g=g) ~ '"')|safe if next_p else 'null' }}};</script>
-<script src="{{ url_for('static', filename='fineart/detail.js') }}?v=13"></script>
+<script src="{{ url_for('static', filename='fineart/detail.js') }}?v=16"></script>
 {% endblock %}

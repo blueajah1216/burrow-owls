@@ -7,8 +7,7 @@ def sparql(Q):
         if r.status_code==200: return r.json()["results"]["bindings"]
         print("retry",r.status_code,r.text[:80]); time.sleep(8)
     raise SystemExit("failed")
-d=json.load(open("base2.json")); P=d["paintings"]
-qids=[p["qid"] for p in P]
+allp=json.load(open("allp.json")); qids=[p["qid"] for p in allp]
 pv={}   # painting -> (venue qid, label, kind)
 for i in range(0,len(qids),150):
     vals=" ".join("wd:"+q for q in qids[i:i+150])

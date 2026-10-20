@@ -8,10 +8,7 @@ def sparql(Q):
         if r.status_code==200: return r.json()["results"]["bindings"]
         time.sleep(8)
     raise SystemExit("fail")
-g=json.load(open("../data/fineart/gallery.json")); d=json.load(open("base2.json")); l=json.load(open("loc.json"))
-ids={p["id"]:p["qid"] for p in d["paintings"]}
-# need venue QIDs again: re-query painting->venue qid
-qs=[ids[p["id"]] for p in g["paintings"]]
+allp=json.load(open("allp.json")); qs=[p["qid"] for p in allp]
 pv={}
 for i in range(0,len(qs),150):
     vals=" ".join("wd:"+q for q in qs[i:i+150])
