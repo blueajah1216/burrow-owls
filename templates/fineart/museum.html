@@ -1,0 +1,63 @@
+{% extends "fineart/base.html" %}
+{% block title %}{{ m.name }} · The Great Gallery{% endblock %}
+{% block desc %}{{ m.desc[:180] }}{% endblock %}
+{% block body %}
+<main class="detail mus-page">
+  <div class="crumbs"><a href="{{ url_for('fineart.museums') }}">← All museums</a></div>
+  <header class="mp-hero">
+    {% if m.img %}<img class="mp-img" src="{{ m.img }}" alt="{{ m.name }}" loading="eager">{% endif %}
+    <div>
+      <p class="eyebrow">{{ m.continent }} · {{ m.country }}</p>
+      <h1>{{ m.name }}</h1>
+      <p class="mp-meta">📍 {{ m.city }}, {{ m.country }} · Founded {{ m.founded }}</p>
+      <p class="lede">{{ m.desc }}</p>
+      <p class="mp-links">
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query={{ (m.name ~ ' ' ~ m.city)|urlencode }}" target="_blank" rel="noopener">Open in Maps ↗</a>
+        <a class="maplink" href="https://en.wikipedia.org/wiki/{{ m.wiki }}" target="_blank" rel="noopener">Wikipedia ↗</a>
+      </p>
+    </div>
+  </header>
+
+  <section class="mp-sec">
+    <h2>History of the museum</h2>
+    <p>{{ m.history }}</p>
+  </section>
+
+  {% if hl %}
+  <section class="mp-sec">
+    <h2>Top pieces</h2>
+    <ul class="mp-hl">
+      {% for h in hl %}
+      <li>
+        {% if h.p and not h.p.n %}<a href="{{ url_for('fineart.painting', pid=h.p.id) }}"><img loading="lazy" src="{{ fa_img(h.p, 300) }}" alt="{{ h.title }}"></a>{% endif %}
+        <div><b>{% if h.p and not h.p.n %}<a href="{{ url_for('fineart.painting', pid=h.p.id) }}">{{ h.title }}</a>{% else %}{{ h.title }}{% endif %}</b>
+        <i>{{ h.artist }}, {{ h.year }}</i></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if works %}
+  <section class="mp-sec">
+    <h2>In our gallery from here <small>({{ works|length }})</small></h2>
+    <div class="wall">
+      {% for p in works %}
+      <a class="card" href="{{ url_for('fineart.painting', pid=p.id) }}" style="aspect-ratio:{{ fa_ar(p) }}">
+        <img loading="lazy" decoding="async" src="{{ fa_img(p, 500) }}" alt="{{ p.t }}">
+        <span class="cap"><b>{{ p.t }}</b><i>{{ artists[p.a[0]].n }} · {{ p.y }}</i></span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if near %}
+  <section class="strip wide"><h3>Other museums nearby</h3>
+    <div class="world-grid">
+      {% for o in near %}<a class="world-tile" href="{{ url_for('fineart.museum', slug=o.slug) }}"><b>{{ o.name }}</b><em>{{ o.city }}</em></a>{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</main>
+{% endblock %}

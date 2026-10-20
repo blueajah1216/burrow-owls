@@ -25,6 +25,8 @@ HISTORY_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", 
 
 _cache = {"mtime": None, "data": None}
 _hcache = {"mtime": None, "data": None}
+MUSEUMS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "fineart", "museums.json")
+_mcache = {"mtime": None, "data": None}
 
 
 def load():
@@ -64,6 +66,29 @@ def load_history():
         h["event_of"] = ev_of
         _hcache.update(mtime=key, data=h)
     return _hcache["data"]
+
+
+def load_museums():
+    """museums.json: [{slug,name,city,country,continent,lat,lon,desc,history,highlights,works,...}]."""
+    gal = load()
+    key = (os.path.getmtime(MUSEUMS_PATH), _cache["mtime"])
+    if _mcache["mtime"] != key:
+        with open(MUSEUMS_PATH, encoding="utf-8") as f:
+            ms = json.load(f)["museums"]
+        by_id = gal["by_id"]
+        for m in ms:
+            m["paintings"] = [by_id[i] for i in m["works"] if i in by_id]
+            m["n_works"] = sum(1 for p in m["paintings"] if not p.get("n"))
+        _mcache.update(mtime=key, data=dict(list=ms, by_slug={m["slug"]: m for m in ms},
+                                            by_venue={a: m for m in ms for a in m["aliases"]}))
+    return _mcache["data"]
+
+
+def museum_for(loc):
+    """Find the museum page for a painting's location [venue, city, country], or None."""
+    if not loc or not os.path.exists(MUSEUMS_PATH):
+        return None
+    return load_museums()["by_venue"].get(loc[0])
 
 
 def era_label(y):
@@ -143,7 +168,7 @@ def collection_cards(data):
 
 
 def init_fineart(app):
-    app.jinja_env.globals.update(fa_span=span_label, fa_img=img_url, fa_lived=lived, fa_ar=card_ratio, fa_prints=print_links, fa_map=map_url)
+    app.jinja_env.globals.update(fa_span=span_label, fa_img=img_url, fa_lived=lived, fa_ar=card_ratio, fa_prints=print_links, fa_map=map_url, fa_museum=museum_for)
     app.register_blueprint(bp)
 
 
@@ -251,6 +276,28 @@ def today():
 
 
 # ---------------------------------------------------------------- Art Through History
+
+@bp.route("/museums")
+def museums():
+    ms = load_museums()["list"]
+    conts = ["North America", "South America", "Europe", "Asia", "Africa", "Oceania"]
+    slim = [{k: m[k] for k in ("slug", "name", "city", "country", "continent", "lat", "lon", "n_works")} for m in ms]
+    return render_template("fineart/museums.html", ms=ms, slim=slim, conts=conts, total_works=sum(m["n_works"] for m in ms))
+
+
+@bp.route("/museum/<slug>")
+def museum(slug):
+    data = load()
+    ms = load_museums()
+    m = ms["by_slug"].get(slug)
+    if not m:
+        abort(404)
+    works = [p for p in m["paintings"] if not p.get("n")]
+    hl = [h | {"p": data["by_id"].get(h["id"])} for h in m["highlights"]]
+    near = sorted((x for x in ms["list"] if x["slug"] != slug and x["continent"] == m["continent"]),
+                  key=lambda x: (x["lat"] - m["lat"]) ** 2 + (x["lon"] - m["lon"]) ** 2)[:6]
+    return render_template("fineart/museum.html", m=m, works=works, hl=hl, near=near, artists=data["artists"])
+
 
 @bp.route("/history")
 def history():

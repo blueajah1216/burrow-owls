@@ -418,3 +418,41 @@ select option{color:#000}
 .col-sec{margin:34px 0 8px}.col-sec h2{font:600 1.7rem var(--serif);margin:0 0 4px}.col-sec h2:before{content:"";display:inline-block;width:10px;height:26px;border-radius:5px;background:var(--gold);margin-right:12px;vertical-align:-4px}
 .col-sec>p{margin:0 0 14px;color:var(--mute);max-width:70ch}
 @media (max-width:760px){.abs-banner{grid-template-columns:1fr}.ab-art{order:-1}}
+
+/* museums */
+.mus{max-width:1300px;margin:0 auto;padding:0 clamp(16px,4vw,48px) 60px}
+.m-hero h1,.mp-hero h1{font-family:var(--serif);font-size:clamp(2rem,5vw,3.4rem);margin:.1em 0}
+.m-hero h1 em{color:var(--gold);font-style:italic}
+.m-tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin:18px 0 12px}
+.m-conts{display:flex;flex-wrap:wrap;gap:8px}
+.m-conts button{font:inherit;color:var(--cream);background:var(--glass);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer}
+.m-conts button.on{background:var(--gold);color:var(--ink);border-color:var(--gold);font-weight:600}
+#msearch{font:inherit;color:var(--cream);background:var(--glass);border:1px solid var(--line);border-radius:999px;padding:8px 16px;min-width:220px}
+.m-map{position:relative;aspect-ratio:2/1;min-height:300px;border-radius:18px;overflow:hidden;background:#0a1a5c;border:1px solid var(--line);box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.m-map svg{width:100%;height:100%;display:block;touch-action:none;cursor:grab;background:radial-gradient(circle at 50% 40%,#16308f,#0a1a5c)}
+.m-map .land{fill:#2b4fc4;stroke:#6ea8ff;stroke-width:.6;vector-effect:non-scaling-stroke;opacity:.9}
+.m-map .pin{fill:var(--gold);stroke:var(--ink);cursor:pointer;transition:fill .15s}
+.m-map .pin:hover,.m-map .pin:focus{fill:var(--rose);outline:none}
+.m-map .pin.dim{opacity:.15}
+.m-tip{position:absolute;transform:translate(-50%,calc(-100% - 12px));background:var(--cream);color:var(--ink);padding:10px 14px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:2px;min-width:190px;z-index:3}
+.m-tip span{font-size:.85rem;opacity:.7}.m-tip a{color:var(--cobalt);font-weight:600;text-decoration:none;margin-top:4px}
+.m-zoom{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.m-zoom button{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:rgba(5,15,61,.8);color:var(--cream);font-size:1.3rem;cursor:pointer}
+.m-hint{font-size:.85rem;color:var(--mute);margin:8px 0 28px}
+.m-group h2{font-family:var(--serif);margin:26px 0 10px}
+.m-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.m-card{display:flex;flex-direction:column;gap:2px;padding:14px 16px;background:var(--glass);border:1px solid var(--line);border-radius:14px;text-decoration:none}
+.m-card:hover{border-color:var(--gold)}.m-card span{font-size:.9rem;color:var(--mute)}.m-card em{font-size:.8rem;color:var(--gold);font-style:normal}
+.mus-page{max-width:1200px;margin:0 auto}
+.mp-hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:28px;align-items:center;margin:10px 0 24px}
+.mp-img{width:100%;border-radius:16px;aspect-ratio:4/3;object-fit:cover;box-shadow:0 14px 40px rgba(0,0,0,.4)}
+.mp-meta{color:var(--gold)}.mp-links{display:flex;gap:10px;flex-wrap:wrap}
+.mp-sec{margin:34px 0}.mp-sec h2{font-family:var(--serif)}.mp-sec h2 small{color:var(--mute);font-size:.6em}
+.mp-sec>p{max-width:75ch;font-size:1.05rem}
+.mp-hl{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.mp-hl li{display:flex;gap:12px;align-items:center;background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:10px}
+.mp-hl img{width:84px;height:84px;object-fit:cover;border-radius:10px}.mp-hl i{display:block;color:var(--mute);font-size:.9rem}
+.mp-hl a{text-decoration:none}
+@media(max-width:760px){.mp-hero{grid-template-columns:1fr}.m-map{aspect-ratio:4/3}}
+.m-tip[hidden]{display:none}
+.mp-hero:not(:has(.mp-img)){grid-template-columns:1fr}

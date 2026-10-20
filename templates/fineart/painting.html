@@ -62,6 +62,7 @@
         {% if p.l and p.l[1] %}
         <p class="where-main">📍 <b>{{ p.l[0] }}</b><span>{{ p.l[1] }}{% if p.l[2] %}, {{ p.l[2] }}{% endif %}</span></p>
         <a class="maplink" href="{{ fa_map(p.l) }}" target="_blank" rel="noopener">Open in Maps ↗</a>
+        {% set mus = fa_museum(p.l) %}{% if mus %}<a class="maplink" href="{{ url_for('fineart.museum', slug=mus.slug) }}">About this museum →</a>{% endif %}
         {% elif p.l and p.l[0] == 'Private collection' %}
         <p class="where-main">🔒 <b>Private collection</b><span>Owned by a person or family, so it isn't usually on public display.</span></p>
         {% elif p.l %}

@@ -1,0 +1,644 @@
+{
+ "Metropolitan Museum of Art": {
+  "lat": 40.7794,
+  "lon": -73.9631,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/960px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museum of Modern Art": {
+  "lat": 40.7617,
+  "lon": -73.9775,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/MoMa_NY_USA_1.jpg/960px-MoMa_NY_USA_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Solomon R. Guggenheim Museum": {
+  "lat": 40.78305556,
+  "lon": -73.95888889,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Solomon_R._Guggenheim_Museum_%2848059131351%29.jpg/960px-Solomon_R._Guggenheim_Museum_%2848059131351%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Frick Collection": {
+  "lat": 40.7711,
+  "lon": -73.9672,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Frick_Collection_New_York_cour.jpg/960px-Frick_Collection_New_York_cour.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Art Institute of Chicago": {
+  "lat": 41.87944444,
+  "lon": -87.62388889,
+  "img": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Art_Institute_of_Chicago_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "missing": false
+ },
+ "National Gallery of Art": {
+  "lat": 38.8914,
+  "lon": -77.02,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/National_Gallery_of_Art_-_2026_%2855255088792%29.jpg/960px-National_Gallery_of_Art_-_2026_%2855255088792%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museum of Fine Arts, Boston": {
+  "lat": 42.3394,
+  "lon": -71.0942,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg/960px-Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Philadelphia Museum of Art": {
+  "lat": 39.966,
+  "lon": -75.181,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/PhiladelphiaMuseumOfArt2017.jpg/960px-PhiladelphiaMuseumOfArt2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "J. Paul Getty Museum": {
+  "lat": 34.0775,
+  "lon": -118.475,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Aerial_view_of_the_J._Paul_Getty_Museum_of_Art_in_Los_Angeles%2C_California_LCCN2013632733.tif/lossy-page1-960px-Aerial_view_of_the_J._Paul_Getty_Museum_of_Art_in_Los_Angeles%2C_California_LCCN2013632733.tif.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Los Angeles County Museum of Art": {
+  "lat": 34.0633,
+  "lon": -118.3592,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/LACMA-Los-Angeles-County-Museum-of-Art-04-2014.jpg/960px-LACMA-Los-Angeles-County-Museum-of-Art-04-2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Cleveland Museum of Art": {
+  "lat": 41.50888889,
+  "lon": -81.61166667,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Logo_Cleveland_Museum_of_Art.svg/960px-Logo_Cleveland_Museum_of_Art.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Detroit Institute of Arts": {
+  "lat": 42.3594,
+  "lon": -83.0647,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Detroit_institute_of_arts%2C_esterno_01_%28cropped%29.jpg/960px-Detroit_institute_of_arts%2C_esterno_01_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Barnes Foundation": {
+  "lat": 39.9605,
+  "lon": -75.1727,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Barnes_Foundation_%2853574516274%29.jpg/960px-Barnes_Foundation_%2853574516274%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Gallery of Canada": {
+  "lat": 45.429535,
+  "lon": -75.698906,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Ottawa_-_ON_-_National_Gallery_of_Canada.jpg/960px-Ottawa_-_ON_-_National_Gallery_of_Canada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Art Gallery of Ontario": {
+  "lat": 43.65361111,
+  "lon": -79.39277778,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Art_Gallery_of_Ontario_2023.jpg/960px-Art_Gallery_of_Ontario_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Montreal Museum of Fine Arts": {
+  "lat": 45.4987,
+  "lon": -73.5801,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Museum_of_Fine_Arts%2C_main_entrance%2C_Montreal.jpg/960px-Museum_of_Fine_Arts%2C_main_entrance%2C_Montreal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "McMichael Canadian Art Collection": {
+  "lat": 43.840776,
+  "lon": -79.625205,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Gallery_New-Entrance_Credit-Art2Print-Images_%287538295154%29.jpg/960px-Gallery_New-Entrance_Credit-Art2Print-Images_%287538295154%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Vancouver Art Gallery": {
+  "lat": 49.282875,
+  "lon": -123.120464,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Vancouver_Art_Gallery_%2829787380987%29.jpg/960px-Vancouver_Art_Gallery_%2829787380987%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Canadian War Museum": {
+  "lat": 45.41722222,
+  "lon": -75.71722222,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/WarMuseum2022.jpg/960px-WarMuseum2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Mus\u00e9e national des beaux-arts du Qu\u00e9bec": {
+  "lat": 46.798889,
+  "lon": -71.224722,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Mus%C3%A9e_national_des_beaux-arts_du_Qu%C3%A9bec_logo.png/960px-Mus%C3%A9e_national_des_beaux-arts_du_Qu%C3%A9bec_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museo Nacional de Arte": {
+  "lat": 19.43638889,
+  "lon": -99.13944444,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/MUNAL.jpg/960px-MUNAL.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Palacio de Bellas Artes": {
+  "lat": 19.4353,
+  "lon": -99.1414,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Bellas_Artes_01.jpg/960px-Bellas_Artes_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museo Nacional de Bellas Artes (Argentina)": {
+  "lat": -34.58398611,
+  "lon": -58.39297,
+  "img": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Fachada_del_Museo_Nacional_de_Bellas_Artes_%28Argentina%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "missing": false
+ },
+ "S\u00e3o Paulo Museum of Art": {
+  "lat": -23.5611,
+  "lon": -46.6558,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Vista_a%C3%A9rea_de_la_Avenida_Paulista_de_S%C3%A3o_Paulo_05.jpg/960px-Vista_a%C3%A9rea_de_la_Avenida_Paulista_de_S%C3%A3o_Paulo_05.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museu Nacional de Belas Artes": {
+  "lat": -22.90879806,
+  "lon": -43.17573111,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/At_Rio_de_Janeiro_2019_399.jpg/960px-At_Rio_de_Janeiro_2019_399.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museo de Arte de Lima": {
+  "lat": -12.06044569,
+  "lon": -77.03696961,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Museo_de_Arte_de_Lima.svg/960px-Museo_de_Arte_de_Lima.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Louvre": {
+  "lat": 48.8611,
+  "lon": 2.3358,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/960px-Louvre_Museum_Wikimedia_Commons.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Mus\u00e9e d'Orsay": {
+  "lat": 48.859972,
+  "lon": 2.326527,
+  "img": null,
+  "missing": false
+ },
+ "Centre Pompidou": {
+  "lat": 48.86064194,
+  "lon": 2.352245,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Le_logo_du_Centre_Pompidou_redessin%C3%A9_en_2019_%285_bandes%29.svg/960px-Le_logo_du_Centre_Pompidou_redessin%C3%A9_en_2019_%285_bandes%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Mus\u00e9e de l'Orangerie": {
+  "lat": 48.86384535,
+  "lon": 2.32253834,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Mus%C3%A9e_de_l%E2%80%99Orangerie_exterior.JPG/960px-Mus%C3%A9e_de_l%E2%80%99Orangerie_exterior.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Mus\u00e9e Marmottan Monet": {
+  "lat": 48.8593,
+  "lon": 2.2673,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Mus%C3%A9e_Marmottan_Monet_logo.svg/960px-Mus%C3%A9e_Marmottan_Monet_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Palace of Versailles": {
+  "lat": 48.8047,
+  "lon": 2.1203,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Petit Palais": {
+  "lat": 48.86604,
+  "lon": 2.31453,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Petit-Palais-Paris-02-2018.jpg/960px-Petit-Palais-Paris-02-2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Gallery": {
+  "lat": 51.5089,
+  "lon": -0.1283,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Galer%C3%ADa_Nacional%2C_Londres%2C_Inglaterra%2C_2014-08-07%2C_DD_036.JPG/960px-Galer%C3%ADa_Nacional%2C_Londres%2C_Inglaterra%2C_2014-08-07%2C_DD_036.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Tate Britain": {
+  "lat": 51.4911,
+  "lon": -0.1275,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Tate_Britain_%285822081512%29_%282%29.jpg/960px-Tate_Britain_%285822081512%29_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Tate Modern": {
+  "lat": 51.5078,
+  "lon": -0.0994,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Tate_Modern_-_Bankside_Power_Station.jpg/960px-Tate_Modern_-_Bankside_Power_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Courtauld Gallery": {
+  "lat": 51.51175,
+  "lon": -0.11747222,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Coultauld_Galleries.jpg/960px-Coultauld_Galleries.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Wallace Collection": {
+  "lat": 51.5175,
+  "lon": -0.153,
+  "img": "https://upload.wikimedia.org/wikipedia/commons/7/70/Front_entrance_to_the_Wallace_Collection%2C_Manchester_Square_-_geograph.org.uk_-_1600012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "missing": false
+ },
+ "National Gallery of Scotland": {
+  "lat": 55.95083333,
+  "lon": -3.19555556,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Scottish_National_Gallery_-_aerial_-_2025-04-19_01.jpg/960px-Scottish_National_Gallery_-_aerial_-_2025-04-19_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Birmingham Museum and Art Gallery": {
+  "lat": 52.4803,
+  "lon": -1.9036,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Birmingham_Museum_and_Art_Gallery.jpg/960px-Birmingham_Museum_and_Art_Gallery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Imperial War Museum": {
+  "lat": 51.4958,
+  "lon": -0.1086,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Imperial_War_Museums_logo.svg/960px-Imperial_War_Museums_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Uffizi": {
+  "lat": 43.7683,
+  "lon": 11.2553,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Florence%2C_Italy_-_panoramio_%28125%29.jpg/960px-Florence%2C_Italy_-_panoramio_%28125%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Vatican Museums": {
+  "lat": 41.9064,
+  "lon": 12.4544,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Musei_vaticani_Coat_of_Arms.svg/960px-Musei_vaticani_Coat_of_Arms.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Pinacoteca di Brera": {
+  "lat": 45.47194444,
+  "lon": 9.18805556,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Milan_-_Pinacoth%C3%A8que_de_Brera_-_Cour_int%C3%A9rieure.jpg/960px-Milan_-_Pinacoth%C3%A8que_de_Brera_-_Cour_int%C3%A9rieure.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Gallerie dell'Accademia": {
+  "lat": 45.43138889,
+  "lon": 12.32805556,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Accademia_%28Venice%29.jpg/960px-Accademia_%28Venice%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Galleria Borghese": {
+  "lat": 41.9142,
+  "lon": 12.4922,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Galleria_Borghese_-_logo_%28Italy%2C_2022-%29.svg/960px-Galleria_Borghese_-_logo_%28Italy%2C_2022-%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museo di Capodimonte": {
+  "lat": 40.86700556,
+  "lon": 14.25053333,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/ReggiaCapodimonte.JPG/960px-ReggiaCapodimonte.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museo del Prado": {
+  "lat": 40.4139,
+  "lon": -3.6922,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/960px-Museo_del_Prado_2016_%2825185969599%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museo Nacional Centro de Arte Reina Sof\u00eda": {
+  "lat": 40.4086,
+  "lon": -3.694,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa_logo.svg/960px-Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museo Nacional Thyssen-Bornemisza": {
+  "lat": 40.416,
+  "lon": -3.6949,
+  "img": null,
+  "missing": true
+ },
+ "Sorolla Museum": {
+  "lat": 40.435,
+  "lon": -3.693,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Museo_Sorolla_%28Madrid%29_01.jpg/960px-Museo_Sorolla_%28Madrid%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museu Nacional d'Art de Catalunya": {
+  "lat": 41.36833,
+  "lon": 2.15331,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Museu_nacional_d%27art_de_catalunya_2.jpg/960px-Museu_nacional_d%27art_de_catalunya_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Calouste Gulbenkian Museum": {
+  "lat": 38.73666667,
+  "lon": -9.15416667,
+  "img": "https://upload.wikimedia.org/wikipedia/commons/f/f1/FCG_Calouste_Gulbenkian_Logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "missing": false
+ },
+ "Rijksmuseum": {
+  "lat": 52.36,
+  "lon": 4.8853,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg/960px-South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Van Gogh Museum": {
+  "lat": 52.3583,
+  "lon": 4.8811,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_-_Van_Gogh_Museum.png/960px-Logo_-_Van_Gogh_Museum.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Mauritshuis": {
+  "lat": 52.0804,
+  "lon": 4.3143,
+  "img": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Mauritshuis_museum_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "missing": false
+ },
+ "Kr\u00f6ller-M\u00fcller Museum": {
+  "lat": 52.09583333,
+  "lon": 5.81694444,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Entrance_Kr%C3%B6ller-M%C3%BCller_Museum.JPG/960px-Entrance_Kr%C3%B6ller-M%C3%BCller_Museum.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Kunstmuseum Den Haag": {
+  "lat": 52.0897,
+  "lon": 4.2806,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Gemeente_museum.jpg/960px-Gemeente_museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Royal Museums of Fine Arts of Belgium": {
+  "lat": 50.84168,
+  "lon": 4.35823806,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mus%C3%A9es_Royaux_des_Beaux-Arts_Belgique_1101.jpg/960px-Mus%C3%A9es_Royaux_des_Beaux-Arts_Belgique_1101.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Royal Museum of Fine Arts Antwerp": {
+  "lat": 51.20881889,
+  "lon": 4.39434889,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Koninklijk_Museum_voor_Schone_Kunsten_%28Antwerpen%29.jpg/960px-Koninklijk_Museum_voor_Schone_Kunsten_%28Antwerpen%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Alte Pinakothek": {
+  "lat": 48.14833333,
+  "lon": 11.57,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Alte_Pinakothek_2009.jpg/960px-Alte_Pinakothek_2009.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Lenbachhaus": {
+  "lat": 48.1469,
+  "lon": 11.5636,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2013-05-04_Lenbachhaus_Muenchen-8.jpg/960px-2013-05-04_Lenbachhaus_Muenchen-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Gem\u00e4ldegalerie, Berlin": {
+  "lat": 52.5086,
+  "lon": 13.3647,
+  "img": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Berlin_Kulturforum_2002a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "missing": false
+ },
+ "Alte Nationalgalerie": {
+  "lat": 52.52083333,
+  "lon": 13.39805556,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/AlteNationalgalerie_1a.jpg/960px-AlteNationalgalerie_1a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Hamburger Kunsthalle": {
+  "lat": 53.555,
+  "lon": 10.00305556,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Hamburger_Kunsthalle.jpg/960px-Hamburger_Kunsthalle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Gem\u00e4ldegalerie Alte Meister": {
+  "lat": 51.05338,
+  "lon": 13.73466,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Dresden-Zwinger-Courtyard.11.JPG/960px-Dresden-Zwinger-Courtyard.11.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "St\u00e4del": {
+  "lat": 50.10322,
+  "lon": 8.67388,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/St%C3%A4del-Museum.svg/960px-St%C3%A4del-Museum.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Kunsthistorisches Museum": {
+  "lat": 48.20388056,
+  "lon": 16.3616,
+  "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/a3/Kunsthistorisches_Museum_logo.svg/960px-Kunsthistorisches_Museum_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Belvedere, Vienna": {
+  "lat": 48.19416667,
+  "lon": 16.38027778,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg/960px-Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Leopold Museum": {
+  "lat": 48.20265,
+  "lon": 16.35914194,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Wien_07_Leopold_Museum_a.jpg/960px-Wien_07_Leopold_Museum_a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Kunstmuseum Basel": {
+  "lat": 47.55416667,
+  "lon": 7.59416667,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Basel_-_2017_-_Kunstmuseum_Basel_-_Altbau.jpg/960px-Basel_-_2017_-_Kunstmuseum_Basel_-_Altbau.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Kunsthaus Z\u00fcrich": {
+  "lat": 47.3703,
+  "lon": 8.5481,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Kunsthaus_Z%C3%BCrich_2011-08-06_17-33-46.jpg/960px-Kunsthaus_Z%C3%BCrich_2011-08-06_17-33-46.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Gallery Prague": {
+  "lat": 50.1088,
+  "lon": 14.431,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/National_Gallery_Prague.svg/960px-National_Gallery_Prague.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Museum, Warsaw": {
+  "lat": 52.2317,
+  "lon": 21.0247,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Muzeum_Narodowe_w_Warszawie_-_panoramio_-_Mister_No.jpg/960px-Muzeum_Narodowe_w_Warszawie_-_panoramio_-_Mister_No.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Museum, Krak\u00f3w": {
+  "lat": 50.0603,
+  "lon": 19.9239,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/MNK_logo_2023_kolorowe.png/960px-MNK_logo_2023_kolorowe.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Hermitage Museum": {
+  "lat": 59.9406,
+  "lon": 30.3136,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/5174-3._St._Petersburg._Greater_Hermitage.jpg/960px-5174-3._St._Petersburg._Greater_Hermitage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Tretyakov Gallery": {
+  "lat": 55.74138889,
+  "lon": 37.62086389,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Moscow_05-2012_TretyakovGallery.jpg/960px-Moscow_05-2012_TretyakovGallery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Pushkin Museum": {
+  "lat": 55.74702889,
+  "lon": 37.60602889,
+  "img": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Gmii.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "missing": false
+ },
+ "Russian Museum": {
+  "lat": 59.93859194,
+  "lon": 30.33222111,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86%2C_%D0%B4%D0%B2%D0%BE%D1%8003.jpg/960px-%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86%2C_%D0%B4%D0%B2%D0%BE%D1%8003.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Museum of Art, Architecture and Design": {
+  "lat": 59.9117,
+  "lon": 10.7292,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Nye_Nasjonalmuseet_%282022%29_%282%29.jpg/960px-Nye_Nasjonalmuseet_%282022%29_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Munch Museum": {
+  "lat": 59.90575,
+  "lon": 10.75531,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/The_new_Munch_Museum_%28white_color_sign%29.jpg/960px-The_new_Munch_Museum_%28white_color_sign%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Nationalmuseum": {
+  "lat": 59.3286,
+  "lon": 18.0781,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Nationalmuseum_July_2025.jpg/960px-Nationalmuseum_July_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Statens Museum for Kunst": {
+  "lat": 55.68889,
+  "lon": 12.57861,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Statens_Museum_for_Kunst%2C_K%C3%B8benhavn.jpg/960px-Statens_Museum_for_Kunst%2C_K%C3%B8benhavn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Ateneum": {
+  "lat": 60.17,
+  "lon": 24.94416667,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Helsinki_July_2013-26a.jpg/960px-Helsinki_July_2013-26a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Skagens Museum": {
+  "lat": 57.7246,
+  "lon": 10.5973,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Skagens_Museum%2C_entrance%2C_2015-07-28.jpg/960px-Skagens_Museum%2C_entrance%2C_2015-07-28.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Gallery of Ireland": {
+  "lat": 53.340914,
+  "lon": -6.252554,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/National_Gallery_of_Ireland%2C_Nov_2017.jpg/960px-National_Gallery_of_Ireland%2C_Nov_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Israel Museum": {
+  "lat": 31.7725,
+  "lon": 35.2042,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Israel_museum.JPG/960px-Israel_museum.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Louvre Abu Dhabi": {
+  "lat": 24.533,
+  "lon": 54.40001,
+  "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/5/55/LouvreAD_exterior.jpg/960px-LouvreAD_exterior.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museum of Islamic Art, Doha": {
+  "lat": 25.2950187,
+  "lon": 51.53926545,
+  "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c7/Museum_of_Islamic_Art_in_Doha%2C_Qatar_%2832673171432%29.jpg/960px-Museum_of_Islamic_Art_in_Doha%2C_Qatar_%2832673171432%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Tokyo National Museum": {
+  "lat": 35.7189,
+  "lon": 139.7764,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/960px-Tokyo_National_Museum%2C_Honkan_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Palace Museum": {
+  "lat": 25.1022,
+  "lon": 121.5486,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/NationalPalace_MuseumFrontView.jpg/960px-NationalPalace_MuseumFrontView.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Palace Museum": {
+  "lat": 39.91694444,
+  "lon": 116.39083333,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Forbidden_City_Beijing_Shenwumen_Gate.JPG/960px-Forbidden_City_Beijing_Shenwumen_Gate.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Shanghai Museum": {
+  "lat": 31.2281,
+  "lon": 121.4753,
+  "img": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Shanghai_Museum_exterior_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "missing": false
+ },
+ "Ohara Museum of Art": {
+  "lat": 34.59615,
+  "lon": 133.77067,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Kurashiki_Ohara_Art_Museum02nt3200.jpg/960px-Kurashiki_Ohara_Art_Museum02nt3200.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Museum of Western Art": {
+  "lat": 35.7155,
+  "lon": 139.7757,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/National_museum_of_western_art05s3200.jpg/960px-National_museum_of_western_art05s3200.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Gallery Singapore": {
+  "lat": 1.29049,
+  "lon": 103.85186,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Interior_of_the_National_Gallery_Singapore.jpg/960px-Interior_of_the_National_Gallery_Singapore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Museum of Fine Arts (Philippines)": {
+  "lat": 14.5877,
+  "lon": 120.9808,
+  "img": null,
+  "missing": true
+ },
+ "National Gallery of Victoria": {
+  "lat": -37.8225,
+  "lon": 144.96888889,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/National_Gallery_of_Victoria_2024.jpg/960px-National_Gallery_of_Victoria_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Art Gallery of New South Wales": {
+  "lat": -33.8686,
+  "lon": 151.2172,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Art_Gallery_of_New_South_Wales%2C_2022%2C_09.jpg/960px-Art_Gallery_of_New_South_Wales%2C_2022%2C_09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "National Gallery of Australia": {
+  "lat": -35.3003,
+  "lon": 149.1364,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/National_Gallery_from_SW%2C_Canberra_Australia.jpg/960px-National_Gallery_from_SW%2C_Canberra_Australia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Australian War Memorial": {
+  "lat": -35.2805,
+  "lon": 149.1491,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Australian_War_Memorial_front_view.jpg/960px-Australian_War_Memorial_front_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Te Papa": {
+  "lat": -41.2906,
+  "lon": 174.7819,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Museum_of_New_Zealand_Te_Papa_Tongarewa_unsaturated.jpg/960px-Museum_of_New_Zealand_Te_Papa_Tongarewa_unsaturated.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Art Gallery of South Australia": {
+  "lat": -34.92055556,
+  "lon": 138.60388889,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Art_Gallery_of_South_Australia_exterior%2C_January_2026.jpg/960px-Art_Gallery_of_South_Australia_exterior%2C_January_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Egyptian Museum": {
+  "lat": 30.047778,
+  "lon": 31.233333,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/1897_bis_1902_wurde_das_%C3%84gyptische_Museum_in_Kairo_gebaut._04.jpg/960px-1897_bis_1902_wurde_das_%C3%84gyptische_Museum_in_Kairo_gebaut._04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Zeitz Museum of Contemporary Art Africa": {
+  "lat": -33.9084,
+  "lon": 18.423,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Zeitz_Museum_of_Contemporary_Art_Africa%2C_Cape_Town_%28_1050775%29.jpg/960px-Zeitz_Museum_of_Contemporary_Art_Africa%2C_Cape_Town_%28_1050775%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Iziko South African National Gallery": {
+  "lat": -33.928984,
+  "lon": 18.417174,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/South_Africa_National_Gallery.jpg/960px-South_Africa_National_Gallery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museum of Black Civilisations": {
+  "lat": 14.6783,
+  "lon": -17.444,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Mus%C3%A9e_des_civilisations_noires_2022.jpg/960px-Mus%C3%A9e_des_civilisations_noires_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ }
+}

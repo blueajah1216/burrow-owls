@@ -63,3 +63,14 @@ Works after 1929 are limited to public-domain sources (US-government art and pho
 ### /fineart collections: styles & movements
 
 `fineart_build/styles/` holds `styles_rules.py` (artist/period rules for Impressionism, Romanticism, etc., capped per artist) and `abstract_picks.py` (the six sections of the Abstract Art collection). `build_data.py` turns them into `group: "styles"` collections; new abstract works are added by `styles/add_styles.py` into `base4.json`, with text in `out/style_*.json`.
+
+## Museums (`/fineart/museums`)
+
+A world map of ~107 great art museums with continent zoom, plus a page per museum (`/fineart/museum/<slug>`)
+with a description, history, top pieces and the gallery's paintings held there.
+
+- Source text: `fineart_build/museums/src_*.py` (hand-written; `aliases` must match the gallery's venue strings, `l[0]`).
+- `python3 fineart_build/museums/build_museums.py` fetches coordinates and photos from Wikipedia (cached in `coords.json`),
+  links gallery paintings by venue, and writes `data/fineart/museums.json`.
+- `fineart_build/museums/build_map.py` turns world-atlas TopoJSON (download `countries-110m.json` into that folder first)
+  into `static/fineart/world.json`, the simple SVG map used by `static/fineart/museums.js`.

@@ -1,0 +1,43 @@
+{% extends "fineart/base.html" %}
+{% block title %}Great Art Museums of the World · The Great Gallery{% endblock %}
+{% block desc %}A map of {{ ms|length }} great art museums on six continents. Zoom to a continent, tap a museum, and read about its history and top masterpieces.{% endblock %}
+{% block body %}
+<main class="mus">
+  <header class="m-hero">
+    <p class="eyebrow">Where the masterpieces live</p>
+    <h1>Museums of the <em>World</em></h1>
+    <p class="lede">{{ ms|length }} great art museums on six continents. Zoom to a continent, tap a pin, and visit.</p>
+  </header>
+  <div class="m-tools">
+    <div class="m-conts" id="conts">
+      <button data-c="" class="on">🌍 World</button>
+      {% for c in conts %}<button data-c="{{ c }}">{{ c }}</button>{% endfor %}
+    </div>
+    <input id="msearch" type="search" placeholder="Find a museum or city…" autocomplete="off">
+  </div>
+  <div class="m-map" id="map">
+    <svg id="svg" role="img" aria-label="World map of art museums"></svg>
+    <div class="m-tip" id="tip" hidden></div>
+    <div class="m-zoom"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div>
+  </div>
+  <p class="m-hint">Drag to move · scroll or use +/− to zoom · tap a pin for details</p>
+
+  <div id="mlist">
+  {% for c in conts %}
+  <section class="m-group" data-c="{{ c }}">
+    <h2>{{ c }}</h2>
+    <div class="m-cards">
+      {% for m in ms if m.continent == c %}
+      <a class="m-card" href="{{ url_for('fineart.museum', slug=m.slug) }}" data-s="{{ (m.name ~ ' ' ~ m.city ~ ' ' ~ m.country)|lower }}">
+        <b>{{ m.name }}</b><span>{{ m.city }}, {{ m.country }}</span>
+        {% if m.n_works %}<em>{{ m.n_works }} paintings in the gallery</em>{% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+  </div>
+</main>
+<script>window.FA_MUSEUMS={{ slim|tojson }};</script>
+<script src="{{ url_for('static', filename='fineart/museums.js') }}?v=2"></script>
+{% endblock %}
