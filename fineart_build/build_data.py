@@ -52,13 +52,13 @@ if os.path.exists(f"{HERE}/out/fixes_hist.json"):
 NAMES = {"Q155626": "John Singer Sargent", "Q380494": "Charles Demuth", "Q44007": "Paul Klee", "Q45006": "Franz von Stuck", "Q466639": "Olga Boznańska", "Q7724": "August Strindberg",
          "Q3109429": "Nishikawa Sukenobu", "Q910913": "Kuroda Seiki", "Q983949": "Józef Chełmoński"}
 text, arttext = {}, {}
-for f in sorted(glob.glob(f"{HERE}/out/paintings_*.json")) + sorted(glob.glob(f"{HERE}/out/new_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_[0-9]*.json")):
+for f in sorted(glob.glob(f"{HERE}/out/paintings_*.json")) + sorted(glob.glob(f"{HERE}/out/new_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_[0-9]*.json")) + sorted(glob.glob(f"{HERE}/out/style_[0-9]*.json")):
     for row in json.load(open(f)):
         if not row[3].startswith("Skip"): text[row[0]] = row[1:]
 patch = L("out/text_patch.json")
 for i, w in patch.items():
     if i in text: text[i][2] = w
-for f in sorted(glob.glob(f"{HERE}/out/artists_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_artists_*.json")):
+for f in sorted(glob.glob(f"{HERE}/out/artists_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_artists_*.json")) + sorted(glob.glob(f"{HERE}/out/style_artists_*.json")):
     for row in json.load(open(f)): arttext[row[0]] = row[1]
 extra = L("out/artist_extra.json") if os.path.exists(f"{HERE}/out/artist_extra.json") else {}
 kids = {r[0]: r[1] for r in L("out/kids.json")}
@@ -117,6 +117,52 @@ for slug, group, emoji, name, blurb, intro in COLLECTIONS:
         byid[i].setdefault("c", []).append(slug)
 for i, k in kids.items():
     if i in byid: byid[i]["k"] = k
+
+# ---- Styles & movements
+sys.path.insert(0, f"{HERE}/styles")
+from styles_rules import STYLES
+from abstract_picks import SECTIONS
+STYLE_BLURBS = {
+ "impressionism": ("Quick brushstrokes, sparkling light and everyday moments: the painters who stopped trying to hide their brushwork.", "In the 1860s and 70s a group of Paris painters left their studios and painted outside, catching the light of a single moment. Critics laughed and named them after one of Monet's paintings, Impression, Sunrise. Look for dabs of color that blend only when you step back."),
+ "post-impressionism": ("Van Gogh's swirls, Cézanne's apples, Gauguin's flat color: artists who took Impressionism somewhere new.", "After Impressionism, painters wanted to say more than just how a moment looked. Van Gogh turned feelings into thick swirling brushstrokes, Cézanne built pictures from solid shapes, Seurat used tiny dots and Gauguin used flat, bold color."),
+ "romanticism": ("Wild storms, misty mountains and big feelings: nature and imagination in charge.", "Romantic painters believed feelings mattered more than rules. They painted shipwrecks, thunderstorms, haunted ruins and lonely figures staring at huge landscapes, to make you feel how small and amazed a person can be."),
+ "realism": ("Real people, real work, real life: painters who showed the world as it is.", "Realist painters decided that farmers, stone breakers and city crowds were as worthy of a big painting as kings and gods. They painted what they saw, with no prettying-up."),
+ "neoclassicism": ("Heroes in togas, perfect poses and Greek and Roman stories: clear, balanced and carefully painted.", "In the late 1700s and 1800s artists copied the order and calm of ancient Greece and Rome. This collection covers Neoclassicism and the polished academic painters who followed, famous for smooth finish and big stories from history and myth."),
+ "pre-raphaelites": ("Knights, maidens, mermaids and jewel-bright colors: dreamy Victorian storytelling.", "In 1848 a group of young English painters, the Pre-Raphaelite Brotherhood, wanted to paint with the honest detail and bright color of art before Raphael. They filled pictures with legends, poems and gorgeous flowers. Later painters carried on the dream."),
+ "symbolism": ("Dreams, moods and mysteries: artists who painted ideas and feelings you can't quite name.", "Symbolist and Art Nouveau artists painted dreams, myths and moods, and swirled flowing lines through posters, jewelry and buildings. Look for gold, mysterious faces and curving, plant-like shapes."),
+ "expressionism": ("Paint it how it feels: wild color, bold lines and strong emotion.", "Expressionist and Fauvist painters used color and shape to show feelings. Matisse and the Fauves, called wild beasts by a critic, painted in bright, flat color. In Germany and Austria, Expressionists turned anxiety, joy and energy into paint."),
+ "hudson-river": ("Glowing mountains, waterfalls and endless skies: the great American landscape painters.", "In the 1800s painters of the Hudson River School showed America as a wild, glowing paradise, with huge skies, peaks and rivers. They traveled far to sketch the real places, then made giant pictures that made people proud of their land."),
+ "ukiyo-e": ("Great waves, rainy bridges and kabuki stars: Japan's woodblock prints that stunned Europe.", "Ukiyo-e means pictures of the floating world. Artists drew a design, carvers cut it into wooden blocks and printers pressed the colors one at a time, making cheap prints for everyone. They inspired Monet and Van Gogh."),
+ "rococo": ("Pastel elegance, flirty swings and fancy portraits: art of the 1700s.", "The 1700s loved lightness: pink and blue colors, curling frills, picnics, portraits and glittering views of Venice. Look for playful details and fancy clothes."),
+}
+ABS_BLURB = "Pictures that don't show things, but color, shape and feeling: Kandinsky, Mondrian, Klee, Hilma af Klint and many more."
+ABS_INTRO = "Abstract art is painting without a picture of something. Instead of a person, tree or boat, you get colors, lines and shapes that make you feel something, like music you can see. A few artists in the early 1900s, in Munich, Moscow, Paris and Stockholm, realized that paint didn't have to copy the world. This collection takes you from the painters who were nearly there, through the pioneers, to playful corners like Klee's cats and fish and Schwitters's collages made from trash. Try asking: what does this sound like? What would it feel like to step inside?"
+qid2pid = {r["qid"]: o["id"] for r, o in items if r.get("qid")}
+def abs_ids(lst):
+    out = []
+    for x in lst:
+        pid = qid2pid.get(x, x) if re.match(r"^Q\d+$", x) else x
+        if pid in byid and not byid[pid].get("n") and pid not in out: out.append(pid)
+    return out
+sections = [{"title": t, "blurb": b, "ids": abs_ids(l)} for t, b, l in SECTIONS]
+sections = [s_ for s_ in sections if s_["ids"]]
+all_abs = [i for s_ in sections for i in s_["ids"]]
+cols.append({"slug": "abstract", "group": "styles", "emoji": "🌀", "name": "Abstract Art", "blurb": ABS_BLURB, "intro": ABS_INTRO, "ids": list(dict.fromkeys(all_abs)), "sections": sections, "featured": True, "cover_id": "several-circles", "covers": ["several-circles", "the-ten-largest-no-3-youth", "composition-with-large-red-plane-yellow-black-grey-and-", "fish-magic"]})
+for i in dict.fromkeys(all_abs): byid[i].setdefault("c", []).append("abstract")
+for slug, emoji, name, names, (y0, y1) in STYLES:
+    cap = 12 if slug in ("impressionism", "post-impressionism", "romanticism", "realism", "neoclassicism", "rococo") else 15
+    per, ids = {}, []
+    for p in sorted(paintings, key=lambda p: p["r"]):
+        if p.get("n") or not (y0 <= p["y"] <= y1): continue
+        a0 = artists_pre.get(p["a"][0], {}).get("n", "") if False else A.get(p["a"][0], {}).get("name", "")
+        if not any(n.lower() in a0.lower() for n in names): continue
+        if per.get(a0, 0) >= cap: continue
+        per[a0] = per.get(a0, 0) + 1; ids.append(p["id"])
+        if len(ids) >= 90: break
+    if len(ids) < 8: continue
+    blurb, intro = STYLE_BLURBS[slug]
+    cols.append({"slug": slug, "group": "styles", "emoji": emoji, "name": name, "blurb": blurb, "intro": intro, "ids": ids})
+    for i in ids: byid[i].setdefault("c", []).append(slug)
 
 used = {a for p in paintings for a in p["a"]}
 artists = {}

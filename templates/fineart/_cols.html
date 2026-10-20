@@ -1,4 +1,4 @@
-{% macro cards(kids, heritage, world) %}
+{% macro cards(kids, heritage, world, styles=[]) %}
 {% if kids %}
 <a class="kids-banner" href="{{ url_for('fineart.collection', slug='kids') }}">
   <span class="kb-art">{% for i in range(3) %}{% endfor %}{% if kids.cover %}<img src="{{ fa_img(kids.cover, 500) }}" alt="" loading="lazy">{% endif %}</span>
@@ -13,6 +13,23 @@
   </a>
   {% endfor %}
 </div>
+{% if styles %}
+<h3 class="sub" id="styles">Styles &amp; <em>movements</em></h3>
+{% for c in styles if c.featured %}
+<a class="abs-banner" href="{{ url_for('fineart.collection', slug=c.slug) }}">
+  <span class="ab-txt"><span class="kb-tag">Big collection</span><b>{{ c.emoji }} {{ c.name }}</b><small>{{ c.blurb }}</small><em class="btn gold sm">Explore {{ c.count }} abstract works →</em></span>
+  <span class="ab-art">{% for p in c.covers[:4] %}<img loading="lazy" src="{{ fa_img(p, 330) }}" alt="{{ p.t }}">{% endfor %}</span>
+</a>
+{% endfor %}
+<div class="col-grid style-grid">
+  {% for c in styles if not c.featured %}
+  <a class="col-card" href="{{ url_for('fineart.collection', slug=c.slug) }}">
+    {% if c.cover %}<span class="cc-img" style="background-image:url({{ fa_img(c.cover, 500) }})"></span>{% endif %}
+    <span class="cc-txt"><i>{{ c.emoji }}</i><b>{{ c.name }}</b><small>{{ c.blurb }}</small><em>{{ c.count }} paintings</em></span>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
 <h3 class="sub">Around the <em>world</em></h3>
 <div class="world-grid">
   {% for c in world %}

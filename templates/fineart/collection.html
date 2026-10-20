@@ -7,7 +7,7 @@
   <header class="col-hero">
     <div class="col-emoji">{{ c.emoji }}</div>
     <div>
-      <p class="eyebrow">{{ 'Collection' if c.group != 'kids' else 'Just for you' }}</p>
+      <p class="eyebrow">{{ 'Style & movement' if c.group == 'styles' else ('Collection' if c.group != 'kids' else 'Just for you') }}</p>
       <h1>{{ c.name }}</h1>
       <p class="lede">{{ c.intro }}</p>
       <p class="count"><b>{{ works|length }}</b> paintings</p>
@@ -23,6 +23,20 @@
     </a>
     {% endfor %}
   </div>
+  {% elif secs %}
+  {% for sec in secs %}
+  <section class="col-sec">
+    <h2>{{ sec.title }}</h2><p>{{ sec.blurb }}</p>
+    <div class="wall">
+      {% for p in sec.works %}
+      <a class="card" href="{{ url_for('fineart.painting', pid=p.id) }}" style="aspect-ratio:{{ fa_ar(p) }}">
+        <img loading="lazy" decoding="async" src="{{ fa_img(p, 500) }}" alt="{{ p.t }}">
+        <span class="cap"><b>{{ p.t }}</b><i>{{ artists[p.a[0]].n }} · {{ p.y }}</i></span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
   {% else %}
   <div class="wall">
     {% for p in works %}

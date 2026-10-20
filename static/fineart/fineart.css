@@ -403,3 +403,18 @@ select option{color:#000}
 .ht-orbs span:first-child{margin-left:0}.ht-orbs img{width:100%;height:100%;object-fit:cover}
 @media (max-width:760px){.hist-teaser{grid-template-columns:1fr}.ht-orbs{order:-1;justify-content:flex-start}}
 @media (max-width:430px){.brand-text{display:none}.top nav a.pill{padding:9px 12px;font-size:.88rem}}
+
+/* styles & movements */
+.abs-banner{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.2fr);gap:20px;align-items:center;margin:0 0 20px;padding:clamp(20px,3vw,34px);border-radius:28px;overflow:hidden;text-decoration:none;color:var(--cream);
+  background:radial-gradient(circle at 46% 108%,#ff8fa3 0 9%,transparent 9.4%),radial-gradient(circle at 90% 85%,#f4c95d 0 9%,transparent 9.4%),linear-gradient(135deg,#2a5cff 0%,#7b3fe4 55%,#ff5d8f 100%);box-shadow:0 22px 50px rgba(0,0,30,.45),inset 0 0 0 2px rgba(255,255,255,.3);transition:.3s cubic-bezier(.2,.8,.2,1)}
+.abs-banner:hover{transform:translateY(-4px);box-shadow:0 30px 60px rgba(0,0,30,.55),0 0 70px rgba(150,100,255,.5)}
+.ab-txt{display:grid;gap:8px;justify-items:start;position:relative;z-index:1}
+.ab-txt b{font:800 clamp(1.7rem,4vw,2.5rem)/1.05 var(--serif)}
+.ab-txt small{font-size:1.02rem;max-width:46ch;opacity:.95}
+.ab-art{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:end}
+.ab-art img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;border:3px solid #fff6e2;box-shadow:0 12px 26px rgba(0,0,40,.45);transition:.4s}
+.ab-art img:nth-child(odd){transform:translateY(-8px) rotate(-2deg)}.ab-art img:nth-child(even){transform:translateY(8px) rotate(2deg)}
+.abs-banner:hover .ab-art img{transform:translateY(0) rotate(0) scale(1.04)}
+.col-sec{margin:34px 0 8px}.col-sec h2{font:600 1.7rem var(--serif);margin:0 0 4px}.col-sec h2:before{content:"";display:inline-block;width:10px;height:26px;border-radius:5px;background:var(--gold);margin-right:12px;vertical-align:-4px}
+.col-sec>p{margin:0 0 14px;color:var(--mute);max-width:70ch}
+@media (max-width:760px){.abs-banner{grid-template-columns:1fr}.ab-art{order:-1}}

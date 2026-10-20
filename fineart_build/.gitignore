@@ -11,3 +11,5 @@ hist/cand_cat/
 hist/wp/
 hist/*.log
 hist/__pycache__/
+styles/abs_cands.json
+styles/__pycache__/

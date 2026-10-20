@@ -59,3 +59,7 @@ Env vars on Render: `DATABASE_URL` (Postgres — SQLite files don't survive depl
 A tree-shaped timeline (`/fineart/history`) of 43 events from the Persian Wars to the Moon landing and the Vietnam War, each with an event page (`/fineart/history/<slug>`) of ~10–18 artworks; paintings link back to their events ("Part of history").
 Data: `data/fineart/history.json`, built by `fineart_build/build_data.py` from `fineart_build/hist/` (`events.py`, `events_text.py`, `picks_a.py`/`picks_b.py`, `resolved.json`) plus `base4.json` and the hand-written text in `fineart_build/out/hist_*.json`.
 Works after 1929 are limited to public-domain sources (US-government art and photographs, NASA, Canadian war art), so the later events lean on those.
+
+### /fineart collections: styles & movements
+
+`fineart_build/styles/` holds `styles_rules.py` (artist/period rules for Impressionism, Romanticism, etc., capped per artist) and `abstract_picks.py` (the six sections of the Abstract Art collection). `build_data.py` turns them into `group: "styles"` collections; new abstract works are added by `styles/add_styles.py` into `base4.json`, with text in `out/style_*.json`.

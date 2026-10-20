@@ -136,8 +136,9 @@ def collection_cards(data):
     """Collections with a cover painting (first non-nude one) for the home page and index."""
     out = []
     for c in data.get("collections", []):
-        cover = next((data["by_id"][i] for i in c["ids"] if i in data["by_id"] and not data["by_id"][i].get("n")), None)
-        out.append(c | {"cover": cover, "count": len(c["ids"])})
+        cover = data["by_id"].get(c.get("cover_id")) or next((data["by_id"][i] for i in c["ids"] if i in data["by_id"] and not data["by_id"][i].get("n")), None)
+        covers = [data["by_id"][i] for i in c.get("covers", []) if i in data["by_id"]]
+        out.append(c | {"cover": cover, "covers": covers, "count": len(c["ids"])})
     return out
 
 
@@ -156,7 +157,8 @@ def index():
         evs = {e["slug"]: e for e in load_history()["events"]}
         teaser = [evs[k] for k in ("persian-wars", "caesar", "reformation", "french-revolution", "wwi") if k in evs and evs[k]["cover"]]
     return render_template("fineart/index.html", hist_teaser=teaser, genres=data["genres"], total=total, kids=next((c for c in cols if c["slug"] == "kids"), None),
-                           heritage=[c for c in cols if c["group"] == "heritage"], world=[c for c in cols if c["group"] == "world"])
+                           heritage=[c for c in cols if c["group"] == "heritage"], world=[c for c in cols if c["group"] == "world"],
+                           styles=[c for c in cols if c["group"] == "styles"])
 
 
 @bp.route("/data.json")
@@ -225,7 +227,8 @@ def collections():
     data = load()
     cols = collection_cards(data)
     return render_template("fineart/collections.html", kids=next((c for c in cols if c["slug"] == "kids"), None),
-                           heritage=[c for c in cols if c["group"] == "heritage"], world=[c for c in cols if c["group"] == "world"])
+                           heritage=[c for c in cols if c["group"] == "heritage"], world=[c for c in cols if c["group"] == "world"],
+                           styles=[c for c in cols if c["group"] == "styles"])
 
 
 @bp.route("/collection/<slug>")
@@ -235,8 +238,9 @@ def collection(slug):
     if not c:
         abort(404)
     works = [data["by_id"][i] for i in c["ids"] if i in data["by_id"]]
+    secs = [dict(sec, works=[data["by_id"][i] for i in sec["ids"] if i in data["by_id"]]) for sec in c.get("sections", [])]
     others = [x for x in collection_cards(data) if x["slug"] != slug]
-    return render_template("fineart/collection.html", c=c, works=works, artists=data["artists"], genres=data["genres"], others=others)
+    return render_template("fineart/collection.html", c=c, works=works, secs=secs, artists=data["artists"], genres=data["genres"], others=others)
 
 
 @bp.route("/today")
