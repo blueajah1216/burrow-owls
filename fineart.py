@@ -21,7 +21,10 @@ bp = Blueprint("fineart", __name__, url_prefix="/fineart")
 
 DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "fineart", "gallery.json")
 
+HISTORY_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "fineart", "history.json")
+
 _cache = {"mtime": None, "data": None}
+_hcache = {"mtime": None, "data": None}
 
 
 def load():
@@ -39,6 +42,44 @@ def load():
         data["col_by_slug"] = {c["slug"]: c for c in data.get("collections", [])}
         _cache.update(mtime=mtime, data=data)
     return _cache["data"]
+
+
+def load_history():
+    """history.json (eras + events); each event lists painting ids from gallery.json with a short note."""
+    gal = load()
+    key = (os.path.getmtime(HISTORY_PATH), _cache["mtime"])
+    if _hcache["mtime"] != key:
+        with open(HISTORY_PATH, encoding="utf-8") as f:
+            h = json.load(f)
+        by_id = gal["by_id"]
+        ev_of = {}
+        for i, e in enumerate(h["events"]):
+            e["works"] = [w | {"p": by_id[w["id"]]} for w in e["items"] if w["id"] in by_id]
+            e["cover"] = by_id.get(e.get("cover")) or next((w["p"] for w in e["works"] if not w["p"].get("n")), None)
+            e["count"] = sum(1 for w in e["works"] if not w["p"].get("n"))
+            for w in e["works"]:
+                ev_of.setdefault(w["id"], []).append(e)
+        h["events_by_slug"] = {e["slug"]: e for e in h["events"]}
+        h["eras_by_id"] = {r["id"]: r for r in h["eras"]}
+        h["event_of"] = ev_of
+        _hcache.update(mtime=key, data=h)
+    return _hcache["data"]
+
+
+def era_label(y):
+    """-490 -> '490 BC', 1789 -> '1789'."""
+    return f"{-y} BC" if y < 0 else str(y)
+
+
+def span_label(e):
+    a, b = e["start"], e["end"]
+    if a == b:
+        return era_label(a)
+    if a < 0 and b > 0:
+        return f"{-a} BC – {b} AD"
+    if a < 0 and b < 0:
+        return f"{-a}–{-b} BC"
+    return f"{a}–{b}"
 
 
 STD_WIDTHS = (250, 330, 500, 960, 1280, 1920, 3840)
@@ -85,8 +126,10 @@ def card_ratio(p):
 
 
 def lived(a):
-    b, d = a.get("b") or "?", a.get("d") or "?"
-    return f"{b}–{d}"
+    b, d = a.get("b"), a.get("d")
+    if b is None and d is None:
+        return "Unknown or anonymous artist"
+    return f"{b or '?'}–{d or '?'}"
 
 
 def collection_cards(data):
@@ -99,7 +142,7 @@ def collection_cards(data):
 
 
 def init_fineart(app):
-    app.jinja_env.globals.update(fa_img=img_url, fa_lived=lived, fa_ar=card_ratio, fa_prints=print_links, fa_map=map_url)
+    app.jinja_env.globals.update(fa_span=span_label, fa_img=img_url, fa_lived=lived, fa_ar=card_ratio, fa_prints=print_links, fa_map=map_url)
     app.register_blueprint(bp)
 
 
@@ -108,7 +151,11 @@ def index():
     data = load()
     total = sum(1 for p in data["paintings"] if not p.get("n"))
     cols = collection_cards(data)
-    return render_template("fineart/index.html", genres=data["genres"], total=total, kids=next((c for c in cols if c["slug"] == "kids"), None),
+    teaser = []
+    if os.path.exists(HISTORY_PATH):
+        evs = {e["slug"]: e for e in load_history()["events"]}
+        teaser = [evs[k] for k in ("persian-wars", "caesar", "reformation", "french-revolution", "wwi") if k in evs and evs[k]["cover"]]
+    return render_template("fineart/index.html", hist_teaser=teaser, genres=data["genres"], total=total, kids=next((c for c in cols if c["slug"] == "kids"), None),
                            heritage=[c for c in cols if c["group"] == "heritage"], world=[c for c in cols if c["group"] == "world"])
 
 
@@ -156,9 +203,10 @@ def painting(pid):
     like = [x for x in data["paintings"] if x["g"] == p["g"] and x["id"] != pid and not x.get("n")]
     like = sorted(like, key=lambda x: abs(x["y"] - p["y"]))[:12]
     cols = [data["col_by_slug"][s] for s in p.get("c", []) if s in data["col_by_slug"]]
+    events = load_history()["event_of"].get(pid, []) if os.path.exists(HISTORY_PATH) else []
     return render_template(
         "fineart/painting.html", p=p, cols=cols, artists=artists, genre=data["genres"][p["g"]], genres=data["genres"],
-        prev_p=prev_p, next_p=next_p, same_artist=same_artist, like=like, g=g,
+        prev_p=prev_p, next_p=next_p, same_artist=same_artist, like=like, g=g, events=events,
     )
 
 
@@ -196,3 +244,26 @@ def today():
     data = load()
     pool = [p for p in data["paintings"] if p.get("k") and not p.get("n")]  # always something cheerful
     return redirect(url_for("fineart.painting", pid=pool[date.today().toordinal() % len(pool)]["id"]))
+
+
+# ---------------------------------------------------------------- Art Through History
+
+@bp.route("/history")
+def history():
+    data, h = load(), load_history()
+    eras = [r | {"events": [e for e in h["events"] if e["era"] == r["id"]]} for r in h["eras"]]
+    return render_template("fineart/history.html", eras=eras, total=sum(e["count"] for e in h["events"]), n_events=len(h["events"]))
+
+
+@bp.route("/history/<slug>")
+def history_event(slug):
+    data, h = load(), load_history()
+    e = h["events_by_slug"].get(slug)
+    if not e:
+        abort(404)
+    i = h["events"].index(e)
+    prev_e = h["events"][i - 1] if i > 0 else None
+    next_e = h["events"][i + 1] if i + 1 < len(h["events"]) else None
+    era = h["eras_by_id"][e["era"]]
+    eras = [r | {"events": [x for x in h["events"] if x["era"] == r["id"]]} for r in h["eras"]]
+    return render_template("fineart/history_event.html", e=e, era=era, eras=eras, prev_e=prev_e, next_e=next_e, artists=data["artists"])

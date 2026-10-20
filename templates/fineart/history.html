@@ -1,0 +1,43 @@
+{% extends "fineart/base.html" %}
+{% block title %}Art Through History · The Great Gallery{% endblock %}
+{% block desc %}A tree of Western history from ancient Greece to the Moon landing. Pick a big event — the Fall of Rome, the Reformation, the French Revolution, World War I — and see great artworks about it.{% endblock %}
+{% block body %}
+<main class="hist">
+  <header class="h-hero">
+    <p class="eyebrow">Time travel with paintings</p>
+    <h1>Art Through <em>History</em></h1>
+    <p class="lede">From the battlefield of Marathon to the surface of the Moon: pick a big moment in Western history and see how artists painted it — some who were there, some centuries later.</p>
+    <div class="h-pick" id="pick">
+      {% for era in eras %}
+      <div class="pick-era" style="--c:{{ era.color }}">
+        <h2>{{ era.name }}</h2>
+        <div class="pick-chips">{% for e in era.events %}<a class="pchip" href="{{ url_for('fineart.history_event', slug=e.slug) }}">{{ e.title }}</a>{% endfor %}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="h-count"><b>{{ n_events }}</b> events · <b>{{ total }}</b> artworks <a class="h-down" href="#tree">See the tree of history ↓</a></p>
+  </header>
+
+  <section class="tree" id="tree" aria-label="Timeline of Western history">
+    <svg class="trunk" aria-hidden="true"></svg>
+    <div class="t-start"><span>🌱 The roots</span><small>Ancient Greece &amp; Rome</small></div>
+    {% set ns = namespace(i=0) %}
+    {% for era in eras %}
+    <div class="era" style="--c:{{ era.color }}" id="era-{{ era.id }}">
+      <div class="era-head"><b>{{ era.name }}</b><small>{{ era.sub }}</small></div>
+      <div class="era-body">
+        {% for e in era.events %}
+        <a class="node {{ 'l' if ns.i % 2 == 0 else 'r' }}" href="{{ url_for('fineart.history_event', slug=e.slug) }}" style="--r:{{ loop.index0 }}">
+          <span class="orb">{% if e.cover %}<img loading="lazy" decoding="async" src="{{ fa_img(e.cover, 330) }}" alt="{{ e.cover.t }}" style="object-position:{{ e.pos or '50% 40%' }}">{% endif %}</span>
+          <span class="nt"><b>{{ e.title }}</b><i>{{ fa_span(e) }}</i><em>{{ e.count }} artworks</em></span>
+        </a>
+        {% set ns.i = ns.i + 1 %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    <div class="t-end"><span>🌿 …and the story goes on</span></div>
+  </section>
+</main>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='fineart/history.js') }}?v=1"></script>{% endblock %}

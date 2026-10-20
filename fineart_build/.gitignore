@@ -6,3 +6,8 @@ loc2.json
 cand_*.json
 pool.json
 artist_search.json
+hist/cand/
+hist/cand_cat/
+hist/wp/
+hist/*.log
+hist/__pycache__/

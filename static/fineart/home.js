@@ -10,7 +10,7 @@
 
   fetch('/fineart/data.json').then(r => r.json()).then(d => {
     D = d;
-    d.paintings.forEach(p => { const names = p.a.map(a => d.artists[a]?.n || '').join(' '); p._s = norm(`${p.t} ${names} ${p.y} ${d.genres[p.g].name} ${p.why} ${p.m}`); });
+    d.paintings.forEach(p => { const names = p.a.map(a => d.artists[a]?.n || '').join(' '); p._s = norm(`${p.t} ${names} ${p.y} ${d.genres[p.g].name} ${p.why} ${p.m || ''}`); });
     readUrl(); hero(); rooms(); render();
   });
 

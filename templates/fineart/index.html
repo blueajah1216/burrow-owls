@@ -23,6 +23,16 @@
     </a>
   </section>
 
+  {% if hist_teaser %}
+  <a class="hist-teaser" href="{{ url_for('fineart.history') }}">
+    <div><p class="eyebrow">New · Time travel with paintings</p>
+      <h2>Art Through <em>History</em></h2>
+      <p>A tree of Western history from ancient Greece to the Moon landing. Pick the Fall of Rome, the Reformation, the French Revolution or World War I — and see great artworks about it.</p>
+      <span class="btn gold sm">Explore the timeline →</span></div>
+    <div class="ht-orbs">{% for e in hist_teaser %}<span><img loading="lazy" src="{{ fa_img(e.cover, 330) }}" alt="{{ e.title }}"></span>{% endfor %}</div>
+  </a>
+  {% endif %}
+
   <section class="cols" id="collections" aria-label="Collections">
     <h2 class="sec">Explore by <em>collection</em></h2>
     {{ cards(kids, heritage, world) }}
@@ -47,6 +57,7 @@
       </label>
       <select id="era" aria-label="Era">
         <option value="">All eras</option>
+        <option value="0-1725">Before 1726</option>
         <option value="1726-1799">1700s</option>
         <option value="1800-1849">Early 1800s</option>
         <option value="1850-1879">Mid 1800s</option>

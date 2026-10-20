@@ -53,3 +53,9 @@ Tables `fa_users` and `fa_favorites` are created by `db.create_all()`. Anonymous
 
 Env vars on Render: `DATABASE_URL` (Postgres — SQLite files don't survive deploys), `SECRET_KEY` (required), and for Google
 `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` (authorized redirect URI: `https://theburrowowls.com/fineart/auth/google/callback`).
+
+### /fineart/history — Art Through History
+
+A tree-shaped timeline (`/fineart/history`) of 43 events from the Persian Wars to the Moon landing and the Vietnam War, each with an event page (`/fineart/history/<slug>`) of ~10–18 artworks; paintings link back to their events ("Part of history").
+Data: `data/fineart/history.json`, built by `fineart_build/build_data.py` from `fineart_build/hist/` (`events.py`, `events_text.py`, `picks_a.py`/`picks_b.py`, `resolved.json`) plus `base4.json` and the hand-written text in `fineart_build/out/hist_*.json`.
+Works after 1929 are limited to public-domain sources (US-government art and photographs, NASA, Canadian war art), so the later events lean on those.

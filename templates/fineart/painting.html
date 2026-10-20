@@ -45,6 +45,15 @@
         <p>{{ p.why }}</p>
       </section>
 
+      {% if events %}
+      <section class="why hist-card">
+        <h2>🏛️ Part of history</h2>
+        {% for e in events %}
+        <p><a href="{{ url_for('fineart.history_event', slug=e.slug) }}"><b>{{ e.title }}</b></a> <small>({{ fa_span(e) }})</small>{% for w in e.works if w.id == p.id and w.note %} — {{ w.note }}{% endfor %}</p>
+        {% endfor %}
+      </section>
+      {% endif %}
+
 
       {% if p.k %}<section class="kidbox"><h2>👀 Look closer!</h2><p>{{ p.k }}</p></section>{% endif %}
 

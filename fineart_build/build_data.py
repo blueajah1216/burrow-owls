@@ -3,6 +3,7 @@ import json, glob, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 L = lambda f: json.load(open(f"{HERE}/{f}"))
 b2, b3 = L("base2.json"), L("base3.json")
+b4 = L("base4.json") if os.path.exists(f"{HERE}/base4.json") else {"paintings": [], "artists": {}}
 sel_d = L("sel.json"); SEL, POOL = sel_d["sel"], sel_d["pool"]
 
 GENRES = [
@@ -45,27 +46,35 @@ COLLECTIONS = [  # slug, group, emoji, name, blurb, intro
 ]
 
 fixes = L("out/fixes.json"); locs = L("out/locations.json")
+if os.path.exists(f"{HERE}/out/locations_hist.json"): locs |= L("out/locations_hist.json")
+if os.path.exists(f"{HERE}/out/fixes_hist.json"):
+    for k, v in L("out/fixes_hist.json").items(): fixes.setdefault(k, {}).update(v)
 NAMES = {"Q155626": "John Singer Sargent", "Q380494": "Charles Demuth", "Q44007": "Paul Klee", "Q45006": "Franz von Stuck", "Q466639": "Olga Boznańska", "Q7724": "August Strindberg",
          "Q3109429": "Nishikawa Sukenobu", "Q910913": "Kuroda Seiki", "Q983949": "Józef Chełmoński"}
 text, arttext = {}, {}
-for f in sorted(glob.glob(f"{HERE}/out/paintings_*.json")) + sorted(glob.glob(f"{HERE}/out/new_*.json")):
+for f in sorted(glob.glob(f"{HERE}/out/paintings_*.json")) + sorted(glob.glob(f"{HERE}/out/new_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_[0-9]*.json")):
     for row in json.load(open(f)):
         if not row[3].startswith("Skip"): text[row[0]] = row[1:]
 patch = L("out/text_patch.json")
 for i, w in patch.items():
     if i in text: text[i][2] = w
-for f in sorted(glob.glob(f"{HERE}/out/artists_*.json")):
+for f in sorted(glob.glob(f"{HERE}/out/artists_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_artists_*.json")):
     for row in json.load(open(f)): arttext[row[0]] = row[1]
 extra = L("out/artist_extra.json") if os.path.exists(f"{HERE}/out/artist_extra.json") else {}
 kids = {r[0]: r[1] for r in L("out/kids.json")}
 
 # ---- artists
 A = {}
-for src in (b2["artists"], b3["artists"]):
+for src in (b2["artists"], b3["artists"], b4["artists"]):
     for q, x in src.items():
         A.setdefault(q, {}).update({k: v for k, v in x.items() if v})
 for q, n in NAMES.items():
     A.setdefault(q, {})["name"] = n
+if os.path.exists(f"{HERE}/out/hist_artist_fix.json"):
+    for q, v in L("out/hist_artist_fix.json").items():
+        for k, val in v.items():
+            if val is None: A.setdefault(q, {}).pop(k, None)
+            else: A.setdefault(q, {})[k] = val
 def yr(s): return int(s[:4]) if s and re.match(r"^-?\d{4}", s) else None
 
 # ---- paintings
@@ -81,11 +90,13 @@ def add(r, new):
     o = {"id": r["id"], "t": r["title"], "a": r["artist_ids"], "y": r["year"], "g": g - 1, "w": r["w"], "h": r["h"],
          "u": r["thumb"].split("?")[0], "p": r["page"], "m": "", "why": why, "sl": r["sl"]}
     if n: o["n"] = 1
+    if r.get("med"): o["m"] = r["med"]
     if r["id"] in locs:
         o["l"] = [("China" if x == "People's Republic of China" else x) for x in locs[r["id"]]]
     items.append((r, o))
 for r in b2["paintings"]: add(r, False)
 for r in b3["paintings"]: add(r, True)
+for r in b4["paintings"]: add(r, True)
 items.sort(key=lambda x: (-x[1]["sl"], x[1]["y"]))
 paintings = []
 for rank, (r, o) in enumerate(items):
@@ -113,7 +124,35 @@ for a in used:
     x = A[a]
     bio = arttext.get(a, "(biography coming soon)") + (" " + extra[a] if a in extra else "")
     artists[a] = {"n": x.get("name", a), "b": yr(x.get("birth")), "d": yr(x.get("death")), "bi": x.get("born_in", ""), "di": x.get("died_in", ""), "bio": bio}
+# ---- Art Through History
+def build_history():
+    sys.path.insert(0, f"{HERE}/hist")
+    from events import ERAS, EV
+    from events_text import T
+    R = L("hist/resolved.json")
+    notes = L("out/hist_notes.json") if os.path.exists(f"{HERE}/out/hist_notes.json") else {}
+    covers = L("hist/covers.json") if os.path.exists(f"{HERE}/hist/covers.json") else {}
+    def span_ok(p): return 1000 <= p["w"] and 0.7 <= p["w"] / p["h"] <= 2.2
+    events = []
+    for slug, era, title, start, end, _terms in EV:
+        items = []
+        for d in R.get(slug, []):
+            pid = d.get("gal") or d["new"]["id"]
+            if pid not in byid: continue
+            note = d.get("note") or notes.get(f"{slug}/{pid}") or ""
+            if not note:  # fall back to the first sentence of the painting's own description
+                first = re.split(r"(?<=[.!?])\s+", byid[pid]["why"].strip())[0]
+                note = first if len(first) <= 230 else ""
+            items.append({"id": pid, **({"note": note} if note else {})})
+        pool = [i for i in items if not byid[i["id"]].get("n")]
+        cover = covers.get(slug) if covers.get(slug) in byid else next((i["id"] for i in pool if span_ok(byid[i["id"]])), pool[0]["id"] if pool else None)
+        events.append({"slug": slug, "era": era, "title": title, "start": start, "end": end, "summary": T[slug][0], "why": T[slug][1], "cover": cover, "items": items})
+    eras = [{"id": i, "name": n, "sub": s, "color": c} for i, n, s, c in ERAS]
+    json.dump({"eras": eras, "events": events}, open(f"{HERE}/../data/fineart/history.json", "w"), ensure_ascii=False, separators=(",", ":"))
+    print("history:", len(events), "events,", sum(len(e["items"]) for e in events), "items;", "short:", [(e["slug"], len(e["items"])) for e in events if sum(1 for i in e["items"]) < 10])
+
 os.makedirs(f"{HERE}/../data/fineart", exist_ok=True)
 json.dump({"genres": GENRES, "collections": cols, "artists": artists, "paintings": paintings}, open(f"{HERE}/../data/fineart/gallery.json", "w"), ensure_ascii=False, separators=(",", ":"))
 print(len(paintings), "paintings,", len(artists), "artists,", len(cols), "collections;", {c["slug"]: len(c["ids"]) for c in cols})
 print("missing bios:", [artists[a]["n"] for a in artists if "coming soon" in artists[a]["bio"]])
+build_history()

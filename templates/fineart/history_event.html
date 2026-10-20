@@ -1,0 +1,60 @@
+{% extends "fineart/base.html" %}
+{% block title %}{{ e.title }} in art · The Great Gallery{% endblock %}
+{% block desc %}{{ e.summary[:190] }}{% endblock %}
+{% block og %}{% if e.cover %}<meta property="og:image" content="{{ fa_img(e.cover, 960) }}">{% endif %}<meta property="og:title" content="{{ e.title }} — Art Through History">{% endblock %}
+{% block body %}
+<main class="hist hev" style="--c:{{ era.color }}">
+  <div class="crumbs"><a href="{{ url_for('fineart.history') }}">← Art Through History</a> <span>›</span> <span>{{ era.name }}</span></div>
+
+  <header class="ev-hero">
+    <div class="ev-txt">
+      <p class="eyebrow">{{ fa_span(e) }}</p>
+      <h1>{{ e.title }}</h1>
+      <p class="lede">{{ e.summary }}</p>
+      <div class="ev-why"><h2>Why artists painted it</h2><p>{{ e.why }}</p></div>
+    </div>
+    {% if e.cover %}
+    <a class="ev-cover frame" href="{{ url_for('fineart.painting', pid=e.cover.id) }}">
+      <img src="{{ fa_img(e.cover, 960) }}" alt="{{ e.cover.t }}" style="max-height:440px;object-fit:contain">
+      <span class="plaque"><b>{{ e.cover.t }}</b> · {{ artists[e.cover.a[0]].n }}, {{ e.cover.y }}</span>
+    </a>
+    {% endif %}
+  </header>
+
+  <nav class="ev-jump" aria-label="Pick another event">
+    <a class="btn ghost sm" href="{{ url_for('fineart.history_event', slug=prev_e.slug) if prev_e else '#' }}" {% if not prev_e %}aria-disabled="true" style="visibility:hidden"{% endif %}>← {{ prev_e.title if prev_e }}</a>
+    <label class="jump-sel"><span>Jump to another event</span>
+      <select id="jump" aria-label="Choose a historical event">
+        {% for r in eras %}<optgroup label="{{ r.name }}">{% for x in r.events %}<option value="{{ url_for('fineart.history_event', slug=x.slug) }}" {{ 'selected' if x.slug == e.slug }}>{{ x.title }} ({{ fa_span(x) }})</option>{% endfor %}</optgroup>{% endfor %}
+      </select>
+    </label>
+    <a class="btn ghost sm" href="{{ url_for('fineart.history_event', slug=next_e.slug) if next_e else '#' }}" {% if not next_e %}style="visibility:hidden"{% endif %}>{{ next_e.title if next_e }} →</a>
+  </nav>
+
+  <div class="ev-bar">
+    <h2><b id="ev-n">{{ e.count }}</b> artworks about this moment</h2>
+    {% if e.works|length > e.count %}<label class="tog" title="Some of these show battles or other grim scenes. Hidden by default."><input type="checkbox" id="mature"><span>Include mature art ({{ e.works|length - e.count }})</span></label>{% endif %}
+  </div>
+
+  <div class="h-grid" id="hgrid">
+    {% for w in e.works %}{% set p = w.p %}
+    <a class="hcard{{ ' mature' if p.n }}" href="{{ url_for('fineart.painting', pid=p.id) }}" {% if p.n %}hidden{% endif %}>
+      <span class="himg" style="aspect-ratio:{{ fa_ar(p) }}"><img loading="lazy" decoding="async" src="{{ fa_img(p, 500) }}" alt="{{ p.t }}"></span>
+      <span class="hcap">
+        <b>{{ p.t }}</b>
+        <i>{{ artists[p.a[0]].n }} · {{ p.y }}</i>
+        {% set gap = p.y - e.end %}
+        <span class="when {{ 'then' if gap <= 25 else 'later' }}">{% if gap <= 25 %}👁️ Painted at the time{% elif gap < 100 %}🕰️ Painted {{ gap }} years later{% else %}🕰️ Painted about {{ '{:,}'.format((gap / 10)|round|int * 10) }} years later{% endif %}</span>
+        {% if w.note %}<span class="hnote">{{ w.note }}</span>{% endif %}
+      </span>
+    </a>
+    {% endfor %}
+  </div>
+
+  <nav class="ev-pager">
+    {% if prev_e %}<a class="pg" href="{{ url_for('fineart.history_event', slug=prev_e.slug) }}"><small>← Earlier</small><b>{{ prev_e.title }}</b></a>{% else %}<span></span>{% endif %}
+    {% if next_e %}<a class="pg r" href="{{ url_for('fineart.history_event', slug=next_e.slug) }}"><small>Later →</small><b>{{ next_e.title }}</b></a>{% endif %}
+  </nav>
+</main>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='fineart/history.js') }}?v=1"></script>{% endblock %}
