@@ -1,0 +1,23 @@
+{% extends "fineart/base.html" %}
+{% block title %}{{ u.display_name }}'s favorites · The Great Gallery{% endblock %}
+{% block body %}
+<main class="detail colpage">
+  <div class="crumbs"><a href="{{ url_for('fineart_auth.lovers') }}">← All art lovers</a></div>
+  <header class="col-hero">
+    <div class="col-emoji">💛</div>
+    <div>
+      <p class="eyebrow">Art lover</p>
+      <h1>{{ u.display_name }}</h1>
+      <p class="count"><b>{{ works|length }}</b> favorite painting{{ '' if works|length == 1 else 's' }}</p>
+    </div>
+  </header>
+  <div class="wall">
+    {% for p in works %}
+    <a class="card" href="{{ url_for('fineart.painting', pid=p.id) }}" style="aspect-ratio:{{ fa_ar(p) }}">
+      <img loading="lazy" decoding="async" src="{{ fa_img(p, 500) }}" alt="{{ p.t }}">
+      <span class="cap"><b>{{ p.t }}</b><i>{{ artists[p.a[0]].n }} · {{ p.y }}</i></span>
+    </a>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}

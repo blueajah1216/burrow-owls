@@ -39,7 +39,7 @@ def hash_pw(pw):
 # A throwaway hash so unknown usernames cost the same time as wrong passwords.
 _DUMMY_HASH = hash_pw("not-a-real-password")
 
-User = Favorite = DB = None  # defined in init_auth
+User = Favorite = Profile = DB = None  # defined in init_auth
 oauth = None
 _attempts = defaultdict(deque)  # key -> recent attempt timestamps (per-process)
 
@@ -89,7 +89,7 @@ def google_enabled():
 
 
 def init_auth(app, db):
-    global User, Favorite, DB, oauth
+    global User, Favorite, Profile, DB, oauth
     DB = db
 
     # Behind Render's proxy: trust X-Forwarded-Proto/Host so external URLs are https.
@@ -123,7 +123,13 @@ def init_auth(app, db):
         created_at = db.Column(db.DateTime, default=datetime.utcnow)
         __table_args__ = (db.UniqueConstraint("user_id", "painting_id", name="uix_fa_user_painting"),)
 
-    User, Favorite = _User, _Favorite
+    class _Profile(db.Model):
+        """Opt-in public profile. No row (or public=False) means the user is private."""
+        __tablename__ = "fa_profiles"
+        user_id = db.Column(db.Integer, db.ForeignKey("fa_users.id", ondelete="CASCADE"), primary_key=True)
+        public = db.Column(db.Boolean, nullable=False, default=False)
+
+    User, Favorite, Profile = _User, _Favorite, _Profile
 
     if google_enabled():
         from authlib.integrations.flask_client import OAuth
@@ -247,7 +253,8 @@ def account():
     _ready()
     if not g.fa_user:
         return redirect(url_for("fineart_auth.login", next=request.path))
-    return render_template("fineart/account.html", count=g.fa_user.favorites.count())
+    prof = _session().get(Profile, g.fa_user.id)
+    return render_template("fineart/account.html", count=g.fa_user.favorites.count(), is_public=bool(prof and prof.public))
 
 
 @bp.route("/account/name", methods=["POST"])
@@ -263,6 +270,20 @@ def account_name():
     return redirect(url_for("fineart_auth.account"))
 
 
+@bp.route("/account/public", methods=["POST"])
+def account_public():
+    _ready()
+    check_csrf()
+    if not g.fa_user:
+        abort(401)
+    s = _session()
+    prof = s.get(Profile, g.fa_user.id) or Profile(user_id=g.fa_user.id)
+    prof.public = request.form.get("public") == "1"
+    s.add(prof)
+    s.commit()
+    return redirect(url_for("fineart_auth.account"))
+
+
 @bp.route("/account/delete", methods=["POST"])
 def account_delete():
     _ready()
@@ -274,6 +295,30 @@ def account_delete():
     s.commit()
     session.clear()
     return redirect(url_for("fineart.index"))
+
+
+# ---------------------------------------------------------------- Art Lovers (opt-in public profiles)
+
+@bp.route("/lovers")
+def lovers():
+    _ready()
+    rows = (_session().query(User, DB.func.count(Favorite.id))
+            .join(Profile, Profile.user_id == User.id).filter(Profile.public.is_(True))
+            .outerjoin(Favorite, Favorite.user_id == User.id).group_by(User.id)
+            .order_by(DB.func.count(Favorite.id).desc(), User.display_name).all())
+    return render_template("fineart/lovers.html", rows=[(u, n) for u, n in rows if n])
+
+
+@bp.route("/lovers/<int:uid>")
+def lover(uid):
+    _ready()
+    u = _session().get(User, uid)
+    prof = _session().get(Profile, uid) if u else None
+    if not u or not (prof and prof.public):
+        abort(404)
+    data = fineart.load()
+    works = [data["by_id"][i] for i in _fav_ids(u) if i in data["by_id"] and not data["by_id"][i].get("n")]
+    return render_template("fineart/lover.html", u=u, works=works, artists=data["artists"])
 
 
 # ---------------------------------------------------------------- Google

@@ -1,0 +1,21 @@
+{% extends "fineart/base.html" %}
+{% block title %}Art Lovers · The Great Gallery{% endblock %}
+{% block desc %}Visitors who chose to share their favorite paintings. See what other art lovers have saved.{% endblock %}
+{% block body %}
+<main class="mus">
+  <header class="m-hero">
+    <p class="eyebrow">The community</p>
+    <h1>Art <em>Lovers</em></h1>
+    <p class="lede">Visitors who chose to share their favorite paintings. Tap a name to see what they love.{% if not fa_current %} <a href="{{ url_for('fineart_auth.signup', next=request.path) }}">Sign up</a> to save and share your own.{% endif %}</p>
+  </header>
+  {% if rows %}
+  <div class="m-cards">
+    {% for u, n in rows %}
+    <a class="m-card" href="{{ url_for('fineart_auth.lover', uid=u.id) }}"><b>💛 {{ u.display_name }}</b><em>{{ n }} favorite{{ '' if n == 1 else 's' }}</em></a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="lede">No one has shared their favorites yet. {% if fa_current %}You can be the first: open <a href="{{ url_for('fineart_auth.account') }}">your account</a> and choose "Share my favorites".{% endif %}</p>
+  {% endif %}
+</main>
+{% endblock %}

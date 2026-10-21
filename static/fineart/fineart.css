@@ -461,3 +461,4 @@ select option{color:#000}
 .hires-btn{background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none;padding:9px 16px;border-radius:999px}
 .hires-btn:hover{background:#ffd978}.hires span{font-size:.95rem}.hires small{flex-basis:100%;color:var(--mute);font-size:.82rem}
 .hires.low .hires-btn{background:var(--glass);color:var(--cream);border:1px solid var(--line)}
+.pub-form{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}.pub-form p{margin:0 0 8px;font-size:.95rem}
