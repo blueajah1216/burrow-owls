@@ -74,6 +74,14 @@
 
       <section class="prints">
         <h2>Hang it on your wall</h2>
+        {% set hr = fa_hires(p, artists) %}
+        <div class="hires {{ hr.level }}">
+          <a class="hires-btn" href="{{ hr.url }}" target="_blank" rel="noopener">⬇ Hi-res download</a>
+          <span><b>{{ '{:,}'.format(hr.w) }} × {{ '{:,}'.format(hr.h) }} px</b> · {{ hr.mp }} megapixels{% if hr.level != 'low' %} · prints up to about {{ hr.in_w }} × {{ hr.in_h }} inches at 300&nbsp;dpi{% endif %}</span>
+          {% if hr.mp > 60 %}<small>Heads up: this is a huge scan, so the file can be hundreds of megabytes. Right-click and save it rather than opening it in a phone browser.</small>{% endif %}
+          {% if hr.level == 'low' %}<small>This is the largest scan on Wikimedia Commons, which is fairly small for a big print. {% if hr.museum %}Try the museum's own site below for a bigger file.{% else %}The museum that owns it may offer a larger one.{% endif %}</small>{% endif %}
+          <small><a href="{{ hr.page }}" target="_blank" rel="noopener">File page &amp; license ↗</a>{% if hr.museum %} · <a href="{{ hr.museum[1] }}" target="_blank" rel="noopener">Open-access images at {{ hr.museum[0] }} ↗</a>{% endif %}</small>
+        </div>
         <p class="prints-sub">Three places to look for a print of this painting, from budget to museum-grade:</p>
         <div class="print-grid">
           {% for t in fa_prints(p, artists) %}

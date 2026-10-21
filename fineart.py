@@ -126,6 +126,26 @@ def img_url(p, width):
     return original_url(p) if p["u"].lower().split("?")[0].endswith((".jpg", ".jpeg", ".png")) and p["w"] <= 4000 else p["u"]
 
 
+# Museums whose open-access programmes often offer larger files than Commons; value = search URL prefix.
+OPEN_ACCESS = {
+    "Metropolitan Museum of Art": ("The Met", "https://www.metmuseum.org/art/collection/search?showOnly=openAccess&q="),
+    "Art Institute of Chicago": ("Art Institute of Chicago", "https://www.artic.edu/collection?q="),
+    "Rijksmuseum": ("Rijksmuseum", "https://www.rijksmuseum.nl/en/search?q="),
+    "Cleveland Museum of Art": ("Cleveland Museum of Art", "https://www.clevelandart.org/art/collection/search?search="),
+}
+
+
+def hires_info(p, artists):
+    """Pixel size of the Commons original, the print size that gives at 300 dpi, and museum open-access search."""
+    w, h = p["w"], p["h"]
+    mp = w * h / 1e6
+    q = quote_plus(p["t"])
+    venue = OPEN_ACCESS.get((p.get("l") or [""])[0])
+    return dict(url=original_url(p), page=p["p"], w=w, h=h, mp=round(mp, 1), in_w=round(w / 300), in_h=round(h / 300),
+                level="high" if mp >= 8 else "good" if mp >= 3 else "low",
+                museum=(venue[0], venue[1] + q) if venue else None)
+
+
 def print_links(p, artists):
     """Three search links (budget / mid-range / high-end) for prints of a painting.
 
@@ -168,7 +188,7 @@ def collection_cards(data):
 
 
 def init_fineart(app):
-    app.jinja_env.globals.update(fa_span=span_label, fa_img=img_url, fa_lived=lived, fa_ar=card_ratio, fa_prints=print_links, fa_map=map_url, fa_museum=museum_for)
+    app.jinja_env.globals.update(fa_span=span_label, fa_img=img_url, fa_lived=lived, fa_ar=card_ratio, fa_prints=print_links, fa_map=map_url, fa_museum=museum_for, fa_hires=hires_info)
     app.register_blueprint(bp)
 
 

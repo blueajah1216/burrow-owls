@@ -456,3 +456,8 @@ select option{color:#000}
 @media(max-width:760px){.mp-hero{grid-template-columns:1fr}.m-map{aspect-ratio:4/3}}
 .m-tip[hidden]{display:none}
 .mp-hero:not(:has(.mp-img)){grid-template-columns:1fr}
+
+.hires{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:0 0 18px;padding:14px 16px;border-radius:14px;background:var(--glass);border:1px solid var(--line)}
+.hires-btn{background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none;padding:9px 16px;border-radius:999px}
+.hires-btn:hover{background:#ffd978}.hires span{font-size:.95rem}.hires small{flex-basis:100%;color:var(--mute);font-size:.82rem}
+.hires.low .hires-btn{background:var(--glass);color:var(--cream);border:1px solid var(--line)}
