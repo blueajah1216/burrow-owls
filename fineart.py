@@ -1,5 +1,5 @@
 """
-theburrowowls.com/fineart — a gallery of 1,000 famous paintings for curious kids.
+theburrowowls.com/fineart — a gallery of 3,000 famous paintings for curious kids.
 
 Standalone look (templates/fineart/*, static/fineart/*). Data lives in
 data/fineart/gallery.json, built by fineart_build/build_data.py from Wikidata +

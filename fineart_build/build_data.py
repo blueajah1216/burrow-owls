@@ -52,13 +52,13 @@ if os.path.exists(f"{HERE}/out/fixes_hist.json"):
 NAMES = {"Q155626": "John Singer Sargent", "Q380494": "Charles Demuth", "Q44007": "Paul Klee", "Q45006": "Franz von Stuck", "Q466639": "Olga Boznańska", "Q7724": "August Strindberg",
          "Q3109429": "Nishikawa Sukenobu", "Q910913": "Kuroda Seiki", "Q983949": "Józef Chełmoński"}
 text, arttext = {}, {}
-for f in sorted(glob.glob(f"{HERE}/out/paintings_*.json")) + sorted(glob.glob(f"{HERE}/out/new_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_[0-9]*.json")) + sorted(glob.glob(f"{HERE}/out/style_[0-9]*.json")):
+for f in sorted(glob.glob(f"{HERE}/out/paintings_*.json")) + sorted(glob.glob(f"{HERE}/out/new_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_[0-9]*.json")) + sorted(glob.glob(f"{HERE}/out/style_[0-9]*.json")) + sorted(glob.glob(f"{HERE}/out/old_[0-9]*.json")):
     for row in json.load(open(f)):
         if not row[3].startswith("Skip"): text[row[0]] = row[1:]
 patch = L("out/text_patch.json")
 for i, w in patch.items():
     if i in text: text[i][2] = w
-for f in sorted(glob.glob(f"{HERE}/out/artists_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_artists_*.json")) + sorted(glob.glob(f"{HERE}/out/style_artists_*.json")):
+for f in sorted(glob.glob(f"{HERE}/out/artists_*.json")) + sorted(glob.glob(f"{HERE}/out/hist_artists_*.json")) + sorted(glob.glob(f"{HERE}/out/style_artists_*.json")) + sorted(glob.glob(f"{HERE}/out/old_artists_*.json")):
     for row in json.load(open(f)): arttext[row[0]] = row[1]
 extra = L("out/artist_extra.json") if os.path.exists(f"{HERE}/out/artist_extra.json") else {}
 kids = {r[0]: r[1] for r in L("out/kids.json")}
@@ -133,6 +133,9 @@ STYLE_BLURBS = {
  "expressionism": ("Paint it how it feels: wild color, bold lines and strong emotion.", "Expressionist and Fauvist painters used color and shape to show feelings. Matisse and the Fauves, called wild beasts by a critic, painted in bright, flat color. In Germany and Austria, Expressionists turned anxiety, joy and energy into paint."),
  "hudson-river": ("Glowing mountains, waterfalls and endless skies: the great American landscape painters.", "In the 1800s painters of the Hudson River School showed America as a wild, glowing paradise, with huge skies, peaks and rivers. They traveled far to sketch the real places, then made giant pictures that made people proud of their land."),
  "ukiyo-e": ("Great waves, rainy bridges and kabuki stars: Japan's woodblock prints that stunned Europe.", "Ukiyo-e means pictures of the floating world. Artists drew a design, carvers cut it into wooden blocks and printers pressed the colors one at a time, making cheap prints for everyone. They inspired Monet and Van Gogh."),
+ "renaissance": ("Leonardo, Raphael, Botticelli, Van Eyck, Dürer: the artists who brought back the beauty of the ancient world and learned to paint space, light and real people.", "Around 1400 painters and sculptors in Florence began to study nature, the human body and the rules of perspective, so that pictures looked like windows into the real world. Leonardo, Michelangelo and Raphael became legends, while in Flanders Jan van Eyck's oil paint caught every glint of a jewel. Look for calm triangles of figures, soft landscapes and faces full of feeling."),
+ "baroque": ("Spotlights, storms of motion and big emotions: Caravaggio, Rubens, Velázquez and Artemisia Gentileschi.", "Baroque painters of the 1600s wanted to make you feel something. They used deep shadow and spotlights, twisting bodies and swirling clouds, and they painted saints and heroes as real, sweaty, passionate people. Look for the single beam of light, the diagonal lines and the moment right before something happens."),
+ "dutch-golden-age": ("Rembrandt, Vermeer and Frans Hals: when the Netherlands was rich and painted its own homes, ships, tulips and faces.", "In the 1600s the Dutch Republic was one of the richest places on Earth, and ordinary merchants bought pictures for their homes. Painters turned to portraits, quiet rooms, stormy seas, ice-skating villages and still lifes of cheese and oysters. Look for window light, tiny details and clever hidden symbols."),
  "rococo": ("Pastel elegance, flirty swings and fancy portraits: art of the 1700s.", "The 1700s loved lightness: pink and blue colors, curling frills, picnics, portraits and glittering views of Venice. Look for playful details and fancy clothes."),
 }
 ABS_BLURB = "Pictures that don't show things, but color, shape and feeling: Kandinsky, Mondrian, Klee, Hilma af Klint and many more."

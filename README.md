@@ -74,3 +74,11 @@ with a description, history, top pieces and the gallery's paintings held there.
   links gallery paintings by venue, and writes `data/fineart/museums.json`.
 - `fineart_build/museums/build_map.py` turns world-atlas TopoJSON (download `countries-110m.json` into that folder first)
   into `static/fineart/world.json`, the simple SVG map used by `static/fineart/museums.js`.
+
+## Old masters (1426–1725)
+
+About 1,000 paintings from 600 to 300 years ago (Early Renaissance through the early Rococo) were added from Wikidata/Commons
+by `fineart_build/old/`: `cands.py` (candidates by year, ranked by Wikipedia sitelinks) → `add_old.py` (per-artist cap, Commons image
+info, artists; drops CC BY / BY-SA photos) → `loc_old.py` (venues) → hand-written texts in `out/old_NN.json` (from `t00.py`–`t09.py`) and
+bios in `out/old_artists_NN.json` (`a00.py`–`a02.py`), then `build_data.py`. Style collections for the era (Renaissance, Baroque,
+Dutch Golden Age) live in `styles/styles_rules.py`.

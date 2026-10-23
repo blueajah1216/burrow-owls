@@ -2,7 +2,7 @@
 Coordinates come from the Wikipedia API (enwiki title -> coordinates). Cached in coords.json."""
 import json, os, re, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(__file__))
-from src_world import M
+from src_more import M
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
@@ -24,7 +24,7 @@ for m in M:
     coords[m["wiki"]] = dict(lat=c.get("lat"), lon=c.get("lon"), img=(pg.get("thumbnail") or {}).get("source"), missing="missing" in pg)
     time.sleep(0.2)
 MANUAL = dict(thyssen=(40.4160, -3.6949), **{"ng-prague": (50.1088, 14.4310), "shanghai-museum": (31.2281, 121.4753),
-              "nmwa-tokyo": (35.7155, 139.7757), "nmfa-manila": (14.5877, 120.9808), "mbc": (14.6783, -17.4440)})
+              "nmwa-tokyo": (35.7155, 139.7757), "nmfa-manila": (14.5877, 120.9808), "mbc": (14.6783, -17.4440), "gardner": (42.3381, -71.0990)})
 for m in M:
     if coords[m["wiki"]]["lat"] is None and m["slug"] in MANUAL:
         coords[m["wiki"]]["lat"], coords[m["wiki"]]["lon"] = MANUAL[m["slug"]]

@@ -2,7 +2,7 @@
 {% from "fineart/_cols.html" import cards %}
 {% block og %}
 <meta property="og:title" content="The Great Gallery">
-<meta property="og:description" content="Explore {{ "{:,}".format(total) }} of the most famous paintings of the last 300 years.">
+<meta property="og:description" content="Explore {{ "{:,}".format(total) }} of the most famous paintings of the last 600 years.">
 {% endblock %}
 {% block body %}
 <main>
@@ -10,7 +10,7 @@
     <div class="hero-copy">
       <p class="eyebrow">Explore great art</p>
       <h1>Paintings that<br><em>stood the test</em><br>of time.</h1>
-      <p class="lede">{{ "{:,}".format(total) }} masterworks from the last 300 years — from storm-tossed ships to starry nights. Find out who made them, what makes them special, and why people still stand in line to see them.</p>
+      <p class="lede">{{ "{:,}".format(total) }} masterworks from the last 600 years — from storm-tossed ships to starry nights. Find out who made them, what makes them special, and why people still stand in line to see them.</p>
       <div class="hero-cta">
         <a class="btn gold" href="#browse">Start exploring</a>
         <a class="btn ghost" href="{{ url_for('fineart.random_painting') }}">🎲 Surprise me</a>
@@ -57,8 +57,10 @@
       </label>
       <select id="era" aria-label="Era">
         <option value="">All eras</option>
-        <option value="0-1725">Before 1726</option>
-        <option value="1726-1799">1700s</option>
+        <option value="0-1499">Before 1500</option>
+        <option value="1500-1599">1500s</option>
+        <option value="1600-1699">1600s</option>
+        <option value="1700-1799">1700s</option>
         <option value="1800-1849">Early 1800s</option>
         <option value="1850-1879">Mid 1800s</option>
         <option value="1880-1929">1880–1929</option>

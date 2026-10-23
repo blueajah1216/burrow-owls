@@ -2,3 +2,7 @@
 .venv/
 music_last_scrape.txt
 music_scrape.lock
+fineart_build/old/cands.json
+fineart_build/old/facts.json
+fineart_build/old/worklist.txt
+fineart_build/old/__pycache__/

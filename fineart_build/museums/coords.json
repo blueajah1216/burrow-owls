@@ -640,5 +640,65 @@
   "lon": -17.444,
   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Mus%C3%A9e_des_civilisations_noires_2022.jpg/960px-Mus%C3%A9e_des_civilisations_noires_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "missing": false
+ },
+ "Palatine Gallery": {
+  "lat": 43.7652,
+  "lon": 11.2501,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Palazzo_Pitti_nel_tardo_pomeriggio.jpg/960px-Palazzo_Pitti_nel_tardo_pomeriggio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museum of Fine Arts, Budapest": {
+  "lat": 47.51587,
+  "lon": 19.07678,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Budapest_Fine_Arts_Museum_R01.jpg/960px-Budapest_Fine_Arts_Museum_R01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Mus\u00e9e Cond\u00e9": {
+  "lat": 49.19388889,
+  "lon": 2.48527778,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Chateau_de_Chantilly_garden.jpg/960px-Chateau_de_Chantilly_garden.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Wallraf-Richartz Museum": {
+  "lat": 50.9375,
+  "lon": 6.95861111,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Wallraf-Richartz-Museum_%26_Foundation_Corboud%2C_Frontansicht%2C_Oktober_2014.jpg/960px-Wallraf-Richartz-Museum_%26_Foundation_Corboud%2C_Frontansicht%2C_Oktober_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Isabella Stewart Gardner Museum": {
+  "lat": 42.3381,
+  "lon": -71.099,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/IsabellaStewartGardenerMuseumMainLobby.jpg/960px-IsabellaStewartGardenerMuseumMainLobby.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Groeningemuseum": {
+  "lat": 51.20527778,
+  "lon": 3.22666667,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Brugge_-_Dijver_12_-Voormalig_poortgebouw_van_de_proosdij_van_Onze-Lieve-Vrouw%2C_heden_ingang_van_het_Groeningemuseum_-_82339.jpg/960px-Brugge_-_Dijver_12_-Voormalig_poortgebouw_van_de_proosdij_van_Onze-Lieve-Vrouw%2C_heden_ingang_van_het_Groeningemuseum_-_82339.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museum Boijmans Van Beuningen": {
+  "lat": 51.914215,
+  "lon": 4.47334111,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Museum_Boijmans_Van_Beuningen%2C_Rotterdam%2C_Zuid-Holland.jpg/960px-Museum_Boijmans_Van_Beuningen%2C_Rotterdam%2C_Zuid-Holland.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Mus\u00e9e Fabre": {
+  "lat": 43.612,
+  "lon": 3.88,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Mus%C3%A9e_Fabre_-_panoramio.jpg/960px-Mus%C3%A9e_Fabre_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Museum of Fine Arts of Lyon": {
+  "lat": 45.7669,
+  "lon": 4.8336,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/MBA_Lyon_facade_jour.jpg/960px-MBA_Lyon_facade_jour.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
+ },
+ "Walters Art Museum": {
+  "lat": 39.296425,
+  "lon": -76.61649889,
+  "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Walters-museum-building_1.jpg/960px-Walters-museum-building_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "missing": false
  }
 }
