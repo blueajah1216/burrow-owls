@@ -123,14 +123,14 @@ def init_auth(app, db):
     @app.before_request
     def _load_user():
         g.fa_user = None
-        if request.path.startswith("/fineart") and session.get("uid"):
+        if request.path.startswith(("/fineart", "/photography")) and session.get("uid"):
             g.fa_user = db.session.get(User, session["uid"])
             if g.fa_user is None:
                 session.pop("uid", None)
 
     @app.context_processor
     def _inject():
-        if not request.path.startswith("/fineart"):
+        if not request.path.startswith(("/fineart", "/photography")):
             return {}
         return dict(fa_current=getattr(g, "fa_user", None), fa_csrf=csrf_token)
 
