@@ -7,6 +7,7 @@
   const COLS = { 8: [4, 4], 12: [4, 3], 16: [4, 4], 24: [6, 4], 36: [6, 6], 42: [7, 6] };       // [desktop, mobile] columns
   const COLS_M = { 8: 4, 12: 3, 16: 4, 24: 4, 36: 6, 42: 6 };
   let n = SIZES.includes(store.get('mem_n', 16)) ? store.get('mem_n', 16) : 16;
+  let delay = [1, 2, 3, 5, 7].includes(store.get('mem_delay', 2)) ? store.get('mem_delay', 2) : 2;
   let tiles, open, locked, moves, left, t0, timer, found;
 
   const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -28,6 +29,7 @@
     $('#found').hidden = true; $('#found-row').innerHTML = ''; $('#win').hidden = true;
     say.textContent = 'Pick a tile to begin.';
     document.querySelectorAll('#sizes .chip').forEach(b => b.classList.toggle('on', +b.dataset.n === n));
+    document.querySelectorAll('#delays .chip').forEach(b => b.classList.toggle('on', +b.dataset.d === delay));
     layout();
     tiles = deck.map((d, i) => {
       const b = document.createElement('button'); b.type = 'button'; b.className = 'tile'; b.setAttribute('aria-label', `Tile ${i + 1}, face down`);
@@ -56,7 +58,7 @@
         if (!left) win();
       }, 750);
     } else {
-      setTimeout(() => { [a, b].forEach(x => { x.el.classList.remove('up'); x.el.setAttribute('aria-label', `Tile ${x.i + 1}, face down`); }); open = []; locked = false; say.textContent = 'Not a match. Try again!'; }, 1100);
+      setTimeout(() => { [a, b].forEach(x => { x.el.classList.remove('up'); x.el.setAttribute('aria-label', `Tile ${x.i + 1}, face down`); }); open = []; locked = false; say.textContent = 'Not a match. Try again!'; }, delay * 1000);
     }
   }
 
@@ -77,6 +79,7 @@
   }
 
   $('#sizes').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; n = +b.dataset.n; store.set('mem_n', n); start(); });
+  $('#delays').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; delay = +b.dataset.d; store.set('mem_delay', delay); document.querySelectorAll('#delays .chip').forEach(x => x.classList.toggle('on', x === b)); });
   $('#restart').onclick = start; $('#again').onclick = start; $('#close-win').onclick = () => { $('#win').hidden = true; };
   addEventListener('resize', layout);
   start();
