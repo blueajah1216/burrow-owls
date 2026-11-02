@@ -485,3 +485,37 @@ select option{color:#000}
   .top .acct{padding:10px 13px}.top .acct span{max-width:90px;overflow:hidden;text-overflow:ellipsis}
 }
 @keyframes menuin{from{opacity:0;transform:translateY(-6px)}}
+
+/* games */
+.games-sub{color:var(--mute);max-width:60ch;margin:.2em 0 1.4em}
+.game-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.game-card{display:flex;flex-direction:column;border-radius:22px;overflow:hidden;text-decoration:none;background:var(--glass);box-shadow:inset 0 0 0 1.5px var(--line),0 14px 34px rgba(0,0,0,.3);transition:.25s}
+a.game-card:hover{transform:translateY(-4px);box-shadow:inset 0 0 0 1.5px var(--gold),0 20px 40px rgba(0,0,0,.4)}
+.gc-art{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:130px;height:130px;overflow:hidden}.gc-art img{width:100%;height:100%;object-fit:cover}
+.soon-art{place-items:center;font-size:3rem;background:rgba(255,255,255,.05);grid-template-columns:1fr}
+.gc-txt{padding:16px 20px 20px;display:grid;gap:4px}.gc-txt b{font:600 1.2rem var(--serif)}.gc-txt span{color:var(--mute);font-size:.95rem}.gc-txt em{font-style:normal;color:var(--gold);font-weight:600;margin-top:6px}
+.game-card.soon{opacity:.7}
+.mem-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;margin-bottom:16px}
+.mem-sizes{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.mem-sizes>span{color:var(--mute);font-weight:500;margin-right:2px}
+.mem-stats{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;color:var(--mute)}.mem-stats b{color:var(--cream);font-variant-numeric:tabular-nums;margin-left:3px}
+.mem-board{display:grid;grid-template-columns:repeat(var(--cols,4),minmax(0,1fr));gap:clamp(6px,1.4vw,14px);max-width:var(--maxw,900px);margin:0 auto}
+.tile{position:relative;width:100%;min-width:0;aspect-ratio:1/1;padding:0;border:0;background:none;cursor:pointer;perspective:700px;-webkit-tap-highlight-color:transparent;transition:opacity .45s,transform .45s}
+.tile .in{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .45s cubic-bezier(.3,.8,.3,1)}
+.tile.up .in{transform:rotateY(180deg)}
+.tile .face{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
+.tile .back{background:repeating-linear-gradient(45deg,rgba(255,255,255,.06) 0 8px,transparent 8px 16px),linear-gradient(135deg,var(--cobalt),var(--navy));box-shadow:inset 0 0 0 3px var(--gold2),inset 0 0 0 6px rgba(0,0,0,.25),0 6px 16px rgba(0,0,0,.35);display:grid;place-items:center;font-size:clamp(1.2rem,4vw,2.2rem);transition:filter .2s}
+.tile:hover .back{filter:brightness(1.25)}
+.tile .front{transform:rotateY(180deg);background:#000;box-shadow:0 0 0 3px var(--gold),0 8px 20px rgba(0,0,0,.45)}
+.tile .front img{width:100%;height:100%;object-fit:cover}
+.tile.gone{opacity:0;transform:scale(.6);pointer-events:none}
+.tile.hide{visibility:hidden}
+.tile:focus-visible .back,.tile:focus-visible .front{outline:3px solid #fff;outline-offset:2px}
+.mem-say{text-align:center;color:var(--cream);min-height:3.2em;margin:16px auto 0;max-width:60ch}.mem-say i{color:var(--gold);font-family:var(--serif)}
+.mem-found{margin-top:10px}.mem-found h2{font:600 1.1rem var(--serif);color:var(--mute)}
+.mem-found-row{display:flex;flex-wrap:wrap;gap:10px}
+.mem-found-row a{width:96px;text-decoration:none;font-size:.72rem;line-height:1.25;color:var(--mute)}.mem-found-row img{width:96px;height:96px;object-fit:cover;border-radius:10px;box-shadow:0 0 0 2px var(--gold2);margin-bottom:4px}.mem-found-row a:hover{color:#fff}
+.mem-win{position:fixed;inset:0;z-index:60;display:grid;place-items:center;background:rgba(2,8,30,.72);backdrop-filter:blur(6px);padding:16px}.mem-win[hidden]{display:none}
+.mem-win-box{max-width:420px;width:100%;text-align:center;padding:30px 26px;border-radius:24px;background:var(--navy);box-shadow:inset 0 0 0 2px var(--gold),0 30px 80px rgba(0,0,0,.6)}
+.mem-win-box h2{margin:0 0 6px;font:800 2rem var(--serif)}.mem-best{color:var(--gold);font-weight:600;min-height:1.5em}
+.mem-win-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+@media (prefers-reduced-motion:reduce){.tile .in{transition:none}}

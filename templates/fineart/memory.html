@@ -1,0 +1,41 @@
+{% extends "fineart/base.html" %}
+{% block title %}Memory Match · The Great Gallery{% endblock %}
+{% block desc %}Flip tiles and match pairs of famous paintings. Pick a board from 8 to 42 tiles.{% endblock %}
+{% block body %}
+<main class="detail mem">
+  <div class="crumbs"><a href="{{ url_for('fineart.games') }}">← All games</a></div>
+  <h1 class="sec big">Memory <em>Match</em></h1>
+  <p class="games-sub">Flip a tile to see a painting, then flip a second one. If they match, both disappear. Clear the whole board in as few turns as you can!</p>
+
+  <div class="mem-bar">
+    <div class="mem-sizes" id="sizes" role="group" aria-label="Number of tiles">
+      <span>Tiles:</span>
+      {% for n in (8, 12, 16, 24, 36, 42) %}<button type="button" class="chip" data-n="{{ n }}">{{ n }}</button>{% endfor %}
+    </div>
+    <div class="mem-stats">
+      <span>Turns <b id="moves">0</b></span>
+      <span>Pairs left <b id="left">0</b></span>
+      <span>Time <b id="time">0:00</b></span>
+      <button type="button" class="btn ghost sm" id="restart">↻ New game</button>
+    </div>
+  </div>
+
+  <div class="mem-board" id="board" aria-live="polite"></div>
+  <p class="mem-say" id="say">Pick a tile to begin.</p>
+
+  <section class="mem-found" id="found" hidden><h2>Paintings you've found</h2><div class="mem-found-row" id="found-row"></div></section>
+
+  <div class="mem-win" id="win" hidden>
+    <div class="mem-win-box">
+      <h2>🎉 You did it!</h2>
+      <p id="win-text"></p>
+      <p class="mem-best" id="win-best"></p>
+      <div class="mem-win-btns"><button type="button" class="btn" id="again">Play again</button><button type="button" class="btn ghost" id="close-win">Look at the paintings</button></div>
+    </div>
+  </div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script>window.MEM={cards:{{ cards|tojson }}};</script>
+<script src="{{ url_for('static', filename='fineart/memory.js') }}?v=2"></script>
+{% endblock %}

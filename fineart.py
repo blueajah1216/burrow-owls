@@ -221,6 +221,24 @@ def data_json():
     return resp
 
 
+GAME_POOL = 150  # the memory game draws from this many of the most famous paintings
+
+
+@bp.route("/games")
+def games():
+    data = load()
+    covers = [p for p in sorted((p for p in data["paintings"] if not p.get("n")), key=lambda p: p["r"])[:12]]
+    return render_template("fineart/games.html", covers=covers[:4])
+
+
+@bp.route("/games/memory")
+def game_memory():
+    data = load()
+    pool = sorted((p for p in data["paintings"] if not p.get("n") and p["a"]), key=lambda p: p["r"])[:GAME_POOL]
+    cards = [dict(id=p["id"], t=p["t"], by=data["artists"][p["a"][0]]["n"], y=p["y"], img=img_url(p, 330), url=url_for("fineart.painting", pid=p["id"])) for p in pool]
+    return render_template("fineart/memory.html", cards=cards)
+
+
 @bp.route("/random")
 def random_painting():
     data = load()

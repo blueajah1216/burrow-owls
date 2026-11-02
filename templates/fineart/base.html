@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=24">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=27">
 <script>var FA_BASE="{{ fa_base }}";</script>
 </head>
 <body>
@@ -32,6 +32,7 @@
     <a href="{{ url_for('fineart.museums') }}">🗺️ Museums</a>
     <a href="{{ url_for('fineart_auth.lovers') }}">💛 Art Lovers</a>
     <a href="{{ url_for('fineart.collection', slug='kids') }}">🧒 Kids</a>
+    <a href="{{ url_for('fineart.games') }}">🎮 Games</a>
     <a href="{{ url_for('fineart.today') }}">⭐ Today's pick</a>
     <hr>
     <a href="{{ url_for('photo.index') }}">📷 Photography</a>
