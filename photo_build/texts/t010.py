@@ -1,0 +1,21 @@
+import json
+R = [
+[480,2,0,1891,"Ely Cathedral: The Prior's Door","Frederick H. Evans photographed the carved doorway of Ely Cathedral in England, with a tiny figure standing inside. He loved cathedrals and waited for the best light, and he never touched up his pictures.","How does the small person make the doorway feel bigger?"],
+[481,2,0,1892,"Reflections, Venice","Alfred Stieglitz photographed a narrow Venetian canal, where houses and boats double in the water. Reflections became one of his favorite subjects.","Where does the building end and its reflection begin?"],
+[486,2,0,1893,"The Terminal","On a snowy day in New York, a driver blankets his horse at the end of the streetcar line. Alfred Stieglitz took this picture with a hand camera in a storm, and it became one of the first great photographs of city life.","What are the horses wearing to keep warm?"],
+[489,3,0,1894,"The Net Mender","A woman in a white cap mends fishing nets on the dunes of the Dutch coast. Stieglitz traveled around Europe in the 1890s photographing ordinary people at their work.","What jobs do people do at the sea?"],
+[490,1,0,1894,"Mid Snow and Ice","Mountain peaks rise above a sea of cloud and snow in the Alps. Stieglitz photographed Europe's mountains while he traveled as a young man.","How would you climb a mountain like this?"],
+[493,2,0,1894,"A Wet Day on the Boulevard, Paris","Rain makes the Paris street shine like glass. Stieglitz loved bad weather, which other photographers avoided, and he showed that rain, mist and snow could be beautiful.","What do you notice about the wet street?"],
+[497,3,0,1894,"Scurrying Home","Two people in long shawls hurry along a Dutch beach toward a church as the weather turns. Stieglitz photographed this on a trip to the Netherlands.","What do you think they are hurrying away from?"],
+[499,0,0,1894,"Queen Victoria and Her Family","Queen Victoria sits with dozens of her children, grandchildren and their families. Several became kings and queens in other countries, which is why people called her the grandmother of Europe.","How many people can you count in the picture?"],
+[506,0,0,1895,"Alexander Graham Bell","Alexander Graham Bell was born in Scotland and invented the telephone in 1876. He also taught deaf children to speak and spent his life inventing.","What would you ask someone who invented the telephone?"],
+[507,3,0,1895,"A Holiday Visit","Arnold Genthe photographed San Francisco's Chinatown with a hidden camera, because many people there feared cameras. In this picture, a woman and children take a stroll in their holiday best.","Why might some people have been afraid of cameras?"],
+[511,0,0,1896,"At the Window","Clarence H. White photographed his wife by a window, with soft light on her profile. He and his friends believed a photograph could be gentle and poetic.","What might she see outside?"],
+[512,0,0,1896,"A Merchant and His Servant, Chinatown","A Chinese merchant in a long robe poses with a younger attendant in San Francisco's Chinatown. Genthe made hundreds of pictures of the neighborhood before the 1906 earthquake destroyed it.","What do their clothes tell you about their roles?"],
+[518,0,0,1897,"The Readers","Two women sit close, absorbed in a book by the window. Clarence H. White arranged simple scenes of family life in soft light.","What book do you think they are reading?"],
+[521,0,0,1897,"Leo Tolstoy","Leo Tolstoy wrote War and Peace and Anna Karenina, two of the most famous novels ever. Although he was born a rich count, he often wore a plain peasant's blouse, as in this portrait.","Why would a rich man wear peasant clothes?"],
+[525,2,0,1898,"A Shopfront in Paris","Eugène Atget photographed the shops and streets of old Paris. This corner shop with its sign and displays is a small piece of vanished city life.","What kinds of things do you think this shop sold?"],
+[526,3,0,1898,"The Organ Grinder","A street musician pushes his hand organ down a Paris lane. Atget made hundreds of pictures of street trades, for artists who wanted to record everyday Paris.","What kind of music do you think he played?"],
+]
+json.dump({"rows": R, "range": [480, 528]}, open("t010.json", "w"), ensure_ascii=False)
+print(len(R))

@@ -1,0 +1,16 @@
+import json
+R = [
+[1056,7,0,1969,"Neil Armstrong in the Lunar Module","After the first moonwalk, Neil Armstrong sits in the lunar module with moon dust on his suit. There are almost no pictures of Armstrong on the Moon because he carried the camera. Buzz Aldrin took this one.","Why are there so few pictures of the first man on the Moon?"],
+[1057,7,0,1969,"Footprint on the Moon","Buzz Aldrin photographed his bootprint in the lunar soil to study how fine and powdery the dust was. Because there is no wind or rain on the Moon, the print could last for millions of years.","What would leave a footprint on the Moon for millions of years?"],
+[1058,7,0,1969,"Buzz Aldrin Salutes the Flag","Neil Armstrong photographed Buzz Aldrin saluting the US flag on the Moon in July 1969. The flag has a stiff rod along the top so it seems to wave in a place with no air.","Why did they need a rod to hold the flag out?"],
+[1059,7,0,1969,"Aldrin on the Moon","Buzz Aldrin stands in his white suit on the gray lunar plain. In his gold visor you can see a reflection of Neil Armstrong, the photographer, and the lunar module Eagle.","Can you find Armstrong in the reflection?"],
+[1062,7,0,1972,"The Blue Marble","On December 7, 1972, the crew of Apollo 17, flying to the Moon, photographed the whole Earth in sunlight from about 29,000 kilometers away. It became one of the most widely printed photographs in history.","Where do you think you live on this ball?"],
+[1067,7,0,1972,"The Lunar Rover","Apollo 17 was the last time people walked on the Moon. The astronauts used a battery-powered Lunar Roving Vehicle, a \"moon buggy,\" to explore far from the lander at about 11 miles an hour.","What would you want to find on the Moon?"],
+[1063,3,0,1972,"\"Faller\" Cutting a Red Fir","From 1971 to 1977, the US Environmental Protection Agency hired photographers in a project called Documerica to record how Americans lived and what the environment looked like. Here a logger, or faller, works on a giant red fir in the Pacific Northwest.","How do you think trees are cut down safely?"],
+[1068,2,0,1972,"A Ghost Town","Empty wooden buildings stand in a town in the West where the gold and silver ran out and the people left. This color photograph is part of the EPA's Documerica project of the early 1970s.","What stories could these empty buildings tell?"],
+[1078,6,0,1973,"Alaska Cotton","Cotton grass, which isn't really cotton, grows in the marshes of Alaska, with white tufts like puffs of cotton. The photographer Dennis Cowals recorded it for the Documerica project.","What do you think the tufts are for?"],
+[1092,5,0,1973,"Maid of the Mist, Niagara Falls","A sightseeing boat carries visitors close to the mist of Niagara Falls. Boats have taken tourists into the spray since the 1840s.","Would you get wet on this ride?"],
+[1094,3,0,1973,"\"Sorry... No Gas Today\"","In 1973, an oil shortage meant many gas stations ran out of fuel, and signs like this appeared across America. Photographers for the EPA's Documerica project recorded how the energy crisis changed daily life.","What would you do if there were no gas for the car?"],
+]
+json.dump({"rows": R, "range": [1056, 1104]}, open("t022.json", "w"), ensure_ascii=False)
+print(len(R))

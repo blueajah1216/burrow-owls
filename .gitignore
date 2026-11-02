@@ -6,3 +6,11 @@ fineart_build/old/cands.json
 fineart_build/old/facts.json
 fineart_build/old/worklist.txt
 fineart_build/old/__pycache__/
+
+fineart_build/photo/nga/
+fineart_build/photo/c_*.json
+fineart_build/photo/cand_all.json
+fineart_build/photo/sel.json
+fineart_build/photo/titles2.json
+fineart_build/photo/*.log
+fineart_build/photo/nasa_urls.json

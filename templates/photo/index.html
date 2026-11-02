@@ -1,0 +1,98 @@
+{% extends "photo/base.html" %}
+{% block og %}
+<meta property="og:title" content="The Great Gallery · Photography">
+<meta property="og:description" content="{{ "{:,}".format(total) }} great photographs from 1826 to today, traced through time.">
+{% endblock %}
+{% block body %}
+<main>
+  <section class="hero" id="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Two hundred years of looking</p>
+      <h1>Photographs that<br><em>froze time</em><br>and changed minds.</h1>
+      <p class="lede">{{ "{:,}".format(total) }} great photographs, from the very first picture ever made in 1826 to space telescopes and today. Walk through the story of photography and find out who took each one, how, and why it matters.</p>
+      <div class="hero-cta">
+        <a class="btn gold" href="{{ url_for('photo.timeline') }}">⏳ Start at 1826</a>
+        <a class="btn ghost" href="#browse">Browse all photos</a>
+      </div>
+    </div>
+    <a class="hero-art" id="potd" href="{{ url_for('photo.today') }}" aria-label="Photograph of the day">
+      <div class="spot"></div>
+      <figure class="frame big"><div class="mat"><img id="potd-img" alt=""></div></figure>
+      <p class="potd-cap"><span>Photo of the day</span><b id="potd-title"></b><i id="potd-by"></i></p>
+    </a>
+  </section>
+
+  <a class="hist-teaser" href="{{ url_for('photo.timeline') }}">
+    <div><p class="eyebrow">The big story</p>
+      <h2>Photography <em>Through Time</em></h2>
+      <p>Seven chapters from the first blurry rooftop picture to the digital age: the magic mirror of the daguerreotype, photos of war and faraway lands, the first snapshots, the Great Depression, color and the Moon, and the pixels in your pocket.</p>
+      <span class="btn gold sm">Explore the timeline →</span></div>
+    <div class="ht-orbs">{% for e in eras if e.cover %}{% if loop.index0 in (0, 2, 4, 5, 6) %}<span><img loading="lazy" src="{{ e.cover.th }}" alt="{{ e.cover.t }}"></span>{% endif %}{% endfor %}</div>
+  </a>
+
+  <section class="cols" id="chapters" aria-label="Eras">
+    <h2 class="sec">Pick a <em>chapter</em></h2>
+    <div class="col-grid">
+      {% for e in eras %}
+      <a class="col-card" href="{{ url_for('photo.era', slug=e.slug) }}">
+        {% if e.cover %}<span class="cc-img" style="background-image:url({{ e.cover.th }})"></span>{% endif %}
+        <span class="cc-txt"><i>{{ e.emoji }}</i><b>{{ e.name }}</b><small>{{ e.start }}–{{ e.end if e.end < 3000 else 'today' }} · {{ e.blurb }}</small><em>{{ e.photos|length }} photographs</em></span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="rooms" aria-label="Themes">
+    <h2 class="sec">Wander the <em>rooms</em></h2>
+    <div class="room-grid" id="rooms">
+      {% for g in genres %}
+      <button class="room" data-g="{{ loop.index0 }}" style="--c:{{ g.color }}">
+        <span class="room-img"></span>
+        <span class="room-txt"><b>{{ g.name }}</b><small>{{ g.blurb }}</small><em class="cnt"></em></span>
+      </button>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="cols" aria-label="Collections">
+    <h2 class="sec">Special <em>collections</em></h2>
+    <div class="col-grid">
+      {% for c in cols[:8] %}
+      <a class="col-card" href="{{ url_for('photo.collection', slug=c.slug) }}">
+        {% if c.cover %}<span class="cc-img" style="background-image:url({{ c.cover.th }})"></span>{% endif %}
+        <span class="cc-txt"><i>{{ c.emoji }}</i><b>{{ c.name }}</b><small>{{ c.blurb }}</small><em>{{ c.count }} photographs</em></span>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="more"><a class="btn ghost sm" href="{{ url_for('photo.collections') }}">All collections →</a></p>
+  </section>
+
+  <section class="browse" id="browse">
+    <div class="bar">
+      <label class="search"><span aria-hidden="true">🔍</span>
+        <input id="q" type="search" placeholder="Search a photo, photographer, place or idea…" autocomplete="off">
+      </label>
+      <select id="era" aria-label="Era">
+        <option value="">All eras</option>
+        {% for e in eras %}<option value="{{ e.start }}-{{ e.end }}">{{ e.name }} ({{ e.start }}–{{ e.end if e.end < 3000 else 'today' }})</option>{% endfor %}
+      </select>
+      <select id="sort" aria-label="Sort">
+        <option value="fame">Most famous first</option>
+        <option value="old">Oldest first</option>
+        <option value="new">Newest first</option>
+        <option value="az">A → Z</option>
+      </select>
+      <label class="tog" title="Some photographs show war or hardship. Hidden by default."><input type="checkbox" id="nudes"><span>Include hard history</span></label>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip on" data-g="">All</button>
+      {% for g in genres %}<button class="chip" data-g="{{ loop.index0 }}" style="--c:{{ g.color }}">{{ g.emoji }} {{ g.name }}</button>{% endfor %}
+      <button class="chip fav" data-g="fav">♥ My favorites <span id="favn"></span></button>
+    </div>
+    <p class="status" id="status" aria-live="polite"></p>
+    <div class="wall" id="wall"></div>
+    <div class="empty" id="empty" hidden>No photographs found. Try a different word — like <em>"ship"</em>, <em>"portrait"</em> or <em>"moon"</em>.</div>
+  </section>
+</main>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='photo/home.js') }}?v=1"></script>{% endblock %}

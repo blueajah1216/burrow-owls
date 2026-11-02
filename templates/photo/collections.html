@@ -1,0 +1,18 @@
+{% extends "photo/base.html" %}
+{% block title %}Collections · The Great Gallery · Photography{% endblock %}
+{% block body %}
+<main class="detail">
+  <div class="crumbs"><a href="{{ url_for('photo.index') }}">← Photography</a></div>
+  <section class="cols">
+    <h1 class="sec big">All <em>collections</em></h1>
+    <div class="col-grid">
+      {% for c in cols %}
+      <a class="col-card" href="{{ url_for('photo.collection', slug=c.slug) }}">
+        {% if c.cover %}<span class="cc-img" style="background-image:url({{ c.cover.th }})"></span>{% endif %}
+        <span class="cc-txt"><i>{{ c.emoji }}</i><b>{{ c.name }}</b><small>{{ c.blurb }}</small><em>{{ c.count }} photographs</em></span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+{% endblock %}

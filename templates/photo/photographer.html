@@ -1,0 +1,19 @@
+{% extends "photo/base.html" %}
+{% block title %}{{ a.n }} · The Great Gallery · Photography{% endblock %}
+{% block desc %}{{ a.bio[:180] }}{% endblock %}
+{% block body %}
+<main class="detail">
+  <div class="crumbs"><a href="{{ url_for('photo.photographers') }}">← All photographers</a></div>
+  <section class="artist-hero">
+    <div class="initial big">{{ a.n[0] }}</div>
+    <div>
+      <p class="eyebrow">Photographer</p>
+      <h1>{{ a.n }}</h1>
+      <p class="lives">{{ ph_lived(a) }}{% if a.bi %} · born in {{ a.bi }}{% endif %}</p>
+      <p class="bio">{{ a.bio }}</p>
+    </div>
+  </section>
+  <section class="strip wide"><h3>{{ works|length }} photograph{{ 's' if works|length != 1 }} in the gallery</h3>
+    <div class="wall small">{% for x in works|sort(attribute='y') %}<a class="card" href="{{ url_for('photo.photo', pid=x.id) }}" style="aspect-ratio:{{ ph_card_ratio(x) }}"><img loading="lazy" src="{{ x.th }}" alt="{{ x.t }}"><span class="cap"><b>{{ x.t }}</b><i>{{ x.y }}</i></span></a>{% endfor %}</div></section>
+</main>
+{% endblock %}

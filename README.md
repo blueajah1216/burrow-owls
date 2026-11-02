@@ -81,3 +81,11 @@ by `fineart_build/old/`: `cands.py` (candidates by year, ranked by Wikipedia sit
 info, artists; drops CC BY / BY-SA photos) → `loc_old.py` (venues) → hand-written texts in `out/old_NN.json` (from `t00.py`–`t09.py`) and
 bios in `out/old_artists_NN.json` (`a00.py`–`a02.py`), then `build_data.py`. Style collections for the era (Renaissance, Baroque,
 Dutch Golden Age) live in `styles/styles_rules.py`.
+
+## The Great Gallery — Photography (`/photography`)
+
+A sister site to the paintings gallery: photographs from 1826 to today, traced through seven eras, with kid-friendly texts, photographer bios, collections and a timeline. Served at `thegreatgallery.art/photography` (and `/photography` on any host).
+
+- `photography.py` — blueprint (`/photography`), data in `data/photo/gallery.json`, templates in `templates/photo/`, assets in `static/photo/` (green theme of the paintings CSS).
+- Everything shown is public domain, CC0 or freely licensed (CC BY / BY-SA, with the credit shown). Images are hot-linked from their source (Art Institute of Chicago, Cleveland Museum of Art, Library of Congress, NASA, Wikimedia Commons); each page links to the source and a hi-res download.
+- Build: `fineart_build/photo/*.py` fetch candidates (museum open-access APIs, NASA, Commons), `unify.py` merges them, `select_.py` + `freeze.py` choose `work.json`; texts are hand-written in `photo_build/texts/t*.py`; `photo_build/build_data.py` assembles the JSON (eras, milestones and photographer bios live in `photo_build/meta.py`, `artists_a.py`, `artists_b.py`).

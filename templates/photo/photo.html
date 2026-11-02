@@ -1,0 +1,102 @@
+{% extends "photo/base.html" %}
+{% block title %}{{ p.t }} — {{ artists|map(attribute='n')|join(' & ') or 'Unknown photographer' }} · The Great Gallery{% endblock %}
+{% block desc %}{{ p.why[:180] }}{% endblock %}
+{% block og %}
+<meta property="og:title" content="{{ p.t }} — {{ artists|map(attribute='n')|join(' & ') }}">
+<meta property="og:description" content="{{ p.why[:200] }}">
+{% if not p.n %}<meta property="og:image" content="{{ p.u }}">{% endif %}
+{% endblock %}
+{% block body %}
+<main class="detail" style="--c:{{ genre.color }}">
+  <div class="crumbs">
+    <a href="{{ url_for('photo.index') }}#browse">← All photographs</a><span>/</span>
+    <a href="{{ url_for('photo.era', slug=era.slug) }}">{{ era.emoji }} {{ era.name }}</a><span>/</span>
+    <a href="{{ url_for('photo.index') }}?g={{ p.g }}#browse">{{ genre.emoji }} {{ genre.name }}</a>
+  </div>
+
+  <article class="stage">
+    <div class="viewer">
+      <div class="spot"></div>
+      <figure class="frame huge">
+        <div class="mat"><button class="zoom" id="zoom" aria-label="View larger"><img src="{{ p.u }}" width="{{ p.w }}" height="{{ p.h }}" alt="{{ p.t }}" id="art"></button></div>
+      </figure>
+      <div class="plaque">
+        <b>{{ p.t }}</b>
+        <span>{{ artists|map(attribute='n')|join(' & ') or 'Photographer unknown' }}, {{ p.d or p.y }}</span>
+        {% if p.m %}<small>{{ p.m }}</small>{% endif %}
+      </div>
+      <div class="tools">
+        <button class="btn ghost sm" id="fav" data-id="{{ p.id }}">♡ Save</button>
+        <button class="btn ghost sm" id="zoom2">🔍 Zoom</button>
+        <a class="btn ghost sm" href="{{ p.p }}" target="_blank" rel="noopener">Source ↗</a>
+      </div>
+    </div>
+
+    <div class="words">
+      <span class="tag">{{ genre.emoji }} {{ genre.name }}</span>
+      <h1>{{ p.t }}</h1>
+      <p class="by">{% for a in artists %}<a href="{{ url_for('photo.photographer', aid=a.id) }}">{{ a.n }}</a>{{ ' & ' if not loop.last }}{% else %}Photographer unknown{% endfor %} · {{ p.d or p.y }}</p>
+      {% if cols %}<div class="col-chips">{% for c in cols %}<a href="{{ url_for('photo.collection', slug=c.slug) }}">{{ c.emoji }} {{ c.name }}</a>{% endfor %}</div>{% endif %}
+
+      <section class="why"><h2>Why it's great</h2><p>{{ p.why }}</p></section>
+      {% if p.k %}<section class="kidbox"><h2>👀 Look closer!</h2><p>{{ p.k }}</p></section>{% endif %}
+
+      <section class="where">
+        <h2>How it was made &amp; where it is</h2>
+        {% if p.pr %}<p class="where-main">🧪 <b>{{ p.pr }}</b>{% if era.pr_note %}<span>{{ era.pr_note }}</span>{% endif %}</p>{% endif %}
+        {% if p.l %}<p class="where-main">📍 <b>{{ p.l[0] }}</b>{% if p.l[1] %}<span>{{ p.l[1:]|select|join(', ') }}</span>{% endif %}</p>{% endif %}
+        <p class="where-main">🏛️ <b>{{ p.s }}</b><span>{{ p.cr }}</span></p>
+      </section>
+
+      <section class="prints">
+        <h2>Hang it on your wall</h2>
+        {% set hr = ph_hires(p) %}
+        <div class="hires {{ hr.level }}">
+          <a class="hires-btn" href="{{ hr.url }}" target="_blank" rel="noopener">⬇ Hi-res download</a>
+          {% if hr.w %}<span><b>{{ '{:,}'.format(hr.w) }} × {{ '{:,}'.format(hr.h) }} px</b> · {{ hr.mp }} megapixels{% if hr.level != 'low' %} · prints up to about {{ hr.in_w }} × {{ hr.in_h }} inches at 300&nbsp;dpi{% endif %}</span>
+          {% else %}<span>The largest version <b>{{ hr.src }}</b> offers online.</span>{% endif %}
+          {% if hr.mp > 60 %}<small>Heads up: this is a huge file. Right-click and save it rather than opening it in a phone browser.</small>{% endif %}
+          <small><b>License:</b> {{ p.lic }}{% if p.by %} · Credit: {{ p.by }}{% endif %} · <a href="{{ hr.page }}" target="_blank" rel="noopener">Source page ↗</a></small>
+        </div>
+        <p class="prints-sub">Places to look for a print of this photograph:</p>
+        <div class="print-grid">
+          {% for t in ph_prints(p, artists) %}
+          <a class="print" href="{{ t.url }}" target="_blank" rel="noopener sponsored"><span class="pt">{{ t.icon }} {{ t.tier }}</span><b>{{ t.shop }}&nbsp;↗</b><small>{{ t.blurb }}</small></a>
+          {% endfor %}
+        </div>
+        <p class="prints-note">These links open search results on each shop's own website; we don't sell anything or earn a commission. Ask a grown-up before you buy anything.</p>
+      </section>
+
+      {% for a in artists %}
+      <section class="artist-card">
+        <div class="ac-head">
+          <div class="initial">{{ a.n[0] }}</div>
+          <div><h2>About the photographer</h2>
+            <a class="aname" href="{{ url_for('photo.photographer', aid=a.id) }}">{{ a.n }}</a>
+            <p class="lives">{{ ph_lived(a) }}{% if a.bi %} · born in {{ a.bi }}{% endif %}</p></div>
+        </div>
+        <p>{{ a.bio }}</p>
+      </section>
+      {% endfor %}
+    </div>
+  </article>
+
+  <nav class="pager">
+    {% if prev_p %}<a class="pg prev" href="{{ url_for('photo.photo', pid=prev_p.id) }}" rel="prev"><small>← Earlier</small><b>{{ prev_p.t }}</b></a>{% else %}<span></span>{% endif %}
+    {% if next_p %}<a class="pg next" href="{{ url_for('photo.photo', pid=next_p.id) }}" rel="next"><small>Later →</small><b>{{ next_p.t }}</b></a>{% endif %}
+  </nav>
+
+  {% if same_artist %}
+  <section class="strip"><h3>More by {{ artists[0].n }}</h3>
+    <div class="rail">{% for x in same_artist %}<a href="{{ url_for('photo.photo', pid=x.id) }}" class="tile"><img loading="lazy" src="{{ x.th }}" width="{{ x.w }}" height="{{ x.h }}" alt=""><span>{{ x.t }}</span></a>{% endfor %}</div></section>
+  {% endif %}
+  <section class="strip"><h3>Around the same time</h3>
+    <div class="rail">{% for x in near %}<a href="{{ url_for('photo.photo', pid=x.id) }}" class="tile"><img loading="lazy" src="{{ x.th }}" width="{{ x.w }}" height="{{ x.h }}" alt=""><span>{{ x.t }} · {{ x.y }}</span></a>{% endfor %}</div></section>
+
+  <div class="lightbox" id="lb" hidden><button class="lb-x" aria-label="Close">×</button><img alt="" id="lb-img"></div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script>window.FA={id:"{{ p.id }}",big:"{{ p.u }}",prev:{{ ('"' ~ url_for('photo.photo', pid=prev_p.id) ~ '"')|safe if prev_p else 'null' }},next:{{ ('"' ~ url_for('photo.photo', pid=next_p.id) ~ '"')|safe if next_p else 'null' }}};</script>
+<script src="{{ url_for('static', filename='photo/detail.js') }}?v=1"></script>
+{% endblock %}

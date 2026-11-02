@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}The Great Gallery · Photography — from the first photo to today{% endblock %}</title>
+  <meta name="description" content="{% block desc %}Trace photography through time: great photographs from the very first picture in 1826 to the digital age, with kid-friendly stories about who took them and why they matter.{% endblock %}">
+  {% block og %}{% endblock %}
+  <meta name="theme-color" content="#0c3b2a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231c8a5a'/><rect x='16' y='30' width='68' height='44' rx='8' fill='none' stroke='%23f4c95d' stroke-width='8'/><circle cx='50' cy='52' r='12' fill='%23ff8fa3'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='photo/photo.css') }}?v=1">
+  <script>var PH_BASE="{{ url_for('photo.index')|trim('/') }}";</script>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><i></i><i></i><i></i></div>
+<header class="top">
+  <a class="brand" href="{{ url_for('photo.index') }}">
+    <span class="brand-mark"><span></span></span>
+    <span class="brand-text">The Great <em>Gallery</em> <small class="brand-sub">Photography</small></span>
+  </a>
+  <nav>
+    <a href="{{ url_for('photo.timeline') }}">⏳ Through Time</a>
+    <a href="{{ url_for('photo.photographers') }}">📷 Photographers</a>
+    <a href="{{ url_for('photo.collections') }}">Collections</a>
+    <a href="{{ url_for('photo.index') }}#browse">Browse</a>
+    <a href="{{ url_for('photo.today') }}">Today's pick</a>
+    <a href="{{ url_for('fineart.index') }}">🖼️ Paintings</a>
+    <a href="{{ url_for('photo.random_photo') }}" class="pill">🎲 Surprise me</a>
+  </nav>
+</header>
+{% block body %}{% endblock %}
+<footer class="foot">
+  <p><strong>The Great Gallery · Photography</strong> · Every photograph here is in the public domain or shared under a free license, and each one is credited and linked to its source: the Library of Congress, NASA, museum open-access collections and Wikimedia Commons.</p>
+  <p class="fine">Descriptions are written for curious kids. Some details of photo history are debated — when in doubt, ask a librarian or a museum.</p>
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

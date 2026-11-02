@@ -1,0 +1,27 @@
+{% extends "photo/base.html" %}
+{% block title %}Photography Through Time · The Great Gallery{% endblock %}
+{% block desc %}From the first photograph in 1826 to the digital age: seven chapters, key inventions and the great photographs of each era.{% endblock %}
+{% block body %}
+<main class="mus tl">
+  <header class="m-hero">
+    <p class="eyebrow">1826 → today</p>
+    <h1>Photography <em>Through Time</em></h1>
+    <p class="lede">Scroll down through two centuries. In each chapter you'll find what changed, who changed it, and a few of the photographs that show it.</p>
+  </header>
+  <ol class="tl-list">
+    {% for e in eras %}
+    <li class="tl-era">
+      <div class="tl-dot">{{ e.emoji }}</div>
+      <div class="tl-body">
+        <p class="eyebrow">{{ e.start }}–{{ e.end if e.end < 3000 else 'today' }}</p>
+        <h2><a href="{{ url_for('photo.era', slug=e.slug) }}">{{ e.name }}</a></h2>
+        <p class="lede">{{ e.intro }}</p>
+        <div class="tl-ms">{% for m in milestones if e.start <= m.y <= e.end %}<div class="ms"><b>{{ m.y }}</b><span>{{ m.text }}</span></div>{% endfor %}</div>
+        <div class="rail">{% for x in e.picks %}<a href="{{ url_for('photo.photo', pid=x.id) }}" class="tile"><img loading="lazy" src="{{ x.th }}" width="{{ x.w }}" height="{{ x.h }}" alt=""><span>{{ x.t }} · {{ x.y }}</span></a>{% endfor %}</div>
+        <a class="btn gold sm" href="{{ url_for('photo.era', slug=e.slug) }}">All {{ e.photos|length }} photographs from this chapter →</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</main>
+{% endblock %}

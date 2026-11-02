@@ -1,0 +1,18 @@
+import json
+R = [
+[777,8,0,1917,"Fountain by Marcel Duchamp","In 1917 the artist Marcel Duchamp sent a porcelain bathroom fixture, signed R. Mutt, to an art show. The judges refused to show it, so Alfred Stieglitz photographed it in his gallery. The original is lost, and this photograph is the best record of one of the most argued-about artworks ever.","Is it art if an artist says it is? What do you think?"],
+[781,0,0,1918,"Georgia O'Keeffe","Alfred Stieglitz photographed the painter Georgia O'Keeffe more than three hundred times over several years. He made close-ups of her face, hands and clothing, as one long portrait.","What do her hands tell you about her?"],
+[788,0,0,1919,"Georgia O'Keeffe, Hands","O'Keeffe lifts her hands near her face against a dark background. Stieglitz believed a portrait could be made of a person's hands as well as their face.","What do your hands say about you?"],
+[785,4,0,1918,"Aerial View of the Ruins of Vaux, France","Edward Steichen led aerial photography for the US Army in the First World War. His camera in an airplane showed shell craters and ruined villages that the army needed to understand.","What can you tell about a battlefield from above?"],
+[790,1,0,1919,"A Garden Through an Arch","A colorful Autochrome frames a green garden through a stone arch at an estate near Philadelphia. The color picture shows lawn, trees and flowers in soft greens and pinks.","What would you like to do in a garden like this?"],
+[791,5,0,1919,"French Soldiers in Beirut","French soldiers stand in formation near the clock tower in Beirut, a year after the First World War. Frédéric Gadmer took the picture in color for Albert Kahn's Archives of the Planet, an effort to record the world on color plates.","Why would someone want to preserve a picture of a regiment?"],
+[794,1,0,1920,"Rainbow","A faint rainbow arches above the hills at Lake George, New York. Stieglitz photographed clouds, trees and skies near his family's summer home, and wanted these images to show feelings as well as places.","How is a rainbow different from other things you photograph?"],
+[797,2,0,1920,"Absinthe House, New Orleans","Arnold Genthe photographed the old buildings of New Orleans's French Quarter in 1920. The arched doorway and iron lamp belong to a bar that was once famous.","What stories could this door tell?"],
+[805,8,0,1920,"Autochrome Dance","Arnold Genthe photographed dancers in motion in the 1910s and 20s. In this color Autochrome a dancer in flowing blue and yellow fabric leaps in the dark.","How does the dancer's cloth help show movement?"],
+[799,0,0,1920,"Babe Ruth","Babe Ruth was the best-known baseball player in America. In 1920 he hit 54 home runs for the New York Yankees, a record that amazed fans. Here he poses in his uniform in a studio.","How many home runs do you think a player can hit in a season now?"],
+[802,8,0,1920,"Brancusi's Studio","Edward Steichen photographed the Paris studio of the sculptor Constantin Brancusi, with its smooth, shining pieces. Brancusi simplified shapes until they seemed to be pure forms.","Which sculpture looks like a bird to you?"],
+[808,3,0,1920,"Power House Mechanic","A worker leans into a huge machine to adjust a bolt with his wrench. Lewis Hine photographed laborers as heroes, to show the skill and strength needed to run modern factories.","What do you think he is fixing?"],
+[813,0,0,1921,"Hedwig Stieglitz","Alfred Stieglitz photographed his mother Hedwig, in a rocking chair at the family's Lake George house. The deep lines of her face tell a long story.","What might she be thinking about?"],
+]
+json.dump({"rows": R, "range": [768, 816]}, open("t016.json", "w"), ensure_ascii=False)
+print(len(R))

@@ -1,0 +1,34 @@
+{% extends "photo/base.html" %}
+{% block title %}{{ e.name }} ({{ e.start }}–{{ e.end if e.end < 3000 else 'today' }}) · Photography Through Time{% endblock %}
+{% block desc %}{{ e.blurb }}{% endblock %}
+{% block body %}
+<main class="detail colpage">
+  <div class="crumbs"><a href="{{ url_for('photo.timeline') }}">← Through Time</a></div>
+  <header class="col-hero">
+    <div class="col-emoji">{{ e.emoji }}</div>
+    <div>
+      <p class="eyebrow">Chapter {{ e.idx + 1 }} · {{ e.start }}–{{ e.end if e.end < 3000 else 'today' }}</p>
+      <h1>{{ e.name }}</h1>
+      <p class="lede">{{ e.intro }}</p>
+      <p class="count"><b>{{ e.photos|length }}</b> photographs</p>
+    </div>
+  </header>
+  {% if ms %}
+  <section class="tl-ms">
+    {% for m in ms %}<div class="ms"><b>{{ m.y }}</b><span>{{ m.text }}</span></div>{% endfor %}
+  </section>
+  {% endif %}
+  <div class="wall">
+    {% for p in e.photos|sort(attribute='y') %}
+    <a class="card" href="{{ url_for('photo.photo', pid=p.id) }}" style="aspect-ratio:{{ ph_card_ratio(p) }};animation-delay:{{ [loop.index0, 20]|min * 25 }}ms">
+      <img loading="lazy" decoding="async" src="{{ p.th }}" alt="{{ p.t }}">
+      <span class="cap"><b>{{ p.t }}</b><i>{{ artists[p.a[0]].n if p.a else 'Unknown' }} · {{ p.y }}</i></span>
+    </a>
+    {% endfor %}
+  </div>
+  <nav class="pager">
+    {% if e.idx > 0 %}<a class="pg prev" href="{{ url_for('photo.era', slug=eras[e.idx-1].slug) }}"><small>← Earlier chapter</small><b>{{ eras[e.idx-1].name }}</b></a>{% else %}<span></span>{% endif %}
+    {% if e.idx + 1 < eras|length %}<a class="pg next" href="{{ url_for('photo.era', slug=eras[e.idx+1].slug) }}"><small>Next chapter →</small><b>{{ eras[e.idx+1].name }}</b></a>{% endif %}
+  </nav>
+</main>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "photo/base.html" %}
+{% block title %}Photographers · The Great Gallery{% endblock %}
+{% block body %}
+<main class="mus">
+  <header class="m-hero">
+    <p class="eyebrow">The people behind the cameras</p>
+    <h1>Great <em>Photographers</em></h1>
+    <p class="lede">{{ rows|length }} photographers, from the inventors of the 1820s to today, in the order they were born.</p>
+  </header>
+  <div class="m-cards">
+    {% for a, aid, ws in rows %}
+    <a class="m-card" href="{{ url_for('photo.photographer', aid=aid) }}"><b>📷 {{ a.n }}</b><em>{{ ph_lived(a) }} · {{ ws|length }} photo{{ '' if ws|length == 1 else 's' }}</em></a>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}

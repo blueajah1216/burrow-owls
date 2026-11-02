@@ -35,7 +35,7 @@ class GalleryHostMiddleware:
                 clean = path[len("/fineart"):] or "/"
                 return redirect(clean + (f"?{qs}" if qs else ""))
             return self.wsgi(environ, start_response)
-        if path == "/robots.txt" or path.startswith("/static/"):
+        if path == "/robots.txt" or path.startswith("/static/") or path == "/photography" or path.startswith("/photography/"):
             return self.wsgi(environ, start_response)
         environ["PATH_INFO"] = "/fineart" + path
         return self.wsgi(environ, start_response)
