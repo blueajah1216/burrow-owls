@@ -11,30 +11,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=23">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=24">
 <script>var FA_BASE="{{ fa_base }}";</script>
 </head>
 <body>
 <div class="sky" aria-hidden="true"><i></i><i></i><i></i></div>
 <header class="top">
-  <a class="brand" href="{{ url_for('fineart.index') }}">
-    <span class="brand-mark"><span></span></span>
-    <span class="brand-text">The Great <em>Gallery</em></span>
-  </a>
-  <nav>
-    <a href="{{ url_for('fineart.index') }}" class="only-m">🏠 Home</a>
+  <div class="left">
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="topnav" aria-label="Open the menu"><span class="bars"><i></i><i></i><i></i></span><span class="label">Menu</span><span class="caret"></span></button>
+    <a class="brand" href="{{ url_for('fineart.index') }}">
+      <span class="brand-mark"><span></span></span>
+      <span class="brand-text">The Great <em>Gallery</em></span>
+    </a>
+  </div>
+  <nav class="menu" id="topnav" aria-label="Main menu">
+    <a href="{{ url_for('fineart.index') }}">🏠 Home</a>
+    <a href="{{ url_for('fineart.index') }}#browse">🖼️ Browse paintings</a>
+    <a href="{{ url_for('fineart.collections') }}">🗂️ Collections</a>
     <a href="{{ url_for('fineart.history') }}">🏛️ History</a>
     <a href="{{ url_for('fineart.museums') }}">🗺️ Museums</a>
     <a href="{{ url_for('fineart_auth.lovers') }}">💛 Art Lovers</a>
-    <a href="{{ url_for('fineart.collections') }}">Collections</a>
-    <a href="{{ url_for('fineart.index') }}#browse">Browse</a>
     <a href="{{ url_for('fineart.collection', slug='kids') }}">🧒 Kids</a>
+    <a href="{{ url_for('fineart.today') }}">⭐ Today's pick</a>
+    <hr>
     <a href="{{ url_for('photo.index') }}">📷 Photography</a>
-    <a href="{{ url_for('fineart.today') }}">Today's pick</a>
     <a href="{{ url_for('fineart.random_painting') }}" class="pill">🎲 Surprise me</a>
+  </nav>
+  <div class="acct-wrap">
     {% if fa_current %}<a href="{{ url_for('fineart_auth.account') }}" class="acct" title="Your account">👤 <span>{{ fa_current.display_name.split()[0] }}</span></a>
     {% else %}<a href="{{ url_for('fineart_auth.login', next=request.path) }}" class="acct">👤 <span>Log in</span></a>{% endif %}
-  </nav>
+  </div>
 </header>
 {% block body %}{% endblock %}
 <footer class="foot">
@@ -43,7 +49,7 @@
 </footer>
 <script>window.FA_USER={{ 'true' if fa_current else 'false' }};window.FA_CSRF="{{ fa_csrf() if fa_current else '' }}";</script>
 <script src="{{ url_for('static', filename='fineart/auth.js') }}?v=2"></script>
-<script src="{{ url_for('static', filename='fineart/menu.js') }}?v=1"></script>
+<script src="{{ url_for('static', filename='fineart/menu.js') }}?v=2"></script>
 {% block scripts %}{% endblock %}
 </body>
 </html>
