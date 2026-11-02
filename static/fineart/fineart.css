@@ -210,8 +210,6 @@ select option{color:#000}
 .auth-card input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(244,201,93,.18)}
 .auth-card .btn{justify-content:center;width:100%}
 .auth-card .btn.sm{width:auto}
-.auth-card .btn.google{background:#fff;color:#1f1f1f;margin-bottom:4px}
-.auth-card .btn.google:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.3)}
 .auth-card .btn.danger{background:none;color:#ffb3bf;box-shadow:inset 0 0 0 1.5px rgba(255,143,163,.5)}
 .auth-card .btn.danger:hover{background:rgba(255,143,163,.15)}
 .auth-card .or{display:flex;align-items:center;gap:12px;color:var(--mute);margin:14px 0;font-size:.9rem}

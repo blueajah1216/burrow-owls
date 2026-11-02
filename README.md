@@ -48,11 +48,10 @@ A standalone-styled (blue + gold) gallery of ~1,350 famous public-domain paintin
 
 ### /fineart accounts
 
-`fineart_auth.py` adds sign-up / log-in (username + password, or Google) so favorites sync across devices.
+`fineart_auth.py` adds sign-up / log-in (username + password) so favorites sync across devices.
 Tables `fa_users` and `fa_favorites` are created by `db.create_all()`. Anonymous visitors still use localStorage favorites.
 
-Env vars on Render: `DATABASE_URL` (Postgres — SQLite files don't survive deploys), `SECRET_KEY` (required), and for Google
-`GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` (authorized redirect URI: `https://theburrowowls.com/fineart/auth/google/callback`).
+Env vars on Render: `DATABASE_URL` (Postgres — SQLite files don't survive deploys) and `SECRET_KEY` (required).
 
 ### /fineart/history — Art Through History
 

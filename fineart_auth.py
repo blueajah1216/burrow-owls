@@ -1,5 +1,5 @@
 """
-Accounts for /fineart: sign up with a username + password, or "Sign in with Google".
+Accounts for /fineart: sign up with a username + password.
 Signed-in visitors get their favorite paintings saved to their account (synced with
 the localStorage favorites that logged-out visitors already have).
 
@@ -7,10 +7,6 @@ Wired up from app.py with `init_auth(app, db)`; call it before db.create_all().
 
 Config (env vars):
   SECRET_KEY            required in production (Flask sessions)
-  GOOGLE_CLIENT_ID      } optional; the Google button only appears when both are set
-  GOOGLE_CLIENT_SECRET  }
-  GOOGLE_REDIRECT_URI   optional override of the callback URL
-                        (default: https://<host>/fineart/auth/google/callback)
 """
 
 import os
@@ -40,7 +36,6 @@ def hash_pw(pw):
 _DUMMY_HASH = hash_pw("not-a-real-password")
 
 User = Favorite = Profile = DB = None  # defined in init_auth
-oauth = None
 _attempts = defaultdict(deque)  # key -> recent attempt timestamps (per-process)
 
 
@@ -84,12 +79,8 @@ def login_user(user):
     session.permanent = True
 
 
-def google_enabled():
-    return bool(os.environ.get("GOOGLE_CLIENT_ID") and os.environ.get("GOOGLE_CLIENT_SECRET"))
-
-
 def init_auth(app, db):
-    global User, Favorite, Profile, DB, oauth
+    global User, Favorite, Profile, DB
     DB = db
 
     # Behind Render's proxy: trust X-Forwarded-Proto/Host so external URLs are https.
@@ -107,11 +98,9 @@ def init_auth(app, db):
     class _User(db.Model):
         __tablename__ = "fa_users"
         id = db.Column(db.Integer, primary_key=True)
-        username = db.Column(db.String(24), unique=True, nullable=True)  # lowercase; Google users have none
+        username = db.Column(db.String(24), unique=True, nullable=True)  # lowercase
         display_name = db.Column(db.String(60), nullable=False)
         password_hash = db.Column(db.String(255), nullable=True)
-        google_sub = db.Column(db.String(64), unique=True, nullable=True)
-        email = db.Column(db.String(255), nullable=True)  # from Google only; never used to link accounts
         created_at = db.Column(db.DateTime, default=datetime.utcnow)
         favorites = db.relationship("_Favorite", backref="user", cascade="all, delete-orphan", lazy="dynamic")
 
@@ -131,17 +120,6 @@ def init_auth(app, db):
 
     User, Favorite, Profile = _User, _Favorite, _Profile
 
-    if google_enabled():
-        from authlib.integrations.flask_client import OAuth
-        oauth = OAuth(app)
-        oauth.register(
-            name="google",
-            client_id=os.environ["GOOGLE_CLIENT_ID"],
-            client_secret=os.environ["GOOGLE_CLIENT_SECRET"],
-            server_metadata_url="https://accounts.google.com/.well-known/openid-configuration",
-            client_kwargs={"scope": "openid email profile"},
-        )
-
     @app.before_request
     def _load_user():
         g.fa_user = None
@@ -154,7 +132,7 @@ def init_auth(app, db):
     def _inject():
         if not request.path.startswith("/fineart"):
             return {}
-        return dict(fa_current=getattr(g, "fa_user", None), fa_csrf=csrf_token, fa_google=google_enabled())
+        return dict(fa_current=getattr(g, "fa_user", None), fa_csrf=csrf_token)
 
     @app.after_request
     def _no_store_for_accounts(resp):
@@ -223,7 +201,7 @@ def login():
     nxt = safe_next(request.values.get("next"))
     if g.fa_user:
         return redirect(nxt)
-    error = "Google sign-in didn't work. Please try again." if request.args.get("error") == "google" else None
+    error = None
     username = ""
     if request.method == "POST":
         check_csrf()
@@ -319,43 +297,6 @@ def lover(uid):
     data = fineart.load()
     works = [data["by_id"][i] for i in _fav_ids(u) if i in data["by_id"] and not data["by_id"][i].get("n")]
     return render_template("fineart/lover.html", u=u, works=works, artists=data["artists"])
-
-
-# ---------------------------------------------------------------- Google
-
-@bp.route("/auth/google")
-def google_start():
-    _ready()
-    if not oauth:
-        abort(404)
-    session["oauth_next"] = safe_next(request.args.get("next"))
-    redirect_uri = os.environ.get("GOOGLE_REDIRECT_URI") or url_for("fineart_auth.google_callback", _external=True)
-    return oauth.google.authorize_redirect(redirect_uri)
-
-
-@bp.route("/auth/google/callback")
-def google_callback():
-    _ready()
-    if not oauth:
-        abort(404)
-    nxt = safe_next(session.get("oauth_next"))
-    try:
-        token = oauth.google.authorize_access_token()
-        info = token.get("userinfo") or {}
-    except Exception:
-        return redirect(url_for("fineart_auth.login", error="google"))
-    sub = info.get("sub")
-    if not sub:
-        return redirect(url_for("fineart_auth.login", error="google"))
-    s = _session()
-    u = User.query.filter_by(google_sub=sub).first()
-    if not u:
-        name = (info.get("name") or info.get("given_name") or "Art lover").strip()[:60]
-        u = User(google_sub=sub, display_name=name, email=info.get("email"))
-        s.add(u)
-        s.commit()
-    login_user(u)
-    return redirect(nxt)
 
 
 # ---------------------------------------------------------------- favorites API

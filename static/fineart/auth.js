@@ -3,7 +3,7 @@
   const KEY = 'fa_favs';
   const read = () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } };
   const write = ids => { try { localStorage.setItem(KEY, JSON.stringify(ids)); } catch (e) {} };
-  const post = body => fetch('/fineart/api/favorites', {
+  const post = body => fetch(FA_BASE + '/api/favorites', {
     method: 'POST', credentials: 'same-origin',
     headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': window.FA_CSRF || '' },
     body: JSON.stringify(body),

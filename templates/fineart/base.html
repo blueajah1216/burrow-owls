@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=22">
+<script>var FA_BASE="{{ fa_base }}";</script>
 </head>
 <body>
 <div class="sky" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -39,7 +40,7 @@
   <p class="fine">Descriptions are written for curious kids. Some details of art history are debated — when in doubt, ask a librarian or a museum.</p>
 </footer>
 <script>window.FA_USER={{ 'true' if fa_current else 'false' }};window.FA_CSRF="{{ fa_csrf() if fa_current else '' }}";</script>
-<script src="{{ url_for('static', filename='fineart/auth.js') }}?v=1"></script>
+<script src="{{ url_for('static', filename='fineart/auth.js') }}?v=2"></script>
 {% block scripts %}{% endblock %}
 </body>
 </html>

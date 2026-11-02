@@ -8,7 +8,7 @@
   const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
-  fetch('/fineart/data.json').then(r => r.json()).then(d => {
+  fetch(FA_BASE + '/data.json').then(r => r.json()).then(d => {
     D = d;
     d.paintings.forEach(p => { const names = p.a.map(a => d.artists[a]?.n || '').join(' '); p._s = norm(`${p.t} ${names} ${p.y} ${d.genres[p.g].name} ${p.why} ${p.m || ''}`); });
     readUrl(); hero(); rooms(); render();
@@ -30,7 +30,7 @@
     const p = pool[Math.floor(Date.now() / 864e5) % pool.length];
     $('#potd-img').src = W(p, 960); $('#potd-img').alt = p.t;
     $('#potd-title').textContent = p.t; $('#potd-by').textContent = `${D.artists[p.a[0]].n}, ${p.y}`;
-    $('#potd').href = `/fineart/p/${p.id}`;
+    $('#potd').href = `${FA_BASE}/p/${p.id}`;
   }
   function rooms() {
     document.querySelectorAll('.room').forEach(el => {
@@ -64,7 +64,7 @@
     const frag = document.createDocumentFragment();
     shown.slice(batch * STEP, (batch + 1) * STEP).forEach((p, i) => {
       const a = document.createElement('a'); a.className = 'card'; a.style.aspectRatio = Math.min(Math.max(p.w / p.h, .55), 2.2).toFixed(3); a.style.animationDelay = `${Math.min(i, 20) * 25}ms`;
-      a.href = `/fineart/p/${p.id}` + (st.g !== '' && st.g !== 'fav' ? `?g=${st.g}` : '');
+      a.href = `${FA_BASE}/p/${p.id}` + (st.g !== '' && st.g !== 'fav' ? `?g=${st.g}` : '');
       a.innerHTML = `<img loading="lazy" decoding="async" src="${W(p, 500)}" alt="${esc(p.t)}"><span class="cap"><b>${esc(p.t)}</b><i>${esc(D.artists[p.a[0]].n)} · ${p.y}</i></span><button class="heart${favs.has(p.id) ? ' on' : ''}" aria-label="Save">${favs.has(p.id) ? '♥' : '♡'}</button>`;
       a.querySelector('.heart').onclick = e => { e.preventDefault(); e.stopPropagation(); favs.has(p.id) ? favs.delete(p.id) : favs.add(p.id); store.set('fa_favs', [...favs]); const on = favs.has(p.id); window.faSync && faSync(p.id, on); e.currentTarget.classList.toggle('on', on); e.currentTarget.textContent = on ? '♥' : '♡'; $('#favn').textContent = favs.size ? `(${favs.size})` : ''; };
       frag.appendChild(a);

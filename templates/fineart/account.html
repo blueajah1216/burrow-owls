@@ -4,7 +4,7 @@
 <main class="auth-wrap">
   <section class="auth-card">
     <h1>Hi, <em>{{ fa_current.display_name }}</em></h1>
-    <p class="auth-sub">{{ count }} saved painting{{ '' if count == 1 else 's' }} · signed in {{ 'with Google' if fa_current.google_sub else 'as ' ~ fa_current.username }}</p>
+    <p class="auth-sub">{{ count }} saved painting{{ '' if count == 1 else 's' }} · signed in as {{ fa_current.username }}</p>
     <p><a class="btn gold" href="{{ url_for('fineart.index', g='fav') }}#browse">♥ See my favorites</a></p>
     <form method="post" action="{{ url_for('fineart_auth.account_name') }}">
       <input type="hidden" name="csrf" value="{{ fa_csrf() }}">

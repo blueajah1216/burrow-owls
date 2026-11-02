@@ -37,7 +37,7 @@
   function showTip(m, p) {
     const r = box.getBoundingClientRect(), b = p.getBoundingClientRect();
     tip.hidden = false;
-    tip.innerHTML = `<b>${m.name}</b><span>${m.city}, ${m.country}</span><a href="/fineart/museum/${m.slug}">Visit museum →</a>`;
+    tip.innerHTML = `<b>${m.name}</b><span>${m.city}, ${m.country}</span><a href="${FA_BASE}/museum/${m.slug}">Visit museum →</a>`;
     let x = b.left - r.left + b.width / 2, y = b.top - r.top;
     x = Math.max(110, Math.min(r.width - 110, x));
     tip.style.left = x + 'px'; tip.style.top = y + 'px';
@@ -50,7 +50,7 @@
       c.setAttribute('cx', x.toFixed(1)); c.setAttribute('cy', y.toFixed(1)); c.setAttribute('class', 'pin');
       c.setAttribute('tabindex', 0); c.setAttribute('role', 'link'); c.setAttribute('aria-label', m.name + ', ' + m.city);
       c.addEventListener('click', e => { e.stopPropagation(); showTip(m, c); });
-      c.addEventListener('keydown', e => { if (e.key === 'Enter') location.href = '/fineart/museum/' + m.slug; });
+      c.addEventListener('keydown', e => { if (e.key === 'Enter') location.href = FA_BASE + '/museum/' + m.slug; });
       c.addEventListener('mouseenter', () => showTip(m, c));
       c._m = m; svg.appendChild(c); pins.push(c);
     });
