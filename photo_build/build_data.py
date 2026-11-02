@@ -8,7 +8,10 @@ from who import canon
 import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-WORK = json.load(open(os.path.join(ROOT, "fineart_build/photo/work.json")))
+WORK = dict(enumerate(json.load(open(os.path.join(ROOT, "fineart_build/photo/work.json")))))
+_w2 = os.path.join(ROOT, "fineart_build/photo/work2.json")
+if os.path.exists(_w2):  # second batch: indices start at 10000 so the first batch's texts keep their keys
+    WORK.update({10000 + i: r for i, r in enumerate(json.load(open(_w2)))})
 TH = "/private/tmp/claude-501/-Users-whitetower-dev-burrow-owls/717d435b-0809-4761-bc97-df7352efb381/scratchpad/thumbs"
 H = {"User-Agent": "BurrowOwlsFineArt/1.0 (blueajah@pm.me)"}
 OVERRIDE_WHO = {591: ("john-t-daniels", "John T. Daniels"), 828: ("louis-bachrach", "Louis Bachrach"), 1038: ("bob-sandberg", "Bob Sandberg"), 1050: ("rowland-scherman", "Rowland Scherman"),
@@ -16,7 +19,7 @@ OVERRIDE_WHO = {591: ("john-t-daniels", "John T. Daniels"), 828: ("louis-bachrac
 EXTRA_B = {"charles-c-ebbets": ("Charles C. Ebbets", 1905, 1978, "USA", "Charles Ebbets was a photographer who took the famous picture of ironworkers eating lunch on a beam above New York in 1932.")}
 
 rows = {}
-for f in sorted(glob.glob(os.path.join(os.path.dirname(__file__), "texts", "t0*.json"))):
+for f in sorted(glob.glob(os.path.join(os.path.dirname(__file__), "texts", "t*.json"))):
     for r in json.load(open(f))["rows"]: rows[r[0]] = r
 
 def slug(s):
@@ -35,7 +38,7 @@ def dims(url):
 DEFAULT_BIO = {
     "commons": "A photographer who shares pictures freely on Wikimedia Commons.",
 }
-artists = {}; photos = []; used = set()
+artists = {}; photos = []; used = set(); seen_ta = set()
 for idx in sorted(rows):
     gi, g, n, y, title, why, k = rows[idx][0], rows[idx][1], rows[idx][2], rows[idx][3], rows[idx][4], rows[idx][5], rows[idx][6]
     c = WORK[idx]
@@ -54,12 +57,17 @@ for idx in sorted(rows):
         akey = re.sub(r"\W+", "-", key).strip("-")
         artists.setdefault(akey, {"n": n_, "b": b_, "d": d_, "bi": bi_, "bio": bio_})
         a = [akey]
+    tk = (re.sub(r"\W+", "", t.lower()), a[0] if a else "")
+    if tk in seen_ta: continue  # same title by the same photographer: keep the first
+    seen_ta.add(tk)
     # image size
     w_, h_ = c["w"], c["h"]
     if not w_ or not h_:
         dd = dims(c["th"]); w_, h_ = dd if dd else (4, 3)
     hi = c["hi"]
     if "artic.edu/iiif" in hi and c["hw"]: hi = hi.split("/full/")[0] + f"/full/{c['hw']},/0/default.jpg"  # AIC refuses /full/full; an explicit width works
+    u_ = c["u"]
+    if "artic.edu/iiif" in u_: u_ = re.sub(r"/full/\d+,/", "/full/843,/", u_)  # 843 is the width AIC serves fastest
     pid = slug(t) + ("-" + slug(artists[a[0]]["n"].split()[-1]) if a else "")
     pid = pid[:70]; base = pid; i = 2
     while pid in used: pid = f"{base}-{i}"; i += 1
@@ -68,7 +76,7 @@ for idx in sorted(rows):
     by = ""
     if re.match(r"CC BY", lic or ""):
         by = (artists[a[0]]["n"] if a else re.sub(r"<[^>]+>", "", c.get("by") or "")[:80])
-    photos.append(dict(id=pid, t=t, a=a, y=y, d=str(y), g=g, w=w_, h=h_, u=c["u"], th=c["th"], hi=hi, hw=c["hw"] or 0, hh=c["hh"] or 0, p=c["page"], s=c["source"],
+    photos.append(dict(id=pid, t=t, a=a, y=y, d=str(y), g=g, w=w_, h=h_, u=u_, th=c["th"], hi=hi, hw=c["hw"] or 0, hh=c["hh"] or 0, p=c["page"], s=c["source"],
                        cr=(c.get("credit") or ""), lic=("Public domain" if lic.startswith(("Public", "No ")) else lic), by=by, why=why, k=k, pr=(c.get("pr") or "")[:80] if c["src"] in ("aic", "cleveland") else "",
                        l=[], c=[], n=1 if n else 0, r=0, _idx=idx, _who=c["who"], _src=c["src"]))
 
@@ -88,6 +96,7 @@ for tname in ICONS:
     if p and p["r"] == 0: ri += 1; p["r"] = ri
 rest = sorted([p for p in photos if p["r"] == 0], key=lambda p: -(WORK[p["_idx"]].get("rank") or 0))
 for p in rest: ri += 1; p["r"] = ri
+photos.sort(key=lambda p: p["y"])  # stable: keeps the old order within a year; era prev/next follow time
 
 # --- collections
 def has(p, rx): return re.search(rx, p["t"] + " " + p["why"], re.I)

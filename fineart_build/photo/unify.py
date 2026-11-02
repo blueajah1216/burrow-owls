@@ -35,7 +35,8 @@ for a in json.load(open("c_aic.json")):
                     th=base + "/full/600,/0/default.jpg", u=base + "/full/1200,/0/default.jpg", hi=base + "/full/full/0/default.jpg", hw=w, hh=h, w=w, h=h, page="https://www.artic.edu/artworks/%s" % a["id"],
                     lic="CC0 (public domain)", by="", source="Art Institute of Chicago", credit=a["credit_line"], pr=a["medium_display"], place=a.get("place_of_origin") or "", desc=desc, score=min((a.get("pageviews") or 0) / 60.0, 6)))
 # --- LoC
-for a in json.load(open("c_loc.json")):
+import os
+for a in [x for f in ("c_loc.json", "c_loc2.json", "c_loc3.json") if os.path.exists(f) for x in json.load(open(f))]:
     b = a["base"]
     c = a.get("contrib") or []
     who = c[0].replace(", photographer", "") if isinstance(c, list) and c else (c if isinstance(c, str) else "")
@@ -44,15 +45,16 @@ for a in json.load(open("c_loc.json")):
                     hw=0, hh=0, w=0, h=0, page=a["url"], lic="No known restrictions (public domain)", by="", source="Library of Congress", credit="Library of Congress, Prints & Photographs Division", pr=a.get("medium") or "",
                     place=", ".join(a.get("loc") or []) if isinstance(a.get("loc"), list) else "", desc=" ".join(a.get("notes") or [])[:500], score=2, q=a.get("q")))
 NU = json.load(open('nasa_urls.json'))
+if os.path.exists('nasa_urls2.json'): NU.update(json.load(open('nasa_urls2.json')))
 # --- NASA
-for a in json.load(open("c_nasa.json")):
+for a in [x for f in ("c_nasa.json", "c_nasa2.json") if os.path.exists(f) for x in json.load(open(f))]:
     sid = a["sid"]; base = f"https://images-assets.nasa.gov/image/{sid}/{sid}"
     nu = NU.get(sid, {})
     if "~medium" not in nu: continue
     out.append(dict(key="nasa-" + re.sub(r"\W+", "-", sid).lower(), src="nasa", sid=sid, title=a["title"], who=a.get("photographer") or "NASA", y=yr(a["date"]), date=a["date"][:10], th=base + "~medium.jpg", u=base + ("~large.jpg" if "~large" in nu else "~medium.jpg"), hi=base + "~orig" + nu.get("~orig", ".jpg"),
                     hw=0, hh=0, w=0, h=0, page=a["page"], lic="Public domain (NASA)", by="", source="NASA Image and Video Library", credit=a.get("center") or "NASA", pr="", place="", desc=re.sub(r"<[^>]+>", "", a["desc"])[:700], score=3, q=a["q"]))
 # --- Commons
-for f in ("c_commons.json", "c_commons2.json"):
+for f in ("c_commons.json", "c_commons2.json", "c_commons3.json"):
     try: rows = json.load(open(f))
     except Exception: continue
     for a in rows:
