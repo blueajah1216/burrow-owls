@@ -89,3 +89,7 @@ A sister site to the paintings gallery: photographs from 1826 to today, traced t
 - `photography.py` — blueprint (`/photography`), data in `data/photo/gallery.json`, templates in `templates/photo/`, assets in `static/photo/` (green theme of the paintings CSS).
 - Everything shown is public domain, CC0 or freely licensed (CC BY / BY-SA, with the credit shown). Images are hot-linked from their source (Art Institute of Chicago, Cleveland Museum of Art, Library of Congress, NASA, Wikimedia Commons); each page links to the source and a hi-res download.
 - Build: `fineart_build/photo/*.py` fetch candidates (museum open-access APIs, NASA, Commons), `unify.py` merges them, `select_.py` + `freeze.py` choose `work.json`; texts are hand-written in `photo_build/texts/t*.py`; `photo_build/build_data.py` assembles the JSON (eras, milestones and photographer bios live in `photo_build/meta.py`, `artists_a.py`, `artists_b.py`).
+
+## Backing up hi-res originals to Backblaze B2
+
+`backup/backup_hires.py` copies the hi-res original of every photo (or painting) to a private B2 bucket as a fallback in case the external links break. It is not used by the site. Set `B2_KEY_ID`, `B2_APP_KEY`, `B2_BUCKET` and `B2_ENDPOINT`, then run `.venv/bin/python backup/backup_hires.py --site photo --dry-run` (sizes only) and again without `--dry-run` to upload. It is resumable, waits between downloads from the same host and stops on 403/429 instead of retrying.

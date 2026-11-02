@@ -58,6 +58,8 @@ for idx in sorted(rows):
     w_, h_ = c["w"], c["h"]
     if not w_ or not h_:
         dd = dims(c["th"]); w_, h_ = dd if dd else (4, 3)
+    hi = c["hi"]
+    if "artic.edu/iiif" in hi and c["hw"]: hi = hi.split("/full/")[0] + f"/full/{c['hw']},/0/default.jpg"  # AIC refuses /full/full; an explicit width works
     pid = slug(t) + ("-" + slug(artists[a[0]]["n"].split()[-1]) if a else "")
     pid = pid[:70]; base = pid; i = 2
     while pid in used: pid = f"{base}-{i}"; i += 1
@@ -66,7 +68,7 @@ for idx in sorted(rows):
     by = ""
     if re.match(r"CC BY", lic or ""):
         by = (artists[a[0]]["n"] if a else re.sub(r"<[^>]+>", "", c.get("by") or "")[:80])
-    photos.append(dict(id=pid, t=t, a=a, y=y, d=str(y), g=g, w=w_, h=h_, u=c["u"], th=c["th"], hi=c["hi"], hw=c["hw"] or 0, hh=c["hh"] or 0, p=c["page"], s=c["source"],
+    photos.append(dict(id=pid, t=t, a=a, y=y, d=str(y), g=g, w=w_, h=h_, u=c["u"], th=c["th"], hi=hi, hw=c["hw"] or 0, hh=c["hh"] or 0, p=c["page"], s=c["source"],
                        cr=(c.get("credit") or ""), lic=("Public domain" if lic.startswith(("Public", "No ")) else lic), by=by, why=why, k=k, pr=(c.get("pr") or "")[:80] if c["src"] in ("aic", "cleveland") else "",
                        l=[], c=[], n=1 if n else 0, r=0, _idx=idx, _who=c["who"], _src=c["src"]))
 

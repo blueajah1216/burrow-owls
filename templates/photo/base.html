@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='photo/photo.css') }}?v=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='photo/photo.css') }}?v=2">
   <script>var PH_BASE="{{ url_for('photo.index')|trim('/') }}";</script>
 </head>
 <body>
@@ -22,6 +22,7 @@
     <span class="brand-text">The Great <em>Gallery</em> <small class="brand-sub">Photography</small></span>
   </a>
   <nav>
+    <a href="{{ url_for('photo.index') }}" class="only-m">🏠 Home</a>
     <a href="{{ url_for('photo.timeline') }}">⏳ Through Time</a>
     <a href="{{ url_for('photo.photographers') }}">📷 Photographers</a>
     <a href="{{ url_for('photo.collections') }}">Collections</a>
@@ -38,6 +39,7 @@
   <p><strong>The Great Gallery · Photography</strong> · Every photograph here is in the public domain or shared under a free license, and each one is credited and linked to its source: the Library of Congress, NASA, museum open-access collections and Wikimedia Commons.</p>
   <p class="fine">Descriptions are written for curious kids. Some details of photo history are debated — when in doubt, ask a librarian or a museum.</p>
 </footer>
+<script src="{{ url_for('static', filename='fineart/menu.js') }}?v=1"></script>
 {% block scripts %}{% endblock %}
 </body>
 </html>
