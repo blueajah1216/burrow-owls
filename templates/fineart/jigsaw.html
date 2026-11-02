@@ -1,0 +1,24 @@
+{% extends "fineart/base.html" %}
+{% set slide = mode == 'slide' %}
+{% block title %}{{ 'Slide Puzzle' if slide else 'Jigsaw' }} · The Great Gallery{% endblock %}
+{% block desc %}{{ 'Slide the tiles to rebuild a famous painting.' if slide else 'Swap the pieces to rebuild a famous painting.' }}{% endblock %}
+{% block body %}
+<main class="detail game">
+  <div class="crumbs"><a href="{{ url_for('fineart.games') }}">← All games</a></div>
+  <h1 class="sec big">{% if slide %}Slide <em>Puzzle</em>{% else %}Art <em>Jigsaw</em>{% endif %}</h1>
+  <p class="games-sub">{% if slide %}Tap a tile next to the empty space to slide it over. Put the whole painting back in order. (On a keyboard, use the arrow keys.){% else %}Tap one piece, then another, to swap them. (On a computer you can also drag.) Pieces turn gold when they're in the right place.{% endif %}</p>
+  <div class="mem-bar">
+    <div class="mem-sizes" id="sizes" role="group" aria-label="Puzzle size"><span>Size:</span>
+      {% if slide %}{% for n in (3, 4, 5) %}<button type="button" class="chip" data-n="{{ n }}">{{ n }}×{{ n }}</button>{% endfor %}
+      {% else %}{% for n in (3, 4, 5, 6) %}<button type="button" class="chip" data-n="{{ n }}">{{ n * n }} pieces</button>{% endfor %}{% endif %}
+    </div>
+    <div class="mem-stats"><span>Moves <b id="moves">0</b></span><span>Time <b id="time">0:00</b></span>
+      <button type="button" class="btn ghost sm" id="peek">👁 Peek</button><button type="button" class="btn ghost sm" id="restart">↻ New painting</button></div>
+  </div>
+  <div class="pz-wrap"><div class="pz" id="pz"></div><img class="pz-peek" id="peekimg" alt="" hidden></div>
+  <p class="mem-say" id="say"></p>
+  <div class="mem-win" id="win" hidden><div class="mem-win-box"><h2>🎉 Solved!</h2><p id="win-text"></p><p class="mem-best" id="win-best"></p>
+    <div class="mem-win-btns"><button type="button" class="btn" id="again">New painting</button><button type="button" class="btn ghost" id="close-win">Look at it</button></div></div></div>
+</main>
+{% endblock %}
+{% block scripts %}<script>window.G={cards:{{ cards|tojson }},mode:"{{ mode }}"};</script><script src="{{ url_for('static', filename='fineart/puzzle.js') }}?v=1"></script>{% endblock %}

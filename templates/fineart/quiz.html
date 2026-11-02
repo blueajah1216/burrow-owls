@@ -1,0 +1,20 @@
+{% extends "fineart/base.html" %}
+{% block title %}Art Quiz · The Great Gallery{% endblock %}
+{% block desc %}Name the painter or the painting. Ten questions about the most famous paintings in the world.{% endblock %}
+{% block body %}
+<main class="detail game">
+  <div class="crumbs"><a href="{{ url_for('fineart.games') }}">← All games</a></div>
+  <h1 class="sec big">Art <em>Quiz</em></h1>
+  <div class="mem-sizes" id="modes" role="group" aria-label="Quiz type"><span>Question:</span>
+    <button type="button" class="chip" data-m="by">Who painted it?</button><button type="button" class="chip" data-m="t">What's it called?</button></div>
+  <div class="q-top"><span>Question <b id="qn">1</b> of 10</span><span>Score <b id="score">0</b></span></div>
+  <figure class="q-art"><img id="q-img" alt="A famous painting"></figure>
+  <h2 class="q-ask" id="q-ask"></h2>
+  <div class="q-opts" id="q-opts"></div>
+  <p class="mem-say" id="q-say"></p>
+  <div class="q-next"><button type="button" class="btn" id="q-next" hidden>Next →</button></div>
+  <div class="mem-win" id="win" hidden><div class="mem-win-box"><h2 id="win-h">🎉 Done!</h2><p id="win-text"></p><p class="mem-best" id="win-best"></p>
+    <div class="mem-win-btns"><button type="button" class="btn" id="again">Play again</button><a class="btn ghost" href="{{ url_for('fineart.games') }}">More games</a></div></div></div>
+</main>
+{% endblock %}
+{% block scripts %}<script>window.G={cards:{{ cards|tojson }}};</script><script src="{{ url_for('static', filename='fineart/quiz.js') }}?v=1"></script>{% endblock %}

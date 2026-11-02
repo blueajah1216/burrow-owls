@@ -224,19 +224,59 @@ def data_json():
 GAME_POOL = 150  # the memory game draws from this many of the most famous paintings
 
 
+def game_cards(data, width, n=GAME_POOL, ratio=None):
+    """The most famous non-mature paintings, as small dicts for the games' JavaScript."""
+    out = []
+    for p in sorted((p for p in data["paintings"] if not p.get("n") and p["a"]), key=lambda p: p["r"]):
+        if ratio and not (ratio[0] <= p["w"] / p["h"] <= ratio[1]):
+            continue
+        out.append(dict(id=p["id"], t=p["t"], by=data["artists"][p["a"][0]]["n"], y=p["y"], img=img_url(p, width), w=p["w"], h=p["h"], url=url_for("fineart.painting", pid=p["id"])))
+        if len(out) >= n:
+            break
+    return out
+
+
+GAMES = [
+    ("fineart.game_memory", "🧠 Memory Match", "Flip two tiles at a time and find the matching paintings. Choose from 8 to 42 tiles."),
+    ("fineart.game_painter", "🎓 Art Quiz", "Can you name the painter, or the painting? Ten questions about famous works."),
+    ("fineart.game_older", "⏳ Which Came First?", "Two paintings, one question: which is older? Keep your streak going."),
+    ("fineart.game_jigsaw", "🧩 Jigsaw", "Swap the pieces until the painting is whole again. From 9 to 36 pieces."),
+    ("fineart.game_slide", "🔢 Slide Puzzle", "Slide the tiles into the empty space to rebuild a masterpiece."),
+]
+
+
 @bp.route("/games")
 def games():
     data = load()
-    covers = [p for p in sorted((p for p in data["paintings"] if not p.get("n")), key=lambda p: p["r"])[:12]]
-    return render_template("fineart/games.html", covers=covers[:4])
+    covers = game_cards(data, 330, 40)
+    random.Random(date.today().toordinal()).shuffle(covers)
+    items = [dict(href=url_for(ep), title=t, blurb=b, imgs=covers[i * 4:i * 4 + 4]) for i, (ep, t, b) in enumerate(GAMES)]
+    return render_template("fineart/games.html", games=items)
 
 
 @bp.route("/games/memory")
 def game_memory():
-    data = load()
-    pool = sorted((p for p in data["paintings"] if not p.get("n") and p["a"]), key=lambda p: p["r"])[:GAME_POOL]
-    cards = [dict(id=p["id"], t=p["t"], by=data["artists"][p["a"][0]]["n"], y=p["y"], img=img_url(p, 330), url=url_for("fineart.painting", pid=p["id"])) for p in pool]
-    return render_template("fineart/memory.html", cards=cards)
+    return render_template("fineart/memory.html", cards=game_cards(load(), 330))
+
+
+@bp.route("/games/painter")
+def game_painter():
+    return render_template("fineart/quiz.html", cards=game_cards(load(), 960))
+
+
+@bp.route("/games/older")
+def game_older():
+    return render_template("fineart/older.html", cards=game_cards(load(), 960, 200))
+
+
+@bp.route("/games/jigsaw")
+def game_jigsaw():
+    return render_template("fineart/jigsaw.html", cards=game_cards(load(), 960, 120, ratio=(0.7, 1.6)), mode="jigsaw")
+
+
+@bp.route("/games/slide")
+def game_slide():
+    return render_template("fineart/jigsaw.html", cards=game_cards(load(), 960, 120, ratio=(0.7, 1.6)), mode="slide")
 
 
 @bp.route("/random")

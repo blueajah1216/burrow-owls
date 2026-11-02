@@ -1,0 +1,17 @@
+{% extends "fineart/base.html" %}
+{% block title %}Which Came First? · The Great Gallery{% endblock %}
+{% block desc %}Two famous paintings: which one is older? Build the longest streak you can.{% endblock %}
+{% block body %}
+<main class="detail game">
+  <div class="crumbs"><a href="{{ url_for('fineart.games') }}">← All games</a></div>
+  <h1 class="sec big">Which Came <em>First?</em></h1>
+  <p class="games-sub">Tap the painting you think is older. Every right answer adds to your streak. One wrong guess and it's over!</p>
+  <div class="q-top"><span>Streak <b id="streak">0</b></span><span>Best <b id="best">0</b></span></div>
+  <div class="o-pair" id="pair"></div>
+  <p class="mem-say" id="o-say">Which one was painted first?</p>
+  <div class="q-next"><button type="button" class="btn" id="o-next" hidden>Next →</button></div>
+  <div class="mem-win" id="win" hidden><div class="mem-win-box"><h2>Game over</h2><p id="win-text"></p><p class="mem-best" id="win-best"></p>
+    <div class="mem-win-btns"><button type="button" class="btn" id="again">Play again</button><a class="btn ghost" href="{{ url_for('fineart.games') }}">More games</a></div></div></div>
+</main>
+{% endblock %}
+{% block scripts %}<script>window.G={cards:{{ cards|tojson }}};</script><script src="{{ url_for('static', filename='fineart/older.js') }}?v=1"></script>{% endblock %}

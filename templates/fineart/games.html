@@ -8,14 +8,12 @@
     <h1 class="sec big">Art <em>games</em></h1>
     <p class="games-sub">Play with the most famous paintings in the world. You'll get to know them without even trying.</p>
     <div class="game-grid">
-      <a class="game-card" href="{{ url_for('fineart.game_memory') }}">
-        <div class="gc-art">{% for p in covers %}<img src="{{ fa_img(p, 330) }}" alt="" loading="lazy">{% endfor %}</div>
-        <div class="gc-txt"><b>🧠 Memory Match</b><span>Flip two tiles at a time and find the matching paintings. Choose from 8 to 42 tiles.</span><em>Play →</em></div>
+      {% for g in games %}
+      <a class="game-card" href="{{ g.href }}">
+        <div class="gc-art">{% for p in g.imgs %}<img src="{{ p.img }}" alt="" loading="lazy">{% endfor %}</div>
+        <div class="gc-txt"><b>{{ g.title }}</b><span>{{ g.blurb }}</span><em>Play →</em></div>
       </a>
-      <div class="game-card soon">
-        <div class="gc-art soon-art">🎨</div>
-        <div class="gc-txt"><b>More games coming soon</b><span>Guess the painter, put the pieces back together, and more.</span></div>
-      </div>
+      {% endfor %}
     </div>
   </section>
 </main>
