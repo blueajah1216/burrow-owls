@@ -1,11 +1,15 @@
-# burrow-owls
-Blog for my family
+# The Great Gallery
+
+This repository serves `https://thegreatgallery.art`. The Burrow Owls website is
+being retired; all new work belongs on the gallery domain. See [PROJECT_MEMORY.md](PROJECT_MEMORY.md)
+for the user's standing direction and public music paths.
 
 ## Music practice — The Great Gallery
 
 `thegreatgallery.art/music` (locally `/fineart/music`) is a blue choir practice
-room for soprano, alto, tenor and bass. The separate Seattle calendar at `/music`
-on the family site is unchanged. Painting and photography menus link to practice.
+room for soprano, alto, tenor and bass. It prominently links to music history at
+`/music/history` and the Seattle calendar at `/music/concerts` on the same gallery
+domain. Painting and photography menus link to practice and music history.
 
 The songbook has 92 titles, including 18 Jewish songs and 22 world folk songs,
 plus the original carols, hymns/spirituals, familiar children's tunes and four
@@ -50,7 +54,7 @@ matching visual/audio duration, controls, filtering, MIDI and mobile overflow.
 42 added melody transcriptions against their generated notes and rhythms.
 
 
-## /music — Seattle classical concert calendar
+## /music/concerts — Seattle classical concert calendar
 
 Calendar (day / week / month) of classical concerts in the Seattle region, plus piece search
 (`/music/search?q=beethoven+7`).
@@ -61,8 +65,11 @@ Calendar (day / week / month) of classical concerts in the Seattle region, plus 
 works, 50 composer biographies, and seven era chapters. Switch to composers with
 `?view=composers`; `?era=baroque` and `?q=bach` filter either view. Piece pages live at
 `/music/history/pieces/<id>` and biographies at `/music/history/composers/<id>`.
-The calendar features a history invitation, and the shared sidebar and music navigation
-link to both the timeline and the composer directory.
+The gallery's `/music` practice page and concert calendar feature a history invitation;
+the painting, photography, and music menus also link to the timeline. Gallery-host
+routing sends `/music/history`, `/music/concerts`, and `/music/search` to the concert
+blueprint while preserving the existing practice room at `/music`, its library JSON,
+and its score downloads. Verify using `Host: thegreatgallery.art`, not just localhost.
 
 Edit `data/music_history/history.json` directly. Preserve IDs to keep links stable.
 Work `year` determines chronological order and era placement; `date` explains whether

@@ -241,6 +241,7 @@ def init_music(app, db, ctx_fn):
 
     @bp.get("")
     @bp.get("/")
+    @bp.get("/concerts")
     def music_home():
         today = date.today()
         view = request.args.get("view", "month")

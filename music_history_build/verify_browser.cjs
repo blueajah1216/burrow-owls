@@ -2,9 +2,24 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const {chromium} = require('playwright');
-const base = process.env.MUSIC_HISTORY_TEST_URL || 'http://127.0.0.1:5058';
+const preview = process.env.MUSIC_HISTORY_TEST_URL || 'http://127.0.0.1:5058';
+const base = 'https://thegreatgallery.art';
 const artifacts = '/private/tmp/music-history-qa';
 fs.mkdirSync(artifacts, {recursive:true});
+
+// Exercise the production host middleware against local code without live traffic.
+async function routePreview(context) {
+  await context.route('**/*', async route => {
+    const request = route.request();
+    const url = new URL(request.url());
+    if (url.origin !== base) return route.abort();
+    const response = await route.fetch({
+      url:`${preview}${url.pathname}${url.search}`,
+      headers:{...request.headers(),host:'thegreatgallery.art'},
+    });
+    return route.fulfill({response});
+  });
+}
 
 (async () => {
   const browser = await chromium.launch({
@@ -12,6 +27,7 @@ fs.mkdirSync(artifacts, {recursive:true});
   });
   try {
     const page = await browser.newPage({viewport:{width:1440,height:1050}});
+    await routePreview(page.context());
     const errors = [];
     page.on('pageerror', e => errors.push(e.message));
     const visible = () => page.locator('[data-item]:visible').count();
@@ -61,11 +77,18 @@ fs.mkdirSync(artifacts, {recursive:true});
     }
     await page.setViewportSize({width:390,height:844});
     await page.goto(`${base}/music`);
+    await page.waitForFunction(() => window.choirState);
+    await page.locator('#play:not(:disabled)').waitFor();
+    assert.equal(await page.locator('.song-option').count(), 92);
+    await page.locator('#play').click();
+    await page.waitForFunction(() => window.choirState().position > .1);
+    await page.locator('#play').click();
     await noOverflow();
     await page.screenshot({path:`${artifacts}/mobile-discovery.png`,fullPage:true});
     await page.locator('.music-history-invitation').click();
     assert.match(page.url(), /\/music\/history$/);
-    const nojs = await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
+    const nojs = await browser.newContext({javaScriptEnabled:false,reducedMotion:'reduce',viewport:{width:390,height:844}});
+    await routePreview(nojs);
     const fallback = await nojs.newPage();
     await fallback.goto(`${base}/music/history`);
     await fallback.locator('#history-search').fill('dvorak');

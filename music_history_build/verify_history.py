@@ -26,7 +26,7 @@ class HistoryChecks(unittest.TestCase):
     def get(self, url):
         # Keep QA out of the family site's on-disk visitor counter.
         with patch("app.get_site_visits", return_value=0):
-            response = self.client.get(url)
+            response = self.client.get(url, base_url="https://thegreatgallery.art", follow_redirects=True)
         self.assertEqual(response.status_code, 200, url)
         return BeautifulSoup(response.data, "html.parser")
 
@@ -92,9 +92,42 @@ class HistoryChecks(unittest.TestCase):
     def test_missing_pages_and_discovery(self):
         for path in ["/music/history/pieces/missing", "/music/history/composers/missing"]:
             self.assertEqual(self.client.get(path).status_code, 404)
-        for path in ["/music", "/music/search", "/richard"]:
+        for path in ["/music", "/music/concerts", "/music/search", "/", "/photography"]:
             soup = self.get(path)
             self.assertTrue(soup.select('a[href="/music/history"]'), path)
+
+    def test_gallery_host_music_routes(self):
+        practice = self.get("/music")
+        self.assertTrue(practice.select_one("#play"))
+        self.assertEqual(len(practice.select(".song-option")), 92)
+        self.assertEqual(practice.select_one(".music-history-invitation")["href"], "/music/history")
+        self.assertTrue(practice.select('a[href="/music/concerts"]'))
+        history = self.get("/music/history")
+        self.assertIn("The Great Gallery", history.select_one("title").get_text())
+        self.assertNotIn("The Burrow Owls", str(history))
+        self.assertTrue(history.select('a[href="/music"], a[href="/music/"]'))
+        self.assertTrue(history.select('a[href="/music/concerts"]'))
+        self.assertTrue(history.select('a[href="/"]'))
+        concerts = self.get("/music/concerts")
+        self.assertIn("Seattle Classical Music", concerts.select_one("h1").get_text())
+        self.assertNotIn("The Burrow Owls", str(concerts))
+        search = self.get("/music/search?q=bach")
+        self.assertTrue(search.select('a[href="/music/concerts"]'))
+        library = self.client.get("/music/library.json", base_url="https://thegreatgallery.art")
+        self.assertEqual(library.status_code, 200)
+        self.assertEqual(len(library.json), 92)
+        score = self.client.get("/music/sources/" + library.json[0]["source"], base_url="https://thegreatgallery.art")
+        self.assertEqual(score.status_code, 200)
+        self.assertIn("attachment", score.headers["Content-Disposition"])
+        self.assertIn(b"X:", score.data)
+        score.close()
+        library.close()
+        redirect = self.client.get("/fineart/music/history?q=bach", base_url="https://thegreatgallery.art")
+        self.assertEqual(redirect.status_code, 301)
+        self.assertEqual(redirect.headers["Location"], "/music/history?q=bach")
+        www = self.client.get("/music/history", base_url="https://www.thegreatgallery.art")
+        self.assertEqual(www.status_code, 301)
+        self.assertEqual(www.headers["Location"], "https://thegreatgallery.art/music/history")
 
 
 if __name__ == "__main__":

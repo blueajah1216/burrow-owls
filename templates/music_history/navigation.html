@@ -1,4 +1,5 @@
 <nav class="mu-section-nav" aria-label="Music sections">
+  <a href="{{ url_for('choir.index') }}">Music practice</a>
   <a href="{{ url_for('music.music_home') }}" {% if request.endpoint == 'music.music_home' %}aria-current="page"{% endif %}>Concert calendar</a>
   <a href="{{ url_for('music.history') }}">Music history</a>
   <a href="{{ url_for('music.history', view='composers') }}">Composers</a>

@@ -1,7 +1,8 @@
 """Serve the gallery at the root of its own domain (thegreatgallery.art).
 
 On that host, /p/x is handled as /fineart/p/x, links drop the /fineart prefix, and any old /fineart/... URL
-redirects to the clean one. Every other host (theburrowowls.com) is untouched.
+redirects to the clean one. Music history, concert listings, and photography keep
+their public paths; /music itself remains the singing practice room.
 """
 import os
 
@@ -36,6 +37,8 @@ class GalleryHostMiddleware:
                 return redirect(clean + (f"?{qs}" if qs else ""))
             return self.wsgi(environ, start_response)
         if path == "/robots.txt" or path.startswith("/static/") or path == "/photography" or path.startswith("/photography/"):
+            return self.wsgi(environ, start_response)
+        if path.startswith("/music/") and path not in ("/music/", "/music/library.json") and not path.startswith("/music/sources/"):
             return self.wsgi(environ, start_response)
         environ["PATH_INFO"] = "/fineart" + path
         return self.wsgi(environ, start_response)
@@ -73,7 +76,7 @@ def init_gallery_host(app):
             "fa_base": "" if is_gallery_host() else "/fineart",
             "gallery_analytics_id": app.config["UMAMI_WEBSITE_ID"] if (
                 is_gallery_host() and request.endpoint and
-                request.blueprint in ("fineart", "photo", "choir")
+                request.blueprint in ("fineart", "photo", "choir", "music")
             ) else None,
         }
 

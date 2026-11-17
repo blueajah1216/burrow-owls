@@ -13,6 +13,7 @@
   <link rel="stylesheet"
         href="{{ url_for('static', filename='styles.css') }}">
   {% block head %}{% endblock %}
+  {% if request.blueprint == 'music' %}{% include 'shared/analytics.html' %}{% endif %}
 </head>
 
 <body>
@@ -21,9 +22,16 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="brand">
-        <a href="/">🦉 The Burrow Owls</a>
+        {% if request.blueprint == 'music' %}<a href="{{ url_for('fineart.index') }}">♫ The Great Gallery</a>{% else %}<a href="/">🦉 The Burrow Owls</a>{% endif %}
       </div>
 
+      {% if request.blueprint == 'music' %}
+      <hr>
+      <a class="nav" href="{{ url_for('fineart.index') }}">Paintings</a>
+      <a class="nav" href="{{ url_for('photo.index') }}">Photography</a>
+      <a class="nav" href="{{ url_for('choir.index') }}">Music practice</a>
+      <a class="nav" href="{{ url_for('music.music_home') }}">Concert calendar</a>
+      {% else %}
       <div class="people">
         {% for key, name in {
           'richard':'Richard',
@@ -66,6 +74,7 @@
       <hr>
       <a class="nav" href="/wine">🍷 Wine</a>
       <a class="nav" href="/music">🎻 Classical Music</a>
+      {% endif %}
       <a class="nav sub" href="{{ url_for('music.history') }}">Music Through History</a>
       <a class="nav sub" href="{{ url_for('music.history', view='composers') }}">50 Composers</a>
     </aside>

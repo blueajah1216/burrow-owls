@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Seattle Classical Music · The Burrow Owls{% endblock %}
+{% block title %}Seattle Classical Music · The Great Gallery{% endblock %}
 {% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=1">{% endblock %}
 {% block content %}
 {% include 'music_history/navigation.html' %}
@@ -31,11 +31,7 @@
 <h1 style="margin:0;">🎻 Seattle Classical Music</h1>
 <p class="muted" style="margin-top:6px;">Symphonic, chamber, choral and solo concerts in the Seattle region.</p>
 
-<a class="music-history-invitation" href="{{ url_for('music.history') }}">
-  <span class="music-history-mark" aria-hidden="true">♬</span>
-  <span><small>A thousand years of listening</small><strong>Music Through History</strong><span>100 landmark works · 50 composers · 7 eras. Discover the stories behind the sounds.</span></span>
-  <b aria-hidden="true">→</b>
-</a>
+{% include 'music_history/invitation.html' %}
 
 {# ── Piece search ── #}
 <form class="mu-search" method="get" action="/music/search">

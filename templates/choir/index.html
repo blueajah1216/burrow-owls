@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='choir/choir.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=2">
 {% include 'shared/analytics.html' %}
 </head>
 <body>
@@ -23,6 +24,9 @@
     <a href="{{ url_for('photo.index') }}">Photography</a>
     <a href="{{ url_for('fineart.games') }}">Art games</a>
     <a href="{{ url_for('choir.index') }}" aria-current="page">Music practice</a>
+    <a href="{{ url_for('music.history') }}">Music history</a>
+    <a href="{{ url_for('music.history', view='composers') }}">50 composers</a>
+    <a href="{{ url_for('music.music_home') }}">Concert calendar</a>
   </nav>
   <span class="section-label">THE MUSIC ROOM</span>
 </header>
@@ -31,6 +35,7 @@
     <div><p class="eyebrow">A LITTLE PRACTICE. A LOT OF HARMONY.</p><h1>Find your voice.<br><em>Sing together.</em></h1></div>
     <div class="intro-copy"><p>Familiar songs. Four voices. One lovely sound.</p><p>Follow the notes, find your part, and learn how it fits with everyone else.</p><a href="#how-to">New to harmony? Start here <span aria-hidden="true">↘</span></a></div>
   </section>
+  {% include 'music_history/invitation.html' %}
   <div class="room-layout">
     <aside class="library" aria-labelledby="library-heading">
       <div class="library-heading"><h2 id="library-heading">The songbook</h2><span>{{ songs|length }} songs</span></div>
