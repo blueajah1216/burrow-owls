@@ -120,6 +120,20 @@ Chamber Music Society, Music of Remembrance, Seattle Philharmonic), Early Music 
 Seattle Choral Company, Seattle Pro Musica, Philharmonia Northwest, Cascade Symphony Orchestra,
 UW School of Music.
 
+Benaroya Hall includes Seattle Symphony performances (including family, pops, and
+film concerts) and guest music events; rehearsals, talks, auditions, and hidden
+listings are excluded. The scraper first opens the public calendar in a normal
+`requests.Session`, then uses that same session for its POST feed and optional
+program pages. This avoids losing the POST method through the venue's ordinary
+session redirects. It stops on access restrictions and never bypasses a waiting room.
+
+`data/snapshots/benaroya_hall.json` is a verified export of the official listings.
+At startup, an empty upcoming Benaroya source is populated from this backup;
+existing live records take precedence. Scrape failures can also use the backup.
+Refresh it with `flask music-export "Benaroya Hall"` and commit the exported JSON.
+Keep the original performance IDs, local dates/times, and official ticket links.
+Offline regression checks: `.venv/bin/python music_history_build/verify_benaroya.py`.
+
     flask music-scrape                  # run every scraper (a few minutes; Benaroya's detail pages are slow)
     flask music-scrape "Early Music Seattle"
     flask music-import file.json|csv    # hand-curated events (format at top of music_ingest.py)

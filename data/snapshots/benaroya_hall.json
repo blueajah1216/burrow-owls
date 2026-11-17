@@ -1,0 +1,3394 @@
+{
+ "exported": "2026-11-17T10:29:04",
+ "events": [
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28430",
+   "title": "Mozart’s Requiem with Xian",
+   "start": "2026-11-19T19:30:00",
+   "performers": "Xian Zhang, conductor, Eric Schweikert, timpani,percussion, Ellie Dehn, soprano, Sarah Larsen, mezzo-soprano, Eric Ferring, tenor, Dashon Burton, baritone, Seattle Symphony Chorale, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Joe Pereira",
+     "work": "Virtù for Solo Timpani and String Orchestra (Seattle Symphony Co-Commission and World Premiere)"
+    },
+    {
+     "composer": "Wolfgang Amadeus Mozart",
+     "work": "Requiem"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28430"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29404",
+   "title": "The Sound of Remembrance: A Mosaic Requiem",
+   "start": "2026-11-20T19:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29404"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29408",
+   "title": "Cascade Youth Symphony Orchestra 50th Anniversary",
+   "start": "2026-11-21T13:00:00",
+   "performers": "Cascade Youth Symphony Orchestra 50th Anniversary",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29408"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28431",
+   "title": "Mozart’s Requiem with Xian",
+   "start": "2026-11-21T20:00:00",
+   "performers": "Xian Zhang, conductor, Eric Schweikert, timpani,percussion, Ellie Dehn, soprano, Sarah Larsen, mezzo-soprano, Eric Ferring, tenor, Dashon Burton, baritone, Seattle Symphony Chorale, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Joe Pereira",
+     "work": "Virtù for Solo Timpani and String Orchestra (Seattle Symphony Co-Commission and World Premiere)"
+    },
+    {
+     "composer": "Wolfgang Amadeus Mozart",
+     "work": "Requiem"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28431"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28432",
+   "title": "Mozart’s Requiem with Xian",
+   "start": "2026-11-22T14:00:00",
+   "performers": "Xian Zhang, conductor, Eric Schweikert, timpani,percussion, Ellie Dehn, soprano, Sarah Larsen, mezzo-soprano, Eric Ferring, tenor, Dashon Burton, baritone, Seattle Symphony Chorale, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Joe Pereira",
+     "work": "Virtù for Solo Timpani and String Orchestra (Seattle Symphony Co-Commission and World Premiere)"
+    },
+    {
+     "composer": "Wolfgang Amadeus Mozart",
+     "work": "Requiem"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28432"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28479",
+   "title": "Holiday Pops with Megan Hilty",
+   "start": "2026-12-04T20:00:00",
+   "performers": "Enrico Lopez-Yañez, conductor, Megan Hilty, vocals, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28479"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28694",
+   "title": "The Snowman",
+   "start": "2026-12-05T11:00:00",
+   "performers": "Tengku Irfan, conductor, Lifted! Youth Gospel Choir, Aadi Hosaagrahara, boy choir, Danielle Kuhlmann, horn, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28694"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28855",
+   "title": "The Snowman",
+   "start": "2026-12-05T13:00:00",
+   "performers": "Tengku Irfan, conductor, Lifted! Youth Gospel Choir, Aadi Hosaagrahara, boy choir, Danielle Kuhlmann, horn, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28855"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29225",
+   "title": "David Templeton in Concert",
+   "start": "2026-12-05T19:30:00",
+   "performers": "David Templeton in Concert",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29225"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28480",
+   "title": "Holiday Pops with Megan Hilty",
+   "start": "2026-12-05T20:00:00",
+   "performers": "Enrico Lopez-Yañez, conductor, Megan Hilty, vocals, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28480"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28481",
+   "title": "Holiday Pops with Megan Hilty",
+   "start": "2026-12-06T14:00:00",
+   "performers": "Enrico Lopez-Yañez, conductor, Megan Hilty, vocals, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28481"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29236",
+   "title": "SCMS- Balourdet Quartet & Marc André Hamelin",
+   "start": "2026-12-06T14:00:00",
+   "performers": "SCMS- Balourdet Quartet & Marc André Hamelin",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29236"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29366",
+   "title": " A PLU Christmas: Light Beyond Shadow",
+   "start": "2026-12-07T19:30:00",
+   "performers": " A PLU Christmas: Light Beyond Shadow",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29366"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28760",
+   "title": "Elf in Concert with the Seattle Symphony",
+   "start": "2026-12-09T19:30:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28760"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28525",
+   "title": "The Strings: Holiday String-Along",
+   "start": "2026-12-11T10:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28525"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28526",
+   "title": "The Strings: Holiday String-Along",
+   "start": "2026-12-12T09:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28526"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28527",
+   "title": "The Strings: Holiday String-Along",
+   "start": "2026-12-12T10:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28527"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28528",
+   "title": "The Strings: Holiday String-Along",
+   "start": "2026-12-12T11:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28528"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28761",
+   "title": "Elf in Concert with the Seattle Symphony",
+   "start": "2026-12-12T14:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28761"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28762",
+   "title": "Elf in Concert with the Seattle Symphony",
+   "start": "2026-12-12T20:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28762"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29319",
+   "title": "Seattle Men's Chorus: Prance and Be Merry",
+   "start": "2026-12-13T14:00:00",
+   "performers": "Seattle Men's Chorus: Prance and Be Merry",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29319"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29072",
+   "title": "Ensign Symphony & Chorus presents The Spirit of Christmas",
+   "start": "2026-12-14T19:30:00",
+   "performers": "Ensign Symphony & Chorus",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29072"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28714",
+   "title": "Handel’s Messiah",
+   "start": "2026-12-17T19:30:00",
+   "performers": "Jean-Sébastien Vallée, conductor, Sarah Dufresne, soprano, Nicholas Burns, countertenor (alto), James Ley, tenor, Enrico Lagasca, bass, Evelina Bosilkov, treble (soprano), Seattle Symphony Chorale, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "George Frideric Handel",
+     "work": "Messiah"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28714"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29320",
+   "title": "Seattle Men's Chorus: Prance and Be Merry",
+   "start": "2026-12-18T19:30:00",
+   "performers": "Seattle Men's Chorus: Prance and Be Merry",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29320"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29324",
+   "title": "Seattle Men's Chorus: Presents Prance and Be Merry Childrens Concert",
+   "start": "2026-12-19T11:00:00",
+   "performers": "Seattle Men's Chorus: Presents Prance and Be Merry Childrens Concert",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29324"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29321",
+   "title": "Seattle Men's Chorus: Prance and Be Merry",
+   "start": "2026-12-19T14:00:00",
+   "performers": "Seattle Men's Chorus: Prance and Be Merry",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29321"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29383",
+   "title": "The Coats Annual Holiday Show",
+   "start": "2026-12-19T19:30:00",
+   "performers": "The Coats Annual Holiday Show",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29383"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28715",
+   "title": "Handel’s Messiah",
+   "start": "2026-12-19T20:00:00",
+   "performers": "Jean-Sébastien Vallée, conductor, Sarah Dufresne, soprano, Nicholas Burns, countertenor (alto), James Ley, tenor, Enrico Lagasca, bass, Evelina Bosilkov, treble (soprano), Seattle Symphony Chorale, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "George Frideric Handel",
+     "work": "Messiah"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28715"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28716",
+   "title": "Handel’s Messiah",
+   "start": "2026-12-20T14:00:00",
+   "performers": "Jean-Sébastien Vallée, conductor, Sarah Dufresne, soprano, Nicholas Burns, countertenor (alto), James Ley, tenor, Enrico Lagasca, bass, Evelina Bosilkov, treble (soprano), Seattle Symphony Chorale, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "George Frideric Handel",
+     "work": "Messiah"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28716"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29384",
+   "title": "The Coats Annual Holiday Show",
+   "start": "2026-12-20T14:00:00",
+   "performers": "The Coats Annual Holiday Show",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29384"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28718",
+   "title": "A Festival of Lessons & Carols",
+   "start": "2026-12-21T19:30:00",
+   "performers": "Seattle Symphony, Jacob Winkler, conductor, Northwest Boychoir, Vocalpoint! Seattle, vocals, Northwest Sinfonia",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28718"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29322",
+   "title": "Seattle Men's Chorus: Prance and Be Merry",
+   "start": "2026-12-22T19:30:00",
+   "performers": "Seattle Men's Chorus: Prance and Be Merry",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29322"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28720",
+   "title": "New Year’s Eve with Storm Large and Jimmie Herrod",
+   "start": "2026-12-31T21:00:00",
+   "performers": "Storm Large, vocal, Jimmie Herrod, vocals, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28720"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28766",
+   "title": "Hook in Concert with the Seattle Symphony",
+   "start": "2027-01-07T19:30:00",
+   "performers": "Julian Pellicano, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28766"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28767",
+   "title": "Hook in Concert with the Seattle Symphony",
+   "start": "2027-01-09T20:00:00",
+   "performers": "Julian Pellicano, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28767"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29087",
+   "title": "Chicago: The Movie Musical in Concert with the Seattle Symphony",
+   "start": "2027-01-15T20:00:00",
+   "performers": "Lawrence Loh, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29087"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29294",
+   "title": "Dolly Parton’s Threads: My Songs In Symphony with the Seattle Symphony",
+   "start": "2027-01-21T19:30:00",
+   "performers": "David Hamilton, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29294"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29413",
+   "title": "Seattle Chamber Music Society 2027 Winter Festival",
+   "start": "2027-01-22T19:30:00",
+   "performers": "Seattle Chamber Music Society 2027 Winter Festival",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29413"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29295",
+   "title": "Dolly Parton’s Threads: My Songs In Symphony with the Seattle Symphony",
+   "start": "2027-01-22T20:00:00",
+   "performers": "David Hamilton, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29295"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29437",
+   "title": "Forestella Beyond: Across the Horizon - North America Tour 2027",
+   "start": "2027-01-23T19:00:00",
+   "performers": "Forestella Beyond: Across the Horizon - North America Tour 2027",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29437"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29414",
+   "title": "Seattle Chamber Music Society 2027 Winter Festival",
+   "start": "2027-01-23T19:30:00",
+   "performers": "Seattle Chamber Music Society 2027 Winter Festival",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29414"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28745",
+   "title": "Itzhak Perlman in Recital",
+   "start": "2027-01-24T14:00:00",
+   "performers": "Seattle Symphony, Itzhak Perlman, violin",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "solo",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28745"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29415",
+   "title": "Seattle Chamber Music Society 2027 Winter Festival",
+   "start": "2027-01-24T14:00:00",
+   "performers": "Seattle Chamber Music Society 2027 Winter Festival",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29415"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29286",
+   "title": "Music of Remembrance presents: Art From Ashes",
+   "start": "2027-01-25T17:30:00",
+   "performers": "Music of Remembrance",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29286"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29364",
+   "title": "Side-by-Side with Lindbergh High School",
+   "start": "2027-01-27T19:30:00",
+   "performers": "Seattle Symphony, Tengku Irfan, conductor, Kieran Hunter, conductor, Lindbergh High School Orchestra, seattle symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Lindbergh High School Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29364"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28434",
+   "title": "Xian and Emanuel Ax",
+   "start": "2027-01-28T19:30:00",
+   "performers": "Xian Zhang, conductor, Emanuel Ax, piano, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Franz Joseph Haydn",
+     "work": "Symphony No. 82, \"The Bear\""
+    },
+    {
+     "composer": "Wolfgang Amadeus Mozart",
+     "work": "Piano Concerto No. 25, K.503"
+    },
+    {
+     "composer": "Wolfgang Amadeus Mozart",
+     "work": "Eine kleine Nachtmusik (A Little Night Music)"
+    },
+    {
+     "composer": "Franz Joseph Haydn",
+     "work": "Symphony No. 87"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28434"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29412",
+   "title": "Seattle Chamber Music Society 2027 Winter Festival",
+   "start": "2027-01-29T19:30:00",
+   "performers": "Seattle Chamber Music Society 2027 Winter Festival",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29412"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29252",
+   "title": "Seattle Philharmonic Orchestra Presents: \"The Mountains and the Sea, Gnomes and Giants\": Grieg's Peer Gynt",
+   "start": "2027-01-30T14:00:00",
+   "performers": "Seattle Philharmonic Orchestra Presents: \"The Mountains and the Sea, Gnomes and Giants\": Grieg's Peer Gynt",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29252"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29416",
+   "title": "Seattle Chamber Music Society 2027 Winter Festival",
+   "start": "2027-01-30T19:30:00",
+   "performers": "Seattle Chamber Music Society 2027 Winter Festival",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29416"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28435",
+   "title": "Xian and Emanuel Ax",
+   "start": "2027-01-30T20:00:00",
+   "performers": "Xian Zhang, conductor, Emanuel Ax, piano, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Franz Joseph Haydn",
+     "work": "Symphony No. 82, \"The Bear\""
+    },
+    {
+     "composer": "Wolfgang Amadeus Mozart",
+     "work": "Piano Concerto No. 25, K.503"
+    },
+    {
+     "composer": "Wolfgang Amadeus Mozart",
+     "work": "Eine kleine Nachtmusik (A Little Night Music)"
+    },
+    {
+     "composer": "Franz Joseph Haydn",
+     "work": "Symphony No. 87"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28435"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29417",
+   "title": "Seattle Chamber Music Society 2027 Winter Festival",
+   "start": "2027-01-31T14:00:00",
+   "performers": "Seattle Chamber Music Society 2027 Winter Festival",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29417"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29444",
+   "title": "The St. Olaf Choir In Concert",
+   "start": "2027-01-31T15:00:00",
+   "performers": "The St. Olaf Choir In Concert",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29444"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28439",
+   "title": "Tchaikovsky’s Fourth",
+   "start": "2027-02-04T19:30:00",
+   "performers": "Xian Zhang, conductor, Steven Banks, saxophone, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Jacques Ibert",
+     "work": "Concertino da camera"
+    },
+    {
+     "composer": "Steven Banks arr. Corey Dundee",
+     "work": "Come As You Are"
+    },
+    {
+     "composer": "Pyotr Ilyich Tchaikovsky",
+     "work": "Symphony No. 4"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28439"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28588",
+   "title": "The Brass: Movie Magic",
+   "start": "2027-02-05T10:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28588"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28589",
+   "title": "The Brass: Movie Magic",
+   "start": "2027-02-06T09:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28589"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28590",
+   "title": "The Brass: Movie Magic",
+   "start": "2027-02-06T10:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28590"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28591",
+   "title": "The Brass: Movie Magic",
+   "start": "2027-02-06T11:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28591"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28440",
+   "title": "Tchaikovsky’s Fourth",
+   "start": "2027-02-06T20:00:00",
+   "performers": "Xian Zhang, conductor, Steven Banks, saxophone, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Jacques Ibert",
+     "work": "Concertino da camera"
+    },
+    {
+     "composer": "Steven Banks arr. Corey Dundee",
+     "work": "Come As You Are"
+    },
+    {
+     "composer": "Pyotr Ilyich Tchaikovsky",
+     "work": "Symphony No. 4"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28440"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28708",
+   "title": "Tchaikovsky’s Fourth",
+   "start": "2027-02-07T14:00:00",
+   "performers": "Xian Zhang, conductor, Steven Banks, saxophone, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Jacques Ibert",
+     "work": "Concertino da camera"
+    },
+    {
+     "composer": "Steven Banks arr. Corey Dundee",
+     "work": "Come As You Are"
+    },
+    {
+     "composer": "Pyotr Ilyich Tchaikovsky",
+     "work": "Symphony No. 4"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28708"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28733",
+   "title": "Beethoven’s Cello Sonatas",
+   "start": "2027-02-09T19:30:00",
+   "performers": "Seattle Symphony, Meeka Quan DiLorenzo, cello, Nathan Chan, cello, Eric Han, cello, Efe Baltacıgil, cello",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "Complete Cello Sonatas"
+    }
+   ],
+   "category": "solo",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28733"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28444",
+   "title": "Xian Conducts Boléro and Symphonie espagnole",
+   "start": "2027-02-11T19:30:00",
+   "performers": "Xian Zhang, conductor, Noah Geller, first violin, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Alberto Ginastera",
+     "work": "Four Dances from Estancia"
+    },
+    {
+     "composer": "Édouard Lalo",
+     "work": "Symphonie espagnole"
+    },
+    {
+     "composer": "Nikolai Rimsky-Korsakov",
+     "work": "Capriccio espagnol"
+    },
+    {
+     "composer": "Maurice Ravel",
+     "work": "Boléro"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28444"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29371",
+   "title": "Community Concert at Benaroya Hall",
+   "start": "2027-02-12T19:30:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor, Tengku Irfan, conductor, Hana Gottesman, violin, Kids in Concert, seattle symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29371"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28445",
+   "title": "Xian Conducts Boléro and Symphonie espagnole",
+   "start": "2027-02-13T20:00:00",
+   "performers": "Xian Zhang, conductor, Noah Geller, first violin, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Alberto Ginastera",
+     "work": "Four Dances from Estancia"
+    },
+    {
+     "composer": "Édouard Lalo",
+     "work": "Symphonie espagnole"
+    },
+    {
+     "composer": "Nikolai Rimsky-Korsakov",
+     "work": "Capriccio espagnol"
+    },
+    {
+     "composer": "Maurice Ravel",
+     "work": "Boléro"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28445"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28489",
+   "title": "Symphonically Spielberg: The Music of John Williams",
+   "start": "2027-02-19T20:00:00",
+   "performers": "Steven Reineke, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28489"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28698",
+   "title": "Sunny with a Chance of Symphony",
+   "start": "2027-02-20T11:00:00",
+   "performers": "Tengku Irfan, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28698"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28490",
+   "title": "Symphonically Spielberg: The Music of John Williams",
+   "start": "2027-02-20T20:00:00",
+   "performers": "Steven Reineke, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28490"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28491",
+   "title": "Symphonically Spielberg: The Music of John Williams",
+   "start": "2027-02-21T14:00:00",
+   "performers": "Steven Reineke, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28491"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28679",
+   "title": "Víkingur Ólafsson Plays Debussy & Rameau",
+   "start": "2027-02-23T19:30:00",
+   "performers": "Seattle Symphony, Víkingur Ólafsson, piano",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Philip Glass",
+     "work": "Opening"
+    },
+    {
+     "composer": "Claude Debussy",
+     "work": "Ondine"
+    },
+    {
+     "composer": "Philip Glass",
+     "work": "Etude No. 15"
+    },
+    {
+     "composer": "Jean-Phillipe Rameau",
+     "work": "Selections from Suite No. 3 in D major"
+    },
+    {
+     "composer": "Claude Debussy",
+     "work": "Serenade for the Doll"
+    },
+    {
+     "composer": "Jean-Phillipe Rameau",
+     "work": "Selections from Suite No. 2 in E minor"
+    },
+    {
+     "composer": "Claude Debussy",
+     "work": "Jardin Sous La Pluie (Gardens in the Rain)"
+    },
+    {
+     "composer": "Philip Glass",
+     "work": "Etude No. 3"
+    },
+    {
+     "composer": "Claude Debussy",
+     "work": "The Snow Is Dancing"
+    },
+    {
+     "composer": "Jean-Phillipe Rameau",
+     "work": "Selections from Suite No. 5 in A minor"
+    }
+   ],
+   "category": "solo",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28679"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28449",
+   "title": "Charlie Chaplin’s Modern Times",
+   "start": "2027-02-25T19:30:00",
+   "performers": "Timothy Brock, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Charlie Chaplin",
+     "work": "Modern Times"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28449"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28450",
+   "title": "Charlie Chaplin’s Modern Times",
+   "start": "2027-02-27T20:00:00",
+   "performers": "Timothy Brock, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Charlie Chaplin",
+     "work": "Modern Times"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28450"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28451",
+   "title": "Charlie Chaplin’s Modern Times",
+   "start": "2027-02-28T14:00:00",
+   "performers": "Timothy Brock, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Charlie Chaplin",
+     "work": "Modern Times"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28451"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29238",
+   "title": "SCMS-Orion Weiss, Amy Schwartz Moretti & Edward Arron",
+   "start": "2027-02-28T14:00:00",
+   "performers": "SCMS-Orion Weiss, Amy Schwartz Moretti & Edward Arron",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29238"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29387",
+   "title": "PDX Jazz Presents Emmylou Harris with the Daniel Lanois Trio",
+   "start": "2027-03-04T20:00:00",
+   "performers": "PDX Jazz Presents Emmylou Harris with the Daniel Lanois Trio",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29387"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28505",
+   "title": "Inheritances",
+   "start": "2027-03-05T19:00:00",
+   "performers": "Seattle Symphony, Adam Tendler, piano",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Laurie Anderson",
+     "work": "Remember, I Created You"
+    },
+    {
+     "composer": "Missy Mazzoli",
+     "work": "Forgiveness Machine"
+    },
+    {
+     "composer": "Scott Wollschleger",
+     "work": "Outsider Song"
+    },
+    {
+     "composer": "Angélica Negrón",
+     "work": "You Were My Age"
+    },
+    {
+     "composer": "John Glover",
+     "work": "In the City of Shy Hunters"
+    },
+    {
+     "composer": "Mary Prescott",
+     "work": "What It Becomes"
+    },
+    {
+     "composer": "Timo Andres",
+     "work": "An Open Book"
+    },
+    {
+     "composer": "Ted Hearne",
+     "work": "Inheritance"
+    },
+    {
+     "composer": "Inti Figgis-Vizueta",
+     "work": "hushing"
+    },
+    {
+     "composer": "Sarah Kirkland Snider",
+     "work": "the plum tree i planted still there"
+    },
+    {
+     "composer": "Christopher Cerrone",
+     "work": "Area of Refuge"
+    },
+    {
+     "composer": "Pamela Z",
+     "work": "Thank You So Much"
+    },
+    {
+     "composer": "Darian Donovan Thomas",
+     "work": "We don’t need to tend this garden. They’re wildflowers."
+    },
+    {
+     "composer": "Nico Muhly",
+     "work": "Eiris, Sones"
+    },
+    {
+     "composer": "Devonté Hynes",
+     "work": "Morning Piece"
+    }
+   ],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28505"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28506",
+   "title": "Inheritances",
+   "start": "2027-03-05T21:00:00",
+   "performers": "Seattle Symphony, Adam Tendler, piano",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Laurie Anderson",
+     "work": "Remember, I Created You"
+    },
+    {
+     "composer": "Missy Mazzoli",
+     "work": "Forgiveness Machine"
+    },
+    {
+     "composer": "Scott Wollschleger",
+     "work": "Outsider Song"
+    },
+    {
+     "composer": "Angélica Negrón",
+     "work": "You Were My Age"
+    },
+    {
+     "composer": "John Glover",
+     "work": "In the City of Shy Hunters"
+    },
+    {
+     "composer": "Mary Prescott",
+     "work": "What It Becomes"
+    },
+    {
+     "composer": "Timo Andres",
+     "work": "An Open Book"
+    },
+    {
+     "composer": "Ted Hearne",
+     "work": "Inheritance"
+    },
+    {
+     "composer": "Inti Figgis-Vizueta",
+     "work": "hushing"
+    },
+    {
+     "composer": "Sarah Kirkland Snider",
+     "work": "the plum tree i planted still there"
+    },
+    {
+     "composer": "Christopher Cerrone",
+     "work": "Area of Refuge"
+    },
+    {
+     "composer": "Pamela Z",
+     "work": "Thank You So Much"
+    },
+    {
+     "composer": "Darian Donovan Thomas",
+     "work": "We don’t need to tend this garden. They’re wildflowers."
+    },
+    {
+     "composer": "Nico Muhly",
+     "work": "Eiris, Sones"
+    },
+    {
+     "composer": "Devonté Hynes",
+     "work": "Morning Piece"
+    }
+   ],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28506"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28937",
+   "title": "Dungeons & Dragons: Honor Among Thieves in Concert with the Seattle Symphony",
+   "start": "2027-03-06T20:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28937"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28735",
+   "title": "Beethoven & Tower",
+   "start": "2027-03-09T19:30:00",
+   "performers": "Seattle Symphony, Leonid Keylin, first violin, Mae Lin, first violin, Emerson Millar, first violin, Jacqueline Audas, first violin, Sayaka Kokubo, viola, Mara Gearman, viola, Olivia Chew, viola, Eric Han, cello, Sunnat Ibragimov, cello, Katherine Audas, cello, Stefan Farkas, oboe,english horn",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "Duet \"with two Obligato Eyeglasses\""
+    },
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "Serenade in D Major (String Trio No. 2, Op. 8)"
+    },
+    {
+     "composer": "Joan Tower",
+     "work": "Island Prelude"
+    },
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "String Trio, Op. 9, No. 1"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28735"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28453",
+   "title": "Xian Conducts Scheherazade",
+   "start": "2027-03-11T19:30:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Bedřich Smetana",
+     "work": "The Moldau"
+    },
+    {
+     "composer": "Steven Mackey",
+     "work": "Concerto for Orchestra (Seattle Symphony Co-Commission and World Premiere)"
+    },
+    {
+     "composer": "Nikolai Rimsky-Korsakov",
+     "work": "Scheherazade"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28453"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29316",
+   "title": "Yoko Shimomura 39th Anniversary Concert",
+   "start": "2027-03-12T19:30:00",
+   "performers": "Yoko Shimomura 39th Anniversary Concert",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29316"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28454",
+   "title": "Xian Conducts Scheherazade",
+   "start": "2027-03-13T20:00:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Bedřich Smetana",
+     "work": "The Moldau"
+    },
+    {
+     "composer": "Steven Mackey",
+     "work": "Concerto for Orchestra (Seattle Symphony Co-Commission and World Premiere)"
+    },
+    {
+     "composer": "Nikolai Rimsky-Korsakov",
+     "work": "Scheherazade"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28454"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29288",
+   "title": "Music of Remembrance Presents Resilience",
+   "start": "2027-03-14T15:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29288"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28724",
+   "title": "Verdi’s Requiem",
+   "start": "2027-03-18T19:30:00",
+   "performers": "Hugh Wolff, conductor, Felicia Moore, soprano, J’Nai Bridges, mezzo-soprano, Matthew White, tenor, Luca Pisaroni, bass-baritone, Seattle Symphony Chorale, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Giuseppe Verdi",
+     "work": "Requiem"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28724"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28780",
+   "title": "Hayato Sumino ”Cateen” in Recital",
+   "start": "2027-03-19T20:00:00",
+   "performers": "Seattle Symphony, Hayato Sumino \"Cateen\", piano",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Frédéric Chopin",
+     "work": "Scherzo No. 1"
+    },
+    {
+     "composer": "Hayato Sumino",
+     "work": "Recollection"
+    },
+    {
+     "composer": "Frédéric Chopin / Hayato Sumino",
+     "work": "Raindrop Postlude"
+    },
+    {
+     "composer": "Frédéric Chopin",
+     "work": "Piano Sonata No. 2"
+    },
+    {
+     "composer": "Camille Saint-Saëns",
+     "work": "Danse Macabre"
+    },
+    {
+     "composer": "Hayato Sumino",
+     "work": "Big Cat Waltz"
+    },
+    {
+     "composer": "Frédéric Chopin",
+     "work": "Mazurka Op. 59"
+    },
+    {
+     "composer": "Frédéric Chopin",
+     "work": "Mazurka Op. 24, No. 2"
+    },
+    {
+     "composer": "Thomas Adès",
+     "work": "Mazurka Op. 27, No. 2"
+    },
+    {
+     "composer": "Frédéric Chopin",
+     "work": "Etude Op. 10, No. 5, \"Black Keys\""
+    },
+    {
+     "composer": "Hayato Sumino",
+     "work": "White Keys"
+    },
+    {
+     "composer": "Hayato Sumino",
+     "work": "Imaginary Polonaise"
+    },
+    {
+     "composer": "Frédéric Chopin / Hayato Sumino",
+     "work": "Improvisation on the ostinato from Chopin's Berceuse in D-flat major, Op. 57"
+    },
+    {
+     "composer": "Maurice Ravel / Hayato Sumino",
+     "work": "Boléro"
+    }
+   ],
+   "category": "solo",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28780"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29017",
+   "title": "Seattle Classic Guitar Society presents Ana Vidovic",
+   "start": "2027-03-20T19:30:00",
+   "performers": "Seattle Classic Guitar Society",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "solo",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29017"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28725",
+   "title": "Verdi’s Requiem",
+   "start": "2027-03-20T20:00:00",
+   "performers": "Hugh Wolff, conductor, Felicia Moore, soprano, J’Nai Bridges, mezzo-soprano, Matthew White, tenor, Luca Pisaroni, bass-baritone, Seattle Symphony Chorale, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Giuseppe Verdi",
+     "work": "Requiem"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28725"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28726",
+   "title": "Verdi’s Requiem",
+   "start": "2027-03-21T14:00:00",
+   "performers": "Hugh Wolff, conductor, Felicia Moore, soprano, J’Nai Bridges, mezzo-soprano, Matthew White, tenor, Luca Pisaroni, bass-baritone, Seattle Symphony Chorale, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Giuseppe Verdi",
+     "work": "Requiem"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28726"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29240",
+   "title": "SCMS-New Orford Quartet & James Ehnes",
+   "start": "2027-03-21T14:00:00",
+   "performers": "SCMS-New Orford Quartet & James Ehnes",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29240"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29433",
+   "title": "Leslie Odom, Jr.",
+   "start": "2027-03-25T19:30:00",
+   "performers": "Seattle Symphony, Leslie Odom, Jr., vocals",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29433"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29076",
+   "title": "Ensign Symphony & Chorus presents - This is The Christ",
+   "start": "2027-03-26T19:30:00",
+   "performers": "Ensign Symphony & Chorus",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29076"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29310",
+   "title": "Monster Hunter Orchestra Concert",
+   "start": "2027-03-27T15:00:00",
+   "performers": "Monster Hunter Orchestra Concert",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29310"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29311",
+   "title": "Monster Hunter Orchestra Concert",
+   "start": "2027-03-27T20:00:00",
+   "performers": "Monster Hunter Orchestra Concert",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29311"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28683",
+   "title": "Yeol Eum Son Plays Rachmaninov & Bach",
+   "start": "2027-04-01T19:30:00",
+   "performers": "Seattle Symphony, Yeol Eum Son, piano",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "Six Variations in F Major, Op. 34"
+    },
+    {
+     "composer": "Carl Czerny",
+     "work": "Variations on a Theme by Rode, Op. 33, “La ricordanza”"
+    },
+    {
+     "composer": "Franz Liszt",
+     "work": "“Ricordanza” from Transcendental Etudes"
+    },
+    {
+     "composer": "Sergei Rachmaninov (arr. Siloti)",
+     "work": "Vocalise"
+    },
+    {
+     "composer": "Sergei Rachmaninov",
+     "work": "Prelude, Op. 32, No. 13"
+    },
+    {
+     "composer": "Johann Sebastian Bach (arr. Rachmaninov)",
+     "work": "Gavotte from Partita for Solo Violin No. 3"
+    },
+    {
+     "composer": "Johann Sebastian Bach (arr. Hess)",
+     "work": "Jesu, Joy of Man’s Desiring"
+    },
+    {
+     "composer": "Alicia de Larrocha",
+     "work": "Sonata Antigua, Cajita de música"
+    },
+    {
+     "composer": "Wanda Landowska",
+     "work": "Feu Follet"
+    },
+    {
+     "composer": "Wanda Landowska",
+     "work": "Valse in E Minor"
+    },
+    {
+     "composer": "Tatiana Nikolayeva",
+     "work": "Elegy"
+    },
+    {
+     "composer": "Walter Gieseking",
+     "work": "Three Dance Improvisations"
+    },
+    {
+     "composer": "Earl Wild",
+     "work": "Reminiscences of Snow White"
+    }
+   ],
+   "category": "solo",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28683"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28508",
+   "title": "The Elwha River",
+   "start": "2027-04-02T19:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Annea Lockwood / Claire Chase / The Elwha River",
+     "work": "Elwha! for 7 Flutes and 7.1 Sound (Seattle Symphony Co-commission)"
+    }
+   ],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28508"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29338",
+   "title": "Guster with the Seattle Symphony",
+   "start": "2027-04-02T20:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29338"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28509",
+   "title": "The Elwha River",
+   "start": "2027-04-02T21:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Annea Lockwood / Claire Chase / The Elwha River",
+     "work": "Elwha! for 7 Flutes and 7.1 Sound (Seattle Symphony Co-commission)"
+    }
+   ],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28509"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28456",
+   "title": "Grieg’s Peer Gynt with Xian",
+   "start": "2027-04-08T19:30:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor, Helen Kim, first violin",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Ralph Vaughan Williams",
+     "work": "The Lark Ascending"
+    },
+    {
+     "composer": "Edvard Grieg",
+     "work": "Peer Gynt Suite (Xian Zhang's selections)"
+    },
+    {
+     "composer": "Anton Webern",
+     "work": "Im Sommerwind (In the Summer Wind)"
+    },
+    {
+     "composer": "Alexander Scriabin",
+     "work": "Poem of Ecstasy"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28456"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29254",
+   "title": "Seattle Philharmonic Orchestra Presents: Capriccio!",
+   "start": "2027-04-10T14:00:00",
+   "performers": "Seattle Philharmonic Orchestra Presents: Capriccio!",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29254"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29347",
+   "title": "SRJO presents Legends of Latin Jazz",
+   "start": "2027-04-10T19:30:00",
+   "performers": "SRJO",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29347"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28457",
+   "title": "Grieg’s Peer Gynt with Xian",
+   "start": "2027-04-10T20:00:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor, Helen Kim, first violin",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Ralph Vaughan Williams",
+     "work": "The Lark Ascending"
+    },
+    {
+     "composer": "Edvard Grieg",
+     "work": "Peer Gynt Suite (Xian Zhang's selections)"
+    },
+    {
+     "composer": "Anton Webern",
+     "work": "Im Sommerwind (In the Summer Wind)"
+    },
+    {
+     "composer": "Alexander Scriabin",
+     "work": "Poem of Ecstasy"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28457"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29348",
+   "title": "SRJO presents Legends of Latin Jazz",
+   "start": "2027-04-11T14:00:00",
+   "performers": "SRJO",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29348"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28737",
+   "title": "Beethoven & Alberga",
+   "start": "2027-04-13T19:30:00",
+   "performers": "Seattle Symphony, Brittany Breeden, second violin, Natasha Bazhanov, second violin, Emerson Millar, first violin, Cameron Daly, second violin, Olivia Chew, viola, Meeka Quan DiLorenzo, cello, Eric Han, cello, Stefan Farkas, oboe,english horn, Eric Jacobs, clarinet,bass clarinet, Paul Rafanelli, bassoon, Danielle Kuhlmann, horn, John Turman, horn, Xiaohui Yang, piano",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "Piano Quintet, Op. 16"
+    },
+    {
+     "composer": "Eleanor Alberga",
+     "work": "Shining Gate of Morpheus"
+    },
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "String Quartet Op. 59, No. 1, \"Razumovsky No. 1\""
+    }
+   ],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28737"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28459",
+   "title": "Beethoven’s Pastoral and Gil Shaham",
+   "start": "2027-04-15T19:30:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor, Gil Shaham, violin",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Antonín Dvořák",
+     "work": "Violin Concerto"
+    },
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "Symphony No. 6, \"Pastoral\""
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28459"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28593",
+   "title": "The Winds: Campfire Jams",
+   "start": "2027-04-16T10:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28593"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28594",
+   "title": "The Winds: Campfire Jams",
+   "start": "2027-04-17T09:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28594"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28595",
+   "title": "The Winds: Campfire Jams",
+   "start": "2027-04-17T10:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28595"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28596",
+   "title": "The Winds: Campfire Jams",
+   "start": "2027-04-17T11:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28596"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29019",
+   "title": "Seattle Classic Guitar Society presents Jason Vieaux",
+   "start": "2027-04-17T19:30:00",
+   "performers": "Seattle Classic Guitar Society",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "solo",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29019"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28460",
+   "title": "Beethoven’s Pastoral and Gil Shaham",
+   "start": "2027-04-17T20:00:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor, Gil Shaham, violin",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Antonín Dvořák",
+     "work": "Violin Concerto"
+    },
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "Symphony No. 6, \"Pastoral\""
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28460"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28461",
+   "title": "Beethoven’s Pastoral and Gil Shaham",
+   "start": "2027-04-18T14:00:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor, Gil Shaham, violin",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Antonín Dvořák",
+     "work": "Violin Concerto"
+    },
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "Symphony No. 6, \"Pastoral\""
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28461"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28463",
+   "title": "Pines & Fountains of Rome with Xian",
+   "start": "2027-04-22T19:30:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Gabriela Montero",
+     "work": "Piano Concerto No. 1, \"Latin\""
+    },
+    {
+     "composer": "Ottorino Respighi",
+     "work": "Fountains of Rome"
+    },
+    {
+     "composer": "Ottorino Respighi",
+     "work": "Pines of Rome"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28463"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28920",
+   "title": "Ocean in Concert with the Seattle Symphony",
+   "start": "2027-04-23T20:00:00",
+   "performers": "Wesley Schulz, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28920"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28464",
+   "title": "Pines & Fountains of Rome with Xian",
+   "start": "2027-04-24T20:00:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Gabriela Montero",
+     "work": "Piano Concerto No. 1, \"Latin\""
+    },
+    {
+     "composer": "Ottorino Respighi",
+     "work": "Fountains of Rome"
+    },
+    {
+     "composer": "Ottorino Respighi",
+     "work": "Pines of Rome"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28464"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28465",
+   "title": "Pines & Fountains of Rome with Xian",
+   "start": "2027-04-25T14:00:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Gabriela Montero",
+     "work": "Piano Concerto No. 1, \"Latin\""
+    },
+    {
+     "composer": "Ottorino Respighi",
+     "work": "Fountains of Rome"
+    },
+    {
+     "composer": "Ottorino Respighi",
+     "work": "Pines of Rome"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28465"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28730",
+   "title": "Shostakovich’s 10th and Steven Osborne",
+   "start": "2027-04-29T19:30:00",
+   "performers": "David Afkham, conductor, Steven Osborne, piano, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Wolfgang Amadeus Mozart",
+     "work": "Piano Concerto No. 27"
+    },
+    {
+     "composer": "Dmitri Shostakovich",
+     "work": "Symphony No. 10"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28730"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29397",
+   "title": "Enchanting Trumpet and the Sirens of Music",
+   "start": "2027-04-30T19:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29397"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29398",
+   "title": "Enchanting Trumpet and the Sirens of Music",
+   "start": "2027-05-01T15:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29398"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28731",
+   "title": "Shostakovich’s 10th and Steven Osborne",
+   "start": "2027-05-01T20:00:00",
+   "performers": "David Afkham, conductor, Steven Osborne, piano, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Wolfgang Amadeus Mozart",
+     "work": "Piano Concerto No. 27"
+    },
+    {
+     "composer": "Dmitri Shostakovich",
+     "work": "Symphony No. 10"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28731"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29379",
+   "title": "Community Concert – Chamber Music with Yakima Music en Acción",
+   "start": "2027-05-02T15:00:00",
+   "performers": "Seattle Symphony, Tengku Irfan, conductor, Yakima Music en Acción, seattle symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Yakima TBD, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29379"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28511",
+   "title": "Pamela Z",
+   "start": "2027-05-07T19:00:00",
+   "performers": "Seattle Symphony, Pamela Z voice & electronics",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28511"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29093",
+   "title": "Andrew McMahon with the Seattle Symphony",
+   "start": "2027-05-07T20:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29093"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28709",
+   "title": "Pamela Z",
+   "start": "2027-05-07T21:00:00",
+   "performers": "Seattle Symphony, Pamela Z voice & electronics",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28709"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28700",
+   "title": "The Firebird",
+   "start": "2027-05-08T11:00:00",
+   "performers": "Tengku Irfan, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28700"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28933",
+   "title": "The Wailin' Jennys",
+   "start": "2027-05-09T19:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28933"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28739",
+   "title": "Beethoven & Beach",
+   "start": "2027-05-11T19:30:00",
+   "performers": "Seattle Symphony, Cameron Daly, second violin, Helen Kim, first violin, Natasha Bazhanov, second violin, Noah Geller, first violin, Efe Baltacıgil, cello",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "String Quartet No. 1, Op. 18, No. 1"
+    },
+    {
+     "composer": "Amy Beach",
+     "work": "Theme and Variations for Flute and String Quartet"
+    },
+    {
+     "composer": "Ludwig van Beethoven",
+     "work": "String Quartet No. 16, Op. 135"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28739"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28467",
+   "title": "Rachmaninov’s Second Piano Concerto",
+   "start": "2027-05-13T19:30:00",
+   "performers": "Alexander Shelley, conductor, Benjamin Grosvenor, piano, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Ian Cusson",
+     "work": "1Q84: Sinfonietta Metamoderna"
+    },
+    {
+     "composer": "Sergey Rachmaninov",
+     "work": "Piano Concerto No. 2"
+    },
+    {
+     "composer": "Jean Sibelius",
+     "work": "Symphony No. 2"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28467"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28468",
+   "title": "Rachmaninov’s Second Piano Concerto",
+   "start": "2027-05-14T20:00:00",
+   "performers": "Alexander Shelley, conductor, Benjamin Grosvenor, piano, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Ian Cusson",
+     "work": "1Q84: Sinfonietta Metamoderna"
+    },
+    {
+     "composer": "Sergey Rachmaninov",
+     "work": "Piano Concerto No. 2"
+    },
+    {
+     "composer": "Jean Sibelius",
+     "work": "Symphony No. 2"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28468"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28688",
+   "title": "Alisa Weilerstein and Inon Barnatan Play Chopin & Shostakovich",
+   "start": "2027-05-15T20:00:00",
+   "performers": "Seattle Symphony, Alisa Weilerstein, cello, Inon Barnatan, piano",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Manuel de Falla",
+     "work": "Suite Populaire Espagnole"
+    },
+    {
+     "composer": "Frédéric Chopin",
+     "work": "Sonata in G minor, Op. 65"
+    },
+    {
+     "composer": "Dmitri Shostakovich / Lera Auerbach",
+     "work": "24 Preludes: Arrangement for violoncello and piano after Op. 34"
+    },
+    {
+     "composer": "Sergei Rachmaninov",
+     "work": "Sonata in G minor, Op. 19"
+    }
+   ],
+   "category": "solo",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28688"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29290",
+   "title": "Music of Remembrance Presents Women In the Shadows",
+   "start": "2027-05-16T16:00:00",
+   "performers": "Music of Remembrance Presents Women In the Shadows",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29290"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28784",
+   "title": "Anna Lapwood with the Seattle Symphony",
+   "start": "2027-05-20T19:30:00",
+   "performers": "Robert Ames, conductor, Anna Lapwood, organ, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Max Richter",
+     "work": "Cosmology"
+    },
+    {
+     "composer": "Joseph Jongen",
+     "work": "Sinfonia Concertante"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28784"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29376",
+   "title": "Community Concert in Bellevue",
+   "start": "2027-05-21T19:30:00",
+   "performers": "Tengku Irfan, conductor, Barney Blough, conductor, Swaranjali School of Music, newport high school orchestra, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Newport Performing Arts Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29376"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29427",
+   "title": "Anna Lapwood in Recital",
+   "start": "2027-05-21T20:00:00",
+   "performers": "Seattle Symphony, Anna Lapwood, organ",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "solo",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29427"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28858",
+   "title": "Wild Faery Presents Attack on Titan - Symphony from Paradis",
+   "start": "2027-05-22T19:30:00",
+   "performers": "Wild Faery Presents Attack on Titan - Symphony from Paradis",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28858"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29242",
+   "title": "SCMS- James Ehnes & Orion Weiss",
+   "start": "2027-05-23T14:00:00",
+   "performers": "SCMS- James Ehnes & Orion Weiss",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29242"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28859",
+   "title": "Wild Faery Presents Attack on Titan - Symphony from Paradis",
+   "start": "2027-05-23T14:30:00",
+   "performers": "Wild Faery Presents Attack on Titan - Symphony from Paradis",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28859"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28705",
+   "title": "Mahler’s Fourth Symphony",
+   "start": "2027-06-03T19:30:00",
+   "performers": "Nicholas Carter, conductor, Patricia Westley, soprano, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Richard Strauss",
+     "work": "Träumerei am Kamin (Dreaming by the Fireside) from Intermezzo"
+    },
+    {
+     "composer": "Claude Debussy (arr. Brett Dean)",
+     "work": "Ariettes Oubliées (Forgotten Songs)"
+    },
+    {
+     "composer": "Gustav Mahler",
+     "work": "Symphony No. 4"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28705"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28598",
+   "title": "Tiny Orchestra: M is for Music",
+   "start": "2027-06-04T10:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28598"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29074",
+   "title": "Ensign Symphony & Chorus presents - Faith and Family",
+   "start": "2027-06-04T19:30:00",
+   "performers": "Ensign Symphony & Chorus",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "choral",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29074"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28599",
+   "title": "Tiny Orchestra: M is for Music",
+   "start": "2027-06-05T09:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28599"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28600",
+   "title": "Tiny Orchestra: M is for Music",
+   "start": "2027-06-05T10:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28600"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28601",
+   "title": "Tiny Orchestra: M is for Music",
+   "start": "2027-06-05T11:30:00",
+   "performers": "Seattle Symphony, Seattle Symphony musicians",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28601"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29256",
+   "title": "Seattle Philharmonic Orchestra Presents: \"Music: The Strongest Form of Magic\"",
+   "start": "2027-06-05T14:00:00",
+   "performers": "Seattle Philharmonic Orchestra Presents: \"Music: The Strongest Form of Magic\"",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29256"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28706",
+   "title": "Mahler’s Fourth Symphony",
+   "start": "2027-06-05T20:00:00",
+   "performers": "Nicholas Carter, conductor, Patricia Westley, soprano, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Richard Strauss",
+     "work": "Träumerei am Kamin (Dreaming by the Fireside) from Intermezzo"
+    },
+    {
+     "composer": "Claude Debussy (arr. Brett Dean)",
+     "work": "Ariettes Oubliées (Forgotten Songs)"
+    },
+    {
+     "composer": "Gustav Mahler",
+     "work": "Symphony No. 4"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28706"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28707",
+   "title": "Mahler’s Fourth Symphony",
+   "start": "2027-06-06T14:00:00",
+   "performers": "Nicholas Carter, conductor, Patricia Westley, soprano, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Richard Strauss",
+     "work": "Träumerei am Kamin (Dreaming by the Fireside) from Intermezzo"
+    },
+    {
+     "composer": "Claude Debussy (arr. Brett Dean)",
+     "work": "Ariettes Oubliées (Forgotten Songs)"
+    },
+    {
+     "composer": "Gustav Mahler",
+     "work": "Symphony No. 4"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28707"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28495",
+   "title": "Bear McCreary Conducts Bear McCreary",
+   "start": "2027-06-11T20:00:00",
+   "performers": "Bear McCreary, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28495"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28496",
+   "title": "Bear McCreary Conducts Bear McCreary",
+   "start": "2027-06-12T20:00:00",
+   "performers": "Bear McCreary, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28496"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28497",
+   "title": "Bear McCreary Conducts Bear McCreary",
+   "start": "2027-06-13T14:00:00",
+   "performers": "Bear McCreary, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28497"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28470",
+   "title": "Xian Conducts Brahms",
+   "start": "2027-06-17T19:30:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Johannes Brahms",
+     "work": "Symphony No. 3"
+    },
+    {
+     "composer": "Johannes Brahms",
+     "work": "Violin Concerto"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28470"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28513",
+   "title": "The Brandee Younger Trio",
+   "start": "2027-06-18T19:00:00",
+   "performers": "Seattle Symphony, Brandee Younger, harp, Rashaan Carter, bass, sound & visual design, Allan Mednard, drums",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28513"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28514",
+   "title": "The Brandee Younger Trio",
+   "start": "2027-06-18T21:00:00",
+   "performers": "Seattle Symphony, Brandee Younger, harp, Rashaan Carter, bass, sound & visual design, Allan Mednard, drums",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Octave 9: Raisbeck Music Center, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28514"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29350",
+   "title": "SRJO Presents A Juneteenth / Father's Day Celebration",
+   "start": "2027-06-19T19:30:00",
+   "performers": "SRJO Presents A Juneteenth / Father's Day Celebration",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29350"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28471",
+   "title": "Xian Conducts Brahms",
+   "start": "2027-06-19T20:00:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Johannes Brahms",
+     "work": "Symphony No. 3"
+    },
+    {
+     "composer": "Johannes Brahms",
+     "work": "Violin Concerto"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28471"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28472",
+   "title": "Xian Conducts Brahms",
+   "start": "2027-06-20T14:00:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Johannes Brahms",
+     "work": "Symphony No. 3"
+    },
+    {
+     "composer": "Johannes Brahms",
+     "work": "Violin Concerto"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28472"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29351",
+   "title": "SRJO Presents A Juneteenth / Father's Day Celebration",
+   "start": "2027-06-20T14:00:00",
+   "performers": "SRJO Presents A Juneteenth / Father's Day Celebration",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29351"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28916",
+   "title": "Nobuo Uematsu con TIKI",
+   "start": "2027-06-22T19:30:00",
+   "performers": "Nobuo Uematsu con TIKI",
+   "description": "Guest concert at Benaroya Hall.",
+   "program": [],
+   "category": "chamber",
+   "venue": "Illsley Ball Nordstrom Recital Hall, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": false,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28916"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28477",
+   "title": "Wagner’s The Ring Without Words",
+   "start": "2027-06-26T20:00:00",
+   "performers": "Seattle Symphony, Xian Zhang, conductor",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [
+    {
+     "composer": "Franz Liszt",
+     "work": "Piano Concerto No. 2"
+    },
+    {
+     "composer": "Richard Wagner (arr. Lorin Maazel)",
+     "work": "The Ring Without Words"
+    }
+   ],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28477"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28941",
+   "title": "There Will Be Blood in Concert with the Seattle Symphony",
+   "start": "2027-07-07T19:30:00",
+   "performers": "Hugh Tieppo-Brunt, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28941"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28943",
+   "title": "Star Wars: A New Hope in Concert with the Seattle Symphony",
+   "start": "2027-07-09T20:00:00",
+   "performers": "Anthony Parnther, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28943"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28944",
+   "title": "Star Wars: A New Hope in Concert with the Seattle Symphony",
+   "start": "2027-07-10T20:00:00",
+   "performers": "Anthony Parnther, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28944"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "28945",
+   "title": "Star Wars: A New Hope in Concert with the Seattle Symphony",
+   "start": "2027-07-11T14:00:00",
+   "performers": "Anthony Parnther, conductor, Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=28945"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29445",
+   "title": "The Legend of Zelda 40th Anniversary Concert with the Seattle Symphony",
+   "start": "2027-07-15T19:30:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29445"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29299",
+   "title": "The Legend of Zelda 40th Anniversary Concert with the Seattle Symphony",
+   "start": "2027-07-16T20:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29299"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29300",
+   "title": "The Legend of Zelda 40th Anniversary Concert with the Seattle Symphony",
+   "start": "2027-07-17T20:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29300"
+  },
+  {
+   "source": "Benaroya Hall",
+   "source_id": "29301",
+   "title": "The Legend of Zelda 40th Anniversary Concert with the Seattle Symphony",
+   "start": "2027-07-18T14:00:00",
+   "performers": "Seattle Symphony",
+   "description": "Seattle Symphony at Benaroya Hall.",
+   "program": [],
+   "category": "symphonic",
+   "venue": "S. Mark Taper Foundation Auditorium, Benaroya Hall",
+   "city": "Seattle",
+   "country": "USA",
+   "region": "seattle",
+   "major": true,
+   "ticket_url": "https://benaroyahall.org/buy/?performanceId=29301"
+  }
+ ]
+}

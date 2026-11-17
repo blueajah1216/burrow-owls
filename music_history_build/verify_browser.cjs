@@ -1,6 +1,7 @@
 /* Run while Flask serves 127.0.0.1:5058. Screenshots stay outside the repo. */
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
+const path = require('node:path');
 const {chromium} = require('playwright');
 const preview = process.env.MUSIC_HISTORY_TEST_URL || 'http://127.0.0.1:5058';
 const base = 'https://thegreatgallery.art';
@@ -66,6 +67,24 @@ async function routePreview(context) {
     assert.match(await page.locator('.site-header .music-brand').innerText(), /The Great Gallery/);
     await noOverflow();
     await page.screenshot({path:`${artifacts}/desktop-seattle-calendar.png`,fullPage:true});
+    const benaroya = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/snapshots/benaroya_hall.json'))).events;
+    for (const [label,record] of [
+      ['symphony',benaroya.find(r => r.major && r.program.length)],
+      ['benaroya-guest',benaroya.find(r => !r.major)],
+    ]) {
+      await page.goto(`${base}/music/concerts?view=day&date=${record.start.slice(0,10)}`);
+      const card = page.locator('.mu-card').filter({hasText:record.title}).first();
+      assert(await card.isVisible());
+      assert((await card.innerText()).includes('Benaroya Hall'));
+      if (record.major) assert((await card.innerText()).includes('Seattle Symphony'));
+      if (record.program.length) assert((await card.innerText()).includes(record.program[0].work));
+      assert.equal(await card.locator('.mu-tix').getAttribute('href'), record.ticket_url);
+      const [hour,minute] = record.start.slice(11,16).split(':').map(Number);
+      assert((await card.innerText()).includes(`${hour%12||12}:${String(minute).padStart(2,'0')} ${hour>=12?'PM':'AM'}`));
+      await noOverflow();
+      await page.screenshot({path:`${artifacts}/${label}.png`,fullPage:true});
+    }
+    await page.goto(`${base}/music/concerts`);
     await page.locator('.mu-tabs a', {hasText:'Week'}).click();
     assert.equal(new URL(page.url()).pathname, '/music/concerts');
     assert.equal(new URL(page.url()).searchParams.get('view'), 'week');

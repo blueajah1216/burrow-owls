@@ -18,7 +18,7 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15 BurrowOwlsMusic/1.0"
+UA = "GreatGalleryMusic/1.0 (+https://thegreatgallery.art/music/concerts)"
 TIMEOUT = 25
 
 # Anything matching these is not a concert (rehearsals, talks, parties…).
@@ -39,14 +39,10 @@ def scraper(name):
     return deco
 
 
-def fetch(url, **kw):
-    """GET with a small politeness delay; on 429 honour Retry-After once, then give up."""
+def fetch(url, *, session=None, **kw):
+    """GET with a small politeness delay; stop on errors, including 403/429."""
     time.sleep(0.25)
-    r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, **kw)
-    if r.status_code == 429:
-        wait = r.headers.get("Retry-After", "")
-        time.sleep(min(int(wait) if wait.isdigit() else 30, 90))
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, **kw)
+    r = (session or requests).get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, **kw)
     r.raise_for_status()
     return r
 
@@ -429,8 +425,8 @@ def seattle_pro_musica():
 # One JSON endpoint (the one the site's own calendar page calls) lists everything in the
 # hall: the Symphony plus guests (Seattle Chamber Music Society, Music of Remembrance,
 # Seattle Philharmonic, Seattle Classic Guitar Society, …). The site sits behind a Queue-it
-# waiting room during big on-sales; we never bypass it — we wait and retry, and if it
-# doesn't clear we yield what we have (detail pages are optional extras).
+# waiting room during big on-sales. Use its normal public calendar session, never
+# bypass a queue, and stop optional detail requests if access is restricted.
 # ------------------------------------------------------------------------------
 
 BH = "https://benaroyahall.org"
@@ -438,17 +434,13 @@ BH_API = BH + "/umbraco/api/performances/GetGridCalendarShows"
 
 
 def _queued(resp):
-    return "<title>Queue-it</title>" in resp.text[:3000]
+    return ("queue-it.net" in getattr(resp, "url", "") or
+            "<title>queue-it</title>" in resp.text[:3000].lower())
 
 
-def bh_detail(path, tries=3, wait=8):
-    for i in range(tries):
-        r = fetch(BH + path)
-        if not _queued(r):
-            return BeautifulSoup(r.text, "html.parser")
-        if i < tries - 1:
-            time.sleep(wait)
-    return None
+def bh_detail(path, session=None):
+    r = fetch(urljoin(BH, path), session=session)
+    return None if _queued(r) else BeautifulSoup(r.text, "html.parser")
 
 
 def bh_parse_detail(soup):
@@ -491,7 +483,7 @@ def bh_category(ev):
     if "symphonic" in slug or "pops" in slug or "families" in slug:
         return "symphonic"
     from music_ingest import classify
-    cat = classify(ev["title"])
+    cat = classify(ev["title"], ev.get("genre"))
     if cat == "chamber" and ev.get("brand") == "Seattle Symphony":
         return "symphonic"
     if cat == "chamber" and "Taper" in venue and not re.search(r"quartet|trio|duo|quintet|recital", ev["title"], re.I):
@@ -545,48 +537,98 @@ def brochure_performers(it):
     return ", ".join(out)
 
 
-@scraper("Benaroya Hall")
-def benaroya_hall():
+def bh_calendar_events(session, now):
+    """Use the same normal session as the public calendar and its POST feed.
+
+    Starting at the POST endpoint without calendar cookies can redirect through
+    the waiting room as a GET, which makes the API return a misleading 404.
+    Let the public page establish its normal cookies; never bypass a waiting room.
+    """
+    calendar_page = fetch(BH + "/calendar/", session=session)
+    if _queued(calendar_page):
+        raise RuntimeError("Benaroya Hall's public calendar is in its waiting room")
     events = {}
-    now = datetime.now()
     for k in range(0, 14, 2):  # the API returns ~3 months from `start`; step by 2 and de-dupe
         y, mo = divmod(now.month - 1 + k, 12)
         start = f"{now.year + y}-{mo + 1:02d}-01T00:00:00.000Z"
         payload = dict(keywordId="", genre="", seriesKeywordId="", audienceKeywordId="",
                        accessibilityKeywordId="", timeSlot="", locationKeywordId="", programs="",
                        query="", selectedFilters="[]", start=start, end=start)
-        r = requests.post(BH_API, data=payload, headers={"User-Agent": UA}, timeout=60)
+        time.sleep(0.25)
+        r = session.post(BH_API, data=payload, headers={"User-Agent": UA}, timeout=60)
         r.raise_for_status()
-        for e in r.json():
+        if _queued(r):
+            raise RuntimeError("Benaroya Hall's concert feed is in its waiting room")
+        try:
+            items = r.json()
+        except ValueError as exc:
+            raise RuntimeError("Benaroya Hall's concert feed did not return JSON") from exc
+        if not isinstance(items, list):
+            raise RuntimeError("Benaroya Hall's concert feed did not return an event list")
+        for e in items:
             events[e["id"]] = e
+    if not events:
+        raise RuntimeError("Benaroya Hall's calendar returned no performances")
+    return sorted(events.values(), key=lambda e: e["start"])
+
+
+BH_MUSIC = re.compile(
+    r"\bconcert|\bmusic|\brecital|\bquartet|\bquintet|\btrio|\borchestra|\bchoir|\bchorus|"
+    r"\bchoral|\bsymphony|\bpianist|\bguitarist|\bviolinist|\ba cappella|\bsinger|\bsinging", re.I)
+BH_NON_MUSIC = re.compile(r"\bTalks\b|\bDonor Events\b|\bNational Geographic\b|\bcomedy\b|\bstand.up\b|\bpodcast\b", re.I)
+
+
+def bh_is_concert(event):
+    """Include Symphony and guest concerts, even when the genre tag is missing."""
+    title = event.get("title") or ""
+    genre = event.get("genre") or ""
+    if (event.get("hideInSearchResults") or NON_CONCERT.search(title) or
+            BH_NON_MUSIC.search(title + " " + genre)):
+        return False
+    if event.get("brand") == "Seattle Symphony":
+        return True
+    return bool(re.search(r"Classical|Chamber|Chorale", genre, re.I) or
+                BH_MUSIC.search(title + " " + clean(event.get("description"))))
+
+
+@scraper("Benaroya Hall")
+def benaroya_hall():
+    with requests.Session() as session:
+        yield from _benaroya_hall(session)
+
+
+def _benaroya_hall(session):
+    now = datetime.now()
+    events = bh_calendar_events(session, now)
     by_title, by_date = load_brochure()
     details = {}
     deadline = time.time() + 420  # total budget for detail pages; events still publish without them
-    for e in sorted(events.values(), key=lambda e: e["start"]):
+    details_available = True
+    for e in events:
         bro = brochure_for(e, by_title, by_date)
-        # Classical by the site's genre tag, or a Symphony concert whose brochure entry has a program
-        classical = "Classical" in (e.get("genre") or "") or (
-            (e.get("brand") or "") == "Seattle Symphony" and bro and bro["program"]
-            and "Pop Culture" not in (e.get("genre") or ""))
-        if not classical or NON_CONCERT.search(e["title"]) or e.get("isPast"):
+        if not bh_is_concert(e) or e.get("isPast"):
             continue
         start = local_dt(e["start"])
-        if not start or start < now.replace(hour=0, minute=0):
+        if not start or start < now.replace(hour=0, minute=0, second=0, microsecond=0):
             continue
         path = e.get("learnMoreUrl")
-        if path and path not in details and time.time() < deadline:
+        if path and path not in details and details_available and time.time() < deadline:
             try:
-                soup = bh_detail(path)
+                soup = bh_detail(path, session=session)
                 details[path] = bh_parse_detail(soup) if soup else ("", [])
-            except requests.RequestException:
+                if soup is None:
+                    details_available = False  # stop optional requests if the waiting room returns
+            except requests.RequestException as exc:
                 details[path] = ("", [])
+                if exc.response is not None and exc.response.status_code in (403, 429):
+                    details_available = False
         artists, program = details.get(path, ("", []))
         if bro and not program:  # the printed season brochure is authoritative when the web page lacked a program
             program = bro["program"]
         if bro and not artists:
             artists = brochure_performers(bro)
         brand = e.get("brand") or ""
-        host = brand if brand == "Seattle Symphony" and "Seattle Symphony" not in artists else ""
+        host = brand if brand == "Seattle Symphony" and not re.search(r"(?:^|, )Seattle Symphony(?:,|$)", artists) else ""
         performers = ", ".join(x for x in (host, artists) if x) or re.split(r"\s+presents?:?\s*", e["title"], 1)[0]
         yield {
             "source": "Benaroya Hall",
@@ -594,7 +636,7 @@ def benaroya_hall():
             "title": e["title"],
             "start": start,
             "performers": performers,
-            "description": clean(e.get("description"))[:500],
+            "description": "Seattle Symphony at Benaroya Hall." if brand == "Seattle Symphony" else "Guest concert at Benaroya Hall.",
             "program": program,
             "category": bh_category(e),
             "venue": f"{e.get('venue') or ''}, Benaroya Hall".strip(", "),
@@ -602,7 +644,7 @@ def benaroya_hall():
             "country": "USA",
             "region": "seattle",
             "major": brand == "Seattle Symphony",
-            "ticket_url": BH + (e.get("buyPageUrl") or path or ""),
+            "ticket_url": urljoin(BH, e.get("buyPageUrl") or path or "/calendar/"),
         }
 
 

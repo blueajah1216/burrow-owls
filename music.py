@@ -233,6 +233,9 @@ def init_music(app, db, ctx_fn):
         if "description" not in cols:
             db.session.execute(db.text("ALTER TABLE music_events ADD COLUMN description TEXT"))
             db.session.commit()
+        # The public calendar must remain useful when the venue feed blocks servers.
+        import music_ingest
+        music_ingest.seed_missing_snapshot(db, "Benaroya Hall")
 
     @bp.before_request
     def _auto_refresh():

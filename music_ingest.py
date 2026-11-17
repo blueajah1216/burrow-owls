@@ -24,6 +24,7 @@ from datetime import datetime, timedelta
 
 import requests
 from bs4 import BeautifulSoup
+from sqlalchemy.exc import IntegrityError
 
 import music
 
@@ -227,6 +228,30 @@ def load_snapshot(name):
         return d["exported"], d["events"]
     except (OSError, ValueError, KeyError):
         return None, []
+
+
+def seed_missing_snapshot(db, name):
+    """Populate an empty upcoming source from a bundled, verified export.
+
+    Useful immediately after deployment when a remote source blocks the server.
+    Never replace live records or resurrect cancelled events over a populated source.
+    """
+    now = datetime.now()
+    if music.MusicEvent.query.filter(
+            music.MusicEvent.source == name, music.MusicEvent.start >= now).first():
+        return 0
+    exported, records = load_snapshot(name)
+    records = [rec for rec in records if str(rec.get("start", "")) >= now.strftime("%Y-%m-%d")]
+    with db.session.no_autoflush:
+        count = sum(upsert(db, rec) for rec in records)
+    if count:
+        try:
+            db.session.commit()
+        except IntegrityError:
+            # Multiple Gunicorn workers can try the same startup seed together.
+            db.session.rollback()
+            return 0
+    return count
 
 
 def _log_run(db, name, count, error, t0):
