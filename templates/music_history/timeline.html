@@ -1,0 +1,59 @@
+{% extends 'music_history/base.html' %}
+{% from 'music_history/macros.html' import work_card, composer_card %}
+{% block content %}
+<section class="hero page-width">
+  <div class="hero-copy">
+    <p class="eyebrow">A listening journey · c. 1100 to today</p>
+    <h1>Music through<br><em>history.</em></h1>
+    <p class="hero-lede">Some music changed what came next.<br>Come hear how it happened.</p>
+    <p class="hero-description">From a single medieval voice to the many sounds of modern life: explore the people, pieces, and ideas that shaped Western classical music.</p>
+    <div class="hero-stats"><a href="{{ url_for('music.history') }}#timeline"><b>100</b><span>landmark works</span></a><a href="{{ url_for('music.history', view='composers') }}#timeline"><b>50</b><span>remarkable composers</span></a><a href="#chapters"><b>7</b><span>chapters in time</span></a></div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="art-top"><span>THE LISTENING ROOM</span><span>VOL. 01</span></div>
+    <svg viewBox="0 0 460 390" fill="none" role="presentation">
+      <g stroke="currentColor" opacity=".24"><path d="M0 140H460M0 160H460M0 180H460M0 200H460M0 220H460"/><circle cx="230" cy="190" r="156"/><circle cx="230" cy="190" r="144"/><circle cx="230" cy="190" r="132"/><circle cx="230" cy="190" r="120"/><circle cx="230" cy="190" r="108"/><circle cx="230" cy="190" r="96"/></g>
+      <circle cx="230" cy="190" r="74" fill="#e6cba0"/><circle cx="230" cy="190" r="61" stroke="#742f3e" opacity=".35"/>
+      <path d="M222 208V153L256 145V194M222 170L256 162" stroke="#742f3e" stroke-width="5"/><ellipse cx="211" cy="210" rx="13" ry="9" fill="#742f3e" transform="rotate(-20 211 210)"/><ellipse cx="245" cy="196" rx="13" ry="9" fill="#742f3e" transform="rotate(-20 245 196)"/>
+      <path d="M75 335C112 315 142 330 166 320M300 60C330 45 354 58 384 40" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="75" cy="335" r="4" fill="currentColor"/><circle cx="384" cy="40" r="4" fill="currentColor"/>
+    </svg>
+    <p>A thousand years.<br><em>Still resonating.</em></p>
+    <div class="art-bottom"><span>VOICES · STRINGS · STORIES</span><span>1100 → NOW</span></div>
+  </div>
+</section>
+
+<section class="chapter-section page-width" id="chapters" aria-labelledby="chapters-heading">
+  <div class="section-heading"><h2 id="chapters-heading">Every era has a sound.</h2><span>Choose a chapter, or follow the whole story ↓</span></div>
+  <nav class="chapter-grid" aria-label="Jump to an era">
+    {% for era in data.eras %}<a href="{{ url_for('music.history', view=view, era=era.id) }}#timeline" style="--era:{{ era.color }}"><span class="chapter-number">0{{ loop.index }}</span><strong>{{ era.name }}</strong><small>{{ era.span }}</small><span class="chapter-line"></span></a>{% endfor %}
+  </nav>
+</section>
+
+<section class="timeline-section page-width" id="timeline" aria-labelledby="timeline-heading">
+  <div class="section-heading"><div><p class="eyebrow">Follow the thread</p><h2 id="timeline-heading">The {{ 'composers' if view == 'composers' else 'music' }} that shaped the story.</h2></div><a href="#about">About this selection ↗</a></div>
+  <div class="explorer-tools">
+    <nav class="view-tabs" aria-label="Timeline view"><a class="{{ 'active' if view == 'works' }}" href="{{ url_for('music.history', era=selected_era, q=query) }}#timeline" {% if view == 'works' %}aria-current="page"{% endif %}>100 works</a><a class="{{ 'active' if view == 'composers' }}" href="{{ url_for('music.history', view='composers', era=selected_era, q=query) }}#timeline" {% if view == 'composers' %}aria-current="page"{% endif %}>50 composers</a></nav>
+    <form id="history-filter" method="get" action="{{ url_for('music.history') }}#timeline" role="search">
+      <input type="hidden" name="view" value="{{ view }}">
+      <label class="search-field"><span class="sr-only">Search music history</span><span aria-hidden="true">⌕</span><input id="history-search" type="search" name="q" value="{{ query }}" maxlength="200" placeholder="Search a piece, composer, or idea…"></label>
+      <label><span class="sr-only">Filter by era</span><select id="era-filter" name="era"><option value="all">All eras</option>{% for era in data.eras %}<option value="{{ era.id }}" {% if selected_era == era.id %}selected{% endif %}>{{ era.name }}</option>{% endfor %}</select></label>
+      <button class="filter-submit" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="results-bar"><p id="result-count" aria-live="polite">{{ visible_ids|length }} {{ 'composers' if view == 'composers' else 'works' }} on the timeline</p><a id="clear-filters" href="{{ url_for('music.history', view=view) }}#timeline">Reset filters</a></div>
+  <p class="timeline-note">{% if view == 'works' %}Works follow their historical dates; chapter boundaries are approximate. Open a piece to find its story and what to listen for.{% else %}Composers are grouped by their main stylistic chapter, then by birth year. Lifespans and works often cross era boundaries.{% endif %}</p>
+  <div class="empty-state" id="empty-state" {% if visible_ids %}hidden{% endif %}><h3>No matches yet.</h3><p>Try a surname, a shorter title, or a different era.</p></div>
+  {% for era in data.eras %}
+  {% set matches = namespace(n=0) %}{% for item in era[view] %}{% if item.id in visible_ids %}{% set matches.n = matches.n + 1 %}{% endif %}{% endfor %}
+  <section class="era-section" id="era-{{ era.id }}" data-era="{{ era.id }}" style="--era:{{ era.color }}" {% if not matches.n %}hidden{% endif %} aria-labelledby="heading-{{ era.id }}">
+    <header class="era-intro"><p class="era-period">{{ era.span }}</p><h2 id="heading-{{ era.id }}">{{ era.name }}</h2><h3>{{ era.tagline }}</h3><p>{{ era.summary }}</p><details><summary>The world around the music</summary><p>{{ era.context }}</p><p><b>Try listening for:</b> {{ era.listen }}</p></details><span class="era-count"><span data-era-count>{{ matches.n }}</span> {{ 'composers' if view == 'composers' else 'landmark works' }}</span></header>
+    <div class="era-timeline">{% for item in era[view] %}{% if view == 'works' %}{{ work_card(item, composers[item.composer], item.id in visible_ids) }}{% else %}{{ composer_card(item, item.id in visible_ids) }}{% endif %}{% endfor %}</div>
+  </section>
+  {% endfor %}
+  <div class="timeline-end"><span aria-hidden="true">♬</span><h2>The next chapter is still being written.</h2><p>History sounds different when you hear it live.</p><a class="button" href="{{ url_for('music.music_home') }}">Find a concert →</a><a class="text-link" href="#main">Back to the beginning ↑</a></div>
+</section>
+
+<section class="about-selection page-width" id="about"><div><p class="eyebrow">An invitation, not a final verdict</p><h2>What makes a piece important?</h2><p>This is a curated selection of 100 influential works and 50 composers in the Western classical tradition: music that changed a form, opened a new sound world, influenced later musicians, or became central to performance and listening. The numbers mark chronological order, not a ranking.</p><p>These pages follow one musical tradition. They do not tell the whole history of music, and even this canon reflects unequal access to education, publication, and performance. Rediscovery keeps changing the story.</p></div><div><h3>A note on dates &amp; sources</h3><p>Dates usually identify composition or completion; publication and premiere dates are labeled. “c.” means approximately. Era boundaries overlap and are useful signposts rather than fixed rules. A collection, opera cycle, or complete set counts as one selection.</p><p>Descriptions and listening prompts are editorial introductions. Piece and composer pages link to further reading; these overviews offer a starting point:</p><ul>{% for ref in data.references %}<li><a href="{{ ref.url }}" target="_blank" rel="noopener noreferrer">{{ ref.label }} ↗</a></li>{% endfor %}</ul></div></section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='music_history/history.js') }}?v=1" defer></script>{% endblock %}

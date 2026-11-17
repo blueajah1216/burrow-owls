@@ -236,7 +236,7 @@ def init_music(app, db, ctx_fn):
     @bp.before_request
     def _auto_refresh():
         import music_ingest
-        if request.endpoint not in ("music.music_status", "music.music_refresh"):
+        if request.endpoint in ("music.music_home", "music.music_search"):
             music_ingest.refresh_if_stale(app, db)
 
     @bp.get("")
@@ -335,5 +335,7 @@ def init_music(app, db, ctx_fn):
         threading.Thread(target=work, name="music-refresh", daemon=True).start()
         return {"started": names or "all"}
 
+    from music_history import register_history_routes
+    register_history_routes(bp, ctx_fn)
     app.register_blueprint(bp)
     return MusicEvent

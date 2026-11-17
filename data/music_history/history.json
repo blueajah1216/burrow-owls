@@ -1,0 +1,2224 @@
+{
+  "eras": [
+    {
+      "id": "medieval",
+      "name": "Medieval",
+      "span": "c. 1100–1400",
+      "start": 1100,
+      "end": 1400,
+      "color": "#755083",
+      "tagline": "A single voice becomes many",
+      "summary": "Chant shaped worship, while troubadours sang of love and courts. Composers gradually layered independent melodies: a practice called polyphony. Manuscripts let some of those sounds travel across centuries.",
+      "context": "Cathedrals and monasteries were centers of learning. Musical notation made increasingly elaborate combinations of voices possible.",
+      "listen": "Follow one melodic line, then notice what changes when other voices join."
+    },
+    {
+      "id": "renaissance",
+      "name": "Renaissance",
+      "span": "c. 1400–1600",
+      "start": 1400,
+      "end": 1600,
+      "color": "#49736c",
+      "tagline": "Voices in conversation",
+      "summary": "Interweaving voices, expressive poetry, and a new trade in printed music transformed European musical life. Sacred masses shared a world with secular songs and dances.",
+      "context": "Courts, churches, the Reformation, and the printing press changed who supported music and who could encounter it.",
+      "listen": "Listen for a short idea passed from singer to singer, like a conversation."
+    },
+    {
+      "id": "baroque",
+      "name": "Baroque",
+      "span": "c. 1600–1750",
+      "start": 1600,
+      "end": 1750,
+      "color": "#a26735",
+      "tagline": "Music takes the stage",
+      "summary": "Opera put sung drama at the center of a new musical world. Concertos set soloists against ensembles; a steady bass supported elaborate melodies, dances, and intricate fugues.",
+      "context": "Court spectacle, public opera houses, and busy church music establishments created different audiences and different kinds of musical work.",
+      "listen": "Find the bass line: it often anchors the music while everything above it changes."
+    },
+    {
+      "id": "classical",
+      "name": "Classical",
+      "span": "c. 1750–1820",
+      "start": 1750,
+      "end": 1820,
+      "color": "#806b32",
+      "tagline": "An architecture of sound",
+      "summary": "Haydn, Mozart, and Beethoven made the symphony, quartet, and sonata vehicles for surprise and argument. Clear phrases could unfold into large structures full of tension and return.",
+      "context": "Enlightenment ideas, expanding public concerts, and the upheavals of the French Revolution helped reshape the relationship between musicians and patrons.",
+      "listen": "Notice the return of an opening idea: does it feel changed by its journey?"
+    },
+    {
+      "id": "romantic",
+      "name": "Romantic",
+      "span": "c. 1820–1900",
+      "start": 1820,
+      "end": 1900,
+      "color": "#9a4c55",
+      "tagline": "The inner life, amplified",
+      "summary": "Songs explored private emotions; orchestras and operas imagined enormous worlds. Composers drew on literature, landscapes, folk traditions, and the possibilities of the modern piano.",
+      "context": "Industrial instrument making, middle-class music making, nationalism, and a growing cult of the individual artist reshaped concert life.",
+      "listen": "Listen for a melody that seems to speak, remember, or tell a story."
+    },
+    {
+      "id": "modern",
+      "name": "Modern",
+      "span": "c. 1900–1945",
+      "start": 1900,
+      "end": 1945,
+      "color": "#3e6984",
+      "tagline": "The rules begin to move",
+      "summary": "There was no single modern sound. Composers explored new harmonies, unstable rhythms, folk traditions, jazz, and the expressive possibilities of dissonance and silence.",
+      "context": "Recording, migration, colonial encounters, two world wars, and authoritarian politics changed how music was made, circulated, and heard.",
+      "listen": "Choose one feature—rhythm, color, or harmony—and hear how it challenges your expectations."
+    },
+    {
+      "id": "contemporary",
+      "name": "Since 1945",
+      "span": "1945–today",
+      "start": 1945,
+      "end": 2100,
+      "color": "#626f49",
+      "tagline": "Many possible futures",
+      "summary": "Chance, repetition, spiritual stillness, and new kinds of theater opened different paths. These selections follow several influential directions; the history of music is still being written.",
+      "context": "Postwar rebuilding, electronic media, civil rights movements, and global exchange challenged inherited ideas about the concert hall and its canon.",
+      "listen": "Ask what the piece invites you to notice: a pulse, a texture, a memory, or the sounds around you."
+    }
+  ],
+  "composers": [
+    {
+      "id": "hildegard",
+      "name": "Hildegard of Bingen",
+      "birth": 1098,
+      "death": 1179,
+      "dates": "1098–1179",
+      "place": "German lands",
+      "era": "medieval",
+      "signature": "A visionary voice",
+      "bio": "An abbess, writer, and religious thinker, Hildegard created soaring chants for her community of women. Her surviving music gives an unusually vivid individual voice to the medieval monastic world. She wrote many of her own texts, linking poetry, melody, and spiritual imagination.",
+      "source": {
+        "label": "Hildegard Society · Music and texts",
+        "url": "https://www.hildegard-society.org/p/music.html?m=0"
+      }
+    },
+    {
+      "id": "machaut",
+      "name": "Guillaume de Machaut",
+      "birth": 1300,
+      "death": 1377,
+      "dates": "c. 1300–1377",
+      "place": "France",
+      "era": "medieval",
+      "signature": "Poet, musician, architect of voices",
+      "bio": "Machaut served aristocratic patrons and worked as a cleric in Reims. A major poet as well as a composer, he helped shape the intricately rhythmic music known as Ars nova. His songs and sacred works show how carefully written polyphony could carry a personal artistic identity.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Guillaume_de_Machaut"
+      }
+    },
+    {
+      "id": "dufay",
+      "name": "Guillaume Du Fay",
+      "birth": 1397,
+      "death": 1474,
+      "dates": "c. 1397–1474",
+      "place": "Franco-Flemish / Italy",
+      "era": "renaissance",
+      "signature": "Between medieval and Renaissance worlds",
+      "bio": "Du Fay worked across the church and court networks of northern France and Italy. His music links medieval rhythmic design with the warmer sonorities associated with the early Renaissance. His international career shows how musicians carried ideas across political borders.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Guillaume_Du_Fay"
+      }
+    },
+    {
+      "id": "josquin",
+      "name": "Josquin des Prez",
+      "birth": 1450,
+      "death": 1521,
+      "dates": "c. 1450–1521",
+      "place": "Franco-Flemish / Italy",
+      "era": "renaissance",
+      "signature": "Making the words matter",
+      "bio": "Josquin worked in the interconnected musical centers of France and Italy. He became celebrated for balancing independent voices with a clear response to words. Printed editions helped spread his reputation, making his music a model for generations of composers.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Josquin_des_Prez"
+      }
+    },
+    {
+      "id": "palestrina",
+      "name": "Giovanni Pierluigi da Palestrina",
+      "birth": 1525,
+      "death": 1594,
+      "dates": "c. 1525–1594",
+      "place": "Italy",
+      "era": "renaissance",
+      "signature": "The art of vocal balance",
+      "bio": "Palestrina spent much of his working life in Roman churches. His smoothly interwoven vocal lines became an enduring model for teaching counterpoint. Later stories made him a heroic savior of church music, but his real achievement lies in the extraordinary control and variety of the music itself.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Giovanni_Pierluigi_da_Palestrina"
+      }
+    },
+    {
+      "id": "byrd",
+      "name": "William Byrd",
+      "birth": 1540,
+      "death": 1623,
+      "dates": "c. 1540–1623",
+      "place": "England",
+      "era": "renaissance",
+      "signature": "Faith beneath the surface",
+      "bio": "Byrd wrote for the English royal chapel while remaining a Catholic in Protestant England. He composed Latin sacred music, English church music, songs, and imaginative keyboard works. His career reveals how religious conviction and political circumstance could shape the places where music was heard.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/William_Byrd"
+      }
+    },
+    {
+      "id": "monteverdi",
+      "name": "Claudio Monteverdi",
+      "birth": 1567,
+      "death": 1643,
+      "dates": "1567–1643",
+      "place": "Italy",
+      "era": "baroque",
+      "signature": "Turning song into drama",
+      "bio": "Monteverdi worked at the Gonzaga court in Mantua and later directed music at St. Mark’s in Venice. His madrigals, sacred music, and operas put vivid expression at the heart of composition. He helped make opera a lasting art without being its inventor.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Claudio_Monteverdi"
+      }
+    },
+    {
+      "id": "purcell",
+      "name": "Henry Purcell",
+      "birth": 1659,
+      "death": 1695,
+      "dates": "1659–1695",
+      "place": "England",
+      "era": "baroque",
+      "signature": "The music of English speech",
+      "bio": "Purcell wrote for the church, court, and London stage. He joined English vocal traditions to French dance and Italian musical drama. His gift for setting words lets a short phrase convey humor, grief, or startling tenderness.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Henry_Purcell"
+      }
+    },
+    {
+      "id": "vivaldi",
+      "name": "Antonio Vivaldi",
+      "birth": 1678,
+      "death": 1741,
+      "dates": "1678–1741",
+      "place": "Italy",
+      "era": "baroque",
+      "signature": "The concerto in motion",
+      "bio": "A Venetian violinist, priest, and composer, Vivaldi taught at the Ospedale della Pietà, an institution known for its female musicians. Hundreds of concertos explore the energy of a soloist against an ensemble. His clear designs and rhythmic drive influenced Bach and many others.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Antonio_Vivaldi"
+      }
+    },
+    {
+      "id": "bach",
+      "name": "Johann Sebastian Bach",
+      "birth": 1685,
+      "death": 1750,
+      "dates": "1685–1750",
+      "place": "German lands",
+      "era": "baroque",
+      "signature": "A universe of interwoven lines",
+      "bio": "Bach worked as an organist, court musician, and church music director, eventually settling in Leipzig. He gathered German, French, and Italian traditions into music of remarkable contrapuntal imagination. His keyboard works became central to musical education, while later revivals helped bring his large sacred works into the concert canon.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach"
+      }
+    },
+    {
+      "id": "handel",
+      "name": "George Frideric Handel",
+      "birth": 1685,
+      "death": 1759,
+      "dates": "1685–1759",
+      "place": "German lands / Britain",
+      "era": "baroque",
+      "signature": "Drama for a public audience",
+      "bio": "Born in Halle, Handel studied Italian opera and built his mature career in London. He was both a composer and a theatrical entrepreneur. His English oratorios joined dramatic characterization to large choral scenes and developed a lasting life beyond their first audiences.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/George_Frideric_Handel"
+      }
+    },
+    {
+      "id": "haydn",
+      "name": "Joseph Haydn",
+      "birth": 1732,
+      "death": 1809,
+      "dates": "1732–1809",
+      "place": "Austria",
+      "era": "classical",
+      "signature": "Surprise inside a perfect design",
+      "bio": "Haydn spent decades working for the Esterházy family before celebrated visits to London. He helped establish the symphony and string quartet as major forms, without inventing either. His music combines structural ingenuity, earthy humor, and a feeling for what listeners expect next.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Joseph_Haydn"
+      }
+    },
+    {
+      "id": "mozart",
+      "name": "Wolfgang Amadeus Mozart",
+      "birth": 1756,
+      "death": 1791,
+      "dates": "1756–1791",
+      "place": "Austria",
+      "era": "classical",
+      "signature": "Human feeling in every voice",
+      "bio": "A prodigy who toured Europe as a child, Mozart later pursued an independent career in Vienna. He wrote across opera, concertos, symphonies, and chamber music. His gift for giving different characters and instruments their own personalities makes elaborate structures feel immediate and alive.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+      }
+    },
+    {
+      "id": "beethoven",
+      "name": "Ludwig van Beethoven",
+      "birth": 1770,
+      "death": 1827,
+      "dates": "1770–1827",
+      "place": "German lands / Austria",
+      "era": "classical",
+      "signature": "Form becomes a drama",
+      "bio": "Beethoven moved from Bonn to Vienna and built a career supported by patrons, publishing, and public performance. Increasing deafness profoundly affected his life without ending his work as a composer. He stretched inherited forms into expansive dramas whose influence reaches across Romantic and modern music.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven"
+      }
+    },
+    {
+      "id": "schubert",
+      "name": "Franz Schubert",
+      "birth": 1797,
+      "death": 1828,
+      "dates": "1797–1828",
+      "place": "Austria",
+      "era": "romantic",
+      "signature": "A world inside a song",
+      "bio": "Schubert lived in and around Vienna, writing for friends, intimate gatherings, and professional performers. His hundreds of songs helped make the German Lied a major art form. Many instrumental works also turn on the tension between lyrical beauty and unsettling changes of harmony.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Franz_Schubert"
+      }
+    },
+    {
+      "id": "berlioz",
+      "name": "Hector Berlioz",
+      "birth": 1803,
+      "death": 1869,
+      "dates": "1803–1869",
+      "place": "France",
+      "era": "romantic",
+      "signature": "The orchestra learns to dream",
+      "bio": "Berlioz pursued a difficult independent career as a composer, critic, and conductor. Literature and theatrical imagination drove his unusually vivid orchestral writing. His treatise on instrumentation and his large musical dramas helped reshape how later composers imagined orchestral sound.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Hector_Berlioz"
+      }
+    },
+    {
+      "id": "mendelssohn",
+      "name": "Felix Mendelssohn",
+      "birth": 1809,
+      "death": 1847,
+      "dates": "1809–1847",
+      "place": "German lands",
+      "era": "romantic",
+      "signature": "Romantic imagination, classical poise",
+      "bio": "Mendelssohn was a composer, pianist, conductor, and organizer of musical life in Leipzig. His 1829 performance of Bach’s St. Matthew Passion contributed to a major revival of Bach’s music. His own works combine fleet invention, lyrical directness, and a deep knowledge of earlier styles.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Felix_Mendelssohn"
+      }
+    },
+    {
+      "id": "schumann",
+      "name": "Robert Schumann",
+      "birth": 1810,
+      "death": 1856,
+      "dates": "1810–1856",
+      "place": "German lands",
+      "era": "romantic",
+      "signature": "Music as an inner diary",
+      "bio": "Schumann began with ambitions as a pianist and became an influential composer and music critic. Literature, imaginary characters, and personal associations animate his piano works and songs. His partnership with Clara Schumann connected composition, performance, and advocacy throughout their lives.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Robert_Schumann"
+      }
+    },
+    {
+      "id": "chopin",
+      "name": "Frédéric Chopin",
+      "birth": 1810,
+      "death": 1849,
+      "dates": "1810–1849",
+      "place": "Poland / France",
+      "era": "romantic",
+      "signature": "The piano finds a private voice",
+      "bio": "Chopin left Poland as a young man and settled in Paris, where he performed selectively and taught piano. He concentrated overwhelmingly on music for his instrument. Polish dances, bel canto singing, and harmonic experiment meet in works that transformed the piano’s expressive language.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin"
+      }
+    },
+    {
+      "id": "liszt",
+      "name": "Franz Liszt",
+      "birth": 1811,
+      "death": 1886,
+      "dates": "1811–1886",
+      "place": "Hungary / Europe",
+      "era": "romantic",
+      "signature": "Virtuosity becomes theater",
+      "bio": "Liszt was a touring piano celebrity who later devoted more time to composition, teaching, and conducting. His transcriptions carried orchestral and operatic music to new audiences. He developed the symphonic poem and explored ways to transform a small musical idea across an extended work.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Franz_Liszt"
+      }
+    },
+    {
+      "id": "wagner",
+      "name": "Richard Wagner",
+      "birth": 1813,
+      "death": 1883,
+      "dates": "1813–1883",
+      "place": "German lands",
+      "era": "romantic",
+      "signature": "A theater built from music",
+      "bio": "Wagner developed operas in which recurring musical ideas connect drama, memory, and character across long spans. He created a festival theater at Bayreuth for his work. His influential artistic legacy also requires reckoning with his antisemitic writings and their later political appropriation.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Richard_Wagner"
+      }
+    },
+    {
+      "id": "verdi",
+      "name": "Giuseppe Verdi",
+      "birth": 1813,
+      "death": 1901,
+      "dates": "1813–1901",
+      "place": "Italy",
+      "era": "romantic",
+      "signature": "The theater of human stakes",
+      "bio": "Verdi’s long career followed Italian opera from the age of bel canto into increasingly continuous musical drama. His works place recognizable people under fierce private and public pressure. He became associated with Italian national identity, while his later operas kept testing new dramatic possibilities.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Giuseppe_Verdi"
+      }
+    },
+    {
+      "id": "brahms",
+      "name": "Johannes Brahms",
+      "birth": 1833,
+      "death": 1897,
+      "dates": "1833–1897",
+      "place": "Germany / Austria",
+      "era": "romantic",
+      "signature": "Old forms, new emotional depths",
+      "bio": "Brahms settled in Vienna after growing up in Hamburg. He studied earlier music closely and built Romantic expression into symphonies, chamber works, songs, and piano music. Rather than telling a prescribed story, his instrumental works often create drama through the continuous reshaping of tiny musical ideas.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Johannes_Brahms"
+      }
+    },
+    {
+      "id": "clara-schumann",
+      "name": "Clara Schumann",
+      "birth": 1819,
+      "death": 1896,
+      "dates": "1819–1896",
+      "place": "German lands",
+      "era": "romantic",
+      "signature": "Composer at the keyboard",
+      "bio": "Clara Schumann was an internationally renowned pianist, teacher, and composer. Her concert career helped establish the modern piano recital and kept works by Robert Schumann and Brahms before the public. Her own music reveals a distinctive command of lyrical writing and demanding instrumental textures.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Clara_Schumann"
+      }
+    },
+    {
+      "id": "tchaikovsky",
+      "name": "Pyotr Ilyich Tchaikovsky",
+      "birth": 1840,
+      "death": 1893,
+      "dates": "1840–1893",
+      "place": "Russia",
+      "era": "romantic",
+      "signature": "Melody on a grand stage",
+      "bio": "Tchaikovsky trained at the St. Petersburg Conservatory and wrote for both Russian and international audiences. His symphonies, concertos, operas, and ballets unite long melodic lines with powerful dramatic pacing. His ballet scores helped make dance music central to the orchestral repertory.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky"
+      }
+    },
+    {
+      "id": "mussorgsky",
+      "name": "Modest Mussorgsky",
+      "birth": 1839,
+      "death": 1881,
+      "dates": "1839–1881",
+      "place": "Russia",
+      "era": "romantic",
+      "signature": "Speech, character, and rough edges",
+      "bio": "Mussorgsky belonged to a circle of Russian composers seeking alternatives to imported academic models. He drew on speech rhythms, folk culture, and historical drama. Many works reached audiences in other composers’ revisions, making the question of whose version we hear especially important.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Modest_Mussorgsky"
+      }
+    },
+    {
+      "id": "dvorak",
+      "name": "Antonín Dvořák",
+      "birth": 1841,
+      "death": 1904,
+      "dates": "1841–1904",
+      "place": "Bohemia / United States",
+      "era": "romantic",
+      "signature": "Local roots, international reach",
+      "bio": "Dvořák brought Bohemian dance and song idioms into symphonies, chamber music, and opera. A period directing the National Conservatory in New York prompted him to consider American musical identity. His American works reflect encounters and imaginative responses rather than simple transcriptions of folk melodies.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Anton%C3%ADn_Dvo%C5%99%C3%A1k"
+      }
+    },
+    {
+      "id": "mahler",
+      "name": "Gustav Mahler",
+      "birth": 1860,
+      "death": 1911,
+      "dates": "1860–1911",
+      "place": "Bohemia / Austria",
+      "era": "romantic",
+      "signature": "A symphony can contain a world",
+      "bio": "Mahler combined a demanding conducting career with composition, often during summer retreats. His symphonies bring marches, dances, songs, and vast orchestral climaxes into unstable coexistence. Their mixture of intimacy and spectacle became increasingly influential in the twentieth century.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Gustav_Mahler"
+      }
+    },
+    {
+      "id": "debussy",
+      "name": "Claude Debussy",
+      "birth": 1862,
+      "death": 1918,
+      "dates": "1862–1918",
+      "place": "France",
+      "era": "modern",
+      "signature": "Color becomes structure",
+      "bio": "Debussy found inspiration in poetry, visual art, and musical traditions beyond the standard conservatory curriculum. His harmonies and instrumental colors changed how music could move through time. Though often called an Impressionist, he resisted being reduced to a single stylistic label.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Claude_Debussy"
+      }
+    },
+    {
+      "id": "puccini",
+      "name": "Giacomo Puccini",
+      "birth": 1858,
+      "death": 1924,
+      "dates": "1858–1924",
+      "place": "Italy",
+      "era": "romantic",
+      "signature": "The close-up in opera",
+      "bio": "Puccini inherited Italian opera’s melodic tradition and paired it with meticulous dramatic timing. His orchestras follow quick changes of action and atmosphere while voices carry memorable lyrical moments. His operas remain central to the stage, alongside debate about their representations of gender and culture.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Giacomo_Puccini"
+      }
+    },
+    {
+      "id": "strauss",
+      "name": "Richard Strauss",
+      "birth": 1864,
+      "death": 1949,
+      "dates": "1864–1949",
+      "place": "Germany",
+      "era": "modern",
+      "signature": "The orchestra as storyteller",
+      "bio": "Strauss became famous for tone poems and later for operas of striking psychological and orchestral range. His long career crossed imperial Germany, the Weimar Republic, and the Nazi period. His official role under that regime and compromises within it remain part of his contested biography.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Richard_Strauss"
+      }
+    },
+    {
+      "id": "sibelius",
+      "name": "Jean Sibelius",
+      "birth": 1865,
+      "death": 1957,
+      "dates": "1865–1957",
+      "place": "Finland",
+      "era": "modern",
+      "signature": "A landscape of growing forms",
+      "bio": "Sibelius became a powerful cultural figure during Finland’s movement toward independence. Alongside nationally resonant works, he developed a personal approach to symphonic growth in which small fragments slowly coalesce. Much of his later life passed without the release of another major symphony.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jean_Sibelius"
+      }
+    },
+    {
+      "id": "ravel",
+      "name": "Maurice Ravel",
+      "birth": 1875,
+      "death": 1937,
+      "dates": "1875–1937",
+      "place": "France",
+      "era": "modern",
+      "signature": "Precision, shimmer, and dance",
+      "bio": "Ravel combined meticulous craftsmanship with a fascination for dance, fairy tales, and stylized musical worlds. His orchestration gives each instrument an unusually precise place in the texture. Jazz and Spanish influences enter a language that is both elegant and capable of startling intensity.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Maurice_Ravel"
+      }
+    },
+    {
+      "id": "rachmaninoff",
+      "name": "Sergei Rachmaninoff",
+      "birth": 1873,
+      "death": 1943,
+      "dates": "1873–1943",
+      "place": "Russia / United States",
+      "era": "modern",
+      "signature": "Romantic lyricism in a modern age",
+      "bio": "Rachmaninoff was a composer, conductor, and one of the great pianists of his generation. After leaving Russia following the 1917 Revolution, he supported himself largely through performance. His long melodic lines and rich harmonies continued a Romantic tradition amid rapidly changing modern styles.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff"
+      }
+    },
+    {
+      "id": "schoenberg",
+      "name": "Arnold Schoenberg",
+      "birth": 1874,
+      "death": 1951,
+      "dates": "1874–1951",
+      "place": "Austria / United States",
+      "era": "modern",
+      "signature": "Rethinking musical gravity",
+      "bio": "Schoenberg moved from expansive late Romantic writing toward music without a governing tonal center. He later developed a method of composing with twelve-note rows. A major teacher as well as a composer, he fled Nazi persecution and settled in the United States.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Arnold_Schoenberg"
+      }
+    },
+    {
+      "id": "stravinsky",
+      "name": "Igor Stravinsky",
+      "birth": 1882,
+      "death": 1971,
+      "dates": "1882–1971",
+      "place": "Russia / France / United States",
+      "era": "modern",
+      "signature": "Reinvention as a lifelong habit",
+      "bio": "Stravinsky first won international fame through ballets for Serge Diaghilev’s Ballets Russes. He later explored older forms, leaner ensembles, and serial techniques. Across these changing styles, sharp rhythmic profiles and an exceptional ear for instrumental combinations remain recognizable.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Igor_Stravinsky"
+      }
+    },
+    {
+      "id": "bartok",
+      "name": "Béla Bartók",
+      "birth": 1881,
+      "death": 1945,
+      "dates": "1881–1945",
+      "place": "Hungary / United States",
+      "era": "modern",
+      "signature": "Folk research becomes new music",
+      "bio": "Bartók collected and studied rural music with the seriousness of a scholar. He transformed what he learned about rhythm, melody, and musical organization into a highly individual modern language. Opposed to fascism, he left Hungary for the United States in 1940.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/B%C3%A9la_Bart%C3%B3k"
+      }
+    },
+    {
+      "id": "ives",
+      "name": "Charles Ives",
+      "birth": 1874,
+      "death": 1954,
+      "dates": "1874–1954",
+      "place": "United States",
+      "era": "modern",
+      "signature": "Many musics at once",
+      "bio": "Ives earned his living in insurance while composing works that often went unheard for years. Hymns, marches, popular tunes, and radical experiments coexist in his music. Later advocates helped establish his place in a history of American musical experimentation.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Charles_Ives"
+      }
+    },
+    {
+      "id": "lili-boulanger",
+      "name": "Lili Boulanger",
+      "birth": 1893,
+      "death": 1918,
+      "dates": "1893–1918",
+      "place": "France",
+      "era": "modern",
+      "signature": "A brief life, an unmistakable voice",
+      "bio": "Boulanger grew up in a musical family and in 1913 became the first woman to win the Prix de Rome in composition. Illness limited her life to twenty-four years. Her vocal and instrumental works nevertheless show a concentrated imagination for harmony, color, and dramatic expression.",
+      "source": {
+        "label": "Library of Congress · Biography and resources",
+        "url": "https://guides.loc.gov/feminism-french-women-history/famous/lili-boulanger"
+      }
+    },
+    {
+      "id": "prokofiev",
+      "name": "Sergei Prokofiev",
+      "birth": 1891,
+      "death": 1953,
+      "dates": "1891–1953",
+      "place": "Russia / Soviet Union",
+      "era": "modern",
+      "signature": "Sharp wit and unexpected tenderness",
+      "bio": "Prokofiev built an international career before returning to live in the Soviet Union in the 1930s. His music ranges from biting rhythmic energy to long, tender melodies. Ballet, opera, film, symphonies, and piano music all became vehicles for his distinctive dramatic voice.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sergei_Prokofiev"
+      }
+    },
+    {
+      "id": "shostakovich",
+      "name": "Dmitri Shostakovich",
+      "birth": 1906,
+      "death": 1975,
+      "dates": "1906–1975",
+      "place": "Soviet Union",
+      "era": "modern",
+      "signature": "Public music, private questions",
+      "bio": "Shostakovich worked under Soviet cultural policies that could swing from praise to denunciation. Symphonies and string quartets anchor a large and varied output. His music invites questions about irony, grief, and public expression, but claims of a single hidden political meaning require care.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dmitri_Shostakovich"
+      }
+    },
+    {
+      "id": "price",
+      "name": "Florence Price",
+      "birth": 1887,
+      "death": 1953,
+      "dates": "1887–1953",
+      "place": "United States",
+      "era": "modern",
+      "signature": "Expanding the American symphony",
+      "bio": "Price trained at the New England Conservatory and later moved from Arkansas to Chicago. Her music brings European concert forms into conversation with African American musical traditions. Racism and sexism obstructed her career; renewed performances and archival discoveries have widened recognition of her achievement.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Florence_Price"
+      }
+    },
+    {
+      "id": "copland",
+      "name": "Aaron Copland",
+      "birth": 1900,
+      "death": 1990,
+      "dates": "1900–1990",
+      "place": "United States",
+      "era": "modern",
+      "signature": "An American sound with many sources",
+      "bio": "Copland studied in Paris and became a central organizer of American concert life. His work includes modernist experiments, ballets, film scores, and music designed for broad audiences. Open intervals and clear orchestration became hallmarks of his best-known style, rather than the whole of his output.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Aaron_Copland"
+      }
+    },
+    {
+      "id": "messiaen",
+      "name": "Olivier Messiaen",
+      "birth": 1908,
+      "death": 1992,
+      "dates": "1908–1992",
+      "place": "France",
+      "era": "contemporary",
+      "signature": "Time, birdsong, and belief",
+      "bio": "Messiaen was an organist, teacher, and composer whose Catholic faith shaped his musical imagination. He explored unusual rhythmic patterns, distinctive modes, and transcribed birdsong. His teaching connected several generations of postwar composers even when their music took very different paths.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Olivier_Messiaen"
+      }
+    },
+    {
+      "id": "britten",
+      "name": "Benjamin Britten",
+      "birth": 1913,
+      "death": 1976,
+      "dates": "1913–1976",
+      "place": "Britain",
+      "era": "contemporary",
+      "signature": "Drama and the vulnerable individual",
+      "bio": "Britten restored English-language opera to international prominence and founded the Aldeburgh Festival with collaborators. His writing grew out of close relationships with performers, especially the tenor Peter Pears. Outsiders, innocence, and the pressures of society recur throughout his dramatic work.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Benjamin_Britten"
+      }
+    },
+    {
+      "id": "cage",
+      "name": "John Cage",
+      "birth": 1912,
+      "death": 1992,
+      "dates": "1912–1992",
+      "place": "United States",
+      "era": "contemporary",
+      "signature": "Learning how to listen again",
+      "bio": "Cage questioned the boundary between music and the sounds of everyday life. His work with percussion, prepared piano, chance procedures, and dance reshaped experimental performance. Instead of asking only what a composer expresses, his music can ask what a listener is willing to hear.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/John_Cage"
+      }
+    },
+    {
+      "id": "reich",
+      "name": "Steve Reich",
+      "birth": 1936,
+      "death": null,
+      "dates": "b. 1936",
+      "place": "United States",
+      "era": "contemporary",
+      "signature": "Change inside repetition",
+      "bio": "Reich’s early experiments used tape loops and performers moving gradually out of phase. Later ensembles explored interlocking patterns, harmony, and the rhythms of recorded speech. His music made audible process and sustained pulse major resources for contemporary composition.",
+      "source": {
+        "label": "Composer reference · Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Steve_Reich"
+      }
+    },
+    {
+      "id": "glass",
+      "name": "Philip Glass",
+      "birth": 1937,
+      "death": null,
+      "dates": "b. 1937",
+      "place": "United States",
+      "era": "contemporary",
+      "signature": "The theater of repeating patterns",
+      "bio": "Glass developed a recognizable musical language through repeated figures and gradually changing patterns. Work with his own ensemble led to collaborations in theater, dance, and film. His career helped carry musical minimalism into large institutions and wider listening cultures.",
+      "source": {
+        "label": "Philip Glass · Official work catalog",
+        "url": "https://philipglass.com/compositions/compositions-pge/"
+      }
+    },
+    {
+      "id": "part",
+      "name": "Arvo Pärt",
+      "birth": 1935,
+      "death": null,
+      "dates": "b. 1935",
+      "place": "Estonia",
+      "era": "contemporary",
+      "signature": "Stillness with an inner logic",
+      "bio": "Pärt moved through several modernist approaches before developing the spare style he calls tintinnabuli. Simple melodic lines interact with notes of a triad, creating a carefully controlled bell-like world. Sacred texts and silence became central to a language heard far beyond specialist new-music audiences.",
+      "source": {
+        "label": "Arvo Pärt Centre · Music and context",
+        "url": "https://www.arvopart.ee/en/arvo-part/work/546/"
+      }
+    },
+    {
+      "id": "adams",
+      "name": "John Adams",
+      "birth": 1947,
+      "death": null,
+      "dates": "b. 1947",
+      "place": "United States",
+      "era": "contemporary",
+      "signature": "Pulse meets public history",
+      "bio": "Adams drew on minimalism while recovering expansive orchestral gestures and dramatic narrative. His operas and concert works often respond to modern public life. Repetition becomes a source of momentum within music capable of lyricism, satire, and collective remembrance.",
+      "source": {
+        "label": "Boosey & Hawkes · John Adams in focus",
+        "url": "https://www.boosey.com/pages/licensing/composer/composer_main?composerid=2778&ttype=INTRODUCTION"
+      }
+    }
+  ],
+  "works": [
+    {
+      "composer": "hildegard",
+      "year": 1151,
+      "date": "c. 1151",
+      "title": "Ordo virtutum",
+      "form": "Sacred drama",
+      "description": "The soul meets personified virtues in a sung Latin morality play. Flowing, unaccompanied melodies carry the drama; the Devil’s role is spoken rather than sung.",
+      "importance": "One of the earliest surviving large sacred dramas with music, it preserves the imagination of a named medieval woman and her religious community.",
+      "listen": "Hear how a single melodic line can create a character without chords or an orchestra.",
+      "id": "hildegard-1",
+      "era": "medieval",
+      "number": 1,
+      "source": {
+        "label": "International Society of Hildegard von Bingen Studies",
+        "url": "https://www.hildegard-society.org/p/music.html?m=0"
+      }
+    },
+    {
+      "composer": "machaut",
+      "year": 1364,
+      "date": "c. 1360s",
+      "title": "Messe de Nostre Dame",
+      "form": "Mass",
+      "description": "Four independent voices set the recurring texts of the Mass. Firmly organized sections alternate with passages in which lines move with greater freedom.",
+      "importance": "An early landmark in the history of the complete polyphonic Mass Ordinary by a named composer, it shows large-scale unity emerging from medieval techniques.",
+      "listen": "Follow the lowest sustained notes while the upper voices weave around them.",
+      "id": "machaut-1",
+      "era": "medieval",
+      "number": 2
+    },
+    {
+      "composer": "dufay",
+      "year": 1436,
+      "date": "1436",
+      "title": "Nuper rosarum flores",
+      "form": "Motet",
+      "description": "Written for the consecration of Florence Cathedral, this ceremonial motet builds a grand vocal design over carefully planned repeated patterns.",
+      "importance": "It connects medieval structural methods with the public grandeur and vocal sonorities of the early Renaissance.",
+      "listen": "Notice the contrast between lighter vocal passages and the arrival of the full ensemble.",
+      "id": "dufay-1",
+      "era": "renaissance",
+      "number": 3,
+      "source": {
+        "label": "IMSLP · Score and historical details",
+        "url": "https://imslp.org/wiki/Nuper_rosarum_flores_(Dufay,_Guillaume)"
+      }
+    },
+    {
+      "composer": "josquin",
+      "year": 1485,
+      "date": "c. 1485",
+      "title": "Ave Maria … virgo serena",
+      "form": "Motet",
+      "description": "Voices enter one after another with related phrases, then join in clearer blocks of sound. The text addresses Mary in a succession of devotional images.",
+      "importance": "Its lucid imitation and sensitivity to verbal structure make it a central example of Renaissance sacred polyphony.",
+      "listen": "Catch the opening melody as it passes down through the voices.",
+      "id": "josquin-1",
+      "era": "renaissance",
+      "number": 4
+    },
+    {
+      "composer": "josquin",
+      "year": 1515,
+      "date": "By 1515",
+      "title": "Missa Pange lingua",
+      "form": "Mass",
+      "description": "A chant melody becomes the seed for an entire Mass. Instead of remaining in one part, its ideas circulate through the texture.",
+      "importance": "A major example of the paraphrase Mass, it demonstrates how a shared melodic source can unify a large composition while allowing continuous invention.",
+      "listen": "Listen for the sense that every voice participates in the same unfolding conversation.",
+      "id": "josquin-2",
+      "era": "renaissance",
+      "number": 5,
+      "source": {
+        "label": "CMME · Critical edition and manuscript context",
+        "url": "https://cmme.org/database/pieces/116"
+      }
+    },
+    {
+      "composer": "palestrina",
+      "year": 1567,
+      "date": "Published 1567",
+      "title": "Missa Papae Marcelli",
+      "form": "Mass",
+      "description": "Mostly six voices alternate flowing counterpoint with more direct statements of the words. Its sound is spacious without losing forward movement.",
+      "importance": "It became an influential model of Roman church style. The familiar claim that this work single-handedly saved polyphony at the Council of Trent is a later legend.",
+      "listen": "Hear how individual lines remain singable even in a dense texture.",
+      "id": "palestrina-1",
+      "era": "renaissance",
+      "number": 6
+    },
+    {
+      "composer": "byrd",
+      "year": 1593,
+      "date": "c. 1592–93",
+      "title": "Mass for Four Voices",
+      "form": "Mass",
+      "description": "A compact Latin Mass uses expressive imitation and moments of striking harmonic intensity. Its scale suits intimate worship as well as concert performance.",
+      "importance": "Written in a Protestant state by a Catholic composer, it connects the history of sacred style with the experience of a religious minority.",
+      "listen": "Listen to the repeated appeals for peace near the end of the Agnus Dei.",
+      "id": "byrd-1",
+      "era": "renaissance",
+      "number": 7,
+      "source": {
+        "label": "Digital Image Archive of Medieval Music · Byrd Masses",
+        "url": "https://www.diamm.ac.uk/documents/677/ByrdMasses_intro.pdf"
+      }
+    },
+    {
+      "composer": "monteverdi",
+      "year": 1607,
+      "date": "1607",
+      "title": "L’Orfeo",
+      "form": "Opera",
+      "description": "The myth of Orpheus becomes a drama of speech-like singing, dances, choruses, and instrumental color. The hero’s music tests the boundary between human grief and persuasion.",
+      "importance": "It is an early operatic masterpiece that survives with unusually rich musical detail, showing how the new genre could unite theater and instrumental design.",
+      "listen": "Compare conversational singing with the elaborate appeal in Possente spirto.",
+      "id": "monteverdi-1",
+      "era": "baroque",
+      "number": 8
+    },
+    {
+      "composer": "monteverdi",
+      "year": 1610,
+      "date": "Published 1610",
+      "title": "Vespers of 1610",
+      "form": "Sacred vocal",
+      "description": "Psalm settings, intimate vocal concertos, and instrumental writing offer a spectacular range of sacred sounds.",
+      "importance": "The collection brings older chant-based techniques into contact with the expressive voices and instruments of the emerging Baroque.",
+      "listen": "Move between the full choral sound and the intimate solo voices: the contrast is part of the drama.",
+      "id": "monteverdi-2",
+      "era": "baroque",
+      "number": 9
+    },
+    {
+      "composer": "purcell",
+      "year": 1689,
+      "date": "c. 1689",
+      "title": "Dido and Aeneas",
+      "form": "Opera",
+      "description": "A brief opera traces the love and separation of Dido and Aeneas. Dido’s final lament unfolds over a repeating descending bass.",
+      "importance": "A cornerstone of English-language opera, it demonstrates how a small musical structure can carry extraordinary theatrical emotion.",
+      "listen": "In When I am laid in earth, hear the bass repeat while the vocal line resists its boundaries.",
+      "id": "purcell-1",
+      "era": "baroque",
+      "number": 10
+    },
+    {
+      "composer": "vivaldi",
+      "year": 1715,
+      "date": "c. 1715",
+      "title": "Gloria, RV 589",
+      "form": "Sacred choral",
+      "description": "A bright opening for chorus and orchestra leads into a series of contrasting solo, duet, and choral movements.",
+      "importance": "It makes the rhythmic energy and clear contrasts of the Italian Baroque vivid within a sacred vocal setting, and became central to Vivaldi’s modern revival.",
+      "listen": "Compare the jubilant opening with the darker, suspended phrases of Et in terra pax.",
+      "id": "vivaldi-2",
+      "era": "baroque",
+      "number": 11
+    },
+    {
+      "composer": "handel",
+      "year": 1717,
+      "date": "1717",
+      "title": "Water Music",
+      "form": "Orchestral suites",
+      "description": "Dance movements and ceremonial music were associated with royal entertainment on the River Thames. Horns and winds add open-air brilliance.",
+      "importance": "It shows courtly dance and orchestral writing working as public spectacle, with melodies that outlived their original occasion.",
+      "listen": "Hear the difference between stately dances and the buoyant horn-led passages.",
+      "id": "handel-1",
+      "era": "baroque",
+      "number": 12
+    },
+    {
+      "composer": "bach",
+      "year": 1721,
+      "date": "Dedicated 1721",
+      "title": "Brandenburg Concertos",
+      "form": "Concertos",
+      "description": "Six concertos explore different combinations of soloists and ensemble. Familiar instruments take surprising roles, especially the harpsichord in No. 5.",
+      "importance": "They gather several Baroque concerto practices into a remarkably varied set and enlarge the possibilities of instrumental dialogue.",
+      "listen": "In No. 5, notice the moment the harpsichord escapes its accompanying role and takes over.",
+      "id": "bach-1",
+      "era": "baroque",
+      "number": 13
+    },
+    {
+      "composer": "bach",
+      "year": 1722,
+      "date": "Book I, 1722",
+      "title": "The Well-Tempered Clavier, Book I",
+      "form": "Keyboard",
+      "description": "Twenty-four preludes and fugues visit every major and minor key. Each pair sets a free invention beside a tightly interwoven contrapuntal design.",
+      "importance": "A foundation of keyboard education and compositional study, it explores a complete tonal landscape. The title does not simply mean modern equal temperament.",
+      "listen": "Choose one fugue and track its opening idea whenever another voice brings it back.",
+      "id": "bach-2",
+      "era": "baroque",
+      "number": 14
+    },
+    {
+      "composer": "vivaldi",
+      "year": 1725,
+      "date": "Published 1725",
+      "title": "The Four Seasons",
+      "form": "Violin concertos",
+      "description": "Four concertos follow seasonal scenes described in accompanying sonnets, from birdsong and summer storms to icy winter footing.",
+      "importance": "They are enduring examples of the solo concerto and of instrumental music with an explicit descriptive program.",
+      "listen": "In Spring, hear the opening refrain return between contrasting little scenes.",
+      "id": "vivaldi-1",
+      "era": "baroque",
+      "number": 15
+    },
+    {
+      "composer": "bach",
+      "year": 1727,
+      "date": "Usually dated 1727; later revisions",
+      "title": "St. Matthew Passion",
+      "form": "Passion",
+      "description": "Soloists, choirs, and instruments tell the story of Christ’s Passion, pausing for personal reflection in arias and chorales.",
+      "importance": "It joins church tradition to dramatic and contemplative writing on a monumental scale. Its nineteenth-century revival helped reshape Bach’s place in concert life.",
+      "listen": "Hear how a narrative scene gives way to an aria that seems to stop the action and think.",
+      "id": "bach-3",
+      "era": "baroque",
+      "number": 16,
+      "source": {
+        "label": "Carus · St. Matthew Passion",
+        "url": "https://www.carus-verlag.com/en/passions/johann-sebastian-bach-st-matthew-passion-3124404.html"
+      }
+    },
+    {
+      "composer": "bach",
+      "year": 1741,
+      "date": "Published 1741",
+      "title": "Goldberg Variations",
+      "form": "Keyboard",
+      "description": "An opening aria frames thirty variations built on its underlying harmonic plan rather than simply its tune. Canons recur at regular intervals.",
+      "importance": "It is a landmark of variation technique: dance, virtuosity, and learned counterpoint become parts of a single large design.",
+      "listen": "Return to the aria after the variations and notice how different the same music can feel.",
+      "id": "bach-4",
+      "era": "baroque",
+      "number": 17
+    },
+    {
+      "composer": "handel",
+      "year": 1742,
+      "date": "Premiere 1742",
+      "title": "Messiah",
+      "form": "Oratorio",
+      "description": "A sequence of biblical texts moves through prophecy, Christ’s life, suffering, and redemption. Solo reflections alternate with vividly characterized choruses.",
+      "importance": "Its continuing performance tradition helped establish the English oratorio as a public musical institution across generations.",
+      "listen": "Compare the rhythmic urgency of a chorus with the quieter directness of a solo aria.",
+      "id": "handel-2",
+      "era": "baroque",
+      "number": 18
+    },
+    {
+      "composer": "bach",
+      "year": 1749,
+      "date": "Completed c. 1749",
+      "title": "Mass in B minor",
+      "form": "Mass",
+      "description": "Bach assembled and reworked music from different stages of his career into a complete setting of the Latin Mass.",
+      "importance": "This late synthesis preserves a wide range of his sacred styles, from old-fashioned counterpoint to concerto-like brilliance.",
+      "listen": "Compare the solemn opening Kyrie with the quick, luminous motion of the Gloria.",
+      "id": "bach-5",
+      "era": "baroque",
+      "number": 19
+    },
+    {
+      "composer": "haydn",
+      "year": 1781,
+      "date": "Published 1781",
+      "title": "String Quartets, Op. 33",
+      "form": "String quartets",
+      "description": "Six quartets turn four string players into active partners. In The Joke, pauses and false endings make the listener part of the game.",
+      "importance": "They helped establish a conversational quartet style in which wit and the development of small ideas matter as much as melody.",
+      "listen": "In the finale of No. 2, decide when you think the piece has actually ended.",
+      "id": "haydn-1",
+      "era": "classical",
+      "number": 20
+    },
+    {
+      "composer": "mozart",
+      "year": 1785,
+      "date": "1785",
+      "title": "Piano Concerto No. 21, K. 467",
+      "form": "Piano concerto",
+      "description": "A poised soloist and a richly detailed orchestra exchange ideas. The slow movement floats a long melody above a steady accompanying pulse.",
+      "importance": "It exemplifies the mature Classical concerto as a dialogue between distinct musical personalities, rather than a solo display with background support.",
+      "listen": "Follow a melody as it travels from orchestra to piano and returns in altered form.",
+      "id": "mozart-1",
+      "era": "classical",
+      "number": 21
+    },
+    {
+      "composer": "mozart",
+      "year": 1786,
+      "date": "1786",
+      "title": "The Marriage of Figaro",
+      "form": "Opera",
+      "description": "Servants and aristocrats maneuver through a day of disguises, desire, and disputed power. Ensembles allow several people to think aloud at once.",
+      "importance": "Its musical characterization turns social comedy into an intricate exploration of human motives and helped redefine ensemble opera.",
+      "listen": "In an ensemble, listen for how the music holds together people feeling completely different things.",
+      "id": "mozart-2",
+      "era": "classical",
+      "number": 22
+    },
+    {
+      "composer": "mozart",
+      "year": 1787,
+      "date": "1787",
+      "title": "Don Giovanni",
+      "form": "Opera",
+      "description": "Comedy and terror coexist in the story of a compulsive seducer confronted by the consequences of his actions.",
+      "importance": "The opera’s shifts between social comedy, intimate pain, and supernatural judgment became an enduring model for musical drama.",
+      "listen": "Hear how the opening’s ominous music returns to change the meaning of the ending.",
+      "id": "mozart-3",
+      "era": "classical",
+      "number": 23
+    },
+    {
+      "composer": "mozart",
+      "year": 1788,
+      "date": "1788",
+      "title": "Symphony No. 40 in G minor, K. 550",
+      "form": "Symphony",
+      "description": "An urgent opening melody sets a restless tone across four tightly organized movements. Grace and unease remain inseparable.",
+      "importance": "It shows how Classical balance can contain sustained emotional instability, helping later listeners hear a bridge toward Romantic expression.",
+      "listen": "Notice the uneasy accompanying pulse already in motion beneath the opening melody.",
+      "id": "mozart-4",
+      "era": "classical",
+      "number": 24
+    },
+    {
+      "composer": "haydn",
+      "year": 1791,
+      "date": "1791",
+      "title": "Symphony No. 94, “Surprise”",
+      "form": "Symphony",
+      "description": "A gentle variation theme receives a sudden loud interruption, but the whole symphony is full of elegant expectations and disruptions.",
+      "importance": "Written for London’s concert audience, it captures Haydn’s ability to make sophisticated form immediately engaging.",
+      "listen": "Keep listening after the famous surprise: the changing variations are the larger story.",
+      "id": "haydn-2",
+      "era": "classical",
+      "number": 25
+    },
+    {
+      "composer": "mozart",
+      "year": 1791,
+      "date": "1791; left unfinished",
+      "title": "Requiem, K. 626",
+      "form": "Requiem",
+      "description": "Mozart’s final, incomplete sacred score alternates solemn counterpoint with forceful choral drama. Performances use various completions, most famously Süssmayr’s.",
+      "importance": "Its musical power and unfinished state made it central to Mozart’s posthumous image. The distinction between Mozart’s pages and later additions matters.",
+      "listen": "Compare the stern opening with the rushing energy of the Dies irae.",
+      "id": "mozart-5",
+      "era": "classical",
+      "number": 26
+    },
+    {
+      "composer": "haydn",
+      "year": 1798,
+      "date": "First performances 1798",
+      "title": "The Creation",
+      "form": "Oratorio",
+      "description": "Chorus, soloists, and orchestra depict the creation of the world, from an unsettled opening Chaos to scenes of animals and human life.",
+      "importance": "It translates Enlightenment wonder and sacred narrative into a large public concert work, renewing the oratorio after Handel.",
+      "listen": "Notice how harmony and orchestral color make the arrival of light a musical event.",
+      "id": "haydn-3",
+      "era": "classical",
+      "number": 27
+    },
+    {
+      "composer": "beethoven",
+      "year": 1801,
+      "date": "1801",
+      "title": "Piano Sonata No. 14, “Moonlight”",
+      "form": "Piano sonata",
+      "description": "A hushed, continuously flowing first movement leads toward an explosive finale. The familiar nickname was attached after Beethoven’s death.",
+      "importance": "Its unusual dramatic sequence challenges the expectation that a sonata should begin with its weightiest fast movement.",
+      "listen": "Hear the final movement as the release of energy held back at the beginning.",
+      "id": "beethoven-1",
+      "era": "classical",
+      "number": 28
+    },
+    {
+      "composer": "beethoven",
+      "year": 1804,
+      "date": "Completed 1804; public premiere 1805",
+      "title": "Symphony No. 3, “Eroica”",
+      "form": "Symphony",
+      "description": "A massive opening movement, funeral march, fleet scherzo, and transformative finale make a symphony feel like a human struggle.",
+      "importance": "Its scale and developmental intensity expanded the ambitions of the symphony and became a turning point for nineteenth-century instrumental music.",
+      "listen": "Follow how the opening’s apparently simple theme keeps producing conflict and new directions.",
+      "id": "beethoven-2",
+      "era": "classical",
+      "number": 29,
+      "source": {
+        "label": "LA Phil · Eroica",
+        "url": "https://www.laphil.com/works/symphony-no-3-in-e-flat-major-op-55-eroica"
+      }
+    },
+    {
+      "composer": "beethoven",
+      "year": 1808,
+      "date": "1808",
+      "title": "Symphony No. 5",
+      "form": "Symphony",
+      "description": "A short-short-short-long figure drives a journey from C minor to a blazing C-major conclusion.",
+      "importance": "It made concentrated motivic development and a large-scale minor-to-major trajectory central symbols of symphonic drama.",
+      "listen": "Listen for the opening rhythm in places where the original melody has disappeared.",
+      "id": "beethoven-3",
+      "era": "classical",
+      "number": 30
+    },
+    {
+      "composer": "schubert",
+      "year": 1815,
+      "date": "1815",
+      "title": "Erlkönig",
+      "form": "Song",
+      "description": "One singer portrays a narrator, father, child, and supernatural figure while the piano maintains a relentless galloping motion.",
+      "importance": "It reveals how the Lied can compress a theatrical drama into a few minutes, with the piano acting as an essential storyteller.",
+      "listen": "Hear how register and vocal character distinguish the speakers.",
+      "id": "schubert-1",
+      "era": "classical",
+      "number": 31
+    },
+    {
+      "composer": "beethoven",
+      "year": 1824,
+      "date": "1824",
+      "title": "Symphony No. 9, “Choral”",
+      "form": "Symphony",
+      "description": "Three instrumental movements lead to a finale that introduces voices and Schiller’s Ode to Joy. Earlier themes are recalled and rejected along the way.",
+      "importance": "It radically enlarged the symphony’s resources and became a lasting, politically contested symbol of collective aspiration.",
+      "listen": "Before the singers enter, hear the low strings seem to search for the right musical answer.",
+      "id": "beethoven-4",
+      "era": "romantic",
+      "number": 32,
+      "source": {
+        "label": "LA Phil · Symphony No. 9",
+        "url": "https://www.laphil.com/works/symphony-no-9-beethoven"
+      }
+    },
+    {
+      "composer": "beethoven",
+      "year": 1826,
+      "date": "1826",
+      "title": "String Quartet in C-sharp minor, Op. 131",
+      "form": "String quartet",
+      "description": "Seven connected movements range from an opening fugue to dance, variation, and an urgent finale.",
+      "importance": "A central late quartet, it reimagines how a large chamber work can hold together without relying on the standard four-movement plan.",
+      "listen": "Notice the transitions: a new movement can feel like a change of thought inside one long conversation.",
+      "id": "beethoven-5",
+      "era": "romantic",
+      "number": 33
+    },
+    {
+      "composer": "mendelssohn",
+      "year": 1826,
+      "date": "Overture 1826; incidental music 1843",
+      "title": "A Midsummer Night’s Dream",
+      "form": "Theater music",
+      "description": "A teenage overture creates the quicksilver world of Shakespeare’s fairies. Later incidental music includes the celebrated Wedding March.",
+      "importance": "The overture became a model of literary imagination expressed through concise orchestral design, anticipating the concert overture’s Romantic role.",
+      "listen": "Hear the scurrying strings that establish a fairy world almost immediately.",
+      "id": "mendelssohn-1",
+      "era": "romantic",
+      "number": 34
+    },
+    {
+      "composer": "schubert",
+      "year": 1827,
+      "date": "1827",
+      "title": "Winterreise",
+      "form": "Song cycle",
+      "description": "Twenty-four songs follow a traveler through a frozen emotional landscape. Piano figures suggest walking, weather, memory, and obsession.",
+      "importance": "It transformed the song cycle into an extended psychological journey whose meaning emerges through accumulation rather than conventional plot.",
+      "listen": "Follow the traveler’s steps in the piano, especially when their rhythm falters or changes.",
+      "id": "schubert-2",
+      "era": "romantic",
+      "number": 35
+    },
+    {
+      "composer": "schubert",
+      "year": 1828,
+      "date": "1828",
+      "title": "String Quintet in C major, D. 956",
+      "form": "Chamber music",
+      "description": "A second cello deepens the sound of the usual string quartet. Lyrical calm is repeatedly interrupted by harmonic or rhythmic disturbance.",
+      "importance": "It extends the scale and emotional range of chamber music while showing how one change of instrumentation can transform a whole sound world.",
+      "listen": "In the slow movement, hear the distance between the quiet outer sections and the turbulent center.",
+      "id": "schubert-3",
+      "era": "romantic",
+      "number": 36
+    },
+    {
+      "composer": "berlioz",
+      "year": 1830,
+      "date": "1830",
+      "title": "Symphonie fantastique",
+      "form": "Program symphony",
+      "description": "An imagined artist’s obsession runs through five scenes, including a ball, a march to execution, and a grotesque supernatural gathering.",
+      "importance": "A recurring idée fixe links a detailed program to bold orchestration, making it a defining experiment in Romantic storytelling through a symphony.",
+      "listen": "Recognize the beloved’s melody when it returns in a distorted, mocking form.",
+      "id": "berlioz-1",
+      "era": "romantic",
+      "number": 37
+    },
+    {
+      "composer": "chopin",
+      "year": 1832,
+      "date": "Published 1832",
+      "title": "Études, Op. 10",
+      "form": "Piano studies",
+      "description": "Twelve studies turn specific keyboard challenges into sharply characterized concert pieces. Pattern and expression become inseparable.",
+      "importance": "They helped transform the étude from an exercise into serious art and redefined pianistic technique for later generations.",
+      "listen": "Choose one study and hear how the technical pattern creates its emotional character.",
+      "id": "chopin-1",
+      "era": "romantic",
+      "number": 38
+    },
+    {
+      "composer": "chopin",
+      "year": 1835,
+      "date": "Completed c. 1835; published 1836",
+      "title": "Ballade No. 1 in G minor",
+      "form": "Piano",
+      "description": "A quiet introduction opens into a long, increasingly turbulent narrative for solo piano. Returning themes change their emotional weight.",
+      "importance": "It helped establish the instrumental ballade as a substantial Romantic form, suggesting storytelling without a prescribed story.",
+      "listen": "Notice how a once-gentle melody feels transformed when it returns near a climax.",
+      "id": "chopin-2",
+      "era": "romantic",
+      "number": 39
+    },
+    {
+      "composer": "schumann",
+      "year": 1838,
+      "date": "1838",
+      "title": "Kinderszenen",
+      "form": "Piano miniatures",
+      "description": "Thirteen short piano pieces imagine childhood from an adult’s perspective. The familiar Träumerei is one moment within a larger sequence.",
+      "importance": "It shows the Romantic character piece turning a small form into a world of memory and imaginative association.",
+      "listen": "Listen to how a brief phrase can suggest an entire mood without telling a literal story.",
+      "id": "schumann-1",
+      "era": "romantic",
+      "number": 40
+    },
+    {
+      "composer": "chopin",
+      "year": 1842,
+      "date": "1842",
+      "title": "Polonaise in A-flat major, Op. 53",
+      "form": "Piano dance",
+      "description": "The proud rhythms of a Polish dance become a brilliant, large-scale piano statement, with a striking repeated-octave central episode.",
+      "importance": "It exemplifies the transformation of national dance into concert music and the connection between virtuosity and imagined public identity.",
+      "listen": "Keep the dance rhythm in mind even during the most brilliant passagework.",
+      "id": "chopin-3",
+      "era": "romantic",
+      "number": 41
+    },
+    {
+      "composer": "schumann",
+      "year": 1842,
+      "date": "1842",
+      "title": "Piano Quintet in E-flat major, Op. 44",
+      "form": "Chamber music",
+      "description": "Piano and string quartet meet in brilliant dialogue, with a solemn march and energetic scherzo between the outer movements.",
+      "importance": "A foundational work for the modern piano quintet, it combines chamber conversation with an almost orchestral weight.",
+      "listen": "Hear whether the piano leads, accompanies, or becomes one voice among the strings.",
+      "id": "schumann-2",
+      "era": "romantic",
+      "number": 42
+    },
+    {
+      "composer": "mendelssohn",
+      "year": 1844,
+      "date": "Completed 1844; premiere 1845",
+      "title": "Violin Concerto in E minor",
+      "form": "Violin concerto",
+      "description": "The solo violin enters almost at once, and movements are linked with unusual continuity. The cadenza becomes part of the composed argument.",
+      "importance": "It renewed the concerto through flexible design and lyrical urgency, influencing later composers of violin concertos.",
+      "listen": "Notice how little time separates the opening from the soloist’s main melody.",
+      "id": "mendelssohn-2",
+      "era": "romantic",
+      "number": 43
+    },
+    {
+      "composer": "clara-schumann",
+      "year": 1846,
+      "date": "1846",
+      "title": "Piano Trio in G minor, Op. 17",
+      "form": "Chamber music",
+      "description": "Violin, cello, and piano share an intimate four-movement design with lyrical themes, contrapuntal exchanges, and a searching slow movement.",
+      "importance": "A major work in Clara Schumann’s output, it brings her voice as a composer into a genre often narrated through her male contemporaries.",
+      "listen": "Hear how themes belong to all three players rather than staying with the pianist.",
+      "id": "clara-schumann-1",
+      "era": "romantic",
+      "number": 44
+    },
+    {
+      "composer": "liszt",
+      "year": 1853,
+      "date": "1853",
+      "title": "Piano Sonata in B minor",
+      "form": "Piano sonata",
+      "description": "A single continuous span transforms a small group of ideas into sharply contrasting characters and episodes.",
+      "importance": "It is a major experiment in combining the functions of a multi-movement cycle with an overarching sonata design.",
+      "listen": "Try recognizing a theme when its speed, mood, or register has completely changed.",
+      "id": "liszt-1",
+      "era": "romantic",
+      "number": 45
+    },
+    {
+      "composer": "verdi",
+      "year": 1853,
+      "date": "1853",
+      "title": "La traviata",
+      "form": "Opera",
+      "description": "Violetta’s relationship with Alfredo is strained by social respectability, sacrifice, and illness. Public celebration repeatedly gives way to private vulnerability.",
+      "importance": "Its focus on a contemporary social world made intimate human conflict central to a major operatic tragedy.",
+      "listen": "Compare Violetta’s public brilliance with the quieter phrases that reveal her private doubts.",
+      "id": "verdi-1",
+      "era": "romantic",
+      "number": 46
+    },
+    {
+      "composer": "wagner",
+      "year": 1859,
+      "date": "Completed 1859; premiere 1865",
+      "title": "Tristan und Isolde",
+      "form": "Opera",
+      "description": "An unresolved desire stretches through a long love drama. The prelude’s harmonies seem repeatedly to promise a resting place and then withdraw it.",
+      "importance": "Its extended harmonic suspensions became a touchstone for composers questioning the limits of tonal stability.",
+      "listen": "Listen to the opening and notice how difficult it is to find a settled point of rest.",
+      "id": "wagner-1",
+      "era": "romantic",
+      "number": 47
+    },
+    {
+      "composer": "brahms",
+      "year": 1868,
+      "date": "Completed 1868; full premiere 1869",
+      "title": "A German Requiem",
+      "form": "Sacred choral",
+      "description": "German biblical texts focus on consolation for the living. Chorus and orchestra build a large arc of grief, endurance, and reassurance.",
+      "importance": "It recasts the idea of a requiem outside the traditional Latin liturgy and became central to Brahms’s public reputation.",
+      "listen": "Hear how the opening’s gentle sound world returns as a source of comfort.",
+      "id": "brahms-1",
+      "era": "romantic",
+      "number": 48
+    },
+    {
+      "composer": "mussorgsky",
+      "year": 1874,
+      "date": "Revised version staged 1874",
+      "title": "Boris Godunov",
+      "form": "Opera",
+      "description": "Russian historical drama unfolds through speech-shaped vocal lines, massed public scenes, and the private anxieties of a ruler.",
+      "importance": "It created an influential model of opera grounded in language, collective life, and psychological realism. Different versions reveal a complicated performance history.",
+      "listen": "Compare a crowd scene with a moment when Boris is alone with his fears.",
+      "id": "mussorgsky-1",
+      "era": "romantic",
+      "number": 49
+    },
+    {
+      "composer": "mussorgsky",
+      "year": 1874,
+      "date": "1874",
+      "title": "Pictures at an Exhibition",
+      "form": "Piano suite",
+      "description": "A returning Promenade connects musical responses to artworks by Viktor Hartmann. The original piano score uses vivid contrasts of weight and color.",
+      "importance": "It became a defining example of music responding to visual art. Ravel’s later orchestration shows how the same musical design can acquire another identity.",
+      "listen": "Notice how the walking Promenade changes as the imagined viewer moves through the gallery.",
+      "id": "mussorgsky-2",
+      "era": "romantic",
+      "number": 50
+    },
+    {
+      "composer": "verdi",
+      "year": 1874,
+      "date": "1874",
+      "title": "Requiem",
+      "form": "Requiem",
+      "description": "Soloists, chorus, and orchestra move between terror, lyrical pleading, and exposed quiet. The Dies irae returns as a structural shock.",
+      "importance": "It brings Verdi’s dramatic imagination to the concert sacred tradition, testing the boundary between communal ritual and individual emotion.",
+      "listen": "Notice how silence and very soft singing change the impact of the loudest passages.",
+      "id": "verdi-2",
+      "era": "romantic",
+      "number": 51
+    },
+    {
+      "composer": "wagner",
+      "year": 1874,
+      "date": "Cycle completed 1874; first full staging 1876",
+      "title": "The Ring of the Nibelung",
+      "form": "Opera cycle",
+      "description": "Four operas connect gods, heroes, power, love, and a cursed ring through a dense web of recurring musical ideas.",
+      "importance": "Its scale, orchestral continuity, and use of musical memory transformed operatic practice and influenced later narrative scoring.",
+      "listen": "Hear a recurring motif as a memory that can reveal something the characters do not say.",
+      "id": "wagner-2",
+      "era": "romantic",
+      "number": 52
+    },
+    {
+      "composer": "brahms",
+      "year": 1876,
+      "date": "1876",
+      "title": "Symphony No. 1",
+      "form": "Symphony",
+      "description": "An insistent opening gives way over four movements to a broad final transformation. Dense development is balanced by lyrical space.",
+      "importance": "It confronts the weight of Beethoven’s symphonic example while establishing Brahms’s own path for the Romantic symphony.",
+      "listen": "In the finale, hear how fragments and preparatory gestures gradually make room for a full melody.",
+      "id": "brahms-2",
+      "era": "romantic",
+      "number": 53
+    },
+    {
+      "composer": "tchaikovsky",
+      "year": 1877,
+      "date": "First production 1877; later revised for the stage",
+      "title": "Swan Lake",
+      "form": "Ballet",
+      "description": "A recurring swan theme, character dances, and extended dramatic scenes make the orchestra an active participant in the ballet’s story.",
+      "importance": "It helped establish the full-length symphonic ballet as a central repertory form. The familiar stage tradition owes much to the 1895 revival after Tchaikovsky’s death.",
+      "listen": "Listen for the swan theme returning as a dramatic sign rather than simply an attractive tune.",
+      "id": "tchaikovsky-1",
+      "era": "romantic",
+      "number": 54
+    },
+    {
+      "composer": "tchaikovsky",
+      "year": 1878,
+      "date": "1878",
+      "title": "Violin Concerto in D major",
+      "form": "Violin concerto",
+      "description": "A lyrical opening expands into dazzling passagework, followed by an intimate slow movement and a dance-driven finale.",
+      "importance": "Its combination of expansive melody and demanding solo writing became a benchmark of the Romantic violin concerto.",
+      "listen": "Notice how the most elaborate solo passages grow out of a singing melodic line.",
+      "id": "tchaikovsky-2",
+      "era": "romantic",
+      "number": 55
+    },
+    {
+      "composer": "wagner",
+      "year": 1882,
+      "date": "1882",
+      "title": "Parsifal",
+      "form": "Opera",
+      "description": "A ritual-centered drama unfolds through slowly changing orchestral textures, recurring motifs, and scenes of temptation and compassion.",
+      "importance": "It brings Wagner’s late musical language and festival-theater ideal into a work that influenced debates about sacred drama and art.",
+      "listen": "Hear how ceremonial pacing changes your sense of ordinary theatrical time.",
+      "id": "wagner-3",
+      "era": "romantic",
+      "number": 56
+    },
+    {
+      "composer": "brahms",
+      "year": 1885,
+      "date": "1885",
+      "title": "Symphony No. 4",
+      "form": "Symphony",
+      "description": "A falling-and-rising opening idea leads to a finale built as variations over a recurring bass pattern.",
+      "importance": "It shows historical forms such as the passacaglia becoming vehicles for intensely concentrated Romantic symphonic argument.",
+      "listen": "In the finale, listen for continuity beneath the changing orchestral surfaces.",
+      "id": "brahms-3",
+      "era": "romantic",
+      "number": 57
+    },
+    {
+      "composer": "verdi",
+      "year": 1887,
+      "date": "1887",
+      "title": "Otello",
+      "form": "Opera",
+      "description": "Shakespeare’s tragedy becomes a continuous musical drama, beginning with a storm and driving toward Otello’s fatal misjudgment.",
+      "importance": "A late reinvention of Italian opera, it joins vocal characterization to a tightly integrated orchestral and dramatic fabric.",
+      "listen": "Follow how Iago’s insinuations alter the atmosphere around Otello.",
+      "id": "verdi-3",
+      "era": "romantic",
+      "number": 58
+    },
+    {
+      "composer": "dvorak",
+      "year": 1893,
+      "date": "1893",
+      "title": "Symphony No. 9, “From the New World”",
+      "form": "Symphony",
+      "description": "Written during Dvořák’s American stay, the symphony combines memorable melodies with a tightly connected four-movement plan.",
+      "importance": "It stands at a crossroads of European symphonic tradition and debates about an American national style, including the significance of African American music.",
+      "listen": "Listen for earlier ideas returning in the finale as musical memories.",
+      "id": "dvorak-1",
+      "era": "romantic",
+      "number": 59
+    },
+    {
+      "composer": "tchaikovsky",
+      "year": 1893,
+      "date": "1893",
+      "title": "Symphony No. 6, “Pathétique”",
+      "form": "Symphony",
+      "description": "A deeply unsettled opening, an off-balance dance, and a vigorous march lead to a slow final movement that fades away.",
+      "importance": "Its ending overturned the expectation of a triumphant symphonic finale and made loss itself the work’s final dramatic action.",
+      "listen": "After the apparent triumph of the march, hear how radically the finale changes the story.",
+      "id": "tchaikovsky-3",
+      "era": "romantic",
+      "number": 60
+    },
+    {
+      "composer": "debussy",
+      "year": 1894,
+      "date": "1894",
+      "title": "Prelude to the Afternoon of a Faun",
+      "form": "Orchestral prelude",
+      "description": "A winding flute solo opens an orchestral response to Mallarmé’s poem. Instrumental colors and gently shifting harmonies create an elusive atmosphere.",
+      "importance": "Its free sense of unfolding and harmonic ambiguity became a landmark for musical modernism.",
+      "listen": "Hear how the flute’s opening phrase avoids sounding like a conventional, firmly grounded tune.",
+      "id": "debussy-1",
+      "era": "romantic",
+      "number": 61
+    },
+    {
+      "composer": "mahler",
+      "year": 1894,
+      "date": "Completed 1894; complete premiere 1895",
+      "title": "Symphony No. 2, “Resurrection”",
+      "form": "Symphony",
+      "description": "A funeral-like opening expands into a five-movement journey with songs, offstage sounds, solo voices, and a choral ending.",
+      "importance": "It extends the Beethovenian choral symphony into a vast exploration of mortality and renewal, mixing public spectacle with personal searching.",
+      "listen": "Notice how the scale shifts from a single quiet voice to an overwhelming collective sound.",
+      "id": "mahler-1",
+      "era": "romantic",
+      "number": 62
+    },
+    {
+      "composer": "dvorak",
+      "year": 1895,
+      "date": "1895",
+      "title": "Cello Concerto in B minor",
+      "form": "Cello concerto",
+      "description": "A large orchestra frames a solo part that ranges from intimate song to dramatic proclamation. The closing pages turn toward personal recollection.",
+      "importance": "It made a persuasive case for the cello as solo protagonist in a full-scale Romantic concerto.",
+      "listen": "Hear how the cello can remain expressive without always competing through volume.",
+      "id": "dvorak-2",
+      "era": "romantic",
+      "number": 63
+    },
+    {
+      "composer": "puccini",
+      "year": 1896,
+      "date": "1896",
+      "title": "La bohème",
+      "form": "Opera",
+      "description": "Young artists in Paris balance friendship, poverty, love, and illness. Intimate moments emerge from bustling scenes of everyday life.",
+      "importance": "It became a touchstone for opera’s ability to make ordinary relationships feel theatrically immediate through melody and pacing.",
+      "listen": "Hear how a quick conversational exchange can suddenly open into a long lyrical phrase.",
+      "id": "puccini-1",
+      "era": "romantic",
+      "number": 64
+    },
+    {
+      "composer": "strauss",
+      "year": 1896,
+      "date": "1896",
+      "title": "Also sprach Zarathustra",
+      "form": "Tone poem",
+      "description": "A spectacular opening leads into a sequence of contrasting episodes inspired by Nietzsche’s philosophical writing.",
+      "importance": "It exemplifies the ambition of the late Romantic tone poem and the orchestra’s growing capacity for monumental, highly differentiated sound.",
+      "listen": "Beyond the famous opening, hear how competing tonal centers keep the ending unsettled.",
+      "id": "strauss-1",
+      "era": "romantic",
+      "number": 65
+    },
+    {
+      "composer": "sibelius",
+      "year": 1900,
+      "date": "1899–1900",
+      "title": "Finlandia",
+      "form": "Tone poem",
+      "description": "Dark brass and restless motion give way to a broad hymn-like theme, within a work rooted in Finnish political circumstances.",
+      "importance": "It became an enduring symbol of Finnish national aspiration, illustrating how concert music can gain a public life beyond its original setting.",
+      "listen": "Hear how the hymn’s calm gains force from the tense music that comes before it.",
+      "id": "sibelius-1",
+      "era": "modern",
+      "number": 66
+    },
+    {
+      "composer": "rachmaninoff",
+      "year": 1901,
+      "date": "1900–01",
+      "title": "Piano Concerto No. 2",
+      "form": "Piano concerto",
+      "description": "Bell-like piano chords open a work of long melodies and richly blended orchestral textures. The soloist often participates inside the ensemble.",
+      "importance": "It became a defining continuation of the Romantic concerto in the twentieth century and marked Rachmaninoff’s creative recovery after a difficult period.",
+      "listen": "Hear how the piano can build the atmosphere before presenting a melody of its own.",
+      "id": "rachmaninoff-1",
+      "era": "modern",
+      "number": 67
+    },
+    {
+      "composer": "puccini",
+      "year": 1904,
+      "date": "1904; revised repeatedly",
+      "title": "Madama Butterfly",
+      "form": "Opera",
+      "description": "A Japanese woman’s trust in an American naval officer becomes a tragedy of unequal power and expectation.",
+      "importance": "A central opera in the international repertory, it also exposes the Orientalist assumptions through which European theater imagined Asia.",
+      "listen": "Compare Butterfly’s hopeful vocal lines with the orchestral signs that complicate her expectations.",
+      "id": "puccini-2",
+      "era": "modern",
+      "number": 68
+    },
+    {
+      "composer": "debussy",
+      "year": 1905,
+      "date": "1903–05; premiere 1905",
+      "title": "La mer",
+      "form": "Orchestral triptych",
+      "description": "Three orchestral sketches explore the sea through changing colors, gestures, and waves of motion rather than a literal narrative.",
+      "importance": "It makes timbre and texture essential to large-scale musical organization, offering a different model from the late Romantic symphony.",
+      "listen": "Follow one instrumental color as it appears, dissolves, and returns in another combination.",
+      "id": "debussy-2",
+      "era": "modern",
+      "number": 69,
+      "source": {
+        "label": "LA Phil · La mer",
+        "url": "https://www.laphil.com/works/la-mer"
+      }
+    },
+    {
+      "composer": "strauss",
+      "year": 1905,
+      "date": "1905",
+      "title": "Salome",
+      "form": "Opera",
+      "description": "A compressed, disturbing drama sets Oscar Wilde’s play amid brilliant orchestral textures and extreme vocal demands.",
+      "importance": "It pushed operatic harmony, subject matter, and theatrical intensity toward early modernism, provoking controversy and imitation.",
+      "listen": "Notice how the orchestra reveals obsessive currents beneath the characters’ spoken intentions.",
+      "id": "strauss-2",
+      "era": "modern",
+      "number": 70
+    },
+    {
+      "composer": "ives",
+      "year": 1908,
+      "date": "c. 1908; revised c. 1930–35",
+      "title": "The Unanswered Question",
+      "form": "Orchestral",
+      "description": "Quiet strings, a questioning trumpet, and increasingly agitated winds seem to inhabit separate musical spaces.",
+      "importance": "It makes independent layers of time and musical language a powerful expressive device, anticipating later spatial and experimental music.",
+      "listen": "Focus on the strings: they continue almost untouched by the exchanges above them.",
+      "id": "ives-1",
+      "era": "modern",
+      "number": 71
+    },
+    {
+      "composer": "mahler",
+      "year": 1909,
+      "date": "1908–09; premiere 1912",
+      "title": "Symphony No. 9",
+      "form": "Symphony",
+      "description": "Four movements place uneasy lyricism beside distorted dances and an intensely contrapuntal outburst, ending in a slow dissolution.",
+      "importance": "It became a central late Romantic work for hearing the symphony approach emotional and formal limits without a traditional triumphant resolution.",
+      "listen": "In the final pages, follow how phrases become more separated until silence takes over.",
+      "id": "mahler-2",
+      "era": "modern",
+      "number": 72
+    },
+    {
+      "composer": "stravinsky",
+      "year": 1911,
+      "date": "1911",
+      "title": "Petrushka",
+      "form": "Ballet",
+      "description": "A fairground bursts with dances and crowd scenes around a puppet’s tragic story. Bright orchestral blocks jostle against each other.",
+      "importance": "It made collage-like contrasts and biting harmonic combinations central to a new theatrical orchestral language.",
+      "listen": "Hear the difference between the crowd’s music and the lonely, angular world of the puppet.",
+      "id": "stravinsky-1",
+      "era": "modern",
+      "number": 73
+    },
+    {
+      "composer": "ravel",
+      "year": 1912,
+      "date": "1912",
+      "title": "Daphnis et Chloé",
+      "form": "Ballet",
+      "description": "A large orchestra and wordless chorus create an imagined ancient world. The famous dawn scene builds through delicate layers into radiance.",
+      "importance": "It is a landmark of orchestration in which color and movement organize an extended musical drama.",
+      "listen": "In the dawn music, hear separate instrumental details gradually become one broad wave.",
+      "id": "ravel-1",
+      "era": "modern",
+      "number": 74
+    },
+    {
+      "composer": "schoenberg",
+      "year": 1912,
+      "date": "1912",
+      "title": "Pierrot lunaire",
+      "form": "Chamber vocal",
+      "description": "A small ensemble accompanies a performer using Sprechstimme, a heightened vocal delivery between speech and song. Twenty-one poems produce a shifting, uncanny theater.",
+      "importance": "It is a central example of atonal expressionism and established an ensemble combination that later became standard in new music.",
+      "listen": "Hear how the instruments become changing characters around a voice that refuses ordinary operatic singing.",
+      "id": "schoenberg-1",
+      "era": "modern",
+      "number": 75
+    },
+    {
+      "composer": "lili-boulanger",
+      "year": 1913,
+      "date": "1913",
+      "title": "Faust et Hélène",
+      "form": "Cantata",
+      "description": "Three soloists and orchestra enact a compact dramatic episode drawn from the Faust tradition, with lush harmonies and carefully paced climaxes.",
+      "importance": "The cantata won Boulanger the Prix de Rome in composition, a historic first for a woman, and reveals a distinctive voice within French musical modernity.",
+      "listen": "Hear how changing orchestral color helps distinguish each speaker’s emotional world.",
+      "id": "lili-boulanger-1",
+      "era": "modern",
+      "number": 76,
+      "source": {
+        "label": "Library of Congress · Lili Boulanger",
+        "url": "https://guides.loc.gov/feminism-french-women-history/famous/lili-boulanger"
+      }
+    },
+    {
+      "composer": "stravinsky",
+      "year": 1913,
+      "date": "1913",
+      "title": "The Rite of Spring",
+      "form": "Ballet",
+      "description": "An imagined prehistoric ritual unfolds through pounding accents, layered patterns, and sharply contrasted blocks of sound.",
+      "importance": "Its rhythmic force and orchestration became defining landmarks of modernism. The notorious premiere involved the staging and audience as well as the score.",
+      "listen": "Try predicting the next accent in the Dance of the Adolescents, then hear how the music frustrates you.",
+      "id": "stravinsky-2",
+      "era": "modern",
+      "number": 77,
+      "source": {
+        "label": "LA Phil · The Rite of Spring",
+        "url": "https://www.laphil.com/works/the-rite-of-spring"
+      }
+    },
+    {
+      "composer": "rachmaninoff",
+      "year": 1915,
+      "date": "1915",
+      "title": "All-Night Vigil, Op. 37",
+      "form": "Sacred choral",
+      "description": "Unaccompanied voices transform Orthodox chant materials into a richly varied sequence of sacred movements.",
+      "importance": "A major monument of Russian choral music, it brings inherited worship traditions together with an individual harmonic and textural imagination.",
+      "listen": "Listen to the depth of the bass voices and the changing density above them.",
+      "id": "rachmaninoff-2",
+      "era": "modern",
+      "number": 78
+    },
+    {
+      "composer": "sibelius",
+      "year": 1919,
+      "date": "Final version 1919",
+      "title": "Symphony No. 5",
+      "form": "Symphony",
+      "description": "Small figures gather into sweeping forms across three movements. The finale’s broad horn theme rises over a busy underlying texture.",
+      "importance": "It offers an alternative to argument by sharply contrasting themes: musical form can seem to grow organically from tiny beginnings.",
+      "listen": "Listen for the gap between the finale’s flowing motion and its final widely spaced chords.",
+      "id": "sibelius-2",
+      "era": "modern",
+      "number": 79
+    },
+    {
+      "composer": "schoenberg",
+      "year": 1923,
+      "date": "Completed 1923",
+      "title": "Suite for Piano, Op. 25",
+      "form": "Piano suite",
+      "description": "Older dance titles frame music organized through a twelve-note row and its transformations.",
+      "importance": "One of the first complete works to use Schoenberg’s twelve-tone method, it joins a radical pitch system to historical forms.",
+      "listen": "Look for recurring rhythmic shapes even when familiar major and minor harmonies are absent.",
+      "id": "schoenberg-2",
+      "era": "modern",
+      "number": 80
+    },
+    {
+      "composer": "ravel",
+      "year": 1928,
+      "date": "1928",
+      "title": "Boléro",
+      "form": "Ballet",
+      "description": "A repeating rhythm and two recurring melodies pass through an ever-changing sequence of instruments as the volume steadily rises.",
+      "importance": "Its extreme restriction makes orchestration itself the main event, turning repetition and accumulation into a large-scale experiment.",
+      "listen": "Identify each new instrumental combination while the rhythm refuses to change.",
+      "id": "ravel-2",
+      "era": "modern",
+      "number": 81
+    },
+    {
+      "composer": "stravinsky",
+      "year": 1930,
+      "date": "1930",
+      "title": "Symphony of Psalms",
+      "form": "Choral symphony",
+      "description": "Latin psalm texts are set for chorus and an orchestra without violins or violas. Austere lines lead to moments of ritual grandeur.",
+      "importance": "It shows Stravinsky’s neoclassical period treating old forms and sacred materials as resources for a distinctly modern sound.",
+      "listen": "Notice how the absence of upper strings changes the color around the chorus.",
+      "id": "stravinsky-3",
+      "era": "modern",
+      "number": 82
+    },
+    {
+      "composer": "price",
+      "year": 1932,
+      "date": "Completed 1932; premiere 1933",
+      "title": "Symphony No. 1 in E minor",
+      "form": "Symphony",
+      "description": "A four-movement symphony combines Romantic orchestral writing with hymn-like gestures and a juba dance movement.",
+      "importance": "Its Chicago Symphony premiere was the first performance by a major American orchestra of a symphony by a Black woman, a landmark within an exclusionary concert culture.",
+      "listen": "Hear how the third movement’s dance rhythms create a different kind of symphonic energy.",
+      "id": "price-1",
+      "era": "modern",
+      "number": 83,
+      "source": {
+        "label": "LA Phil · Price and Bonds",
+        "url": "https://www.laphil.com/works/about-the-program-a-musical-portrait-price-and-bonds"
+      }
+    },
+    {
+      "composer": "prokofiev",
+      "year": 1935,
+      "date": "1935–36; later revisions",
+      "title": "Romeo and Juliet",
+      "form": "Ballet",
+      "description": "Shakespeare’s tragedy unfolds through sharply profiled dances, intimate lyricism, and brutal public confrontations.",
+      "importance": "It renewed the full-length narrative ballet with a twentieth-century harmonic and rhythmic language while preserving dramatic clarity.",
+      "listen": "Compare the heavy tread of the knights with the flexibility of Juliet’s music.",
+      "id": "prokofiev-1",
+      "era": "modern",
+      "number": 84
+    },
+    {
+      "composer": "bartok",
+      "year": 1936,
+      "date": "1936",
+      "title": "Music for Strings, Percussion and Celesta",
+      "form": "Orchestral",
+      "description": "Divided strings, keyboards, and percussion create mirrored exchanges, tense fugues, and eerie nocturnal textures.",
+      "importance": "It is a major synthesis of contrapuntal design, symmetrical thinking, and new instrumental color in twentieth-century orchestral music.",
+      "listen": "In the opening fugue, hear a quiet idea accumulate into a dense, tense arch.",
+      "id": "bartok-1",
+      "era": "modern",
+      "number": 85
+    },
+    {
+      "composer": "shostakovich",
+      "year": 1937,
+      "date": "1937",
+      "title": "Symphony No. 5",
+      "form": "Symphony",
+      "description": "A taut opening, sardonic dance, and extended slow movement lead to a forceful finale whose character remains debated.",
+      "importance": "Written after official denunciation, it became a central example in arguments about music, state power, and the ambiguity of public triumph.",
+      "listen": "Hear the repeated notes near the end and decide how their insistence changes your response.",
+      "id": "shostakovich-1",
+      "era": "modern",
+      "number": 86
+    },
+    {
+      "composer": "messiaen",
+      "year": 1941,
+      "date": "1940–41; premiere 1941",
+      "title": "Quartet for the End of Time",
+      "form": "Chamber music",
+      "description": "Clarinet, violin, cello, and piano appear in changing combinations across eight movements of rhythmic invention and intense stillness.",
+      "importance": "First performed while Messiaen was a prisoner of war, it became a defining exploration of musical time, faith, and endurance.",
+      "listen": "Compare the clarinet alone with the slow, suspended lines of the final movement.",
+      "id": "messiaen-1",
+      "era": "modern",
+      "number": 87
+    },
+    {
+      "composer": "bartok",
+      "year": 1943,
+      "date": "1943; premiere 1944",
+      "title": "Concerto for Orchestra",
+      "form": "Orchestral",
+      "description": "Sections of the orchestra step forward like soloists in a five-movement design full of contrasts, parody, and rhythmic drive.",
+      "importance": "It turns the concerto principle toward the entire ensemble and became an accessible late synthesis of Bartók’s musical language.",
+      "listen": "In the second movement, hear pairs of instruments take turns with sharply different colors.",
+      "id": "bartok-2",
+      "era": "modern",
+      "number": 88
+    },
+    {
+      "composer": "copland",
+      "year": 1944,
+      "date": "1943–44; premiere 1944",
+      "title": "Appalachian Spring",
+      "form": "Ballet",
+      "description": "Originally written for thirteen instruments, the ballet moves through transparent textures and includes variations on the Shaker tune Simple Gifts.",
+      "importance": "It helped define a widely recognized American concert sound while showing how borrowed music can serve a newly imagined stage community.",
+      "listen": "Hear how Simple Gifts grows through successive instrumental combinations rather than arriving fully formed.",
+      "id": "copland-1",
+      "era": "modern",
+      "number": 89
+    },
+    {
+      "composer": "prokofiev",
+      "year": 1944,
+      "date": "1944",
+      "title": "Piano Sonata No. 8",
+      "form": "Piano sonata",
+      "description": "Expansive, unsettled lyricism gives way to a driven finale. Contrasting episodes make calm feel provisional.",
+      "importance": "The last of the three so-called War Sonatas, it is a major example of Prokofiev’s ability to combine inward reflection with modern pianistic force.",
+      "listen": "Listen for how a calm theme changes when it returns after more turbulent music.",
+      "id": "prokofiev-2",
+      "era": "modern",
+      "number": 90
+    },
+    {
+      "composer": "britten",
+      "year": 1945,
+      "date": "1945",
+      "title": "Peter Grimes",
+      "form": "Opera",
+      "description": "A coastal community turns on a troubled fisherman. Sea interludes make the surrounding landscape an active force in the drama.",
+      "importance": "It established Britten’s international operatic reputation and made the conflict between an outsider and society central to modern English opera.",
+      "listen": "Hear how the sea music changes from an atmosphere into a source of threat.",
+      "id": "britten-1",
+      "era": "contemporary",
+      "number": 91
+    },
+    {
+      "composer": "copland",
+      "year": 1946,
+      "date": "1946",
+      "title": "Symphony No. 3",
+      "form": "Symphony",
+      "description": "An expansive four-movement design culminates in a finale that incorporates the earlier Fanfare for the Common Man.",
+      "importance": "It carries Copland’s accessible public style into a large postwar symphony, linking civic symbolism with symphonic development.",
+      "listen": "Notice how the finale prepares the fanfare and then puts it to work inside a larger argument.",
+      "id": "copland-2",
+      "era": "contemporary",
+      "number": 92
+    },
+    {
+      "composer": "cage",
+      "year": 1952,
+      "date": "1952",
+      "title": "4′33″",
+      "form": "Experimental",
+      "description": "A performer marks the span of three movements while making no intentional instrumental sounds. The room and its listeners supply what is heard.",
+      "importance": "It challenges the assumption that music consists only of deliberately produced notes and makes the act of listening the work’s central subject.",
+      "listen": "During a quiet interval, notice the sounds you normally dismiss as background.",
+      "id": "cage-1",
+      "era": "contemporary",
+      "number": 93,
+      "source": {
+        "label": "John Cage Trust · Complete Works",
+        "url": "https://data-johncage.org/pp/John-Cage-Work-Detail.cfm?work_ID=17"
+      }
+    },
+    {
+      "composer": "shostakovich",
+      "year": 1960,
+      "date": "1960",
+      "title": "String Quartet No. 8",
+      "form": "String quartet",
+      "description": "Five connected movements are saturated with a four-note musical signature based on the composer’s initials and quotations from earlier works.",
+      "importance": "It is a major autobiographically charged quartet, with an official dedication to victims of fascism and war and a more complicated private history.",
+      "listen": "Learn the four-note opening figure and notice how it haunts even the fastest passages.",
+      "id": "shostakovich-2",
+      "era": "contemporary",
+      "number": 94
+    },
+    {
+      "composer": "britten",
+      "year": 1962,
+      "date": "1962",
+      "title": "War Requiem",
+      "form": "Requiem",
+      "description": "The Latin Mass for the Dead is interwoven with Wilfred Owen’s war poems, using distinct groups of singers and instruments.",
+      "importance": "Written for the consecration of the rebuilt Coventry Cathedral, it confronts collective remembrance with the voices of individual soldiers.",
+      "listen": "Notice when the music shifts from communal ritual to an intimate exchange between the two male soloists.",
+      "id": "britten-2",
+      "era": "contemporary",
+      "number": 95
+    },
+    {
+      "composer": "glass",
+      "year": 1976,
+      "date": "1976",
+      "title": "Einstein on the Beach",
+      "form": "Opera",
+      "description": "Created with Robert Wilson, the opera replaces conventional plot with recurring stage images, dance, numbers, and repeating vocal and instrumental patterns.",
+      "importance": "It brought experimental theater and musical minimalism into a work of operatic scale, changing expectations about narrative and duration.",
+      "listen": "Listen for a repeating pattern that changes by adding or subtracting a small unit.",
+      "id": "glass-1",
+      "era": "contemporary",
+      "number": 96,
+      "source": {
+        "label": "Philip Glass · Official work catalog",
+        "url": "https://philipglass.com/compositions/einstein_on_the_beach/"
+      }
+    },
+    {
+      "composer": "reich",
+      "year": 1976,
+      "date": "1974–76",
+      "title": "Music for 18 Musicians",
+      "form": "Ensemble",
+      "description": "Pulsing instruments and voices cycle through eleven chords, with changes shaped by breath, repeating patterns, and audible cues.",
+      "importance": "It expanded minimalism’s harmonic and instrumental range while keeping musical process perceptible to the listener.",
+      "listen": "Hear the quick pulse and the slower waves of breath happening at the same time.",
+      "id": "reich-1",
+      "era": "contemporary",
+      "number": 97,
+      "source": {
+        "label": "Boosey & Hawkes · Composer’s notes",
+        "url": "https://www.boosey.com/cr/music/Steve-Reich-Music-for-18-Musicians/548"
+      }
+    },
+    {
+      "composer": "part",
+      "year": 1978,
+      "date": "1978",
+      "title": "Spiegel im Spiegel",
+      "form": "Chamber music",
+      "description": "A slow melodic line and piano triads unfold with great clarity. Successively extending phrases create a quiet sense of reflection.",
+      "importance": "It is an influential and widely heard example of Pärt’s tintinnabuli style, offering a different response to modernism through constraint and stillness.",
+      "listen": "Hear how each longer melodic phrase returns toward a central pitch.",
+      "id": "part-1",
+      "era": "contemporary",
+      "number": 98,
+      "source": {
+        "label": "Arvo Pärt Centre · Work catalog",
+        "url": "https://www.arvopart.ee/en/arvo-part/work/546/"
+      }
+    },
+    {
+      "composer": "adams",
+      "year": 1987,
+      "date": "1985–87; premiere 1987",
+      "title": "Nixon in China",
+      "form": "Opera",
+      "description": "A recent diplomatic event becomes an opera about political performance, historical memory, and private vulnerability.",
+      "importance": "It helped establish contemporary public history as a subject for large-scale opera and expanded minimalism into flexible dramatic storytelling.",
+      "listen": "Hear how the regular pulse can support both official ceremony and private reflection.",
+      "id": "adams-1",
+      "era": "contemporary",
+      "number": 99,
+      "source": {
+        "label": "Boosey & Hawkes · Nixon in China and composer’s notes",
+        "url": "https://www.boosey.com/cr/music/7156"
+      }
+    },
+    {
+      "composer": "adams",
+      "year": 2002,
+      "date": "2002",
+      "title": "On the Transmigration of Souls",
+      "form": "Orchestral choral",
+      "description": "Orchestra, adult and children’s choruses, and recorded sounds create a space of remembrance for the victims of September 11.",
+      "importance": "It is a significant example of the contemporary concert work as a public memorial, using names and fragments of ordinary life rather than a conventional heroic narrative.",
+      "listen": "Notice how a spoken name or everyday phrase can carry as much weight as a large musical climax.",
+      "id": "adams-2",
+      "era": "contemporary",
+      "number": 100,
+      "source": {
+        "label": "The Pulitzer Prizes · On the Transmigration of Souls",
+        "url": "https://www.pulitzer.org/winners/john-adams"
+      }
+    }
+  ],
+  "references": [
+    {
+      "label": "Columbia University · Summary of Western Classical Music History",
+      "url": "https://www.columbia.edu/itc/music/ito/history/"
+    },
+    {
+      "label": "The Metropolitan Museum of Art · Music in the Renaissance",
+      "url": "https://www.metmuseum.org/essays/music-in-the-renaissance"
+    },
+    {
+      "label": "Victoria and Albert Museum · Renaissance music",
+      "url": "https://www.vam.ac.uk/articles/renaissance-music"
+    }
+  ]
+}

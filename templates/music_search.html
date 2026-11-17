@@ -1,5 +1,8 @@
 {% extends "base.html" %}
+{% block title %}Find a Performance · The Burrow Owls{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=1">{% endblock %}
 {% block content %}
+{% include 'music_history/navigation.html' %}
 
 <h1 style="margin:0;">🎻 Where is it playing?</h1>
 <p class="muted" style="margin-top:6px;">Performances of a piece by major performers worldwide, {{ season }} concert season.</p>

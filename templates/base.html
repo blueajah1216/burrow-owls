@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The Burrow Owls</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}The Burrow Owls{% endblock %}</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon"
@@ -11,6 +12,7 @@
   <!-- Styles -->
   <link rel="stylesheet"
         href="{{ url_for('static', filename='styles.css') }}">
+  {% block head %}{% endblock %}
 </head>
 
 <body>
@@ -64,6 +66,8 @@
       <hr>
       <a class="nav" href="/wine">🍷 Wine</a>
       <a class="nav" href="/music">🎻 Classical Music</a>
+      <a class="nav sub" href="{{ url_for('music.history') }}">Music Through History</a>
+      <a class="nav sub" href="{{ url_for('music.history', view='composers') }}">50 Composers</a>
     </aside>
 
     <!-- Main content -->

@@ -55,6 +55,44 @@ matching visual/audio duration, controls, filtering, MIDI and mobile overflow.
 Calendar (day / week / month) of classical concerts in the Seattle region, plus piece search
 (`/music/search?q=beethoven+7`).
 
+### Music Through History
+
+`/music/history` is an editorial timeline of Western classical music: 100 landmark
+works, 50 composer biographies, and seven era chapters. Switch to composers with
+`?view=composers`; `?era=baroque` and `?q=bach` filter either view. Piece pages live at
+`/music/history/pieces/<id>` and biographies at `/music/history/composers/<id>`.
+The calendar features a history invitation, and the shared sidebar and music navigation
+link to both the timeline and the composer directory.
+
+Edit `data/music_history/history.json` directly. Preserve IDs to keep links stable.
+Work `year` determines chronological order and era placement; `date` explains whether
+the displayed year means composition, completion, publication, or premiere. Composer
+chapters describe stylistic affiliations, so lifespans and individual works can cross
+chapter boundaries. The selection is chronological rather than a ranked league table;
+a complete collection or cycle counts as one entry. Each work has a description,
+historical significance, and listening prompt. Biographies and selected work entries
+link to further reading, including institutional program notes and composer catalogs.
+Restart the app after editing the JSON because it is cached per worker.
+
+Routes and data loading are in `music_history.py`, templates in `templates/music_history/`,
+and styles and progressive filtering in `static/music_history/`. History requests do not
+trigger concert scraping. No database migration or external API is needed. Recording
+links open YouTube searches; they do not embed or host recordings.
+
+Verification:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python music_history_build/verify_history.py
+MUSIC_AUTOREFRESH=0 DATABASE_URL=sqlite:///:memory: SECRET_KEY=local-music-history-preview .venv/bin/python -m flask --app app run --host 127.0.0.1 --port 5058
+# In another terminal, with the preview running:
+node music_history_build/verify_browser.cjs
+```
+
+The route checks use an in-memory database and a mocked visitor counter. Browser
+screenshots go to `/private/tmp/music-history-qa/`.
+
+### Concert data
+
 Data comes from per-presenter scrapers in `music_scrapers.py` (one function per source, registered with
 `@scraper("Name")`). Current sources: Benaroya Hall (Seattle Symphony + guest presenters such as Seattle
 Chamber Music Society, Music of Remembrance, Seattle Philharmonic), Early Music Seattle, Emerald City Music,

@@ -1,0 +1,27 @@
+{% macro work_card(work, composer, visible=true) %}
+<article class="timeline-item work-item" data-item data-search="{{ work.search }}" {% if not visible %}hidden{% endif %}>
+  <span class="timeline-dot" aria-hidden="true"></span>
+  <div class="item-date"><span>{{ work.date }}</span><span class="item-number">{{ '%02d'|format(work.number) }} / 100</span></div>
+  <div class="work-card">
+    <div class="card-kicker">{{ work.form }}</div>
+    <h3><a href="{{ url_for('music.history_piece', slug=work.id) }}">{{ work.title }}</a></h3>
+    <a class="composer-link" href="{{ url_for('music.history_composer', slug=composer.id) }}">{{ composer.name }}</a>
+    <p>{{ work.description }}</p>
+    <a class="card-arrow" href="{{ url_for('music.history_piece', slug=work.id) }}" aria-label="Explore {{ work.title }}">Explore the piece <span aria-hidden="true">↗</span></a>
+  </div>
+</article>
+{% endmacro %}
+
+{% macro composer_card(composer, visible=true) %}
+<article class="timeline-item composer-item" data-item data-search="{{ composer.search }}" {% if not visible %}hidden{% endif %}>
+  <span class="timeline-dot" aria-hidden="true"></span>
+  <div class="item-date"><span>{{ composer.dates }}</span><span class="item-number">{{ composer.works|length }} landmark {{ 'work' if composer.works|length == 1 else 'works' }}</span></div>
+  <div class="work-card">
+    <div class="card-kicker">{{ composer.place }}</div>
+    <h3><a href="{{ url_for('music.history_composer', slug=composer.id) }}">{{ composer.name }}</a></h3>
+    <p class="signature">{{ composer.signature }}</p>
+    <p>{{ composer.bio|truncate(185) }}</p>
+    <a class="card-arrow" href="{{ url_for('music.history_composer', slug=composer.id) }}">Meet the composer <span aria-hidden="true">↗</span></a>
+  </div>
+</article>
+{% endmacro %}
