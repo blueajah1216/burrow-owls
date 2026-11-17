@@ -1,0 +1,56 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/song/Dayeinu_Cw.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Dayenu
+C:New practice harmony: The Great Gallery (CC0).
+M:2/4
+L:1/8
+Q:1/4=104
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:C
+[V:S1V1] E G G G | G A G F | E G G G | G A G F |
+w: I- lu ho- tsi- | ho- tsi- a- nu | ho- tsi- a- nu | mi- mits- ra- yim,
+[V:S1V2] C C C C | C G, G, G, | G, G, G, G, | G, G, G, G, |
+[V:S2V1] G, E, E, E, | E, E, E, E, | E, E, E, E, | E, E, E, E, |
+[V:S2V2] C, C, C, C, | C, C, C, C, | C, C, C, C, | C, C, C, C, |
+[V:S1V1] E G D F | E G D F | E2 D2 | C4 |
+w: ho- tsi- a- nu | mi- mits- ra- yim, | da- yei- | nu.
+[V:S1V2] G, G, G, G, | G, G, G, G, | G,2 G,2 | G,4 |
+[V:S2V1] E, E, E, E, | E, E, E, E, | E,2 E,2 | E,4 |
+[V:S2V2] C, C, C, C, | C, C, C, C, | C,2 C,2 | C,4 |
+[V:S1V1] E G G G | G A G F | E G G G | G A G F |
+w: I- lu ho- tsi- | ho- tsi- a- nu | ho- tsi- a- nu | mi- mits- ra- yim,
+[V:S1V2] G, G, G, G, | G, G, G, G, | G, G, G, G, | G, G, G, G, |
+[V:S2V1] E, E, E, E, | E, E, E, E, | E, E, E, E, | E, E, E, E, |
+[V:S2V2] C, C, C, C, | C, C, C, C, | C, C, C, C, | C, C, C, C, |
+[V:S1V1] E G D F | E G D F | E2 D2 | C4 |
+w: ho- tsi- a- nu | mi- mits- ra- yim, | da- yei- | nu.
+[V:S1V2] G, G, G, G, | G, G, G, G, | G,2 G,2 | G,4 |
+[V:S2V1] E, E, E, E, | E, E, E, E, | E,2 E,2 | E,4 |
+[V:S2V2] C, C, C, C, | C, C, C, C, | C,2 C,2 | C,4 |
+[V:S1V1] E2 E2 | G F3 | F2 F2 | A G3 |
+w: * * | * * | * * | * *
+[V:S1V2] G,2 G,2 | A, A,3 | A,2 A,2 | G, G,3 |
+[V:S2V1] E,2 E,2 | F, F,3 | F,2 F,2 | E, E,3 |
+[V:S2V2] C,2 C,2 | C, C,3 | C,2 C,2 | C, C,3 |
+[V:S1V1] G2 G2 | c B2 B | B G A B | c G E C |
+w: * * | * * * | * * * * | * * * *
+[V:S1V2] G,2 G,2 | B, B,2 B, | B, B, B, B, | C C C C |
+[V:S2V1] E,2 E,2 | D, D,2 D, | D, D, D, D, | E, E, E, E, |
+[V:S2V2] C,2 C,2 | G,, G,,2 G,, | G,, G,, G,, G,, | G,, G,, G,, G,, |
+[V:S1V1] E2 E2 | G F3 | F2 F2 | A G3 |
+w: * * | * * | * * | * *
+[V:S1V2] C2 C2 | C C3 | C2 C2 | C C3 |
+[V:S2V1] E,2 E,2 | F, F,3 | F,2 F,2 | E, E,3 |
+[V:S2V2] G,,2 G,,2 | A,, A,,3 | A,,2 A,,2 | G,, G,,3 |
+[V:S1V1] G2 G2 | c B2 B | B G A B | c4 |]
+w: * * | * * * | * * * * | *
+[V:S1V2] C2 C2 | B, B,2 B, | B, B, B, B, | C4 |]
+[V:S2V1] E,2 E,2 | D, D,2 D, | D, D, D, D, | E,4 |]
+[V:S2V2] G,,2 G,,2 | G,, G,,2 G,, | G,, G,, G,, G,, | G,,4 |]

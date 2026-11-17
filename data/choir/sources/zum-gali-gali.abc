@@ -1,0 +1,26 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/israel/zum-gali-am/zum-gali-am-1.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Zum Gali Gali
+C:New practice harmony: The Great Gallery (CC0).
+M:2/4
+L:1/8
+Q:1/4=104
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Am
+[V:S1V1] A2 A B | c B c B | A2 A A | E2 A2 |
+w: Zum ga- li | ga- li ga- li, | zum ga- li | ga- li.
+[V:S1V2] C2 C C | C C C C | C2 C C | C2 C2 |
+[V:S2V1] E,2 E, E, | E, E, E, E, | E,2 E, E, | E,2 E,2 |
+[V:S2V2] C,2 A,, A,, | A,, A,, A,, A,, | A,,2 A,, A,, | A,,2 A,,2 |
+[V:S1V1] A2 A B | c B c B | A2 A A | E2 A2 |]
+w: Zum ga- li | ga- li ga- li, | zum ga- li | ga- li.
+[V:S1V2] C2 C C | C C C C | C2 C C | C2 C2 |]
+[V:S2V1] E,2 E, E, | E, E, E, E, | E,2 E, E, | E,2 E,2 |]
+[V:S2V2] A,,2 A,, A,, | A,, A,, A,, A,, | A,,2 A,, A,, | A,,2 A,,2 |]

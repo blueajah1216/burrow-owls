@@ -198,17 +198,20 @@
   }
 
   function filterSongs() {
-    const term = $('song-search').value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const normalize = value => value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f\u0591-\u05bd\u05bf-\u05c7]/g, '').replace(/[’‘']/g, '');
+    const term = normalize($('song-search').value.trim());
     const category = $('category').value;
     let count = 0;
     document.querySelectorAll('.song-option').forEach(button => {
       const item = songs.find(s => s.id === button.dataset.song);
-      const title = item.title.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      const show = title.includes(term) && (category === 'all' || item.category === category);
+      const searchable = normalize([item.title, item.native_title, item.origin, item.category, ...(item.aliases || [])].filter(Boolean).join(' '));
+      const show = searchable.includes(term) && (category === 'all' || item.category === category);
       button.hidden = !show;
       if (show) count++;
     });
     $('song-count').textContent = count ? `${count} song${count === 1 ? '' : 's'} to sing` : 'No songs found. Try another search.';
+    document.querySelectorAll('[data-collection]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.collection === category)));
+    $('song-list').scrollTop = 0;
   }
 
   function selectSong(id) {
@@ -216,8 +219,10 @@
     song = songs.find(s => s.id === id) || songs[0];
     $('practice-error')?.remove();
     $('song-title').textContent = song.title;
+    $('song-native-title').textContent = song.native_title || '';
+    $('song-native-title').hidden = !song.native_title;
     $('song-category').textContent = song.category.toUpperCase();
-    $('song-subtitle').textContent = song.note;
+    $('song-subtitle').textContent = [song.origin, song.note].filter(Boolean).join(' · ');
     $('song-credit').textContent = song.credit;
     $('song-license').textContent = song.license;
     $('source-link').href = song.source_url;
@@ -288,6 +293,11 @@
   });
   $('song-search').addEventListener('input', filterSongs);
   $('category').addEventListener('change', filterSongs);
+  document.querySelectorAll('[data-collection]').forEach(button => button.addEventListener('click', () => {
+    $('category').value = $('category').value === button.dataset.collection ? 'all' : button.dataset.collection;
+    $('song-search').value = '';
+    filterSongs();
+  }));
   $('song-list').addEventListener('click', event => {
     const button = event.target.closest('[data-song]');
     if (!button || !songs.length) return;
@@ -311,6 +321,6 @@
   }).then(data => {
     songs = data;
     if (!window.ABCJS) throw new Error('Music notation could not load. Refresh the page to try again.');
-    selectSong(new URLSearchParams(location.search).get('song') || 'silent-night');
+    selectSong(new URLSearchParams(location.search).get('song') || 'hava-nagila');
   }).catch(fail);
 })();

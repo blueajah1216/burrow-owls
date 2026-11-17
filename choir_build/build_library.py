@@ -1,13 +1,15 @@
 """Build the offline choir songbook: .venv/bin/python choir_build/build_library.py.
 
 Original Open Hymnal ABC files live in data/choir/sources, with notices intact.
-Fifteen new, simple practice harmonizations of public-domain melodies are CC0.
+New, simple practice harmonizations of public-domain melodies are CC0.
 No network, runtime conversion tools, or soundfont service is needed by the app.
 """
 import itertools
 import json
 import re
 from pathlib import Path
+
+from arrange_folk import arrange
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "choir"
@@ -183,8 +185,23 @@ def build():
                           credit=note + '. Simple educational four-part harmony newly prepared for The Great Gallery. The melody is carried by soprano; accompaniment uses block chords. These are practice settings, not historical choir editions.',
                           license='Underlying melody: public domain. New practice harmony: CC0 1.0.',
                           source=filename, source_url='https://creativecommons.org/publicdomain/zero/1.0/', abc=abc))
-    assert len(songs) == 50, len(songs)
-    assert len({s['id'] for s in songs}) == 50
+    for melody in json.loads((Path(__file__).with_name('folk_melodies.json')).read_text()):
+        abc = arrange(melody)
+        filename = slug(melody['title']) + '.abc'
+        rights = melody.get('rights_basis', 'Traditional melody, identified as traditional in the linked melody reference.')
+        credit = (melody['reference_credit'] + ' ' + rights +
+                  ' Newly prepared educational SATB harmony: The Great Gallery, CC0. '
+                  'This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.')
+        (SOURCES / filename).write_text('% Melody reference: ' + melody['source_url'] + '\n% ' + rights +
+                                      '\n% New practice harmony: CC0 1.0.\n% https://creativecommons.org/publicdomain/zero/1.0/\n' + abc)
+        songs.append(dict(id=slug(melody['title']), title=melody['title'], category=melody['category'],
+                          origin=melody['origin'], native_title=melody.get('native_title', ''),
+                          aliases=melody.get('aliases', []), tempo=melody['tempo'],
+                          note=melody.get('version', 'Traditional melody · new four-part practice setting'),
+                          credit=credit, license='Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.',
+                          source=filename, source_url=melody['source_url'], abc=abc))
+    assert len(songs) == 50 + len(json.loads((Path(__file__).with_name('folk_melodies.json')).read_text()))
+    assert len({s['id'] for s in songs}) == len(songs)
     songs.sort(key=lambda s: s['title'].casefold())
     (DATA / 'library.json').write_text(json.dumps(songs, ensure_ascii=False, indent=2) + '\n')
     print(f'Built {len(songs)} four-part scores.')

@@ -1,0 +1,36 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/song/LoMirSichIberbeten_Ew.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Lomir Zikh Iberbetn
+C:New practice harmony: The Great Gallery (CC0).
+M:2/4
+L:1/8
+Q:1/4=88
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Am
+[V:S1V1] E E2 E | ^G F1/2 G1/2 F E | ^G F1/2 G1/2 F E | e B ^c B |
+w: 1. Lo- mir sich | i- ber- * bet- en, | i- ber- * bet- en, | Shtel dem sa mo
+[V:S1V2] C C2 C | B, B,1/2 B,1/2 B, B, | B, B,1/2 B,1/2 B, B, | ^G G G G |
+[V:S2V1] A, A,2 A, | ^G, G,1/2 G,1/2 G, G, | ^G, G,1/2 G,1/2 G, G, | B, B, B, B, |
+[V:S2V2] A,, A,,2 A,, | E,, E,,1/2 E,,1/2 E,, E,, | E,, E,,1/2 E,,1/2 E,, E,, | E,, E,, E,, E,, |
+[V:S1V1] A2 A2 | e B ^c B | A3 ^G | B B2 A |
+w: var, * | Shtel dem sa mo | var * |  Lo- mir sich
+[V:S1V2] A2 A2 | ^G G G G | A3 E | E E2 E |
+[V:S2V1] C2 C2 | B, B, B, B, | C3 C | B, B,2 B, |
+[V:S2V2] E,,2 E,,2 | E,, E,, E,, E,, | E,,3 A,, | ^G,, G,,2 G,, |
+[V:S1V1] ^G F1/2 E1/2 _E E | E F ^G F | A2 ^G2 | B B2 A |
+w: i- ber- * bet- en, | Sei she nit kein | nar. * |  Lo- mir sich
+[V:S1V2] E E1/2 E1/2 B, B, | B, B, B, B, | C2 C2 | B, B,2 B, |
+[V:S2V1] B, B,1/2 B,1/2 ^G, G, | ^G, G, G, G, | A,2 A,2 | ^G, G,2 G, |
+[V:S2V2] ^G,, G,,1/2 G,,1/2 E,, E,, | E,, E,, E,, E,, | E,,2 E,,2 | E,, E,,2 E,, |
+[V:S1V1] ^G F1/2 E1/2 _E E | E F ^G F | E2 E |]
+w: i- ber- * bet- en, | Sei she nit kein | nar. zen.
+[V:S1V2] B, B,1/2 B,1/2 B, B, | B, B, B, B, | C2 C |]
+[V:S2V1] ^G, G,1/2 G,1/2 G, G, | ^G, G, G, G, | A,2 A, |]
+[V:S2V2] E,, E,,1/2 E,,1/2 E,, E,, | E,, E,, E,, E,, | E,,2 E,, |]

@@ -1,0 +1,36 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/japan/sakura.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Sakura Sakura
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=76
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Am
+[V:S1V1] A2 A2 B4 | A2 A2 B4 | A2 B2 c2 B2 | A2 B A F4 |
+w: Sa- ku- ra | Sa- ku- ra | Ya- yo- i- no | So- ra- * wa
+[V:S1V2] C2 C2 C4 | C2 C2 C4 | C2 C2 C2 C2 | D2 D D D4 |
+[V:S2V1] E,2 E,2 E,4 | E,2 E,2 E,4 | E,2 E,2 E,2 E,2 | F,2 F, F, F,4 |
+[V:S2V2] C,2 A,,2 A,,4 | A,,2 A,,2 A,,4 | A,,2 A,,2 A,,2 A,,2 | A,,2 A,, A,, A,,4 |
+[V:S1V1] E2 C2 E2 F2 | E2 E C B,4 | A2 B2 c2 B2 | A2 B A F4 |
+w: Mi- wa- ta- su | ka- gi- * ri | Ka- su- mi- ka | ku- mu- * ka
+[V:S1V2] C2 C2 C2 C2 | B,2 B, B, B,4 | C2 C2 C2 C2 | D2 D D D4 |
+[V:S2V1] E,2 E,2 E,2 E,2 | E,2 E, E, E,4 | E,2 E,2 E,2 E,2 | F,2 F, F, F,4 |
+[V:S2V2] A,,2 A,,2 A,,2 A,,2 | ^G,,2 G,, G,, G,,4 | A,,2 A,,2 A,,2 A,,2 | A,,2 A,, A,, A,,4 |
+[V:S1V1] E2 C2 E2 F2 | E2 E C B,4 | A2 A2 B4 | A2 A2 B4 |
+w: Ni- o- i- zo | i- zu- * ru | I- za- ya | I- za- ya
+[V:S1V2] C2 C2 C2 C2 | B,2 B, B, B,4 | C2 C2 C4 | C2 C2 C4 |
+[V:S2V1] E,2 E,2 E,2 E,2 | E,2 E, E, E,4 | E,2 E,2 E,4 | E,2 E,2 E,4 |
+[V:S2V2] A,,2 A,,2 A,,2 A,,2 | ^G,,2 G,, G,, G,,4 | A,,2 A,,2 A,,4 | A,,2 A,,2 A,,4 |
+[V:S1V1] D2 E2 F4 | B A F2 E4 |]
+w: Mi- * ni- | yu- * ka- un.
+[V:S1V2] D2 D2 D4 | C C C2 C4 |]
+[V:S2V1] F,2 F,2 F,4 | E, E, E,2 E,4 |]
+[V:S2V2] A,,2 A,,2 A,,4 | A,, A,, A,,2 A,,4 |]

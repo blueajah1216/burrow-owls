@@ -1,0 +1,56 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/waltz/Tumbalalaika-Dm-32-0.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Tumbalalaika
+C:New practice harmony: The Great Gallery (CC0).
+M:3/4
+L:1/8
+Q:1/4=104
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Dm
+[V:S1V1] A4 A2 | A4 A2 | A2 G2 F2 | E6 |
+w: * * | * * | * * * | *
+[V:S1V2] A,4 A,2 | A,4 A,2 | A,2 A,2 A,2 | A,6 |
+[V:S2V1] F,4 F,2 | F,4 F,2 | F,2 F,2 F,2 | E,6 |
+[V:S2V2] D,4 D,2 | D,4 D,2 | D,2 D,2 D,2 | ^C,6 |
+[V:S1V1] G4 G2 | G4 G2 | G2 F2 E2 | D6 |
+w: * * | * * | * * * | *
+[V:S1V2] B,4 B,2 | B,4 B,2 | C2 G,2 G,2 | F,6 |
+[V:S2V1] G,4 G,2 | G,4 G,2 | E,2 E,2 E,2 | F,6 |
+[V:S2V2] D,4 D,2 | D,4 D,2 | C,2 C,2 C,2 | A,,6 |
+[V:S1V1] D2 F2 A2 | d4 d2 | f2 e2 d2 | A4 A2 |
+w: * * * | * * | * * * | * *
+[V:S1V2] F,2 F,2 F,2 | D4 D2 | D2 D2 D2 | D4 D2 |
+[V:S2V1] F,2 D,2 D,2 | F,4 F,2 | F,2 F,2 F,2 | F,4 F,2 |
+[V:S2V2] A,,2 A,,2 A,,2 | A,,4 A,,2 | A,,2 A,,2 A,,2 | A,,4 A,,2 |
+[V:S1V1] c2 B2 G2 | E4 E2 | G2 F2 E2 | D4 D2 |
+w: * * * | * * | * * * | * *
+[V:S1V2] E2 E2 E2 | E4 E2 | E2 E2 E2 | D4 D2 |
+[V:S2V1] G,2 G,2 G,2 | A,4 A,2 | G,2 G,2 G,2 | F,4 F,2 |
+[V:S2V2] C,2 C,2 C,2 | ^C,4 C,2 | C,2 C,2 C,2 | A,,4 A,,2 |
+[V:S1V1] A2 A2 A2 | A2 A2 A2 | A2 G2 F2 | E4 E2 |
+w: Tum- ba- la, | Tum- ba- la, | Tum- ba- la- | lai- ka,
+[V:S1V2] D2 D2 D2 | D2 D2 D2 | D2 D2 D2 | ^C4 C2 |
+[V:S2V1] F,2 F,2 F,2 | F,2 F,2 F,2 | F,2 F,2 F,2 | E,4 E,2 |
+[V:S2V2] A,,2 A,,2 A,,2 | A,,2 A,,2 A,,2 | A,,2 A,,2 A,,2 | A,,4 A,,2 |
+[V:S1V1] G2 G2 G2 | G2 G2 G2 | G2 F2 E2 | D4 D2 |
+w: Tum- ba- la, | Tum- ba- la, | Tum- ba- la- | lai- ka.
+[V:S1V2] D2 D2 D2 | D2 D2 D2 | C2 G,2 G,2 | F,4 F,2 |
+[V:S2V1] D,2 D,2 D,2 | D,2 D,2 D,2 | E,2 E,2 E,2 | F,4 F,2 |
+[V:S2V2] B,,2 B,,2 B,,2 | B,,2 B,,2 B,,2 | C,2 C,2 C,2 | A,,4 A,,2 |
+[V:S1V1] D2 F2 A2 | d4 d2 | f2 e2 d2 | A4 A2 |
+w: Tum- ba- la, | lai- ka, | shpiel ba- la- | lai- ka,
+[V:S1V2] F,2 F,2 F,2 | D4 D2 | D2 D2 D2 | D4 D2 |
+[V:S2V1] F,2 D,2 D,2 | F,4 F,2 | F,2 F,2 F,2 | F,4 F,2 |
+[V:S2V2] A,,2 A,,2 A,,2 | A,,4 A,,2 | A,,2 A,,2 A,,2 | A,,4 A,,2 |
+[V:S1V1] c2 B2 G2 | E4 E2 | G2 F2 E2 | D6 |]
+w: Tum- ba- la- | lai- ka, | frey- lekh zol | zayn.
+[V:S1V2] E2 E2 E2 | E4 E2 | E2 E2 E2 | D6 |]
+[V:S2V1] G,2 G,2 G,2 | A,4 A,2 | G,2 G,2 G,2 | F,6 |]
+[V:S2V2] C,2 C,2 C,2 | ^C,4 C,2 | C,2 C,2 C,2 | A,,6 |]

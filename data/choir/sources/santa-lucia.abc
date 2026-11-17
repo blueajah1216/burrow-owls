@@ -1,0 +1,56 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/song/Santa_Lucia_Cw.abc
+% Teodoro Cottrau, published 1849. Public domain.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Santa Lucia
+C:New practice harmony: The Great Gallery (CC0).
+M:3/4
+L:1/8
+Q:1/4=96
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:C
+[V:S1V1] G2 G3 c | c B B4 | F2 F3 A | A G G4 |
+w: Sul ma- re | luc- ci- ca, | l'a- stro d'ar- | gen- * to,
+[V:S1V2] C2 C3 E | D D D4 | C2 C3 C | C C C4 |
+[V:S2V1] E,2 E,3 G, | G, G, G,4 | A,2 A,3 A, | G, G, G,4 |
+[V:S2V2] C,2 C,3 C, | B,, B,, B,,4 | C,2 C,3 F, | E, E, E,4 |
+[V:S1V1] E2 A2 G2 | G ^F =F4 | F2 E2 D2 | A2 G4 |
+w: Pla- ci d è | l'on- * da, | pro- spe- ro è il | ven- to;
+[V:S1V2] C2 C2 C2 | C C C4 | D2 D2 D2 | C2 C4 |
+[V:S2V1] G,2 G,2 G,2 | A, A, A,4 | A,2 A,2 A,2 | G,2 G,4 |
+[V:S2V2] E,2 E,2 E,2 | F, F, F,4 | D,2 F,2 F,2 | E,2 E,4 |
+[V:S1V1] G2 G3 c | c B B4 | F2 F3 A | A G G4 |
+w: Sul ma- re | luc- ci- ca, | l'a- stro d'ar- | gen- * to,
+[V:S1V2] C2 C3 C | B, B, B,4 | C2 C3 C | C C C4 |
+[V:S2V1] G,2 G,3 G, | G, G, G,4 | A,2 A,3 A, | G, G, G,4 |
+[V:S2V2] E,2 E,3 E, | D, D, D,4 | F,2 F,3 F, | E, E, E,4 |
+[V:S1V1] E2 A2 G2 | G ^F =F4 | F2 E2 D2 | A2 G4 |
+w: Pla- ci d è | l'on- * da, | pro- spe- ro è il | ven- to;
+[V:S1V2] C2 C2 C2 | C C C4 | D2 D2 D2 | C2 C4 |
+[V:S2V1] G,2 G,2 G,2 | A, A, A,4 | A,2 A,2 A,2 | G,2 G,4 |
+[V:S2V2] E,2 E,2 E,2 | F, F, F,4 | D,2 F,2 F,2 | E,2 E,4 |
+[V:S1V1] e2 d2 c2 | B A d4 | d2 c2 A2 | ^F G c4 |
+w: Ve- ni- te al- | l'a- gi- le | bar- chet- ta | mi- * a
+[V:S1V2] C2 C2 C2 | B, B, B,4 | F2 F2 F2 | E E E4 |
+[V:S2V1] G,2 G,2 G,2 | G, G, G,4 | A,2 A,2 A,2 | G, G, G,4 |
+[V:S2V2] E,2 E,2 E,2 | D, D, D,4 | D,2 D,2 D,2 | C, C, C,4 |
+[V:S1V1] e c c G G E | F d d4 | d2 A3 B | d2 c4 |
+w: San- * ta * Lu- * | ci- * a, | San- ta Lu- | ci- a.
+[V:S1V2] E E E E E E | D D D4 | D2 D3 D | E2 E4 |
+[V:S2V1] G, G, G, G, G, G, | F, F, F,4 | F,2 F,3 F, | G,2 G,4 |
+[V:S2V2] C, C, C, C, C, C, | A,, A,, A,,4 | A,,2 A,,3 A,, | C,2 C,4 |
+[V:S1V1] e2 d2 c2 | B A d4 | d2 c2 A2 | ^F G c4 |
+w: Ve- ni- te al- | l'a- gi- le | bar- chet- ta | mi- * a
+[V:S1V2] E2 E2 E2 | D D D4 | D2 D2 D2 | E E E4 |
+[V:S2V1] G,2 G,2 G,2 | G, G, G,4 | F,2 F,2 F,2 | G, G, G,4 |
+[V:S2V2] C,2 C,2 C,2 | B,, B,, B,,4 | A,,2 A,,2 A,,2 | C, C, C,4 |
+[V:S1V1] e c c G G E | F d d4 | d2 e3 d | d2 c4 |]
+w: San- * ta * Lu- * | ci- * a, | San- ta Lu- | ci- a.
+[V:S1V2] E E E E E E | D D D4 | B,2 D3 D | E2 E4 |]
+[V:S2V1] G, G, G, G, G, G, | F, F, F,4 | G,2 B,3 B, | C2 C4 |]
+[V:S2V2] C, C, C, C, C, C, | A,, A,, A,,4 | G,,2 G,,3 G,, | G,,2 G,,4 |]

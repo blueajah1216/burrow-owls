@@ -1,0 +1,44 @@
+% Melody reference: https://www.flutetunes.com/tunes.php?id=235
+% James Yorkston song published in 1884. Public domain.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Molly Malone
+C:New practice harmony: The Great Gallery (CC0).
+M:3/4
+L:1/8
+Q:1/4=104
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:G
+[V:S1V1] z4 D2 | G2 G3 G | G B3 G2 | A2 A3 A |
+[V:S1V2] z4 B,2 | B,2 B,3 B, | B, B,3 B,2 | A,2 A,3 A, |
+[V:S2V1] z4 G,2 | D,2 D,3 D, | D, D,3 D,2 | D,2 D,3 D, |
+[V:S2V2] z4 G,,2 | G,,2 G,,3 G,, | G,, G,,3 G,,2 | F,,2 F,,3 F,, |
+[V:S1V1] A c3 A2 | B2 A2 G2 | d2 c2 B2 | B A3 G2 |
+[V:S1V2] A, A,3 A,2 | G,2 B,2 B,2 | B,2 B,2 B,2 | B, B,3 B,2 |
+[V:S2V1] C, C,3 C,2 | D,2 D,2 D,2 | D,2 D,2 D,2 | D, D,3 D,2 |
+[V:S2V2] E,, E,,3 E,,2 | G,,2 G,,2 G,,2 | G,,2 G,,2 G,,2 | G,, G,,3 G,,2 |
+[V:S1V1] A4 D D | G2 G3 G | G B3 G2 | A2 A3 A |
+[V:S1V2] A,4 A, A, | B,2 B,3 B, | B, B,3 B,2 | A,2 A,3 A, |
+[V:S2V1] D,4 D, D, | D,2 D,3 D, | D, D,3 D,2 | D,2 D,3 D, |
+[V:S2V2] F,,4 F,, F,, | G,,2 G,,3 G,, | G,, G,,3 G,,2 | F,,2 F,,3 F,, |
+[V:S1V1] A c3 A A | B d3 c2 | B d3 c2 | B3 G A2 |
+[V:S1V2] A, A,3 A, A, | G, B,3 B,2 | B, B,3 B,2 | B,3 B, B,2 |
+[V:S2V1] C, C,3 C, C, | D, D,3 D,2 | D, D,3 D,2 | D,3 D, D,2 |
+[V:S2V2] E,, E,,3 E,, E,, | G,, G,,3 G,,2 | G,, G,,3 G,,2 | G,,3 G,, G,,2 |
+[V:S1V1] G4 D2 | G3 G G2 | G B3 G2 | A3 A A2 |
+[V:S1V2] B,4 B,2 | B,3 B, B,2 | B, B,3 B,2 | A,3 A, A,2 |
+[V:S2V1] D,4 D,2 | D,3 D, D,2 | D, D,3 D,2 | D,3 D, D,2 |
+[V:S2V2] G,,4 G,,2 | G,,3 G,, G,,2 | G,, G,,3 G,,2 | F,,3 F,, F,,2 |
+[V:S1V1] A c3 A A | B d3 c2 | B d3 c2 | B3 G A2 |
+[V:S1V2] A, A,3 A, A, | G, B,3 B,2 | B, B,3 B,2 | B,3 B, B,2 |
+[V:S2V1] C, C,3 C, C, | D, D,3 D,2 | D, D,3 D,2 | D,3 D, D,2 |
+[V:S2V2] E,, E,,3 E,, E,, | G,, G,,3 G,,2 | G,, G,,3 G,,2 | G,,3 G,, G,,2 |
+[V:S1V1] G4 |]
+[V:S1V2] B,4 |]
+[V:S2V1] D,4 |]
+[V:S2V2] G,,4 |]

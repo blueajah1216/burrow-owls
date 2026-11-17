@@ -34,16 +34,17 @@
     <aside class="library" aria-labelledby="library-heading">
       <div class="library-heading"><h2 id="library-heading">The songbook</h2><span>{{ songs|length }} songs</span></div>
       <label class="search-label" for="song-search">Find a song</label>
-      <input id="song-search" type="search" placeholder="Search songs…" autocomplete="off">
+      <input id="song-search" type="search" placeholder="Song, country, or tradition…" autocomplete="off">
       <label class="search-label" for="category">Collection</label>
-      <select id="category"><option value="all">All collections</option><option>Christmas carols</option><option>Folk & familiar</option><option>Anthems</option><option>Hymns & spirituals</option></select>
+      <select id="category"><option value="all">All collections</option>{% for category in categories %}<option>{{ category }}</option>{% endfor %}</select>
+      <div class="collection-shortcuts" aria-label="Featured song collections"><button type="button" data-collection="Jewish songs" aria-pressed="false">Jewish songs</button><button type="button" data-collection="Folk songs around the world" aria-pressed="false">Around the world</button></div>
       <p id="song-count" class="song-count" role="status">{{ songs|length }} songs to sing</p>
       <div id="song-list" class="song-list" aria-label="Choose a song">
-      {% for song in songs %}<button class="song-option" type="button" data-song="{{ song.id }}"><span>{{ song.title }}</span><small>{{ song.category }}</small></button>{% endfor %}
+      {% for song in songs %}<button class="song-option" type="button" data-song="{{ song.id }}"><span>{{ song.title }}</span><small>{{ song.origin or song.category }}</small></button>{% endfor %}
       </div>
     </aside>
     <section class="practice" aria-labelledby="song-title" aria-busy="true">
-      <div class="song-heading"><div><p id="song-category" class="eyebrow">YOUR PRACTICE SPACE</p><h2 id="song-title">Opening the songbook…</h2><p id="song-subtitle"></p></div><span class="satb-badge">4 voices<br><strong>S A T B</strong></span></div>
+      <div class="song-heading"><div><p id="song-category" class="eyebrow">YOUR PRACTICE SPACE</p><h2 id="song-title">Opening the songbook…</h2><p id="song-native-title" dir="auto" hidden></p><p id="song-subtitle"></p></div><span class="satb-badge">4 voices<br><strong>S A T B</strong></span></div>
       <div class="practice-controls">
         <div class="transport"><button id="play" class="play" type="button" disabled>▶ Play</button><button id="restart" type="button" disabled aria-label="Restart song">↶ Restart</button><label class="loop-control"><input id="loop" type="checkbox"> Loop</label><span id="time" class="time">0:00 / 0:00</span></div>
         <label class="seek-label" for="seek">Song position</label><input id="seek" type="range" min="0" max="1000" value="0" disabled aria-label="Song position">
@@ -67,7 +68,7 @@
   <noscript><p class="error">Enable JavaScript to view the scores and use music playback.</p></noscript>
 </main>
 <footer class="foot"><a href="{{ url_for('fineart.index') }}">The Great Gallery</a><span>Made for curious ears.</span><p>Public-domain music and freely shared practice arrangements. Each score includes its credits. Music notation by <a href="https://www.abcjs.net/" target="_blank" rel="noopener">abcjs</a>.</p></footer>
-<script>window.CHOIR_LIBRARY_URL={{ url_for('choir.library')|tojson }};window.CHOIR_SOURCE_URL={{ url_for('choir.source', filename='SCORE_FILE')|tojson }};</script>
+<script>window.CHOIR_LIBRARY_URL={{ url_for('choir.library', v=catalog_version)|tojson }};window.CHOIR_SOURCE_URL={{ url_for('choir.source', filename='SCORE_FILE')|tojson }};</script>
 <script src="{{ url_for('static', filename='choir/vendor/abcjs-6.7.2.min.js') }}"></script>
 <script src="{{ url_for('static', filename='fineart/menu.js') }}?v=2"></script>
 <script src="{{ url_for('static', filename='choir/choir.js') }}"></script>

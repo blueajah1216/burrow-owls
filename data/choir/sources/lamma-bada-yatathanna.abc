@@ -1,0 +1,36 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/spain/lamma-bada.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Lamma Bada Yatathanna
+C:New practice harmony: The Great Gallery (CC0).
+M:10/8
+L:1/8
+Q:1/4=104
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Gm
+[V:S1V1] z8 z2 | z8 z2 | D G2 A1/2 =B1/2 c1/2 B1/2 B1/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | A1/2 =B1/2 c2 d B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 |
+[V:S1V2] z8 z2 | z8 z2 | B, B,2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,2 | C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 |
+[V:S2V1] z8 z2 | z8 z2 | G, D,2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,2 | E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 |
+[V:S2V2] z8 z2 | z8 z2 | G,, G,,2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 |
+[V:S1V1] A1/2 G1/2 F2 G =E3/2 D1/2 E1/2 D1/2 E1/2 F1/2 D2 | =e1/2 d1/2 c2 d =B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | D G2 A1/2 =B1/2 c1/2 B1/2 B1/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | A1/2 =B1/2 c2 d B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 |
+[V:S1V2] D1/2 D1/2 D2 D D3/2 D1/2 D1/2 D1/2 D1/2 D1/2 D2 | C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 | B, B,2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,2 | C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 |
+[V:S2V1] F,1/2 F,1/2 F,2 F, F,3/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,2 | E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 | D, D,2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,2 | E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 |
+[V:S2V2] B,,1/2 B,,1/2 B,,2 B,, B,,3/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,, G,,2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 |
+[V:S1V1] A1/2 G1/2 F2 G =E3/2 D1/2 E1/2 D1/2 E1/2 F1/2 D2 | =e1/2 d1/2 c2 d =B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | D G2 A1/2 =B1/2 c1/2 B1/2 B1/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | D G2 A =B2 B A1/2 c1/2 B2 |
+[V:S1V2] D1/2 D1/2 D2 D D3/2 D1/2 D1/2 D1/2 D1/2 D1/2 D2 | C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 | B, B,2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,2 | B, B,2 B, B,2 B, B,1/2 B,1/2 B,2 |
+[V:S2V1] F,1/2 F,1/2 F,2 F, F,3/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,2 | E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 | D, D,2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,2 | D, D,2 D, D,2 D, D,1/2 D,1/2 D,2 |
+[V:S2V2] B,,1/2 B,,1/2 B,,2 B,, B,,3/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,, G,,2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,, G,,2 G,, G,,2 G,, G,,1/2 G,,1/2 G,,2 |
+[V:S1V1] G d2 c c1/2 =B1/2 B1/2 A1/2 A1/2 G1/2 G1/2 F1/2 G A1/2 B1/2 | F G2 A =B2 B A1/2 c1/2 B2 | G c2 d =B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | A1/2 G1/2 F2 G F1/2 =E1/2 E1/2 D1/2 E1/2 D1/2 E1/2 G1/2 D2 |
+[V:S1V2] B, B,2 B, B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B, B,1/2 B,1/2 | A, A,2 A, A,2 A, A,1/2 A,1/2 A,2 | C C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 | D1/2 D1/2 D2 D D1/2 D1/2 D1/2 D1/2 D1/2 D1/2 D1/2 D1/2 D2 |
+[V:S2V1] D, D,2 D, D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D, D,1/2 D,1/2 | C, C,2 C, C,2 C, C,1/2 C,1/2 C,2 | E, E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 | F,1/2 F,1/2 F,2 F, F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,2 |
+[V:S2V2] G,, G,,2 G,, G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,, G,,1/2 G,,1/2 | A,, F,,2 F,, F,,2 F,, F,,1/2 F,,1/2 F,,2 | G,, G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | B,,1/2 B,,1/2 B,,2 B,, B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,2 |
+[V:S1V1] =e1/2 d1/2 c2 d =B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | A1/2 =B1/2 c2 d B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 |]
+[V:S1V2] C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 | B,1/2 B,1/2 B,2 B, B,3/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,2 |]
+[V:S2V1] E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 | D,1/2 D,1/2 D,2 D, D,3/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,2 |]
+[V:S2V2] G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 |]

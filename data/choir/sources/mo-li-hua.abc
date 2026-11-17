@@ -1,0 +1,32 @@
+% Melody reference: https://www.flutetunes.com/tunes.php?id=713
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Mo Li Hua
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=84
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:G
+[V:S1V1] B2 B d e g g e | d2 d e d4 | B2 B d e g g e | d2 d e d4 |
+[V:S1V2] B,2 B, B, G G G G | G2 G D D4 | E2 E E E E E G | G2 G D D4 |
+[V:S2V1] G,2 G, G, B, B, B, B, | B,2 B, B, B,4 | B,2 B, B, B, B, B, B, | B,2 B, B, B,4 |
+[V:S2V2] E,2 E, E, E, E, E, E, | G,2 G, G, G,4 | G,2 G, G, G, E, E, E, | G,2 G, G, G,4 |
+[V:S1V1] d2 d2 d2 B d | e2 e2 d4 | B2 A B d2 B A | G2 G A G4 |
+[V:S1V2] D2 D2 D2 D D | C2 C2 E4 | D2 D D D2 D D | D2 D D D4 |
+[V:S2V1] B,2 B,2 B,2 B, B, | C2 C2 C4 | B,2 B, B, B,2 B, B, | B,2 B, B, B,4 |
+[V:S2V2] G,2 G,2 G,2 G, G, | G,2 G,2 G,4 | G,2 G, G, G,2 G, G, | G,2 G, G, G,4 |
+[V:S1V1] B A G B A3 B | d2 e g d4 | A2 B d A B G E | D8 |
+[V:S1V2] D D D D D3 D | D2 D B B4 | A2 A A A A F D | D8 |
+[V:S2V1] B, B, B, B, B,3 B, | B,2 B, D D4 | D2 D D D D D A, | B,8 |
+[V:S2V2] G, G, G, G, G,3 G, | G,2 G, G, G,4 | F,2 F, F, F, F, A, F, | G,8 |
+[V:S1V1] E2 E G A3 B | G A G E D4 | E2 E G A3 B | G A G E G4 |]
+[V:S1V2] C2 C E E3 E | D D D D D4 | C2 C E E3 E | D D D D D4 |]
+[V:S2V1] C2 C C C3 C | B, B, B, B, B,4 | C2 C C C3 C | B, B, B, B, B,4 |]
+[V:S2V2] A,2 A, A, A,3 A, | G, G, G, G, G,4 | A,2 A, A, A,3 A, | G, G, G, G, G,4 |]

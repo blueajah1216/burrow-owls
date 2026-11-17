@@ -1,0 +1,31 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/scotland/the-water-is-wide.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:The Water Is Wide
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=80
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:G
+[V:S1V1] z A (3G =F G A4- | A G (3=F F D C4 | z2 =F E F4- | =F G A _B1/2 A1/2 G4- |
+w: The wat- er is wide, | * I can- not get o'er, | Neith- er have | * I wings to * fly.
+[V:S1V2] z A, (3A, A, A, A,4- | A, C (3G, G, G, G,4 | z2 G, G, G,4- | G, G, G, G,1/2 G,1/2 G,4- |
+[V:S2V1] z F, (3F, F, F, F,4- | F, E, (3E, E, E, E,4 | z2 E, E, E,4- | E, D, D, D,1/2 D,1/2 D,4- |
+[V:S2V2] z D, (3D, D, D, D,4- | D, C, (3C, C, C, C,4 | z2 C, C, C,4- | C, B,, B,, B,,1/2 B,,1/2 B,,4- |
+[V:S1V1] G G A _B c4- | c _B1/2 A1/2 G1/2 =F3/2 A4- | A G =F D C4- | C C (3D =F G F4- |
+w: * Give me a boat | * that can car- ry two, | * and both shall cross, | * my true love and I.
+[V:S1V2] G, G, G, G, E4- | E E1/2 E1/2 E1/2 E3/2 E4- | E E E C C4- | C C (3C C C C4- |
+[V:S2V1] D, E, E, E, G,4- | G, A,1/2 A,1/2 A,1/2 A,3/2 A,4- | A, G, G, G, G,4- | G, G, (3G, G, G, G,4- |
+[V:S2V2] B,, C, C, C, C,4- | C, C,1/2 C,1/2 C,1/2 C,3/2 C,4- | C, C, C, E, E,4- | E, E, (3E, E, E, E,4- |
+[V:S1V1] =F8 |]
+w: *
+[V:S1V2] C8 |]
+[V:S2V1] G,8 |]
+[V:S2V2] E,8 |]

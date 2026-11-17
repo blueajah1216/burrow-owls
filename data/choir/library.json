@@ -24,6 +24,38 @@
     "abc": "X:1\nT:All Creatures of Our God and King\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 6/4\nL: 1/4\nQ:1/4=160\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: D\n[V: S1V1]  D2 | D E F D F G | [E4A4] D2 | D E F D F G | [E4A4]\nw: All crea- tures of our God and King Lift up your voice and with us sing, \n[V: S1V2]  A,2 | D4 D2 | (D2 C2) D2 | A, C D2 D2 | (D2 C2)\n[V: S2V1]  F,2 | F, G, A, F, B,2 | A,4 (A, B,) | A, G, A,2 B,2 | A,4\n[V: S2V2]  D,2 | D,2 D, D,/C,/ B,, E, | (A,,2 A, G,) (F, G,) | F, E, D, C, B,, E, | (A,,2 A, G,)\n[V: S1V1]  (d c) | B2 A2 d c | B2 A2 d2 | d A A G F G | [E4A4]\nw: A- lle- lu- ia! A- lle- lu- ia! Thou burn- ing sun with gol- den beam, \n[V: S1V2]  A2 | (A G) F2 D E | (F E) C2 (A G) | F2 F E D2 | (D2 C2)\n[V: S2V1]  D2 | D2 D2 F, A, | (A, ^G,) A,2 D2 | D2 D A, A, G, | (E,2 A,2)\n[V: S2V2]  F,2 | G,2 D,2 B,, C, | (D, E,) A,,2 (F, E,) | D, C, B,, C, D, B,, | (A,,2 A, G,)\n[V: S1V1]  [A2d2] | [Ad] [GA] [FA] G F G | A4 (G F) | E2 D2 \nw: Thou sil- ver moon with soft- er gleam! O * praise Him! \n[V: S1V2]  (D E) | D C D D3 | (D C F E) D2 | (D C) D2 \n[V: S2V1]  A,2 | A,2 A, D C B, | A,4  B,2 | (B, A,) A,2\n[V: S2V2]  (F, G,) | F, E, D, B, A, G, | (F, E, D, C,) (B,, A,,) | G,,2 F,,2 \n[V: S1V1] (G F) | E2 D2 d c | B2 A2 d c | B2 A2 G F | E6 | D4 |]\nw: O * praise Him! A- lle- lu- ia! A- lle- lu- ia! A- lle- lu- ia! \n[V: S1V2] D2 | (D C) B,2 F E | (F E) C2 [F2A2] | [FA] [E2G2] [B,F] B, D | (D2 C4) | A,4 |]\n[V: S2V1]  (B, A,) | (B, G,) F,2 F, A, | (A, ^G,) A,2 [F,2A,2] | (F, G,) (E, F,) G, A, | (B,2 A,2 G,2) | F,4 |]\n[V: S2V2] (E,, F,,) | (G,, A,,) B,,2 B,, C, | (D, E,) A,,2 B,, C, | (D, E,) (C, ^D,) E, F, | (G,2 A,2 A,,2) | D,4 |]\n"
   },
   {
+    "id": "all-through-the-night",
+    "title": "All Through the Night",
+    "category": "Folk songs around the world",
+    "origin": "Wales / Welsh lullaby",
+    "native_title": "",
+    "aliases": [
+      "Ar hyd y nos"
+    ],
+    "tempo": 84,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "all-through-the-night.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/wales/all-through-the-night.abc",
+    "abc": "X:1\nT:All Through the Night\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=84\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] G3 F E2 G2 | A3 G F2 D2 | E4 F3 G | G8 |\nw: Sleep my child and | peace att- end thee | all through the | night.\n[V:S1V2] C3 G, G,2 G,2 | F,3 A, A,2 A,2 | C4 E3 E | D8 |\n[V:S2V1] E,3 E, E,2 E,2 | F,3 F, F,2 F,2 | G,4 G,3 G, | G,8 |\n[V:S2V2] C,3 C, C,2 C,2 | D,3 D, D,2 D,2 | C,4 C,3 C, | B,,8 |\n[V:S1V1] G3 F E2 G2 | A3 G F2 D2 | E4 F3 G | G8 |\nw: Sleep my child and | peace att- end thee | all through the | night.\n[V:S1V2] E3 E E2 E2 | D3 A, A,2 A,2 | C4 E3 E | D8 |\n[V:S2V1] G,3 G, G,2 G,2 | F,3 F, F,2 F,2 | G,4 G,3 G, | G,8 |\n[V:S2V2] C,3 C, C,2 C,2 | D,3 D, D,2 D,2 | C,4 C,3 C, | B,,8 |\n[V:S1V1] c2 B2 c2 d2 | e2 d2 c2 B2 | c2 B2 A2 G2 | B3 A G2 F2 |\nw: Soft the drows- y | hours are creep- ing, | hill and vale in | slumb- er sleep- ing.\n[V:S1V2] E2 E2 E2 E2 | E2 E2 E2 E2 | E2 E2 E2 E2 | D3 D D2 D2 |\n[V:S2V1] G,2 G,2 G,2 G,2 | G,2 G,2 G,2 G,2 | G,2 G,2 G,2 G,2 | G,3 G, G,2 G,2 |\n[V:S2V2] C,2 C,2 C,2 C,2 | C,2 C,2 C,2 C,2 | C,2 C,2 C,2 C,2 | B,,3 B,, B,,2 B,,2 |\n[V:S1V1] G3 F E2 G2 | A3 G F2 D2 | E4 F3 G | G8 |]\nw: Moth- er here her | watch is keep- ing | all through the | night.\n[V:S1V2] E3 E E2 E2 | D3 A, A,2 A,2 | C4 E3 E | D8 |]\n[V:S2V1] G,3 G, G,2 G,2 | F,3 F, F,2 F,2 | G,4 G,3 G, | G,8 |]\n[V:S2V2] C,3 C, C,2 C,2 | D,3 D, D,2 D,2 | C,4 C,3 C, | B,,8 |]\n"
+  },
+  {
+    "id": "alouette",
+    "title": "Alouette",
+    "category": "Folk songs around the world",
+    "origin": "Canada / French Canadian",
+    "native_title": "",
+    "aliases": [],
+    "tempo": 100,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "alouette.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=119",
+    "abc": "X:1\nT:Alouette\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=100\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] G3/2 A1/2 B B | A1/2 G1/2 A1/2 B1/2 G D | G3/2 A1/2 B B | A1/2 G1/2 A1/2 B1/2 G2 |\n[V:S1V2] B,3/2 B,1/2 B, B, | B,1/2 B,1/2 B,1/2 B,1/2 B, B, | B,3/2 B,1/2 B, B, | B,1/2 B,1/2 B,1/2 B,1/2 B,2 |\n[V:S2V1] G,3/2 G,1/2 G, G, | G,1/2 G,1/2 G,1/2 G,1/2 G, G, | G,3/2 G,1/2 G, G, | G,1/2 G,1/2 G,1/2 G,1/2 G,2 |\n[V:S2V2] D,3/2 D,1/2 D, D, | D,1/2 D,1/2 D,1/2 D,1/2 D, D, | D,3/2 D,1/2 D, D, | D,1/2 D,1/2 D,1/2 D,1/2 D,2 |\n[V:S1V1] G3/2 A1/2 B B | A1/2 G1/2 A1/2 B1/2 G D | G3/2 A1/2 B B | A1/2 G1/2 A1/2 B1/2 G2 |\n[V:S1V2] B,3/2 B,1/2 B, B, | B,1/2 B,1/2 B,1/2 B,1/2 B, B, | B,3/2 B,1/2 B, B, | B,1/2 B,1/2 B,1/2 B,1/2 B,2 |\n[V:S2V1] G,3/2 G,1/2 G, G, | G,1/2 G,1/2 G,1/2 G,1/2 G, G, | G,3/2 G,1/2 G, G, | G,1/2 G,1/2 G,1/2 G,1/2 G,2 |\n[V:S2V2] D,3/2 D,1/2 D, D, | D,1/2 D,1/2 D,1/2 D,1/2 D, D, | D,3/2 D,1/2 D, D, | D,1/2 D,1/2 D,1/2 D,1/2 D,2 |\n[V:S1V1] G1/2 A1/2 B1/2 c1/2 d1/2 d1/2 d | d1/2 e1/2 d1/2 c1/2 B1/2 A1/2 G | d1/2 d1/2 d D1/2 D1/2 D | d1/2 d1/2 d D1/2 D1/2 D |\n[V:S1V2] B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B, | B,1/2 D1/2 D1/2 D1/2 D1/2 D1/2 D | D1/2 D1/2 D D1/2 D1/2 D | D1/2 D1/2 D D1/2 D1/2 D |\n[V:S2V1] G,1/2 G,1/2 G,1/2 G,1/2 G,1/2 G,1/2 G, | G,1/2 G,1/2 G,1/2 G,1/2 G,1/2 G,1/2 G, | G,1/2 G,1/2 G, G,1/2 G,1/2 G, | G,1/2 G,1/2 G, G,1/2 G,1/2 G, |\n[V:S2V2] D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D, | D,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,, | B,,1/2 B,,1/2 B,, B,,1/2 B,,1/2 B,, | B,,1/2 B,,1/2 B,, B,,1/2 B,,1/2 B,, |\n[V:S1V1] d c B A | G3/2 A1/2 B B | A1/2 G1/2 A1/2 B1/2 G D | G3/2 A1/2 B B |\n[V:S1V2] D D D D | D3/2 D1/2 D D | D1/2 D1/2 D1/2 D1/2 D D | D3/2 D1/2 D D |\n[V:S2V1] G, G, G, G, | G,3/2 G,1/2 G, G, | G,1/2 G,1/2 G,1/2 G,1/2 G, G, | G,3/2 G,1/2 G, G, |\n[V:S2V2] B,, B,, B,, B,, | B,,3/2 B,,1/2 B,, B,, | B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,, B,, | B,,3/2 B,,1/2 B,, B,, |\n[V:S1V1] A1/2 G1/2 A1/2 B1/2 G2 |]\n[V:S1V2] D1/2 D1/2 D1/2 D1/2 D2 |]\n[V:S2V1] G,1/2 G,1/2 G,1/2 G,1/2 G,2 |]\n[V:S2V2] B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,2 |]\n"
+  },
+  {
     "id": "amazing-grace",
     "title": "Amazing Grace",
     "category": "Hymns & spirituals",
@@ -60,6 +92,23 @@
     "abc": "X:1\nT:Angels We Have Heard On High\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 4/4\nL: 1/4\nQ:1/4=130\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: F\n[V: S1V1]  A A A c | c3/2 B/ A2 | A G A c | A3/2 G/ F2 |\nw: An- gels we have heard on high Sweet- ly sing- ing o'er the plains, \n[V: S1V2]  F F E E | G E F2 | F E F F | F E F2 |\n[V: S2V1]  C C C C | D C C2 | C C C C | C3/2 B,/ A,2 |\n[V: S2V2]  F, F, A, A, | G, C, F,2 | F, C, F, A, | C C, F,2 |\n[V: S1V1]  A A A c | c3/2 B/ A2 | A G A c | A3/2 G/ F2 |\nw: And the moun- tains in re- ply E- cho- ing their joy- ous strains. \n[V: S1V2]  F F E E | G E F2 | F E F F | F E F2 |\n[V: S2V1]  C C C C | D C C2 | C C C C | C3/2 B,/ A,2 |\n[V: S2V2]  F, F, A, A, | D, E, F,2 | F, C, F, A,, | C, C, F,2 |\n[V: S1V1]  (c2 d/c/B/A/ | B2 c/B/A/G/ | A2 B/A/G/F/ | G3/2) C/ C2 | F G A B | A2 G z |\nw: Glo- * * * * * * * * * * * * * * * ri- a, in ex- cel- sis De- o!\n[V: S1V2]  (F A/G/ F2 | F G/F/ E2 | E F/E/ D2 | C3/2) C/ C2 | C E F F | F2 E x |\n[V: S2V1]  (A,2 D2 | D2 C2 | C2 B,2 | G,) F, E,2 | F, C C D | C2 C z |\n[V: S2V2]  (F,2 D, F, | G,2 C, E, | F,2 B,, D, | E,) D, (C, B,,) | A,, C, F, B,, | C,2 C, x |\n[V: S1V1]  (c2 d/c/B/A/ | B2 c/B/A/G/ | A2 B/A/G/F/ | G3/2) C/ C2 | F G A B | (A2 G2) | F4 |]\nw:  Glo- * * * * * * * * * * * * * * * ri- a, in ex- cel- sis De- * o! \n[V: S1V2]  (F A/G/ F2 | F G/F/ E2 | E F/E/ D2 | C3/2) C/ C2 | C E F F | (F2 E2) | C4 |]\n[V: S2V1]  (A,2 D2 | D2 C2 | C2 B,2 | G,) F, E,2 | F, C C D | (C3 B,) | A,4 |]\n[V: S2V2]  (F,2 D, F, | G,2 C, E, | F,2 B,, D, | E,) D, (C, B,,) | A,, C, F, B,, | C,4 | F,4 |]\n"
   },
   {
+    "id": "arirang",
+    "title": "Arirang",
+    "category": "Folk songs around the world",
+    "origin": "Korea / Korean folk song",
+    "native_title": "",
+    "aliases": [
+      "아리랑"
+    ],
+    "tempo": 80,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "arirang.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=305",
+    "abc": "X:1\nT:Arirang\nC:New practice harmony: The Great Gallery (CC0).\nM:3/4\nL:1/8\nQ:1/4=80\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] D3 E D E | G3 A G A | B2 A B G E | D3 E D E |\n[V:S1V2] B,3 B, B, B, | B,3 B, B, B, | B,2 B, B, B, B, | B,3 B, B, B, |\n[V:S2V1] G,3 D, D, D, | D,3 D, D, D, | E,2 E, E, E, G, | G,3 D, D, D, |\n[V:S2V2] G,,3 G,, G,, G,, | G,,3 G,, G,, G,, | G,,2 G,, G,, E,, E,, | G,,3 G,, G,, G,, |\n[V:S1V1] G3 A G A | B3 A D E | G3 A G2 | G4 z2 |\n[V:S1V2] B,3 B, B, B, | B,3 B, B, B, | B,3 B, B,2 | B,4 z2 |\n[V:S2V1] D,3 D, D, D, | D,3 D, D, D, | D,3 D, D,2 | D,4 z2 |\n[V:S2V2] G,,3 G,, G,, G,, | G,,3 G,, G,, G,, | G,,3 G,, G,,2 | G,,4 z2 |\n[V:S1V1] d4 d2 | d2 B2 A2 | d2 B A G E | D4 z2 |\n[V:S1V2] B,4 B,2 | B,2 B,2 B,2 | B,2 B, B, B, B, | B,4 z2 |\n[V:S2V1] D,4 D,2 | D,2 D,2 D,2 | D,2 D, D, D, D, | D,4 z2 |\n[V:S2V2] G,,4 G,,2 | G,,2 G,,2 G,,2 | G,,2 G,, G,, G,, G,, | G,,4 z2 |\n[V:S1V1] G3 G G A | B3 A D E | G3 A G2 | G4 |]\n[V:S1V2] B,3 B, B, B, | B,3 B, B, B, | B,3 B, B,2 | B,4 |]\n[V:S2V1] D,3 D, D, D, | D,3 D, D, D, | D,3 D, D,2 | D,4 |]\n[V:S2V2] G,,3 G,, G,, G,, | G,,3 G,, G,, G,, | G,,3 G,, G,,2 | G,,4 |]\n"
+  },
+  {
     "id": "as-with-gladness-men-of-old",
     "title": "As With Gladness Men of Old",
     "category": "Hymns & spirituals",
@@ -82,6 +131,24 @@
     "source": "auld-lang-syne.abc",
     "source_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "abc": "X:1\nT:Auld Lang Syne\nC:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.\nM:4/4\nL:1/4\nQ:1/4=88\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] G, | C3/2 C/ C E | D3/2 C/ D E | C3/2 C/ E G |\n[V:S1V2] G, | G,3/2 G,/ G, G, | G,3/2 G,/ G, G, | G,3/2 G,/ G, G, |\n[V:S2V1] E, | E,3/2 E,/ E, E, | D,3/2 D,/ D, D, | E,3/2 E,/ E, E, |\n[V:S2V2] C, | C,3/2 C,/ C, C, | B,,3/2 B,,/ B,, B,, | C,3/2 C,/ C, C, |\n[V:S1V1] A3 A | G3/2 E/ E C | D3/2 C/ D E | C3/2 A,/ A, G, |\n[V:S1V2] A,3 A, | G,3/2 G,/ G, G, | G,3/2 G,/ G, G, | A,3/2 A,/ A, F, |\n[V:S2V1] F,3 F, | E,3/2 E,/ E, E, | D,3/2 D,/ D, D, | C,3/2 C,/ C, C, |\n[V:S2V2] C,3 C, | C,3/2 C,/ C, C, | B,,3/2 B,,/ B,, B,, | F,,3/2 F,,/ F,, A,, |\n[V:S1V1] C3 A | G3/2 E/ E C | D3/2 C/ D A | G3/2 E/ E G |\n[V:S1V2] E,3 C | C3/2 C/ C C | B,3/2 B,/ B, B, | C3/2 C/ C C |\n[V:S2V1] C,3 E, | E,3/2 E,/ E, E, | D,3/2 D,/ D, D, | E,3/2 E,/ E, E, |\n[V:S2V2] G,,3 G,, | G,,3/2 G,,/ G,, G,, | G,,3/2 G,,/ G,, G,, | G,,3/2 G,,/ G,, G,, |\n[V:S1V1] A3 c | G3/2 E/ E C | D3/2 C/ D E | C3/2 A,/ A, G, |\n[V:S1V2] C3 C | C3/2 C/ C C | B,3/2 B,/ B, B, | A,3/2 A,/ A, F, |\n[V:S2V1] F,3 A, | G,3/2 G,/ G, G, | G,3/2 D,/ D, D, | C,3/2 C,/ C, C, |\n[V:S2V2] F,,3 F,, | E,,3/2 C,,/ C,, E,, | G,,3/2 G,,/ G,, G,, | F,,3/2 F,,/ F,, A,, |\n[V:S1V1] C3 |]\n[V:S1V2] E,3 |]\n[V:S2V1] C,3 |]\n[V:S2V2] G,,3 |]\n"
+  },
+  {
+    "id": "bahay-kubo",
+    "title": "Bahay Kubo",
+    "category": "Folk songs around the world",
+    "origin": "Philippines / Tagalog folk song",
+    "native_title": "",
+    "aliases": [
+      "Nipa Hut",
+      "Filipino"
+    ],
+    "tempo": 108,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "bahay-kubo.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=617",
+    "abc": "X:1\nT:Bahay Kubo\nC:New practice harmony: The Great Gallery (CC0).\nM:3/4\nL:1/8\nQ:1/4=108\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] z4 G2 | c4 d2 | B4 G2 | A4 c2 |\n[V:S1V2] z4 C2 | E4 E2 | D4 D2 | F4 F2 |\n[V:S2V1] z4 E,2 | G,4 G,2 | G,4 G,2 | F,4 F,2 |\n[V:S2V2] z4 C,2 | C,4 C,2 | B,,4 B,,2 | C,4 A,,2 |\n[V:S1V1] G4 E F | G2 A2 G2 | F4 B c | d2 e2 d2 |\n[V:S1V2] E4 E E | E2 E2 E2 | F4 F F | G2 D2 D2 |\n[V:S2V1] G,4 G, G, | G,2 G,2 G,2 | A,4 A, A, | G,2 G,2 G,2 |\n[V:S2V2] C,4 C, C, | C,2 C,2 C,2 | C,4 C, C, | B,,2 B,,2 B,,2 |\n[V:S1V1] c4 G G | c4 d c | B4 d c | A A B2 A2 |\n[V:S1V2] E4 E E | E4 E E | D4 D D | F F F2 F2 |\n[V:S2V1] G,4 G, G, | G,4 G, G, | G,4 G, G, | F, F, A,2 A,2 |\n[V:S2V2] C,4 C, C, | C,4 C, C, | B,,4 B,, B,, | C, C, C,2 C,2 |\n[V:S1V1] G4 G2 | A4 A2 | B3 A G2 | c6- |\n[V:S1V2] E4 E2 | F4 F2 | D3 D D2 | E6- |\n[V:S2V1] G,4 G,2 | F,4 F,2 | G,3 G, G,2 | G,6- |\n[V:S2V2] C,4 C,2 | C,4 C,2 | B,,3 B,, B,,2 | C,6- |\n[V:S1V1] c4 G2 | c3 d c2 | B4 G2 | A2 A B A2 |\n[V:S1V2] E4 E2 | E3 E E2 | D4 D2 | F2 F F F2 |\n[V:S2V1] G,4 G,2 | G,3 G, G,2 | G,4 G,2 | F,2 F, A, A,2 |\n[V:S2V2] C,4 C,2 | C,3 C, C,2 | B,,4 B,,2 | C,2 C, C, C,2 |\n[V:S1V1] G4 E F | G2 A2 G2 | F4 B c | d2 e2 d2 |\n[V:S1V2] E4 E E | E2 E2 E2 | F4 F F | G2 D2 D2 |\n[V:S2V1] G,4 G, G, | G,2 G,2 G,2 | A,4 A, A, | G,2 G,2 G,2 |\n[V:S2V2] C,4 C, C, | C,2 C,2 C,2 | C,4 C, C, | B,,2 B,,2 B,,2 |\n[V:S1V1] c3 G G2 | c3 d c2 | B4 B2 | A2 A2 B2 |\n[V:S1V2] E3 E E2 | E3 E E2 | D4 D2 | F2 F2 F2 |\n[V:S2V1] G,3 G, G,2 | G,3 G, G,2 | G,4 G,2 | F,2 F,2 A,2 |\n[V:S2V2] C,3 C, C,2 | C,3 C, C,2 | B,,4 B,,2 | C,2 C,2 C,2 |\n[V:S1V1] G4 G G | A2 A2 A2 | B2 B2 B2 | B B A2 B2 |\n[V:S1V2] E4 E E | F2 F2 F2 | D2 D2 D2 | D D D2 D2 |\n[V:S2V1] G,4 G, G, | F,2 F,2 F,2 | G,2 G,2 G,2 | G, G, G,2 G,2 |\n[V:S2V2] C,4 C, C, | C,2 C,2 C,2 | B,,2 B,,2 B,,2 | B,, B,, B,,2 B,,2 |\n[V:S1V1] c6- | c4 |]\n[V:S1V2] E6- | E4 |]\n[V:S2V1] G,6- | G,4 |]\n[V:S2V2] C,6- | C,4 |]\n"
   },
   {
     "id": "be-thou-my-vision",
@@ -120,6 +187,43 @@
     "abc": "X:1\nT:Come Thou Fount Of Every Blessing\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 3/4\nL: 1/4\nQ:1/4=90\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: Eb\n[V: S1V1]  G/ F/ | E E G/ B/ | F F G/ B/ | c B G/ F/ | E2\nw: Come, Thou Fount of ev- ery bless- ing, Tune my heart to sing Thy grace; \n[V: S1V2]  E/ D/ | E E E/ E/ | D D E/ E/ | E E E/ D/ | E2\n[V: S2V1]  B,/ A,/ | G, G, B,/ B,/ | B, B, B,/ G,/ | A, G, B,/ A,/ | G,2\n[V: S2V2]  E,/ E,/ | E, E, E,/ G,,/ | B,, B,, E,/ E,/ | A, E, B,,/ B,,/ | E,2\n[V: S1V1]  G/ F/ | E E G/ B/ | F F G/ B/ | c B G/ F/ | E2\nw: Streams of mer- cy, ne- ver ceas- ing, Call for songs of loud- est praise. \n[V: S1V2]  E/ D/ | E E E/ E/ | D D E/ E/ | E E E/ D/ | E2\n[V: S2V1]  B,/ A,/ | G, G, B,/ B,/ | B, B, B,/ G,/ | A, G, B,/ A,/ | G,2\n[V: S2V2]  E,/ E,/ | E, E, E,/ G,,/ | B,, B,, E,/ E,/ | A, E, B,,/ B,,/ | E,2\n[V: S1V1]  B/ c//d// | e d c/ B/ | c/B/ G B/ c//d// | e d c/ B/ | e2\nw: Teach me * some me- lo- dious son- * net, Sung by * fla- ming tongues a- bove. \n[V: S1V2]  E/ A/ | G B A/ G/ | E E G/ F/ | E B A/ F/ | G2\n[V: S2V1]  B,/ A,/ | B, G, A,/ B,/ | A,/B,/ B, B,/ F,/ | G, B, E/ D/ | E2\n[V: S2V2]  G,/ F,/ | E, E, E,/ E,/ | A,/G,/ E, E,/ D,/ | C, G, A,/ B,/ | E,2\n[V: S1V1]  G/ F/ | E E G/ B/ | F F G/ B/ | c B G/ F/ | E2 |]\nw: Praise the mount! I'm fixed u- pon it, Mount of Thy re- deem- ing love. \n[V: S1V2]  E/ D/ | E E E/ E/ | D D E/ E/ | E E E/ D/ | E2 |]\n[V: S2V1]  B,/ A,/ | G, G, B,/ B,/ | B, B, B,/ G,/ | A, G, B,/ A,/ | G,2 |]\n[V: S2V2]  E,/ E,/ | E, E, E,/ G,,/ | B,, B,, E,/ E,/ | A, E, B,,/ B,,/ | E,2 |]\n"
   },
   {
+    "id": "david-melech-yisrael",
+    "title": "David Melech Yisrael",
+    "category": "Jewish songs",
+    "origin": "Hasidic / Hebrew",
+    "native_title": "דוד מלך ישראל",
+    "aliases": [
+      "Dovid melech",
+      "David king of Israel"
+    ],
+    "tempo": 108,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "david-melech-yisrael.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/DavidMelechYisraelSong.abc",
+    "abc": "X:1\nT:David Melech Yisrael\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=108\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] G4 | E4 | G G G G | E4 |\nw: Da- | vid | me- lech Yis- ra- | el,\n[V:S1V2] C4 | C4 | C C C C | C4 |\n[V:S2V1] E,4 | G,4 | E, E, E, E, | G,4 |\n[V:S2V2] C,4 | C,4 | C, C, C, C, | C,4 |\n[V:S1V1] G4 | A4 | G2 F2 | E2 D2 |\nw: chai, | chai | ve- ka- | yam! *\n[V:S1V2] C4 | C4 | C2 G,2 | G,2 G,2 |\n[V:S2V1] E,4 | F,4 | E,2 E,2 | E,2 E,2 |\n[V:S2V2] C,4 | C,4 | C,2 C,2 | C,2 C,2 |\n[V:S1V1] C C D D | C C D2 | C2 F2 | E D E2 |\nw: Da- vid me- lech | Yis- ra- el, | chai, chai | ve- ka- yam!\n[V:S1V2] G, G, G, G, | G, G, G,2 | A,2 A,2 | G, G, G,2 |\n[V:S2V1] E, E, E, E, | E, E, E,2 | F,2 F,2 | E, E, E,2 |\n[V:S2V2] C, C, C, C, | C, C, C,2 | C,2 C,2 | C, C, C,2 |\n[V:S1V1] C C D D | C C D2 | C2 F2 | E D C2 |]\nw: Da- vid me- lech | Yis- ra- el, | chai, chai | ve- ka- yam!\n[V:S1V2] G, G, G, G, | G, G, G,2 | A,2 A,2 | G, G, G,2 |]\n[V:S2V1] E, E, E, E, | E, E, E,2 | F,2 F,2 | E, E, E,2 |]\n[V:S2V2] C, C, C, C, | C, C, C,2 | C,2 C,2 | C, C, C,2 |]\n"
+  },
+  {
+    "id": "dayenu",
+    "title": "Dayenu",
+    "category": "Jewish songs",
+    "origin": "Passover / Hebrew",
+    "native_title": "דיינו",
+    "aliases": [
+      "Dayeinu",
+      "Dai dayenu",
+      "Pesach"
+    ],
+    "tempo": 104,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "dayenu.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/Dayeinu_Cw.abc",
+    "abc": "X:1\nT:Dayenu\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=104\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] E G G G | G A G F | E G G G | G A G F |\nw: I- lu ho- tsi- | ho- tsi- a- nu | ho- tsi- a- nu | mi- mits- ra- yim,\n[V:S1V2] C C C C | C G, G, G, | G, G, G, G, | G, G, G, G, |\n[V:S2V1] G, E, E, E, | E, E, E, E, | E, E, E, E, | E, E, E, E, |\n[V:S2V2] C, C, C, C, | C, C, C, C, | C, C, C, C, | C, C, C, C, |\n[V:S1V1] E G D F | E G D F | E2 D2 | C4 |\nw: ho- tsi- a- nu | mi- mits- ra- yim, | da- yei- | nu.\n[V:S1V2] G, G, G, G, | G, G, G, G, | G,2 G,2 | G,4 |\n[V:S2V1] E, E, E, E, | E, E, E, E, | E,2 E,2 | E,4 |\n[V:S2V2] C, C, C, C, | C, C, C, C, | C,2 C,2 | C,4 |\n[V:S1V1] E G G G | G A G F | E G G G | G A G F |\nw: I- lu ho- tsi- | ho- tsi- a- nu | ho- tsi- a- nu | mi- mits- ra- yim,\n[V:S1V2] G, G, G, G, | G, G, G, G, | G, G, G, G, | G, G, G, G, |\n[V:S2V1] E, E, E, E, | E, E, E, E, | E, E, E, E, | E, E, E, E, |\n[V:S2V2] C, C, C, C, | C, C, C, C, | C, C, C, C, | C, C, C, C, |\n[V:S1V1] E G D F | E G D F | E2 D2 | C4 |\nw: ho- tsi- a- nu | mi- mits- ra- yim, | da- yei- | nu.\n[V:S1V2] G, G, G, G, | G, G, G, G, | G,2 G,2 | G,4 |\n[V:S2V1] E, E, E, E, | E, E, E, E, | E,2 E,2 | E,4 |\n[V:S2V2] C, C, C, C, | C, C, C, C, | C,2 C,2 | C,4 |\n[V:S1V1] E2 E2 | G F3 | F2 F2 | A G3 |\nw: * * | * * | * * | * *\n[V:S1V2] G,2 G,2 | A, A,3 | A,2 A,2 | G, G,3 |\n[V:S2V1] E,2 E,2 | F, F,3 | F,2 F,2 | E, E,3 |\n[V:S2V2] C,2 C,2 | C, C,3 | C,2 C,2 | C, C,3 |\n[V:S1V1] G2 G2 | c B2 B | B G A B | c G E C |\nw: * * | * * * | * * * * | * * * *\n[V:S1V2] G,2 G,2 | B, B,2 B, | B, B, B, B, | C C C C |\n[V:S2V1] E,2 E,2 | D, D,2 D, | D, D, D, D, | E, E, E, E, |\n[V:S2V2] C,2 C,2 | G,, G,,2 G,, | G,, G,, G,, G,, | G,, G,, G,, G,, |\n[V:S1V1] E2 E2 | G F3 | F2 F2 | A G3 |\nw: * * | * * | * * | * *\n[V:S1V2] C2 C2 | C C3 | C2 C2 | C C3 |\n[V:S2V1] E,2 E,2 | F, F,3 | F,2 F,2 | E, E,3 |\n[V:S2V2] G,,2 G,,2 | A,, A,,3 | A,,2 A,,2 | G,, G,,3 |\n[V:S1V1] G2 G2 | c B2 B | B G A B | c4 |]\nw: * * | * * * | * * * * | *\n[V:S1V2] C2 C2 | B, B,2 B, | B, B, B, B, | C4 |]\n[V:S2V1] E,2 E,2 | D, D,2 D, | D, D, D, D, | E,4 |]\n[V:S2V2] G,,2 G,,2 | G,, G,,2 G,, | G,, G,, G,, G,, | G,,4 |]\n"
+  },
+  {
     "id": "deck-the-halls",
     "title": "Deck the Halls",
     "category": "Christmas carols",
@@ -130,6 +234,25 @@
     "source": "deck-the-halls.abc",
     "source_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "abc": "X:1\nT:Deck the Halls\nC:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.\nM:4/4\nL:1/4\nQ:1/4=104\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] G3/2 F/ E D | C D E C | D/ E/ F/ D/ E3/2 D/ | C B, C2 |\n[V:S1V2] C3/2 C/ C C | C C C C | B,/ B,/ B,/ B,/ B,3/2 B,/ | C G, G,2 |\n[V:S2V1] E,3/2 E,/ E, E, | E, E, E, E, | D,/ D,/ D,/ D,/ D,3/2 D,/ | E, E, E,2 |\n[V:S2V2] G,,3/2 G,,/ G,, G,, | G,, G,, G,, G,, | G,,/ G,,/ G,,/ G,,/ G,,3/2 G,,/ | G,, C, C,2 |\n[V:S1V1] G3/2 F/ E D | C D E C | D/ E/ F/ D/ E3/2 D/ | C B, C2 |\n[V:S1V2] G,3/2 G,/ G, G, | G, G, G, G, | G,/ G,/ G,/ G,/ G,3/2 G,/ | G, G, G,2 |\n[V:S2V1] E,3/2 E,/ E, E, | E, E, E, E, | D,/ D,/ D,/ D,/ D,3/2 D,/ | E, E, E,2 |\n[V:S2V2] C,3/2 C,/ C, C, | C, C, C, C, | B,,/ B,,/ B,,/ B,,/ B,,3/2 B,,/ | C, C, C,2 |\n[V:S1V1] D3/2 E/ F D | E3/2 F/ G D | E/ F/ G/ A/ B c | B A G2 |\n[V:S1V2] G,3/2 G,/ G, G, | G,3/2 G,/ G, G, | G,/ G,/ G,/ E/ E E | D D D2 |\n[V:S2V1] D,3/2 D,/ D, D, | E,3/2 E,/ E, E, | E,/ E,/ E,/ G,/ G, G, | G, B, B,2 |\n[V:S2V2] B,,3/2 B,,/ B,, B,, | C,3/2 C,/ C, C, | C,/ C,/ C,/ C,/ C, C, | G,, G,, G,,2 |\n[V:S1V1] G3/2 F/ E D | C D E C | A/ A/ A/ A/ G3/2 F/ | E D C2 |]\n[V:S1V2] E3/2 E/ E C | C C C C | C/ C/ C/ C/ C3/2 C/ | C C C2 |]\n[V:S2V1] C3/2 C/ C E, | E, E, E, E, | F,/ F,/ F,/ F,/ A,3/2 A,/ | G, G, G,2 |]\n[V:S2V2] G,,3/2 G,,/ G,, G,, | G,, G,, G,, G,, | F,,/ F,,/ F,,/ F,,/ F,,3/2 F,,/ | C,, E,, E,,2 |]\n"
+  },
+  {
+    "id": "durme-durme",
+    "title": "Durme, Durme",
+    "category": "Jewish songs",
+    "origin": "Sephardic / Ladino · Bosnia",
+    "native_title": "",
+    "aliases": [
+      "Durme durme",
+      "Ladino lullaby",
+      "Sephardi"
+    ],
+    "tempo": 76,
+    "note": "Traditional Ladino lullaby melody",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "durme-durme.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/Durme_Durme.abc",
+    "abc": "X:1\nT:Durme, Durme\nC:New practice harmony: The Great Gallery (CC0).\nM:3/4\nL:1/8\nQ:1/4=76\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Bm\n[V:S1V1] B,3 C D E | F4- F F | B2 A3 G | G2 F4 |\n[V:S1V2] B,3 B, B, D | D4- D D | E2 E3 E | D2 D4 |\n[V:S2V1] F,3 F, F, F, | F,4- F, F, | G,2 G,3 G, | F,2 F,4 |\n[V:S2V2] D,3 D, B,, B,, | B,,4- B,, B,, | B,,2 B,,3 B,, | B,,2 B,,4 |\n[V:S1V1] E2 G3 G | F E D3 C | E D4 C1/2 B,1/2 | F6 |\n[V:S1V2] E2 E3 E | D D D3 B, | B, B,4 B,1/2 B,1/2 | B,6 |\n[V:S2V1] G,2 G,3 G, | F, F, F,3 F, | F, F,4 F,1/2 F,1/2 | F,6 |\n[V:S2V2] B,,2 B,,3 B,, | B,, B,, B,,3 D, | D, B,,4 D,1/2 D,1/2 | D,6 |\n[V:S1V1] E2 G3 G | F E D3 C | E D C3 B, | B,6 |]\n[V:S1V2] B,2 B,3 B, | B, B, B,3 B, | A, A, A,3 A, | F,6 |]\n[V:S2V1] G,2 G,3 G, | F, F, F,3 F, | E, E, E,3 E, | D,6 |]\n[V:S2V2] E,2 E,3 E, | D, D, B,,3 D, | C, C, C,3 C, | B,,6 |]\n"
   },
   {
     "id": "for-the-beauty-of-the-earth",
@@ -228,6 +351,99 @@
     "abc": "X:1\nT:Hark! The Herald Angels Sing\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 4/4\nL: 1/4\nQ:1/4=100\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: F\n[V: S1V1]  C F F3/2 E/ | F A (A G) | c c c3/2 B/ | A G A2 |\nw: Hark! The her- ald an- gels sing, * \"Glo- ry to the new- born King; \n[V: S1V2]  C C C3/2 C/ | C F (F E) | F E D G | F E F2 | C C C3/2 C/ |\n[V: S2V1]  A, A, A,3/2 G,/ | F, C C2 | C C D D | C C C2 | A, A, A,3/2 G,/ |\n[V: S2V2]  F, F, F, C, | A,, F,, C,2 | A,, A,, B,, B,, | C, C, F,2 | F, F, F, C, |\n[V: S1V1]  C F F3/2 E/ | F A (A G) | c G G3/2 E/ | E D C2 |\nw: Peace on earth, and mer- cy mild, * God and sin- ners re- con- ciled!\" \n[V: S1V2]  A, F F2 | E D E3/2 C/ | C =B, C2 |\n[V: S2V1]  F, C D2 | C D C3/2 G,/ | A, F, E,2 |\n[V: S2V2]  D, C, (=B,,3/2 G,,/) | A,, =B,, C, E, | F, G,, C,2 |\n[V: S1V1]  c c c F | B A (A G) | c c c F | B A (A G) |\nw: Joy- ful, all ye na- tions rise, * Join the tri- umph of the skies; * \n[V: S1V2]  C C C F | G F (F E) | C C C F | G F (F E) |\n[V: S2V1]  C C C C | C C C2 | C C C C | C C C2 |\n[V: S2V2]  C C C A, | E, F, C,2 | C C C A, | E, F, C,2 |\n[V: S1V1]  d d d c | B A B2 | G A/B/ c3/2 F/ | F G A2 |\nw: With th'an- gel- ic host pro- claim, \"Christ is * born in Beth- le- hem!\" \n[V: S1V2]  B B B A | G ^F G2 | E E F3/2 C/ | C E F2 |\n[V: S2V1]  D D D D | D D D2 | C C C3/2 A,/ | A, C C2 |\n[V: S2V2]  B,, B,, B,, B,, | B,, D, G,2 | B, B, A, F, | C, C, F,2 |\n[V: S1V1]  d3/2 d/ d c | B A B2 | G A/B/ c3/2 F/ | F G F2 |]\nw: Hark! the her- ald an- gels sing, \"Glo- ry * to the new- born King!\" \n[V: S1V2]  B B B A | G ^F G2 | C E F3/2 F/ | C C C2 |]\n[V: S2V1]  D D D C | B, A, B,2 | C C C3/2 A,/ | A, B, A,2 |]\n[V: S2V2]  B, B, B, A, | G, ^F, (G, =F,) | E, B, A, F, | C, C, F,2 |]\n"
   },
   {
+    "id": "hatikvah",
+    "title": "Hatikvah",
+    "category": "Jewish songs",
+    "origin": "Israel / Hebrew",
+    "native_title": "התקווה",
+    "aliases": [
+      "Hatikva",
+      "Ha Tikva",
+      "The Hope"
+    ],
+    "tempo": 80,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection Samuel Cohen melody adaptation, 1888; Naftali Herz Imber text, 1878. Public domain in the United States. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "hatikvah.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/HaTikvaSong.abc",
+    "abc": "X:1\nT:Hatikvah\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=80\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Dm\n[V:S1V1] D E F G A2 A2 | B A B d A4 | G2 G E F2 F2 | E D E F D2 z A, |\nw: Kol * od ba- le- vav | p'- * ni- * ma | ne- fesh ye- hu- di | ho- * mi- * a ul-\n[V:S1V2] A, A, A, A, A,2 A,2 | A, A, A, F F4 | E2 E E E2 E2 | D D D D D2 z A, |\n[V:S2V1] F, F, F, F, F,2 F,2 | F, F, F, A, A,4 | C2 C G, G,2 G,2 | F, F, F, F, F,2 z F, |\n[V:S2V2] D, D, D, D, D,2 D,2 | D, D, D, D, D,4 | C,2 C, C, C,2 C,2 | A,, A,, A,, A,, A,,2 z D, |\n[V:S1V1] D E F G A2 A2 | B A B d A4 | G2 G E F2 F2 | E D E F D2 z2 |\nw: fa- a- tey * miz- rach | ka- * di- * ma | a- yin l'- tsi- yon | tso- * fi- * ya.\n[V:S1V2] A, A, A, A, A,2 A,2 | A, A, A, F F4 | E2 E E E2 E2 | D D D D D2 z2 |\n[V:S2V1] F, F, F, F, F,2 F,2 | F, F, F, A, A,4 | C2 C G, G,2 G,2 | F, F, F, F, F,2 z2 |\n[V:S2V2] D, D, D, D, D,2 D,2 | D, D, D, D, D,4 | C,2 C, C, C,2 C,2 | A,, A,, A,, A,, A,,2 z2 |\n[V:S1V1] D2 d2 d2 d2 | c d c B A4 | D2 d2 d2 d2 | c d c B A4 |\nw: Od lo av- da | tik- va- tey- * nu | ha- tik- va bat | shnot al- pa- * yim\n[V:S1V2] D2 D2 D2 D2 | C C C C C4 | D2 D2 D2 D2 | C C C C C4 |\n[V:S2V1] F,2 F,2 F,2 F,2 | F, F, F, F, F,4 | F,2 F,2 F,2 F,2 | F, F, F, F, F,4 |\n[V:S2V2] A,,2 A,,2 A,,2 A,,2 | A,, A,, A,, A,, A,,4 | A,,2 A,,2 A,,2 A,,2 | A,, A,, A,, A,, A,,4 |\n[V:S1V1] c2 c c F2 F2 | G A B c A G F2 | G2 G2 F2 F F | E D E F D4 |\nw: li- yot am chof- shi | be- * ar- * tse- * nu | e- rets tsi- yon vi- | ru- sha- la- * yim\n[V:S1V2] C2 C C C2 C2 | C C C C C C C2 | B,2 B,2 B,2 B, B, | A, A, A, A, A,4 |\n[V:S2V1] F,2 F, F, F,2 F,2 | F, F, F, F, F, F, F,2 | D,2 D,2 D,2 D, D, | D, D, D, D, D,4 |\n[V:S2V2] A,,2 A,, A,, A,,2 A,,2 | A,, A,, A,, A,, A,, A,, A,,2 | G,,2 G,,2 G,,2 G,, G,, | F,, F,, F,, F,, F,,4 |\n[V:S1V1] G2 G E F2 F2 | G A B c A G F2 | G2 G2 F2 F F | E D E F D4 |]\nw: li- yot am chof- shi | be- * ar- * tse- * nu | e- rets tsi- yon vi- | ru- sha- la- * yim\n[V:S1V2] C2 C C C2 C2 | C C C C C C C2 | B,2 B,2 B,2 B, B, | A, A, A, A, A,4 |]\n[V:S2V1] C,2 C, C, E,2 E,2 | F, F, F, F, F, F, F,2 | D,2 D,2 D,2 D, D, | D, D, D, D, D,4 |]\n[V:S2V2] E,,2 E,, G,, G,,2 G,,2 | A,, A,, A,, A,, A,, A,, A,,2 | G,,2 G,,2 G,,2 G,, G,, | F,, F,, F,, F,, F,,4 |]\n"
+  },
+  {
+    "id": "hava-nagila",
+    "title": "Hava Nagila",
+    "category": "Jewish songs",
+    "origin": "Hasidic / Hebrew",
+    "native_title": "הבה נגילה",
+    "aliases": [
+      "Hava Nagilah",
+      "Let us rejoice"
+    ],
+    "tempo": 108,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection Traditional Hasidic melody; Hebrew song published in 1922. Public domain in the United States. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "hava-nagila.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/HavaNagila.abc",
+    "abc": "X:1\nT:Hava Nagila\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=108\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Am\n[V:S1V1] E2 E3 ^G F E | ^G2 G3 B A G | A2 A3 c B A | ^G2 F1/2 E1/2 F =G4 |\nw: Ha- va na- gi- la, | ha- va na- gi- la, | ha- va na- gi- la, | ve ne- s'- ma- cha.\n[V:S1V2] B,2 B,3 B, B, B, | B,2 B,3 B, B, B, | C2 C3 C C C | C2 C1/2 C1/2 C C4 |\n[V:S2V1] ^G,2 G,3 G, G, G, | ^G,2 G,3 G, G, G, | A,2 A,3 A, A, A, | G,2 G,1/2 G,1/2 G, G,4 |\n[V:S2V2] E,2 E,3 E, E, E, | E,2 E,3 E, E, E, | E,2 E,3 E, E, E, | E,2 E,1/2 E,1/2 E, E,4 |\n[V:S1V1] E2 E3 ^G F E | ^G2 G3 B A G | A2 A3 c B A | ^G2 F1/2 E1/2 F E4 |\nw: Ha- va na- gi- la, | ha- va na- gi- la, | ha- va na- gi- la, | ve ne- s'- ma- -cha.\n[V:S1V2] B,2 B,3 B, B, B, | B,2 B,3 B, B, B, | C2 C3 C C C | B,2 B,1/2 B,1/2 B, B,4 |\n[V:S2V1] ^G,2 G,3 G, G, G, | ^G,2 G,3 G, G, G, | A,2 A,3 A, A, A, | ^G,2 G,1/2 G,1/2 G, G,4 |\n[V:S2V2] E,2 E,3 E, E, E, | E,2 E,3 E, E, E, | E,2 E,3 E, E, E, | E,2 E,1/2 E,1/2 E, E,4 |\n[V:S1V1] ^G G2 F E E E2 | F F2 E D D D2 | D2 F3 E D D | A2 ^G2 F1/2 E1/2 F =G2- |\nw: Ha- va na- re- ne- na, | ha- va na- re- ne- na, | ha- va na- re- ne- | na, ve ne- s'- ma- cha.\n[V:S1V2] B, B,2 B, B, B, B,2 | D D2 D D D D2 | D2 D3 D D D | D2 D2 D1/2 D1/2 D F2- |\n[V:S2V1] ^G, G,2 G, G, G, G,2 | A, A,2 A, A, A, A,2 | A,2 A,3 A, A, A, | A,2 A,2 A,1/2 A,1/2 A, A,2- |\n[V:S2V2] E, E,2 E, E, E, E,2 | D, D,2 F, F, F, F,2 | F,2 D,3 F, F, F, | F,2 F,2 D,1/2 F,1/2 D, D,2- |\n[V:S1V1] G2 ^G G2 F E E | E2 F F2 E D D | D2 D2 F3 E | D D A2 ^G2 F1/2 E1/2 F |\nw: * Ha- va na- re- ne- | na, ha- va na- re- ne- | na, ha- va na- | re- ne- na, ve ne- s'- ma-\n[V:S1V2] F2 E E2 E E E | D2 D D2 D D D | D2 D2 D3 D | D D D2 D2 D1/2 D1/2 D |\n[V:S2V1] A,2 ^G, G,2 G, G, G, | F,2 F, F,2 F, F, F, | F,2 F,2 F,3 F, | F, F, F,2 F,2 F,1/2 F,1/2 F, |\n[V:S2V2] D,2 B,, B,,2 B,, B,, B,, | A,,2 A,, A,,2 A,, A,, A,, | A,,2 A,,2 A,,3 A,, | A,, A,, A,,2 A,,2 A,,1/2 A,,1/2 A,, |\n[V:S1V1] E4 A4 | c4 A2 c2 | A2 c2 A1/2 A1/2 A c3/2 B1/2 | A c B A A1/2 A1/2 A c3/2 B1/2 |\nw: -cha. U- | ru! U- ru | a- chim, U- ru a- chim ba- | lev sa- me- ach, u- ru a- chim ba-\n[V:S1V2] C4 C4 | C4 C2 C2 | C2 C2 C1/2 C1/2 C C3/2 C1/2 | C C C C C1/2 C1/2 C C3/2 C1/2 |\n[V:S2V1] E,4 E,4 | E,4 E,2 E,2 | E,2 E,2 E,1/2 E,1/2 E, E,3/2 E,1/2 | E, E, E, E, E,1/2 E,1/2 E, E,3/2 E,1/2 |\n[V:S2V2] A,,4 A,,4 | A,,4 A,,2 A,,2 | A,,2 A,,2 A,,1/2 A,,1/2 A,, A,,3/2 A,,1/2 | A,, A,, A,, A,, A,,1/2 A,,1/2 A,, A,,3/2 A,,1/2 |\n[V:S1V1] A c B A B1/2 B1/2 B d3/2 c1/2 | B d c B B1/2 B1/2 B d3/2 c1/2 | B d c B B1/2 B1/2 B e2 | B1/2 B1/2 B e3/2 E1/2 E E c1/2 B1/2 A1/2 ^G1/2 |\nw: lev sa- me- ach, U- ru a- chim ba- | lev sa- me- ach, u- ru a- chim ba- | lev sa- me- ach, U- ru a- chim! | U- ru a- chim! Ba- lev sa- me- * * *\n[V:S1V2] D D D D D1/2 D1/2 D D3/2 D1/2 | D D D D D1/2 D1/2 D D3/2 D1/2 | E E E E E1/2 E1/2 E E2 | E1/2 E1/2 E E3/2 E1/2 E E E1/2 E1/2 E1/2 E1/2 |\n[V:S2V1] G, G, G, G, G,1/2 G,1/2 G, G,3/2 G,1/2 | G, G, G, G, G,1/2 G,1/2 G, G,3/2 G,1/2 | ^G, G, G, G, G,1/2 G,1/2 G, G,2 | ^G,1/2 G,1/2 G, G,3/2 G,1/2 G, G, G,1/2 G,1/2 G,1/2 G,1/2 |\n[V:S2V2] B,, B,, B,, B,, B,,1/2 B,,1/2 B,, B,,3/2 B,,1/2 | B,, B,, B,, B,, B,,1/2 B,,1/2 B,, B,,3/2 B,,1/2 | B,, B,, B,, B,, B,,1/2 B,,1/2 B,, B,,2 | B,,1/2 B,,1/2 B,, B,,3/2 B,,1/2 B,, B,, B,,1/2 B,,1/2 B,,1/2 B,,1/2 |\n[V:S1V1] A4 |]\nw: ach.\n[V:S1V2] E4 |]\n[V:S2V1] A,4 |]\n[V:S2V2] C,4 |]\n"
+  },
+  {
+    "id": "hava-nashira",
+    "title": "Hava Nashira",
+    "category": "Jewish songs",
+    "origin": "Hebrew round",
+    "native_title": "הבה נשירה",
+    "aliases": [
+      "Hava nashirah",
+      "Let us sing"
+    ],
+    "tempo": 92,
+    "note": "Traditional round melody · new harmonized setting",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "hava-nashira.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/HavaNashiraSong.abc",
+    "abc": "X:1\nT:Hava Nashira\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=92\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Bb\n[V:S1V1] B,4 F2 G2 | F4 B,4 | E4 D2 C B, | C4 B,4 |\nw: Ha- va na- | shi- ra, | shir ha- le- * | lu- ia!\n[V:S1V2] B,4 B,2 B,2 | B,4 B,4 | B,4 B,2 B, B, | A,4 A,4 |\n[V:S2V1] F,4 F,2 F,2 | F,4 F,4 | G,4 G,2 G, G, | A,4 F,4 |\n[V:S2V2] D,4 D,2 D,2 | D,4 D,4 | E,4 E,2 E, E, | F,4 C,4 |\n[V:S1V1] B4 A2 B2 | c4 d4 | B4 c2 d2 | e4 d4 |\nw: Ha- va na- | shi- ra, | shir ha- le- | lu- ia!\n[V:S1V2] B,4 B,2 B,2 | A,4 C4 | D4 D2 D2 | E4 E4 |\n[V:S2V1] F,4 F,2 F,2 | F,4 F,4 | F,4 F,2 F,2 | G,4 G,4 |\n[V:S2V2] D,4 D,2 D,2 | C,4 A,,4 | B,,4 B,,2 B,,2 | B,,4 B,,4 |\n[V:S1V1] d4 c2 B2 | A4 B4 | G4 F2 B2 | B A G A B4 |]\nw: Ha- va na- | shi- ra, | shir ha- le- | lu- * * * ia!\n[V:S1V2] D4 D2 D2 | C4 C4 | E4 E2 E2 | D D D D D4 |]\n[V:S2V1] F,4 F,2 F,2 | F,4 F,4 | E,4 G,2 G,2 | F, F, F, F, F,4 |]\n[V:S2V2] B,,4 B,,2 B,,2 | A,,4 A,,4 | B,,4 B,,2 B,,2 | B,, B,, B,, B,, B,,4 |]\n"
+  },
+  {
+    "id": "hevenu-shalom-aleichem",
+    "title": "Hevenu Shalom Aleichem",
+    "category": "Jewish songs",
+    "origin": "Hebrew folk song",
+    "native_title": "הבאנו שלום עליכם",
+    "aliases": [
+      "Heveinu",
+      "Havenu",
+      "Heveynu shalom aleychem",
+      "We bring peace"
+    ],
+    "tempo": 104,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "hevenu-shalom-aleichem.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/HeveinuShalomAleichem.abc",
+    "abc": "X:1\nT:Hevenu Shalom Aleichem\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=104\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Dm\n[V:S1V1] z A, D F A4 | F3 E E2 D2- | D D F A d4 | B3 A A2 G2- |\n[V:S1V2] z A, A, A, A,4 | A,3 A, A,2 A,2- | A, A, A, A, F4 | G3 G G2 G2- |\n[V:S2V1] z F, F, F, F,4 | F,3 F, F,2 F,2- | F, F, F, F, A,4 | B,3 B, B,2 B,2- |\n[V:S2V2] z D, D, D, D,4 | D,3 D, D,2 D,2- | D, D, D, D, D,4 | D,3 D, D,2 D,2- |\n[V:S1V1] G G A B A3 E | A3 G G2 F2- | F E F G A2 A2 | A2 A2 A3 G |\n[V:S1V2] G E E E E3 E | F3 F F2 F2- | F D D F F2 F2 | F2 F2 F3 F |\n[V:S2V1] B, A, A, A, A,3 A, | A,3 A, A,2 A,2- | A, A, A, A, A,2 A,2 | A,2 A,2 A,3 A, |\n[V:S2V2] D, ^C, C, C, C,3 C, | D,3 D, D,2 D,2- | D, F, D, D, D,2 D,2 | D,2 D,2 D,3 D, |\n[V:S1V1] F2 G2 A2 z A, | D F A4 F2- | F E E2 D3 D | F A d4 B2- |\n[V:S1V2] F2 F2 F2 z A, | A, A, A,4 A,2- | A, A, A,2 A,3 A, | B, B, B,4 B,2- |\n[V:S2V1] A,2 A,2 A,2 z F, | F, F, F,4 F,2- | F, F, F,2 F,3 F, | F, F, F,4 F,2- |\n[V:S2V2] D,2 D,2 D,2 z D, | D, D, D,4 D,2- | D, D, D,2 D,3 D, | D, D, D,4 D,2- |\n[V:S1V1] B A A2 G3 G | A B A3 E A2- | A G G2 F3 E | F G A2 A2 A2 |\n[V:S1V2] B, B, B,2 B,3 B, | A, A, A,3 A, A,2- | A, A, A,2 A,3 A, | A, A, A,2 A,2 A,2 |\n[V:S2V1] F, G, G,2 G,3 G, | E, E, E,3 E, E,2- | E, F, F,2 F,3 F, | F, F, F,2 F,2 F,2 |\n[V:S2V2] D, D, D,2 D,3 D, | ^C, C, C,3 C, C,2- | ^C, D, D,2 D,3 D, | D, D, D,2 D,2 D,2 |\n[V:S1V1] A2 A3 G F2 | E2 D2 |]\n[V:S1V2] A,2 A,3 A, A,2 | A,2 A,2 |]\n[V:S2V1] F,2 F,3 F, F,2 | F,2 F,2 |]\n[V:S2V2] D,2 D,3 D, D,2 | D,2 D,2 |]\n"
+  },
+  {
+    "id": "hinei-ma-tov",
+    "title": "Hinei Ma Tov",
+    "category": "Jewish songs",
+    "origin": "Hebrew / traditional minor melody",
+    "native_title": "הנה מה טוב",
+    "aliases": [
+      "Hine ma tov",
+      "Hineh mah tov"
+    ],
+    "tempo": 96,
+    "note": "Traditional minor-key version · Psalm 133",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "hinei-ma-tov.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/HineMaTov1_Dm_w.abc",
+    "abc": "X:1\nT:Hinei Ma Tov\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=96\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Dm\n[V:S1V1] D G G G | A1/2 G1/2 F F1/2 E1/2 D- | D F E1/2 D1/2 E | C D D2 |\nw: Hi- ne ma tov | u- * ma na- * im, | * she- vet 'a- chim | gam ya- chad.\n[V:S1V2] B, B, B, B, | A,1/2 A,1/2 A, A,1/2 A,1/2 A,- | A, A, A,1/2 A,1/2 A, | A, A, A,2 |\n[V:S2V1] G, D, D, D, | D,1/2 D,1/2 D, D,1/2 D,1/2 D,- | D, D, D,1/2 D,1/2 D, | D, D, D,2 |\n[V:S2V2] G,, G,, G,, G,, | F,,1/2 F,,1/2 F,, F,,1/2 F,,1/2 F,,- | F,, F,, F,,1/2 F,,1/2 F,, | F,, F,, F,,2 |\n[V:S1V1] D G G G | A1/2 G1/2 F F1/2 E1/2 D- | D F E1/2 D1/2 E | C D D2 |\nw: Hi- ne ma tov | u- * ma na- * im, | * she- vet 'a- chim | gam ya- chad.\n[V:S1V2] B, B, B, B, | A,1/2 A,1/2 A, A,1/2 A,1/2 A,- | A, A, A,1/2 A,1/2 A, | A, A, A,2 |\n[V:S2V1] D, D, D, D, | D,1/2 D,1/2 D, D,1/2 D,1/2 D,- | D, D, D,1/2 D,1/2 D, | D, D, D,2 |\n[V:S2V2] G,, G,, G,, G,, | F,,1/2 F,,1/2 F,, F,,1/2 F,,1/2 F,,- | F,, F,, F,,1/2 F,,1/2 F,, | F,, F,, F,,2 |\n[V:S1V1] C1/2 =B,1/2 C1/2 D D D1/2 | C1/2 =B,1/2 C1/2 D2- D1/2- | D1/2 E1/2 F1/2 G F1/2 E1/2 F1/2 | E1/2 D1/2 C1/2 D2 z1/2 |\nw: Hi- ne ma tov, hi- ne | * ma * tov, * | * a * * * * * | * * * *\n[V:S1V2] A,1/2 A,1/2 A,1/2 A, A, A,1/2 | A,1/2 A,1/2 A,1/2 A,2- A,1/2- | A,1/2 A,1/2 A,1/2 A, A,1/2 A,1/2 A,1/2 | A,1/2 A,1/2 A,1/2 A,2 z1/2 |\n[V:S2V1] D,1/2 D,1/2 D,1/2 D, D, D,1/2 | D,1/2 D,1/2 D,1/2 D,2- D,1/2- | D,1/2 D,1/2 D,1/2 D, D,1/2 D,1/2 D,1/2 | D,1/2 D,1/2 D,1/2 D,2 z1/2 |\n[V:S2V2] F,,1/2 F,,1/2 F,,1/2 F,, F,, F,,1/2 | F,,1/2 F,,1/2 F,,1/2 F,,2- F,,1/2- | F,,1/2 F,,1/2 F,,1/2 F,, F,,1/2 F,,1/2 F,,1/2 | F,,1/2 F,,1/2 F,,1/2 F,,2 z1/2 |\n[V:S1V1] C1/2 =B,1/2 C1/2 D D D1/2 | C1/2 =B,1/2 C1/2 D2- D1/2- | D1/2 E1/2 F1/2 G F1/2 E1/2 F1/2 | E1/2 D1/2 C1/2 D2 z1/2 |\nw: Hi- ne ma tov, hi- ne | * ma * tov, * | * a * * * * * | * * * *\n[V:S1V2] A,1/2 A,1/2 A,1/2 A, A, A,1/2 | A,1/2 A,1/2 A,1/2 A,2- A,1/2- | A,1/2 A,1/2 A,1/2 A, A,1/2 A,1/2 A,1/2 | A,1/2 A,1/2 A,1/2 A,2 z1/2 |\n[V:S2V1] D,1/2 D,1/2 D,1/2 D, D, D,1/2 | D,1/2 D,1/2 D,1/2 D,2- D,1/2- | D,1/2 D,1/2 D,1/2 D, D,1/2 D,1/2 D,1/2 | D,1/2 D,1/2 D,1/2 D,2 z1/2 |\n[V:S2V2] F,,1/2 F,,1/2 F,,1/2 F,, F,, F,,1/2 | F,,1/2 F,,1/2 F,,1/2 F,,2- F,,1/2- | F,,1/2 F,,1/2 F,,1/2 F,, F,,1/2 F,,1/2 F,,1/2 | F,,1/2 F,,1/2 F,,1/2 F,,2 z1/2 |\n[V:S1V1] F1/2 G1/2 A A A | c1/2 A1/2 G1/2 F1/2 G2 | F1/2 G1/2 A3 | c1/2 A1/2 G1/2 F1/2 G2 |\nw: Hi- * ne ma tov | u- * ma na- im, | a * * | * * * * *\n[V:S1V2] A,1/2 A,1/2 A, A, A, | C1/2 C1/2 C1/2 C1/2 C2 | D1/2 D1/2 D3 | E1/2 E1/2 E1/2 E1/2 E2 |\n[V:S2V1] D,1/2 D,1/2 D, D, D, | E,1/2 E,1/2 E,1/2 E,1/2 E,2 | F,1/2 F,1/2 F,3 | G,1/2 G,1/2 G,1/2 G,1/2 G,2 |\n[V:S2V2] F,,1/2 F,,1/2 F,, F,, F,, | G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | A,,1/2 A,,1/2 A,,3 | C,1/2 C,1/2 C,1/2 C,1/2 C,2 |\n[V:S1V1] F1/2 E1/2 F F F | G1/2 F1/2 E1/2 D1/2 E2 | D1/2 C1/2 D D D1/2 C1/2 | =B,1/2 C1/2 D3 |\nw: hi- * ne ma tov | u- * ma na- im, | hi- * ne ma tov u | ma na- im.\n[V:S1V2] D1/2 D1/2 D D D | C1/2 G,1/2 G,1/2 G,1/2 G,2 | F,1/2 F,1/2 F, F, F,1/2 F,1/2 | F,1/2 F,1/2 F,3 |\n[V:S2V1] F,1/2 F,1/2 F, F, F, | E,1/2 E,1/2 E,1/2 E,1/2 E,2 | F,1/2 D,1/2 D, D, D,1/2 D,1/2 | D,1/2 D,1/2 D,3 |\n[V:S2V2] A,,1/2 A,,1/2 A,, A,, A,, | C,1/2 C,1/2 C,1/2 C,1/2 C,2 | A,,1/2 A,,1/2 A,, A,, A,,1/2 A,,1/2 | A,,1/2 A,,1/2 A,,3 |\n[V:S1V1] F1/2 G1/2 A A A | c1/2 A1/2 G1/2 F1/2 G2 | F1/2 G1/2 A3 | c1/2 A1/2 G1/2 F1/2 G2 |\nw: Hi- * ne ma tov | u- * ma na- im, | a * * | * * * * *\n[V:S1V2] F,1/2 F,1/2 F, F, F, | C1/2 C1/2 C1/2 C1/2 C2 | D1/2 D1/2 D3 | E1/2 E1/2 E1/2 E1/2 E2 |\n[V:S2V1] D,1/2 D,1/2 D, D, D, | E,1/2 E,1/2 E,1/2 E,1/2 E,2 | F,1/2 F,1/2 F,3 | G,1/2 G,1/2 G,1/2 G,1/2 G,2 |\n[V:S2V2] A,,1/2 A,,1/2 A,, A,, A,, | G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | A,,1/2 A,,1/2 A,,3 | C,1/2 C,1/2 C,1/2 C,1/2 C,2 |\n[V:S1V1] F1/2 E1/2 F F F | G1/2 F1/2 E1/2 D1/2 E2 | D1/2 C1/2 D D D1/2 C1/2 | =B,1/2 C1/2 D3 |]\nw: hi- * ne ma tov | u- * ma na- im, | hi- * ne ma tov u | ma na- im.\n[V:S1V2] D1/2 D1/2 D D D | C1/2 G,1/2 G,1/2 G,1/2 G,2 | F,1/2 F,1/2 F, F, F,1/2 F,1/2 | F,1/2 F,1/2 F,3 |]\n[V:S2V1] F,1/2 F,1/2 F, F, F, | E,1/2 E,1/2 E,1/2 E,1/2 E,2 | F,1/2 D,1/2 D, D, D,1/2 D,1/2 | D,1/2 D,1/2 D,3 |]\n[V:S2V2] A,,1/2 A,,1/2 A,, A,, A,, | C,1/2 C,1/2 C,1/2 C,1/2 C,2 | A,,1/2 A,,1/2 A,, A,, A,,1/2 A,,1/2 | A,,1/2 A,,1/2 A,,3 |]\n"
+  },
+  {
     "id": "holy-holy-holy",
     "title": "Holy, Holy, Holy",
     "category": "Hymns & spirituals",
@@ -238,6 +454,27 @@
     "source": "openhymnal-Holy_Holy_Holy-Nicaea.abc",
     "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Holy_Holy_Holy/Holy_Holy_Holy-Nicaea.abc",
     "abc": "X:1\nT:Holy, Holy, Holy\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 4/4\nL: 1/4\nQ:1/4=110\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: D\n[V: S1V1]  D D F F | A2 A2 | B- B B B | A2 F2 | A3/2 A/ A A |\nw: Ho- ly, ho- ly, ho- ly! Lord * God Al- migh- ty! Ear- ly in the \n[V: S1V2]  A, A, D D | (C E) (D C) | (B, C) D E | F2 D2 | E E F E |\n[V: S2V1]  F, F, D, D, | (E, G,) (F, A,) | (G, A,) B, C | (D A,) A,2 | A, A, A, A, |\n[V: S2V2]  D, D, B,, B,, | A,,2 D,2 | G,,- G,, G, G, | D,2 D,2 | C, C, D, C, |\n[V: S1V1]  d- d c A | E A B3/2 A/ | A4 | D D F F | A- A A2 |\nw: morn- * ing our song shall rise to Thee; Ho- ly, ho- ly, ho- * ly, \n[V: S1V2]  (D E) E F | E C D3/2 C/ | C4 | A, A, D D | (C E) (D C) |\n[V: S2V1]  (F, ^G,) A, A, | C A, ^G,3/2 A,/ | (A,2 =G,2) | F, F, D, D, | (E, G,) (F, A,) |\n[V: S2V2]  B,,- B,, C, D, | E, E, E,3/2 A,,/ | A,,4 | D, D, B,, B,, | A,,- A,, D,2 |\n[V: S1V1]  B3/2 B/ B B | A2 A2 | d2 A A | B2 F2 | G E E3/2 D/ | D4 |]\nw: mer- ci- ful and might- y! God in three Per- sons, bless- ed Tri- ni- ty! \n[V: S1V2]  B, C D E | F2 D2 | D2 D D | D2 (D =C) | B, B, ^C3/2 D/ | D4 |]\n[V: S2V1]  G, A, B, C | (D A,) F,2 | (F, G,) A, =C | B,2 A,2 | G, G, G,3/2 F,/ | D,4 |]\n[V: S2V2]  G,,3/2 G,,/ G, G, | D,2 D,2 | B,,2 F,, F,, | G,,2 D,2 | G,, G,, A,,3/2 D,/ | F,4 |]\n"
+  },
+  {
+    "id": "i-have-a-little-dreidel",
+    "title": "I Have a Little Dreidel",
+    "category": "Jewish songs",
+    "origin": "Hanukkah / Jewish American",
+    "native_title": "סביבון",
+    "aliases": [
+      "Dreydl",
+      "Dreidel Song",
+      "Dreydel",
+      "Chanukah",
+      "Hanukkah"
+    ],
+    "tempo": 100,
+    "note": "Samuel E. Goldfarb melody (1927)",
+    "credit": "Melody reference: John Chambers ABC collection Samuel E. Goldfarb melody published in 1927. Public domain in the United States. New practice harmony; not a later commercial arrangement. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "i-have-a-little-dreidel.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/I_Have_a_Little_Dreydl-C-8-.abc",
+    "abc": "X:1\nT:I Have a Little Dreidel\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=100\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] G C C D D E C2 | E G G F E D3 | D D D E E F D2 | D G F E D C3 |\n[V:S1V2] C G, G, G, G, G, G,2 | G, G, G, G, G, G,3 | F, F, F, F, F, F, F,2 | G, G, G, G, G, G,3 |\n[V:S2V1] E, E, E, E, E, E, E,2 | D, D, D, D, D, D,3 | D, D, D, D, D, D, D,2 | E, E, E, E, E, E,3 |\n[V:S2V2] C, C, C, C, C, C, C,2 | B,, B,, B,, B,, B,, B,,3 | A,, A,, A,, A,, A,, A,, A,,2 | C, C, C, C, C, C,3 |\n[V:S1V1] E G E G E G E2 | E G G F E D3 | D F D F D F D2 | D G G A B c3 |\n[V:S1V2] G, G, G, G, G, G, G,2 | G, G, G, G, G, G,3 | F, F, F, F, F, F, F,2 | G, G, G, G, G, E3 |\n[V:S2V1] E, E, E, E, E, E, E,2 | D, D, D, D, D, D,3 | D, D, D, D, D, D, D,2 | E, E, E, E, E, G,3 |\n[V:S2V2] C, C, C, C, C, C, C,2 | B,, B,, B,, B,, B,, B,,3 | A,, A,, A,, A,, A,, A,, A,,2 | C, C, C, C, C, C,3 |\n[V:S1V1] z |]\n[V:S1V2] z |]\n[V:S2V1] z |]\n[V:S2V2] z |]\n"
   },
   {
     "id": "i-heard-the-bells-on-christmas-day",
@@ -262,6 +499,24 @@
     "source": "openhymnal-In_The_Bleak_MidWinter-Cranham.abc",
     "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/In_The_Bleak_MidWinter/In_The_Bleak_MidWinter-Cranham.abc",
     "abc": "X:1\nT:In The Bleak MidWinter\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 4/4\nL: 1/4\nQ:1/4=100\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: F\n[V: S1V1]  A | (A3/2 B/) c A | G- G F2 | (G3/2 A/) G D | G4 |\nw:  In the bleak mid- win- * ter, frost- y wind made moan,\n[V: S1V2] z | (F3/2 F/) F C | D- D D2 | (D D) D C | B,4 |\n[V: S2V1] z | (C3/2 C/) C F, | A,- A, A,2 | (G,3/2 D,/) D, F, | (F,2 E,2) |\n[V: S2V2] x | (F,3/2 G,/) A, F, | D,- D, D,2 | ( B,,3/2 C,/) B,, A,, | (G,,2 C,2) |\n[V: S1V1] (A3/2 B/) c A | G- G F- F | ((G A) G3/2) F/ | F3- F |\nw: Earth stood hard as i- * ron, * wa- ter like a stone; *\n[V: S1V2] (C3/2 F/) F C | D- D D- D | ((F F) E3/2) F/ | F3- F |\n[V: S2V1] (F,3/2 C/) C F, | A,- A, A,- A, | ((D D) B,3/2) A,/ | A,3- A, |\n[V: S2V2] (F,3/2 G,/) A, F, | D,- D, D,- D, | ((B,, B,,) C,3/2) F,/ | F,3- F, |\n[V: S1V1] B3/2 A/ B c | d- d A- A | (c A) G F | E4 |\nw: Snow had fall- en, snow on snow, * snow on snow on snow,\n[V: S1V2] F3/2 F/ F _E | D- D F- F | (F E) D2 | C4 |\n[V: S2V1] B,3/2 C/ B, A, | B,- B, A,- A, | (F, C) B, A, | G,4 |\n[V: S2V2] D,3/2 F,/ D, C, | B,,- B,, D,- D, | A,,- A,, B,, B,, | C,4 |\n[V: S1V1] A3/2 B/ c A | G2 F2 | (G A G3/2) F/ | F3 |]\nw: In the bleak mid- win- ter, long * * a- go.\t\n[V: S1V2] C3/2 F/ F C | D2 D2 | (F2 E3/2) F/ | F3 |]\n[V: S2V1] F,3/2 C/ C F, | A,2 A,2 | D2 (B,3/2 A,/) | A,3 |]\n[V: S2V2] F,3/2 G,/ A, F, | D,2 D,2 | B,,2 (C,3/2 F,/) | F,3 |]\n"
+  },
+  {
+    "id": "in-the-field-stood-a-birch-tree",
+    "title": "In the Field Stood a Birch Tree",
+    "category": "Folk songs around the world",
+    "origin": "Russia / Russian folk song",
+    "native_title": "",
+    "aliases": [
+      "Vo pole beryoza stoyala",
+      "Birch tree"
+    ],
+    "tempo": 104,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "in-the-field-stood-a-birch-tree.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/russia/the-birch-tree.abc",
+    "abc": "X:1\nT:In the Field Stood a Birch Tree\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=104\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Am\n[V:S1V1] e e e e | d2 c c | B2 A2 | e e g e |\n[V:S1V2] C C C C | F2 F F | E2 B,2 | C C E E |\n[V:S2V1] A, A, A, A, | A,2 A, A, | ^G,2 G,2 | G, G, G, G, |\n[V:S2V2] A,, A,, A,, A,, | A,,2 D, D, | E,2 E,2 | E, E, C, C, |\n[V:S1V1] d d c c | B2 A2 | B3 c | d2 c c |\n[V:S1V2] F F D D | E2 B,2 | B,3 B, | D2 D D |\n[V:S2V1] F, F, F, F, | E,2 E,2 | E,3 E, | F,2 F, F, |\n[V:S2V2] A,, A,, A,, A,, | ^G,,2 G,,2 | ^G,,3 G,, | A,,2 A,, A,, |\n[V:S1V1] B2 A2 | B3 c | d e c c | B2 A2 |]\n[V:S1V2] E2 B,2 | B,3 B, | C C C C | C2 C2 |]\n[V:S2V1] E,2 E,2 | E,3 E, | E, E, E, E, | E,2 E,2 |]\n[V:S2V2] ^G,,2 G,,2 | ^G,,3 G,, | A,, A,, A,, A,, | A,,2 A,,2 |]\n"
   },
   {
     "id": "it-came-upon-a-midnight-clear",
@@ -324,6 +579,87 @@
     "abc": "X:1\nT:Joyful, Joyful, We Adore Thee\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 4/4\nL: 1/4\nQ:1/4=115\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: G\n[V: S1V1]  B B c d | d c B A | G G A B | B3/2 A/ A2 |\nw: Joy- ful, joy- ful, we a- dore Thee, God of glor- y, Lord of love; \n[V: S1V2]  D D D D | D E/F/ G D | D D F G | G3/2 F/ F2 |\n[V: S2V1]  G, G, A, B, | B, A, G, F, | G, B, C D | D3/2 D/ D2 |\n[V: S2V2]  G, G, G, G, | D, D, D, C, | B,, B,, A,, G,, | D,3/2 D,/ D,2 |\n[V: S1V1]  B B c d | d c B A | G G A B | A3/2 G/ G2 |\nw: Hearts un- fold like flowers be- fore Thee, o- pening to the sun a- bove. \n[V: S1V2]  G D E =F | =F E D E | D D F G | F3/2 G/ G2 |\n[V: S2V1]  D D C B, | G, A, B, C | B, B, C D | C3/2 B,/ B,2 |\n[V: S2V2]  G, G, G, G, | C, C, C, C, | D, D, D, D, | D,3/2 G,/ G,2 |\n[V: S1V1]  A A B G | A B/c/ B G | A B/c/ B A | G A D2 |\nw: Melt the clouds of sin and * sad- ness; drive the * dark of doubt a- way; \n[V: S1V2]  F D D G | F G/F/ G G | F F F ^D | E/=D/ ^C D2 |\n[V: S2V1]  D F, G, B, | C B,/A,/ G, B, | C B,/A,/ B, B, | B, A,/G,/ F,2 |\n[V: S2V2]  D, D, D, D, | D, D, D, D, | D, D, ^D, B,, | E, A,, D,2 |\n[V: S1V1]  B B c d | d c B A | G G A B | A3/2 G/ G2 |]\nw: Giv- er of im- mor- tal glad- ness, fill us with the light of day! \n[V: S1V2]  D D E =F | =F E D E | D D F G | F3/2 G/ G2 |]\n[V: S2V1]  G, D C B, | G, A, B, C | B, B, C D | C3/2 B,/ B,2 |]\n[V: S2V2]  G, G, G, G, | C, C, C, C, | D, D, D, D, | D,3/2 G,/ G,2 |]\n"
   },
   {
+    "id": "kalinka",
+    "title": "Kalinka",
+    "category": "Folk songs around the world",
+    "origin": "Russia / Russian folk-style song",
+    "native_title": "",
+    "aliases": [],
+    "tempo": 112,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Ivan Larionov, 1860. Public domain. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "kalinka.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=798",
+    "abc": "X:1\nT:Kalinka\nC:New practice harmony: The Great Gallery (CC0).\nM:2/2\nL:1/8\nQ:1/4=112\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Am\n[V:S1V1] z4 e4 | d4 B2 c2 | d4 B2 c2 | d4 c2 B2 |\n[V:S1V2] z4 C4 | B,4 D2 D2 | D4 D2 D2 | D4 D2 D2 |\n[V:S2V1] z4 A,4 | B,4 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |\n[V:S2V2] z4 A,,4 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |\n[V:S1V1] A4 e2 e2 | d2 d2 B2 c2 | d4 B2 c2 | d4 c2 B2 |\n[V:S1V2] C4 C2 C2 | D2 D2 D2 D2 | D4 D2 D2 | D4 D2 D2 |\n[V:S2V1] C4 C2 C2 | B,2 B,2 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |\n[V:S2V2] E,,4 A,,2 A,,2 | G,,2 G,,2 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |\n[V:S1V1] A4 e4 | d4 B2 c2 | d4 B2 c2 | d4 c2 B2 |\n[V:S1V2] C4 C4 | D4 D2 D2 | D4 D2 D2 | D4 D2 D2 |\n[V:S2V1] C4 C4 | B,4 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |\n[V:S2V2] E,,4 A,,4 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |\n[V:S1V1] A4 e2 e2 | d2 d2 B2 c2 | d4 B2 c2 | d4 c2 B2 |\n[V:S1V2] C4 C2 C2 | D2 D2 D2 D2 | D4 D2 D2 | D4 D2 D2 |\n[V:S2V1] C4 C2 C2 | B,2 B,2 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |\n[V:S2V2] E,,4 A,,2 A,,2 | G,,2 G,,2 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |\n[V:S1V1] A4 z4 | e4 g4 | f4 e2 d2 | c8 |\n[V:S1V2] C4 z4 | C4 E4 | F4 F2 F2 | E8 |\n[V:S2V1] C4 z4 | C4 C4 | D4 D2 D2 | C8 |\n[V:S2V2] E,,4 z4 | G,,4 G,,4 | A,,4 A,,2 A,,2 | A,,8 |\n[V:S1V1] G8 | e4 g4 | f4 e2 d2 | c8 |\n[V:S1V2] E8 | G4 E4 | F4 F2 F2 | E8 |\n[V:S2V1] C8 | C4 C4 | A,4 A,2 A,2 | A,8 |\n[V:S2V2] C,8 | C,4 C,4 | D,4 D,2 D,2 | A,,8 |\n[V:S1V1] G8 | A4 A2 B2 | d2 c2 B2 A2 | G4 F4 |\n[V:S1V2] E8 | E4 E2 E2 | F2 F2 F2 F2 | E4 E4 |\n[V:S2V1] G,8 | A,4 A,2 A,2 | A,2 A,2 A,2 A,2 | C4 G,4 |\n[V:S2V2] C,8 | C,4 C,2 C,2 | D,2 D,2 D,2 D,2 | C,4 C,4 |\n[V:S1V1] E4 e4 | e4 g4 | f4 e2 d2 | c8 |\n[V:S1V2] E4 E4 | E4 E4 | D4 D2 D2 | C8 |\n[V:S2V1] A,4 A,4 | G,4 G,4 | F,4 F,2 F,2 | E,8 |\n[V:S2V2] C,4 C,4 | C,4 C,4 | A,,4 A,,2 A,,2 | A,,8 |\n[V:S1V1] G8 | e4 g4 | f4 e2 d2 | c8 |\n[V:S1V2] C8 | C4 E4 | D4 D2 D2 | C8 |\n[V:S2V1] E,8 | G,4 G,4 | F,4 F,2 F,2 | E,8 |\n[V:S2V2] C,8 | C,4 C,4 | A,,4 A,,2 A,,2 | A,,8 |\n[V:S1V1] G8 | A4 A2 B2 | d2 c2 B2 A2 | g4 f4 |\n[V:S1V2] C8 | C4 C2 C2 | D2 D2 D2 D2 | E4 E4 |\n[V:S2V1] E,8 | E,4 E,2 E,2 | F,2 F,2 F,2 F,2 | E,4 G,4 |\n[V:S2V2] C,8 | A,,4 A,,2 A,,2 | A,,2 A,,2 A,,2 A,,2 | C,4 C,4 |\n[V:S1V1] e4 e4 | d4 B2 c2 | d4 B2 c2 | d4 c2 B2 |\n[V:S1V2] E4 E4 | D4 D2 D2 | D4 D2 D2 | D4 D2 D2 |\n[V:S2V1] A,4 A,4 | B,4 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |\n[V:S2V2] C,4 C,4 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |\n[V:S1V1] A4 e2 e2 | d2 d2 B2 c2 | d4 B2 c2 | d4 c2 B2 |\n[V:S1V2] C4 C2 C2 | D2 D2 D2 D2 | D4 D2 D2 | D4 D2 D2 |\n[V:S2V1] C4 C2 C2 | B,2 B,2 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |\n[V:S2V2] E,,4 A,,2 A,,2 | G,,2 G,,2 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |\n[V:S1V1] A4 e4 | d4 B2 c2 | d4 B2 c2 | d4 c2 B2 |\n[V:S1V2] C4 C4 | D4 D2 D2 | D4 D2 D2 | D4 D2 D2 |\n[V:S2V1] C4 C4 | B,4 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |\n[V:S2V2] E,,4 A,,4 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |\n[V:S1V1] A4 e2 e2 | d2 d2 B2 c2 | d4 B2 c2 | d4 c2 B2 |\n[V:S1V2] C4 C2 C2 | D2 D2 D2 D2 | D4 D2 D2 | D4 D2 D2 |\n[V:S2V1] C4 C2 C2 | B,2 B,2 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |\n[V:S2V2] E,,4 A,,2 A,,2 | G,,2 G,,2 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |\n[V:S1V1] A4 |]\n[V:S1V2] C4 |]\n[V:S2V1] C4 |]\n[V:S2V2] E,,4 |]\n"
+  },
+  {
+    "id": "la-bamba",
+    "title": "La Bamba",
+    "category": "Folk songs around the world",
+    "origin": "Mexico / Veracruz folk song",
+    "native_title": "",
+    "aliases": [],
+    "tempo": 112,
+    "note": "Traditional son jarocho melody · new harmony",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "la-bamba.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=451",
+    "abc": "X:1\nT:La Bamba\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=112\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] z8 | z8 | z8 | z8 |\n[V:S1V2] z8 | z8 | z8 | z8 |\n[V:S2V1] z8 | z8 | z8 | z8 |\n[V:S2V2] z8 | z8 | z8 | z8 |\n[V:S1V1] z f f f f2 f e- | e c3 z4 | z f f f f2 f e- | e c2 c c c2 d- |\n[V:S1V2] z F F F F2 F F- | F E3 z4 | z F F F F2 F F- | F E2 E E E2 E- |\n[V:S2V1] z A, A, A, A,2 A, A,- | A, G,3 z4 | z A, A, A, A,2 A, A,- | A, G,2 G, G, G,2 G,- |\n[V:S2V2] z C, C, C, C,2 C, C,- | C, C,3 z4 | z C, C, C, C,2 C, C,- | C, C,2 C, C, C,2 C,- |\n[V:S1V1] d B2 d f2 e d | e2 c2 z4 | z z1/4 f- f1/4 z1/4 f- f1/4 f- f1/4 f- f1/4 z1/4 f- f1/4 | e2 c c c c2 d- |\n[V:S1V2] E D2 D D2 D D | C2 E2 z4 | z z1/4 F- F1/4 z1/4 F- F1/4 F- F1/4 F- F1/4 z1/4 F- F1/4 | E2 E E E E2 E- |\n[V:S2V1] G, G,2 G, G,2 G, G, | G,2 G,2 z4 | z z1/4 A,- A,1/4 z1/4 A,- A,1/4 A,- A,1/4 A,- A,1/4 z1/4 A,- A,1/4 | G,2 G, G, G, G,2 G,- |\n[V:S2V2] C, B,,2 B,, B,,2 B,, B,, | C,2 C,2 z4 | z z1/4 C,- C,1/4 z1/4 C,- C,1/4 C,- C,1/4 C,- C,1/4 z1/4 C,- C,1/4 | C,2 C, C, C, C,2 C,- |\n[V:S1V1] d B2 d f e d e | c2 z6 | z z1/4 f- f1/4 z1/4 f- f1/4 f- f1/4 f- f1/4 z1/4 f- f1/4 | e- e1/4 c- c1/4 z1/4 c- c1/4 c c2 d- |\n[V:S1V2] E D2 D D D D D | E2 z6 | z z1/4 F- F1/4 z1/4 F- F1/4 F- F1/4 F- F1/4 z1/4 F- F1/4 | E- E1/4 E- E1/4 z1/4 E- E1/4 E E2 E- |\n[V:S2V1] G, G,2 G, G, G, G, G, | G,2 z6 | z z1/4 A,- A,1/4 z1/4 A,- A,1/4 A,- A,1/4 A,- A,1/4 z1/4 A,- A,1/4 | G,- G,1/4 G,- G,1/4 z1/4 G,- G,1/4 G, G,2 G,- |\n[V:S2V2] C, B,,2 B,, B,, B,, B,, B,, | C,2 z6 | z z1/4 C,- C,1/4 z1/4 C,- C,1/4 C,- C,1/4 C,- C,1/4 z1/4 C,- C,1/4 | C,- C,1/4 C,- C,1/4 z1/4 C,- C,1/4 C, C,2 C,- |\n[V:S1V1] d2 B2 d2 f e- | e2 e2 c A A G | z z1/4 f- f1/4 z1/4 f- f1/4 f- f1/4 f- f1/4 z1/4 f- f1/4 | e c3 z4 |\n[V:S1V2] E2 D2 D2 D D- | D2 C2 E E E E | z z1/4 F- F1/4 z1/4 F- F1/4 F- F1/4 F- F1/4 z1/4 F- F1/4 | G G3 z4 |\n[V:S2V1] G,2 G,2 G,2 G, G,- | G,2 A,2 A, C C C | z z1/4 C- C1/4 z1/4 C- C1/4 C- C1/4 C- C1/4 z1/4 C- C1/4 | C E3 z4 |\n[V:S2V2] C,2 B,,2 B,,2 B,, B,,- | B,,2 A,,2 A,, A,, A,, A,, | z z1/4 A,,- A,,1/4 z1/4 A,,- A,,1/4 A,,- A,,1/4 A,,- A,,1/4 z1/4 A,,- A,,1/4 | C, C,3 z4 |\n[V:S1V1] z f2 f f- f1/4 f- f1/4 z1/4 f- f1/4 | e c z c c- c1/4 c- c1/4 z1/4 d- d1/4- | d2 B2 d2 f d | e2 e2 c A A G- |\n[V:S1V2] z A2 A A- A1/4 A- A1/4 z1/4 A- A1/4 | G G z G G- G1/4 G- G1/4 z1/4 G- G1/4- | G2 G2 G2 G G | A2 A2 A A A E- |\n[V:S2V1] z F2 F F- F1/4 F- F1/4 z1/4 F- F1/4 | E E z E E- E1/4 E- E1/4 z1/4 E- E1/4- | E2 D2 D2 D D | C2 C2 E E E C- |\n[V:S2V2] z C,2 C, C,- C,1/4 C,- C,1/4 z1/4 C,- C,1/4 | C, C, z C, C,- C,1/4 C,- C,1/4 z1/4 C,- C,1/4- | C,2 B,,2 B,,2 B,, B,, | A,,2 A,,2 A,, C, C, A,,- |\n[V:S1V1] G2 z6 | c4 A3 B- | B G2 z4 z | e4 c3 d- |\n[V:S1V2] E2 z6 | F4 F3 F- | F D2 z4 z | C4 E3 E- |\n[V:S2V1] C2 z6 | C4 C3 C- | C B,2 z4 z | C4 C3 C- |\n[V:S2V2] A,,2 z6 | A,,4 A,,3 A,,- | A,, G,,2 z4 z | G,,4 G,,3 G,,- |\n[V:S1V1] d d2 z4 z | e4 c3 d- | d d2 z3 B1/2 B3/2 | c2 |]\n[V:S1V2] E D2 z4 z | C4 E3 E- | E D2 z3 D1/2 D3/2 | E2 |]\n[V:S2V1] C B,2 z4 z | C4 C3 C- | C B,2 z3 B,1/2 B,3/2 | C2 |]\n[V:S2V2] G,, G,,2 z4 z | G,,4 G,,3 G,,- | G,, G,,2 z3 G,,1/2 G,,3/2 | G,,2 |]\n"
+  },
+  {
+    "id": "la-cucaracha",
+    "title": "La Cucaracha",
+    "category": "Folk songs around the world",
+    "origin": "Mexico / Mexican and Spanish folk song",
+    "native_title": "",
+    "aliases": [
+      "Cucaracha"
+    ],
+    "tempo": 136,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "la-cucaracha.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=228",
+    "abc": "X:1\nT:La Cucaracha\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=136\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] z4 z D D D | G3 B2 D D D | G3 B4- B | z G2 G F F E E |\n[V:S1V2] z4 z B, B, B, | B,3 B,2 B, B, B, | B,3 B,4- B, | z C2 C C C C C |\n[V:S2V1] z4 z G, G, G, | D,3 D,2 D, D, D, | D,3 D,4- D, | z E,2 E, E, E, E, E, |\n[V:S2V2] z4 z G,, G,, G,, | G,,3 G,,2 G,, G,, G,, | G,,3 G,,4- G,, | z G,,2 G,, G,, G,, G,, G,, |\n[V:S1V1] D4 z D D D | F3 A2 D D D | F3 A4- A | z d2 e d c B A |\n[V:S1V2] B,4 z B, B, B, | A,3 A,2 A, A, A, | A,3 A,4- A, | z B,2 D D D D D |\n[V:S2V1] D,4 z D, D, D, | D,3 D,2 D, D, D, | D,3 D,4- D, | z D,2 B, B, B, B, B, |\n[V:S2V2] G,,4 z G,, G,, G,, | F,,3 F,,2 F,, F,, F,, | F,,3 F,,4- F,, | z G,,2 G,, G,, G,, G,, G,, |\n[V:S1V1] B3 G2 D D D | G3 B2 D D D | G3 B4- B | z G2 G F F E E |\n[V:S1V2] D3 D2 D D D | D3 D2 D D D | D3 D4- D | z E2 E E E E E |\n[V:S2V1] B,3 B,2 B, B, B, | B,3 B,2 B, B, B, | B,3 B,4- B, | z C2 C C C C C |\n[V:S2V2] G,,3 G,,2 G,, G,, G,, | G,,3 G,,2 G,, G,, G,, | G,,3 G,,4- G,, | z G,,2 G,, G,, G,, G,, G,, |\n[V:S1V1] D4 z D D D | F3 A2 D D D | F3 A4- A | z d2 e d c B A |\n[V:S1V2] D4 z D D D | D3 D2 D D D | D3 D4- D | z D2 D D D D D |\n[V:S2V1] B,4 z B, B, B, | A,3 A,2 A, A, A, | A,3 A,4- A, | z B,2 B, B, B, B, B, |\n[V:S2V2] G,,4 z G,, G,, G,, | F,,3 F,,2 F,, F,, F,, | F,,3 F,,4- F,, | z G,,2 G,, G,, G,, G,, G,, |\n[V:S1V1] G4 z4 | z D2 D G G B B | d3 B4- B | z d d e d c B d |\n[V:S1V2] D4 z4 | z D2 D D D D D | D3 D4- D | z D D D D D D D |\n[V:S2V1] B,4 z4 | z B,2 B, B, B, B, B, | B,3 B,4- B, | z B, B, B, B, B, B, B, |\n[V:S2V2] G,,4 z4 | z G,,2 G,, G,, G,, G,, G,, | G,,3 G,,4- G,, | z G,, G,, G,, G,, G,, G,, G,, |\n[V:S1V1] c3 A4- A | z D2 D F F A A | c3 A4- A | z d2 e d c B A |\n[V:S1V2] C3 C4- C | z D2 D D D D D | E3 E4- E | z G2 D D D D D |\n[V:S2V1] A,3 A,4- A, | z A,2 A, A, A, A, A, | A,3 C4- C | z B,2 B, B, B, B, B, |\n[V:S2V2] E,,3 E,,4- E,, | z F,,2 F,, F,, F,, F,, F,, | A,,3 A,,4- A,, | z G,,2 G,, G,, G,, G,, G,, |\n[V:S1V1] B3 G4- G | z D2 D G G B B | d3 B4- B | z d d e d c B d |\n[V:S1V2] D3 D4- D | z D2 D D D D D | D3 D4- D | z D D D D D D D |\n[V:S2V1] B,3 B,4- B, | z B,2 B, B, B, B, B, | B,3 B,4- B, | z B, B, B, B, B, B, B, |\n[V:S2V2] G,,3 G,,4- G,, | z G,,2 G,, G,, G,, G,, G,, | G,,3 G,,4- G,, | z G,, G,, G,, G,, G,, G,, G,, |\n[V:S1V1] c3 A4- A | z D2 D F F A A | c3 A4- A | z d2 e d c B A |\n[V:S1V2] C3 C4- C | z D2 D D D D D | E3 E4- E | z G2 D D D D D |\n[V:S2V1] A,3 A,4- A, | z A,2 A, A, A, A, A, | A,3 C4- C | z B,2 B, B, B, B, B, |\n[V:S2V2] E,,3 E,,4- E,, | z F,,2 F,, F,, F,, F,, F,, | A,,3 A,,4- A,, | z G,,2 G,, G,, G,, G,, G,, |\n[V:S1V1] G4 |]\n[V:S1V2] D4 |]\n[V:S2V1] B,4 |]\n[V:S2V2] G,,4 |]\n"
+  },
+  {
+    "id": "lamma-bada-yatathanna",
+    "title": "Lamma Bada Yatathanna",
+    "category": "Folk songs around the world",
+    "origin": "Arabic / Andalusian muwashshah",
+    "native_title": "",
+    "aliases": [
+      "Lamma bada",
+      "Lama bada yatathana",
+      "لما بدا يتثنى"
+    ],
+    "tempo": 104,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "lamma-bada-yatathanna.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/spain/lamma-bada.abc",
+    "abc": "X:1\nT:Lamma Bada Yatathanna\nC:New practice harmony: The Great Gallery (CC0).\nM:10/8\nL:1/8\nQ:1/4=104\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Gm\n[V:S1V1] z8 z2 | z8 z2 | D G2 A1/2 =B1/2 c1/2 B1/2 B1/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | A1/2 =B1/2 c2 d B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 |\n[V:S1V2] z8 z2 | z8 z2 | B, B,2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,2 | C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 |\n[V:S2V1] z8 z2 | z8 z2 | G, D,2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,2 | E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 |\n[V:S2V2] z8 z2 | z8 z2 | G,, G,,2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 |\n[V:S1V1] A1/2 G1/2 F2 G =E3/2 D1/2 E1/2 D1/2 E1/2 F1/2 D2 | =e1/2 d1/2 c2 d =B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | D G2 A1/2 =B1/2 c1/2 B1/2 B1/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | A1/2 =B1/2 c2 d B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 |\n[V:S1V2] D1/2 D1/2 D2 D D3/2 D1/2 D1/2 D1/2 D1/2 D1/2 D2 | C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 | B, B,2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,2 | C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 |\n[V:S2V1] F,1/2 F,1/2 F,2 F, F,3/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,2 | E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 | D, D,2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,2 | E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 |\n[V:S2V2] B,,1/2 B,,1/2 B,,2 B,, B,,3/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,, G,,2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 |\n[V:S1V1] A1/2 G1/2 F2 G =E3/2 D1/2 E1/2 D1/2 E1/2 F1/2 D2 | =e1/2 d1/2 c2 d =B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | D G2 A1/2 =B1/2 c1/2 B1/2 B1/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | D G2 A =B2 B A1/2 c1/2 B2 |\n[V:S1V2] D1/2 D1/2 D2 D D3/2 D1/2 D1/2 D1/2 D1/2 D1/2 D2 | C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 | B, B,2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,2 | B, B,2 B, B,2 B, B,1/2 B,1/2 B,2 |\n[V:S2V1] F,1/2 F,1/2 F,2 F, F,3/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,2 | E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 | D, D,2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,2 | D, D,2 D, D,2 D, D,1/2 D,1/2 D,2 |\n[V:S2V2] B,,1/2 B,,1/2 B,,2 B,, B,,3/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,, G,,2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,, G,,2 G,, G,,2 G,, G,,1/2 G,,1/2 G,,2 |\n[V:S1V1] G d2 c c1/2 =B1/2 B1/2 A1/2 A1/2 G1/2 G1/2 F1/2 G A1/2 B1/2 | F G2 A =B2 B A1/2 c1/2 B2 | G c2 d =B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | A1/2 G1/2 F2 G F1/2 =E1/2 E1/2 D1/2 E1/2 D1/2 E1/2 G1/2 D2 |\n[V:S1V2] B, B,2 B, B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B, B,1/2 B,1/2 | A, A,2 A, A,2 A, A,1/2 A,1/2 A,2 | C C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 | D1/2 D1/2 D2 D D1/2 D1/2 D1/2 D1/2 D1/2 D1/2 D1/2 D1/2 D2 |\n[V:S2V1] D, D,2 D, D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D, D,1/2 D,1/2 | C, C,2 C, C,2 C, C,1/2 C,1/2 C,2 | E, E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 | F,1/2 F,1/2 F,2 F, F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,1/2 F,2 |\n[V:S2V2] G,, G,,2 G,, G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,, G,,1/2 G,,1/2 | A,, F,,2 F,, F,,2 F,, F,,1/2 F,,1/2 F,,2 | G,, G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | B,,1/2 B,,1/2 B,,2 B,, B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,1/2 B,,2 |\n[V:S1V1] =e1/2 d1/2 c2 d =B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 | A1/2 =B1/2 c2 d B3/2 A1/2 A1/2 G1/2 G1/2 F1/2 G2 |]\n[V:S1V2] C1/2 C1/2 C2 C C3/2 C1/2 C1/2 C1/2 C1/2 C1/2 C2 | B,1/2 B,1/2 B,2 B, B,3/2 B,1/2 B,1/2 B,1/2 B,1/2 B,1/2 B,2 |]\n[V:S2V1] E,1/2 E,1/2 E,2 E, E,3/2 E,1/2 E,1/2 E,1/2 E,1/2 E,1/2 E,2 | D,1/2 D,1/2 D,2 D, D,3/2 D,1/2 D,1/2 D,1/2 D,1/2 D,1/2 D,2 |]\n[V:S2V2] G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 | G,,1/2 G,,1/2 G,,2 G,, G,,3/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,1/2 G,,2 |]\n"
+  },
+  {
+    "id": "linstead-market",
+    "title": "Linstead Market",
+    "category": "Folk songs around the world",
+    "origin": "Jamaica / Jamaican folk song",
+    "native_title": "",
+    "aliases": [],
+    "tempo": 100,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "linstead-market.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/jamaica/linstead-market.abc",
+    "abc": "X:1\nT:Linstead Market\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=100\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:D\n[V:S1V1] A A A F2 A d c | B2 B2 A2 A2 | G F2 E2 F G2 | A4 z4 |\nw: Car- ry me ac- kee go a | Lin- stead mark- et, | not a quat- ty to | sell,\n[V:S1V2] A, A, A, A,2 A, F F | G2 G2 G2 G2 | G E2 E2 E E2 | F4 z4 |\n[V:S2V1] F, F, F, F,2 F, A, A, | G,2 G,2 B,2 B,2 | B, B,2 B,2 B, B,2 | D4 z4 |\n[V:S2V2] D, D, D, D,2 D, D, D, | D,2 D,2 D,2 D,2 | E, G,2 G,2 G, E,2 | D,4 z4 |\n[V:S1V1] A A A F2 A d c | B2 B2 A2 A2 | G F2 E2 F E2 | D4 A4 |\nw: Car- ry me ac- kee go a | Lin- stead mark- et, | not a quat- ty to | sell. Oh,\n[V:S1V2] F F F F2 F F F | G2 G2 G2 G2 | G E2 E2 E E2 | D4 D4 |\n[V:S2V1] D D D A,2 A, A, A, | G,2 G,2 B,2 B,2 | B, B,2 B,2 B, B,2 | A,4 A,4 |\n[V:S2V2] D, D, D, D,2 D, D, D, | D,2 D,2 D,2 D,2 | E, G,2 G,2 G, G,2 | F,4 F,4 |\n[V:S1V1] F6 G F | E2 F E D4 | C D2 E2 F G2 | A6 z2 |\nw: Lawd! Not a | mite, not a bite, | wat a Sat- i- day | night!\n[V:S1V2] D6 D D | D2 D D D4 | B, B,2 B,2 B, B,2 | A,6 z2 |\n[V:S2V1] A,6 A, A, | A,2 A, A, A,4 | G, G,2 G,2 G, G,2 | F,6 z2 |\n[V:S2V2] F,6 F, F, | F,2 F, F, F,4 | D, D,2 D,2 D, D,2 | D,6 z2 |\n[V:S1V1] F6 G F | E2 F E D4 | C D2 E2 F E2 | D4 z4 |]\nw: Lawd! Not a | mite, not a bite, | wat a Sat- i- day | night!\n[V:S1V2] A,6 A, A, | A,2 A, A, A,4 | A, A,2 A,2 A, A,2 | A,4 z4 |]\n[V:S2V1] F,6 F, F, | F,2 F, F, F,4 | E, E,2 E,2 E, E,2 | F,4 z4 |]\n[V:S2V2] D,6 D, D, | D,2 D, D, D,4 | C, C,2 C,2 C, C,2 | D,4 z4 |]\n"
+  },
+  {
     "id": "lo-how-a-rose-e-er-blooming",
     "title": "Lo, How A Rose E'er Blooming",
     "category": "Christmas carols",
@@ -334,6 +670,43 @@
     "source": "openhymnal-Lo_How_A_Rose_Eer_Blooming-Es_Ist_Ein_Ros_Entsprungen.abc",
     "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Lo_How_A_Rose_Eer_Blooming/Lo_How_A_Rose_Eer_Blooming-Es_Ist_Ein_Ros_Entsprungen.abc",
     "abc": "X:1\nT:Lo, How A Rose E'er Blooming\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: none\nL: 1/4\nQ:1/4=100\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: F\n[V: S1V1]  c2 | c c d c | c2 A2 B2 | A G2 F2 E | F3\nw: Lo, how a Rose e'er bloom- ing from ten- der stem hath sprung! \n[V: S1V2]  A2 | A F F F | E2 D2 D2 | C2 D A, C2 | C3\n[V: S2V1]  C2 | C A, B, A, | G,2 F,2 F,2 | A, C (B, A,2) G, | A,3\n[V: S2V2]  F,2 | F, F, B, F, | C,2 D,2 B,,2 | F, E, D,2 C,2 | F,3\n[V: S1V1]  c2 | c c d c | c2 A2 B2 | A G2 F2 E | F3\nw: Of Jes- se's lin- eage com- ing, as men of old have sung. \n[V: S1V2]  A2 | A F F F | E2 D2 D2 | C2 D A, C2 | C3\n[V: S2V1]  C2 | C A, B, A, | G,2 F,2 F,2 | A, C (B, A,2) G, | A,3\n[V: S2V2]  F,2 | F, F, B, F, | C,2 D,2 B,,2 | F, E, D,2 C,2 | F,3\n[V: S1V1]  A | G E F D | C3 c | c c\nw: It came, a flow'r- et bright, a- mid the \n[V: S1V2]  F | D C C =B, | C3 E | G F\n[V: S2V1]  C | B, A, A, G, | E,3 G, | G, A,\n[V: S2V2]  F, | G, A, F, G, | C,3 C, | E, F,\n[V: S1V1]  d c | c2 A2 B2 | A G2 F2 E | F3 |]\nw: cold of win- ter, When half spent was the night. \n[V: S1V2]  F F | E2 D2 D2 | F (D E) F C2 | C3 |]\n[V: S2V1]  B, A, | G,2 ^F,2 G,2 | C B, A,2 G,2 | A,3 |]\n[V: S2V2]  B,, F, | C,2 D,2 G,,2 | A,, B,, C,2 C,2 | [F,,3F,3] |]\n"
+  },
+  {
+    "id": "loch-lomond",
+    "title": "Loch Lomond",
+    "category": "Folk songs around the world",
+    "origin": "Scotland / Scottish ballad",
+    "native_title": "",
+    "aliases": [
+      "The Bonnie Banks of Loch Lomond",
+      "Red is the Rose"
+    ],
+    "tempo": 88,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "loch-lomond.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=210",
+    "abc": "X:1\nT:Loch Lomond\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=88\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] z6 D E | G2 G A B2 A G | A2 A G E2 D D | G2 G2 G2 B d |\n[V:S1V2] z6 B, B, | B,2 B, B, B,2 B, B, | A,2 A, A, A,2 A, A, | B,2 B,2 B,2 B, B, |\n[V:S2V1] z6 G, D, | D,2 D, D, D,2 D, D, | D,2 D, D, D,2 D, D, | D,2 D,2 D,2 D, D, |\n[V:S2V2] z6 G,, G,, | G,,2 G,, G,, G,,2 G,, G,, | F,,2 F,, F,, F,,2 F,, F,, | G,,2 G,,2 G,,2 G,, G,, |\n[V:S1V1] e4 d2 d2 | e2 e d B2 B d | c B A G E2 D E | G G B d e2 d B |\n[V:S1V2] C4 C2 C2 | E2 E E E2 E E | E E E E E2 C C | B, B, B, B, D2 D D |\n[V:S2V1] C,4 E,2 E,2 | G,2 G, G, G,2 G, G, | G, G, G, G, G,2 G, G, | G, G, G, G, G,2 G, G, |\n[V:S2V2] G,,4 G,,2 G,,2 | B,,2 B,, B,, B,,2 B,, B,, | C, C, C, C, C,2 E, E, | D, D, D, D, B,,2 B,, B,, |\n[V:S1V1] A4 G2 D2 | G2 G3/2 A1/2 B2 B A | G2 G3/2 E1/2 D2 D D | G2 G G G2 B d |\n[V:S1V2] D4 A,2 A,2 | B,2 B,3/2 B,1/2 B,2 B, B, | B,2 B,3/2 B,1/2 B,2 B, B, | B,2 B, B, B,2 B, B, |\n[V:S2V1] F,4 F,2 F,2 | G,2 G,3/2 G,1/2 G,2 G, G, | G,2 G,3/2 G,1/2 G,2 G, G, | G,2 G, G, G,2 G, G, |\n[V:S2V2] D,4 D,2 D,2 | D,2 D,3/2 D,1/2 D,2 D, D, | D,2 D,3/2 D,1/2 D,2 D, D, | D,2 D, D, D,2 D, D, |\n[V:S1V1] e4 d2 d2 | e2 e d B2 B d | c B A G E2 D E | G G B d e2 d B |\n[V:S1V2] C4 E2 E2 | E2 E E E2 E E | E E E E E2 C C | B, B, B, B, D2 D D |\n[V:S2V1] G,4 G,2 G,2 | G,2 G, G, G,2 G, G, | G, G, G, G, G,2 G, G, | G, G, G, G, G,2 G, G, |\n[V:S2V2] C,4 C,2 C,2 | B,,2 B,, B,, B,,2 B,, B,, | C, C, C, C, C,2 E, E, | D, D, D, D, B,,2 B,, B,, |\n[V:S1V1] A4 G2 |]\n[V:S1V2] D4 D2 |]\n[V:S2V1] G,4 G,2 |]\n[V:S2V2] B,,4 B,,2 |]\n"
+  },
+  {
+    "id": "lomir-zikh-iberbetn",
+    "title": "Lomir Zikh Iberbetn",
+    "category": "Jewish songs",
+    "origin": "Yiddish folk song",
+    "native_title": "לאָמיר זיך איבערבעטן",
+    "aliases": [
+      "Lomir zich iberbeten",
+      "Lo mir sich iberbeten",
+      "Let us make peace"
+    ],
+    "tempo": 88,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "lomir-zikh-iberbetn.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/LoMirSichIberbeten_Ew.abc",
+    "abc": "X:1\nT:Lomir Zikh Iberbetn\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=88\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Am\n[V:S1V1] E E2 E | ^G F1/2 G1/2 F E | ^G F1/2 G1/2 F E | e B ^c B |\nw: 1. Lo- mir sich | i- ber- * bet- en, | i- ber- * bet- en, | Shtel dem sa mo\n[V:S1V2] C C2 C | B, B,1/2 B,1/2 B, B, | B, B,1/2 B,1/2 B, B, | ^G G G G |\n[V:S2V1] A, A,2 A, | ^G, G,1/2 G,1/2 G, G, | ^G, G,1/2 G,1/2 G, G, | B, B, B, B, |\n[V:S2V2] A,, A,,2 A,, | E,, E,,1/2 E,,1/2 E,, E,, | E,, E,,1/2 E,,1/2 E,, E,, | E,, E,, E,, E,, |\n[V:S1V1] A2 A2 | e B ^c B | A3 ^G | B B2 A |\nw: var, * | Shtel dem sa mo | var * |  Lo- mir sich\n[V:S1V2] A2 A2 | ^G G G G | A3 E | E E2 E |\n[V:S2V1] C2 C2 | B, B, B, B, | C3 C | B, B,2 B, |\n[V:S2V2] E,,2 E,,2 | E,, E,, E,, E,, | E,,3 A,, | ^G,, G,,2 G,, |\n[V:S1V1] ^G F1/2 E1/2 _E E | E F ^G F | A2 ^G2 | B B2 A |\nw: i- ber- * bet- en, | Sei she nit kein | nar. * |  Lo- mir sich\n[V:S1V2] E E1/2 E1/2 B, B, | B, B, B, B, | C2 C2 | B, B,2 B, |\n[V:S2V1] B, B,1/2 B,1/2 ^G, G, | ^G, G, G, G, | A,2 A,2 | ^G, G,2 G, |\n[V:S2V2] ^G,, G,,1/2 G,,1/2 E,, E,, | E,, E,, E,, E,, | E,,2 E,,2 | E,, E,,2 E,, |\n[V:S1V1] ^G F1/2 E1/2 _E E | E F ^G F | E2 E |]\nw: i- ber- * bet- en, | Sei she nit kein | nar. zen.\n[V:S1V2] B, B,1/2 B,1/2 B, B, | B, B, B, B, | C2 C |]\n[V:S2V1] ^G, G,1/2 G,1/2 G, G, | ^G, G, G, G, | A,2 A, |]\n[V:S2V2] E,, E,,1/2 E,,1/2 E,, E,, | E,, E,, E,, E,, | E,,2 E,, |]\n"
   },
   {
     "id": "london-bridge",
@@ -360,6 +733,82 @@
     "abc": "X:1\nT:Mary Had a Little Lamb\nC:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.\nM:4/4\nL:1/4\nQ:1/4=96\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] E D C D | E E E2 | D D D2 | E G G2 |\n[V:S1V2] C C C C | C C C2 | B, B, B,2 | C C C2 |\n[V:S2V1] E, E, E, E, | E, E, E,2 | D, D, D,2 | C, C, C,2 |\n[V:S2V2] G,, G,, G,, G,, | G,, G,, G,,2 | G,, G,, G,,2 | G,, E,, E,,2 |\n[V:S1V1] E D C D | E E E E | D D E D | C4 |]\n[V:S1V2] C C C C | C C C C | B, B, B, B, | C4 |]\n[V:S2V1] C, E, E, E, | E, E, E, E, | D, D, D, D, | E,4 |]\n[V:S2V2] G,, G,, G,, G,, | G,, G,, G,, G,, | G,, G,, G,, G,, | G,,4 |]\n"
   },
   {
+    "id": "ma-oz-tzur",
+    "title": "Ma’oz Tzur",
+    "category": "Jewish songs",
+    "origin": "Hanukkah / Ashkenazi tradition",
+    "native_title": "מעוז צור",
+    "aliases": [
+      "Maoz Tzur",
+      "Maoz Tsur",
+      "Ma oz Tzur",
+      "Rock of Ages",
+      "Chanukah",
+      "Hanukkah"
+    ],
+    "tempo": 88,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "ma-oz-tzur.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/Maoz_Tsur.abc",
+    "abc": "X:1\nT:Ma’oz Tzur\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=88\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:D\n[V:S1V1] D2 A,2 D2 G2 | F2 E2 D3 A | A2 B2 E2 F G | F2 E2 D4 |\nw: Ma- oz tzur y'- | shu- a- ti l'- | cha na- e l'- sha- | be- * ach\n[V:S1V2] A,2 A,2 A,2 A,2 | A,2 A,2 A,3 A, | G,2 G,2 G,2 G, G, | A,2 A,2 A,4 |\n[V:S2V1] F,2 F,2 F,2 F,2 | F,2 F,2 F,3 F, | E,2 E,2 E,2 E, E, | F,2 F,2 F,4 |\n[V:S2V2] D,2 D,2 D,2 D,2 | D,2 D,2 D,3 D, | B,,2 B,,2 B,,2 B,, B,, | D,2 D,2 D,4 |\n[V:S1V1] D2 A,2 D2 G2 | F2 E2 D3 A | A2 B2 E2 F G | F2 E2 D3 A |\nw: Ma- oz tzur y'- | shu- a- ti l'- | cha na- e l'- sha- | be- * ach l'-\n[V:S1V2] A,2 A,2 A,2 A,2 | A,2 A,2 A,3 A, | G,2 G,2 G,2 G, G, | A,2 A,2 A,3 A, |\n[V:S2V1] F,2 F,2 F,2 F,2 | F,2 F,2 F,3 F, | E,2 E,2 E,2 E, E, | F,2 F,2 F,3 F, |\n[V:S2V2] D,2 D,2 D,2 D,2 | D,2 D,2 D,3 D, | B,,2 B,,2 B,,2 B,, B,, | D,2 D,2 D,3 D, |\n[V:S1V1] A3 A B2 c2 | d4 A4 | d2 c2 B2 A2 | A G F G E4 |\nw: et ta- chin mat- | be- ach | mi- tzar ham'- na- | be- * * * ach\n[V:S1V2] A,3 A, A,2 A,2 | D4 D4 | D2 D2 D2 D2 | E E E E E4 |\n[V:S2V1] E,3 E, E,2 E,2 | F,4 F,4 | F,2 F,2 F,2 F,2 | G, G, G, G, G,4 |\n[V:S2V2] C,3 C, C,2 C,2 | A,,4 A,,4 | A,,2 A,,2 A,,2 A,,2 | B,, B,, B,, B,, B,,4 |\n[V:S1V1] F3 G A3 B | E3 F G4 | F2 E2 D2 G G | F2 G2 A4 |\nw: az eg- more b'- | shir miz- mor | cha- nu- kat ha- miz- | be- * ach\n[V:S1V2] D3 F F3 F | E3 E E4 | D2 D2 D2 D D | D2 D2 D4 |\n[V:S2V1] A,3 A, A,3 A, | G,3 G, G,4 | A,2 A,2 A,2 A, A, | A,2 A,2 A,4 |\n[V:S2V2] D,3 D, D,3 D, | B,,3 B,, B,,4 | D,2 F,2 F,2 F, F, | F,2 F,2 F,4 |\n[V:S1V1] F3 G A3 B | E3 F G4 | F2 E2 D2 G G | F2 E2 D4 |]\nw: az eg- more b'- | shir miz- mor | cha- nu- kat ha- miz- | be- * ach.\n[V:S1V2] D3 D D3 D | B,3 B, B,4 | D2 D2 D2 D D | D2 D2 D4 |]\n[V:S2V1] A,3 A, A,3 A, | G,3 G, G,4 | A,2 A,2 A,2 A, A, | A,2 A,2 A,4 |]\n[V:S2V2] F,3 F, F,3 F, | E,3 E, E,4 | D,2 F,2 F,2 F, F, | F,2 F,2 F,4 |]\n"
+  },
+  {
+    "id": "mo-li-hua",
+    "title": "Mo Li Hua",
+    "category": "Folk songs around the world",
+    "origin": "China / Chinese folk song",
+    "native_title": "",
+    "aliases": [
+      "Jasmine Flower",
+      "Molihua",
+      "茉莉花"
+    ],
+    "tempo": 84,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "mo-li-hua.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=713",
+    "abc": "X:1\nT:Mo Li Hua\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=84\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] B2 B d e g g e | d2 d e d4 | B2 B d e g g e | d2 d e d4 |\n[V:S1V2] B,2 B, B, G G G G | G2 G D D4 | E2 E E E E E G | G2 G D D4 |\n[V:S2V1] G,2 G, G, B, B, B, B, | B,2 B, B, B,4 | B,2 B, B, B, B, B, B, | B,2 B, B, B,4 |\n[V:S2V2] E,2 E, E, E, E, E, E, | G,2 G, G, G,4 | G,2 G, G, G, E, E, E, | G,2 G, G, G,4 |\n[V:S1V1] d2 d2 d2 B d | e2 e2 d4 | B2 A B d2 B A | G2 G A G4 |\n[V:S1V2] D2 D2 D2 D D | C2 C2 E4 | D2 D D D2 D D | D2 D D D4 |\n[V:S2V1] B,2 B,2 B,2 B, B, | C2 C2 C4 | B,2 B, B, B,2 B, B, | B,2 B, B, B,4 |\n[V:S2V2] G,2 G,2 G,2 G, G, | G,2 G,2 G,4 | G,2 G, G, G,2 G, G, | G,2 G, G, G,4 |\n[V:S1V1] B A G B A3 B | d2 e g d4 | A2 B d A B G E | D8 |\n[V:S1V2] D D D D D3 D | D2 D B B4 | A2 A A A A F D | D8 |\n[V:S2V1] B, B, B, B, B,3 B, | B,2 B, D D4 | D2 D D D D D A, | B,8 |\n[V:S2V2] G, G, G, G, G,3 G, | G,2 G, G, G,4 | F,2 F, F, F, F, A, F, | G,8 |\n[V:S1V1] E2 E G A3 B | G A G E D4 | E2 E G A3 B | G A G E G4 |]\n[V:S1V2] C2 C E E3 E | D D D D D4 | C2 C E E3 E | D D D D D4 |]\n[V:S2V1] C2 C C C3 C | B, B, B, B, B,4 | C2 C C C3 C | B, B, B, B, B,4 |]\n[V:S2V2] A,2 A, A, A,3 A, | G, G, G, G, G,4 | A,2 A, A, A,3 A, | G, G, G, G, G,4 |]\n"
+  },
+  {
+    "id": "molly-malone",
+    "title": "Molly Malone",
+    "category": "Folk songs around the world",
+    "origin": "Ireland / Irish ballad",
+    "native_title": "",
+    "aliases": [
+      "Cockles and Mussels"
+    ],
+    "tempo": 104,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. James Yorkston song published in 1884. Public domain. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "molly-malone.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=235",
+    "abc": "X:1\nT:Molly Malone\nC:New practice harmony: The Great Gallery (CC0).\nM:3/4\nL:1/8\nQ:1/4=104\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] z4 D2 | G2 G3 G | G B3 G2 | A2 A3 A |\n[V:S1V2] z4 B,2 | B,2 B,3 B, | B, B,3 B,2 | A,2 A,3 A, |\n[V:S2V1] z4 G,2 | D,2 D,3 D, | D, D,3 D,2 | D,2 D,3 D, |\n[V:S2V2] z4 G,,2 | G,,2 G,,3 G,, | G,, G,,3 G,,2 | F,,2 F,,3 F,, |\n[V:S1V1] A c3 A2 | B2 A2 G2 | d2 c2 B2 | B A3 G2 |\n[V:S1V2] A, A,3 A,2 | G,2 B,2 B,2 | B,2 B,2 B,2 | B, B,3 B,2 |\n[V:S2V1] C, C,3 C,2 | D,2 D,2 D,2 | D,2 D,2 D,2 | D, D,3 D,2 |\n[V:S2V2] E,, E,,3 E,,2 | G,,2 G,,2 G,,2 | G,,2 G,,2 G,,2 | G,, G,,3 G,,2 |\n[V:S1V1] A4 D D | G2 G3 G | G B3 G2 | A2 A3 A |\n[V:S1V2] A,4 A, A, | B,2 B,3 B, | B, B,3 B,2 | A,2 A,3 A, |\n[V:S2V1] D,4 D, D, | D,2 D,3 D, | D, D,3 D,2 | D,2 D,3 D, |\n[V:S2V2] F,,4 F,, F,, | G,,2 G,,3 G,, | G,, G,,3 G,,2 | F,,2 F,,3 F,, |\n[V:S1V1] A c3 A A | B d3 c2 | B d3 c2 | B3 G A2 |\n[V:S1V2] A, A,3 A, A, | G, B,3 B,2 | B, B,3 B,2 | B,3 B, B,2 |\n[V:S2V1] C, C,3 C, C, | D, D,3 D,2 | D, D,3 D,2 | D,3 D, D,2 |\n[V:S2V2] E,, E,,3 E,, E,, | G,, G,,3 G,,2 | G,, G,,3 G,,2 | G,,3 G,, G,,2 |\n[V:S1V1] G4 D2 | G3 G G2 | G B3 G2 | A3 A A2 |\n[V:S1V2] B,4 B,2 | B,3 B, B,2 | B, B,3 B,2 | A,3 A, A,2 |\n[V:S2V1] D,4 D,2 | D,3 D, D,2 | D, D,3 D,2 | D,3 D, D,2 |\n[V:S2V2] G,,4 G,,2 | G,,3 G,, G,,2 | G,, G,,3 G,,2 | F,,3 F,, F,,2 |\n[V:S1V1] A c3 A A | B d3 c2 | B d3 c2 | B3 G A2 |\n[V:S1V2] A, A,3 A, A, | G, B,3 B,2 | B, B,3 B,2 | B,3 B, B,2 |\n[V:S2V1] C, C,3 C, C, | D, D,3 D,2 | D, D,3 D,2 | D,3 D, D,2 |\n[V:S2V2] E,, E,,3 E,, E,, | G,, G,,3 G,,2 | G,, G,,3 G,,2 | G,,3 G,, G,,2 |\n[V:S1V1] G4 |]\n[V:S1V2] B,4 |]\n[V:S2V1] D,4 |]\n[V:S2V2] G,,4 |]\n"
+  },
+  {
+    "id": "my-bonnie-lies-over-the-ocean",
+    "title": "My Bonnie Lies over the Ocean",
+    "category": "Folk songs around the world",
+    "origin": "Scotland / Scottish folk song",
+    "native_title": "",
+    "aliases": [
+      "My bonny",
+      "Bring back my bonnie"
+    ],
+    "tempo": 120,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "my-bonnie-lies-over-the-ocean.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=5",
+    "abc": "X:1\nT:My Bonnie Lies over the Ocean\nC:New practice harmony: The Great Gallery (CC0).\nM:3/4\nL:1/8\nQ:1/4=120\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] z4 G2 | e3 d c2 | d2 c2 A2 | G2 E4- |\n[V:S1V2] z4 C2 | C3 E E2 | F2 D2 D2 | C2 C4- |\n[V:S2V1] z4 E,2 | G,3 G, G,2 | F,2 F,2 F,2 | E,2 G,4- |\n[V:S2V2] z4 C,2 | C,3 C, C,2 | A,,2 A,,2 A,,2 | C,2 C,4- |\n[V:S1V1] E4 G2 | e3 d c2 | c2 B2 c2 | d6- |\n[V:S1V2] C4 C2 | C3 E E2 | E2 E2 E2 | D6- |\n[V:S2V1] G,4 E,2 | G,3 G, G,2 | G,2 G,2 G,2 | G,6- |\n[V:S2V2] C,4 C,2 | C,3 C, C,2 | C,2 C,2 C,2 | B,,6- |\n[V:S1V1] d4 G2 | e3 d c2 | d2 c2 A2 | G2 E4- |\n[V:S1V2] D4 D2 | C3 E E2 | F2 D2 D2 | C2 C4- |\n[V:S2V1] G,4 G,2 | G,3 G, G,2 | F,2 F,2 F,2 | E,2 G,4- |\n[V:S2V2] B,,4 B,,2 | C,3 C, C,2 | A,,2 A,,2 A,,2 | C,2 C,4- |\n[V:S1V1] E4 G2 | A3 d c2 | B2 A2 B2 | c6- |\n[V:S1V2] C4 C2 | C3 C C2 | B,2 B,2 B,2 | C6- |\n[V:S2V1] G,4 E,2 | F,3 F, F,2 | D,2 D,2 D,2 | E,6- |\n[V:S2V2] C,4 C,2 | C,3 A,, A,,2 | G,,2 G,,2 G,,2 | G,,6- |\n[V:S1V1] c4 z2 | G6 | c6 | A6 |\n[V:S1V2] C4 z2 | C6 | C6 | C6 |\n[V:S2V1] E,4 z2 | E,6 | E,6 | F,6 |\n[V:S2V2] G,,4 z2 | G,,6 | G,,6 | F,,6 |\n[V:S1V1] d4 c2 | B2 B2 B2 | B2 A2 B2 | c4 d2 |\n[V:S1V2] B,4 B,2 | B,2 B,2 B,2 | B,2 B,2 B,2 | C4 C2 |\n[V:S2V1] D,4 D,2 | D,2 D,2 D,2 | D,2 D,2 D,2 | E,4 E,2 |\n[V:S2V2] G,,4 G,,2 | G,,2 G,,2 G,,2 | G,,2 G,,2 G,,2 | G,,4 G,,2 |\n[V:S1V1] e6 | G6 | c6 | A6 |\n[V:S1V2] C6 | C6 | C6 | C6 |\n[V:S2V1] E,6 | E,6 | E,6 | F,6 |\n[V:S2V2] G,,6 | G,,6 | G,,6 | F,,6 |\n[V:S1V1] d4 c2 | B2 B2 B2 | B2 A2 B2 | c6- |\n[V:S1V2] B,4 B,2 | B,2 B,2 B,2 | B,2 B,2 B,2 | C6- |\n[V:S2V1] D,4 D,2 | D,2 D,2 D,2 | D,2 D,2 D,2 | E,6- |\n[V:S2V2] G,,4 G,,2 | G,,2 G,,2 G,,2 | G,,2 G,,2 G,,2 | G,,6- |\n[V:S1V1] c4 |]\n[V:S1V2] C4 |]\n[V:S2V1] E,4 |]\n[V:S2V2] G,,4 |]\n"
+  },
+  {
     "id": "my-country-tis-of-thee",
     "title": "My Country, ’Tis of Thee",
     "category": "Anthems",
@@ -382,6 +831,26 @@
     "source": "openhymnal-Nearer_My_God_To_Thee-Bethany.abc",
     "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Nearer_My_God_To_Thee/Nearer_My_God_To_Thee-Bethany.abc",
     "abc": "X:1\nT:Nearer, My God, To Thee\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 6/4\nL: 1/4\nQ:1/4=160\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: G\n[V: S1V1]  B3 A2 G | G2 E E3 | D3 G2 B | A3- A2 z |\nw: Near- er, my God, to Thee, near- er to Thee!  * \n[V: S1V2]  D3 C2 B, | E2 C C3 | D3 D2 D | D3- D2 x |\n[V: S2V1]  G,3 F,2 G, | C2 G, G,3 | B,3 G,2 G, | F,3- F,2 z |\n[V: S2V2]  G,3 D,2 E, | C,2 C, C,3 | G,,3 B,,2 G,, | D,3- D,2 x |\n[V: S1V1]  B3 A2 G | G2 E E3 | (D2 G) F2 A | G3- G2 z |\nw: E'en though it be a cross that * rais- eth me,  * \n[V: S1V2]  D3 C2 B, | E2 C C3 | (B,2 D) D2 D | D3- D2 x |\n[V: S2V1]  G,3 F,2 G, | C2 G, G,3 | (G,2 B,) A,2 C | B,3- B,2 z |\n[V: S2V2]  G,3 D,2 E, | C,2 C, C,3 | D,3 D,2 D, | G,,3- G,,2 x |\n[V: S1V1]  d3 e2 d | d2 B d3 | d3 e2 d | d2 B A3 |\nw: Still all my song shall be, near- er, my God, to Thee. \n[V: S1V2]  G3 G2 G | G2 G G3 | G3 G2 G | D2 D D3 |\n[V: S2V1]  B,3 C2 B, | B,2 G, B,3 | B,3 C2 B, | A,2 G, F,3 |\n[V: S2V2]  G,3 G,2 G, | G,2 G, G,3 | G,3 C,2 G, | F,2 G, D,3 |\n[V: S1V1]  B3 A2 G | G2 E E3 | (D2 G) F2 A | G3- G2 z |]\nw: Near- er, my God, to Thee, Near- * er to Thee!  * \n[V: S1V2]  D3 C2 B, | E2 C C3 | (B,2 D) D2 D | D3- D2 x |]\n[V: S2V1]  G,3 F,2 G, | C2 G, G,3 | (G,2 B,) A,2 C | B,3- B,2 z |]\n[V: S2V2]  G,3 D,2 E, | C,2 E, C,3 | D,3 D,2 D, | G,,3- G,,2 x |]\n"
+  },
+  {
+    "id": "o-canada",
+    "title": "O Canada",
+    "category": "Anthems",
+    "origin": "Canada / national anthem",
+    "native_title": "",
+    "aliases": [
+      "Oh Canada",
+      "Ô Canada",
+      "Canadian national anthem",
+      "Canada anthem"
+    ],
+    "tempo": 96,
+    "note": "Calixa Lavallée melody (1880) · current English lyrics",
+    "credit": "Melody reference: flutetunes.com. Current words and public-domain statement: https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html . No source accompaniment, engraving or audio is reused. Music by Calixa Lavallée, 1880. Current English text from the Government of Canada, based on Robert Stanley Weir. The Canadian National Anthem Act declares the anthem melody and words public domain. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "o-canada.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=202",
+    "abc": "X:1\nT:O Canada\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=96\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:F\n[V:S1V1] A4 c3 c | F6 G2 | A2 B2 c2 d2 | G6 z2 |\nw: O Ca- na- | da! Our | home and na- tive | land!\n[V:S1V2] C4 A,3 A, | A,6 A,2 | A,2 A,2 A,2 C2 | C6 z2 |\n[V:S2V1] F,4 F,3 F, | F,6 F,2 | F,2 F,2 F,2 F,2 | E,6 z2 |\n[V:S2V2] C,4 C,3 C, | C,6 C,2 | C,2 C,2 C,2 A,,2 | C,6 z2 |\n[V:S1V1] A4 =B3 B | c6 d2 | e2 e2 d2 d2 | c6 G3/2 A1/2 |\nw: True pa- triot | love in | all of us com- | mand. With glo-\n[V:S1V2] C4 A,3 A, | A,6 C2 | C2 C2 E2 E2 | E6 E3/2 E1/2 |\n[V:S2V1] F,4 F,3 F, | F,6 F,2 | G,2 G,2 G,2 G,2 | G,6 G,3/2 G,1/2 |\n[V:S2V2] C,4 C,3 C, | C,6 A,,2 | C,2 C,2 C,2 C,2 | C,6 C,3/2 C,1/2 |\n[V:S1V1] B3 A G2 A3/2 B1/2 | c3 B A2 B3/2 c1/2 | d2 c2 B2 A2 | G6 G3/2 A1/2 |\nw: wing hearts we see thee | rise, The True North strong | and free! * * | * From far\n[V:S1V2] D3 D D2 D3/2 D1/2 | F3 C C2 C3/2 C1/2 | B,2 D2 D2 D2 | C6 C3/2 C1/2 |\n[V:S2V1] G,3 B, B,2 B,3/2 B,1/2 | A,3 A, A,2 A,3/2 A,1/2 | B,2 B,2 B,2 B,2 | C6 C3/2 G,1/2 |\n[V:S2V2] G,,3 G,, G,,2 G,,3/2 G,,1/2 | F,,3 F,, F,,2 F,,3/2 F,,1/2 | F,,2 F,,2 F,,2 F,,2 | E,,6 E,,3/2 E,,1/2 |\n[V:S1V1] B3 A G2 A3/2 B1/2 | c3 B A2 A2 | G2 c2 c =B A B | c6 z2 |\nw: and wide, O Ca- na- | da, we stand on | guard for thee. * * * | *\n[V:S1V2] D3 D D2 D3/2 D1/2 | F3 C C2 C2 | C2 C2 C C C C | C6 z2 |\n[V:S2V1] G,3 B, B,2 B,3/2 B,1/2 | A,3 A, A,2 A,2 | G,2 G,2 G, G, G, G, | A,6 z2 |\n[V:S2V2] G,,3 G,, G,,2 G,,3/2 G,,1/2 | F,,3 F,, F,,2 F,,2 | E,,2 E,,2 E,, E,, E,, E,, | F,,6 z2 |\n[V:S1V1] A4 c3 c | F6 z2 | B4 d3 d | G6 z2 |\nw: God keep our | land | glo- rious and | free!\n[V:S1V2] C4 C3 C | C6 z2 | D4 D3 D | C6 z2 |\n[V:S2V1] A,4 A,3 A, | A,6 z2 | B,4 B,3 B, | C6 z2 |\n[V:S2V2] F,,4 F,,3 F,, | F,,6 z2 | F,,4 F,,3 F,, | E,,6 z2 |\n[V:S1V1] c4 ^c3 c | d2 B2 A2 G2 | F4 G4 | A6 z2 |\nw: O Ca- na- | da, we stand on | guard for | thee.\n[V:S1V2] C4 C3 C | B,2 D2 D2 D2 | C4 C4 | C6 z2 |\n[V:S2V1] A,4 A,3 A, | B,2 B,2 B,2 B,2 | A,4 A,4 | A,6 z2 |\n[V:S2V2] F,,4 F,,3 F,, | G,,2 G,,2 G,,2 G,,2 | A,,4 F,,4 | F,,6 z2 |\n[V:S1V1] c4 f3 f | d2 B2 A2 G2 | c4 E4 | F6 |]\nw: O Ca- na- | da, we stand on | guard for | thee.\n[V:S1V2] C4 A3 A | B2 B2 G2 G2 | G4 E4 | F6 |]\n[V:S2V1] A,4 C3 C | B,2 D2 D2 D2 | E4 G,4 | A,6 |]\n[V:S2V2] F,,4 F,,3 F,, | G,,2 G,,2 B,,2 B,,2 | C,4 C,4 | C,6 |]\n"
   },
   {
     "id": "o-come-o-come-emmanuel",
@@ -418,6 +887,26 @@
     "source": "openhymnal-O_Little_Town_Of_Bethlehem-St_Louis.abc",
     "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/O_Little_Town_Of_Bethlehem/O_Little_Town_Of_Bethlehem-St_Louis.abc",
     "abc": "X:1\nT:O Little Town of Bethlehem\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 4/4\nL: 1/4\nQ:1/4=100\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: F\n[V: S1V1]  A | A A ^G A | c B D G | F E/F/ G C | A3\nw: O lit- tle town of Beth- le- hem, how still we * see thee lie! \n[V: S1V2]  C | C C =B, C | _E D B, D | C C C C | C3\n[V: S2V1]  F, | F, F, F, F, | ^F, G, G, B, | A, G,/A,/ B, B, | A,3\n[V: S2V2]  F, | F, F, F, F, | B,, B,, B,, B,, | C, C, C, C, | F,,3\n[V: S1V1]  A | A A d c | c B D G | F E/F/ A G | F3\nw: A- bove thy deep and dream- less sleep the si- lent * stars go by. \n[V: S1V2]  C | C F ^F ^F | G D B, D | C C E E | F3\n[V: S2V1]  F, | F, A, A, D | D D D B, | A, ^G,/A,/ C B, | A,3\n[V: S2V2]  F, | F, _E, D, D, | G, G, G,, B,, | C,3/2 C,/ C, C, | F,3\n[V: S1V1]  A | A A G F | E2 E E | D E F G | A3\nw: Yet in thy dark streets shin- eth the ev- er- last- ing Light; \n[V: S1V2]  F | F F E D | ^C2 ^C ^C | D ^C D D | ^C3\n[V: S2V1]  C | C A, B, =B, | ^C2 ^C A, | A, A, A, G, | E,3\n[V: S2V2]  F, | F, F, G, ^G, | A,2 A, A,, | F, E, D, B,, | A,,3\n[V: S1V1]  A | A A ^G A | c B D d | c F A3/2 G/ | F3 |]\nw: The hopes and fears of all the years are met in thee to- night. \n[V: S1V2]  =C | C C =B, C | D D B, D/E/ | F =B, C3/2 _B,/ | A,3 |]\n[V: S2V1]  F, | F, F, F, F, | ^F, G, G, B, | A, G,/F,/ F,3/2 E,/ | F,3 |]\n[V: S2V2]  F,, | F,, F, F, F, | B,, B,, B,, B,, | C, D, C,3/2 C,/ | F,,3 |]\n"
+  },
+  {
+    "id": "oh-chanukah",
+    "title": "Oh Chanukah",
+    "category": "Jewish songs",
+    "origin": "Hanukkah / Yiddish and Hebrew tradition",
+    "native_title": "חנוכה, אוי חנוכה",
+    "aliases": [
+      "Oy Khanike",
+      "Oh Hanukkah",
+      "O Chanukah",
+      "Chanuka"
+    ],
+    "tempo": 108,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "oh-chanukah.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=667",
+    "abc": "X:1\nT:Oh Chanukah\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=108\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Em\n[V:S1V1] z6 z E | B B B B e e B B | B2 A G A2 G2 | B2 B B e2 B B |\n[V:S1V2] z6 z B, | B, B, B, B, G G G G | G2 G G G2 G2 | G2 G G G2 G G |\n[V:S2V1] z6 z G, | G, G, G, G, B, B, B, B, | B,2 B, B, B,2 B,2 | B,2 B, B, B,2 B, B, |\n[V:S2V2] z6 z E, | E, E, E, E, E, E, E, E, | E,2 E, E, E,2 E,2 | E,2 E, E, E,2 E, E, |\n[V:S1V1] B2 A G A2 G2 | G A B A G2 G G | A2 G F G4 | G A B A G2 G G |\n[V:S1V2] G2 G G G2 G2 | G G G G G2 G G | G2 G E E4 | E G G G G2 G G |\n[V:S2V1] B,2 B, B, B,2 B,2 | B, B, B, B, B,2 B, B, | B,2 B, B, B,4 | B, B, B, B, B,2 B, B, |\n[V:S2V2] E,2 E, E, E,2 E,2 | E, E, E, E, E,2 E, E, | E,2 E, G, E,4 | E, E, E, E, E,2 E, E, |\n[V:S1V1] A2 G F E2 E2 | B2 B4 E2 | B2 B4 E2 | B2 B B c2 B A |\n[V:S1V2] A2 E E E2 E2 | E2 E4 E2 | E2 E4 E2 | E2 E E E2 E E |\n[V:S2V1] C2 C C C2 C2 | B,2 B,4 B,2 | B,2 B,4 B,2 | B,2 B, B, B,2 B, B, |\n[V:S2V2] E,2 A, A, A,2 A,2 | G,2 G,4 G,2 | G,2 G,4 G,2 | G,2 G, G, G,2 G, G, |\n[V:S1V1] B4 z4 | B2 B B c2 B A | B2 B B c2 B A | G2 G G A2 G A |\n[V:S1V2] E4 z4 | E2 E E E2 E E | E2 E E E2 E E | E2 E E G2 G G |\n[V:S2V1] B,4 z4 | B,2 B, B, B,2 B, B, | B,2 B, B, B,2 B, B, | B,2 B, B, B,2 B, B, |\n[V:S2V2] G,4 z4 | G,2 G, G, G,2 G, G, | G,2 G, G, G,2 G, G, | E,2 E, E, E,2 E, E, |\n[V:S1V1] B6 z2 | B2 B B c2 B A | B2 B B c2 B A | G2 G G A2 G F |\n[V:S1V2] G6 z2 | G2 G G G2 G G | G2 G G G2 G G | G2 G G G2 G E |\n[V:S2V1] B,6 z2 | B,2 B, B, B,2 B, B, | B,2 B, B, B,2 B, B, | B,2 B, B, B,2 B, B, |\n[V:S2V2] E,6 z2 | E,2 E, E, E,2 E, E, | E,2 E, E, E,2 E, E, | E,2 E, E, E,2 E, G, |\n[V:S1V1] E6 |]\n[V:S1V2] E6 |]\n[V:S2V1] B,6 |]\n[V:S2V2] G,6 |]\n"
   },
   {
     "id": "oh-susanna",
@@ -468,6 +957,41 @@
     "abc": "X:1\nT:Row, Row, Row Your Boat\nC:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.\nM:6/8\nL:1/8\nQ:1/4=120\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] C3 C3 | C2 D E3 | E2 D E2 F | G6 |\n[V:S1V2] C3 C3 | C2 C C3 | C2 C C2 C | C6 |\n[V:S2V1] E,3 E,3 | E,2 E, E,3 | E,2 E, E,2 E, | E,6 |\n[V:S2V2] G,,3 G,,3 | G,,2 G,, G,,3 | G,,2 G,, G,,2 G,, | G,,6 |\n[V:S1V1] c c c G G G | E E E C C C | G2 F E2 D | C6 |]\n[V:S1V2] C C C C C C | C C C C C C | B,2 B, B,2 B, | C6 |]\n[V:S2V1] E, E, E, E, E, E, | E, E, E, E, E, E, | D,2 D, D,2 D, | E,6 |]\n[V:S2V2] G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, | G,,2 G,, G,,2 G,, | G,,6 |]\n"
   },
   {
+    "id": "sakura-sakura",
+    "title": "Sakura Sakura",
+    "category": "Folk songs around the world",
+    "origin": "Japan / Japanese",
+    "native_title": "",
+    "aliases": [
+      "Cherry blossoms",
+      "さくらさくら"
+    ],
+    "tempo": 76,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "sakura-sakura.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/japan/sakura.abc",
+    "abc": "X:1\nT:Sakura Sakura\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=76\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Am\n[V:S1V1] A2 A2 B4 | A2 A2 B4 | A2 B2 c2 B2 | A2 B A F4 |\nw: Sa- ku- ra | Sa- ku- ra | Ya- yo- i- no | So- ra- * wa\n[V:S1V2] C2 C2 C4 | C2 C2 C4 | C2 C2 C2 C2 | D2 D D D4 |\n[V:S2V1] E,2 E,2 E,4 | E,2 E,2 E,4 | E,2 E,2 E,2 E,2 | F,2 F, F, F,4 |\n[V:S2V2] C,2 A,,2 A,,4 | A,,2 A,,2 A,,4 | A,,2 A,,2 A,,2 A,,2 | A,,2 A,, A,, A,,4 |\n[V:S1V1] E2 C2 E2 F2 | E2 E C B,4 | A2 B2 c2 B2 | A2 B A F4 |\nw: Mi- wa- ta- su | ka- gi- * ri | Ka- su- mi- ka | ku- mu- * ka\n[V:S1V2] C2 C2 C2 C2 | B,2 B, B, B,4 | C2 C2 C2 C2 | D2 D D D4 |\n[V:S2V1] E,2 E,2 E,2 E,2 | E,2 E, E, E,4 | E,2 E,2 E,2 E,2 | F,2 F, F, F,4 |\n[V:S2V2] A,,2 A,,2 A,,2 A,,2 | ^G,,2 G,, G,, G,,4 | A,,2 A,,2 A,,2 A,,2 | A,,2 A,, A,, A,,4 |\n[V:S1V1] E2 C2 E2 F2 | E2 E C B,4 | A2 A2 B4 | A2 A2 B4 |\nw: Ni- o- i- zo | i- zu- * ru | I- za- ya | I- za- ya\n[V:S1V2] C2 C2 C2 C2 | B,2 B, B, B,4 | C2 C2 C4 | C2 C2 C4 |\n[V:S2V1] E,2 E,2 E,2 E,2 | E,2 E, E, E,4 | E,2 E,2 E,4 | E,2 E,2 E,4 |\n[V:S2V2] A,,2 A,,2 A,,2 A,,2 | ^G,,2 G,, G,, G,,4 | A,,2 A,,2 A,,4 | A,,2 A,,2 A,,4 |\n[V:S1V1] D2 E2 F4 | B A F2 E4 |]\nw: Mi- * ni- | yu- * ka- un.\n[V:S1V2] D2 D2 D4 | C C C2 C4 |]\n[V:S2V1] F,2 F,2 F,4 | E, E, E,2 E,4 |]\n[V:S2V2] A,,2 A,,2 A,,4 | A,, A,, A,,2 A,,4 |]\n"
+  },
+  {
+    "id": "santa-lucia",
+    "title": "Santa Lucia",
+    "category": "Folk songs around the world",
+    "origin": "Italy / Neapolitan song",
+    "native_title": "",
+    "aliases": [
+      "Santa Lucía"
+    ],
+    "tempo": 96,
+    "note": "Historic song melody · verse and refrain",
+    "credit": "Melody reference: John Chambers ABC collection Teodoro Cottrau, published 1849. Public domain. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "santa-lucia.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/song/Santa_Lucia_Cw.abc",
+    "abc": "X:1\nT:Santa Lucia\nC:New practice harmony: The Great Gallery (CC0).\nM:3/4\nL:1/8\nQ:1/4=96\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] G2 G3 c | c B B4 | F2 F3 A | A G G4 |\nw: Sul ma- re | luc- ci- ca, | l'a- stro d'ar- | gen- * to,\n[V:S1V2] C2 C3 E | D D D4 | C2 C3 C | C C C4 |\n[V:S2V1] E,2 E,3 G, | G, G, G,4 | A,2 A,3 A, | G, G, G,4 |\n[V:S2V2] C,2 C,3 C, | B,, B,, B,,4 | C,2 C,3 F, | E, E, E,4 |\n[V:S1V1] E2 A2 G2 | G ^F =F4 | F2 E2 D2 | A2 G4 |\nw: Pla- ci d è | l'on- * da, | pro- spe- ro è il | ven- to;\n[V:S1V2] C2 C2 C2 | C C C4 | D2 D2 D2 | C2 C4 |\n[V:S2V1] G,2 G,2 G,2 | A, A, A,4 | A,2 A,2 A,2 | G,2 G,4 |\n[V:S2V2] E,2 E,2 E,2 | F, F, F,4 | D,2 F,2 F,2 | E,2 E,4 |\n[V:S1V1] G2 G3 c | c B B4 | F2 F3 A | A G G4 |\nw: Sul ma- re | luc- ci- ca, | l'a- stro d'ar- | gen- * to,\n[V:S1V2] C2 C3 C | B, B, B,4 | C2 C3 C | C C C4 |\n[V:S2V1] G,2 G,3 G, | G, G, G,4 | A,2 A,3 A, | G, G, G,4 |\n[V:S2V2] E,2 E,3 E, | D, D, D,4 | F,2 F,3 F, | E, E, E,4 |\n[V:S1V1] E2 A2 G2 | G ^F =F4 | F2 E2 D2 | A2 G4 |\nw: Pla- ci d è | l'on- * da, | pro- spe- ro è il | ven- to;\n[V:S1V2] C2 C2 C2 | C C C4 | D2 D2 D2 | C2 C4 |\n[V:S2V1] G,2 G,2 G,2 | A, A, A,4 | A,2 A,2 A,2 | G,2 G,4 |\n[V:S2V2] E,2 E,2 E,2 | F, F, F,4 | D,2 F,2 F,2 | E,2 E,4 |\n[V:S1V1] e2 d2 c2 | B A d4 | d2 c2 A2 | ^F G c4 |\nw: Ve- ni- te al- | l'a- gi- le | bar- chet- ta | mi- * a\n[V:S1V2] C2 C2 C2 | B, B, B,4 | F2 F2 F2 | E E E4 |\n[V:S2V1] G,2 G,2 G,2 | G, G, G,4 | A,2 A,2 A,2 | G, G, G,4 |\n[V:S2V2] E,2 E,2 E,2 | D, D, D,4 | D,2 D,2 D,2 | C, C, C,4 |\n[V:S1V1] e c c G G E | F d d4 | d2 A3 B | d2 c4 |\nw: San- * ta * Lu- * | ci- * a, | San- ta Lu- | ci- a.\n[V:S1V2] E E E E E E | D D D4 | D2 D3 D | E2 E4 |\n[V:S2V1] G, G, G, G, G, G, | F, F, F,4 | F,2 F,3 F, | G,2 G,4 |\n[V:S2V2] C, C, C, C, C, C, | A,, A,, A,,4 | A,,2 A,,3 A,, | C,2 C,4 |\n[V:S1V1] e2 d2 c2 | B A d4 | d2 c2 A2 | ^F G c4 |\nw: Ve- ni- te al- | l'a- gi- le | bar- chet- ta | mi- * a\n[V:S1V2] E2 E2 E2 | D D D4 | D2 D2 D2 | E E E4 |\n[V:S2V1] G,2 G,2 G,2 | G, G, G,4 | F,2 F,2 F,2 | G, G, G,4 |\n[V:S2V2] C,2 C,2 C,2 | B,, B,, B,,4 | A,,2 A,,2 A,,2 | C, C, C,4 |\n[V:S1V1] e c c G G E | F d d4 | d2 e3 d | d2 c4 |]\nw: San- * ta * Lu- * | ci- * a, | San- ta Lu- | ci- a.\n[V:S1V2] E E E E E E | D D D4 | B,2 D3 D | E2 E4 |]\n[V:S2V1] G, G, G, G, G, G, | F, F, F,4 | G,2 B,3 B, | C2 C4 |]\n[V:S2V2] C, C, C, C, C, C, | A,, A,, A,,4 | G,,2 G,,3 G,, | G,,2 G,,4 |]\n"
+  },
+  {
     "id": "see-amid-the-winter-s-snow",
     "title": "See Amid the Winter's Snow",
     "category": "Christmas carols",
@@ -480,6 +1004,64 @@
     "abc": "X:1\nT:See Amid the Winter's Snow\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 4/4\nL: 1/4\nQ:1/4=100\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: G\n[V: S1V1]  G3/2 A/ G F | E3/2 D/ D2 | G A c B | B3/2 A/ A2 |\nw: See a- mid the win- ter's snow, Born for us on earth be- low, \n[V: S1V2]  B,2 C D | G, A, (B, C) | D2 G2 | G2 F2 |\n[V: S2V1]  G,2 G, D, | E, F, (G, A,) | B,2 E D | D ^C D2 |\n[V: S2V2]  G,,2 A,, B,, | C,2 G,,2 | G, F, E, G, | D,2 (D, C,) |\n[V: S1V1]  G3/2 A/ G F | E3/2 D/ D2 | G A B c | A3/2 G/ G2 |\nw: See, the gen- tle Lamb ap- pears, Pro- mised from e- ter- nal years. \n[V: S1V2]  D B, C D | G, A, (B, A,) | B, C D E | C2 B,2 |\n[V: S2V1]  G,2 G, D, | E, F, (G, A,) | G,2 G,2 | G, F, G,2 |\n[V: S2V2]  B,, G,, A,, B,, | C,2 (G, F,) | E,2 D, C, | D,2 G,,2 |\n[V: S1V1]  d3/2 d/ c B | A G F2 | d3/2 d/ c B | A G F2 |\nw: Hail that ev- er bles- sèd morn, Hail re- demp- tion's hap- py dawn, \n[V: S1V2]  G3/2 G/ G G | D D D2 | D3/2 G/ G G | E D D2 |\n[V: S2V1]  B,3/2 B,/ E D | C B, A,2 | G,3/2 G,/ E D | C B, A,2 |\n[V: S2V2]  G,3/2 G,/ G, G, | F, G, D,2 | B,,3/2 B,,/ C, G,, | A,, B,,/C,/ D,2 |\n[V: S1V1]  G3/2 A/ G F | E3/2 D/ D2 | d3/2 B/ G c | B A G2 |]\nw: Sing through all Jer- u- sa- lem: Christ is born in Beth- le- hem. \n[V: S1V2]  B,3/2 B,/ ^C D | D ^C D2 | D3/2 D/ E G | F F G2 |]\n[V: S2V1]  G,3/2 G,/ E, D, | B, A,/G,/ F,2 | G,3/2 G,/ G, E | D C B,2 |]\n[V: S2V2]  E,3/2 E,/ A,, B,, | G,, A,, (D, C,) | B,,3/2 B,,/ C, A,, | D, D, G,,2 |]\n"
   },
   {
+    "id": "sevivon-sov-sov-sov",
+    "title": "Sevivon Sov Sov Sov",
+    "category": "Jewish songs",
+    "origin": "Hanukkah / Hebrew",
+    "native_title": "סביבון סוב סוב סוב",
+    "aliases": [
+      "Svivon",
+      "Sevivon",
+      "Sov sov sov",
+      "Chanukah",
+      "Hanukkah"
+    ],
+    "tempo": 100,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "sevivon-sov-sov-sov.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/Svivon-Dm-16-.abc",
+    "abc": "X:1\nT:Sevivon Sov Sov Sov\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=100\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Dm\n[V:S1V1] D D E2 | F F E2 | A A G1/2 F1/2 E1/2 D1/2 | F F E2 |\n[V:S1V2] A, A, A,2 | A, A, A,2 | A, A, A,1/2 A,1/2 A,1/2 A,1/2 | A, A, A,2 |\n[V:S2V1] F, F, F,2 | F, F, F,2 | F, F, F,1/2 F,1/2 F,1/2 F,1/2 | F, F, F,2 |\n[V:S2V2] D, D, D,2 | D, D, D,2 | D, D, D,1/2 D,1/2 D,1/2 D,1/2 | D, D, D,2 |\n[V:S1V1] D D E2 | F F G2 | A A A A, | D D D2 |\n[V:S1V2] A, A, A,2 | A, A, A,2 | A, A, A, A, | A, A, A,2 |\n[V:S2V1] F, F, F,2 | F, F, F,2 | F, F, F, F, | F, F, F,2 |\n[V:S2V2] D, D, D,2 | D, D, D,2 | D, D, D, D, | D, D, D,2 |\n[V:S1V1] G G G B | A A F1/2 E1/2 D | C C A, C | D E F1/2 E1/2 D |\n[V:S1V2] B, B, B, B, | A, A, A,1/2 A,1/2 A, | A, A, A, A, | A, A, A,1/2 A,1/2 A, |\n[V:S2V1] G, G, G, G, | F, F, F,1/2 F,1/2 F, | F, F, F, F, | F, F, F,1/2 F,1/2 F, |\n[V:S2V2] D, D, D, D, | D, D, D,1/2 D,1/2 D, | C, C, C, C, | D, D, D,1/2 D,1/2 D, |\n[V:S1V1] G G G B | A A F1/2 E1/2 D | C C A, C | D D D2 |]\n[V:S1V2] B, B, B, B, | A, A, A,1/2 A,1/2 A, | A, A, A, A, | A, A, A,2 |]\n[V:S2V1] G, G, G, G, | F, F, F,1/2 F,1/2 F, | F, F, F, F, | F, F, F,2 |]\n[V:S2V2] D, D, D, D, | D, D, D,1/2 D,1/2 D, | C, C, C, C, | D, D, D,2 |]\n"
+  },
+  {
+    "id": "shalom-aleichem",
+    "title": "Shalom Aleichem",
+    "category": "Jewish songs",
+    "origin": "Shabbat / Hebrew",
+    "native_title": "שלום עליכם",
+    "aliases": [
+      "Sholom Aleichem"
+    ],
+    "tempo": 84,
+    "note": "Israel Goldfarb melody (1918)",
+    "credit": "Melody reference: John Chambers ABC collection Israel Goldfarb melody, 1918. Public domain in the United States; traditional liturgical text. This is not a modern Carlebach setting. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "shalom-aleichem.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/ShalomAleichem3.abc",
+    "abc": "X:1\nT:Shalom Aleichem\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=84\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Gm\n[V:S1V1] D2 B A G2 G2 | ^F G A G F E D2 | ^F F F2 G F G B | A4 z4 |\nw: 1. Sha- lom a- ley- chem, | mal- 'a chey ha- sha- * lom, | mal'- a- chey el * * * | yon.\n[V:S1V2] B,2 D D D2 D2 | D D D D D D D2 | D D D2 D D D D | D4 z4 |\n[V:S2V1] G,2 G, B, B,2 B,2 | A, A, A, A, A, A, A,2 | A, A, A,2 A, A, A, A, | A,4 z4 |\n[V:S2V2] G,,2 G,, G,, G,,2 G,,2 | ^F,, F,, F,, F,, F,, F,, F,,2 | ^F,, F,, F,,2 F,, F,, F,, F,, | ^F,,4 z4 |\n[V:S1V1] D2 B A G2 G2 | ^F G A G F E D2 | C C G2 ^F2 E C | D4 z4 |\nw: Mi- * * me- lech | mal- * chey ham'- la- * chim, | ha- ka- dosh ba- ruch * | hu.\n[V:S1V2] D2 D D D2 D2 | D D D D D D D2 | C C C2 C2 C C | B,4 z4 |\n[V:S2V1] B,2 B, B, B,2 B,2 | A, A, A, A, A, A, A,2 | E, E, E,2 E,2 E, E, | D,4 z4 |\n[V:S2V2] G,,2 G,, G,, G,,2 G,,2 | ^F,, F,, F,, F,, F,, F,, F,,2 | G,, G,, G,,2 G,,2 G,, G,, | G,,4 z4 |\n[V:S1V1] B c d d d2 d2 | c B A B c d c2 | B A G A B2 d2 | A4 z4 |\nw: Bo'- a- chem l'- sha- lom | mal'- a- chey ha- sha- * lom | mal'- a- chey * el- * | yon\n[V:S1V2] B, B, B, B, B,2 B,2 | A, A, A, A, A, C C2 | B, B, B, B, B,2 B,2 | A,4 z4 |\n[V:S2V1] D, D, D, D, D,2 D,2 | F, C, C, C, C, A, A,2 | D, D, D, D, D,2 D,2 | D,4 z4 |\n[V:S2V2] G,, G,, G,, G,, G,,2 G,,2 | F,, F,, F,, F,, F,, F,, F,,2 | G,, G,, G,, G,, G,,2 G,,2 | ^F,,4 z4 |\n[V:S1V1] A2 c2 c2 c2 | c e d c B A G2 | G A B2 A G ^F A | G4 z4 |]\nw: Mi- * me- lech | mal- * chey ham'- la- * chim, | ha- ka- dosh ba- * ruch * | hu.\n[V:S1V2] A,2 A,2 A,2 A,2 | C C C C C C C2 | B, B, B,2 B, B, B, B, | B,4 z4 |]\n[V:S2V1] C,2 C,2 C,2 C,2 | E, E, E, E, E, E, E,2 | D, D, D,2 D, D, D, D, | D,4 z4 |]\n[V:S2V2] F,,2 F,,2 F,,2 F,,2 | G,, G,, G,, G,, G,, G,, G,,2 | G,, G,, G,,2 G,, G,, G,, G,, | G,,4 z4 |]\n"
+  },
+  {
+    "id": "shalom-chaverim",
+    "title": "Shalom Chaverim",
+    "category": "Jewish songs",
+    "origin": "Hebrew farewell round",
+    "native_title": "שלום חברים",
+    "aliases": [
+      "Shalom chaverim",
+      "Shalom haverim",
+      "Shalom shaverim",
+      "Goodbye friends"
+    ],
+    "tempo": 92,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "shalom-chaverim.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/israel/shalom-shaverim.abc",
+    "abc": "X:1\nT:Shalom Chaverim\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=92\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Dm\n[V:S1V1] =B,2 E2 E ^F G2 | E2 G2 G A =B2 | =B2 e6 | d2 =B6 |\n[V:S1V2] G,2 G,2 G, G, G,2 | G,2 G,2 G, G, G,2 | A,2 ^C6 | D2 D6 |\n[V:S2V1] E,2 E,2 E, E, E,2 | E,2 E,2 E, E, E,2 | E,2 E,6 | F,2 F,6 |\n[V:S2V2] C,2 C,2 C, C, C,2 | C,2 C,2 C, C, C,2 | ^C,2 A,,6 | A,,2 A,,6 |\n[V:S1V1] =B2 e2 B A G2 | A2 =B2 G ^F E2 | =B,2 E6 | ^F G G6 |]\n[V:S1V2] E2 E2 E E E2 | E2 E2 E E E2 | A,2 A,6 | A, A, A,6 |]\n[V:S2V1] G,2 G,2 G, G, G,2 | A,2 A,2 A, A, A,2 | E,2 E,6 | F, F, F,6 |]\n[V:S2V2] C,2 C,2 C, C, C,2 | ^C,2 C,2 C, C, C,2 | ^C,2 C,6 | D, D, D,6 |]\n"
+  },
+  {
     "id": "silent-night",
     "title": "Silent Night",
     "category": "Christmas carols",
@@ -490,6 +1072,60 @@
     "source": "openhymnal-Silent_Night-Stille_Nacht.abc",
     "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Silent_Night/Silent_Night-Stille_Nacht.abc",
     "abc": "X:1\nT:Silent Night\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 3/4\nL: 1/4\nQ:1/4=60\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: Bb\n[V: S1V1]  F3/4G// F/ D3/2 | F3/4G// F/ D3/2 | c c/ A3/2 | B B/ F3/2 |\nw: Si- * lent night, ho- * ly night, All is calm, all is bright \n[V: S1V2]  D3/4E// D/ B,3/2 | D3/4E// D/ B,3/2 | E E/ E3/2 | D D/ D3/2 |\n[V: S2V1]  F, F,/ F,3/2 | F, F,/ F,3/2 | A, A,/ C3/2 | B, B,/ B,3/2 |\n[V: S2V2]  B,, B,,/ B,,3/2 | B,, B,,/ B,,3/2 | F, F,/ F,3/2 | B,, B,,/ B,,3/2 |\n[V: S1V1]  G G/ B3/4A// G/ | F3/4G// F/ D3/2 | G G/ B3/4A// G/ | F3/4G// F/\nw: Round yon vir- * gin mo- ther and Child. Ho- ly In- fant, so ten- der and \n[V: S1V2]  E E/ G3/4F// E/ | D3/4E// D/ B,3/2 | E E/ G3/4F// E/ | D3/4E// D/\n[V: S2V1]  B, B,/ B, B,/ | B,3/4B,// B,/ B,3/2 | B, B,/ B,3/4B,// B,/ | B,3/4B,// B,/\n[V: S2V2]  E, E,/ E, E,/ | B,,3/4B,,// B,,/ B,,3/2 | E, E,/ E,3/4E,// E,/ | B,,3/4B,,// B,,/\n[V: S1V1]  D3/2 | c c/ e3/4c// A/ | (B3/2 d3/2) | B/F/ D/ F3/4E// C/ | B,3 |]\nw: mild, Sleep in hea- ven- ly peace, * Sleep * in hea- ven- ly peace. \n[V: S1V2]  B,3/2 | F F/ F3/4F// F/ | F3 | B, B,/ A,3/4A,// A,/ | B,3 |]\n[V: S2V1]  B,3/2 | A, A,/ A,3/4A,// E/ | (D3/2 B,3/2) | F, F,/ F,3/4F,// E,/ | D,3 |]\n[V: S2V2]  B,,3/2 | F, F,/ F,3/4F,// F,/ | B,3 | D, B,,/ F,,3/4F,,// F,,/ | B,,3 |]\n"
+  },
+  {
+    "id": "siman-tov-u-mazal-tov",
+    "title": "Siman Tov u’Mazal Tov",
+    "category": "Jewish songs",
+    "origin": "Jewish celebrations / Hebrew",
+    "native_title": "סימן טוב ומזל טוב",
+    "aliases": [
+      "Siman Tov",
+      "Mazel Tov",
+      "Siman tov umazal tov"
+    ],
+    "tempo": 112,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "siman-tov-u-mazal-tov.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/SimanTov.abc",
+    "abc": "X:1\nT:Siman Tov u’Mazal Tov\nC:New practice harmony: The Great Gallery (CC0).\nM:2/2\nL:1/8\nQ:1/4=112\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Gm\n[V:S1V1] D G G G D G G G | D G G G D G G G- | G B B B G B B B | G B B B G B B B- |\n[V:S1V2] B, B, B, B, B, B, B, B, | B, B, B, B, B, B, B, B,- | B, B, B, B, B, B, B, B, | B, B, B, B, B, B, B, B,- |\n[V:S2V1] G, D, D, D, D, D, D, D, | D, D, D, D, D, D, D, D,- | D, D, D, D, D, D, D, D, | D, D, D, D, D, D, D, D,- |\n[V:S2V2] G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- | G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- |\n[V:S1V1] B c c c B c c c | B c c c d B A G- | G G2 c2 c2 B | A B4 z3 |\n[V:S1V2] B, C C C C C C C | B, B, B, B, B, B, B, B,- | B, C2 C2 C2 C | B, B,4 z3 |\n[V:S2V1] D, E, E, E, E, E, E, E, | D, D, D, D, D, D, D, D,- | D, E,2 E,2 E,2 E, | D, D,4 z3 |\n[V:S2V2] G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- | G,, G,,2 G,,2 G,,2 G,, | G,, G,,4 z3 |\n[V:S1V1] D G G G D G G G | D G G G D G G G- | G B B B G B B B | G B B B G B B B- |\n[V:S1V2] B, B, B, B, B, B, B, B, | B, B, B, B, B, B, B, B,- | B, B, B, B, B, B, B, B, | B, B, B, B, B, B, B, B,- |\n[V:S2V1] D, D, D, D, D, D, D, D, | D, D, D, D, D, D, D, D,- | D, D, D, D, D, D, D, D, | D, D, D, D, D, D, D, D,- |\n[V:S2V2] G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- | G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- |\n[V:S1V1] B c c c B c c c | B c c c d B A G- | G G2 c2 c2 B | A G4 z3 |\n[V:S1V2] B, C C C C C C C | B, B, B, B, B, B, B, B,- | B, C2 C2 C2 C | B, B,4 z3 |\n[V:S2V1] D, E, E, E, E, E, E, E, | D, D, D, D, D, D, D, D,- | D, E,2 E,2 E,2 E, | D, D,4 z3 |\n[V:S2V2] G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- | G,, G,,2 G,,2 G,,2 G,, | G,, G,,4 z3 |\n[V:S1V1] F B c d2 d2 d | d e2 e2 d3- | d z e2 d d c c | B d4 z3 |\n[V:S1V2] B, D D D2 D2 D | D D2 D2 D3- | D z E2 E E E E | D D4 z3 |\n[V:S2V1] D, F, F, F,2 F,2 F, | G, G,2 G,2 G,3- | G, z G,2 G, G, G, G, | G, B,4 z3 |\n[V:S2V2] B,, B,, B,, B,,2 B,,2 B,, | B,, B,,2 B,,2 B,,3- | B,, z C,2 C, C, C, C, | G,, G,,4 z3 |\n[V:S1V1] F B c d2 d2 d | d e2 e2 d3- | d z e2 d d c c | B B4 z3 |\n[V:S1V2] D D D D2 D2 D | D D2 D2 D3- | D z E2 E E E E | D D4 z3 |\n[V:S2V1] B, F, F, F,2 F,2 F, | G, G,2 G,2 G,3- | G, z G,2 G, G, G, G, | G, G,4 z3 |\n[V:S2V2] B,, B,, B,, B,,2 B,,2 B,, | B,, B,,2 B,,2 B,,3- | B,, z C,2 C, C, C, C, | G,, G,,4 z3 |\n[V:S1V1] F B c d2 d2 d | d e2 e2 d3- | d z e2 d d c c | B D G A B2 B2 |\n[V:S1V2] D D D D2 D2 D | D D2 D2 D3- | D z E2 E E E E | D D D D D2 D2 |\n[V:S2V1] F, F, F, F,2 F,2 F, | G, G,2 G,2 G,3- | G, z G,2 G, G, G, G, | G, B, B, B, B,2 B,2 |\n[V:S2V2] B,, B,, B,, B,,2 B,,2 B,, | B,, B,,2 B,,2 B,,3- | B,, z C,2 C, C, C, C, | G,, G,, G,, G,, G,,2 G,,2 |\n[V:S1V1] B B c2 c2 B2- | B2 z c2 B B A | A G B4 z2 | z D G A B2 B2 |\n[V:S1V2] D D D2 D2 D2- | D2 z D2 D D D | D D D4 z2 | z D D D D2 D2 |\n[V:S2V1] B, B, B,2 B,2 B,2- | B,2 z B,2 B, B, B, | B, B, B,4 z2 | z B, B, B, B,2 B,2 |\n[V:S2V2] G,, G,, G,,2 G,,2 G,,2- | G,,2 z G,,2 G,, G,, G,, | G,, G,, G,,4 z2 | z G,, G,, G,, G,,2 G,,2 |\n[V:S1V1] B B c2 c2 B2- | B2 z c2 B B A | A G G4 z2 | z |]\n[V:S1V2] D D D2 D2 D2- | D2 z D2 D D D | D D D4 z2 | z |]\n[V:S2V1] B, B, B,2 B,2 B,2- | B,2 z B,2 B, B, B, | B, B, B,4 z2 | z |]\n[V:S2V2] G,, G,, G,,2 G,,2 G,,2- | G,,2 z G,,2 G,, G,, G,, | G,, G,, G,,4 z2 | z |]\n"
+  },
+  {
+    "id": "suo-g-n",
+    "title": "Suo Gân",
+    "category": "Folk songs around the world",
+    "origin": "Wales / Welsh lullaby",
+    "native_title": "",
+    "aliases": [
+      "Suo Gan"
+    ],
+    "tempo": 76,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "suo-g-n.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=2431",
+    "abc": "X:1\nT:Suo Gân\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=76\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] G3 A B d3 | A3 G B A3 | G3 A B d3 | A2 B2 G4 |\n[V:S1V2] B,3 B, B, B,3 | A,3 A, A, A,3 | B,3 B, B, B,3 | B,2 B,2 B,4 |\n[V:S2V1] G,3 G, G, G,3 | F,3 F, F, F,3 | G,3 G, G, G,3 | G,2 G,2 G,4 |\n[V:S2V2] D,3 D, D, D,3 | D,3 D, D, D,3 | D,3 D, D, D,3 | D,2 D,2 D,4 |\n[V:S1V1] G3 A B d3 | A3 G B A3 | G3 A B d3 | A2 B2 G4 |\n[V:S1V2] B,3 B, B, B,3 | A,3 A, A, A,3 | B,3 B, B, B,3 | B,2 B,2 B,4 |\n[V:S2V1] G,3 G, G, G,3 | F,3 F, F, F,3 | G,3 G, G, G,3 | G,2 G,2 G,4 |\n[V:S2V2] D,3 D, D, D,3 | D,3 D, D, D,3 | D,3 D, D, D,3 | D,2 D,2 D,4 |\n[V:S1V1] B3 c d B3 | e3 c d B3 | B3 c d2 B2 | g3 e d4 |\n[V:S1V2] B,3 B, B, B,3 | E3 E E E3 | D3 D D2 D2 | G3 G G4 |\n[V:S2V1] G,3 G, G, G,3 | G,3 G, G, G,3 | G,3 G, G,2 G,2 | B,3 B, B,4 |\n[V:S2V2] D,3 D, D, D,3 | B,,3 B,, B,, B,,3 | B,,3 B,, B,,2 B,,2 | D,3 D, D,4 |\n[V:S1V1] G3 A B d3 | A3 G B A3 | G3 A B d3 | A2 B2 G4 |]\n[V:S1V2] G3 G G G3 | F3 F F F3 | G3 G G G3 | G2 G2 G4 |]\n[V:S2V1] B,3 B, B, B,3 | A,3 A, A, A,3 | B,3 B, B, B,3 | B,2 B,2 B,4 |]\n[V:S2V2] D,3 D, D, D,3 | D,3 D, D, D,3 | D,3 D, D, D,3 | D,2 D,2 D,4 |]\n"
+  },
+  {
+    "id": "sur-le-pont-d-avignon",
+    "title": "Sur le pont d’Avignon",
+    "category": "Folk songs around the world",
+    "origin": "France / French",
+    "native_title": "",
+    "aliases": [
+      "Sur le pont d Avignon",
+      "On the bridge of Avignon"
+    ],
+    "tempo": 100,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "sur-le-pont-d-avignon.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/france/sur-le-pont.abc",
+    "abc": "X:1\nT:Sur le pont d’Avignon\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=100\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] c c c2 | d d d2 | e f g c | B c d G |\nw: Sur le pont | d'A- vig- non, | l'on y dan- se, | l'on y dan- se,\n[V:S1V2] E E E2 | D D D2 | C E E E | D D D D |\n[V:S2V1] G, G, G,2 | G, G, G,2 | G, G, G, G, | G, G, G, G, |\n[V:S2V2] C, C, C,2 | B,, B,, B,,2 | C, C, C, C, | B,, B,, B,, B,, |\n[V:S1V1] c c c2 | d d d2 | e f g c | d B c2 |]\nw: Sur le pont | d'A- vig- non, | l'on y dan- se, | tout en rond.\n[V:S1V2] E E E2 | D D D2 | C E E E | E E E2 |]\n[V:S2V1] G, G, G,2 | G, G, G,2 | G, G, G, G, | G, G, G,2 |]\n[V:S2V2] C, C, C,2 | B,, B,, B,,2 | C, C, C, C, | C, C, C,2 |]\n"
   },
   {
     "id": "the-first-noel",
@@ -516,6 +1152,81 @@
     "abc": "X:1\nT:The Old Rugged Cross\n%%score S1V1 | S1V2 | S2V1 | S2V2\nM: 6/4\nL: 1/4\nQ:1/4=140\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK: Bb\n[V: S1V1]  D/ E/ | F3/2 =E/ G F2 F/ F/ | G3/2 ^F/ A G2 (G/ G/) | (A3/2 G/)\nw: On a hill far a- way stood an old rug- ged cross, The * em- blem \n[V: S1V2]  B,/ C/ | D3/2 ^C/ C D2 D/ D/ | E3/2 E/ E E2 (=E/ =E/) | (E3/2 E/)\n[V: S2V1]  F,/ F,/ | B,3/2 B,/ G, B,2 B,/ B,/ | B,3/2 A,/ C B,2 (C/ C/) | (C3/2 A,/)\n[V: S2V2]  B,,/ B,,/ | B,,3/2 B,,/ B,, B,,2 B,,/ B,,/ | E,3/2 E,/ E, E,2 (C,/ C,/) | (F,3/2 F,/)\n[V: S1V1] F E F E | D3- D2 D/ E/ | F3/2 =E/ G F2 F/ F/ | G3/2 ^F/\nw: of suff'r- ing and shame;  * And I love that old cross where the dear- est \n[V: S1V2]  D C C C | B,3- B,2 B,/ C/ | D3/2 ^C/ C D2 D/ D/ | E3/2 E/\n[V: S2V1]  B, A, A, F, | F,3- F,2 F,/ F,/ | B,3/2 B,/ G, B,2 B,/ B,/ | B,3/2 A,/\n[V: S2V2]  F, F, F, F, | B,,3- B,,2 B,,/ B,,/ | B,,3/2 B,,/ B,, B,,2 B,,/ B,,/ | E,3/2 E,/\n[V: S1V1]  A G2 (G/ G/) | A3/2 G/ F e d c | B3- B2 A/ B/ |\nw: and best For a world of lost sin- ners was slain.  * So I'll \n[V: S1V2]  E E2 (=E/ =E/) | E3/2 E/ E G F E | D3- D2 C/ D/ |\n[V: S2V1]  C B,2 (C/ C/) | C3/2 B,/ A, A, B, A, | B,3- B,2 F,/ F,/ |\n[V: S2V2]  E, E,2 (C,/ C,/) | F,3/2 F,/ F, F, F, F, | B,,3- B,,2 F,/ F,/ |\n[V: S1V1]  c3/2 c/ c c B A | B3- B2 B/ A/ | G3/2 G/ G B A G | F3- F2\nw: cher- ish the old rug- ged cross,  * Till my tro- phies at last I lay down;  * \n[V: S1V2]  E3/2 E/ E E2 E | (D ^C E D2) F/ F/ | E3/2 E/ E G F E | D3- D2\n[V: S2V1]  A,3/2 A,/ A, A,2 F, | (F, =E, G, F,2) B,/ B,/ | B,3/2 B,/ B, B, B, B, | B,3- B,2\n[V: S2V2]  F,3/2 F,/ F, F,2 F, | (B,, B,, B,, B,,2) D,/ D,/ | E,3/2 E,/ E, E, E, E, | B,,3- B,,2\n[V: S1V1]  F/ B/ | d3/2 d/ d d e d | G3- G2 e/ e/ | d3/2 c/ B F A c | B3- B2 |]\nw: I will cling to the old rug- ged cross,  * And ex- change it some day for a crown.  * \n[V: S1V2]  D/ D/ | F3/2 F/ F F G F | (E E E E2) G/ G/ | F3/2 E/ D E E E | D3- D2 |]\n[V: S2V1]  B,/ B,/ | B,3/2 B,/ B, B,2 B, | (B, B, B, B,2) B,/ B,/ | B,3/2 A,/ B, A, C F, | F,3- F,2 |]\n[V: S2V2]  B,,/ B,,/ | B,,3/2 B,,/ B,, B,,2 B,, | (E, E, E, E,2) E,/ E,/ | F,3/2 F,/ F, F, F, F, | B,,3- B,,2 |]\n"
   },
   {
+    "id": "the-skye-boat-song",
+    "title": "The Skye Boat Song",
+    "category": "Folk songs around the world",
+    "origin": "Scotland / Scottish melody",
+    "native_title": "",
+    "aliases": [
+      "Speed bonnie boat",
+      "Skye"
+    ],
+    "tempo": 108,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "the-skye-boat-song.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/scotland/skye-boat-song.abc",
+    "abc": "X:1\nT:The Skye Boat Song\nC:New practice harmony: The Great Gallery (CC0).\nM:6/8\nL:1/8\nQ:1/4=108\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] C3/2 D1/2 C =F3/2 F1/2 F | G3/2 A1/2 G c3 | A3/2 G1/2 A D2 D | C6 |\nw: Speed bon- nie boat, like a | bird on the wing, | \"On- ward,\" the sail- ors | cry!\n[V:S1V2] C3/2 C1/2 C C3/2 C1/2 C | C3/2 C1/2 C C3 | D3/2 A,1/2 A, A,2 A, | G,6 |\n[V:S2V1] G,3/2 G,1/2 G, G,3/2 G,1/2 G, | G,3/2 G,1/2 G, G,3 | F,3/2 F,1/2 F, F,2 F, | G,6 |\n[V:S2V2] E,3/2 E,1/2 E, E,3/2 E,1/2 E, | E,3/2 E,1/2 E, E,3 | D,3/2 D,1/2 D, D,2 D, | E,6 |\n[V:S1V1] C3/2 D1/2 C =F3/2 F1/2 F | G3/2 A1/2 G c3 | A3/2 G1/2 A D2 D | C6 |\nw: Speed bon- nie boat, like a | bird on the wing, | \"On- ward,\" the sail- ors | cry!\n[V:S1V2] G,3/2 G,1/2 G, G,3/2 G,1/2 G, | G,3/2 G,1/2 G, E3 | D3/2 A,1/2 A, A,2 A, | G,6 |\n[V:S2V1] G,3/2 E,1/2 E, E,3/2 E,1/2 E, | E,3/2 E,1/2 E, G,3 | F,3/2 F,1/2 F, F,2 F, | G,6 |\n[V:S2V2] E,3/2 C,1/2 C, C,3/2 C,1/2 C, | C,3/2 C,1/2 C, C,3 | D,3/2 D,1/2 D, D,2 D, | E,6 |\n[V:S1V1] A3/2 =F1/2 A A3 | G3/2 D1/2 G G3 | =F3/2 D1/2 F F2 F | D6 |\nw: Loud the winds howl, | load the waves roar, | Thund- er- claps rend the | air;\n[V:S1V2] A,3/2 A,1/2 A, A,3 | B,3/2 B,1/2 B, B,3 | B,3/2 B,1/2 B, B,2 B, | B,6 |\n[V:S2V1] F,3/2 F,1/2 F, F,3 | G,3/2 G,1/2 G, G,3 | G,3/2 G,1/2 G, G,2 G, | G,6 |\n[V:S2V2] D,3/2 D,1/2 D, D,3 | D,3/2 D,1/2 D, D,3 | D,3/2 D,1/2 D, D,2 D, | D,6 |\n[V:S1V1] A3/2 =F1/2 A A3 | G3/2 D1/2 G G3 | =F3/2 D1/2 F F2 F | D6 |]\nw: Baf- fled our foes | stand on the shore, | Fol- low they will not | dare.\n[V:S1V2] A,3/2 A,1/2 A, A,3 | B,3/2 B,1/2 B, B,3 | B,3/2 B,1/2 B, B,2 B, | B,6 |]\n[V:S2V1] F,3/2 F,1/2 F, F,3 | G,3/2 G,1/2 G, G,3 | G,3/2 G,1/2 G, G,2 G, | G,6 |]\n[V:S2V2] D,3/2 D,1/2 D, D,3 | D,3/2 D,1/2 D, D,3 | D,3/2 D,1/2 D, D,2 D, | D,6 |]\n"
+  },
+  {
+    "id": "the-star-spangled-banner",
+    "title": "The Star-Spangled Banner",
+    "category": "Anthems",
+    "origin": "United States / national anthem",
+    "native_title": "",
+    "aliases": [
+      "Star Spangled Banner",
+      "American national anthem",
+      "US anthem",
+      "USA anthem",
+      "United States anthem"
+    ],
+    "tempo": 88,
+    "note": "John Stafford Smith melody · first verse · B-flat major",
+    "credit": "Melody and first-verse reference: John Chambers ABC anthem collection. Historical source: Library of Congress, https://guides.loc.gov/star-spangled-banner/sheet-music . John Stafford Smith melody, 18th century; Francis Scott Key words, 1814. Public domain. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "the-star-spangled-banner.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/anthem/song/Star_Spangled_Banner_Cw.abc",
+    "abc": "X:1\nT:The Star-Spangled Banner\nC:New practice harmony: The Great Gallery (CC0).\nM:3/4\nL:1/8\nQ:1/4=88\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Bb\n[V:S1V1] F D | B,2 D2 F2 | B4 d c | B2 D2 =E2 |\nw: Oh, * | say, can you | see by the | dawn's ear- ly\n[V:S1V2] D D | B,2 B,2 B,2 | B,4 B, B, | B,2 B,2 B,2 |\n[V:S2V1] B, F, | F,2 F,2 F,2 | F,4 F, F, | F,2 F,2 F,2 |\n[V:S2V2] B,, B,, | D,2 D,2 D,2 | D,4 D, D, | D,2 D,2 D,2 |\n[V:S1V1] F4 F F | d3 c B2 | A4 G A | B2 B2 F2 |\nw: light, What so | proud- ly we | hailed at the | twi- light's last\n[V:S1V2] B,4 B, B, | B,3 B, B,2 | A,4 A, A, | B,2 B,2 B,2 |\n[V:S2V1] F,4 F, F, | F,3 F, F,2 | F,4 F, F, | F,2 F,2 F,2 |\n[V:S2V2] D,4 D, D, | D,3 D, D,2 | C,4 C, C, | D,2 D,2 D,2 |\n[V:S1V1] D2 B,2 F D | B,2 D2 F2 | B4 d c | B2 D2 =E2 |\nw: gleam- ing? Whose broad | stripes and bright | stars thro' the | pe- ri- lous\n[V:S1V2] B,2 B,2 B, B, | B,2 B,2 B,2 | B,4 B, B, | B,2 B,2 B,2 |\n[V:S2V1] F,2 F,2 F, F, | F,2 F,2 F,2 | F,4 F, F, | F,2 F,2 F,2 |\n[V:S2V2] D,2 D,2 D, D, | D,2 D,2 D,2 | D,4 D, D, | D,2 D,2 D,2 |\n[V:S1V1] F4 F F | d3 c B2 | A4 G A | B2 B2 F2 |\nw: fight, O'er the | ram- parts we | watched were so | gal- lant- ly\n[V:S1V2] B,4 B, B, | B,3 B, B,2 | A,4 A, A, | B,2 B,2 B,2 |\n[V:S2V1] F,4 F, F, | F,3 F, F,2 | F,4 F, F, | F,2 F,2 F,2 |\n[V:S2V2] D,4 D, D, | D,3 D, D,2 | C,4 C, C, | D,2 D,2 D,2 |\n[V:S1V1] D2 B,2 d d | d2 e2 f2 | f4 e d | c2 d2 e2 |\nw: stream- ing; And the | rock- ets' red | glare, the bombs | burst- ing in\n[V:S1V2] B,2 B,2 B, B, | B,2 D2 D2 | D4 D D | E2 C2 C2 |\n[V:S2V1] F,2 F,2 F, F, | F,2 F,2 F,2 | F,4 F, F, | E,2 E,2 E,2 |\n[V:S2V2] D,2 D,2 D, D, | D,2 B,,2 B,,2 | B,,4 B,, B,, | G,,2 G,,2 G,,2 |\n[V:S1V1] e4 e2 | d3 c B2 | A4 G A | B2 D2 =E2 |\nw: air, Gave | proof thro' the | night that our | flag was still\n[V:S1V2] E4 E2 | D3 D D2 | C4 C C | D2 D2 D2 |\n[V:S2V1] G,4 G,2 | F,3 F, F,2 | F,4 F, F, | F,2 F,2 F,2 |\n[V:S2V2] B,,4 B,,2 | B,,3 B,, B,,2 | A,,4 A,, A,, | B,,2 B,,2 B,,2 |\n[V:S1V1] F4 F2 | B2 B2 B A | G2 G2 G2 | c2 e d c B |\nw: there. Oh, | say, does that * | star- span- gled | ban- ner * yet *\n[V:S1V2] D4 D2 | D2 D2 D D | E2 E2 E2 | E2 C C C C |\n[V:S2V1] F,4 F,2 | F,2 F,2 F, F, | E,2 E,2 E,2 | E,2 E, E, E, E, |\n[V:S2V2] B,,4 B,,2 | B,,2 B,,2 B,, B,, | B,,2 B,,2 B,,2 | G,,2 G,, G,, G,, G,, |\n[V:S1V1] B2 A2 F F | B3 c d e | f4 B c | d3 e c2 |\nw: wave * O'er the | land * of the | free, and the | home of the\n[V:S1V2] D2 D2 D D | D3 D D D | D4 D D | D3 D D2 |\n[V:S2V1] F,2 F,2 F, F, | F,3 F, F, F, | F,4 F, F, | F,3 F, F,2 |\n[V:S2V2] B,,2 B,,2 B,, B,, | B,,3 B,, B,, B,, | B,,4 B,, B,, | B,,3 B,, B,,2 |\n[V:S1V1] B4 |]\nw: brave?\n[V:S1V2] D4 |]\n[V:S2V1] F,4 |]\n[V:S2V2] B,,4 |]\n"
+  },
+  {
+    "id": "the-water-is-wide",
+    "title": "The Water Is Wide",
+    "category": "Folk songs around the world",
+    "origin": "Scotland / traditional ballad",
+    "native_title": "",
+    "aliases": [
+      "O Waly Waly",
+      "Waly waly"
+    ],
+    "tempo": 80,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "the-water-is-wide.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/scotland/the-water-is-wide.abc",
+    "abc": "X:1\nT:The Water Is Wide\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=80\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:G\n[V:S1V1] z A (3G =F G A4- | A G (3=F F D C4 | z2 =F E F4- | =F G A _B1/2 A1/2 G4- |\nw: The wat- er is wide, | * I can- not get o'er, | Neith- er have | * I wings to * fly.\n[V:S1V2] z A, (3A, A, A, A,4- | A, C (3G, G, G, G,4 | z2 G, G, G,4- | G, G, G, G,1/2 G,1/2 G,4- |\n[V:S2V1] z F, (3F, F, F, F,4- | F, E, (3E, E, E, E,4 | z2 E, E, E,4- | E, D, D, D,1/2 D,1/2 D,4- |\n[V:S2V2] z D, (3D, D, D, D,4- | D, C, (3C, C, C, C,4 | z2 C, C, C,4- | C, B,, B,, B,,1/2 B,,1/2 B,,4- |\n[V:S1V1] G G A _B c4- | c _B1/2 A1/2 G1/2 =F3/2 A4- | A G =F D C4- | C C (3D =F G F4- |\nw: * Give me a boat | * that can car- ry two, | * and both shall cross, | * my true love and I.\n[V:S1V2] G, G, G, G, E4- | E E1/2 E1/2 E1/2 E3/2 E4- | E E E C C4- | C C (3C C C C4- |\n[V:S2V1] D, E, E, E, G,4- | G, A,1/2 A,1/2 A,1/2 A,3/2 A,4- | A, G, G, G, G,4- | G, G, (3G, G, G, G,4- |\n[V:S2V2] B,, C, C, C, C,4- | C, C,1/2 C,1/2 C,1/2 C,3/2 C,4- | C, C, C, E, E,4- | E, E, (3E, E, E, E,4- |\n[V:S1V1] =F8 |]\nw: *\n[V:S1V2] C8 |]\n[V:S2V1] G,8 |]\n[V:S2V2] E,8 |]\n"
+  },
+  {
+    "id": "tumbalalaika",
+    "title": "Tumbalalaika",
+    "category": "Jewish songs",
+    "origin": "Yiddish folk song",
+    "native_title": "טומבאַלאַלײַקע",
+    "aliases": [
+      "Tum balalaika",
+      "Tumbalaika"
+    ],
+    "tempo": 104,
+    "note": "Traditional Yiddish riddle song · verse and refrain",
+    "credit": "Melody reference: John Chambers ABC collection Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "tumbalalaika.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/waltz/Tumbalalaika-Dm-32-0.abc",
+    "abc": "X:1\nT:Tumbalalaika\nC:New practice harmony: The Great Gallery (CC0).\nM:3/4\nL:1/8\nQ:1/4=104\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Dm\n[V:S1V1] A4 A2 | A4 A2 | A2 G2 F2 | E6 |\nw: * * | * * | * * * | *\n[V:S1V2] A,4 A,2 | A,4 A,2 | A,2 A,2 A,2 | A,6 |\n[V:S2V1] F,4 F,2 | F,4 F,2 | F,2 F,2 F,2 | E,6 |\n[V:S2V2] D,4 D,2 | D,4 D,2 | D,2 D,2 D,2 | ^C,6 |\n[V:S1V1] G4 G2 | G4 G2 | G2 F2 E2 | D6 |\nw: * * | * * | * * * | *\n[V:S1V2] B,4 B,2 | B,4 B,2 | C2 G,2 G,2 | F,6 |\n[V:S2V1] G,4 G,2 | G,4 G,2 | E,2 E,2 E,2 | F,6 |\n[V:S2V2] D,4 D,2 | D,4 D,2 | C,2 C,2 C,2 | A,,6 |\n[V:S1V1] D2 F2 A2 | d4 d2 | f2 e2 d2 | A4 A2 |\nw: * * * | * * | * * * | * *\n[V:S1V2] F,2 F,2 F,2 | D4 D2 | D2 D2 D2 | D4 D2 |\n[V:S2V1] F,2 D,2 D,2 | F,4 F,2 | F,2 F,2 F,2 | F,4 F,2 |\n[V:S2V2] A,,2 A,,2 A,,2 | A,,4 A,,2 | A,,2 A,,2 A,,2 | A,,4 A,,2 |\n[V:S1V1] c2 B2 G2 | E4 E2 | G2 F2 E2 | D4 D2 |\nw: * * * | * * | * * * | * *\n[V:S1V2] E2 E2 E2 | E4 E2 | E2 E2 E2 | D4 D2 |\n[V:S2V1] G,2 G,2 G,2 | A,4 A,2 | G,2 G,2 G,2 | F,4 F,2 |\n[V:S2V2] C,2 C,2 C,2 | ^C,4 C,2 | C,2 C,2 C,2 | A,,4 A,,2 |\n[V:S1V1] A2 A2 A2 | A2 A2 A2 | A2 G2 F2 | E4 E2 |\nw: Tum- ba- la, | Tum- ba- la, | Tum- ba- la- | lai- ka,\n[V:S1V2] D2 D2 D2 | D2 D2 D2 | D2 D2 D2 | ^C4 C2 |\n[V:S2V1] F,2 F,2 F,2 | F,2 F,2 F,2 | F,2 F,2 F,2 | E,4 E,2 |\n[V:S2V2] A,,2 A,,2 A,,2 | A,,2 A,,2 A,,2 | A,,2 A,,2 A,,2 | A,,4 A,,2 |\n[V:S1V1] G2 G2 G2 | G2 G2 G2 | G2 F2 E2 | D4 D2 |\nw: Tum- ba- la, | Tum- ba- la, | Tum- ba- la- | lai- ka.\n[V:S1V2] D2 D2 D2 | D2 D2 D2 | C2 G,2 G,2 | F,4 F,2 |\n[V:S2V1] D,2 D,2 D,2 | D,2 D,2 D,2 | E,2 E,2 E,2 | F,4 F,2 |\n[V:S2V2] B,,2 B,,2 B,,2 | B,,2 B,,2 B,,2 | C,2 C,2 C,2 | A,,4 A,,2 |\n[V:S1V1] D2 F2 A2 | d4 d2 | f2 e2 d2 | A4 A2 |\nw: Tum- ba- la, | lai- ka, | shpiel ba- la- | lai- ka,\n[V:S1V2] F,2 F,2 F,2 | D4 D2 | D2 D2 D2 | D4 D2 |\n[V:S2V1] F,2 D,2 D,2 | F,4 F,2 | F,2 F,2 F,2 | F,4 F,2 |\n[V:S2V2] A,,2 A,,2 A,,2 | A,,4 A,,2 | A,,2 A,,2 A,,2 | A,,4 A,,2 |\n[V:S1V1] c2 B2 G2 | E4 E2 | G2 F2 E2 | D6 |]\nw: Tum- ba- la- | lai- ka, | frey- lekh zol | zayn.\n[V:S1V2] E2 E2 E2 | E4 E2 | E2 E2 E2 | D6 |]\n[V:S2V1] G,2 G,2 G,2 | A,4 A,2 | G,2 G,2 G,2 | F,6 |]\n[V:S2V2] C,2 C,2 C,2 | ^C,4 C,2 | C,2 C,2 C,2 | A,,6 |]\n"
+  },
+  {
     "id": "twinkle-twinkle-little-star",
     "title": "Twinkle, Twinkle, Little Star",
     "category": "Folk & familiar",
@@ -526,6 +1237,21 @@
     "source": "twinkle-twinkle-little-star.abc",
     "source_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "abc": "X:1\nT:Twinkle, Twinkle, Little Star\nC:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.\nM:4/4\nL:1/4\nQ:1/4=88\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] C C G G | A A G2 | F F E E | D D C2 |\n[V:S1V2] C C C C | C C C2 | C C C C | B, B, B,2 |\n[V:S2V1] E, E, E, E, | F, F, A,2 | A, A, A, A, | G, G, D,2 |\n[V:S2V2] G,, G,, G,, G,, | F,, F,, F,,2 | F,, F,, F,, F,, | G,, G,, G,,2 |\n[V:S1V1] G G F F | E E D2 | G G F F | E E D2 |\n[V:S1V2] C C C C | C C C2 | B, B, B, B, | C C C2 |\n[V:S2V1] E, E, E, E, | E, E, E,2 | D, D, D, D, | C, C, E,2 |\n[V:S2V2] G,, G,, G,, G,, | G,, G,, G,,2 | G,, G,, G,, G,, | G,, G,, G,,2 |\n[V:S1V1] C C G G | A A G2 | F F E E | D D C2 |]\n[V:S1V2] C C C C | C C C2 | C C C C | C C C2 |]\n[V:S2V1] E, E, E, E, | F, F, A,2 | A, A, A, A, | G, G, G,2 |]\n[V:S2V2] G,, G,, G,, G,, | F,, F,, F,,2 | F,, F,, F,, F,, | E,, E,, E,,2 |]\n"
+  },
+  {
+    "id": "waltzing-matilda",
+    "title": "Waltzing Matilda",
+    "category": "Folk songs around the world",
+    "origin": "Australia / Australian bush song",
+    "native_title": "",
+    "aliases": [],
+    "tempo": 96,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Historic melody version; Marie Cowan setting dates to 1903. Public domain in the United States. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "waltzing-matilda.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=124",
+    "abc": "X:1\nT:Waltzing Matilda\nC:New practice harmony: The Great Gallery (CC0).\nM:4/4\nL:1/8\nQ:1/4=96\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:D\n[V:S1V1] z6 D E | F3/2 F1/2 F3/2 F1/2 E2 E2 | D E F3/2 D1/2 B,1/2 C1/2 D3 | A,2 D3/2 F1/2 A2 A3/2 A1/2 |\n[V:S1V2] z6 A, A, | A,3/2 A,1/2 A,3/2 A,1/2 A,2 A,2 | B, D D3/2 D1/2 B,1/2 B,1/2 B,3 | A,2 A,3/2 A,1/2 A,2 A,3/2 A,1/2 |\n[V:S2V1] z6 F, F, | F,3/2 F,1/2 F,3/2 F,1/2 F,2 F,2 | F, F, F,3/2 F,1/2 F,1/2 F,1/2 F,3 | F,2 F,3/2 F,1/2 F,2 F,3/2 F,1/2 |\n[V:S2V2] z6 D, D, | D,3/2 D,1/2 D,3/2 D,1/2 D,2 D,2 | B,, B,, B,,3/2 B,,1/2 D,1/2 D,1/2 B,,3 | D,2 D,3/2 D,1/2 D,2 D,3/2 D,1/2 |\n[V:S1V1] A A A2 A2 D E | F2 F3/2 F1/2 E2 E2 | D E F3/2 D1/2 B,1/2 C1/2 D3 | A,2 D3/2 F1/2 A2 G F |\n[V:S1V2] A, A, A,2 A,2 A, A, | A,2 A,3/2 A,1/2 A,2 A,2 | B, D D3/2 D1/2 B,1/2 B,1/2 B,3 | A,2 A,3/2 A,1/2 A,2 A, A, |\n[V:S2V1] F, F, F,2 F,2 F, F, | F,2 F,3/2 F,1/2 F,2 F,2 | F, F, F,3/2 F,1/2 F,1/2 F,1/2 F,3 | F,2 F,3/2 F,1/2 F,2 F, F, |\n[V:S2V2] D, D, D,2 D,2 D, D, | D,2 D,3/2 D,1/2 D,2 D,2 | B,, B,, B,,3/2 B,,1/2 D,1/2 D,1/2 B,,3 | D,2 D,3/2 D,1/2 D,2 D, D, |\n[V:S1V1] E2 E3/2 E1/2 D2 z2 | A2 A3/2 A1/2 A2 F2 | d2 d3/2 d1/2 c2 B2 | A2 A3/2 A1/2 B2 A A |\n[V:S1V2] A,2 A,3/2 A,1/2 A,2 z2 | A,2 A,3/2 A,1/2 A,2 A,2 | B,2 B,3/2 B,1/2 B,2 B,2 | A,2 A,3/2 A,1/2 A,2 A, A, |\n[V:S2V1] E,2 E,3/2 E,1/2 E,2 z2 | F,2 F,3/2 F,1/2 F,2 F,2 | G,2 G,3/2 G,1/2 G,2 G,2 | F,2 F,3/2 F,1/2 F,2 F, F, |\n[V:S2V2] C,2 C,3/2 C,1/2 C,2 z2 | D,2 D,3/2 D,1/2 D,2 D,2 | D,2 D,3/2 D,1/2 D,2 D,2 | D,2 D,3/2 D,1/2 D,2 D, D, |\n[V:S1V1] A2 G F E2 D E | F2 F3/2 F1/2 E2 E2 | D E F3/2 D1/2 B,1/2 C1/2 D3 | A,2 D3/2 F1/2 A2 G F |\n[V:S1V2] A,2 A, A, A,2 A, A, | A,2 A,3/2 A,1/2 A,2 A,2 | B, D D3/2 D1/2 B,1/2 B,1/2 B,3 | A,2 A,3/2 A,1/2 A,2 A, A, |\n[V:S2V1] E,2 E, E, E,2 E, E, | F,2 F,3/2 F,1/2 F,2 F,2 | F, F, F,3/2 F,1/2 F,1/2 F,1/2 F,3 | F,2 F,3/2 F,1/2 F,2 F, F, |\n[V:S2V2] C,2 C, C, C,2 C, C, | D,2 D,3/2 D,1/2 D,2 D,2 | B,, B,, B,,3/2 B,,1/2 D,1/2 D,1/2 B,,3 | D,2 D,3/2 D,1/2 D,2 D, D, |\n[V:S1V1] E2 E3/2 E1/2 D2 |]\n[V:S1V2] A,2 A,3/2 A,1/2 A,2 |]\n[V:S2V1] F,2 F,3/2 F,1/2 F,2 |]\n[V:S2V2] D,2 D,3/2 D,1/2 D,2 |]\n"
   },
   {
     "id": "we-gather-together",
@@ -598,5 +1324,40 @@
     "source": "when-the-saints-go-marching-in.abc",
     "source_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "abc": "X:1\nT:When the Saints Go Marching In\nC:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.\nM:4/4\nL:1/4\nQ:1/4=104\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:C\n[V:S1V1] C E F | G4 | z C E F | G4 |\n[V:S1V2] C C C | C4 | z C C C | C4 |\n[V:S2V1] E, E, E, | E,4 | z E, E, E, | E,4 |\n[V:S2V2] G,, G,, G,, | G,,4 | z G,, G,, G,, | G,,4 |\n[V:S1V1] z C E F | G2 E2 | C2 E2 | D4 |\n[V:S1V2] z C C C | C2 C2 | C2 C2 | B,4 |\n[V:S2V1] z E, E, E, | E,2 E,2 | E,2 E,2 | D,4 |\n[V:S2V2] z G,, G,, G,, | G,,2 G,,2 | G,,2 G,,2 | G,,4 |\n[V:S1V1] z E E D | C2 C E | G G F2 | F4 |\n[V:S1V2] z B, B, B, | C2 C C | C C C2 | C4 |\n[V:S2V1] z D, D, D, | E,2 E, E, | E, E, E,2 | F,4 |\n[V:S2V2] z G,, G,, G,, | G,,2 G,, G,, | G,, G,, G,,2 | A,,4 |\n[V:S1V1] E2 F2 | G2 E2 | C2 D2 | C4 |]\n[V:S1V2] C2 C2 | C2 C2 | B,2 B,2 | C4 |]\n[V:S2V1] F,2 F,2 | E,2 G,2 | G,2 G,2 | G,4 |]\n[V:S2V2] A,,2 A,,2 | C,2 C,2 | D,2 D,2 | E,4 |]\n"
+  },
+  {
+    "id": "zum-gali-gali",
+    "title": "Zum Gali Gali",
+    "category": "Jewish songs",
+    "origin": "Hebrew folk song",
+    "native_title": "זום גלי גלי",
+    "aliases": [
+      "Zum gali"
+    ],
+    "tempo": 104,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "zum-gali-gali.abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/israel/zum-gali-am/zum-gali-am-1.abc",
+    "abc": "X:1\nT:Zum Gali Gali\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=104\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:Am\n[V:S1V1] A2 A B | c B c B | A2 A A | E2 A2 |\nw: Zum ga- li | ga- li ga- li, | zum ga- li | ga- li.\n[V:S1V2] C2 C C | C C C C | C2 C C | C2 C2 |\n[V:S2V1] E,2 E, E, | E, E, E, E, | E,2 E, E, | E,2 E,2 |\n[V:S2V2] C,2 A,, A,, | A,, A,, A,, A,, | A,,2 A,, A,, | A,,2 A,,2 |\n[V:S1V1] A2 A B | c B c B | A2 A A | E2 A2 |]\nw: Zum ga- li | ga- li ga- li, | zum ga- li | ga- li.\n[V:S1V2] C2 C C | C C C C | C2 C C | C2 C2 |]\n[V:S2V1] E,2 E, E, | E, E, E, E, | E,2 E, E, | E,2 E,2 |]\n[V:S2V2] A,,2 A,, A,, | A,, A,, A,, A,, | A,,2 A,, A,, | A,,2 A,,2 |]\n"
+  },
+  {
+    "id": "la-claire-fontaine",
+    "title": "À la claire fontaine",
+    "category": "Folk songs around the world",
+    "origin": "France and Canada / French",
+    "native_title": "",
+    "aliases": [
+      "A la claire fontaine",
+      "At the clear fountain"
+    ],
+    "tempo": 88,
+    "note": "Traditional melody · new four-part practice setting",
+    "credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed. Traditional melody, identified as traditional in the linked melody reference. Newly prepared educational SATB harmony: The Great Gallery, CC0. This is a simplified Western four-part practice setting, not a traditional-performance transcription or a historical choral edition. Repeats are written out; source accompaniment is not used.",
+    "license": "Underlying melody: public domain in the United States. New practice harmony: CC0 1.0.",
+    "source": "la-claire-fontaine.abc",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=374",
+    "abc": "X:1\nT:À la claire fontaine\nC:New practice harmony: The Great Gallery (CC0).\nM:2/4\nL:1/8\nQ:1/4=88\n%%score S1V1 | S1V2 | S2V1 | S2V2\nV:S1V1 name=\"Soprano\" snm=\"S\" clef=treble\nV:S1V2 name=\"Alto\" snm=\"A\" clef=treble\nV:S2V1 name=\"Tenor\" snm=\"T\" clef=bass\nV:S2V2 name=\"Bass\" snm=\"B\" clef=bass\nK:F\n[V:S1V1] F2 F A | A G A G | F2 F A | A G A2 |\n[V:S1V2] C2 C C | C C C C | C2 C C | C C C2 |\n[V:S2V1] A,2 A, A, | A, A, A, A, | A,2 A, A, | A, A, A,2 |\n[V:S2V2] C,2 C, F, | F, F, F, F, | F,2 F, F, | F, F, F,2 |\n[V:S1V1] A2 A G | F A c A | c2 c A | F A G2 |\n[V:S1V2] C2 C C | C C C C | C2 C C | C C C2 |\n[V:S2V1] A,2 A, A, | A, A, A, A, | A,2 A, A, | A, A, A,2 |\n[V:S2V2] F,2 F, F, | F, F, F, F, | F,2 F, F, | F, F, F,2 |\n[V:S1V1] F2 F A | A G1/2 F1/2 A F | A2 A G1/2 F1/2 | A G F2 |]\n[V:S1V2] C2 C C | C C1/2 C1/2 C C | C2 C C1/2 C1/2 | C C C2 |]\n[V:S2V1] A,2 A, A, | A, A,1/2 A,1/2 A, A, | A,2 A, A,1/2 A,1/2 | A, A, A,2 |]\n[V:S2V2] F,2 F, F, | F, F,1/2 F,1/2 F, F, | F,2 F, F,1/2 F,1/2 | F, F, F,2 |]\n"
   }
 ]

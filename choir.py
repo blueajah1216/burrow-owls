@@ -1,5 +1,6 @@
 """Four-part singing practice, separate from the Seattle concert calendar."""
 import json
+import hashlib
 from pathlib import Path
 
 from flask import Blueprint, render_template, send_from_directory
@@ -15,8 +16,14 @@ def init_choir(app):
 @bp.route("")
 @bp.route("/")
 def index():
-    catalog = json.loads((DATA / "library.json").read_text())
-    return render_template("choir/index.html", songs=catalog)
+    raw_catalog = (DATA / "library.json").read_bytes()
+    catalog = json.loads(raw_catalog)
+    preferred = ['Jewish songs', 'Folk songs around the world', 'Folk & familiar',
+                 'Anthems', 'Christmas carols', 'Hymns & spirituals']
+    categories = sorted({song['category'] for song in catalog},
+                        key=lambda value: (preferred.index(value) if value in preferred else len(preferred), value))
+    return render_template("choir/index.html", songs=catalog, categories=categories,
+                           catalog_version=hashlib.sha256(raw_catalog).hexdigest()[:12])
 
 
 @bp.route("/library.json")

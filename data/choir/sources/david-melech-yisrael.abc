@@ -1,0 +1,36 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/DavidMelechYisraelSong.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:David Melech Yisrael
+C:New practice harmony: The Great Gallery (CC0).
+M:2/4
+L:1/8
+Q:1/4=108
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:C
+[V:S1V1] G4 | E4 | G G G G | E4 |
+w: Da- | vid | me- lech Yis- ra- | el,
+[V:S1V2] C4 | C4 | C C C C | C4 |
+[V:S2V1] E,4 | G,4 | E, E, E, E, | G,4 |
+[V:S2V2] C,4 | C,4 | C, C, C, C, | C,4 |
+[V:S1V1] G4 | A4 | G2 F2 | E2 D2 |
+w: chai, | chai | ve- ka- | yam! *
+[V:S1V2] C4 | C4 | C2 G,2 | G,2 G,2 |
+[V:S2V1] E,4 | F,4 | E,2 E,2 | E,2 E,2 |
+[V:S2V2] C,4 | C,4 | C,2 C,2 | C,2 C,2 |
+[V:S1V1] C C D D | C C D2 | C2 F2 | E D E2 |
+w: Da- vid me- lech | Yis- ra- el, | chai, chai | ve- ka- yam!
+[V:S1V2] G, G, G, G, | G, G, G,2 | A,2 A,2 | G, G, G,2 |
+[V:S2V1] E, E, E, E, | E, E, E,2 | F,2 F,2 | E, E, E,2 |
+[V:S2V2] C, C, C, C, | C, C, C,2 | C,2 C,2 | C, C, C,2 |
+[V:S1V1] C C D D | C C D2 | C2 F2 | E D C2 |]
+w: Da- vid me- lech | Yis- ra- el, | chai, chai | ve- ka- yam!
+[V:S1V2] G, G, G, G, | G, G, G,2 | A,2 A,2 | G, G, G,2 |]
+[V:S2V1] E, E, E, E, | E, E, E,2 | F,2 F,2 | E, E, E,2 |]
+[V:S2V2] C, C, C, C, | C, C, C,2 | C,2 C,2 | C, C, C,2 |]

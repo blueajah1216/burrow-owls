@@ -1,0 +1,36 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/ShalomAleichem3.abc
+% Israel Goldfarb melody, 1918. Public domain in the United States; traditional liturgical text. This is not a modern Carlebach setting.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Shalom Aleichem
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=84
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Gm
+[V:S1V1] D2 B A G2 G2 | ^F G A G F E D2 | ^F F F2 G F G B | A4 z4 |
+w: 1. Sha- lom a- ley- chem, | mal- 'a chey ha- sha- * lom, | mal'- a- chey el * * * | yon.
+[V:S1V2] B,2 D D D2 D2 | D D D D D D D2 | D D D2 D D D D | D4 z4 |
+[V:S2V1] G,2 G, B, B,2 B,2 | A, A, A, A, A, A, A,2 | A, A, A,2 A, A, A, A, | A,4 z4 |
+[V:S2V2] G,,2 G,, G,, G,,2 G,,2 | ^F,, F,, F,, F,, F,, F,, F,,2 | ^F,, F,, F,,2 F,, F,, F,, F,, | ^F,,4 z4 |
+[V:S1V1] D2 B A G2 G2 | ^F G A G F E D2 | C C G2 ^F2 E C | D4 z4 |
+w: Mi- * * me- lech | mal- * chey ham'- la- * chim, | ha- ka- dosh ba- ruch * | hu.
+[V:S1V2] D2 D D D2 D2 | D D D D D D D2 | C C C2 C2 C C | B,4 z4 |
+[V:S2V1] B,2 B, B, B,2 B,2 | A, A, A, A, A, A, A,2 | E, E, E,2 E,2 E, E, | D,4 z4 |
+[V:S2V2] G,,2 G,, G,, G,,2 G,,2 | ^F,, F,, F,, F,, F,, F,, F,,2 | G,, G,, G,,2 G,,2 G,, G,, | G,,4 z4 |
+[V:S1V1] B c d d d2 d2 | c B A B c d c2 | B A G A B2 d2 | A4 z4 |
+w: Bo'- a- chem l'- sha- lom | mal'- a- chey ha- sha- * lom | mal'- a- chey * el- * | yon
+[V:S1V2] B, B, B, B, B,2 B,2 | A, A, A, A, A, C C2 | B, B, B, B, B,2 B,2 | A,4 z4 |
+[V:S2V1] D, D, D, D, D,2 D,2 | F, C, C, C, C, A, A,2 | D, D, D, D, D,2 D,2 | D,4 z4 |
+[V:S2V2] G,, G,, G,, G,, G,,2 G,,2 | F,, F,, F,, F,, F,, F,, F,,2 | G,, G,, G,, G,, G,,2 G,,2 | ^F,,4 z4 |
+[V:S1V1] A2 c2 c2 c2 | c e d c B A G2 | G A B2 A G ^F A | G4 z4 |]
+w: Mi- * me- lech | mal- * chey ham'- la- * chim, | ha- ka- dosh ba- * ruch * | hu.
+[V:S1V2] A,2 A,2 A,2 A,2 | C C C C C C C2 | B, B, B,2 B, B, B, B, | B,4 z4 |]
+[V:S2V1] C,2 C,2 C,2 C,2 | E, E, E, E, E, E, E,2 | D, D, D,2 D, D, D, D, | D,4 z4 |]
+[V:S2V2] F,,2 F,,2 F,,2 F,,2 | G,, G,, G,, G,, G,, G,, G,,2 | G,, G,, G,,2 G,, G,, G,, G,, | G,,4 z4 |]

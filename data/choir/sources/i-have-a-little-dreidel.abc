@@ -1,0 +1,28 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/song/I_Have_a_Little_Dreydl-C-8-.abc
+% Samuel E. Goldfarb melody published in 1927. Public domain in the United States. New practice harmony; not a later commercial arrangement.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:I Have a Little Dreidel
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=100
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:C
+[V:S1V1] G C C D D E C2 | E G G F E D3 | D D D E E F D2 | D G F E D C3 |
+[V:S1V2] C G, G, G, G, G, G,2 | G, G, G, G, G, G,3 | F, F, F, F, F, F, F,2 | G, G, G, G, G, G,3 |
+[V:S2V1] E, E, E, E, E, E, E,2 | D, D, D, D, D, D,3 | D, D, D, D, D, D, D,2 | E, E, E, E, E, E,3 |
+[V:S2V2] C, C, C, C, C, C, C,2 | B,, B,, B,, B,, B,, B,,3 | A,, A,, A,, A,, A,, A,, A,,2 | C, C, C, C, C, C,3 |
+[V:S1V1] E G E G E G E2 | E G G F E D3 | D F D F D F D2 | D G G A B c3 |
+[V:S1V2] G, G, G, G, G, G, G,2 | G, G, G, G, G, G,3 | F, F, F, F, F, F, F,2 | G, G, G, G, G, E3 |
+[V:S2V1] E, E, E, E, E, E, E,2 | D, D, D, D, D, D,3 | D, D, D, D, D, D, D,2 | E, E, E, E, E, G,3 |
+[V:S2V2] C, C, C, C, C, C, C,2 | B,, B,, B,, B,, B,, B,,3 | A,, A,, A,, A,, A,, A,, A,,2 | C, C, C, C, C, C,3 |
+[V:S1V1] z |]
+[V:S1V2] z |]
+[V:S2V1] z |]
+[V:S2V2] z |]

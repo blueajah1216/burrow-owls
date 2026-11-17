@@ -1,0 +1,51 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/HavaNagila.abc
+% Traditional Hasidic melody; Hebrew song published in 1922. Public domain in the United States.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Hava Nagila
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=108
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Am
+[V:S1V1] E2 E3 ^G F E | ^G2 G3 B A G | A2 A3 c B A | ^G2 F1/2 E1/2 F =G4 |
+w: Ha- va na- gi- la, | ha- va na- gi- la, | ha- va na- gi- la, | ve ne- s'- ma- cha.
+[V:S1V2] B,2 B,3 B, B, B, | B,2 B,3 B, B, B, | C2 C3 C C C | C2 C1/2 C1/2 C C4 |
+[V:S2V1] ^G,2 G,3 G, G, G, | ^G,2 G,3 G, G, G, | A,2 A,3 A, A, A, | G,2 G,1/2 G,1/2 G, G,4 |
+[V:S2V2] E,2 E,3 E, E, E, | E,2 E,3 E, E, E, | E,2 E,3 E, E, E, | E,2 E,1/2 E,1/2 E, E,4 |
+[V:S1V1] E2 E3 ^G F E | ^G2 G3 B A G | A2 A3 c B A | ^G2 F1/2 E1/2 F E4 |
+w: Ha- va na- gi- la, | ha- va na- gi- la, | ha- va na- gi- la, | ve ne- s'- ma- -cha.
+[V:S1V2] B,2 B,3 B, B, B, | B,2 B,3 B, B, B, | C2 C3 C C C | B,2 B,1/2 B,1/2 B, B,4 |
+[V:S2V1] ^G,2 G,3 G, G, G, | ^G,2 G,3 G, G, G, | A,2 A,3 A, A, A, | ^G,2 G,1/2 G,1/2 G, G,4 |
+[V:S2V2] E,2 E,3 E, E, E, | E,2 E,3 E, E, E, | E,2 E,3 E, E, E, | E,2 E,1/2 E,1/2 E, E,4 |
+[V:S1V1] ^G G2 F E E E2 | F F2 E D D D2 | D2 F3 E D D | A2 ^G2 F1/2 E1/2 F =G2- |
+w: Ha- va na- re- ne- na, | ha- va na- re- ne- na, | ha- va na- re- ne- | na, ve ne- s'- ma- cha.
+[V:S1V2] B, B,2 B, B, B, B,2 | D D2 D D D D2 | D2 D3 D D D | D2 D2 D1/2 D1/2 D F2- |
+[V:S2V1] ^G, G,2 G, G, G, G,2 | A, A,2 A, A, A, A,2 | A,2 A,3 A, A, A, | A,2 A,2 A,1/2 A,1/2 A, A,2- |
+[V:S2V2] E, E,2 E, E, E, E,2 | D, D,2 F, F, F, F,2 | F,2 D,3 F, F, F, | F,2 F,2 D,1/2 F,1/2 D, D,2- |
+[V:S1V1] G2 ^G G2 F E E | E2 F F2 E D D | D2 D2 F3 E | D D A2 ^G2 F1/2 E1/2 F |
+w: * Ha- va na- re- ne- | na, ha- va na- re- ne- | na, ha- va na- | re- ne- na, ve ne- s'- ma-
+[V:S1V2] F2 E E2 E E E | D2 D D2 D D D | D2 D2 D3 D | D D D2 D2 D1/2 D1/2 D |
+[V:S2V1] A,2 ^G, G,2 G, G, G, | F,2 F, F,2 F, F, F, | F,2 F,2 F,3 F, | F, F, F,2 F,2 F,1/2 F,1/2 F, |
+[V:S2V2] D,2 B,, B,,2 B,, B,, B,, | A,,2 A,, A,,2 A,, A,, A,, | A,,2 A,,2 A,,3 A,, | A,, A,, A,,2 A,,2 A,,1/2 A,,1/2 A,, |
+[V:S1V1] E4 A4 | c4 A2 c2 | A2 c2 A1/2 A1/2 A c3/2 B1/2 | A c B A A1/2 A1/2 A c3/2 B1/2 |
+w: -cha. U- | ru! U- ru | a- chim, U- ru a- chim ba- | lev sa- me- ach, u- ru a- chim ba-
+[V:S1V2] C4 C4 | C4 C2 C2 | C2 C2 C1/2 C1/2 C C3/2 C1/2 | C C C C C1/2 C1/2 C C3/2 C1/2 |
+[V:S2V1] E,4 E,4 | E,4 E,2 E,2 | E,2 E,2 E,1/2 E,1/2 E, E,3/2 E,1/2 | E, E, E, E, E,1/2 E,1/2 E, E,3/2 E,1/2 |
+[V:S2V2] A,,4 A,,4 | A,,4 A,,2 A,,2 | A,,2 A,,2 A,,1/2 A,,1/2 A,, A,,3/2 A,,1/2 | A,, A,, A,, A,, A,,1/2 A,,1/2 A,, A,,3/2 A,,1/2 |
+[V:S1V1] A c B A B1/2 B1/2 B d3/2 c1/2 | B d c B B1/2 B1/2 B d3/2 c1/2 | B d c B B1/2 B1/2 B e2 | B1/2 B1/2 B e3/2 E1/2 E E c1/2 B1/2 A1/2 ^G1/2 |
+w: lev sa- me- ach, U- ru a- chim ba- | lev sa- me- ach, u- ru a- chim ba- | lev sa- me- ach, U- ru a- chim! | U- ru a- chim! Ba- lev sa- me- * * *
+[V:S1V2] D D D D D1/2 D1/2 D D3/2 D1/2 | D D D D D1/2 D1/2 D D3/2 D1/2 | E E E E E1/2 E1/2 E E2 | E1/2 E1/2 E E3/2 E1/2 E E E1/2 E1/2 E1/2 E1/2 |
+[V:S2V1] G, G, G, G, G,1/2 G,1/2 G, G,3/2 G,1/2 | G, G, G, G, G,1/2 G,1/2 G, G,3/2 G,1/2 | ^G, G, G, G, G,1/2 G,1/2 G, G,2 | ^G,1/2 G,1/2 G, G,3/2 G,1/2 G, G, G,1/2 G,1/2 G,1/2 G,1/2 |
+[V:S2V2] B,, B,, B,, B,, B,,1/2 B,,1/2 B,, B,,3/2 B,,1/2 | B,, B,, B,, B,, B,,1/2 B,,1/2 B,, B,,3/2 B,,1/2 | B,, B,, B,, B,, B,,1/2 B,,1/2 B,, B,,2 | B,,1/2 B,,1/2 B,, B,,3/2 B,,1/2 B,, B,, B,,1/2 B,,1/2 B,,1/2 B,,1/2 |
+[V:S1V1] A4 |]
+w: ach.
+[V:S1V2] E4 |]
+[V:S2V1] A,4 |]
+[V:S2V2] C,4 |]

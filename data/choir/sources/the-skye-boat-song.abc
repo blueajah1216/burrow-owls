@@ -1,0 +1,36 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/scotland/skye-boat-song.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:The Skye Boat Song
+C:New practice harmony: The Great Gallery (CC0).
+M:6/8
+L:1/8
+Q:1/4=108
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:G
+[V:S1V1] C3/2 D1/2 C =F3/2 F1/2 F | G3/2 A1/2 G c3 | A3/2 G1/2 A D2 D | C6 |
+w: Speed bon- nie boat, like a | bird on the wing, | "On- ward," the sail- ors | cry!
+[V:S1V2] C3/2 C1/2 C C3/2 C1/2 C | C3/2 C1/2 C C3 | D3/2 A,1/2 A, A,2 A, | G,6 |
+[V:S2V1] G,3/2 G,1/2 G, G,3/2 G,1/2 G, | G,3/2 G,1/2 G, G,3 | F,3/2 F,1/2 F, F,2 F, | G,6 |
+[V:S2V2] E,3/2 E,1/2 E, E,3/2 E,1/2 E, | E,3/2 E,1/2 E, E,3 | D,3/2 D,1/2 D, D,2 D, | E,6 |
+[V:S1V1] C3/2 D1/2 C =F3/2 F1/2 F | G3/2 A1/2 G c3 | A3/2 G1/2 A D2 D | C6 |
+w: Speed bon- nie boat, like a | bird on the wing, | "On- ward," the sail- ors | cry!
+[V:S1V2] G,3/2 G,1/2 G, G,3/2 G,1/2 G, | G,3/2 G,1/2 G, E3 | D3/2 A,1/2 A, A,2 A, | G,6 |
+[V:S2V1] G,3/2 E,1/2 E, E,3/2 E,1/2 E, | E,3/2 E,1/2 E, G,3 | F,3/2 F,1/2 F, F,2 F, | G,6 |
+[V:S2V2] E,3/2 C,1/2 C, C,3/2 C,1/2 C, | C,3/2 C,1/2 C, C,3 | D,3/2 D,1/2 D, D,2 D, | E,6 |
+[V:S1V1] A3/2 =F1/2 A A3 | G3/2 D1/2 G G3 | =F3/2 D1/2 F F2 F | D6 |
+w: Loud the winds howl, | load the waves roar, | Thund- er- claps rend the | air;
+[V:S1V2] A,3/2 A,1/2 A, A,3 | B,3/2 B,1/2 B, B,3 | B,3/2 B,1/2 B, B,2 B, | B,6 |
+[V:S2V1] F,3/2 F,1/2 F, F,3 | G,3/2 G,1/2 G, G,3 | G,3/2 G,1/2 G, G,2 G, | G,6 |
+[V:S2V2] D,3/2 D,1/2 D, D,3 | D,3/2 D,1/2 D, D,3 | D,3/2 D,1/2 D, D,2 D, | D,6 |
+[V:S1V1] A3/2 =F1/2 A A3 | G3/2 D1/2 G G3 | =F3/2 D1/2 F F2 F | D6 |]
+w: Baf- fled our foes | stand on the shore, | Fol- low they will not | dare.
+[V:S1V2] A,3/2 A,1/2 A, A,3 | B,3/2 B,1/2 B, B,3 | B,3/2 B,1/2 B, B,2 B, | B,6 |]
+[V:S2V1] F,3/2 F,1/2 F, F,3 | G,3/2 G,1/2 G, G,3 | G,3/2 G,1/2 G, G,2 G, | G,6 |]
+[V:S2V2] D,3/2 D,1/2 D, D,3 | D,3/2 D,1/2 D, D,3 | D,3/2 D,1/2 D, D,2 D, | D,6 |]

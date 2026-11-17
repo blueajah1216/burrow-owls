@@ -1,0 +1,76 @@
+% Melody reference: https://www.flutetunes.com/tunes.php?id=798
+% Ivan Larionov, 1860. Public domain.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Kalinka
+C:New practice harmony: The Great Gallery (CC0).
+M:2/2
+L:1/8
+Q:1/4=112
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Am
+[V:S1V1] z4 e4 | d4 B2 c2 | d4 B2 c2 | d4 c2 B2 |
+[V:S1V2] z4 C4 | B,4 D2 D2 | D4 D2 D2 | D4 D2 D2 |
+[V:S2V1] z4 A,4 | B,4 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |
+[V:S2V2] z4 A,,4 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |
+[V:S1V1] A4 e2 e2 | d2 d2 B2 c2 | d4 B2 c2 | d4 c2 B2 |
+[V:S1V2] C4 C2 C2 | D2 D2 D2 D2 | D4 D2 D2 | D4 D2 D2 |
+[V:S2V1] C4 C2 C2 | B,2 B,2 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |
+[V:S2V2] E,,4 A,,2 A,,2 | G,,2 G,,2 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |
+[V:S1V1] A4 e4 | d4 B2 c2 | d4 B2 c2 | d4 c2 B2 |
+[V:S1V2] C4 C4 | D4 D2 D2 | D4 D2 D2 | D4 D2 D2 |
+[V:S2V1] C4 C4 | B,4 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |
+[V:S2V2] E,,4 A,,4 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |
+[V:S1V1] A4 e2 e2 | d2 d2 B2 c2 | d4 B2 c2 | d4 c2 B2 |
+[V:S1V2] C4 C2 C2 | D2 D2 D2 D2 | D4 D2 D2 | D4 D2 D2 |
+[V:S2V1] C4 C2 C2 | B,2 B,2 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |
+[V:S2V2] E,,4 A,,2 A,,2 | G,,2 G,,2 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |
+[V:S1V1] A4 z4 | e4 g4 | f4 e2 d2 | c8 |
+[V:S1V2] C4 z4 | C4 E4 | F4 F2 F2 | E8 |
+[V:S2V1] C4 z4 | C4 C4 | D4 D2 D2 | C8 |
+[V:S2V2] E,,4 z4 | G,,4 G,,4 | A,,4 A,,2 A,,2 | A,,8 |
+[V:S1V1] G8 | e4 g4 | f4 e2 d2 | c8 |
+[V:S1V2] E8 | G4 E4 | F4 F2 F2 | E8 |
+[V:S2V1] C8 | C4 C4 | A,4 A,2 A,2 | A,8 |
+[V:S2V2] C,8 | C,4 C,4 | D,4 D,2 D,2 | A,,8 |
+[V:S1V1] G8 | A4 A2 B2 | d2 c2 B2 A2 | G4 F4 |
+[V:S1V2] E8 | E4 E2 E2 | F2 F2 F2 F2 | E4 E4 |
+[V:S2V1] G,8 | A,4 A,2 A,2 | A,2 A,2 A,2 A,2 | C4 G,4 |
+[V:S2V2] C,8 | C,4 C,2 C,2 | D,2 D,2 D,2 D,2 | C,4 C,4 |
+[V:S1V1] E4 e4 | e4 g4 | f4 e2 d2 | c8 |
+[V:S1V2] E4 E4 | E4 E4 | D4 D2 D2 | C8 |
+[V:S2V1] A,4 A,4 | G,4 G,4 | F,4 F,2 F,2 | E,8 |
+[V:S2V2] C,4 C,4 | C,4 C,4 | A,,4 A,,2 A,,2 | A,,8 |
+[V:S1V1] G8 | e4 g4 | f4 e2 d2 | c8 |
+[V:S1V2] C8 | C4 E4 | D4 D2 D2 | C8 |
+[V:S2V1] E,8 | G,4 G,4 | F,4 F,2 F,2 | E,8 |
+[V:S2V2] C,8 | C,4 C,4 | A,,4 A,,2 A,,2 | A,,8 |
+[V:S1V1] G8 | A4 A2 B2 | d2 c2 B2 A2 | g4 f4 |
+[V:S1V2] C8 | C4 C2 C2 | D2 D2 D2 D2 | E4 E4 |
+[V:S2V1] E,8 | E,4 E,2 E,2 | F,2 F,2 F,2 F,2 | E,4 G,4 |
+[V:S2V2] C,8 | A,,4 A,,2 A,,2 | A,,2 A,,2 A,,2 A,,2 | C,4 C,4 |
+[V:S1V1] e4 e4 | d4 B2 c2 | d4 B2 c2 | d4 c2 B2 |
+[V:S1V2] E4 E4 | D4 D2 D2 | D4 D2 D2 | D4 D2 D2 |
+[V:S2V1] A,4 A,4 | B,4 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |
+[V:S2V2] C,4 C,4 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |
+[V:S1V1] A4 e2 e2 | d2 d2 B2 c2 | d4 B2 c2 | d4 c2 B2 |
+[V:S1V2] C4 C2 C2 | D2 D2 D2 D2 | D4 D2 D2 | D4 D2 D2 |
+[V:S2V1] C4 C2 C2 | B,2 B,2 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |
+[V:S2V2] E,,4 A,,2 A,,2 | G,,2 G,,2 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |
+[V:S1V1] A4 e4 | d4 B2 c2 | d4 B2 c2 | d4 c2 B2 |
+[V:S1V2] C4 C4 | D4 D2 D2 | D4 D2 D2 | D4 D2 D2 |
+[V:S2V1] C4 C4 | B,4 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |
+[V:S2V2] E,,4 A,,4 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |
+[V:S1V1] A4 e2 e2 | d2 d2 B2 c2 | d4 B2 c2 | d4 c2 B2 |
+[V:S1V2] C4 C2 C2 | D2 D2 D2 D2 | D4 D2 D2 | D4 D2 D2 |
+[V:S2V1] C4 C2 C2 | B,2 B,2 B,2 B,2 | B,4 B,2 B,2 | B,4 B,2 B,2 |
+[V:S2V2] E,,4 A,,2 A,,2 | G,,2 G,,2 G,,2 G,,2 | G,,4 G,,2 G,,2 | G,,4 G,,2 G,,2 |
+[V:S1V1] A4 |]
+[V:S1V2] C4 |]
+[V:S2V1] C4 |]
+[V:S2V2] E,,4 |]

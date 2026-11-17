@@ -1,0 +1,32 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/song/Svivon-Dm-16-.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Sevivon Sov Sov Sov
+C:New practice harmony: The Great Gallery (CC0).
+M:2/4
+L:1/8
+Q:1/4=100
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Dm
+[V:S1V1] D D E2 | F F E2 | A A G1/2 F1/2 E1/2 D1/2 | F F E2 |
+[V:S1V2] A, A, A,2 | A, A, A,2 | A, A, A,1/2 A,1/2 A,1/2 A,1/2 | A, A, A,2 |
+[V:S2V1] F, F, F,2 | F, F, F,2 | F, F, F,1/2 F,1/2 F,1/2 F,1/2 | F, F, F,2 |
+[V:S2V2] D, D, D,2 | D, D, D,2 | D, D, D,1/2 D,1/2 D,1/2 D,1/2 | D, D, D,2 |
+[V:S1V1] D D E2 | F F G2 | A A A A, | D D D2 |
+[V:S1V2] A, A, A,2 | A, A, A,2 | A, A, A, A, | A, A, A,2 |
+[V:S2V1] F, F, F,2 | F, F, F,2 | F, F, F, F, | F, F, F,2 |
+[V:S2V2] D, D, D,2 | D, D, D,2 | D, D, D, D, | D, D, D,2 |
+[V:S1V1] G G G B | A A F1/2 E1/2 D | C C A, C | D E F1/2 E1/2 D |
+[V:S1V2] B, B, B, B, | A, A, A,1/2 A,1/2 A, | A, A, A, A, | A, A, A,1/2 A,1/2 A, |
+[V:S2V1] G, G, G, G, | F, F, F,1/2 F,1/2 F, | F, F, F, F, | F, F, F,1/2 F,1/2 F, |
+[V:S2V2] D, D, D, D, | D, D, D,1/2 D,1/2 D, | C, C, C, C, | D, D, D,1/2 D,1/2 D, |
+[V:S1V1] G G G B | A A F1/2 E1/2 D | C C A, C | D D D2 |]
+[V:S1V2] B, B, B, B, | A, A, A,1/2 A,1/2 A, | A, A, A, A, | A, A, A,2 |]
+[V:S2V1] G, G, G, G, | F, F, F,1/2 F,1/2 F, | F, F, F, F, | F, F, F,2 |]
+[V:S2V2] D, D, D, D, | D, D, D,1/2 D,1/2 D, | C, C, C, C, | D, D, D,2 |]

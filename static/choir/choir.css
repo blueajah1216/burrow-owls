@@ -1,5 +1,6 @@
 :root{--ink:#133554;--muted:#57718b;--blue:#2368ad;--paper:#fffef9;--serif:'Fraunces',Georgia,serif;--sans:'Outfit',system-ui,sans-serif}
 [hidden]{display:none!important}
+.collection-shortcuts{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 13px}.collection-shortcuts button{font-size:10px;padding:6px 8px;background:#e0ecf6}.collection-shortcuts button[aria-pressed=true]{background:#254f77;color:#fff;border-color:#254f77}#song-native-title{font-family:var(--serif);font-size:20px;color:#456b8c;text-align:left;margin:0 0 7px}
 .voices legend{grid-column:1/-1}
 #print-score{display:none}
 @media print{main{display:none!important}#print-score{display:block!important;position:static!important;width:100%!important}#print-score div{height:auto!important;overflow:visible!important;break-inside:avoid}#print-score svg{display:block;width:100%;height:auto;break-inside:avoid}#print-score p{font-size:9px}}

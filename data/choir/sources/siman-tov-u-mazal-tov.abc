@@ -1,0 +1,52 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/SimanTov.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Siman Tov u’Mazal Tov
+C:New practice harmony: The Great Gallery (CC0).
+M:2/2
+L:1/8
+Q:1/4=112
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Gm
+[V:S1V1] D G G G D G G G | D G G G D G G G- | G B B B G B B B | G B B B G B B B- |
+[V:S1V2] B, B, B, B, B, B, B, B, | B, B, B, B, B, B, B, B,- | B, B, B, B, B, B, B, B, | B, B, B, B, B, B, B, B,- |
+[V:S2V1] G, D, D, D, D, D, D, D, | D, D, D, D, D, D, D, D,- | D, D, D, D, D, D, D, D, | D, D, D, D, D, D, D, D,- |
+[V:S2V2] G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- | G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- |
+[V:S1V1] B c c c B c c c | B c c c d B A G- | G G2 c2 c2 B | A B4 z3 |
+[V:S1V2] B, C C C C C C C | B, B, B, B, B, B, B, B,- | B, C2 C2 C2 C | B, B,4 z3 |
+[V:S2V1] D, E, E, E, E, E, E, E, | D, D, D, D, D, D, D, D,- | D, E,2 E,2 E,2 E, | D, D,4 z3 |
+[V:S2V2] G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- | G,, G,,2 G,,2 G,,2 G,, | G,, G,,4 z3 |
+[V:S1V1] D G G G D G G G | D G G G D G G G- | G B B B G B B B | G B B B G B B B- |
+[V:S1V2] B, B, B, B, B, B, B, B, | B, B, B, B, B, B, B, B,- | B, B, B, B, B, B, B, B, | B, B, B, B, B, B, B, B,- |
+[V:S2V1] D, D, D, D, D, D, D, D, | D, D, D, D, D, D, D, D,- | D, D, D, D, D, D, D, D, | D, D, D, D, D, D, D, D,- |
+[V:S2V2] G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- | G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- |
+[V:S1V1] B c c c B c c c | B c c c d B A G- | G G2 c2 c2 B | A G4 z3 |
+[V:S1V2] B, C C C C C C C | B, B, B, B, B, B, B, B,- | B, C2 C2 C2 C | B, B,4 z3 |
+[V:S2V1] D, E, E, E, E, E, E, E, | D, D, D, D, D, D, D, D,- | D, E,2 E,2 E,2 E, | D, D,4 z3 |
+[V:S2V2] G,, G,, G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, G,, G,,- | G,, G,,2 G,,2 G,,2 G,, | G,, G,,4 z3 |
+[V:S1V1] F B c d2 d2 d | d e2 e2 d3- | d z e2 d d c c | B d4 z3 |
+[V:S1V2] B, D D D2 D2 D | D D2 D2 D3- | D z E2 E E E E | D D4 z3 |
+[V:S2V1] D, F, F, F,2 F,2 F, | G, G,2 G,2 G,3- | G, z G,2 G, G, G, G, | G, B,4 z3 |
+[V:S2V2] B,, B,, B,, B,,2 B,,2 B,, | B,, B,,2 B,,2 B,,3- | B,, z C,2 C, C, C, C, | G,, G,,4 z3 |
+[V:S1V1] F B c d2 d2 d | d e2 e2 d3- | d z e2 d d c c | B B4 z3 |
+[V:S1V2] D D D D2 D2 D | D D2 D2 D3- | D z E2 E E E E | D D4 z3 |
+[V:S2V1] B, F, F, F,2 F,2 F, | G, G,2 G,2 G,3- | G, z G,2 G, G, G, G, | G, G,4 z3 |
+[V:S2V2] B,, B,, B,, B,,2 B,,2 B,, | B,, B,,2 B,,2 B,,3- | B,, z C,2 C, C, C, C, | G,, G,,4 z3 |
+[V:S1V1] F B c d2 d2 d | d e2 e2 d3- | d z e2 d d c c | B D G A B2 B2 |
+[V:S1V2] D D D D2 D2 D | D D2 D2 D3- | D z E2 E E E E | D D D D D2 D2 |
+[V:S2V1] F, F, F, F,2 F,2 F, | G, G,2 G,2 G,3- | G, z G,2 G, G, G, G, | G, B, B, B, B,2 B,2 |
+[V:S2V2] B,, B,, B,, B,,2 B,,2 B,, | B,, B,,2 B,,2 B,,3- | B,, z C,2 C, C, C, C, | G,, G,, G,, G,, G,,2 G,,2 |
+[V:S1V1] B B c2 c2 B2- | B2 z c2 B B A | A G B4 z2 | z D G A B2 B2 |
+[V:S1V2] D D D2 D2 D2- | D2 z D2 D D D | D D D4 z2 | z D D D D2 D2 |
+[V:S2V1] B, B, B,2 B,2 B,2- | B,2 z B,2 B, B, B, | B, B, B,4 z2 | z B, B, B, B,2 B,2 |
+[V:S2V2] G,, G,, G,,2 G,,2 G,,2- | G,,2 z G,,2 G,, G,, G,, | G,, G,, G,,4 z2 | z G,, G,, G,, G,,2 G,,2 |
+[V:S1V1] B B c2 c2 B2- | B2 z c2 B B A | A G G4 z2 | z |]
+[V:S1V2] D D D2 D2 D2- | D2 z D2 D D D | D D D4 z2 | z |]
+[V:S2V1] B, B, B,2 B,2 B,2- | B,2 z B,2 B, B, B, | B, B, B,4 z2 | z |]
+[V:S2V2] G,, G,, G,,2 G,,2 G,,2- | G,,2 z G,,2 G,, G,, G,, | G,, G,, G,,4 z2 | z |]

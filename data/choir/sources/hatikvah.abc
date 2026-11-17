@@ -1,0 +1,41 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/HaTikvaSong.abc
+% Samuel Cohen melody adaptation, 1888; Naftali Herz Imber text, 1878. Public domain in the United States.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Hatikvah
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=80
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Dm
+[V:S1V1] D E F G A2 A2 | B A B d A4 | G2 G E F2 F2 | E D E F D2 z A, |
+w: Kol * od ba- le- vav | p'- * ni- * ma | ne- fesh ye- hu- di | ho- * mi- * a ul-
+[V:S1V2] A, A, A, A, A,2 A,2 | A, A, A, F F4 | E2 E E E2 E2 | D D D D D2 z A, |
+[V:S2V1] F, F, F, F, F,2 F,2 | F, F, F, A, A,4 | C2 C G, G,2 G,2 | F, F, F, F, F,2 z F, |
+[V:S2V2] D, D, D, D, D,2 D,2 | D, D, D, D, D,4 | C,2 C, C, C,2 C,2 | A,, A,, A,, A,, A,,2 z D, |
+[V:S1V1] D E F G A2 A2 | B A B d A4 | G2 G E F2 F2 | E D E F D2 z2 |
+w: fa- a- tey * miz- rach | ka- * di- * ma | a- yin l'- tsi- yon | tso- * fi- * ya.
+[V:S1V2] A, A, A, A, A,2 A,2 | A, A, A, F F4 | E2 E E E2 E2 | D D D D D2 z2 |
+[V:S2V1] F, F, F, F, F,2 F,2 | F, F, F, A, A,4 | C2 C G, G,2 G,2 | F, F, F, F, F,2 z2 |
+[V:S2V2] D, D, D, D, D,2 D,2 | D, D, D, D, D,4 | C,2 C, C, C,2 C,2 | A,, A,, A,, A,, A,,2 z2 |
+[V:S1V1] D2 d2 d2 d2 | c d c B A4 | D2 d2 d2 d2 | c d c B A4 |
+w: Od lo av- da | tik- va- tey- * nu | ha- tik- va bat | shnot al- pa- * yim
+[V:S1V2] D2 D2 D2 D2 | C C C C C4 | D2 D2 D2 D2 | C C C C C4 |
+[V:S2V1] F,2 F,2 F,2 F,2 | F, F, F, F, F,4 | F,2 F,2 F,2 F,2 | F, F, F, F, F,4 |
+[V:S2V2] A,,2 A,,2 A,,2 A,,2 | A,, A,, A,, A,, A,,4 | A,,2 A,,2 A,,2 A,,2 | A,, A,, A,, A,, A,,4 |
+[V:S1V1] c2 c c F2 F2 | G A B c A G F2 | G2 G2 F2 F F | E D E F D4 |
+w: li- yot am chof- shi | be- * ar- * tse- * nu | e- rets tsi- yon vi- | ru- sha- la- * yim
+[V:S1V2] C2 C C C2 C2 | C C C C C C C2 | B,2 B,2 B,2 B, B, | A, A, A, A, A,4 |
+[V:S2V1] F,2 F, F, F,2 F,2 | F, F, F, F, F, F, F,2 | D,2 D,2 D,2 D, D, | D, D, D, D, D,4 |
+[V:S2V2] A,,2 A,, A,, A,,2 A,,2 | A,, A,, A,, A,, A,, A,, A,,2 | G,,2 G,,2 G,,2 G,, G,, | F,, F,, F,, F,, F,,4 |
+[V:S1V1] G2 G E F2 F2 | G A B c A G F2 | G2 G2 F2 F F | E D E F D4 |]
+w: li- yot am chof- shi | be- * ar- * tse- * nu | e- rets tsi- yon vi- | ru- sha- la- * yim
+[V:S1V2] C2 C C C2 C2 | C C C C C C C2 | B,2 B,2 B,2 B, B, | A, A, A, A, A,4 |]
+[V:S2V1] C,2 C, C, E,2 E,2 | F, F, F, F, F, F, F,2 | D,2 D,2 D,2 D, D, | D, D, D, D, D,4 |]
+[V:S2V2] E,,2 E,, G,, G,,2 G,,2 | A,, A,, A,, A,, A,, A,, A,,2 | G,,2 G,,2 G,,2 G,, G,, | F,, F,, F,, F,, F,,4 |]

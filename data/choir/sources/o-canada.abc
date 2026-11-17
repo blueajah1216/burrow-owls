@@ -1,0 +1,51 @@
+% Melody reference: https://www.flutetunes.com/tunes.php?id=202
+% Music by Calixa Lavallée, 1880. Current English text from the Government of Canada, based on Robert Stanley Weir. The Canadian National Anthem Act declares the anthem melody and words public domain.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:O Canada
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=96
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:F
+[V:S1V1] A4 c3 c | F6 G2 | A2 B2 c2 d2 | G6 z2 |
+w: O Ca- na- | da! Our | home and na- tive | land!
+[V:S1V2] C4 A,3 A, | A,6 A,2 | A,2 A,2 A,2 C2 | C6 z2 |
+[V:S2V1] F,4 F,3 F, | F,6 F,2 | F,2 F,2 F,2 F,2 | E,6 z2 |
+[V:S2V2] C,4 C,3 C, | C,6 C,2 | C,2 C,2 C,2 A,,2 | C,6 z2 |
+[V:S1V1] A4 =B3 B | c6 d2 | e2 e2 d2 d2 | c6 G3/2 A1/2 |
+w: True pa- triot | love in | all of us com- | mand. With glo-
+[V:S1V2] C4 A,3 A, | A,6 C2 | C2 C2 E2 E2 | E6 E3/2 E1/2 |
+[V:S2V1] F,4 F,3 F, | F,6 F,2 | G,2 G,2 G,2 G,2 | G,6 G,3/2 G,1/2 |
+[V:S2V2] C,4 C,3 C, | C,6 A,,2 | C,2 C,2 C,2 C,2 | C,6 C,3/2 C,1/2 |
+[V:S1V1] B3 A G2 A3/2 B1/2 | c3 B A2 B3/2 c1/2 | d2 c2 B2 A2 | G6 G3/2 A1/2 |
+w: wing hearts we see thee | rise, The True North strong | and free! * * | * From far
+[V:S1V2] D3 D D2 D3/2 D1/2 | F3 C C2 C3/2 C1/2 | B,2 D2 D2 D2 | C6 C3/2 C1/2 |
+[V:S2V1] G,3 B, B,2 B,3/2 B,1/2 | A,3 A, A,2 A,3/2 A,1/2 | B,2 B,2 B,2 B,2 | C6 C3/2 G,1/2 |
+[V:S2V2] G,,3 G,, G,,2 G,,3/2 G,,1/2 | F,,3 F,, F,,2 F,,3/2 F,,1/2 | F,,2 F,,2 F,,2 F,,2 | E,,6 E,,3/2 E,,1/2 |
+[V:S1V1] B3 A G2 A3/2 B1/2 | c3 B A2 A2 | G2 c2 c =B A B | c6 z2 |
+w: and wide, O Ca- na- | da, we stand on | guard for thee. * * * | *
+[V:S1V2] D3 D D2 D3/2 D1/2 | F3 C C2 C2 | C2 C2 C C C C | C6 z2 |
+[V:S2V1] G,3 B, B,2 B,3/2 B,1/2 | A,3 A, A,2 A,2 | G,2 G,2 G, G, G, G, | A,6 z2 |
+[V:S2V2] G,,3 G,, G,,2 G,,3/2 G,,1/2 | F,,3 F,, F,,2 F,,2 | E,,2 E,,2 E,, E,, E,, E,, | F,,6 z2 |
+[V:S1V1] A4 c3 c | F6 z2 | B4 d3 d | G6 z2 |
+w: God keep our | land | glo- rious and | free!
+[V:S1V2] C4 C3 C | C6 z2 | D4 D3 D | C6 z2 |
+[V:S2V1] A,4 A,3 A, | A,6 z2 | B,4 B,3 B, | C6 z2 |
+[V:S2V2] F,,4 F,,3 F,, | F,,6 z2 | F,,4 F,,3 F,, | E,,6 z2 |
+[V:S1V1] c4 ^c3 c | d2 B2 A2 G2 | F4 G4 | A6 z2 |
+w: O Ca- na- | da, we stand on | guard for | thee.
+[V:S1V2] C4 C3 C | B,2 D2 D2 D2 | C4 C4 | C6 z2 |
+[V:S2V1] A,4 A,3 A, | B,2 B,2 B,2 B,2 | A,4 A,4 | A,6 z2 |
+[V:S2V2] F,,4 F,,3 F,, | G,,2 G,,2 G,,2 G,,2 | A,,4 F,,4 | F,,6 z2 |
+[V:S1V1] c4 f3 f | d2 B2 A2 G2 | c4 E4 | F6 |]
+w: O Ca- na- | da, we stand on | guard for | thee.
+[V:S1V2] C4 A3 A | B2 B2 G2 G2 | G4 E4 | F6 |]
+[V:S2V1] A,4 C3 C | B,2 D2 D2 D2 | E4 G,4 | A,6 |]
+[V:S2V2] F,,4 F,,3 F,, | G,,2 G,,2 B,,2 B,,2 | C,4 C,4 | C,6 |]

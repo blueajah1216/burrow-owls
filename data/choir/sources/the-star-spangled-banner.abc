@@ -1,0 +1,61 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/anthem/song/Star_Spangled_Banner_Cw.abc
+% John Stafford Smith melody, 18th century; Francis Scott Key words, 1814. Public domain.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:The Star-Spangled Banner
+C:New practice harmony: The Great Gallery (CC0).
+M:3/4
+L:1/8
+Q:1/4=88
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:Bb
+[V:S1V1] F D | B,2 D2 F2 | B4 d c | B2 D2 =E2 |
+w: Oh, * | say, can you | see by the | dawn's ear- ly
+[V:S1V2] D D | B,2 B,2 B,2 | B,4 B, B, | B,2 B,2 B,2 |
+[V:S2V1] B, F, | F,2 F,2 F,2 | F,4 F, F, | F,2 F,2 F,2 |
+[V:S2V2] B,, B,, | D,2 D,2 D,2 | D,4 D, D, | D,2 D,2 D,2 |
+[V:S1V1] F4 F F | d3 c B2 | A4 G A | B2 B2 F2 |
+w: light, What so | proud- ly we | hailed at the | twi- light's last
+[V:S1V2] B,4 B, B, | B,3 B, B,2 | A,4 A, A, | B,2 B,2 B,2 |
+[V:S2V1] F,4 F, F, | F,3 F, F,2 | F,4 F, F, | F,2 F,2 F,2 |
+[V:S2V2] D,4 D, D, | D,3 D, D,2 | C,4 C, C, | D,2 D,2 D,2 |
+[V:S1V1] D2 B,2 F D | B,2 D2 F2 | B4 d c | B2 D2 =E2 |
+w: gleam- ing? Whose broad | stripes and bright | stars thro' the | pe- ri- lous
+[V:S1V2] B,2 B,2 B, B, | B,2 B,2 B,2 | B,4 B, B, | B,2 B,2 B,2 |
+[V:S2V1] F,2 F,2 F, F, | F,2 F,2 F,2 | F,4 F, F, | F,2 F,2 F,2 |
+[V:S2V2] D,2 D,2 D, D, | D,2 D,2 D,2 | D,4 D, D, | D,2 D,2 D,2 |
+[V:S1V1] F4 F F | d3 c B2 | A4 G A | B2 B2 F2 |
+w: fight, O'er the | ram- parts we | watched were so | gal- lant- ly
+[V:S1V2] B,4 B, B, | B,3 B, B,2 | A,4 A, A, | B,2 B,2 B,2 |
+[V:S2V1] F,4 F, F, | F,3 F, F,2 | F,4 F, F, | F,2 F,2 F,2 |
+[V:S2V2] D,4 D, D, | D,3 D, D,2 | C,4 C, C, | D,2 D,2 D,2 |
+[V:S1V1] D2 B,2 d d | d2 e2 f2 | f4 e d | c2 d2 e2 |
+w: stream- ing; And the | rock- ets' red | glare, the bombs | burst- ing in
+[V:S1V2] B,2 B,2 B, B, | B,2 D2 D2 | D4 D D | E2 C2 C2 |
+[V:S2V1] F,2 F,2 F, F, | F,2 F,2 F,2 | F,4 F, F, | E,2 E,2 E,2 |
+[V:S2V2] D,2 D,2 D, D, | D,2 B,,2 B,,2 | B,,4 B,, B,, | G,,2 G,,2 G,,2 |
+[V:S1V1] e4 e2 | d3 c B2 | A4 G A | B2 D2 =E2 |
+w: air, Gave | proof thro' the | night that our | flag was still
+[V:S1V2] E4 E2 | D3 D D2 | C4 C C | D2 D2 D2 |
+[V:S2V1] G,4 G,2 | F,3 F, F,2 | F,4 F, F, | F,2 F,2 F,2 |
+[V:S2V2] B,,4 B,,2 | B,,3 B,, B,,2 | A,,4 A,, A,, | B,,2 B,,2 B,,2 |
+[V:S1V1] F4 F2 | B2 B2 B A | G2 G2 G2 | c2 e d c B |
+w: there. Oh, | say, does that * | star- span- gled | ban- ner * yet *
+[V:S1V2] D4 D2 | D2 D2 D D | E2 E2 E2 | E2 C C C C |
+[V:S2V1] F,4 F,2 | F,2 F,2 F, F, | E,2 E,2 E,2 | E,2 E, E, E, E, |
+[V:S2V2] B,,4 B,,2 | B,,2 B,,2 B,, B,, | B,,2 B,,2 B,,2 | G,,2 G,, G,, G,, G,, |
+[V:S1V1] B2 A2 F F | B3 c d e | f4 B c | d3 e c2 |
+w: wave * O'er the | land * of the | free, and the | home of the
+[V:S1V2] D2 D2 D D | D3 D D D | D4 D D | D3 D D2 |
+[V:S2V1] F,2 F,2 F, F, | F,3 F, F, F, | F,4 F, F, | F,3 F, F,2 |
+[V:S2V2] B,,2 B,,2 B,, B,, | B,,3 B,, B,, B,, | B,,4 B,, B,, | B,,3 B,, B,,2 |
+[V:S1V1] B4 |]
+w: brave?
+[V:S1V2] D4 |]
+[V:S2V1] F,4 |]
+[V:S2V2] B,,4 |]

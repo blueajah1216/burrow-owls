@@ -1,0 +1,32 @@
+% Melody reference: https://www.flutetunes.com/tunes.php?id=2431
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Suo Gân
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=76
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:G
+[V:S1V1] G3 A B d3 | A3 G B A3 | G3 A B d3 | A2 B2 G4 |
+[V:S1V2] B,3 B, B, B,3 | A,3 A, A, A,3 | B,3 B, B, B,3 | B,2 B,2 B,4 |
+[V:S2V1] G,3 G, G, G,3 | F,3 F, F, F,3 | G,3 G, G, G,3 | G,2 G,2 G,4 |
+[V:S2V2] D,3 D, D, D,3 | D,3 D, D, D,3 | D,3 D, D, D,3 | D,2 D,2 D,4 |
+[V:S1V1] G3 A B d3 | A3 G B A3 | G3 A B d3 | A2 B2 G4 |
+[V:S1V2] B,3 B, B, B,3 | A,3 A, A, A,3 | B,3 B, B, B,3 | B,2 B,2 B,4 |
+[V:S2V1] G,3 G, G, G,3 | F,3 F, F, F,3 | G,3 G, G, G,3 | G,2 G,2 G,4 |
+[V:S2V2] D,3 D, D, D,3 | D,3 D, D, D,3 | D,3 D, D, D,3 | D,2 D,2 D,4 |
+[V:S1V1] B3 c d B3 | e3 c d B3 | B3 c d2 B2 | g3 e d4 |
+[V:S1V2] B,3 B, B, B,3 | E3 E E E3 | D3 D D2 D2 | G3 G G4 |
+[V:S2V1] G,3 G, G, G,3 | G,3 G, G, G,3 | G,3 G, G,2 G,2 | B,3 B, B,4 |
+[V:S2V2] D,3 D, D, D,3 | B,,3 B,, B,, B,,3 | B,,3 B,, B,,2 B,,2 | D,3 D, D,4 |
+[V:S1V1] G3 A B d3 | A3 G B A3 | G3 A B d3 | A2 B2 G4 |]
+[V:S1V2] G3 G G G3 | F3 F F F3 | G3 G G G3 | G2 G2 G4 |]
+[V:S2V1] B,3 B, B, B,3 | A,3 A, A, A,3 | B,3 B, B, B,3 | B,2 B,2 B,4 |]
+[V:S2V2] D,3 D, D, D,3 | D,3 D, D, D,3 | D,3 D, D, D,3 | D,2 D,2 D,4 |]

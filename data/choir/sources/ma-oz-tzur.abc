@@ -1,0 +1,41 @@
+% Melody reference: https://trillian.mit.edu/~jc/music/abc/Klezmer/Maoz_Tsur.abc
+% Traditional melody, identified as traditional in the linked melody reference.
+% New practice harmony: CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Ma’oz Tzur
+C:New practice harmony: The Great Gallery (CC0).
+M:4/4
+L:1/8
+Q:1/4=88
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:D
+[V:S1V1] D2 A,2 D2 G2 | F2 E2 D3 A | A2 B2 E2 F G | F2 E2 D4 |
+w: Ma- oz tzur y'- | shu- a- ti l'- | cha na- e l'- sha- | be- * ach
+[V:S1V2] A,2 A,2 A,2 A,2 | A,2 A,2 A,3 A, | G,2 G,2 G,2 G, G, | A,2 A,2 A,4 |
+[V:S2V1] F,2 F,2 F,2 F,2 | F,2 F,2 F,3 F, | E,2 E,2 E,2 E, E, | F,2 F,2 F,4 |
+[V:S2V2] D,2 D,2 D,2 D,2 | D,2 D,2 D,3 D, | B,,2 B,,2 B,,2 B,, B,, | D,2 D,2 D,4 |
+[V:S1V1] D2 A,2 D2 G2 | F2 E2 D3 A | A2 B2 E2 F G | F2 E2 D3 A |
+w: Ma- oz tzur y'- | shu- a- ti l'- | cha na- e l'- sha- | be- * ach l'-
+[V:S1V2] A,2 A,2 A,2 A,2 | A,2 A,2 A,3 A, | G,2 G,2 G,2 G, G, | A,2 A,2 A,3 A, |
+[V:S2V1] F,2 F,2 F,2 F,2 | F,2 F,2 F,3 F, | E,2 E,2 E,2 E, E, | F,2 F,2 F,3 F, |
+[V:S2V2] D,2 D,2 D,2 D,2 | D,2 D,2 D,3 D, | B,,2 B,,2 B,,2 B,, B,, | D,2 D,2 D,3 D, |
+[V:S1V1] A3 A B2 c2 | d4 A4 | d2 c2 B2 A2 | A G F G E4 |
+w: et ta- chin mat- | be- ach | mi- tzar ham'- na- | be- * * * ach
+[V:S1V2] A,3 A, A,2 A,2 | D4 D4 | D2 D2 D2 D2 | E E E E E4 |
+[V:S2V1] E,3 E, E,2 E,2 | F,4 F,4 | F,2 F,2 F,2 F,2 | G, G, G, G, G,4 |
+[V:S2V2] C,3 C, C,2 C,2 | A,,4 A,,4 | A,,2 A,,2 A,,2 A,,2 | B,, B,, B,, B,, B,,4 |
+[V:S1V1] F3 G A3 B | E3 F G4 | F2 E2 D2 G G | F2 G2 A4 |
+w: az eg- more b'- | shir miz- mor | cha- nu- kat ha- miz- | be- * ach
+[V:S1V2] D3 F F3 F | E3 E E4 | D2 D2 D2 D D | D2 D2 D4 |
+[V:S2V1] A,3 A, A,3 A, | G,3 G, G,4 | A,2 A,2 A,2 A, A, | A,2 A,2 A,4 |
+[V:S2V2] D,3 D, D,3 D, | B,,3 B,, B,,4 | D,2 F,2 F,2 F, F, | F,2 F,2 F,4 |
+[V:S1V1] F3 G A3 B | E3 F G4 | F2 E2 D2 G G | F2 E2 D4 |]
+w: az eg- more b'- | shir miz- mor | cha- nu- kat ha- miz- | be- * ach.
+[V:S1V2] D3 D D3 D | B,3 B, B,4 | D2 D2 D2 D D | D2 D2 D4 |]
+[V:S2V1] A,3 A, A,3 A, | G,3 G, G,4 | A,2 A,2 A,2 A, A, | A,2 A,2 A,4 |]
+[V:S2V2] F,3 F, F,3 F, | E,3 E, E,4 | D,2 F,2 F,2 F, F, | F,2 F,2 F,4 |]

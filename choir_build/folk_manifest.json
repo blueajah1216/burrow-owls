@@ -1,0 +1,829 @@
+[
+  {
+    "title": "Hava Nagila",
+    "file": "HavaNagila.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/HavaNagila.abc",
+    "key": "Am",
+    "meter": "4/4",
+    "tempo": 108,
+    "origin": "Hasidic / Hebrew",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "tune_index": 1,
+    "native_title": "הבה נגילה",
+    "aliases": [
+      "Hava Nagilah",
+      "Let us rejoice"
+    ],
+    "rights_basis": "Traditional Hasidic melody; Hebrew song published in 1922. Public domain in the United States."
+  },
+  {
+    "title": "Hatikvah",
+    "file": "HaTikvaSong.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/HaTikvaSong.abc",
+    "key": "Dm",
+    "meter": "4/4",
+    "tempo": 80,
+    "origin": "Israel / Hebrew",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "התקווה",
+    "aliases": [
+      "Hatikva",
+      "Ha Tikva",
+      "The Hope"
+    ],
+    "rights_basis": "Samuel Cohen melody adaptation, 1888; Naftali Herz Imber text, 1878. Public domain in the United States."
+  },
+  {
+    "title": "Shalom Aleichem",
+    "file": "ShalomAleichem3.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/ShalomAleichem3.abc",
+    "key": "Gm",
+    "meter": "4/4",
+    "tempo": 84,
+    "origin": "Shabbat / Hebrew",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "שלום עליכם",
+    "aliases": [
+      "Sholom Aleichem"
+    ],
+    "version": "Israel Goldfarb melody (1918)",
+    "rights_basis": "Israel Goldfarb melody, 1918. Public domain in the United States; traditional liturgical text. This is not a modern Carlebach setting."
+  },
+  {
+    "title": "Ma’oz Tzur",
+    "file": "Maoz_Tsur.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/Maoz_Tsur.abc",
+    "key": "D",
+    "meter": "4/4",
+    "tempo": 88,
+    "origin": "Hanukkah / Ashkenazi tradition",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "מעוז צור",
+    "aliases": [
+      "Maoz Tzur",
+      "Maoz Tsur",
+      "Ma oz Tzur",
+      "Rock of Ages",
+      "Chanukah",
+      "Hanukkah"
+    ]
+  },
+  {
+    "title": "Siman Tov u’Mazal Tov",
+    "file": "SimanTov.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/SimanTov.abc",
+    "key": "Gm",
+    "meter": "2/2",
+    "tempo": 112,
+    "origin": "Jewish celebrations / Hebrew",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "סימן טוב ומזל טוב",
+    "aliases": [
+      "Siman Tov",
+      "Mazel Tov",
+      "Siman tov umazal tov"
+    ]
+  },
+  {
+    "title": "Hevenu Shalom Aleichem",
+    "file": "HeveinuShalomAleichem.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/HeveinuShalomAleichem.abc",
+    "key": "Dm",
+    "meter": "4/4",
+    "tempo": 104,
+    "origin": "Hebrew folk song",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "הבאנו שלום עליכם",
+    "aliases": [
+      "Heveinu",
+      "Havenu",
+      "Heveynu shalom aleychem",
+      "We bring peace"
+    ]
+  },
+  {
+    "title": "Dayenu",
+    "file": "Dayeinu_Cw.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/Dayeinu_Cw.abc",
+    "key": "C",
+    "meter": "2/4",
+    "tempo": 104,
+    "origin": "Passover / Hebrew",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "דיינו",
+    "aliases": [
+      "Dayeinu",
+      "Dai dayenu",
+      "Pesach"
+    ],
+    "lyric_verse": 1
+  },
+  {
+    "title": "I Have a Little Dreidel",
+    "file": "Dreydl.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/I_Have_a_Little_Dreydl-C-8-.abc",
+    "key": "C",
+    "meter": "4/4",
+    "tempo": 100,
+    "origin": "Hanukkah / Jewish American",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "סביבון",
+    "aliases": [
+      "Dreydl",
+      "Dreidel Song",
+      "Dreydel",
+      "Chanukah",
+      "Hanukkah"
+    ],
+    "version": "Samuel E. Goldfarb melody (1927)",
+    "rights_basis": "Samuel E. Goldfarb melody published in 1927. Public domain in the United States. New practice harmony; not a later commercial arrangement."
+  },
+  {
+    "title": "Lomir Zikh Iberbetn",
+    "file": "Lomir.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/LoMirSichIberbeten_Ew.abc",
+    "key": "Am",
+    "meter": "2/4",
+    "tempo": 88,
+    "origin": "Yiddish folk song",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "לאָמיר זיך איבערבעטן",
+    "aliases": [
+      "Lomir zich iberbeten",
+      "Lo mir sich iberbeten",
+      "Let us make peace"
+    ]
+  },
+  {
+    "title": "Hava Nashira",
+    "file": "HavaNashiraSong.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/HavaNashiraSong.abc",
+    "key": "Bb",
+    "meter": "4/4",
+    "tempo": 92,
+    "origin": "Hebrew round",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "הבה נשירה",
+    "aliases": [
+      "Hava nashirah",
+      "Let us sing"
+    ],
+    "version": "Traditional round melody · new harmonized setting"
+  },
+  {
+    "title": "David Melech Yisrael",
+    "file": "DavidMelechYisraelSong.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/DavidMelechYisraelSong.abc",
+    "key": "C",
+    "meter": "2/4",
+    "tempo": 108,
+    "origin": "Hasidic / Hebrew",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "דוד מלך ישראל",
+    "aliases": [
+      "Dovid melech",
+      "David king of Israel"
+    ]
+  },
+  {
+    "title": "Durme, Durme",
+    "file": "Durme_Durme.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/Durme_Durme.abc",
+    "key": "Bm",
+    "meter": "3/4",
+    "tempo": 76,
+    "origin": "Sephardic / Ladino · Bosnia",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "aliases": [
+      "Durme durme",
+      "Ladino lullaby",
+      "Sephardi"
+    ],
+    "version": "Traditional Ladino lullaby melody",
+    "lyrics": false
+  },
+  {
+    "title": "Tumbalalaika",
+    "file": "Tumbalalaika.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/waltz/Tumbalalaika-Dm-32-0.abc",
+    "key": "Dm",
+    "meter": "3/4",
+    "tempo": 104,
+    "origin": "Yiddish folk song",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "טומבאַלאַלײַקע",
+    "aliases": [
+      "Tum balalaika",
+      "Tumbalaika"
+    ],
+    "version": "Traditional Yiddish riddle song · verse and refrain",
+    "corrections": [
+      [
+        "K: Gm",
+        "K: Dm"
+      ],
+      [
+        "G2G2",
+        "G2G"
+      ]
+    ],
+    "reference_note": "Corrected the reference key label to D minor and an overfull G2G2 bar to G2G."
+  },
+  {
+    "title": "Shalom Chaverim",
+    "file": "ShalomChaverim.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/israel/shalom-shaverim.abc",
+    "key": "Dm",
+    "meter": "4/4",
+    "tempo": 92,
+    "origin": "Hebrew farewell round",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva",
+    "native_title": "שלום חברים",
+    "aliases": [
+      "Shalom chaverim",
+      "Shalom haverim",
+      "Shalom shaverim",
+      "Goodbye friends"
+    ]
+  },
+  {
+    "title": "Zum Gali Gali",
+    "file": "ZumGali.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/israel/zum-gali-am/zum-gali-am-1.abc",
+    "key": "Am",
+    "meter": "2/4",
+    "tempo": 104,
+    "origin": "Hebrew folk song",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva",
+    "native_title": "זום גלי גלי",
+    "aliases": [
+      "Zum gali"
+    ],
+    "corrections": [
+      [
+        "M:2/4",
+        "M:2/4\nL:1/8"
+      ]
+    ],
+    "reference_note": "Restored the eighth-note default length omitted in this reference."
+  },
+  {
+    "title": "Sevivon Sov Sov Sov",
+    "file": "Svivon.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/Svivon-Dm-16-.abc",
+    "key": "Dm",
+    "meter": "2/4",
+    "tempo": 100,
+    "origin": "Hanukkah / Hebrew",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "סביבון סוב סוב סוב",
+    "aliases": [
+      "Svivon",
+      "Sevivon",
+      "Sov sov sov",
+      "Chanukah",
+      "Hanukkah"
+    ],
+    "lyrics": false
+  },
+  {
+    "title": "Hinei Ma Tov",
+    "file": "HineMaTov.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/Klezmer/song/HineMaTov1_Dm_w.abc",
+    "key": "Dm",
+    "meter": "2/4",
+    "tempo": 96,
+    "origin": "Hebrew / traditional minor melody",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "native_title": "הנה מה טוב",
+    "aliases": [
+      "Hine ma tov",
+      "Hineh mah tov"
+    ],
+    "version": "Traditional minor-key version · Psalm 133"
+  },
+  {
+    "title": "Oh Chanukah",
+    "file": "oh-chanukah.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=667",
+    "key": "Em",
+    "meter": "4/4",
+    "tempo": 108,
+    "origin": "Hanukkah / Yiddish and Hebrew tradition",
+    "category": "Jewish songs",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "native_title": "חנוכה, אוי חנוכה",
+    "aliases": [
+      "Oy Khanike",
+      "Oh Hanukkah",
+      "O Chanukah",
+      "Chanuka"
+    ]
+  },
+  {
+    "title": "Sakura Sakura",
+    "file": "Sakura.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/japan/sakura.abc",
+    "key": "Am",
+    "meter": "4/4",
+    "tempo": 76,
+    "origin": "Japan / Japanese",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva",
+    "aliases": [
+      "Cherry blossoms",
+      "さくらさくら"
+    ]
+  },
+  {
+    "title": "Linstead Market",
+    "file": "Linstead.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/jamaica/linstead-market.abc",
+    "key": "D",
+    "meter": "4/4",
+    "tempo": 100,
+    "origin": "Jamaica / Jamaican folk song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva"
+  },
+  {
+    "title": "Sur le pont d’Avignon",
+    "file": "SurLePont.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/france/sur-le-pont.abc",
+    "key": "C",
+    "meter": "2/4",
+    "tempo": 100,
+    "origin": "France / French",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva",
+    "aliases": [
+      "Sur le pont d Avignon",
+      "On the bridge of Avignon"
+    ]
+  },
+  {
+    "title": "The Skye Boat Song",
+    "file": "SkyeBoat.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/scotland/skye-boat-song.abc",
+    "key": "G",
+    "meter": "6/8",
+    "tempo": 108,
+    "origin": "Scotland / Scottish melody",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva",
+    "aliases": [
+      "Speed bonnie boat",
+      "Skye"
+    ]
+  },
+  {
+    "title": "The Water Is Wide",
+    "file": "WaterIsWide.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/scotland/the-water-is-wide.abc",
+    "key": "G",
+    "meter": "4/4",
+    "tempo": 80,
+    "origin": "Scotland / traditional ballad",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva",
+    "aliases": [
+      "O Waly Waly",
+      "Waly waly"
+    ]
+  },
+  {
+    "title": "All Through the Night",
+    "file": "AllThroughNight.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/wales/all-through-the-night.abc",
+    "key": "G",
+    "meter": "4/4",
+    "tempo": 84,
+    "origin": "Wales / Welsh lullaby",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva",
+    "aliases": [
+      "Ar hyd y nos"
+    ]
+  },
+  {
+    "title": "In the Field Stood a Birch Tree",
+    "file": "BirchTree.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/russia/the-birch-tree.abc",
+    "key": "Am",
+    "meter": "2/4",
+    "tempo": 104,
+    "origin": "Russia / Russian folk song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva",
+    "aliases": [
+      "Vo pole beryoza stoyala",
+      "Birch tree"
+    ]
+  },
+  {
+    "title": "Santa Lucia",
+    "file": "SantaLucia.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/song/Santa_Lucia_Cw.abc",
+    "key": "C",
+    "meter": "3/4",
+    "tempo": 96,
+    "origin": "Italy / Neapolitan song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: John Chambers ABC collection",
+    "aliases": [
+      "Santa Lucía"
+    ],
+    "rights_basis": "Teodoro Cottrau, published 1849. Public domain.",
+    "end_before": "\"Coda\"",
+    "version": "Historic song melody · verse and refrain",
+    "reference_note": "Later accordion coda and the final chord are excluded."
+  },
+  {
+    "title": "Lamma Bada Yatathanna",
+    "file": "LammaBada.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/mirror/musicaviva.com/spain/lamma-bada.abc",
+    "key": "Gm",
+    "meter": "10/8",
+    "tempo": 104,
+    "origin": "Arabic / Andalusian muwashshah",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: John Chambers ABC collection / Frank Nordberg, Musica Viva",
+    "aliases": [
+      "Lamma bada",
+      "Lama bada yatathana",
+      "لما بدا يتثنى"
+    ],
+    "lyrics": false,
+    "inline_voices": true
+  },
+  {
+    "title": "Mo Li Hua",
+    "file": "mo-li-hua.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=713",
+    "key": "G",
+    "meter": "4/4",
+    "tempo": 84,
+    "origin": "China / Chinese folk song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "aliases": [
+      "Jasmine Flower",
+      "Molihua",
+      "茉莉花"
+    ]
+  },
+  {
+    "title": "Arirang",
+    "file": "arirang.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=305",
+    "key": "G",
+    "meter": "3/4",
+    "tempo": 80,
+    "origin": "Korea / Korean folk song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "aliases": [
+      "아리랑"
+    ],
+    "transpose": -12
+  },
+  {
+    "title": "Bahay Kubo",
+    "file": "bahay-kubo.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=617",
+    "key": "C",
+    "meter": "3/4",
+    "tempo": 108,
+    "origin": "Philippines / Tagalog folk song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "aliases": [
+      "Nipa Hut",
+      "Filipino"
+    ]
+  },
+  {
+    "title": "La Cucaracha",
+    "file": "la-cucaracha.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=228",
+    "key": "G",
+    "meter": "4/4",
+    "tempo": 136,
+    "origin": "Mexico / Mexican and Spanish folk song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "aliases": [
+      "Cucaracha"
+    ]
+  },
+  {
+    "title": "Alouette",
+    "file": "alouette.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=119",
+    "key": "G",
+    "meter": "2/4",
+    "tempo": 100,
+    "origin": "Canada / French Canadian",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "transpose": -5
+  },
+  {
+    "title": "Molly Malone",
+    "file": "molly-malone.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=235",
+    "key": "G",
+    "meter": "3/4",
+    "tempo": 104,
+    "origin": "Ireland / Irish ballad",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "aliases": [
+      "Cockles and Mussels"
+    ],
+    "rights_basis": "James Yorkston song published in 1884. Public domain."
+  },
+  {
+    "title": "My Bonnie Lies over the Ocean",
+    "file": "my-bonnie.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=5",
+    "key": "C",
+    "meter": "3/4",
+    "tempo": 120,
+    "origin": "Scotland / Scottish folk song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "aliases": [
+      "My bonny",
+      "Bring back my bonnie"
+    ]
+  },
+  {
+    "title": "Waltzing Matilda",
+    "file": "waltzing-matilda.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=124",
+    "key": "D",
+    "meter": "4/4",
+    "tempo": 96,
+    "origin": "Australia / Australian bush song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "transpose": -12,
+    "rights_basis": "Historic melody version; Marie Cowan setting dates to 1903. Public domain in the United States."
+  },
+  {
+    "title": "Suo Gân",
+    "file": "suo-gan.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=2431",
+    "key": "G",
+    "meter": "4/4",
+    "tempo": 76,
+    "origin": "Wales / Welsh lullaby",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "aliases": [
+      "Suo Gan"
+    ]
+  },
+  {
+    "title": "La Bamba",
+    "file": "la-bamba-melody.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=451",
+    "key": "C",
+    "meter": "4/4",
+    "tempo": 112,
+    "origin": "Mexico / Veracruz folk song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "version": "Traditional son jarocho melody · new harmony",
+    "melody_track": 0
+  },
+  {
+    "title": "Loch Lomond",
+    "file": "loch-lomond.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=210",
+    "key": "G",
+    "meter": "4/4",
+    "tempo": 88,
+    "origin": "Scotland / Scottish ballad",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "aliases": [
+      "The Bonnie Banks of Loch Lomond",
+      "Red is the Rose"
+    ],
+    "transpose": -7
+  },
+  {
+    "title": "À la claire fontaine",
+    "file": "claire-fontaine.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=374",
+    "key": "F",
+    "meter": "2/4",
+    "tempo": 88,
+    "origin": "France and Canada / French",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "aliases": [
+      "A la claire fontaine",
+      "At the clear fountain"
+    ]
+  },
+  {
+    "title": "Kalinka",
+    "file": "kalinka.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=798",
+    "key": "Am",
+    "meter": "2/2",
+    "tempo": 112,
+    "origin": "Russia / Russian folk-style song",
+    "category": "Folk songs around the world",
+    "reference_credit": "Melody reference: flutetunes.com. Only the underlying melody is used; source engraving, accompaniment and audio are not redistributed.",
+    "rights_basis": "Ivan Larionov, 1860. Public domain."
+  },
+  {
+    "title": "O Canada",
+    "file": "o-canada.mid",
+    "format": "midi",
+    "source_url": "https://www.flutetunes.com/tunes.php?id=202",
+    "key": "F",
+    "meter": "4/4",
+    "tempo": 96,
+    "origin": "Canada / national anthem",
+    "category": "Anthems",
+    "aliases": [
+      "Oh Canada",
+      "Ô Canada",
+      "Canadian national anthem",
+      "Canada anthem"
+    ],
+    "version": "Calixa Lavallée melody (1880) · current English lyrics",
+    "rights_basis": "Music by Calixa Lavallée, 1880. Current English text from the Government of Canada, based on Robert Stanley Weir. The Canadian National Anthem Act declares the anthem melody and words public domain.",
+    "reference_credit": "Melody reference: flutetunes.com. Current words and public-domain statement: https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html . No source accompaniment, engraving or audio is reused.",
+    "lyric_tokens": [
+      "O",
+      "Ca-",
+      "na-",
+      "da!",
+      "Our",
+      "home",
+      "and",
+      "na-",
+      "tive",
+      "land!",
+      "True",
+      "pa-",
+      "triot",
+      "love",
+      "in",
+      "all",
+      "of",
+      "us",
+      "com-",
+      "mand.",
+      "With",
+      "glo-",
+      "wing",
+      "hearts",
+      "we",
+      "see",
+      "thee",
+      "rise,",
+      "The",
+      "True",
+      "North",
+      "strong",
+      "and",
+      "free!",
+      "*",
+      "*",
+      "*",
+      "From",
+      "far",
+      "and",
+      "wide,",
+      "O",
+      "Ca-",
+      "na-",
+      "da,",
+      "we",
+      "stand",
+      "on",
+      "guard",
+      "for",
+      "thee.",
+      "*",
+      "*",
+      "*",
+      "*",
+      "God",
+      "keep",
+      "our",
+      "land",
+      "glo-",
+      "rious",
+      "and",
+      "free!",
+      "O",
+      "Ca-",
+      "na-",
+      "da,",
+      "we",
+      "stand",
+      "on",
+      "guard",
+      "for",
+      "thee.",
+      "O",
+      "Ca-",
+      "na-",
+      "da,",
+      "we",
+      "stand",
+      "on",
+      "guard",
+      "for",
+      "thee."
+    ]
+  },
+  {
+    "title": "The Star-Spangled Banner",
+    "file": "StarSpangledBanner.abc",
+    "format": "abc",
+    "source_url": "https://trillian.mit.edu/~jc/music/abc/anthem/song/Star_Spangled_Banner_Cw.abc",
+    "key": "Bb",
+    "meter": "3/4",
+    "tempo": 88,
+    "origin": "United States / national anthem",
+    "category": "Anthems",
+    "aliases": [
+      "Star Spangled Banner",
+      "American national anthem",
+      "US anthem",
+      "USA anthem",
+      "United States anthem"
+    ],
+    "version": "John Stafford Smith melody · first verse · B-flat major",
+    "transpose": -2,
+    "rights_basis": "John Stafford Smith melody, 18th century; Francis Scott Key words, 1814. Public domain.",
+    "reference_credit": "Melody and first-verse reference: John Chambers ABC anthem collection. Historical source: Library of Congress, https://guides.loc.gov/star-spangled-banner/sheet-music .",
+    "pickup_units": 24
+  }
+]

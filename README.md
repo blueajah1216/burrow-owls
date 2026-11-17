@@ -7,17 +7,32 @@ Blog for my family
 room for soprano, alto, tenor and bass. The separate Seattle calendar at `/music`
 on the family site is unchanged. Painting and photography menus link to practice.
 
-The initial songbook has 50 titles: carols, hymns/spirituals, folk songs, familiar
-children's tunes and two anthem texts sharing the same traditional melody.
+The songbook has 92 titles, including 18 Jewish songs and 22 world folk songs,
+plus the original carols, hymns/spirituals, familiar children's tunes and four
+anthem/patriotic songs. The Anthems collection includes O Canada (current English
+lyrics) and The Star-Spangled Banner (first verse), with new practice harmonies.
+Jewish and world collections
+have shortcut buttons; search also matches origins, Hebrew titles, and alternate
+spellings. The default song is Hava Nagila, and existing song links still work.
 Thirty-five settings come from the Open Hymnal archive and retain their original
 public-domain statements in `data/choir/sources/`. Fifteen simple new educational
-harmonizations are dedicated under CC0; these are block-chord practice settings,
-not historical editions. Jingle Bells and Oh! Susanna are explicitly chorus-only.
+harmonizations, 40 added folk-song settings and two added anthem settings are dedicated under CC0.
+These are educational practice settings, not historical editions.
+Jingle Bells and Oh! Susanna are explicitly chorus-only.
 The library does not include recent copyrighted pop songs.
 
 - `choir.py`, `templates/choir/`, `static/choir/`: routes, responsive page and player.
 - `data/choir/library.json`: compiled score/credit catalog, served by Flask.
 - `.venv/bin/python choir_build/build_library.py`: deterministic, offline rebuild.
+- `choir_build/folk_manifest.json` and `folk_melodies.json`: reviewed melody
+  references, source URLs/hashes, origin/search metadata, and pitch/rhythm inputs.
+  `arrange_folk.py` adds new harmony without using source accompaniments. Original
+  melody pitches and rhythms are checked against the generated soprano line;
+  a few documented octave/key transpositions make high instrumental references
+  more comfortable to sing. Traditional rounds receive new harmonies here.
+  The new scores are educational Western SATB settings, not claims about how
+  a culture traditionally performs its music. Goldfarb's 1918/1927 songs are
+  identified as public domain in the United States.
 - abcjs 6.7.2 is bundled locally under its MIT license in `static/choir/vendor/`.
 - Web Audio plays guide tones from the same parsed MIDI note events used by the
   score. An audio-clock cursor follows playback; mute/solo, backing practice,
@@ -29,8 +44,10 @@ The library does not include recent copyrighted pop songs.
 For regression checks, run a local Flask server on port 5057 and
 `node choir_build/verify_browser.cjs` with the existing workspace Playwright and
 installed Google Chrome. Set `CHOIR_TEST_URL` or `CHOIR_TEST_ARTIFACTS` to override
-the URL or screenshot directory. It checks all 50 scores for four voices and
+the URL or screenshot directory. It checks all 92 scores for four voices and
 matching visual/audio duration, controls, filtering, MIDI and mobile overflow.
+`node choir_build/verify_library.cjs` separately checks all source files and the
+42 added melody transcriptions against their generated notes and rhythms.
 
 
 ## /music — Seattle classical concert calendar
