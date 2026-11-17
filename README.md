@@ -59,6 +59,12 @@ matching visual/audio duration, controls, filtering, MIDI and mobile overflow.
 Calendar (day / week / month) of classical concerts in the Seattle region, plus piece search
 (`/music/search?q=beethoven+7`).
 
+The calendar is **Seattle-area only**, labeled “Seattle concerts” in navigation,
+and shares the Gallery music-history layout. The separate performance search has
+worldwide scope. Legacy music links on the Burrow Owls domain redirect to the
+Gallery, preserving query parameters; its old `/music` calendar redirects to
+`https://thegreatgallery.art/music/concerts`.
+
 ### Music Through History
 
 `/music/history` is an editorial timeline of Western classical music: 100 landmark

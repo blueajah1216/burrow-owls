@@ -8,6 +8,7 @@
   <meta name="description" content="{% block description %}Explore 100 landmark works and 50 composers on a timeline of Western classical music, with listening guides, biographies, and historical context.{% endblock %}">
   <link rel="icon" href="{{ url_for('static', filename='owl.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='music_history/history.css') }}?v=1">
+  {% block head %}{% endblock %}
   {% include 'shared/analytics.html' %}
 </head>
 <body>
@@ -16,7 +17,7 @@
     <a class="music-brand" href="{{ url_for('fineart.index') }}"><span class="brand-icon" aria-hidden="true">♬</span><span>The Great Gallery<small>A life in music</small></span></a>
     <nav aria-label="Music navigation">
       <a href="{{ url_for('choir.index') }}">Music practice</a>
-      <a href="{{ url_for('music.music_home') }}">Concert calendar</a>
+      <a href="{{ url_for('music.music_home') }}" {% if request.endpoint == 'music.music_home' %}aria-current="page"{% endif %}>Seattle concerts</a>
       <a href="{{ url_for('music.history') }}" {% if request.endpoint == 'music.history' and view|default('works') == 'works' %}aria-current="page"{% endif %}>Music history</a>
       <a href="{{ url_for('music.history', view='composers') }}" {% if view|default('') == 'composers' or request.endpoint == 'music.history_composer' %}aria-current="page"{% endif %}>Composers</a>
     </nav>

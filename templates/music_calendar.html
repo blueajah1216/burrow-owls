@@ -1,7 +1,9 @@
-{% extends "base.html" %}
-{% block title %}Seattle Classical Music · The Great Gallery{% endblock %}
-{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=1">{% endblock %}
+{% extends "music_history/base.html" %}
+{% block title %}Seattle Concert Calendar · The Great Gallery{% endblock %}
+{% block description %}Classical concerts in Seattle and the surrounding area. Browse symphonic, chamber, choral, solo, and opera performances by day, week, or month.{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=2"><link rel="stylesheet" href="{{ url_for('static', filename='music_history/concerts.css') }}?v=1">{% endblock %}
 {% block content %}
+<div class="concert-page page-width">
 {% include 'music_history/navigation.html' %}
 
 {% macro qs(v=None, d=None) -%}
@@ -28,14 +30,17 @@
 </div>
 {% endmacro %}
 
-<h1 style="margin:0;">🎻 Seattle Classical Music</h1>
-<p class="muted" style="margin-top:6px;">Symphonic, chamber, choral and solo concerts in the Seattle region.</p>
+<header class="concert-hero"><p class="eyebrow">Live music · Seattle area</p>
+<h1>Seattle concert calendar.</h1>
+<p class="concert-lede">Classical music, close to home.</p>
+<p class="muted">This calendar lists concerts in Seattle and the surrounding area only: symphonic, chamber, choral, solo, and opera performances.</p></header>
 
 {% include 'music_history/invitation.html' %}
 
 {# ── Piece search ── #}
-<form class="mu-search" method="get" action="/music/search">
-  <input type="text" name="q" placeholder="Search a piece — e.g. Beethoven Symphony No. 7 — to see where in the world it's playing this season" aria-label="Search for a piece">
+<p class="mu-search-note">Looking beyond Seattle? Search the separate worldwide performance listings by piece.</p>
+<form class="mu-search" method="get" action="{{ url_for('music.music_search') }}">
+  <input type="text" name="q" placeholder="e.g. Beethoven Symphony No. 7" aria-label="Search worldwide performances for a piece">
   <button type="submit">Search</button>
 </form>
 
@@ -49,9 +54,9 @@
       <a class="{{ 'on' if view == v }}" href="{{ qs(v) }}">{{ v|capitalize }}</a>
     {% endfor %}
   </span>
-  <a class="mu-btn" href="{{ qs(d=prev_a) }}">←</a>
+  <a class="mu-btn" href="{{ qs(d=prev_a) }}" aria-label="Previous {{ view }}">←</a>
   <strong>{{ title }}</strong>
-  <a class="mu-btn" href="{{ qs(d=next_a) }}">→</a>
+  <a class="mu-btn" href="{{ qs(d=next_a) }}" aria-label="Next {{ view }}">→</a>
   <a class="mu-btn" href="?view={{ view }}{% for c in cats %}&cat={{ c }}{% endfor %}">Today</a>
 </div>
 
@@ -89,4 +94,5 @@
   {% if total == 0 and view == 'week' %}<p class="muted">No concerts listed this week.</p>{% endif %}
 {% endif %}
 
+</div>
 {% endblock %}

@@ -1,5 +1,5 @@
 """
-theburrowowls.com/music — classical concert aggregator.
+thegreatgallery.art/music/concerts — Seattle classical concert calendar.
 
 1. Seattle calendar (day / week / month) of classical concerts.
 2. Piece search: where in the world is a work being performed this season.

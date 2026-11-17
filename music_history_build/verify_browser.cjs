@@ -35,6 +35,27 @@ async function routePreview(context) {
       document.documentElement.scrollWidth <= innerWidth), `Overflow on ${page.url()}`);
     await page.goto(`${base}/music/history`);
     assert.equal(await visible(), 100);
+    await page.locator('.site-header a', {hasText:'Seattle concerts'}).click();
+    assert.equal(page.url(), `${base}/music/concerts`);
+    assert.match(await page.locator('h1').innerText(), /Seattle concert calendar/);
+    assert.equal(await page.locator('.sidebar').count(), 0);
+    assert.match(await page.locator('.site-header .music-brand').innerText(), /The Great Gallery/);
+    await noOverflow();
+    await page.screenshot({path:`${artifacts}/desktop-seattle-calendar.png`,fullPage:true});
+    await page.locator('.mu-tabs a', {hasText:'Week'}).click();
+    assert.equal(new URL(page.url()).pathname, '/music/concerts');
+    assert.equal(new URL(page.url()).searchParams.get('view'), 'week');
+    for (const width of [390,320]) {
+      await page.setViewportSize({width,height:844});
+      await page.goto(`${base}/music/concerts`);
+      await noOverflow();
+      await page.screenshot({path:`${artifacts}/${width}-seattle-calendar.png`,fullPage:true});
+    }
+    await page.goto(`${base}/music/search`);
+    assert(await page.getByText('Performance search · Worldwide', {exact:true}).isVisible());
+    await noOverflow();
+    await page.setViewportSize({width:1440,height:1050});
+    await page.goto(`${base}/music/history`);
     await page.screenshot({path:`${artifacts}/desktop-hero.png`});
     await page.locator('#timeline').evaluate(el => window.scrollTo({top:el.offsetTop-20,behavior:'instant'}));
     await page.screenshot({path:`${artifacts}/desktop-timeline.png`});

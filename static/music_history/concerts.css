@@ -1,0 +1,61 @@
+/* Seattle concert listings share the Gallery music-history shell. */
+.concert-page { padding-top:36px; padding-bottom:60px; }
+.concert-hero { max-width:850px; margin:32px 0; }
+.concert-hero h1 { font-size:clamp(40px,5.2vw,66px); }
+.concert-hero .eyebrow { margin-bottom:15px; }
+.concert-lede { font:25px/1.4 Georgia,serif; margin-top:20px; }
+.concert-hero .muted { margin-top:15px; line-height:1.85; }
+.muted,.mu-search-note { color:var(--muted); }
+.small { font-size:12px; }
+.concert-page hr { border:0; border-top:1px solid var(--rule); margin:28px 0; }
+.mu-search-note { font-size:12px; margin:22px 0 10px; }
+.mu-search { display:flex; align-items:stretch; gap:10px; margin:18px 0; }
+.mu-search input[type=text] { flex:1; width:100%; min-width:0; color:var(--ink); background:#fffdf9; border:1px solid var(--rule); border-radius:4px; font-size:14px; padding:12px 15px; }
+.mu-search button,.mu-tix { background:var(--wine); color:#fff9f0; border:1px solid var(--wine); border-radius:4px; padding:11px 20px; font-size:12px; font-weight:600; cursor:pointer; }
+.mu-bar { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:18px 0; }
+.mu-bar>strong { font:23px/1.4 Georgia,serif; padding-inline:5px; }
+.mu-tabs { display:flex; gap:5px; flex-wrap:wrap; }
+.mu-tabs a,.mu-btn { text-decoration:none; padding:7px 13px; border:1px solid var(--rule); border-radius:4px; color:var(--ink); font-size:12px; background:#fffdf9; }
+.mu-tabs a.on { border-color:var(--wine); color:var(--wine); background:#ede3df; }
+.mu-tabs a:hover,.mu-btn:hover { border-color:var(--wine); }
+.mu-chip { white-space:nowrap; display:inline-flex; align-items:center; gap:7px; padding:6px 11px; border:1px solid var(--rule); border-radius:30px; font-size:12px; cursor:pointer; }
+.mu-chip input { margin:0; accent-color:var(--wine); }
+.mu-chip.on { border-color:var(--wine); background:#ede3df; }
+.mu-grid { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); border-top:1px solid var(--rule); border-left:1px solid var(--rule); margin-top:26px; background:#fffdf9; }
+.mu-grid>div { border-right:1px solid var(--rule); border-bottom:1px solid var(--rule); min-height:112px; min-width:0; padding:8px; font-size:12px; }
+.mu-grid .dow { min-height:0; font-size:11px; color:var(--muted); text-align:center; background:#ede7da; }
+.mu-grid .out { background:#f1ede5; color:#847d71; }
+.mu-grid .dn { display:inline-block; min-width:24px; text-align:center; }
+.mu-grid .today .dn { background:var(--wine); color:white; border-radius:30px; }
+.mu-pill { display:block; margin-top:4px; padding:4px 5px; border-radius:3px; font-size:11px; line-height:1.4; text-decoration:none; color:#29251f; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.mu-symphonic { background:#e0eaf4; }
+.mu-chamber { background:#e1eadc; }
+.mu-choral { background:#f3eacb; }
+.mu-solo { background:#f2e3e6; }
+.mu-opera { background:#e9e2f1; }
+.mu-card { border:1px solid var(--rule); border-radius:4px; padding:20px 24px; margin:14px 0; background:#fffdf9; }
+.mu-card h3 { margin:9px 0 12px; font-size:26px; }
+.mu-card ul { margin:10px 0 0; padding-left:18px; font-size:14px; }
+.mu-tix { display:inline-block; margin-top:16px; text-decoration:none; padding:7px 15px; }
+.mu-day { margin-top:28px; font:26px/1.4 Georgia,serif; }
+.mu-demo { background:#faf0d2; border:1px solid #dec98e; padding:12px; border-radius:4px; font-size:13px; margin:18px 0; }
+@media(max-width:700px) {
+  .concert-page { padding-top:24px; }
+  .concert-hero { margin:28px 0; }
+  .concert-hero .muted { font-size:13px; }
+  .concert-lede { font-size:22px; }
+  .mu-grid>div { padding:4px; min-height:74px; }
+  .mu-grid .mu-pill { font-size:9px; padding:3px; }
+  .mu-search { flex-wrap:nowrap; }
+  .mu-search input[type=text] { font-size:12px; padding:11px; }
+  .mu-search button { padding:11px 15px; }
+  .mu-bar { gap:8px; }
+  .mu-bar>strong { font-size:21px; }
+  .mu-card { padding:18px; }
+}
+@media(max-width:380px) {
+  .site-header nav { flex-wrap:wrap; gap:10px 18px; }
+  .mu-grid>div { padding:3px; }
+  .mu-grid .mu-pill { font-size:8px; }
+  .mu-chip { font-size:11px; }
+}

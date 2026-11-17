@@ -1,11 +1,12 @@
-{% extends "base.html" %}
+{% extends "music_history/base.html" %}
 {% block title %}Find a Performance · The Great Gallery{% endblock %}
-{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=1">{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=2"><link rel="stylesheet" href="{{ url_for('static', filename='music_history/concerts.css') }}?v=1">{% endblock %}
 {% block content %}
+<div class="concert-page page-width">
 {% include 'music_history/navigation.html' %}
 
-<h1 style="margin:0;">🎻 Where is it playing?</h1>
-<p class="muted" style="margin-top:6px;">Performances of a piece by major performers worldwide, {{ season }} concert season.</p>
+<header class="concert-hero"><p class="eyebrow">Performance search · Worldwide</p><h1>Where is it playing?</h1>
+<p class="muted">Search performances by major performers worldwide in the {{ season }} concert season. For local listings, visit the <a href="{{ url_for('music.music_home') }}">Seattle concert calendar</a>.</p></header>
 
 <form class="mu-search" method="get" action="/music/search">
   <input type="text" name="q" value="{{ query }}" placeholder="e.g. Beethoven Symphony No. 7, Mahler 2, Goldberg Variations" aria-label="Search for a piece" autofocus>
@@ -41,4 +42,5 @@
   {% endfor %}
 {% endif %}
 
+</div>
 {% endblock %}

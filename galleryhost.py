@@ -10,6 +10,7 @@ from flask import request, url_for as flask_url_for
 
 HOSTS = {h.strip().lower() for h in os.environ.get("GALLERY_HOSTS", "thegreatgallery.art,www.thegreatgallery.art").split(",") if h.strip()}
 CANONICAL = os.environ.get("GALLERY_CANONICAL_HOST", "thegreatgallery.art")
+LEGACY_HOSTS = {"theburrowowls.com", "www.theburrowowls.com"}
 
 
 class GalleryHostMiddleware:
@@ -18,9 +19,6 @@ class GalleryHostMiddleware:
 
     def __call__(self, environ, start_response):
         host = (environ.get("HTTP_X_FORWARDED_HOST") or environ.get("HTTP_HOST") or "").split(",")[0].strip().lower().split(":")[0]
-        if host not in HOSTS:
-            return self.wsgi(environ, start_response)
-        environ["fa.gallery_host"] = True
         path = environ.get("PATH_INFO") or "/"
         qs = environ.get("QUERY_STRING", "")
         scheme = (environ.get("HTTP_X_FORWARDED_PROTO") or environ.get("wsgi.url_scheme") or "https").split(",")[0]
@@ -28,6 +26,14 @@ class GalleryHostMiddleware:
         def redirect(url):
             start_response("301 Moved Permanently", [("Location", url), ("Content-Length", "0")])
             return [b""]
+
+        # Old calendar bookmarks and cached links should land on the Gallery.
+        if host in LEGACY_HOSTS and (path == "/music" or path.startswith("/music/")):
+            destination = "/music/concerts" if path.rstrip("/") == "/music" else path
+            return redirect(f"https://{CANONICAL}{destination}" + (f"?{qs}" if qs else ""))
+        if host not in HOSTS:
+            return self.wsgi(environ, start_response)
+        environ["fa.gallery_host"] = True
 
         if host != CANONICAL:
             return redirect(f"{scheme}://{CANONICAL}{path}" + (f"?{qs}" if qs else ""))

@@ -3,6 +3,7 @@
 import os
 import sys
 import unittest
+from datetime import datetime
 from pathlib import Path
 from unittest.mock import patch
 
@@ -12,7 +13,8 @@ os.environ["MUSIC_AUTOREFRESH"] = "0"
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from bs4 import BeautifulSoup
-from app import app
+from app import app, db
+import music
 from music_history import load_history
 
 
@@ -109,8 +111,15 @@ class HistoryChecks(unittest.TestCase):
         self.assertTrue(history.select('a[href="/music/concerts"]'))
         self.assertTrue(history.select('a[href="/"]'))
         concerts = self.get("/music/concerts")
-        self.assertIn("Seattle Classical Music", concerts.select_one("h1").get_text())
+        self.assertIn("Seattle concert calendar", concerts.select_one("h1").get_text())
         self.assertNotIn("The Burrow Owls", str(concerts))
+        self.assertTrue(concerts.select_one(".site-header .music-brand"))
+        self.assertFalse(concerts.select_one(".sidebar"))
+        self.assertIn("Seattle and the surrounding area only", concerts.get_text())
+        for page in [practice, history, concerts]:
+            links = page.select('a[href="/music/concerts"]')
+            self.assertTrue(any("Seattle" in a.get_text() for a in links))
+            self.assertFalse(any("burrowowls" in a["href"] for a in page.select("a[href]")))
         search = self.get("/music/search?q=bach")
         self.assertTrue(search.select('a[href="/music/concerts"]'))
         library = self.client.get("/music/library.json", base_url="https://thegreatgallery.art")
@@ -128,6 +137,44 @@ class HistoryChecks(unittest.TestCase):
         www = self.client.get("/music/history", base_url="https://www.thegreatgallery.art")
         self.assertEqual(www.status_code, 301)
         self.assertEqual(www.headers["Location"], "https://thegreatgallery.art/music/history")
+
+
+    def test_old_music_links_redirect_to_gallery(self):
+        for host in ["theburrowowls.com", "www.theburrowowls.com"]:
+            for path, destination in [
+                ("/music", "/music/concerts"),
+                ("/music/", "/music/concerts"),
+                ("/music/concerts", "/music/concerts"),
+                ("/music/history", "/music/history"),
+                ("/music/search", "/music/search"),
+            ]:
+                response = self.client.get(path + "?date=2030-01-15&q=bach", base_url=f"https://{host}")
+                self.assertEqual(response.status_code, 301)
+                self.assertEqual(response.headers["Location"],
+                    f"https://thegreatgallery.art{destination}?date=2030-01-15&q=bach")
+
+    def test_calendar_is_seattle_only(self):
+        with app.app_context():
+            events = [music.MusicEvent(
+                source="calendar-scope-test", source_id=region, title=title,
+                start=datetime(2030, 1, 15, 19), category="chamber",
+                region=region, city=city,
+            ) for region, city, title in [
+                ("seattle", "Seattle", "Seattle scope fixture"),
+                ("new-york", "New York", "New York scope fixture"),
+            ]]
+            db.session.add_all(events)
+            db.session.commit()
+            try:
+                for view in ["day", "week", "month"]:
+                    page = self.get(f"/music/concerts?date=2030-01-15&view={view}")
+                    self.assertIn("Seattle scope fixture", str(page))
+                    self.assertNotIn("New York scope fixture", str(page))
+                page = self.get("/music/concerts?date=2030-01-15&view=day&cat=choral")
+                self.assertNotIn("Seattle scope fixture", str(page))
+            finally:
+                music.MusicEvent.query.filter_by(source="calendar-scope-test").delete()
+                db.session.commit()
 
 
 if __name__ == "__main__":
