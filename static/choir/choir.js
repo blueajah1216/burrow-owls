@@ -219,6 +219,8 @@
     song = songs.find(s => s.id === id) || songs[0];
     $('practice-error')?.remove();
     $('song-title').textContent = song.title;
+    const save = $('practice-save');
+    if (save) {save.dataset.galleryId = 'practice:' + song.id; save.disabled = false; window.Gallery?.paint();}
     $('song-native-title').textContent = song.native_title || '';
     $('song-native-title').hidden = !song.native_title;
     $('song-category').textContent = song.category.toUpperCase();

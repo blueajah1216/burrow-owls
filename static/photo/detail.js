@@ -1,9 +1,4 @@
 (() => {
-  const store = { get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
-  const fav = document.getElementById('fav'); let favs = new Set(store.get('ph_favs', []));
-  const paint = () => { const on = favs.has(FA.id); fav.textContent = on ? '♥ Saved' : '♡ Save'; fav.classList.toggle('on', on); };
-  fav.onclick = () => { favs.has(FA.id) ? favs.delete(FA.id) : favs.add(FA.id); store.set('ph_favs', [...favs]); paint();  }; paint();
-  addEventListener('ph-favs', () => { favs = new Set(store.get('ph_favs', [])); paint(); });
   const lb = document.getElementById('lb'), li = document.getElementById('lb-img');
   const open = () => { li.src = FA.big; lb.hidden = false; document.body.style.overflow = 'hidden'; };
   const close = () => { lb.hidden = true; document.body.style.overflow = ''; };

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#742f3e">
+  <title>{% block title %}Your gallery · The Great Gallery{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='gallery/gallery.css') }}?v=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='gallery/account.css') }}?v=1">
+</head>
+<body class="personal-gallery">
+<a class="gg-skip" href="#main">Skip to content</a>
+<header class="gg-site-header">
+  <a class="gg-brand" href="{{ url_for('fineart.index') }}"><span aria-hidden="true">▣</span> The Great <em>Gallery</em></a>
+  <nav aria-label="Explore the gallery"><a href="{{ url_for('fineart.index') }}">Paintings</a><a href="{{ url_for('photo.index') }}">Photography</a><a href="{{ url_for('music.music_index') }}">Music</a></nav>
+  {% include 'shared/gallery_account.html' %}
+</header>
+<main id="main" class="gg-main">{% block body %}{% endblock %}</main>
+<footer class="gg-footer"><a href="{{ url_for('fineart.index') }}">The Great Gallery</a><span>Art, photographs, music. A little more yours.</span></footer>
+{% include 'shared/gallery_scripts.html' %}
+</body>
+</html>

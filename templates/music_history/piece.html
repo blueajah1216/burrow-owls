@@ -1,10 +1,11 @@
 {% extends 'music_history/base.html' %}
+{% from 'shared/gallery_save.html' import save_button with context %}
 {% block title %}{{ work.title }} · {{ composer.name }} · Music Through History{% endblock %}
 {% block description %}{{ work.description }}{% endblock %}
 {% block content %}
 <div class="detail-page page-width" style="--era:{{ era.color }}">
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{{ url_for('music.history') }}#era-{{ era.id }}">← The timeline</a><span>/</span><a href="{{ url_for('music.history', era=era.id) }}#timeline">{{ era.name }}</a><span>/</span><span>Work {{ '%02d'|format(work.number) }} of 100</span></nav>
-  <header class="detail-hero"><p class="eyebrow">{{ era.name }} · {{ work.form }}</p><h1>{{ work.title }}</h1><a class="detail-byline" href="{{ url_for('music.history_composer', slug=composer.id) }}">{{ composer.name }} <span>↗</span></a><p class="detail-date">{{ work.date }}</p><p class="detail-lede">{{ work.description }}</p></header>
+  <header class="detail-hero"><p class="eyebrow">{{ era.name }} · {{ work.form }}</p><h1>{{ work.title }}</h1><a class="detail-byline" href="{{ url_for('music.history_composer', slug=composer.id) }}">{{ composer.name }} <span>↗</span></a><p class="detail-date">{{ work.date }}</p><p class="detail-lede">{{ work.description }}</p>{{ save_button('music',work.id) }}</header>
   <div class="detail-layout"><div class="detail-main">
     <section class="importance-panel"><p class="eyebrow">Why this piece matters</p><h2>A place in the story.</h2><p>{{ work.importance }}</p></section>
     <section class="listening-panel"><span class="listen-icon" aria-hidden="true">♫</span><div><p class="eyebrow">A way into the music</p><h2>Listen for this.</h2><p>{{ work.listen }}</p><a class="button" href="{{ work.recording_url }}" target="_blank" rel="noopener noreferrer">Find a recording on YouTube ↗</a><small>Opens a search for performances; interpretations and editions vary.</small></div></section>

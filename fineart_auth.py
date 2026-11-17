@@ -1,7 +1,6 @@
 """
-Accounts for /fineart: sign up with a username + password.
-Signed-in visitors get their favorite paintings saved to their account (synced with
-the localStorage favorites that logged-out visitors already have).
+Create your gallery: one username/password account for paintings, photography,
+and music. Original painting favorites and public painting profiles are preserved.
 
 Wired up from app.py with `init_auth(app, db)`; call it before db.create_all().
 
@@ -13,8 +12,13 @@ import os
 import re
 import secrets
 import time
+import unicodedata
 from collections import defaultdict, deque
 from datetime import datetime, timedelta
+from functools import lru_cache
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+import json
 
 from flask import (Blueprint, abort, current_app, g, jsonify, redirect, render_template,
                    request, session, url_for)
@@ -27,6 +31,8 @@ bp = Blueprint("fineart_auth", __name__, url_prefix="/fineart")
 
 USERNAME_RE = re.compile(r"^[a-z0-9_]{3,24}$")
 MAX_FAVS = 3000
+MAX_GALLERY = 6000
+KINDS = ("painting", "photo", "music")
 # pbkdf2 works on every Python build (scrypt is missing on some).
 def hash_pw(pw):
     return generate_password_hash(pw, method="pbkdf2:sha256:600000")
@@ -35,7 +41,7 @@ def hash_pw(pw):
 # A throwaway hash so unknown usernames cost the same time as wrong passwords.
 _DUMMY_HASH = hash_pw("not-a-real-password")
 
-User = Favorite = Profile = DB = None  # defined in init_auth
+User = Favorite = SavedItem = Profile = DB = None  # defined in init_auth
 _attempts = defaultdict(deque)  # key -> recent attempt timestamps (per-process)
 
 
@@ -53,9 +59,30 @@ def too_many(key, limit=8, window=600):
 
 def safe_next(target):
     """Only allow redirects back to a path on this site."""
-    if target and target.startswith("/") and not target.startswith("//") and "\\" not in target:
-        return target
-    return url_for("fineart.index")
+    if isinstance(target, str) and len(target) < 2000:
+        from galleryhost import is_gallery_host, _strip
+        if is_gallery_host():
+            target = _strip(target)
+        decoded = unquote(unquote(target))
+        if is_gallery_host():
+            # An encoded legacy prefix may also be stripped by the middleware.
+            decoded = _strip(decoded)
+        try:
+            parsed = urlsplit(decoded)
+        except ValueError:
+            parsed = None
+        if (parsed is not None and decoded.startswith("/") and not decoded.startswith("//")
+                and not parsed.scheme and not parsed.netloc and "\\" not in decoded
+                and not re.search(r"[\x00-\x1f\x7f]", decoded)
+                and " " not in parsed.path):
+            return target
+    return public_url("fineart_auth.my_gallery")
+
+
+def public_url(endpoint, **values):
+    from galleryhost import is_gallery_host, _strip
+    url = url_for(endpoint, **values)
+    return _strip(url) if is_gallery_host() else url
 
 
 def csrf_token():
@@ -80,7 +107,7 @@ def login_user(user):
 
 
 def init_auth(app, db):
-    global User, Favorite, Profile, DB
+    global User, Favorite, SavedItem, Profile, DB
     DB = db
 
     # Behind Render's proxy: trust X-Forwarded-Proto/Host so external URLs are https.
@@ -103,6 +130,8 @@ def init_auth(app, db):
         password_hash = db.Column(db.String(255), nullable=True)
         created_at = db.Column(db.DateTime, default=datetime.utcnow)
         favorites = db.relationship("_Favorite", backref="user", cascade="all, delete-orphan", lazy="dynamic")
+        saved_items = db.relationship("_SavedItem", backref="user", cascade="all, delete-orphan", lazy="dynamic")
+        profile = db.relationship("_Profile", cascade="all, delete-orphan", uselist=False)
 
     class _Favorite(db.Model):
         __tablename__ = "fa_favorites"
@@ -118,27 +147,47 @@ def init_auth(app, db):
         user_id = db.Column(db.Integer, db.ForeignKey("fa_users.id", ondelete="CASCADE"), primary_key=True)
         public = db.Column(db.Boolean, nullable=False, default=False)
 
-    User, Favorite, Profile = _User, _Favorite, _Profile
+    class _SavedItem(db.Model):
+        """Photo and music saves; the original painting table stays intact."""
+        __tablename__ = "fa_saved_items"
+        id = db.Column(db.Integer, primary_key=True)
+        user_id = db.Column(db.Integer, db.ForeignKey("fa_users.id"), nullable=False, index=True)
+        kind = db.Column(db.String(20), nullable=False)
+        item_id = db.Column(db.String(120), nullable=False)
+        created_at = db.Column(db.DateTime, default=datetime.utcnow)
+        __table_args__ = (db.UniqueConstraint("user_id", "kind", "item_id", name="uix_fa_user_saved_item"),)
+
+    User, Favorite, SavedItem, Profile = _User, _Favorite, _SavedItem, _Profile
 
     @app.before_request
     def _load_user():
         g.fa_user = None
-        if request.path.startswith(("/fineart", "/photography")) and session.get("uid"):
+        if request.path.startswith(("/fineart", "/photography", "/music")) and session.get("uid"):
             g.fa_user = db.session.get(User, session["uid"])
             if g.fa_user is None:
                 session.pop("uid", None)
 
     @app.context_processor
     def _inject():
-        if not request.path.startswith(("/fineart", "/photography")):
+        if not request.path.startswith(("/fineart", "/photography", "/music")):
             return {}
-        return dict(fa_current=getattr(g, "fa_user", None), fa_csrf=csrf_token)
+        user = getattr(g, "fa_user", None)
+        ids = gallery_ids(user) if user else {kind: [] for kind in KINDS}
+        g.gallery_ids = ids
+        return dict(fa_current=user, fa_csrf=csrf_token, gallery_ids=ids,
+                    gallery_total=sum(map(len, ids.values())),
+                    gallery_saved=lambda kind, item_id: item_id in ids.get(kind, []))
 
     @app.after_request
     def _no_store_for_accounts(resp):
-        if request.path.startswith("/fineart/") and (request.path.startswith("/fineart/api/") or
-                                                      request.path.split("/")[2:3] in (["login"], ["signup"], ["account"])):
-            resp.headers["Cache-Control"] = "no-store"
+        if (request.path.startswith("/fineart/api/") or request.endpoint in (
+                "fineart_auth.login", "fineart_auth.signup", "fineart_auth.account", "fineart_auth.my_gallery")
+                or (getattr(g, "fa_user", None) and resp.mimetype == "text/html")):
+            resp.headers["Cache-Control"] = "private, no-store"
+        if resp.mimetype == "text/html":
+            resp.vary.add("Cookie")
+        if request.endpoint in ("fineart_auth.account", "fineart_auth.my_gallery"):
+            resp.headers["X-Robots-Tag"] = "noindex, nofollow"
         return resp
 
     app.register_blueprint(bp)
@@ -223,16 +272,18 @@ def login():
 def logout():
     check_csrf()
     session.clear()
-    return redirect(url_for("fineart.index"))
+    return redirect(public_url("fineart.index"))
 
 
 @bp.route("/account")
 def account():
     _ready()
     if not g.fa_user:
-        return redirect(url_for("fineart_auth.login", next=request.path))
+        return redirect(public_url("fineart_auth.login", next=safe_next(request.full_path.rstrip("?"))))
     prof = _session().get(Profile, g.fa_user.id)
-    return render_template("fineart/account.html", count=g.fa_user.favorites.count(), is_public=bool(prof and prof.public))
+    ids = gallery_ids(g.fa_user)
+    return render_template("fineart/account.html", counts={k: len(v) for k, v in ids.items()},
+                           is_public=bool(prof and prof.public), message=request.args.get("updated"))
 
 
 @bp.route("/account/name", methods=["POST"])
@@ -245,7 +296,7 @@ def account_name():
     if name:
         g.fa_user.display_name = name
         _session().commit()
-    return redirect(url_for("fineart_auth.account"))
+    return redirect(public_url("fineart_auth.account", updated="name"))
 
 
 @bp.route("/account/public", methods=["POST"])
@@ -259,7 +310,7 @@ def account_public():
     prof.public = request.form.get("public") == "1"
     s.add(prof)
     s.commit()
-    return redirect(url_for("fineart_auth.account"))
+    return redirect(public_url("fineart_auth.account", updated="privacy"))
 
 
 @bp.route("/account/delete", methods=["POST"])
@@ -272,7 +323,209 @@ def account_delete():
     s.delete(g.fa_user)
     s.commit()
     session.clear()
-    return redirect(url_for("fineart.index"))
+    return redirect(public_url("fineart.index"))
+
+
+@bp.post("/account/password")
+def account_password():
+    _ready()
+    if not g.fa_user:
+        abort(401)
+    check_csrf()
+    current = request.form.get("current_password") or ""
+    password = request.form.get("password") or ""
+    confirmation = request.form.get("password2") or ""
+    error = None
+    if not check_password_hash(g.fa_user.password_hash or _DUMMY_HASH, current):
+        error = "Your current password doesn't match."
+    elif not 8 <= len(password) <= 200:
+        error = "Choose a new password with 8–200 characters."
+    elif password != confirmation:
+        error = "The two new passwords don't match."
+    if error:
+        prof = _session().get(Profile, g.fa_user.id)
+        return render_template("fineart/account.html", error=error, message=None,
+                               counts={k: len(v) for k, v in gallery_ids(g.fa_user).items()},
+                               is_public=bool(prof and prof.public)), 400
+    user = g.fa_user
+    user.password_hash = hash_pw(password)
+    _session().commit()
+    login_user(user)
+    return redirect(public_url("fineart_auth.account", updated="password"))
+
+
+# ---------------------------------------------------------------- unified personal gallery
+
+def gallery_ids(user):
+    ids = {kind: [] for kind in KINDS}
+    if user:
+        ids["painting"] = _fav_ids(user)
+        for item in user.saved_items.order_by(SavedItem.created_at, SavedItem.id):
+            if item.kind in ids:
+                ids[item.kind].append(item.item_id)
+    return ids
+
+
+@lru_cache(maxsize=1)
+def _practice_catalog(mtime):
+    path = Path(__file__).parent / "data" / "choir" / "library.json"
+    return {"practice:" + song["id"]: song for song in json.loads(path.read_text())}
+
+
+def gallery_catalog():
+    if not hasattr(g, "gallery_catalog"):
+        import photography
+        from music_history import load_history
+        history, composers, eras = load_history()
+        practice_path = Path(__file__).parent / "data" / "choir" / "library.json"
+        g.gallery_catalog = {
+            "painting": fineart.load()["by_id"],
+            "photo": {key: p for key, p in photography.load()["by_id"].items() if not p.get("n")},
+            "music": {w["id"]: w for w in history["works"]} | _practice_catalog(practice_path.stat().st_mtime),
+        }
+    return g.gallery_catalog
+
+
+def _gallery_item(kind, item_id):
+    item = gallery_catalog().get(kind, {}).get(item_id)
+    base = dict(kind=kind, id=item_id, thumbnail=None, mature=False, href=None,
+                title="Saved item no longer available", creator="", date="", label="Saved item")
+    if item is None:
+        return base
+    if kind in ("painting", "photo"):
+        import photography
+        data = fineart.load() if kind == "painting" else photography.load()
+        base.update(title=item["t"], creator=" & ".join(data["artists"][a]["n"] for a in item["a"] if a in data["artists"]),
+                    date=item.get("d") or str(item["y"]), mature=bool(item.get("n")),
+                    label="Painting" if kind == "painting" else "Photograph",
+                    href=public_url("fineart.painting" if kind == "painting" else "photo.photo", pid=item_id))
+        if not base["mature"]:
+            base["thumbnail"] = fineart.img_url(item, 500) if kind == "painting" else item["th"]
+    elif item_id.startswith("practice:"):
+        base.update(title=item["title"], creator=item.get("origin") or item["category"], label="Practice song",
+                    href=public_url("choir.index", song=item["id"]), date="Four-part singing")
+    else:
+        from music_history import load_history
+        history, composers, eras = load_history()
+        base.update(title=item["title"], creator=composers[item["composer"]]["name"], date=item["date"],
+                    label=item["form"], href=public_url("music.history_piece", slug=item_id))
+    return base
+
+
+def _normal_text(text):
+    return "".join(c for c in unicodedata.normalize("NFKD", text.casefold()) if not unicodedata.combining(c))
+
+
+@bp.get("/my-gallery")
+def my_gallery():
+    _ready()
+    if not g.fa_user:
+        return redirect(public_url("fineart_auth.login", next=safe_next(request.full_path.rstrip("?"))))
+    records = [("painting", f.painting_id, f.created_at) for f in g.fa_user.favorites]
+    records += [(f.kind, f.item_id, f.created_at) for f in g.fa_user.saved_items if f.kind in KINDS]
+    records.sort(key=lambda row: (row[2], row[0], row[1]), reverse=True)
+    counts = {kind: sum(row[0] == kind for row in records) for kind in KINDS}
+    selected = request.args.get("kind", "all")
+    if selected not in (*KINDS, "all"):
+        selected = "all"
+    query = request.args.get("q", "").strip()[:100]
+    items = [_gallery_item(kind, item_id) for kind, item_id, _ in records if selected in ("all", kind)]
+    terms = _normal_text(query).split()
+    if terms:
+        items = [item for item in items if all(term in _normal_text(" ".join(
+            (item["title"], item["creator"], item["label"]))) for term in terms)]
+    try:
+        page = max(1, int(request.args.get("page", 1)))
+    except ValueError:
+        page = 1
+    pages = max(1, (len(items) + 59) // 60)
+    page = min(page, pages)
+    return render_template("gallery/collection.html", counts=counts, total=len(records),
+                           items=items[(page - 1) * 60:page * 60], filtered_total=len(items),
+                           selected=selected, query=query, page=page, pages=pages)
+
+
+def _parse_changes(body):
+    if not isinstance(body, dict):
+        abort(400, "Expected a JSON object.")
+    operations = []
+    for action in ("add", "remove"):
+        values = body.get(action, {})
+        if not isinstance(values, dict) or any(kind not in KINDS for kind in values):
+            abort(400, "Choose paintings, photography, or music.")
+        result = {}
+        for kind, ids in values.items():
+            if not isinstance(ids, list) or len(ids) > MAX_FAVS or any(not isinstance(i, str) or len(i) > 120 for i in ids):
+                abort(400, "Expected a list of saved-item IDs.")
+            result[kind] = list(dict.fromkeys(ids))
+        operations.append(result)
+    return operations
+
+
+def _apply_gallery_changes(add, remove):
+    s = _session()
+    catalog = gallery_catalog()
+    have = {kind: set(ids) for kind, ids in gallery_ids(g.fa_user).items()}
+    for kind, ids in remove.items():
+        if kind == "painting":
+            Favorite.query.filter(Favorite.user_id == g.fa_user.id, Favorite.painting_id.in_(ids)).delete(synchronize_session=False)
+        else:
+            SavedItem.query.filter(SavedItem.user_id == g.fa_user.id, SavedItem.kind == kind, SavedItem.item_id.in_(ids)).delete(synchronize_session=False)
+        have[kind].difference_update(ids)
+    total = sum(map(len, have.values()))
+    painting_rows, item_rows = [], []
+    for kind, ids in add.items():
+        for item_id in ids:
+            if (item_id in have[kind] or item_id not in catalog[kind] or item_id in remove.get(kind, [])
+                    or total >= MAX_GALLERY or len(have[kind]) >= MAX_FAVS):
+                continue
+            if kind == "painting":
+                painting_rows.append(dict(user_id=g.fa_user.id, painting_id=item_id))
+            else:
+                item_rows.append(dict(user_id=g.fa_user.id, kind=kind, item_id=item_id))
+            have[kind].add(item_id)
+            total += 1
+    # Native conflict handling keeps simultaneous tabs idempotent, including imports.
+    if DB.engine.dialect.name == "postgresql":
+        from sqlalchemy.dialects.postgresql import insert
+    else:
+        from sqlalchemy.dialects.sqlite import insert
+    for model, rows, columns in (
+            (Favorite, painting_rows, ["user_id", "painting_id"]),
+            (SavedItem, item_rows, ["user_id", "kind", "item_id"])):
+        if rows:
+            s.execute(insert(model).values(rows).on_conflict_do_nothing(index_elements=columns))
+    s.commit()
+
+
+@bp.route("/api/gallery", methods=["GET", "POST"])
+def api_gallery():
+    _ready()
+    if not g.fa_user:
+        return jsonify(error="Log in to save your gallery across devices."), 401
+    if request.method == "POST":
+        check_csrf()
+        add, remove = _parse_changes(request.get_json(silent=True))
+        _apply_gallery_changes(add, remove)
+    ids = gallery_ids(g.fa_user)
+    return jsonify(ids=ids, counts={kind: len(values) for kind, values in ids.items()})
+
+
+@bp.post("/gallery/save")
+def save_item():
+    _ready()
+    nxt = safe_next(request.form.get("next"))
+    if not g.fa_user:
+        return redirect(public_url("fineart_auth.login", next=nxt), code=303)
+    check_csrf()
+    kind, item_id = request.form.get("kind"), request.form.get("id", "")
+    if kind not in KINDS or len(item_id) > 120:
+        abort(400)
+    remove = request.form.get("action") == "remove"
+    if not remove and item_id not in gallery_catalog()[kind]:
+        abort(404)
+    _apply_gallery_changes({} if remove else {kind: [item_id]}, {kind: [item_id]} if remove else {})
+    return redirect(nxt, code=303)
 
 
 # ---------------------------------------------------------------- Art Lovers (opt-in public profiles)

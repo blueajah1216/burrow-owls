@@ -4,7 +4,7 @@
 (() => {
   'use strict';
   const hosts = new Set(['thegreatgallery.art', 'www.thegreatgallery.art']);
-  const privatePath = path => /^\/(?:fineart\/)?(?:login|signup|account|logout|lovers)(?:\/|$)/.test(path);
+  const privatePath = path => /^\/(?:fineart\/)?(?:login|signup|account|logout|lovers|my-gallery)(?:\/|$)/.test(path);
   const enabled = () => {
     if (!hosts.has(location.hostname) || privatePath(location.pathname) || navigator.doNotTrack === '1') return false;
     try { return localStorage.getItem('umami.disabled') !== '1'; }

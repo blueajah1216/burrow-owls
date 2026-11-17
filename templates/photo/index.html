@@ -21,6 +21,7 @@
       <p class="potd-cap"><span>Photo of the day</span><b id="potd-title"></b><i id="potd-by"></i></p>
     </a>
   </section>
+  {% include 'shared/gallery_invitation.html' %}
 
   <a class="hist-teaser" href="{{ url_for('photo.timeline') }}">
     <div><p class="eyebrow">The big story</p>
@@ -95,4 +96,4 @@
   </section>
 </main>
 {% endblock %}
-{% block scripts %}<script src="{{ url_for('static', filename='photo/home.js') }}?v=1"></script>{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='photo/home.js') }}?v=2"></script>{% endblock %}

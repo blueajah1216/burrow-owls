@@ -63,8 +63,7 @@
     shown.slice(batch * STEP, (batch + 1) * STEP).forEach((p, i) => {
       const a = document.createElement('a'); a.className = 'card'; a.style.aspectRatio = Math.min(Math.max(p.w / p.h, .55), 2.2).toFixed(3); a.style.animationDelay = `${Math.min(i, 20) * 25}ms`;
       a.href = `/${PH_BASE}/p/${p.id}` + (st.g !== '' && st.g !== 'fav' ? `?g=${st.g}` : '');
-      a.innerHTML = `<img loading="lazy" decoding="async" src="${p.th}" alt="${esc(p.t)}"><span class="cap"><b>${esc(p.t)}</b><i>${esc((D.artists[p.a[0]]||{n:'Unknown photographer'}).n)} · ${p.y}</i></span><button class="heart${favs.has(p.id) ? ' on' : ''}" aria-label="Save">${favs.has(p.id) ? '♥' : '♡'}</button>`;
-      a.querySelector('.heart').onclick = e => { e.preventDefault(); e.stopPropagation(); favs.has(p.id) ? favs.delete(p.id) : favs.add(p.id); store.set('ph_favs', [...favs]); const on = favs.has(p.id); e.currentTarget.classList.toggle('on', on); e.currentTarget.textContent = on ? '♥' : '♡'; $('#favn').textContent = favs.size ? `(${favs.size})` : ''; };
+      a.innerHTML = `<img loading="lazy" decoding="async" src="${p.th}" alt="${esc(p.t)}"><span class="cap"><b>${esc(p.t)}</b><i>${esc((D.artists[p.a[0]]||{n:'Unknown photographer'}).n)} · ${p.y}</i></span><button class="heart${favs.has(p.id) ? ' on' : ''}" data-gallery-kind="photo" data-gallery-id="${esc(p.id)}" aria-pressed="${favs.has(p.id)}" aria-label="Add to my gallery">${favs.has(p.id) ? '♥' : '♡'}</button>`;
       frag.appendChild(a);
     });
     wall.appendChild(frag); batch++;

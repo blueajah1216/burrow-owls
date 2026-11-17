@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='fineart/fineart.css') }}?v=29">
 <script>var FA_BASE="{{ fa_base }}";</script>
 {% include 'shared/analytics.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='gallery/gallery.css') }}?v=1">
 </head>
 <body>
 <div class="sky" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -40,10 +41,7 @@
     <a href="{{ url_for('music.music_index') }}">🎵 Music</a>
     <a href="{{ url_for('fineart.random_painting') }}" class="pill">🎲 Surprise me</a>
   </nav>
-  <div class="acct-wrap">
-    {% if fa_current %}<a href="{{ url_for('fineart_auth.account') }}" class="acct" title="Your account">👤 <span>{{ fa_current.display_name.split()[0] }}</span></a>
-    {% else %}<a href="{{ url_for('fineart_auth.login', next=request.path) }}" class="acct">👤 <span>Log in</span></a>{% endif %}
-  </div>
+  {% include 'shared/gallery_account.html' %}
 </header>
 {% block body %}{% endblock %}
 <footer class="foot">
@@ -51,8 +49,9 @@
   <p class="fine">Descriptions are written for curious kids. Some details of art history are debated — when in doubt, ask a librarian or a museum.</p>
 </footer>
 <script>window.FA_USER={{ 'true' if fa_current else 'false' }};window.FA_CSRF="{{ fa_csrf() if fa_current else '' }}";</script>
-<script src="{{ url_for('static', filename='fineart/auth.js') }}?v=2"></script>
+
 <script src="{{ url_for('static', filename='fineart/menu.js') }}?v=2"></script>
+{% include 'shared/gallery_scripts.html' %}
 {% block scripts %}{% endblock %}
 </body>
 </html>

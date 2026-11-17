@@ -231,8 +231,8 @@ def robots_txt():
     # PetalBot crawls the music calendar endlessly; keep it (and other pure-crawl bots) out.
     from galleryhost import is_gallery_host
     if is_gallery_host():
-        return app.response_class("User-agent: *\nDisallow: /api/\nDisallow: /login\nDisallow: /signup\nDisallow: /account\n", mimetype="text/plain")
-    body = "User-agent: PetalBot\nDisallow: /\n\nUser-agent: *\nDisallow: /fineart/api/\nDisallow: /fineart/login\nDisallow: /fineart/signup\nDisallow: /fineart/account\n"
+        return app.response_class("User-agent: *\nDisallow: /api/\nDisallow: /login\nDisallow: /signup\nDisallow: /account\nDisallow: /my-gallery\n", mimetype="text/plain")
+    body = "User-agent: PetalBot\nDisallow: /\n\nUser-agent: *\nDisallow: /fineart/api/\nDisallow: /fineart/login\nDisallow: /fineart/signup\nDisallow: /fineart/account\nDisallow: /fineart/my-gallery\n"
     return app.response_class(body, mimetype="text/plain")
 
 

@@ -22,6 +22,7 @@
       <p class="potd-cap"><span>Painting of the day</span><b id="potd-title"></b><i id="potd-by"></i></p>
     </a>
   </section>
+  {% include 'shared/gallery_invitation.html' %}
 
   {% if hist_teaser %}
   <a class="hist-teaser" href="{{ url_for('fineart.history') }}">
@@ -84,4 +85,4 @@
   </section>
 </main>
 {% endblock %}
-{% block scripts %}<script src="{{ url_for('static', filename='fineart/home.js') }}?v=27"></script>{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='fineart/home.js') }}?v=28"></script>{% endblock %}

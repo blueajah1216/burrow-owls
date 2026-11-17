@@ -1,0 +1,10 @@
+<section class="gg-invitation" aria-label="Create your gallery">
+  <div><p class="gg-eyebrow">{{ 'Made by you' if fa_current else 'Create your gallery' }}</p>
+    <h2>{{ 'A place for everything you love.' if fa_current else 'Some things deserve a second look.' }}</h2>
+    <p>Bring your favorite paintings, photographs, and pieces of music together in one personal gallery.</p>
+  </div>
+  <div class="gg-invitation-actions">
+    {% if fa_current %}<a class="gg-button" href="{{ url_for('fineart_auth.my_gallery') }}">Open my gallery →</a>
+    {% else %}<a class="gg-button" href="{{ url_for('fineart_auth.signup') }}">Create your gallery →</a><a href="{{ url_for('fineart_auth.login') }}">Already collecting? Log in</a>{% endif %}
+  </div>
+</section>

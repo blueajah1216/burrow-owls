@@ -1,22 +1,11 @@
-{% extends "fineart/base.html" %}
-{% block title %}Join — The Great Gallery{% endblock %}
-{% block body %}
-<main class="auth-wrap">
-  <section class="auth-card">
-    <h1>Join the <em>Gallery</em></h1>
-    <p class="auth-sub">Save your favorite paintings and find them again on any device. No email needed.</p>
-    {% if error %}<p class="auth-err" role="alert">{{ error }}</p>{% endif %}
-    <form method="post" action="{{ url_for('fineart_auth.signup') }}">
-      <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
-      <input type="hidden" name="next" value="{{ next }}">
-      <label>Your name <small>(shown on your account)</small><input name="display_name" value="{{ form.display_name }}" maxlength="60" autocomplete="nickname"></label>
-      <label>Username <small>letters, numbers, _</small><input name="username" value="{{ form.username }}" minlength="3" maxlength="24" pattern="[A-Za-z0-9_]{3,24}" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
-      <label>Password <small>at least 8 characters</small><input name="password" type="password" minlength="8" autocomplete="new-password" required></label>
-      <label>Password again<input name="password2" type="password" minlength="8" autocomplete="new-password" required></label>
-      <button class="btn gold" type="submit">Create account</button>
-    </form>
-    <p class="alt">Already have an account? <a href="{{ url_for('fineart_auth.login', next=next) }}">Log in</a></p>
-    <p class="fine">There's no password reset (we don't collect emails), so pick one you'll remember.</p>
-  </section>
-</main>
-{% endblock %}
+{% extends 'gallery/base.html' %}
+{% block title %}Create your gallery · The Great Gallery{% endblock %}
+{% block body %}<div class="gg-auth-layout">{% include 'gallery/story.html' %}
+<section class="gg-auth-card" aria-labelledby="auth-heading"><p class="gg-eyebrow">Make yourself at home</p><h2 id="auth-heading">Create your gallery.</h2><p>One free account. Everything you love, in one place.</p>
+{% if error %}<p class="gg-error" role="alert">{{ error }}</p>{% endif %}
+<form method="post" action="{{ url_for('fineart_auth.signup') }}"><input type="hidden" name="csrf" value="{{ fa_csrf() }}"><input type="hidden" name="next" value="{{ next }}">
+<label>Your name <small>(optional)</small><input name="display_name" value="{{ form.display_name }}" maxlength="60" autocomplete="nickname"></label>
+<label>Username <small>3–24 letters, numbers, or underscores</small><input name="username" value="{{ form.username }}" minlength="3" maxlength="24" pattern="[A-Za-z0-9_]{3,24}" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
+<label>Password <small>at least 8 characters</small><input name="password" type="password" minlength="8" maxlength="200" autocomplete="new-password" required></label>
+<label>Password again<input name="password2" type="password" minlength="8" maxlength="200" autocomplete="new-password" required></label><button class="gg-button" type="submit">Create your gallery →</button></form>
+<p>Already collecting? <a href="{{ url_for('fineart_auth.login', next=next) }}">Log in</a></p><p class="gg-fine">No email needed. Keep your password somewhere safe: we don’t offer email password resets.</p></section></div>{% endblock %}

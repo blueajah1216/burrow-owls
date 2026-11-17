@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='choir/choir.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=2">
 {% include 'shared/analytics.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='gallery/gallery.css') }}?v=1">
 </head>
 <body>
 <header class="top">
@@ -29,7 +30,7 @@
     <a href="{{ url_for('music.history', view='composers') }}">50 composers</a>
     <a href="{{ url_for('music.music_home') }}">Seattle concerts</a>
   </nav>
-  <span class="section-label">THE MUSIC ROOM</span>
+  {% include 'shared/gallery_account.html' %}
 </header>
 <main>
   <div class="practice-navigation">{% include 'music_history/navigation.html' %}</div>
@@ -52,6 +53,7 @@
     </aside>
     <section class="practice" aria-labelledby="song-title" aria-busy="true">
       <div class="song-heading"><div><p id="song-category" class="eyebrow">YOUR PRACTICE SPACE</p><h2 id="song-title">Opening the songbook…</h2><p id="song-native-title" dir="auto" hidden></p><p id="song-subtitle"></p></div><span class="satb-badge">4 voices<br><strong>S A T B</strong></span></div>
+      <button class="gg-save" type="button" id="practice-save" data-gallery-kind="music" data-gallery-id="" disabled>♡ Add to my gallery</button>
       <div class="practice-controls">
         <div class="transport"><button id="play" class="play" type="button" disabled>▶ Play</button><button id="restart" type="button" disabled aria-label="Restart song">↶ Restart</button><label class="loop-control"><input id="loop" type="checkbox"> Loop</label><span id="time" class="time">0:00 / 0:00</span></div>
         <label class="seek-label" for="seek">Song position</label><input id="seek" type="range" min="0" max="1000" value="0" disabled aria-label="Song position">
@@ -78,6 +80,7 @@
 <script>window.CHOIR_LIBRARY_URL={{ url_for('choir.library', v=catalog_version)|tojson }};window.CHOIR_SOURCE_URL={{ url_for('choir.source', filename='SCORE_FILE')|tojson }};</script>
 <script src="{{ url_for('static', filename='choir/vendor/abcjs-6.7.2.min.js') }}"></script>
 <script src="{{ url_for('static', filename='fineart/menu.js') }}?v=2"></script>
-<script src="{{ url_for('static', filename='choir/choir.js') }}"></script>
+{% include 'shared/gallery_scripts.html' %}
+<script src="{{ url_for('static', filename='choir/choir.js') }}?v=2"></script>
 </body>
 </html>

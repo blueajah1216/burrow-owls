@@ -1,33 +1,12 @@
-{% extends "fineart/base.html" %}
-{% block title %}Your account — The Great Gallery{% endblock %}
-{% block body %}
-<main class="auth-wrap">
-  <section class="auth-card">
-    <h1>Hi, <em>{{ fa_current.display_name }}</em></h1>
-    <p class="auth-sub">{{ count }} saved painting{{ '' if count == 1 else 's' }} · signed in as {{ fa_current.username }}</p>
-    <p><a class="btn gold" href="{{ url_for('fineart.index', g='fav') }}#browse">♥ See my favorites</a></p>
-    <form method="post" action="{{ url_for('fineart_auth.account_name') }}">
-      <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
-      <label>Display name<input name="display_name" value="{{ fa_current.display_name }}" maxlength="60" required></label>
-      <button class="btn ghost sm" type="submit">Save name</button>
-    </form>
-    <form method="post" action="{{ url_for('fineart_auth.account_public') }}" class="pub-form">
-      <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
-      <p><b>Art Lovers page:</b> {{ 'your name and favorites are public.' if is_public else 'your favorites are private.' }}</p>
-      <input type="hidden" name="public" value="{{ '0' if is_public else '1' }}">
-      <button class="btn ghost sm" type="submit">{{ 'Make my profile private' if is_public else 'Share my favorites on Art Lovers' }}</button>
-      {% if is_public %}<a class="maplink" style="margin-left:0" href="{{ url_for('fineart_auth.lover', uid=fa_current.id) }}">View my public page →</a>{% endif %}
-    </form>
-    <div class="acct-actions">
-      <form method="post" action="{{ url_for('fineart_auth.logout') }}" onsubmit="try{localStorage.removeItem('fa_favs')}catch(e){}">
-        <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
-        <button class="btn ghost" type="submit">Log out</button>
-      </form>
-      <form method="post" action="{{ url_for('fineart_auth.account_delete') }}" onsubmit="if(!confirm('Delete your account and all saved favorites? This cannot be undone.'))return false;try{localStorage.removeItem('fa_favs')}catch(e){}">
-        <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
-        <button class="btn danger sm" type="submit">Delete my account</button>
-      </form>
-    </div>
-  </section>
-</main>
-{% endblock %}
+{% extends 'gallery/base.html' %}
+{% block title %}Your account · The Great Gallery{% endblock %}
+{% block body %}<div class="gg-settings">
+<div class="gg-heading-row"><div><p class="gg-eyebrow">Your account</p><h1>Hi, {{ fa_current.display_name }}.</h1><p>Signed in as {{ fa_current.username }} · {{ counts.painting }} paintings, {{ counts.photo }} photographs, {{ counts.music }} pieces of music.</p></div><a class="gg-button" href="{{ url_for('fineart_auth.my_gallery') }}">Open my gallery →</a></div>
+{% if message in ['name','privacy','password'] %}<p class="gg-success" role="status">{{ {'name':'Your name has been updated.','privacy':'Your sharing preference has been updated.','password':'Your password has been changed.'}[message] }}</p>{% endif %}
+{% if error %}<p class="gg-error" role="alert">{{ error }}</p>{% endif %}{% include 'shared/gallery_import.html' %}
+<div class="gg-settings-grid">
+<section class="gg-settings-card"><h2>Make it yours.</h2><form method="post" action="{{ url_for('fineart_auth.account_name') }}"><input type="hidden" name="csrf" value="{{ fa_csrf() }}"><label>Display name<input name="display_name" value="{{ fa_current.display_name }}" maxlength="60" required></label><button class="gg-button" type="submit">Save name</button></form></section>
+<section class="gg-settings-card"><h2>Change your password.</h2><form method="post" action="{{ url_for('fineart_auth.account_password') }}"><input type="hidden" name="csrf" value="{{ fa_csrf() }}"><label>Current password<input name="current_password" type="password" autocomplete="current-password" required></label><label>New password<input name="password" type="password" minlength="8" maxlength="200" autocomplete="new-password" required></label><label>New password again<input name="password2" type="password" minlength="8" maxlength="200" autocomplete="new-password" required></label><button class="gg-button" type="submit">Change password</button></form></section>
+<section class="gg-settings-card"><h2>A gallery to call your own.</h2><p>Your personal gallery is visible only to you. Photography and music saves are always private.</p><form method="post" action="{{ url_for('fineart_auth.account_public') }}"><input type="hidden" name="csrf" value="{{ fa_csrf() }}"><p><b>Art Lovers painting profile:</b> {{ 'your name and painting favorites are public.' if is_public else 'your painting favorites are private.' }}</p><input type="hidden" name="public" value="{{ '0' if is_public else '1' }}"><button class="gg-button" type="submit">{{ 'Make my painting profile private' if is_public else 'Share my paintings on Art Lovers' }}</button></form>{% if is_public %}<p><a href="{{ url_for('fineart_auth.lover', uid=fa_current.id) }}">View my public painting profile →</a></p>{% endif %}</section>
+<section class="gg-settings-card"><h2>Your account.</h2><p>Your saved collection stays with your account when you log out.</p><div class="gg-account-actions"><form method="post" action="{{ url_for('fineart_auth.logout') }}" data-gallery-signout><input type="hidden" name="csrf" value="{{ fa_csrf() }}"><button class="gg-button" type="submit">Log out</button></form><details><summary>Delete account</summary><p>Deleting your account permanently removes all your saved paintings, photographs, music, and your public painting profile.</p><form method="post" action="{{ url_for('fineart_auth.account_delete') }}" data-gallery-delete><input type="hidden" name="csrf" value="{{ fa_csrf() }}"><button class="gg-danger" type="submit">Permanently delete my account</button></form></details></div></section>
+</div></div>{% endblock %}

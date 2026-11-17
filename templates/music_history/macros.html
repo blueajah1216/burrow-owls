@@ -1,3 +1,4 @@
+{% from 'shared/gallery_save.html' import save_button with context %}
 {% macro work_card(work, composer, visible=true) %}
 <article class="timeline-item work-item" data-item data-search="{{ work.search }}" {% if not visible %}hidden{% endif %}>
   <span class="timeline-dot" aria-hidden="true"></span>
@@ -8,6 +9,7 @@
     <a class="composer-link" href="{{ url_for('music.history_composer', slug=composer.id) }}">{{ composer.name }}</a>
     <p>{{ work.description }}</p>
     <a class="card-arrow" href="{{ url_for('music.history_piece', slug=work.id) }}" aria-label="Explore {{ work.title }}">Explore the piece <span aria-hidden="true">↗</span></a>
+    {{ save_button('music',work.id,compact=true) }}
   </div>
 </article>
 {% endmacro %}

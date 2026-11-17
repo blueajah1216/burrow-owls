@@ -1,4 +1,5 @@
 {% extends "photo/base.html" %}
+{% from 'shared/gallery_save.html' import save_button with context %}
 {% block title %}{{ p.t }} — {{ artists|map(attribute='n')|join(' & ') or 'Unknown photographer' }} · The Great Gallery{% endblock %}
 {% block desc %}{{ p.why[:180] }}{% endblock %}
 {% block og %}
@@ -26,7 +27,7 @@
         {% if p.m %}<small>{{ p.m }}</small>{% endif %}
       </div>
       <div class="tools">
-        <button class="btn ghost sm" id="fav" data-id="{{ p.id }}">♡ Save</button>
+        {{ save_button('photo', p.id, button_id='fav') }}
         <button class="btn ghost sm" id="zoom2">🔍 Zoom</button>
         <a class="btn ghost sm" href="{{ p.p }}" target="_blank" rel="noopener">Source ↗</a>
       </div>
@@ -98,5 +99,5 @@
 {% endblock %}
 {% block scripts %}
 <script>window.FA={id:"{{ p.id }}",big:"{{ p.u }}",prev:{{ ('"' ~ url_for('photo.photo', pid=prev_p.id) ~ '"')|safe if prev_p else 'null' }},next:{{ ('"' ~ url_for('photo.photo', pid=next_p.id) ~ '"')|safe if next_p else 'null' }}};</script>
-<script src="{{ url_for('static', filename='photo/detail.js') }}?v=1"></script>
+<script src="{{ url_for('static', filename='photo/detail.js') }}?v=2"></script>
 {% endblock %}

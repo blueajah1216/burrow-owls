@@ -1,19 +1,9 @@
-{% extends "fineart/base.html" %}
-{% block title %}Log in — The Great Gallery{% endblock %}
-{% block body %}
-<main class="auth-wrap">
-  <section class="auth-card">
-    <h1>Welcome <em>back</em></h1>
-    <p class="auth-sub">Log in to keep your favorite paintings on every device.</p>
-    {% if error %}<p class="auth-err" role="alert">{{ error }}</p>{% endif %}
-    <form method="post" action="{{ url_for('fineart_auth.login') }}">
-      <input type="hidden" name="csrf" value="{{ fa_csrf() }}">
-      <input type="hidden" name="next" value="{{ next }}">
-      <label>Username<input name="username" value="{{ username }}" autocomplete="username" autocapitalize="none" spellcheck="false" required autofocus></label>
-      <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
-      <button class="btn gold" type="submit">Log in</button>
-    </form>
-    <p class="alt">New here? <a href="{{ url_for('fineart_auth.signup', next=next) }}">Create an account</a></p>
-  </section>
-</main>
-{% endblock %}
+{% extends 'gallery/base.html' %}
+{% block title %}Log in · Your gallery{% endblock %}
+{% block body %}<div class="gg-auth-layout">{% include 'gallery/story.html' %}
+<section class="gg-auth-card" aria-labelledby="auth-heading"><p class="gg-eyebrow">Your personal collection</p><h2 id="auth-heading">Welcome back.</h2><p>Your paintings, photographs, and music are waiting.</p>
+{% if error %}<p class="gg-error" role="alert">{{ error }}</p>{% endif %}
+<form method="post" action="{{ url_for('fineart_auth.login') }}"><input type="hidden" name="csrf" value="{{ fa_csrf() }}"><input type="hidden" name="next" value="{{ next }}">
+<label>Username<input name="username" value="{{ username }}" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
+<label>Password<input name="password" type="password" autocomplete="current-password" maxlength="200" required></label><button class="gg-button" type="submit">Log in to my gallery →</button></form>
+<p>New here? <a href="{{ url_for('fineart_auth.signup', next=next) }}">Create your gallery</a></p></section></div>{% endblock %}

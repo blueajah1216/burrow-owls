@@ -1,5 +1,5 @@
 {% extends 'music_history/base.html' %}
-{% from 'music_history/macros.html' import work_card %}
+{% from 'music_history/macros.html' import work_card with context %}
 {% block title %}{{ composer.name }} · Biography &amp; Music · Music Through History{% endblock %}
 {% block description %}{{ composer.bio }}{% endblock %}
 {% block content %}

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='music_history/history.css') }}?v=1">
   {% block head %}{% endblock %}
   {% include 'shared/analytics.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='gallery/gallery.css') }}?v=1">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,9 +22,11 @@
       <a href="{{ url_for('music.history') }}" {% if request.endpoint in ('music.history', 'music.history_piece', 'music.history_composer') %}aria-current="page"{% endif %}>Music history</a>
       <a href="{{ url_for('choir.index') }}">Practice</a>
     </nav>
+    {% include 'shared/gallery_account.html' %}
   </header>
   <main id="main">{% block content %}{% endblock %}</main>
   <footer class="site-footer"><a href="{{ url_for('music.music_index') }}">The Great Gallery · Music</a><p>A place to listen, explore, and make music.</p><a href="{{ url_for('fineart.index') }}">Back to the Gallery →</a></footer>
+  {% include 'shared/gallery_scripts.html' %}
   {% block scripts %}{% endblock %}
 </body>
 </html>

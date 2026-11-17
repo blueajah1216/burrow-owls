@@ -167,10 +167,35 @@ A standalone-styled (blue + gold) gallery of ~1,350 famous public-domain paintin
   high-end Meisterdrucke; see `print_links()` in `fineart.py`).
 - Paintings that show nudity are flagged (`n`) and hidden unless the visitor ticks "Include nudes".
 
-### /fineart accounts
+### Create your gallery — shared accounts
 
-`fineart_auth.py` adds sign-up / log-in (username + password) so favorites sync across devices.
-Tables `fa_users` and `fa_favorites` are created by `db.create_all()`. Anonymous visitors still use localStorage favorites.
+`fineart_auth.py` provides one username/password account across paintings, photography,
+and music. Prominent “Create your gallery” / “My gallery” controls appear throughout
+the site. `/signup`, `/login`, `/account`, and `/my-gallery` are the public gallery-domain
+paths. The private collection combines paintings, photographs, music-history works,
+and practice songs, with type filters, search, and pagination. Account settings include
+display name, password changes, painting-profile privacy, logout, and account deletion.
+
+`db.create_all()` creates `fa_users`, the original `fa_favorites` painting table,
+`fa_profiles`, and additive `fa_saved_items` for photography and music. Existing accounts,
+passwords, and painting favorites remain valid. Existing opt-in Art Lovers pages continue
+to publish paintings only; photo and music saves stay private. Authenticated HTML and
+favorites APIs are private/no-store; account pages are excluded from analytics and indexing.
+
+`static/gallery/gallery.js` manages browser favorites and account syncing. Guest picks
+made with the new UI transfer on login/signup; older browser-only favorites get an explicit
+import prompt in My gallery/account settings. Account-owned caches are replaced by server
+state on navigation, so removals on another device are preserved. Logging out clears all
+three browser caches. The legacy painting API remains compatible. Save forms also work
+without JavaScript when logged in.
+
+QA: `.venv/bin/python gallery_build/verify_accounts.py` uses an isolated in-memory
+database. `node gallery_build/verify_browser.cjs` exercises guest saving, signup/import,
+syncing, error recovery, account isolation, and desktop/mobile layouts against the local
+preview on port 5058; screenshots go to `/private/tmp/gallery-qa`. For browser QA,
+include `GALLERY_HOSTS=127.0.0.1,thegreatgallery.art GALLERY_CANONICAL_HOST=127.0.0.1`
+when starting the local server, so redirects and test account writes stay on localhost.
+Python route tests exercise the real `thegreatgallery.art` Host header separately.
 
 Env vars on Render: `DATABASE_URL` (Postgres — SQLite files don't survive deploys) and `SECRET_KEY` (required).
 

@@ -1,0 +1,10 @@
+<script id="gallery-config" type="application/json">{{ {
+  'userId': fa_current.id if fa_current else none,
+  'csrf': fa_csrf() if fa_current else '',
+  'ids': gallery_ids,
+  'api': url_for('fineart_auth.api_gallery'),
+  'gallery': url_for('fineart_auth.my_gallery'),
+  'login': url_for('fineart_auth.login'),
+  'signup': url_for('fineart_auth.signup')
+}|tojson }}</script>
+<script src="{{ url_for('static', filename='gallery/gallery.js') }}?v=1"></script>

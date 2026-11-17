@@ -1,0 +1,10 @@
+{% macro save_button(kind, item_id, button_id='', compact=false, remove_label=false) %}
+{% set saved = gallery_saved(kind, item_id) %}
+<form class="gg-save-form" method="post" action="{{ url_for('fineart_auth.save_item') }}">
+  <input type="hidden" name="csrf" value="{{ fa_csrf() if fa_current else '' }}">
+  <input type="hidden" name="kind" value="{{ kind }}"><input type="hidden" name="id" value="{{ item_id }}">
+  <input type="hidden" name="action" value="{{ 'remove' if saved else 'add' }}">
+  <input type="hidden" name="next" value="{{ request.full_path.rstrip('?') }}">
+  <button type="submit" class="gg-save{{ ' is-saved' if saved }}{{ ' gg-save-compact' if compact }}" {% if button_id %}id="{{ button_id }}"{% endif %} data-gallery-kind="{{ kind }}" data-gallery-id="{{ item_id }}" {% if remove_label %}data-remove-label="Remove"{% endif %} aria-pressed="{{ 'true' if saved else 'false' }}">{{ 'Remove' if remove_label else '♥ In your gallery' if saved else '♡ Add to my gallery' }}</button>
+</form>
+{% endmacro %}

@@ -1,0 +1,27 @@
+/* One personal gallery across the three collections. */
+.gg-account-links{display:flex;align-items:center;gap:16px;flex-shrink:0;font:500 14px/1.3 system-ui,sans-serif}
+.gg-account-links a{text-decoration:none!important}.gg-account-links .gg-login{color:inherit;white-space:nowrap}
+.gg-account-links .gg-create{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#f4cb70;color:#35271b;border:1px solid #f4cb70;border-radius:7px;padding:11px 15px;white-space:nowrap;font-weight:650}
+.gg-account-links .gg-profile{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#f5eddd;color:#742f3e;border:1px solid #d8c9b5;font-family:Georgia,serif;font-size:21px}
+.gg-header-count{background:#fff8dc;border-radius:20px;min-width:24px;padding:3px 5px;text-align:center;font-size:11px}
+.gg-account-links a:focus-visible,.gg-button:focus-visible,.gg-save:focus-visible{outline:3px solid #c58247;outline-offset:4px}
+.gg-invitation{box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:30px;max-width:1400px;margin:36px auto;padding:30px 36px;background:#f7efdf;color:#322d29;border:1px solid #d8c9b5;border-radius:12px;text-align:left;font:15px/1.65 system-ui,sans-serif}
+.gg-invitation .gg-eyebrow,.gg-eyebrow{font:650 11px/1.4 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.16em;color:#854658;margin:0 0 10px}
+.gg-invitation h2{font:400 clamp(24px,3vw,32px)/1.2 Georgia,serif;margin:0 0 12px;color:#322d29;letter-spacing:-.025em}.gg-invitation p:last-child{margin:0;max-width:630px}
+.gg-invitation-actions{display:flex;flex-direction:column;align-items:center;gap:10px;flex-shrink:0}.gg-invitation-actions>a:last-child:not(.gg-button){font-size:12px;color:#742f3e;text-underline-offset:3px}
+.gg-button{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#742f3e;color:#fff8ed!important;border:1px solid #742f3e;border-radius:6px;padding:13px 20px;font:550 14px/1.35 system-ui,sans-serif;text-decoration:none;cursor:pointer;white-space:normal}
+.gg-button:hover{background:#58202d}.gg-button:disabled{opacity:.6;cursor:wait}
+.gg-save-form{display:inline-block;margin:0;vertical-align:middle}.gg-save{border:1px solid #cbb6a4;background:#fff8eb;color:#742f3e;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;padding:11px 15px;font:550 13px/1.3 system-ui,sans-serif;cursor:pointer;min-height:40px}
+.gg-save.is-saved{background:#742f3e;border-color:#742f3e;color:#fff8ed}.gg-save:disabled{opacity:.6;cursor:wait}.gg-save-compact{margin-top:15px;padding:8px 11px;font-size:12px}.work-card .gg-save-form{display:block}
+.detail-hero>.gg-save-form{margin-top:18px;margin-bottom:8px}.practice>.gg-save{margin:0 0 22px}
+.gg-import-notice{background:#fff4d4;border:1px solid #d6bb7c;padding:24px;display:flex;align-items:center;gap:25px;justify-content:space-between;border-radius:8px;margin:25px 0}.gg-import-notice[hidden]{display:none}.gg-import-notice h2{font:400 24px/1.2 Georgia,serif;margin:0 0 8px}.gg-import-notice p{font:14px/1.6 system-ui,sans-serif;margin:0}
+#gallery-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:10000;background:#fff8eb;border:1px solid #cbb6a4;box-shadow:0 8px 35px #0003;color:#322d29;padding:17px 22px;border-radius:9px;width:max-content;max-width:calc(100vw - 32px);box-sizing:border-box;display:flex;align-items:center;gap:20px;font:14px/1.5 system-ui,sans-serif}
+#gallery-toast[hidden]{display:none}#gallery-toast a,#gallery-toast button{color:#742f3e;font-weight:650;white-space:nowrap}#gallery-toast button{background:none;border:0;text-decoration:underline;cursor:pointer;font:inherit}
+.site-header:has(.gg-account-links){flex-wrap:wrap;gap:18px;max-width:1400px}.site-header:has(.gg-account-links)>nav{order:3;width:100%;justify-content:center;border-top:1px solid #e1d7c7;padding-top:14px}
+.site-header>.gg-account-links{margin-left:auto}
+@media(min-width:901px){body>.top:has(.gg-account-links){gap:18px}.top .gg-account-links{margin-left:auto}}
+@media(max-width:900px){.top:has(.gg-account-links){height:auto;min-height:78px;flex-wrap:wrap;gap:15px;padding-top:18px;padding-bottom:18px}.top .gg-account-links{margin-left:auto}.top .brand-sub{display:none}}
+@media(max-width:620px){.top:has(.gg-account-links){justify-content:center}.top:has(.gg-account-links)>.left{width:100%;justify-content:space-between}.top .gg-account-links{width:100%;margin:0;justify-content:space-between}.site-header>.gg-account-links{width:100%;justify-content:space-between}.gg-invitation{padding:25px;flex-direction:column;align-items:flex-start;margin:25px auto;gap:22px}.gg-invitation-actions{align-items:flex-start}.gg-import-notice{align-items:flex-start;flex-direction:column}#gallery-toast{gap:10px;flex-wrap:wrap}.gg-account-links{font-size:13px}.site-header:has(.gg-account-links)>nav{flex-wrap:wrap}}
+.card:focus-within .heart{opacity:1}
+@media(hover:none){.card .heart{opacity:1;width:44px;height:44px}}
+@media(max-width:430px){.top:has(.gg-account-links) .brand-text{display:block;font-size:1rem}.top:has(.gg-account-links) .brand-sub{display:none}}
