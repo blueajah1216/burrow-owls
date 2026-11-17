@@ -101,6 +101,35 @@ Tables `fa_users` and `fa_favorites` are created by `db.create_all()`. Anonymous
 
 Env vars on Render: `DATABASE_URL` (Postgres — SQLite files don't survive deploys) and `SECRET_KEY` (required).
 
+### Gallery visitor analytics
+
+Umami Cloud tracks public pages on **thegreatgallery.art** only: paintings, games,
+photography and music practice. The private dashboard is at https://cloud.umami.is/.
+The website ID in `galleryhost.py` is public; it is separate from the account ID.
+`UMAMI_WEBSITE_ID` optionally overrides it; setting it to an empty value disables tracking.
+The family site, Render preview hosts and account/profile pages have no tracker.
+Search parameters, URL fragments and referrer queries are removed. No login IDs,
+form contents, microphone data or session replay are sent. The tracker respects
+Do Not Track and Umami's `localStorage['umami.disabled'] = '1'` opt-out.
+
+Umami reports estimated unique visitors, approximate countries/regions/cities,
+popular pages and visit duration. Visitors are browser/network estimates, not a
+count of identifiable people. VPNs and blockers affect results. Standard visit
+duration is based on event timestamps and can include gaps between events.
+For time on a single practice page, `static/fineart/analytics.js` sends an
+`engagement` event with numeric `seconds` and a `section` (paintings, photography,
+games, music). Sum `seconds` in event data to see visible-page time; divide by
+visits for a per-visit estimate. These are incremental batches every 60 seconds
+and when a page is hidden or left, not cumulative totals. Hidden tabs add no time;
+visible time does not prove attention. Final seconds may be lost on abrupt exit.
+Engagement events count toward the plan's event limit and affect bounce/visit
+duration metrics; pageview events remain separate. Counts begin after deployment.
+
+QA: with Flask serving port 5057, run `node analytics_build/verify_browser.cjs`.
+It loads the official tracker but intercepts all collection requests so test
+visits do not appear in the live dashboard, and saves screenshots under
+`/private/tmp/gallery-analytics-qa`.
+
 ### /fineart/history — Art Through History
 
 A tree-shaped timeline (`/fineart/history`) of 43 events from the Persian Wars to the Moon landing and the Vietnam War, each with an event page (`/fineart/history/<slug>`) of ~10–18 artworks; paintings link back to their events ("Part of history").

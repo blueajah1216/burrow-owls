@@ -56,6 +56,11 @@ def _strip(u):
 
 
 def init_gallery_host(app):
+    # Public tracking ID, not an account ID or API credential. An empty override
+    # disables analytics without changing templates.
+    app.config.setdefault("UMAMI_WEBSITE_ID", os.environ.get(
+        "UMAMI_WEBSITE_ID", "396a7fd0-b7ee-462b-992d-41f2b601cd8a"))
+
     def fa_url_for(endpoint, **values):
         u = flask_url_for(endpoint, **values)
         return _strip(u) if is_gallery_host() and not values.get("_external") else u
@@ -64,6 +69,12 @@ def init_gallery_host(app):
 
     @app.context_processor
     def _base():
-        return {"fa_base": "" if is_gallery_host() else "/fineart"}
+        return {
+            "fa_base": "" if is_gallery_host() else "/fineart",
+            "gallery_analytics_id": app.config["UMAMI_WEBSITE_ID"] if (
+                is_gallery_host() and request.endpoint and
+                request.blueprint in ("fineart", "photo", "choir")
+            ) else None,
+        }
 
     app.wsgi_app = GalleryHostMiddleware(app.wsgi_app)
