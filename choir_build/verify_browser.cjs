@@ -4,7 +4,7 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const {chromium} = require('playwright');
-const base = process.env.CHOIR_TEST_URL || 'http://127.0.0.1:5057/fineart/music';
+const base = process.env.CHOIR_TEST_URL || 'http://127.0.0.1:5057/fineart/music/practice';
 const artifacts = process.env.CHOIR_TEST_ARTIFACTS || '/private/tmp/gallery-choir-qa';
 fs.mkdirSync(artifacts, {recursive:true});
 (async () => {

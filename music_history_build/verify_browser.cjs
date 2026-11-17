@@ -14,6 +14,7 @@ async function routePreview(context) {
     const url = new URL(request.url());
     if (url.origin !== base) return route.abort();
     const response = await route.fetch({
+      maxRedirects:0,
       url:`${preview}${url.pathname}${url.search}`,
       headers:{...request.headers(),host:'thegreatgallery.art'},
     });
@@ -33,6 +34,29 @@ async function routePreview(context) {
     const visible = () => page.locator('[data-item]:visible').count();
     const noOverflow = async () => assert(await page.evaluate(() =>
       document.documentElement.scrollWidth <= innerWidth), `Overflow on ${page.url()}`);
+    await page.goto(`${base}/music`);
+    assert.equal(await page.locator('.music-destination').count(), 3);
+    assert.deepEqual(await page.locator('.music-destination').evaluateAll(cards => cards.map(c => new URL(c.href).pathname)),
+      ['/music/concerts','/music/history','/music/practice']);
+    const sizes = await page.locator('.music-destination').evaluateAll(cards => cards.map(c => {
+      const rect = c.getBoundingClientRect(); return {width:rect.width,height:rect.height};
+    }));
+    assert(sizes.every(s => Math.abs(s.width-sizes[0].width)<1 && Math.abs(s.height-sizes[0].height)<1));
+    await noOverflow();
+    await page.screenshot({path:`${artifacts}/desktop-music-landing.png`,fullPage:true});
+    for (const target of ['/music/concerts','/music/history','/music/practice']) {
+      await page.goto(`${base}/music`);
+      await page.locator(`.music-destination[href="${target}"]`).click();
+      assert.equal(new URL(page.url()).pathname, target);
+      assert(await page.locator('a[href="/music"]').count());
+    }
+    for (const width of [768,390,320]) {
+      await page.setViewportSize({width,height:844});
+      await page.goto(`${base}/music`);
+      await noOverflow();
+      await page.screenshot({path:`${artifacts}/${width}-music-landing.png`,fullPage:true});
+    }
+    await page.setViewportSize({width:1440,height:1050});
     await page.goto(`${base}/music/history`);
     assert.equal(await visible(), 100);
     await page.locator('.site-header a', {hasText:'Seattle concerts'}).click();
@@ -97,7 +121,7 @@ async function routePreview(context) {
       await page.screenshot({path:`${artifacts}/${width}-composer.png`,fullPage:true});
     }
     await page.setViewportSize({width:390,height:844});
-    await page.goto(`${base}/music`);
+    await page.goto(`${base}/music/practice`);
     await page.waitForFunction(() => window.choirState);
     await page.locator('#play:not(:disabled)').waitFor();
     assert.equal(await page.locator('.song-option').count(), 92);
@@ -106,11 +130,14 @@ async function routePreview(context) {
     await page.locator('#play').click();
     await noOverflow();
     await page.screenshot({path:`${artifacts}/mobile-discovery.png`,fullPage:true});
-    await page.locator('.music-history-invitation').click();
+    await page.locator('.practice-navigation a', {hasText:'Music history'}).click();
     assert.match(page.url(), /\/music\/history$/);
     const nojs = await browser.newContext({javaScriptEnabled:false,reducedMotion:'reduce',viewport:{width:390,height:844}});
     await routePreview(nojs);
     const fallback = await nojs.newPage();
+    await fallback.goto(`${base}/music`);
+    assert.equal(await fallback.locator('.music-destination').count(), 3);
+    await fallback.locator('.music-destination[href="/music/history"]').click();
     await fallback.goto(`${base}/music/history`);
     await fallback.locator('#history-search').fill('dvorak');
     await fallback.locator('.filter-submit').click();

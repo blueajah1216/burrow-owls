@@ -13,8 +13,9 @@ import json
 import re
 import unicodedata
 from datetime import date, datetime, timedelta
+from urllib.parse import urlencode
 
-from flask import Blueprint, render_template, request
+from flask import Blueprint, redirect, render_template, request, url_for
 
 bp = Blueprint("music", __name__, url_prefix="/music")
 
@@ -239,8 +240,16 @@ def init_music(app, db, ctx_fn):
         if request.endpoint in ("music.music_home", "music.music_search"):
             music_ingest.refresh_if_stale(app, db)
 
-    @bp.get("")
     @bp.get("/")
+    @bp.get("")
+    def music_index():
+        if "song" in request.args:
+            from galleryhost import is_gallery_host
+            query = urlencode(request.args.to_dict(flat=False), doseq=True)
+            destination = "/music/practice" if is_gallery_host() else url_for("choir.index")
+            return redirect(destination + "?" + query, code=301)
+        return render_template("music_history/index.html")
+
     @bp.get("/concerts")
     def music_home():
         today = date.today()

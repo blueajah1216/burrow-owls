@@ -29,6 +29,7 @@
       <hr>
       <a class="nav" href="{{ url_for('fineart.index') }}">Paintings</a>
       <a class="nav" href="{{ url_for('photo.index') }}">Photography</a>
+      <a class="nav" href="{{ url_for('music.music_index') }}">Music overview</a>
       <a class="nav" href="{{ url_for('choir.index') }}">Music practice</a>
       <a class="nav" href="{{ url_for('music.music_home') }}">Seattle concerts</a>
       {% else %}
@@ -73,7 +74,7 @@
 
       <hr>
       <a class="nav" href="/wine">🍷 Wine</a>
-      <a class="nav" href="/music">🎻 Classical Music</a>
+      <a class="nav" href="{{ url_for('music.music_index') }}">🎵 Music</a>
       {% endif %}
       <a class="nav sub" href="{{ url_for('music.history') }}">Music Through History</a>
       <a class="nav sub" href="{{ url_for('music.history', view='composers') }}">50 Composers</a>

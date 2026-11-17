@@ -23,6 +23,7 @@
     <a href="{{ url_for('fineart.index') }}">Paintings</a>
     <a href="{{ url_for('photo.index') }}">Photography</a>
     <a href="{{ url_for('fineart.games') }}">Art games</a>
+    <a href="{{ url_for('music.music_index') }}">Music overview</a>
     <a href="{{ url_for('choir.index') }}" aria-current="page">Music practice</a>
     <a href="{{ url_for('music.history') }}">Music history</a>
     <a href="{{ url_for('music.history', view='composers') }}">50 composers</a>
@@ -31,11 +32,11 @@
   <span class="section-label">THE MUSIC ROOM</span>
 </header>
 <main>
+  <div class="practice-navigation">{% include 'music_history/navigation.html' %}</div>
   <section class="intro">
     <div><p class="eyebrow">A LITTLE PRACTICE. A LOT OF HARMONY.</p><h1>Find your voice.<br><em>Sing together.</em></h1></div>
     <div class="intro-copy"><p>Familiar songs. Four voices. One lovely sound.</p><p>Follow the notes, find your part, and learn how it fits with everyone else.</p><a href="#how-to">New to harmony? Start here <span aria-hidden="true">↘</span></a></div>
   </section>
-  {% include 'music_history/invitation.html' %}
   <div class="room-layout">
     <aside class="library" aria-labelledby="library-heading">
       <div class="library-heading"><h2 id="library-heading">The songbook</h2><span>{{ songs|length }} songs</span></div>

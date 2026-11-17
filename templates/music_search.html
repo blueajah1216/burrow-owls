@@ -3,7 +3,6 @@
 {% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=2"><link rel="stylesheet" href="{{ url_for('static', filename='music_history/concerts.css') }}?v=1">{% endblock %}
 {% block content %}
 <div class="concert-page page-width">
-{% include 'music_history/navigation.html' %}
 
 <header class="concert-hero"><p class="eyebrow">Performance search · Worldwide</p><h1>Where is it playing?</h1>
 <p class="muted">Search performances by major performers worldwide in the {{ season }} concert season. For local listings, visit the <a href="{{ url_for('music.music_home') }}">Seattle concert calendar</a>.</p></header>

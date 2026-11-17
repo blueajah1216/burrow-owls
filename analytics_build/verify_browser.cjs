@@ -38,13 +38,13 @@ fs.mkdirSync(artifacts, {recursive:true});
     const page = await context.newPage();
     page.on('pageerror', e => errors.push(e.message));
     await page.clock.install();
-    await page.goto(`${origin}/music?search=PRIVATE-SEARCH#PRIVATE-FRAGMENT`);
+    await page.goto(`${origin}/music/practice?search=PRIVATE-SEARCH#PRIVATE-FRAGMENT`);
     await page.waitForFunction(() => window.umami && window.choirState);
     await page.waitForFunction(() => document.querySelector('#play:not(:disabled)'));
     await page.waitForTimeout(1000);
     assert.equal(await page.locator('#gallery-analytics').getAttribute('data-website-id'),
       '396a7fd0-b7ee-462b-992d-41f2b601cd8a');
-    assert(events.some(e => e.payload?.url === '/music' && !e.payload?.name),
+    assert(events.some(e => e.payload?.url === '/music/practice' && !e.payload?.name),
       `Initial music pageview: ${JSON.stringify(events)}, blocked: ${JSON.stringify(blocked)}`);
     assert(!JSON.stringify(events).includes('PRIVATE-'), 'Query/fragment redaction');
 
@@ -115,12 +115,12 @@ fs.mkdirSync(artifacts, {recursive:true});
       assert.equal(await page.locator('#gallery-analytics').count(), 0, `Excluded ${path}`);
     }
     // Verify host scoping through a direct local response, without the gallery route override.
-    const response = await context.request.get('http://127.0.0.1:5057/fineart/music');
+    const response = await context.request.get('http://127.0.0.1:5057/fineart/music/practice');
     assert(!(await response.text()).includes('cloud.umami.is/script.js'));
     assert(!JSON.stringify(events).includes('PRIVATE-'), 'Queries never leak through later referrers');
     // The music room remains usable when an analytics blocker rejects the tracker.
     await page.route('https://cloud.umami.is/script.js', route => route.abort());
-    await page.goto(`${origin}/music`);
+    await page.goto(`${origin}/music/practice`);
     await page.waitForFunction(() => window.choirState && !document.querySelector('#play').disabled);
     await page.locator('#play').click();
     await page.waitForFunction(() => window.choirState().playing);

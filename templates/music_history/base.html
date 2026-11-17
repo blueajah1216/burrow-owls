@@ -16,14 +16,14 @@
   <header class="site-header">
     <a class="music-brand" href="{{ url_for('fineart.index') }}"><span class="brand-icon" aria-hidden="true">♬</span><span>The Great Gallery<small>A life in music</small></span></a>
     <nav aria-label="Music navigation">
-      <a href="{{ url_for('choir.index') }}">Music practice</a>
+      <a href="{{ url_for('music.music_index') }}" {% if request.endpoint == 'music.music_index' %}aria-current="page"{% endif %}>Music overview</a>
       <a href="{{ url_for('music.music_home') }}" {% if request.endpoint == 'music.music_home' %}aria-current="page"{% endif %}>Seattle concerts</a>
-      <a href="{{ url_for('music.history') }}" {% if request.endpoint == 'music.history' and view|default('works') == 'works' %}aria-current="page"{% endif %}>Music history</a>
-      <a href="{{ url_for('music.history', view='composers') }}" {% if view|default('') == 'composers' or request.endpoint == 'music.history_composer' %}aria-current="page"{% endif %}>Composers</a>
+      <a href="{{ url_for('music.history') }}" {% if request.endpoint in ('music.history', 'music.history_piece', 'music.history_composer') %}aria-current="page"{% endif %}>Music history</a>
+      <a href="{{ url_for('choir.index') }}">Practice</a>
     </nav>
   </header>
   <main id="main">{% block content %}{% endblock %}</main>
-  <footer class="site-footer"><a href="{{ url_for('music.history') }}">Music Through History</a><p>A curated introduction to Western classical music. A canon is a conversation that keeps changing.</p><a href="{{ url_for('music.music_home') }}">Find a concert in Seattle →</a></footer>
+  <footer class="site-footer"><a href="{{ url_for('music.music_index') }}">The Great Gallery · Music</a><p>A place to listen, explore, and make music.</p><a href="{{ url_for('fineart.index') }}">Back to the Gallery →</a></footer>
   {% block scripts %}{% endblock %}
 </body>
 </html>

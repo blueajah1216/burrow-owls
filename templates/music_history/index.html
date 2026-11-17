@@ -1,0 +1,34 @@
+{% extends 'music_history/base.html' %}
+{% block title %}Music · The Great Gallery{% endblock %}
+{% block description %}Three ways into music: discover concerts in the Seattle area, explore the history of music, or practice singing with four-part scores.{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='music_history/landing.css') }}?v=1">{% endblock %}
+{% block content %}
+<div class="music-landing page-width">
+  <header class="landing-hero">
+    <p class="eyebrow">The music room</p>
+    <h1>A place for <em>music.</em></h1>
+    <p>Hear it live. Discover its story. Make it your own.</p>
+    <p class="landing-intro">Three ways to spend a little more time with music. Where would you like to begin?</p>
+  </header>
+  <nav class="music-destinations" aria-label="Explore music">
+    <a class="music-destination" href="{{ url_for('music.music_home') }}">
+      <div class="destination-art" aria-hidden="true">
+        <svg viewBox="0 0 300 150" fill="none"><path d="M62 128V88a88 88 0 0 1 176 0v40M78 128V88a72 72 0 0 1 144 0v40M94 128V88a56 56 0 0 1 112 0v40" stroke="currentColor"/><path d="M56 128H244M150 60V119M145 65L150 60L155 65" stroke="currentColor"/><path d="M116 145H184M126 136H174" stroke="currentColor" opacity=".45"/><circle cx="150" cy="99" r="4" fill="currentColor"/></svg>
+      </div>
+      <div class="destination-copy"><span class="destination-kicker">Hear it live</span><h2>Concerts</h2><p>Find your next evening of classical music, from chamber recitals to the full orchestra.</p><span class="destination-detail">Seattle and the surrounding area</span><span class="destination-action">Browse Seattle concerts <span aria-hidden="true">↗</span></span></div>
+    </a>
+    <a class="music-destination" href="{{ url_for('music.history') }}">
+      <div class="destination-art" aria-hidden="true">
+        <svg viewBox="0 0 300 150" fill="none"><path d="M36 45H264M36 60H264M36 75H264M36 90H264M36 105H264" stroke="currentColor" opacity=".22"/><path d="M48 100C79 100 74 45 103 45S133 108 158 88S188 43 214 60S237 88 253 48" stroke="currentColor" stroke-width="2"/><circle cx="48" cy="100" r="5" fill="currentColor"/><circle cx="103" cy="45" r="5" fill="currentColor"/><circle cx="158" cy="88" r="5" fill="currentColor"/><circle cx="214" cy="60" r="5" fill="currentColor"/><circle cx="253" cy="48" r="5" fill="currentColor"/></svg>
+      </div>
+      <div class="destination-copy"><span class="destination-kicker">Follow the story</span><h2>Music history</h2><p>Meet the composers and discover the pieces that changed what music could be.</p><span class="destination-detail">100 landmark works · 50 composers</span><span class="destination-action">Explore music history <span aria-hidden="true">↗</span></span></div>
+    </a>
+    <a class="music-destination" href="{{ url_for('choir.index') }}">
+      <div class="destination-art" aria-hidden="true">
+        <svg viewBox="0 0 300 150" fill="none"><path d="M35 45C63 15 83 75 112 45S160 15 188 45S236 75 265 45M35 65C63 35 83 95 112 65S160 35 188 65S236 95 265 65M35 85C63 55 83 115 112 85S160 55 188 85S236 115 265 85M35 105C63 75 83 135 112 105S160 75 188 105S236 135 265 105" stroke="currentColor" stroke-width="1.5"/><path d="M150 20V130" stroke="currentColor" opacity=".25"/></svg>
+      </div>
+      <div class="destination-copy"><span class="destination-kicker">Make some music</span><h2>Practice</h2><p>Find your voice with familiar songs, moving sheet music, and a part to sing along with.</p><span class="destination-detail">Four voices · At your own pace</span><span class="destination-action">Open the practice room <span aria-hidden="true">↗</span></span></div>
+    </a>
+  </nav>
+</div>
+{% endblock %}

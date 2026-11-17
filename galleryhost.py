@@ -2,7 +2,7 @@
 
 On that host, /p/x is handled as /fineart/p/x, links drop the /fineart prefix, and any old /fineart/... URL
 redirects to the clean one. Music history, concert listings, and photography keep
-their public paths; /music itself remains the singing practice room.
+their public paths. /music is the landing page for concerts, history, and practice.
 """
 import os
 
@@ -44,8 +44,11 @@ class GalleryHostMiddleware:
             return self.wsgi(environ, start_response)
         if path == "/robots.txt" or path.startswith("/static/") or path == "/photography" or path.startswith("/photography/"):
             return self.wsgi(environ, start_response)
-        if path.startswith("/music/") and path not in ("/music/", "/music/library.json") and not path.startswith("/music/sources/"):
-            return self.wsgi(environ, start_response)
+        if path == "/music" or path.startswith("/music/"):
+            choir_path = (path.rstrip("/") == "/music/practice" or
+                          path == "/music/library.json" or path.startswith("/music/sources/"))
+            if not choir_path:
+                return self.wsgi(environ, start_response)
         environ["PATH_INFO"] = "/fineart" + path
         return self.wsgi(environ, start_response)
 

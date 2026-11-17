@@ -4,7 +4,6 @@
 {% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='music_history/discovery.css') }}?v=2"><link rel="stylesheet" href="{{ url_for('static', filename='music_history/concerts.css') }}?v=1">{% endblock %}
 {% block content %}
 <div class="concert-page page-width">
-{% include 'music_history/navigation.html' %}
 
 {% macro qs(v=None, d=None) -%}
   ?view={{ v or view }}&date={{ (d or anchor).isoformat() }}{% for c in cats %}&cat={{ c }}{% endfor %}
@@ -35,7 +34,6 @@
 <p class="concert-lede">Classical music, close to home.</p>
 <p class="muted">This calendar lists concerts in Seattle and the surrounding area only: symphonic, chamber, choral, solo, and opera performances.</p></header>
 
-{% include 'music_history/invitation.html' %}
 
 {# ── Piece search ── #}
 <p class="mu-search-note">Looking beyond Seattle? Search the separate worldwide performance listings by piece.</p>

@@ -94,15 +94,18 @@ class HistoryChecks(unittest.TestCase):
     def test_missing_pages_and_discovery(self):
         for path in ["/music/history/pieces/missing", "/music/history/composers/missing"]:
             self.assertEqual(self.client.get(path).status_code, 404)
-        for path in ["/music", "/music/concerts", "/music/search", "/", "/photography"]:
+        for path in ["/music", "/music/practice", "/music/concerts", "/music/search"]:
             soup = self.get(path)
             self.assertTrue(soup.select('a[href="/music/history"]'), path)
+        for path in ["/", "/photography"]:
+            self.assertTrue(self.get(path).select('a[href="/music"]'), path)
 
     def test_gallery_host_music_routes(self):
-        practice = self.get("/music")
+        practice = self.get("/music/practice")
         self.assertTrue(practice.select_one("#play"))
         self.assertEqual(len(practice.select(".song-option")), 92)
-        self.assertEqual(practice.select_one(".music-history-invitation")["href"], "/music/history")
+        self.assertFalse(practice.select_one(".music-history-invitation"))
+        self.assertTrue(practice.select('a[href="/music"]'))
         self.assertTrue(practice.select('a[href="/music/concerts"]'))
         history = self.get("/music/history")
         self.assertIn("The Great Gallery", history.select_one("title").get_text())
@@ -138,6 +141,27 @@ class HistoryChecks(unittest.TestCase):
         self.assertEqual(www.status_code, 301)
         self.assertEqual(www.headers["Location"], "https://thegreatgallery.art/music/history")
 
+
+    def test_music_landing_has_three_equal_children(self):
+        with patch("music_ingest.refresh_if_stale") as refresh:
+            for path in ["/music", "/music/"]:
+                page = self.get(path)
+                cards = page.select(".music-destination")
+                self.assertEqual([c["href"] for c in cards],
+                    ["/music/concerts", "/music/history", "/music/practice"])
+                self.assertEqual([c.select_one("h2").get_text() for c in cards],
+                    ["Concerts", "Music history", "Practice"])
+                self.assertFalse(page.select_one("#play"))
+                self.assertFalse(page.select_one(".mu-grid"))
+                self.assertTrue(all(c.select_one(".destination-action") for c in cards))
+            refresh.assert_not_called()
+        response = self.client.get("/music?song=hava-nagila", base_url="https://thegreatgallery.art")
+        self.assertEqual(response.status_code, 301)
+        self.assertEqual(response.headers["Location"], "/music/practice?song=hava-nagila")
+        for path in ["/music/concerts", "/music/history", "/music/practice"]:
+            page = self.get(path)
+            for target in ["/music", "/music/concerts", "/music/history", "/music/practice"]:
+                self.assertTrue(page.select(f'a[href="{target}"]'), (path, target))
 
     def test_old_music_links_redirect_to_gallery(self):
         for host in ["theburrowowls.com", "www.theburrowowls.com"]:

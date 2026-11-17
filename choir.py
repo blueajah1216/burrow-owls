@@ -13,8 +13,8 @@ def init_choir(app):
     app.register_blueprint(bp)
 
 
-@bp.route("")
-@bp.route("/")
+@bp.route("/practice/")
+@bp.route("/practice")
 def index():
     raw_catalog = (DATA / "library.json").read_bytes()
     catalog = json.loads(raw_catalog)
