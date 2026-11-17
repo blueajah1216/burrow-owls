@@ -1,0 +1,34 @@
+% New practice arrangement dedicated to the public domain under CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:We Wish You a Merry Christmas
+C:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.
+M:3/4
+L:1/4
+Q:1/4=108
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:C
+[V:S1V1] G, | C C/ D/ C/ B,/ | A, A, A, | D D/ E/ D/ C/ |
+[V:S1V2] G, | G, G,/ G,/ G,/ G,/ | A, A, A, | A, A,/ A,/ A,/ A,/ |
+[V:S2V1] E, | E, E,/ E,/ E,/ E,/ | F, F, F, | ^F, ^F,/ ^F,/ ^F,/ ^F,/ |
+[V:S2V2] C, | C, C,/ C,/ C,/ C,/ | C, C, C, | D, D,/ D,/ D,/ D,/ |
+[V:S1V1] B, G, G, | E E/ F/ E/ D/ | C A, G,/ G,/ | A, D B, |
+[V:S1V2] B, G, G, | G, G,/ G,/ G,/ G,/ | A, A, F,/ F,/ | D, D, D, |
+[V:S2V1] G, D, D, | E, E,/ E,/ E,/ E,/ | F, F, C,/ C,/ | B,, B,, B,, |
+[V:S2V2] D, B,, B,, | C, C,/ C,/ C,/ C,/ | C, C, A,,/ A,,/ | G,, G,, G,, |
+[V:S1V1] C2 G, | C C C | B,2 B, | C B, A, |
+[V:S1V2] E,2 E, | E, E, E, | D,2 D, | C, C, C, |
+[V:S2V1] C,2 C, | C, C, C, | B,,2 B,, | A,, A,, A,, |
+[V:S2V2] G,,2 G,, | G,, G,, G,, | G,,2 G,, | F,, F,, F,, |
+[V:S1V1] G,2 D | E D/ D/ C/ C/ | G G, G,/ G,/ | A, D B, |
+[V:S1V2] C,2 E, | E, E,/ E,/ E,/ E,/ | G, G, G,/ G,/ | G, G, G, |
+[V:S2V1] G,,2 G,, | G,, G,,/ G,,/ G,,/ G,,/ | E, E, E,/ E,/ | B,, B,, B,, |
+[V:S2V2] E,,2 C,, | C,, C,,/ C,,/ C,,/ C,,/ | C,, C,, C,,/ C,,/ | D,, D,, D,, |
+[V:S1V1] C2 |]
+[V:S1V2] G,2 |]
+[V:S2V1] C,2 |]
+[V:S2V2] E,,2 |]

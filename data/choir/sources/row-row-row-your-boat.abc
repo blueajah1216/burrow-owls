@@ -1,0 +1,22 @@
+% New practice arrangement dedicated to the public domain under CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Row, Row, Row Your Boat
+C:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.
+M:6/8
+L:1/8
+Q:1/4=120
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:C
+[V:S1V1] C3 C3 | C2 D E3 | E2 D E2 F | G6 |
+[V:S1V2] C3 C3 | C2 C C3 | C2 C C2 C | C6 |
+[V:S2V1] E,3 E,3 | E,2 E, E,3 | E,2 E, E,2 E, | E,6 |
+[V:S2V2] G,,3 G,,3 | G,,2 G,, G,,3 | G,,2 G,, G,,2 G,, | G,,6 |
+[V:S1V1] c c c G G G | E E E C C C | G2 F E2 D | C6 |]
+[V:S1V2] C C C C C C | C C C C C C | B,2 B, B,2 B, | C6 |]
+[V:S2V1] E, E, E, E, E, E, | E, E, E, E, E, E, | D,2 D, D,2 D, | E,6 |]
+[V:S2V2] G,, G,, G,, G,, G,, G,, | G,, G,, G,, G,, G,, G,, | G,,2 G,, G,,2 G,, | G,,6 |]

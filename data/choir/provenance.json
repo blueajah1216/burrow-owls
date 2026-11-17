@@ -1,0 +1,182 @@
+{
+  "repository": "https://github.com/mzealey/openhymnal",
+  "retrieved": "2026-11-16",
+  "git_tree": "d35811b2d5c9b0bbc5887d60a2936454815416e8",
+  "scores": {
+    "openhymnal-Lo_How_A_Rose_Eer_Blooming-Es_Ist_Ein_Ros_Entsprungen.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Lo_How_A_Rose_Eer_Blooming/Lo_How_A_Rose_Eer_Blooming-Es_Ist_Ein_Ros_Entsprungen.abc",
+      "archive_path": "Complete/Lo_How_A_Rose_Eer_Blooming/Lo_How_A_Rose_Eer_Blooming-Es_Ist_Ein_Ros_Entsprungen.abc",
+      "sha256_utf8": "3703fd0e12995403c6463a040b7c95f250bf597912cbef129034010c737c40f6"
+    },
+    "openhymnal-The_Old_Rugged_Cross-Old_Rugged_Cross.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/The_Old_Rugged_Cross/The_Old_Rugged_Cross-Old_Rugged_Cross.abc",
+      "archive_path": "Complete/The_Old_Rugged_Cross/The_Old_Rugged_Cross-Old_Rugged_Cross.abc",
+      "sha256_utf8": "27a1dc584ec69f481fc89da92d4f344d8eb643ffc43cf1ab5590dcc50faf31ef"
+    },
+    "openhymnal-What_A_Friend_We_Have_In_Jesus-untitled.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/What_A_Friend_We_Have_In_Jesus/What_A_Friend_We_Have_In_Jesus-untitled.abc",
+      "archive_path": "Complete/What_A_Friend_We_Have_In_Jesus/What_A_Friend_We_Have_In_Jesus-untitled.abc",
+      "sha256_utf8": "e9c86a3ad56b3937a4b016fd14a822e5e7aaab9d5ffcac44b060349d845f4b1b"
+    },
+    "openhymnal-See_Amid_The_Winters_Snow-Humility.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/See_Amid_The_Winters_Snow/See_Amid_The_Winters_Snow-Humility.abc",
+      "archive_path": "Complete/See_Amid_The_Winters_Snow/See_Amid_The_Winters_Snow-Humility.abc",
+      "sha256_utf8": "28a7012d8bb844c06080214957b33aa86df92428da9eee4a9583d3cb77cf8700"
+    },
+    "openhymnal-Blessed_Assurance-Blessed_Assurance-Assurance.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Blessed_Assurance/Blessed_Assurance-Blessed_Assurance-Assurance.abc",
+      "archive_path": "Complete/Blessed_Assurance/Blessed_Assurance-Blessed_Assurance-Assurance.abc",
+      "sha256_utf8": "cc19ece735d096bc6f7a4612869bbd60e417eccad81ec4c2decba99bca12a0e4"
+    },
+    "openhymnal-Amazing_Grace-New_Britain.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Amazing_Grace/Amazing_Grace-New_Britain.abc",
+      "archive_path": "Complete/Amazing_Grace/Amazing_Grace-New_Britain.abc",
+      "sha256_utf8": "095045a80c97478db7ae76f23f9f7353ffc9e642c457e266990aac18ec61d646"
+    },
+    "openhymnal-All_Creatures_Of_Our_God_And_King-Lasst_Uns_Erfreuen.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/All_Creatures_Of_Our_God_And_King/All_Creatures_Of_Our_God_And_King-Lasst_Uns_Erfreuen.abc",
+      "archive_path": "Complete/All_Creatures_Of_Our_God_And_King/All_Creatures_Of_Our_God_And_King-Lasst_Uns_Erfreuen.abc",
+      "sha256_utf8": "9c87caebb7c0f77d9f0cdf2ccc213ed343a82a720fb35958690d2927c1c4d902"
+    },
+    "openhymnal-Holy_Holy_Holy-Nicaea.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Holy_Holy_Holy/Holy_Holy_Holy-Nicaea.abc",
+      "archive_path": "Complete/Holy_Holy_Holy/Holy_Holy_Holy-Nicaea.abc",
+      "sha256_utf8": "9aa7190ce2612c3f7b5c2d6aa3c3ae3f8380781a449ee09b4bafda776614e30e"
+    },
+    "openhymnal-Hark_The_Herald_Angels_Sing-Mendelssohn.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Hark_The_Herald_Angels_Sing/Hark_The_Herald_Angels_Sing-Mendelssohn.abc",
+      "archive_path": "Complete/Hark_The_Herald_Angels_Sing/Hark_The_Herald_Angels_Sing-Mendelssohn.abc",
+      "sha256_utf8": "17b57c2326267d9a2c404aaf0caeb08d55c89028c4c725cb2965bd6ae97ba762"
+    },
+    "openhymnal-What_Child_Is_This-Greensleeves.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/What_Child_Is_This/What_Child_Is_This-Greensleeves.abc",
+      "archive_path": "Complete/What_Child_Is_This/What_Child_Is_This-Greensleeves.abc",
+      "sha256_utf8": "ac1df40db69a32bf52557c4a2b4acad8dd8967e04e2f5ac0c2b9e172dd4d645c"
+    },
+    "openhymnal-Joyful_Joyful_We_Adore_Thee-Ode_To_Joy.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Joyful_Joyful_We_Adore_Thee/Joyful_Joyful_We_Adore_Thee-Ode_To_Joy.abc",
+      "archive_path": "Complete/Joyful_Joyful_We_Adore_Thee/Joyful_Joyful_We_Adore_Thee-Ode_To_Joy.abc",
+      "sha256_utf8": "132b9913db8f44d7686a42f1db69938d12cdb1155ca46f4e9095439329c25777"
+    },
+    "openhymnal-It_Came_Upon_A_Midnight_Clear-Carol.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/It_Came_Upon_A_Midnight_Clear/It_Came_Upon_A_Midnight_Clear-Carol.abc",
+      "archive_path": "Complete/It_Came_Upon_A_Midnight_Clear/It_Came_Upon_A_Midnight_Clear-Carol.abc",
+      "sha256_utf8": "88c440b3819a9adc5d9674115414acb9edf1f485cc845e92274409258b3c2606"
+    },
+    "openhymnal-We_Gather_Together-Kremser.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/We_Gather_Together/We_Gather_Together-Kremser.abc",
+      "archive_path": "Complete/We_Gather_Together/We_Gather_Together-Kremser.abc",
+      "sha256_utf8": "b0d79ad5603eca6e8fb4098be1303e537325edbcb49b981459d825a27a76b7c3"
+    },
+    "openhymnal-As_With_Gladness_Men_Of_Old-Dix.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/As_With_Gladness_Men_Of_Old/As_With_Gladness_Men_Of_Old-Dix.abc",
+      "archive_path": "Complete/As_With_Gladness_Men_Of_Old/As_With_Gladness_Men_Of_Old-Dix.abc",
+      "sha256_utf8": "55b9ffb9760ec9c9806e06900d9ad8e6369cfdfeb957f8f33bc97fd58a6e8656"
+    },
+    "openhymnal-Silent_Night-Stille_Nacht.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Silent_Night/Silent_Night-Stille_Nacht.abc",
+      "archive_path": "Complete/Silent_Night/Silent_Night-Stille_Nacht.abc",
+      "sha256_utf8": "a97dc213a9f3a8f7d505480d0eb12bcde400455b027c133281405edcf9a0b15c"
+    },
+    "openhymnal-Rock_of_Ages-Toplady.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Rock_of_Ages/Rock_of_Ages-Toplady.abc",
+      "archive_path": "Complete/Rock_of_Ages/Rock_of_Ages-Toplady.abc",
+      "sha256_utf8": "87682427a73dc02a1e007848eca5b0da8184a1f3c9ebab54c0494b336b66c669"
+    },
+    "openhymnal-God_Rest_Ye_Merry_Gentlemen-God_Rest_Ye_Merry_Gentlemen.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/God_Rest_Ye_Merry_Gentlemen/God_Rest_Ye_Merry_Gentlemen-God_Rest_Ye_Merry_Gentlemen.abc",
+      "archive_path": "Complete/God_Rest_Ye_Merry_Gentlemen/God_Rest_Ye_Merry_Gentlemen-God_Rest_Ye_Merry_Gentlemen.abc",
+      "sha256_utf8": "8daa1d51e8eb6f2b96b89b4e68ea708f588bc82e9fdc0a998c45779fe9bbccd7"
+    },
+    "openhymnal-Angels_We_Have_Heard_On_High-Gloria.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Angels_We_Have_Heard_On_High/Angels_We_Have_Heard_On_High-Gloria.abc",
+      "archive_path": "Complete/Angels_We_Have_Heard_On_High/Angels_We_Have_Heard_On_High-Gloria.abc",
+      "sha256_utf8": "17260d4d7e5c1abc8c85a0b6c1afec7afe7d6690e213a40cea685ab9400dea60"
+    },
+    "openhymnal-Praise_God_From_Whom_All_Blessings_Flow-Old_100th.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Praise_God_From_Whom_All_Blessings_Flow/Praise_God_From_Whom_All_Blessings_Flow-Old_100th.abc",
+      "archive_path": "Complete/Praise_God_From_Whom_All_Blessings_Flow/Praise_God_From_Whom_All_Blessings_Flow-Old_100th.abc",
+      "sha256_utf8": "2e1a5bf3a5002050343dc304f272a85896f521e6790944c6ce49c3802ce427c1"
+    },
+    "openhymnal-O_Come_All_Ye_Faithful-Adeste_Fideles-Portugese_Hymn.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/O_Come_All_Ye_Faithful/O_Come_All_Ye_Faithful-Adeste_Fideles-Portugese_Hymn.abc",
+      "archive_path": "Complete/O_Come_All_Ye_Faithful/O_Come_All_Ye_Faithful-Adeste_Fideles-Portugese_Hymn.abc",
+      "sha256_utf8": "ee5f1208ab18f2293711faeb15dfb0e080fcf132ebc96e902110eb0b7597398e"
+    },
+    "openhymnal-The_First_Noel-The_First_Noel.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/The_First_Noel/The_First_Noel-The_First_Noel.abc",
+      "archive_path": "Complete/The_First_Noel/The_First_Noel-The_First_Noel.abc",
+      "sha256_utf8": "132988da0126c154e7a84d7a297e0929ab743c5dab38ac11e1056427a9a4d0fe"
+    },
+    "openhymnal-I_Heard_The_Bells_On_Christmas_Day-Waltham_Calkin.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/I_Heard_The_Bells_On_Christmas_Day/I_Heard_The_Bells_On_Christmas_Day-Waltham_Calkin.abc",
+      "archive_path": "Complete/I_Heard_The_Bells_On_Christmas_Day/I_Heard_The_Bells_On_Christmas_Day-Waltham_Calkin.abc",
+      "sha256_utf8": "7bfac2dc8919285d2b5b60fea01f2af9c67d0555d59b0c0dbbdfcb91adb74f3b"
+    },
+    "openhymnal-Angels_From_The_Realms_Of_Glory-Regent_Square.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Angels_From_The_Realms_Of_Glory/Angels_From_The_Realms_Of_Glory-Regent_Square.abc",
+      "archive_path": "Complete/Angels_From_The_Realms_Of_Glory/Angels_From_The_Realms_Of_Glory-Regent_Square.abc",
+      "sha256_utf8": "fec79e236ed1cf0c2e91608f07af43626708b5edc3acdf5a2d2cc1185ac32fa2"
+    },
+    "openhymnal-Abide_With_Me-Eventide.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Abide_With_Me/Abide_With_Me-Eventide.abc",
+      "archive_path": "Complete/Abide_With_Me/Abide_With_Me-Eventide.abc",
+      "sha256_utf8": "283bad234d488c437f76748881efaf5a1ba9ff9f38a3e5a3b61c13777db0467a"
+    },
+    "openhymnal-O_Little_Town_Of_Bethlehem-St_Louis.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/O_Little_Town_Of_Bethlehem/O_Little_Town_Of_Bethlehem-St_Louis.abc",
+      "archive_path": "Complete/O_Little_Town_Of_Bethlehem/O_Little_Town_Of_Bethlehem-St_Louis.abc",
+      "sha256_utf8": "7e3ac1b60610e0f55f0364c5fefb02194fb3b61bb1bd0b8f240a857abee669b6"
+    },
+    "openhymnal-It_Is_Well_With_My_Soul-It_Is_Well-Ville_Du_Havre.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/It_Is_Well_With_My_Soul/It_Is_Well_With_My_Soul-It_Is_Well-Ville_Du_Havre.abc",
+      "archive_path": "Complete/It_Is_Well_With_My_Soul/It_Is_Well_With_My_Soul-It_Is_Well-Ville_Du_Havre.abc",
+      "sha256_utf8": "781473a8ce3c3436cb7aa6191b193f4363098eea28a3ed953e502a8725d8aaab"
+    },
+    "openhymnal-O_Come_O_Come_Emmanuel-Veni_Emmanuel.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/O_Come_O_Come_Emmanuel/O_Come_O_Come_Emmanuel-Veni_Emmanuel.abc",
+      "archive_path": "Complete/O_Come_O_Come_Emmanuel/O_Come_O_Come_Emmanuel-Veni_Emmanuel.abc",
+      "sha256_utf8": "21b6f924669bdc38500f3aae88e2518334f43c314a33f7578c4d31ee87a9a8aa"
+    },
+    "openhymnal-Joy_To_The_World-Antioch.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Joy_To_The_World/Joy_To_The_World-Antioch.abc",
+      "archive_path": "Complete/Joy_To_The_World/Joy_To_The_World-Antioch.abc",
+      "sha256_utf8": "2d3f4461027d87ba6cfeb1a17e2e8d1f1153fcb07898d01c6b6cf010fdefdf37"
+    },
+    "openhymnal-In_The_Bleak_MidWinter-Cranham.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/In_The_Bleak_MidWinter/In_The_Bleak_MidWinter-Cranham.abc",
+      "archive_path": "Complete/In_The_Bleak_MidWinter/In_The_Bleak_MidWinter-Cranham.abc",
+      "sha256_utf8": "2081481454c49b959cce28c070258f57bc30459454b910e1ec84d0a5db9399c7"
+    },
+    "openhymnal-For_The_Beauty_Of_The_Earth-Dix.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/For_The_Beauty_Of_The_Earth/For_The_Beauty_Of_The_Earth-Dix.abc",
+      "archive_path": "Complete/For_The_Beauty_Of_The_Earth/For_The_Beauty_Of_The_Earth-Dix.abc",
+      "sha256_utf8": "314f6f63639508f87f7cab9356d9f145097ef47b4c0acc64313a39c079e75657"
+    },
+    "openhymnal-Come_Thou_Fount-Nettleton.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Come_Thou_Fount/Come_Thou_Fount-Nettleton.abc",
+      "archive_path": "Complete/Come_Thou_Fount/Come_Thou_Fount-Nettleton.abc",
+      "sha256_utf8": "b2e31c1d4a8db76dd68e6f88276825fab1e032d97695d25e8f80a529065d7289"
+    },
+    "openhymnal-Be_Thou_My_Vision-Slane.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Be_Thou_My_Vision/Be_Thou_My_Vision-Slane.abc",
+      "archive_path": "Complete/Be_Thou_My_Vision/Be_Thou_My_Vision-Slane.abc",
+      "sha256_utf8": "af899f6dd1b108377381d278c8b7a9404d02159cf5cbbcf92a6224d73927157b"
+    },
+    "openhymnal-Gabriels_Message-Gabriel.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Gabriels_Message/Gabriels_Message-Gabriel.abc",
+      "archive_path": "Complete/Gabriels_Message/Gabriels_Message-Gabriel.abc",
+      "sha256_utf8": "b61b9ff36fd5c70975761494fce93dc4125556203da4309d1392c5c5b1d20b79"
+    },
+    "openhymnal-Were_You_There-Were_You_There.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Were_You_There/Were_You_There-Were_You_There.abc",
+      "archive_path": "Complete/Were_You_There/Were_You_There-Were_You_There.abc",
+      "sha256_utf8": "78d14a69e7e6b8c499f271e2cb6fa13c32923b1007747828226bdd139444837f"
+    },
+    "openhymnal-Nearer_My_God_To_Thee-Bethany.abc": {
+      "source_url": "https://github.com/mzealey/openhymnal/blob/master/Complete/Nearer_My_God_To_Thee/Nearer_My_God_To_Thee-Bethany.abc",
+      "archive_path": "Complete/Nearer_My_God_To_Thee/Nearer_My_God_To_Thee-Bethany.abc",
+      "sha256_utf8": "a01cf37582dd41351ee4ba58e82ce70908935dfbf5939ce6afc1ca7664fa9f75"
+    }
+  }
+}

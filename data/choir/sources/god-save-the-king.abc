@@ -1,0 +1,30 @@
+% New practice arrangement dedicated to the public domain under CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:God Save the King
+C:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.
+M:3/4
+L:1/4
+Q:1/4=84
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:C
+[V:S1V1] C C D | B,3/2 C/ D | E E F | E3/2 D/ C |
+[V:S1V2] C C C | B,3/2 B,/ B, | C C C | C3/2 C/ C |
+[V:S2V1] E, E, E, | D,3/2 D,/ D, | C, C, E, | E,3/2 E,/ E, |
+[V:S2V2] G,, G,, G,, | G,,3/2 G,,/ G,, | G,, G,, G,, | G,,3/2 G,,/ G,, |
+[V:S1V1] D C B, | C3 | G G G | G3/2 F/ E |
+[V:S1V2] B, B, B, | C3 | C C C | C3/2 C/ C |
+[V:S2V1] D, D, D, | E,3 | E, E, E, | E,3/2 E,/ E, |
+[V:S2V2] G,, G,, G,, | G,,3 | G,, G,, G,, | G,,3/2 G,,/ G,, |
+[V:S1V1] F F F | F3/2 E/ D | E F/ E/ D/ C/ | E3/2 F/ G |
+[V:S1V2] C C C | B,3/2 B,/ B, | C C/ C/ C/ C/ | C3/2 C/ C |
+[V:S2V1] F, F, F, | D,3/2 D,/ D, | C, E,/ E,/ E,/ E,/ | E,3/2 E,/ E, |
+[V:S2V2] A,, A,, A,, | G,,3/2 G,,/ G,, | G,, G,,/ G,,/ G,,/ G,,/ | G,,3/2 G,,/ G,, |
+[V:S1V1] A F D | C3 |]
+[V:S1V2] C C C | C3 |]
+[V:S2V1] F, A, A, | G,3 |]
+[V:S2V2] F,, F,, F,, | E,,3 |]

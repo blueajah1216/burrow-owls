@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music practice · The Great Gallery</title>
+  <meta name="description" content="Find your voice. Practice soprano, alto, tenor and bass with familiar songs, moving sheet music, and playback at your own pace.">
+  <meta name="theme-color" content="#102c4c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='choir/choir.css') }}">
+</head>
+<body>
+<header class="top">
+  <div class="left">
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="topnav">☰ <span>Menu</span></button>
+    <a class="brand" href="{{ url_for('fineart.index') }}"><span class="brand-mark" aria-hidden="true">♫</span><span>The Great <em>Gallery</em></span></a>
+  </div>
+  <nav class="menu" id="topnav" aria-label="Main menu">
+    <a href="{{ url_for('fineart.index') }}">Paintings</a>
+    <a href="{{ url_for('photo.index') }}">Photography</a>
+    <a href="{{ url_for('fineart.games') }}">Art games</a>
+    <a href="{{ url_for('choir.index') }}" aria-current="page">Music practice</a>
+  </nav>
+  <span class="section-label">THE MUSIC ROOM</span>
+</header>
+<main>
+  <section class="intro">
+    <div><p class="eyebrow">A LITTLE PRACTICE. A LOT OF HARMONY.</p><h1>Find your voice.<br><em>Sing together.</em></h1></div>
+    <div class="intro-copy"><p>Familiar songs. Four voices. One lovely sound.</p><p>Follow the notes, find your part, and learn how it fits with everyone else.</p><a href="#how-to">New to harmony? Start here <span aria-hidden="true">↘</span></a></div>
+  </section>
+  <div class="room-layout">
+    <aside class="library" aria-labelledby="library-heading">
+      <div class="library-heading"><h2 id="library-heading">The songbook</h2><span>{{ songs|length }} songs</span></div>
+      <label class="search-label" for="song-search">Find a song</label>
+      <input id="song-search" type="search" placeholder="Search songs…" autocomplete="off">
+      <label class="search-label" for="category">Collection</label>
+      <select id="category"><option value="all">All collections</option><option>Christmas carols</option><option>Folk & familiar</option><option>Anthems</option><option>Hymns & spirituals</option></select>
+      <p id="song-count" class="song-count" role="status">{{ songs|length }} songs to sing</p>
+      <div id="song-list" class="song-list" aria-label="Choose a song">
+      {% for song in songs %}<button class="song-option" type="button" data-song="{{ song.id }}"><span>{{ song.title }}</span><small>{{ song.category }}</small></button>{% endfor %}
+      </div>
+    </aside>
+    <section class="practice" aria-labelledby="song-title" aria-busy="true">
+      <div class="song-heading"><div><p id="song-category" class="eyebrow">YOUR PRACTICE SPACE</p><h2 id="song-title">Opening the songbook…</h2><p id="song-subtitle"></p></div><span class="satb-badge">4 voices<br><strong>S A T B</strong></span></div>
+      <div class="practice-controls">
+        <div class="transport"><button id="play" class="play" type="button" disabled>▶ Play</button><button id="restart" type="button" disabled aria-label="Restart song">↶ Restart</button><label class="loop-control"><input id="loop" type="checkbox"> Loop</label><span id="time" class="time">0:00 / 0:00</span></div>
+        <label class="seek-label" for="seek">Song position</label><input id="seek" type="range" min="0" max="1000" value="0" disabled aria-label="Song position">
+        <div class="tempo-row"><label for="speed">Practice speed</label><input id="speed" type="range" min="40" max="120" step="5" value="80"><output id="speed-value" for="speed">80%</output><span id="bpm"></span></div>
+      </div>
+      <fieldset class="voices"><legend>Choose what you hear <span>Turn a voice on or off, or listen to it on its own.</span></legend>
+      {% for voice,short in [('Soprano','S'),('Alto','A'),('Tenor','T'),('Bass','B')] %}
+        <div class="voice voice-{{ short|lower }}"><button class="voice-toggle" data-voice="{{ loop.index0 }}" type="button" aria-pressed="true"><span class="voice-letter">{{ short }}</span><span>{{ voice }}<small class="voice-state">Sound on</small></span></button><button class="solo" data-solo="{{ loop.index0 }}" type="button" aria-label="Hear only {{ voice|lower }}">Only</button></div>
+      {% endfor %}
+      </fieldset>
+      <div class="practice-modes"><label for="my-part">I’m singing</label><select id="my-part"><option value="0">Soprano</option><option value="1" selected>Alto</option><option value="2">Tenor</option><option value="3">Bass</option></select><button id="learn-part" type="button">Hear my part</button><button id="backing" type="button">Sing with the others</button><button id="all-voices" type="button">All voices</button></div>
+      <p id="playback-status" class="playback-status" role="status">Loading sheet music…</p>
+      <div class="score-toolbar"><span>FOLLOW THE BLUE LINE</span><label><input id="follow" type="checkbox" checked> Auto-follow</label><button id="print" type="button">Print score</button></div>
+      <div id="score-scroll" class="score-scroll" tabindex="0" role="region" aria-label="Four-part sheet music. Scroll to read the full score."><div id="score"></div></div>
+      <div class="score-footer"><p id="score-note"></p><a id="download-midi" download>MIDI ↓</a><a id="download-source">Score source ↓</a></div>
+      <details class="credits"><summary>About this song & score credits</summary><p id="song-credit"></p><p id="song-license"></p><a id="source-link" target="_blank" rel="noopener">View the original source ↗</a></details>
+    </section>
+  </div>
+  <section id="how-to" class="how-to"><div><p class="eyebrow">YOUR FIRST REHEARSAL</p><h2>A melody is lovely.<br><em>Harmony is a conversation.</em></h2><p>These guide tones play the written notes so you can sing along. No microphone or recording needed.</p></div><ol><li><strong>Meet your part.</strong> Choose a song and your voice. Tap “Hear my part” and listen before you sing.</li><li><strong>Take your time.</strong> Slow the music down. The blue line follows the sound, and the notes light up as they play.</li><li><strong>Join the others.</strong> Tap “Sing with the others” to silence your guide part. Can you hold your melody while the other voices sing?</li></ol></section>
+  <p class="singing-note">Soprano and alto are the higher lines; tenor and bass are lower. Choose a comfortable part, sing gently, and ask your teacher if the notes feel too high or low. You can sing a lower part an octave higher.</p>
+  <noscript><p class="error">Enable JavaScript to view the scores and use music playback.</p></noscript>
+</main>
+<footer class="foot"><a href="{{ url_for('fineart.index') }}">The Great Gallery</a><span>Made for curious ears.</span><p>Public-domain music and freely shared practice arrangements. Each score includes its credits. Music notation by <a href="https://www.abcjs.net/" target="_blank" rel="noopener">abcjs</a>.</p></footer>
+<script>window.CHOIR_LIBRARY_URL={{ url_for('choir.library')|tojson }};window.CHOIR_SOURCE_URL={{ url_for('choir.source', filename='SCORE_FILE')|tojson }};</script>
+<script src="{{ url_for('static', filename='choir/vendor/abcjs-6.7.2.min.js') }}"></script>
+<script src="{{ url_for('static', filename='fineart/menu.js') }}?v=2"></script>
+<script src="{{ url_for('static', filename='choir/choir.js') }}"></script>
+</body>
+</html>

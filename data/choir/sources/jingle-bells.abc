@@ -1,0 +1,30 @@
+% New practice arrangement dedicated to the public domain under CC0 1.0.
+% https://creativecommons.org/publicdomain/zero/1.0/
+X:1
+T:Jingle Bells
+C:Traditional/public-domain melody. New practice harmony: The Great Gallery, CC0.
+M:4/4
+L:1/4
+Q:1/4=112
+%%score S1V1 | S1V2 | S2V1 | S2V2
+V:S1V1 name="Soprano" snm="S" clef=treble
+V:S1V2 name="Alto" snm="A" clef=treble
+V:S2V1 name="Tenor" snm="T" clef=bass
+V:S2V2 name="Bass" snm="B" clef=bass
+K:C
+[V:S1V1] E E E2 | E E E2 | E G C3/2 D/ | E4 |
+[V:S1V2] C C C2 | C C C2 | C C C3/2 C/ | C4 |
+[V:S2V1] E, E, E,2 | E, E, E,2 | E, E, E,3/2 E,/ | E,4 |
+[V:S2V2] G,, G,, G,,2 | G,, G,, G,,2 | G,, G,, G,,3/2 G,,/ | G,,4 |
+[V:S1V1] F F F F | F E E E/ E/ | E D D E | D2 G2 |
+[V:S1V2] C C C C | C C C C/ C/ | B, B, B, B, | B,2 B,2 |
+[V:S2V1] F, F, F, F, | E, E, E, E,/ E,/ | D, D, D, D, | D,2 D,2 |
+[V:S2V2] A,, A,, A,, A,, | G,, G,, G,, G,,/ G,,/ | G,, G,, G,, G,, | G,,2 G,,2 |
+[V:S1V1] E E E2 | E E E2 | E G C3/2 D/ | E4 |
+[V:S1V2] C C C2 | C C C2 | C C G,3/2 G,/ | G,4 |
+[V:S2V1] C, C, C,2 | C, C, C,2 | C, C, C,3/2 C,/ | C,4 |
+[V:S2V2] G,, G,, G,,2 | G,, G,, G,,2 | G,, E,, E,,3/2 E,,/ | C,,4 |
+[V:S1V1] F F F F | F E E E/ E/ | G G F D | C4 |]
+[V:S1V2] A, A, A, A, | G, G, G, G,/ G,/ | G, G, G, G, | G,4 |]
+[V:S2V1] C, C, C, C, | E, E, E, E,/ E,/ | B,, B,, B,, B,, | C,4 |]
+[V:S2V2] C,, C,, C,, C,, | C,, C,, C,, C,,/ C,,/ | D,, D,, D,, D,, | E,,4 |]

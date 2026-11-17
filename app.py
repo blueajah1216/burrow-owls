@@ -247,6 +247,9 @@ fineart_auth.init_auth(app, db)
 import photography
 photography.init_photography(app)
 
+import choir
+choir.init_choir(app)
+
 import galleryhost
 
 galleryhost.init_gallery_host(app)

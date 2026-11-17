@@ -1,6 +1,37 @@
 # burrow-owls
 Blog for my family
 
+## Music practice — The Great Gallery
+
+`thegreatgallery.art/music` (locally `/fineart/music`) is a blue choir practice
+room for soprano, alto, tenor and bass. The separate Seattle calendar at `/music`
+on the family site is unchanged. Painting and photography menus link to practice.
+
+The initial songbook has 50 titles: carols, hymns/spirituals, folk songs, familiar
+children's tunes and two anthem texts sharing the same traditional melody.
+Thirty-five settings come from the Open Hymnal archive and retain their original
+public-domain statements in `data/choir/sources/`. Fifteen simple new educational
+harmonizations are dedicated under CC0; these are block-chord practice settings,
+not historical editions. Jingle Bells and Oh! Susanna are explicitly chorus-only.
+The library does not include recent copyrighted pop songs.
+
+- `choir.py`, `templates/choir/`, `static/choir/`: routes, responsive page and player.
+- `data/choir/library.json`: compiled score/credit catalog, served by Flask.
+- `.venv/bin/python choir_build/build_library.py`: deterministic, offline rebuild.
+- abcjs 6.7.2 is bundled locally under its MIT license in `static/choir/vendor/`.
+- Web Audio plays guide tones from the same parsed MIDI note events used by the
+  score. An audio-clock cursor follows playback; mute/solo, backing practice,
+  40–120% tempo, seeking, pause, restart and looping work without remote samples.
+- MIDI export includes all four parts at the original tempo; printing paginates
+  between systems. Individual source scores and credits are available on the page.
+- No microphone, recording, new database tables or new Python dependencies.
+
+For regression checks, run a local Flask server on port 5057 and
+`node choir_build/verify_browser.cjs` with the existing workspace Playwright and
+installed Google Chrome. Set `CHOIR_TEST_URL` or `CHOIR_TEST_ARTIFACTS` to override
+the URL or screenshot directory. It checks all 50 scores for four voices and
+matching visual/audio duration, controls, filtering, MIDI and mobile overflow.
+
 
 ## /music — Seattle classical concert calendar
 
