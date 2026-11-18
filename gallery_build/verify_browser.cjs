@@ -26,6 +26,16 @@ async function checkWidth(page){assert(await page.evaluate(()=>document.document
 async function save(page,path,selector){await page.goto(base+path);await page.evaluate(()=>Gallery.ready);const button=page.locator(selector).first();await button.click();await page.waitForFunction(s=>document.querySelector(s)?.getAttribute('aria-pressed')==='true',selector);}
 (async()=>{const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});try{
  const context=await browser.newContext({viewport:{width:1440,height:1050}});await routing(context);const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
+ // Account navigation must keep a single return destination, even for old nested URLs.
+ const returnTo='/music/history?q=bach';
+ await page.goto(base+'/signup?next='+encodeURIComponent('/login?next='+encodeURIComponent(returnTo)));
+ for(let i=0;i<3;i++) {
+  assert.equal(await page.locator('input[name=next]').inputValue(),returnTo);
+  const headerLogin=page.locator('.gg-login');assert.equal(await headerLogin.getAttribute('rel'),'nofollow');
+  const href=await headerLogin.getAttribute('href');assert.equal(new URL(href,base).searchParams.get('next'),returnTo);assert(href.length<100);
+  await headerLogin.click();
+ }
+ await page.screenshot({path:artifacts+'/login-crawl-fix-desktop.png',fullPage:true});
  for(const [path,name] of [['/','paintings'],['/photography/','photography'],['/music','music']]){
   await page.goto(base+path);await page.locator('.gg-account-links .gg-create').waitFor();assert(await page.locator('.gg-invitation').isVisible());await checkWidth(page);await page.screenshot({path:`${artifacts}/${name}-desktop.png`});
  }

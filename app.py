@@ -228,12 +228,17 @@ music_ingest.register_cli(app, db)
 
 @app.route("/robots.txt")
 def robots_txt():
-    # PetalBot crawls the music calendar endlessly; keep it (and other pure-crawl bots) out.
-    from galleryhost import is_gallery_host
-    if is_gallery_host():
-        return app.response_class("User-agent: *\nDisallow: /api/\nDisallow: /login\nDisallow: /signup\nDisallow: /account\nDisallow: /my-gallery\n", mimetype="text/plain")
-    body = "User-agent: PetalBot\nDisallow: /\n\nUser-agent: *\nDisallow: /fineart/api/\nDisallow: /fineart/login\nDisallow: /fineart/signup\nDisallow: /fineart/account\nDisallow: /fineart/my-gallery\n"
-    return app.response_class(body, mimetype="text/plain")
+    # Apply crawler and account exclusions on the gallery and legacy domains.
+    body = ("User-agent: meta-externalagent\nDisallow: /\n\n"
+            "User-agent: PetalBot\nDisallow: /\n\n"
+            "User-agent: *\n"
+            "Disallow: /api/\nDisallow: /login\nDisallow: /signup\n"
+            "Disallow: /account\nDisallow: /logout\nDisallow: /my-gallery\n"
+            "Disallow: /fineart/api/\nDisallow: /fineart/login\nDisallow: /fineart/signup\n"
+            "Disallow: /fineart/account\nDisallow: /fineart/logout\nDisallow: /fineart/my-gallery\n")
+    response = app.response_class(body, mimetype="text/plain")
+    response.headers["Cache-Control"] = "public, max-age=3600"
+    return response
 
 
 import fineart

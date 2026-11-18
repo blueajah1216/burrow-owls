@@ -5,12 +5,17 @@ redirects to the clean one. Music history, concert listings, and photography kee
 their public paths. /music is the landing page for concerts, history, and practice.
 """
 import os
+import re
 
 from flask import request, url_for as flask_url_for
 
 HOSTS = {h.strip().lower() for h in os.environ.get("GALLERY_HOSTS", "thegreatgallery.art,www.thegreatgallery.art").split(",") if h.strip()}
 CANONICAL = os.environ.get("GALLERY_CANONICAL_HOST", "thegreatgallery.art")
 LEGACY_HOSTS = {"theburrowowls.com", "www.theburrowowls.com"}
+# These crawlers have generated sustained calendar/auth URL crawling in production.
+# Keep link-preview agents (facebookexternalhit, meta-externalfetcher) and search
+# engines separate: only these two explicitly identified crawler tokens are denied.
+BLOCKED_CRAWLER = re.compile(r"\b(?:meta-externalagent|PetalBot)(?:[/;\s)]|$)", re.I)
 
 
 class GalleryHostMiddleware:
@@ -18,6 +23,17 @@ class GalleryHostMiddleware:
         self.wsgi = wsgi
 
     def __call__(self, environ, start_response):
+        if (environ.get("PATH_INFO") != "/robots.txt" and
+                BLOCKED_CRAWLER.search(environ.get("HTTP_USER_AGENT", ""))):
+            # Reject before Flask, session loading, template rendering or database I/O.
+            body = b"Automated crawling by this agent is not permitted. See /robots.txt.\n"
+            start_response("403 Forbidden", [
+                ("Content-Type", "text/plain; charset=utf-8"),
+                ("Content-Length", str(len(body))),
+                ("Cache-Control", "no-store"),
+                ("X-Robots-Tag", "noindex, nofollow"),
+            ])
+            return [] if environ.get("REQUEST_METHOD") == "HEAD" else [body]
         host = (environ.get("HTTP_X_FORWARDED_HOST") or environ.get("HTTP_HOST") or "").split(",")[0].strip().lower().split(":")[0]
         path = environ.get("PATH_INFO") or "/"
         qs = environ.get("QUERY_STRING", "")

@@ -8,4 +8,4 @@
 <label>Username <small>3–24 letters, numbers, or underscores</small><input name="username" value="{{ form.username }}" minlength="3" maxlength="24" pattern="[A-Za-z0-9_]{3,24}" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
 <label>Password <small>at least 8 characters</small><input name="password" type="password" minlength="8" maxlength="200" autocomplete="new-password" required></label>
 <label>Password again<input name="password2" type="password" minlength="8" maxlength="200" autocomplete="new-password" required></label><button class="gg-button" type="submit">Create your gallery →</button></form>
-<p>Already collecting? <a href="{{ url_for('fineart_auth.login', next=next) }}">Log in</a></p><p class="gg-fine">No email needed. Keep your password somewhere safe: we don’t offer email password resets.</p></section></div>{% endblock %}
+<p>Already collecting? <a rel="nofollow" href="{{ url_for('fineart_auth.login', next=next) }}">Log in</a></p><p class="gg-fine">No email needed. Keep your password somewhere safe: we don’t offer email password resets.</p></section></div>{% endblock %}

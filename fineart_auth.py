@@ -17,7 +17,7 @@ from collections import defaultdict, deque
 from datetime import datetime, timedelta
 from functools import lru_cache
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+from urllib.parse import parse_qs, unquote, urlsplit
 import json
 
 from flask import (Blueprint, abort, current_app, g, jsonify, redirect, render_template,
@@ -58,9 +58,16 @@ def too_many(key, limit=8, window=600):
 
 
 def safe_next(target):
-    """Only allow redirects back to a path on this site."""
-    if isinstance(target, str) and len(target) < 2000:
-        from galleryhost import is_gallery_host, _strip
+    """A local return path, with nested login/signup destinations flattened.
+
+    Never make an auth page its own return destination: crawlers can otherwise
+    discover an unbounded sequence of /login?next=/login?next=... links.
+    """
+    from galleryhost import is_gallery_host, _strip
+    fallback = public_url("fineart_auth.my_gallery")
+    for _ in range(10):
+        if not isinstance(target, str) or not target or len(target) >= 2000:
+            return fallback
         if is_gallery_host():
             target = _strip(target)
         decoded = unquote(unquote(target))
@@ -75,8 +82,12 @@ def safe_next(target):
                 and not parsed.scheme and not parsed.netloc and "\\" not in decoded
                 and not re.search(r"[\x00-\x1f\x7f]", decoded)
                 and " " not in parsed.path):
+            if _strip(parsed.path).rstrip("/") in ("/login", "/signup", "/logout"):
+                target = parse_qs(urlsplit(target).query).get("next", [None])[0]
+                continue
             return target
-    return public_url("fineart_auth.my_gallery")
+        return fallback
+    return fallback
 
 
 def public_url(endpoint, **values):
@@ -176,6 +187,7 @@ def init_auth(app, db):
         g.gallery_ids = ids
         return dict(fa_current=user, fa_csrf=csrf_token, gallery_ids=ids,
                     gallery_total=sum(map(len, ids.values())),
+                    gallery_auth_next=safe_next(request.full_path.rstrip("?")),
                     gallery_saved=lambda kind, item_id: item_id in ids.get(kind, []))
 
     @app.after_request
@@ -186,7 +198,8 @@ def init_auth(app, db):
             resp.headers["Cache-Control"] = "private, no-store"
         if resp.mimetype == "text/html":
             resp.vary.add("Cookie")
-        if request.endpoint in ("fineart_auth.account", "fineart_auth.my_gallery"):
+        if request.endpoint in ("fineart_auth.login", "fineart_auth.signup",
+                                "fineart_auth.account", "fineart_auth.my_gallery"):
             resp.headers["X-Robots-Tag"] = "noindex, nofollow"
         return resp
 

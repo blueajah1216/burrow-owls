@@ -6,4 +6,4 @@
 <form method="post" action="{{ url_for('fineart_auth.login') }}"><input type="hidden" name="csrf" value="{{ fa_csrf() }}"><input type="hidden" name="next" value="{{ next }}">
 <label>Username<input name="username" value="{{ username }}" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
 <label>Password<input name="password" type="password" autocomplete="current-password" maxlength="200" required></label><button class="gg-button" type="submit">Log in to my gallery →</button></form>
-<p>New here? <a href="{{ url_for('fineart_auth.signup', next=next) }}">Create your gallery</a></p></section></div>{% endblock %}
+<p>New here? <a rel="nofollow" href="{{ url_for('fineart_auth.signup', next=next) }}">Create your gallery</a></p></section></div>{% endblock %}

@@ -5,6 +5,6 @@
   </div>
   <div class="gg-invitation-actions">
     {% if fa_current %}<a class="gg-button" href="{{ url_for('fineart_auth.my_gallery') }}">Open my gallery →</a>
-    {% else %}<a class="gg-button" href="{{ url_for('fineart_auth.signup') }}">Create your gallery →</a><a href="{{ url_for('fineart_auth.login') }}">Already collecting? Log in</a>{% endif %}
+    {% else %}<a class="gg-button" rel="nofollow" href="{{ url_for('fineart_auth.signup') }}">Create your gallery →</a><a rel="nofollow" href="{{ url_for('fineart_auth.login') }}">Already collecting? Log in</a>{% endif %}
   </div>
 </section>

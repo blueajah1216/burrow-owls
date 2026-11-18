@@ -197,6 +197,21 @@ include `GALLERY_HOSTS=127.0.0.1,thegreatgallery.art GALLERY_CANONICAL_HOST=127.
 when starting the local server, so redirects and test account writes stay on localhost.
 Python route tests exercise the real `thegreatgallery.art` Host header separately.
 
+### Crawler traffic and performance
+
+`galleryhost.py` rejects the specifically identified `meta-externalagent` and
+`PetalBot` crawler user agents before Flask/session/database work. Both can still
+read `/robots.txt`, which disallows them on gallery and legacy domains. Search
+engines, Reddit, and Facebook link-preview agents are unaffected. This is a narrow
+traffic control based on observed user agents, not proof of a bot's identity.
+
+Login/signup links use a validated, flattened return destination instead of nesting
+the current auth URL inside another `next` parameter. Account links are marked
+`nofollow`, and auth pages carry `noindex, nofollow` in HTML and response headers.
+This prevents the unbounded auth URL combinations seen in production crawler logs.
+`gallery_build/verify_accounts.py` covers the crawl loop and the early rejection;
+the browser check follows header login links repeatedly to verify they stay bounded.
+
 Env vars on Render: `DATABASE_URL` (Postgres — SQLite files don't survive deploys) and `SECRET_KEY` (required).
 
 ### Gallery visitor analytics

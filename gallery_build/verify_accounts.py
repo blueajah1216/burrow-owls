@@ -4,6 +4,7 @@ import sys
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from urllib.parse import parse_qs, urlencode, urlsplit
 
 os.environ.update(DATABASE_URL='sqlite:///:memory:', SECRET_KEY='local-gallery-check', MUSIC_AUTOREFRESH='0')
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -116,6 +117,65 @@ class GalleryChecks(unittest.TestCase):
             self.assertEqual(nxt,'/my-gallery',bad)
         response=self.get('/login?next=/fineart/p/'+self.painting)
         self.assertEqual(BeautifulSoup(response.data,'html.parser').select_one('input[name=next]')['value'],'/p/'+self.painting)
+    def test_auth_links_do_not_create_a_crawl_loop(self):
+        leaf='/music/history?q=beethoven&era=romantic#timeline'
+        nested=leaf
+        for path in ['/login','/fineart/signup','/signup','/fineart/login']:
+            nested=path+'?'+urlencode({'next':nested})
+        for host,prefix in [(HOST,''),('https://theburrowowls.com','/fineart')]:
+            path=prefix+'/signup?'+urlencode({'next':nested})
+            for _ in range(4):
+                page=self.client.get(path,base_url=host)
+                self.assertEqual(page.status_code,200)
+                soup=BeautifulSoup(page.data,'html.parser')
+                self.assertEqual(soup.select_one('input[name=next]')['value'],leaf)
+                link=soup.select_one('.gg-login')
+                self.assertIn('nofollow',link['rel'])
+                path=link['href']
+                self.assertEqual(parse_qs(urlsplit(path).query)['next'],[leaf])
+                self.assertLess(len(path),150)
+                self.assertIn('noindex',page.headers['X-Robots-Tag'])
+    def test_nested_auth_redirects_remain_local_and_terminate(self):
+        for leaf in ['https://evil.example','//evil.example','/fineart//evil.example',None]:
+            nested='/signup'+('?' + urlencode({'next':leaf}) if leaf else '')
+            page=self.get('/login?'+urlencode({'next':nested}))
+            soup=BeautifulSoup(page.data,'html.parser')
+            self.assertEqual(soup.select_one('input[name=next]')['value'],'/my-gallery')
+        self.signup()
+        page=self.get('/login?'+urlencode({'next':'/signup?next=/login'}))
+        self.assertEqual(page.status_code,302)
+        self.assertEqual(page.location,'/my-gallery')
+        self.assertEqual(self.get(page.location).status_code,200)
+    def test_known_crawlers_are_rejected_before_the_application(self):
+        from galleryhost import GalleryHostMiddleware
+        from werkzeug.test import Client
+        from werkzeug.wrappers import Response
+        from unittest.mock import Mock
+        application=Mock()
+        client=Client(GalleryHostMiddleware(application),Response)
+        for agent in ['Mozilla/5.0 (compatible; meta-externalagent/1.1)', 'PetalBot/1.0']:
+            for host in [HOST,'https://theburrowowls.com','https://www.theburrowowls.com']:
+                for method in ['GET','HEAD']:
+                    response=client.open('/fineart/login?next=/login',base_url=host,
+                                         method=method,headers={'User-Agent':agent})
+                    self.assertEqual(response.status_code,403)
+                    self.assertEqual(response.headers['Cache-Control'],'no-store')
+                    if method=='HEAD':self.assertEqual(response.data,b'')
+        application.assert_not_called()
+    def test_robots_and_normal_visitors_keep_working(self):
+        from urllib.robotparser import RobotFileParser
+        for host in [HOST,'https://theburrowowls.com']:
+            response=self.client.get('/robots.txt',base_url=host,headers={'User-Agent':'meta-externalagent/1.1'})
+            self.assertEqual(response.status_code,200)
+            rules=RobotFileParser();rules.parse(response.text.splitlines())
+            for agent in ['meta-externalagent','PetalBot']:
+                self.assertFalse(rules.can_fetch(agent,host+'/music'))
+            for path in ['/login','/signup','/fineart/login','/fineart/signup','/my-gallery']:
+                self.assertFalse(rules.can_fetch('Googlebot',host+path))
+            self.assertTrue(rules.can_fetch('Googlebot',host+'/music/history'))
+        for agent in ['Mozilla/5.0','Googlebot/2.1','bingbot/2.0','facebookexternalhit/1.1','meta-externalfetcher/1.1','Redditbot/1.0']:
+            response=self.client.get('/music',base_url=HOST,headers={'User-Agent':agent})
+            self.assertEqual(response.status_code,200,agent)
     def test_form_fallback_and_filters(self):
         self.signup()
         response=self.post('/gallery/save',dict(kind='music',id=self.music,action='add',next='/music/history'))

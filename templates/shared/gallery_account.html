@@ -3,7 +3,7 @@
     <a class="gg-create" href="{{ url_for('fineart_auth.my_gallery') }}">♥ My gallery <span class="gg-header-count" data-gallery-total>{{ gallery_total }}</span></a>
     <a class="gg-profile" href="{{ url_for('fineart_auth.account') }}" aria-label="Account settings for {{ fa_current.display_name }}" title="Account settings">{{ fa_current.display_name[:1]|upper }}</a>
   {% else %}
-    <a class="gg-login" href="{{ url_for('fineart_auth.login', next=request.full_path.rstrip('?')) }}">Log in</a>
-    <a class="gg-create" href="{{ url_for('fineart_auth.signup') }}">Create your gallery <span aria-hidden="true">↗</span></a>
+    <a class="gg-login" rel="nofollow" href="{{ url_for('fineart_auth.login', next=gallery_auth_next) }}">Log in</a>
+    <a class="gg-create" rel="nofollow" href="{{ url_for('fineart_auth.signup') }}">Create your gallery <span aria-hidden="true">↗</span></a>
   {% endif %}
 </div>
